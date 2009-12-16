@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <!-- BEGIN srchhelps_s1.txt for MERLIN, updated 14:35:09 08-Jan-2008 by hjp -->
+
+  <head>
+    <title>MU - Journal Title Search</title>
+	<script language="JavaScript" type="text/javascript">
+<!--hide this script from non-javascript-enabled browsers
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_nbGroup(event, grpName) { //v6.0
+var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])?args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) { img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr) for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+  return true;
+}
+
+/* Older functions that swaps images, saved for backwards compatibility. */
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+  return true;
+}
+
+/* Functions that handle preload. */
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+  var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+  return true;
+}
+
+function preload() {
+  MM_preloadImages("/screens/tab_help.gif","/screens/tab_help_over.gif","/screens/tab_help_overdown.gif","/screens/tab_help_down.gif","/screens/tab_libcat.gif","/screens/tab_libcat_over.gif","/screens/tab_libcat_overdown.gif","/screens/tab_libcat_down.gif","/screens/tab_mylib.gif","/screens/tab_mylib_over.gif","/screens/tab_mylib_overdown.gif","/screens/tab_mylib_down.gif","/screens/tab_other.gif","/screens/tab_other_over.gif","/screens/tab_other_overdown.gif","/screens/tab_other_down.gif","/screens/tab_reserves.gif","/screens/tab_reserves_over.gif","/screens/tab_reserves_overdown.gif","/screens/tab_reserves_down.gif");
+  return true;
+}
+
+// stop hiding -->
+</script>
+  </head>
+
+  <body bgcolor="#FFFFFF" text="#000000" link="#333379" vlink="#333379" alink="#333379" onLoad="preload(); document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
+
+<center>
+<!-- BEGIN site/toplogo.tt for MERLIN, updated 14:35:09 08-Jan-2008 by hjp -->
+<table border="0" cellpadding="0" cellspacing="0" width="740" ALIGN="center">
+	<tr>
+		<td><img src="/screens/shim.gif" alt="" width="99" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="251" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="387" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="3" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+	<tr>
+		<td rowspan="5"><a href="/" target="_top"><img src="/screens/toplogo_merlin.gif" alt=" MERLIN: Missouri Education and Research Libraries Information Network " width="99" height="45" border="0" /></a></td>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+	<!-- begin GREEN bar -->
+	<tr>
+		<td><img src="/screens/toplogo_gr_fade.gif" alt="" width="251" height="18" border="0" /></td>
+		<td align="right" valign="middle" nowrap bgcolor="#6BBC07" class="smaller_reversed_nodecoration">
+			<strong><font color="#ffffff" size="-1" face="">
+			<a href="http://mobius.umsystem.edu/search" class="smaller_reversed_nodecoration">MOBIUS</a> &gt;
+			<a href="/search~" class="smaller_reversed_nodecoration">All MERLIN</a>
+
+			&gt; <a href="/search~S1" class="smaller_reversed_nodecoration">MU Libraries Catalog</a>
+
+			</font></strong></td>
+		<td><img src="/screens/toplogo_gr_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="18" border="0" /></td>
+	</tr>
+	<!-- end GREEN bar -->
+	<tr>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+	<!-- begin BLUE bar -->
+	<tr>
+		<td><img src="/screens/toplogo_bl_fade.gif" alt="" width="251" height="18" border="0" /></td>
+		<td align="right" valign="middle" nowrap bgcolor="#333379" CLASS="smaller_reversed_nodecoration"><strong><font color="#ffffff" size="-1" face="Verdana, Arial, Helvetica, sans-serif">
+<a href="http://www.missouri.edu/" class="smaller_reversed_nodecoration">MU</a>
+ |
+<a href="http://mulibraries.missouri.edu/" class="smaller_reversed_nodecoration">MU Libraries</a>
+			</font></strong></td>
+		<td><img src="/screens/toplogo_bl_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="18" border="0" /></td>
+	</tr>
+	<!-- end BLUE bar -->
+	<tr>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+</table>
+
+<!-- END site/toplogo.tt -->
+<br />
+
+
+		<!-- BEGIN site/tab_bar.tt for MERLIN, updated 14:35:09 08-Jan-2008 by hjp -->
+<table border="0" cellpadding="0" cellspacing="0" width="740" align="center" summary="tabs">
+	<tr>
+		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="240" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+	<tr>
+		<td class="tab_cat"><a href="/search~S1" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_libcat','/screens/tab_libcat_over.gif','/screens/tab_libcat_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_libcat','/screens/tab_libcat_down.gif',1);"><img src="/screens/tab_libcat_down.gif" alt=" libcat " width="100" height="31" border="0" id="tab_libcat" /></a></td>
+		<td class="tab_reserve"><a href="/search~S1/e" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_reserves','/screens/tab_reserves_over.gif','/screens/tab_reserves_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_reserves','/screens/tab_reserves_down.gif',1);"><img src="/screens/tab_reserves.gif" alt=" reserves " width="100" height="31" border="0" id="tab_reserves" /></a></td>
+		<td class="tab_patrec"><a href="/patroninfo" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_mylib','/screens/tab_mylib_over.gif','/screens/tab_mylib_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_mylib','/screens/tab_mylib_down.gif',1);"><img src="/screens/tab_mylib.gif" alt=" mylib " width="100" height="31" border="0" id="tab_mylib" /></a></td>
+		<td class="tab_other"><a href="/search~S1/v" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_other','/screens/tab_other_over.gif','/screens/tab_other_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_other','/screens/tab_other_down.gif',1);"><img src="/screens/tab_other.gif" alt=" other " width="100" height="31" border="0" id="tab_other" /></a></td>
+		<td class="tab_help"><a href="/search~S1/k" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_help','/screens/tab_help_over.gif','/screens/tab_help_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_help','/screens/tab_help_down.gif',1);"><img src="/screens/tab_help.gif" alt=" help " width="100" height="31" border="0" id="tab_help" /></a></td>
+		<td><img src="/screens/tab_bar_bar1.gif" alt="" width="1" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="31" border="0" /></td>
+	</tr>
+	<tr>
+
+		<td bgcolor="#333379"><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
+		<td colspan="5" align="left" valign="middle" nowrap bgcolor="#333379" class="smaller_reversed_nodecoration"> | <a href="/search~S1/Y" class="smaller_reversed_nodecoration">Keyword</a> | <a href="/search~S1/t" class="smaller_reversed_nodecoration">Title</a> | <a href="/search~S1/a" class="smaller_reversed_nodecoration">Author</a> | <a href="/search~S1/q" class="smaller_reversed_nodecoration">Author &amp; Title</a> | <STRONG><a href="/search~S1/s" class="smaller_reversed_nodecoration">Journal Title</a></STRONG> | <a href="/search~S1/h" class="smaller_reversed_nodecoration">Subject</a> | <a href="/search~S1/n" class="smaller_reversed_nodecoration">Number</a>		</td>
+		<td bgcolor="#333379"><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
+	</tr>
+</table><br />
+<!-- END site/tab_bar.tt -->
+
+
+</center>
+
+<center>
+
+
+<table width="740" border="0" cellpadding="0" cellspacing="0"><tr><td align="left">
+
+
+<center>
+
+<!--{patron}-->
+
+<!--{logout}-->
+
+</center>
+
+<!--{availlim}-->
+
+<!-- BEGIN site/srchhelp/s.tt for MERLIN, updated 14:35:09 08-Jan-2008 by hjp -->
+
+
+<h3>Journal, Magazine, and Newspaper Titles Search</h3>
+
+<p>Click in the box, type the Title, then press ENTER: </p>
+
+<form METHOD="GET" action="">
+  <p><input TYPE="TEXT" NAME="SEARCH" MAXLENGTH="64" SIZE="48" alt="Search"> <input
+  TYPE="SUBMIT" VALUE="Search"> </p>
+  <input type="hidden" name="searchscope" value="1">
+</form>
+
+<p>Type as much or as little of the <strong>EXACT TITLE</strong> as you want.</p>
+
+<p><i>for example</i>
+
+<ul>
+  <li>journal of counseling psychology</li>
+  <li>journal of counseling psy</li>
+</ul>
+
+<p>This search will find magazines, journals and newspapers that the libraries own.</p>
+
+<p>If your search is unsuccessful, try a <strong>TITLE</strong> or <strong>KEYWORD</strong>
+search.</p>
+
+<p>To find individual periodical articles, use databases or periodical indexes.</p>
+
+
+<!-- END site/srchhelp/s.tt -->
+
+
+
+<p class="ret2MainMenu"><a HREF="/search~S1">Return to Main Menu</a></p>
+
+
+</td></tr></table>
+
+
+</center>
+
+<center>
+<!-- BEGIN site/botlogo.tt for MERLIN, updated 14:35:09 08-Jan-2008 by hjp -->
+<center>
+	<p><img src="/screens/bot_bar.gif" alt="" width="740" height="8" border="0" /></p>
+	<p><span class="bot_logo"><strong>MERLIN</strong> &middot; Missouri Education and Research Libraries Information Network<br />
+	a MOBIUS Library Catalog</span></p>
+	<p>
+	<span class="bot_logo"><strong>University of Missouri:</strong><br />
+	<a class="bot_logo" href="/search~S1">MU Libraries</a> |
+	<a class="bot_logo" href="/search~S2">MU-Law Libraries</a> |
+	<a class="bot_logo" href="/search~S3">UMKC Libraries</a> |
+	<a class="bot_logo" href="/search~S4">UMKC-Law Library</a> |
+	<a class="bot_logo" href="/search~S5">Missouri S&amp;T Library</a> |
+	<a class="bot_logo" href="/search~S6">UMSL Libraries</a><br />
+	<a class="bot_logo" href="/search~S7">State Historical Society &amp; Western Historical Manuscript Collection</a><br />
+	</span></p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+</center>
+<!-- END site/botlogo.tt -->
+</center>
+
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!--{toplogo}-->
+<FORM METHOD=POST>
+<!--{iferrmsg}-->
+<FONT COLOR=RED SIZE=+2><EM>
+<!--{iferrmsgisPIN}-->
+<!--{newpinmsg}-->
+<!--{else}-->
+<!--{errmsg}-->
+<!--{xif}-->
+</EM></FONT><BR><BR><BR>
+<!--{xif}-->
+<!--{enterinfo}-->
+<TABLE WIDTH=100%>
+<!--{ifneedpatronname}-->
+<TR><TD WIDTH=30%></TD><TD><FONT SIZE=-1>
+<!--{nameexample}-->
+</FONT></TD></TR><TR><TD>
+<!--{nameprompt}-->
+</TD><TD>
+<!--{name}-->
+</TD></TR>
+<!--{xif}-->
+<!--{ifneedpatronverify}-->
+<TR><TD></TD><TD><FONT SIZE=-1>
+<!--{barcodeexample}-->
+</FONT></TD></TR>
+<TR><TD>
+<!--{barcodeprompt}-->
+</TD><TD>
+<!--{barcode}-->
+</TD></TR>
+<!--{ifneedspin}-->
+<!--{iferrmsgisPIN}-->
+<TR><TD COLSPAN=2>
+<!--{newpinmsg}-->
+</TD></TR><TR><TD>
+<!--{pin1prompt}-->
+</TD><TD>
+<!--{pin1}-->
+</TD></TR><TR><TD>
+<!--{pin2prompt}-->
+</TD><TD>
+<!--{pin2}-->
+</TD></TR>
+<!--{else}-->
+<TR><TD></TD><TD><FONT SIZE=-1>
+<!--{pininstructions}-->
+</FONT></TD></TR><TR><TD>
+<!--{pinprompt}-->
+</TD><TD>
+<!--{pin}-->
+</TD></TR>
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+</TABLE>
+<P>
+<!--{submit}-->
+</FORM>
+<DIV ALIGN=LEFT>
+<!--{startover}-->
+<DIV>
+<!--{botlogo}-->
+</BODY>
+</HTML>
+
+
