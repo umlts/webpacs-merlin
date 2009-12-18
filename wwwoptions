@@ -221,7 +221,7 @@ FRAMEURL=0
 
 KEYWORD_COLOR=Y|ALL|RED
 
-MULT_LIMITS=t
+MULT_LIMITS=f
 
 NOSEARCH=nubz
 
@@ -1925,5 +1925,10 @@ CUSTOM_MESSAGES=t
 
 # ITEMOUT_MSG=
 
-ICON_NEARBY= <span style=margin-left:10em;>More Like This</span>
+#ICON_NEARBY=<span style=margin-left:10em;>More Like This</span>
+
+ICON_NEARBY=<span style=margin-left:10em;><img src="/screens/morelikethis.gif" border="0" /></span>
+
+AIRPAC_PORT=6060
+
 
