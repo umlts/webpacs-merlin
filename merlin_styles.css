@@ -609,6 +609,7 @@ patFuncFinesTotalLabel */
 TD.patFuncFinesEntryTitle { color: #000000; background-color: #dedee7; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-weight: normal;  }
 TD.patFuncFinesTotalAmt { font-weight: bold; }
 TH.patFuncHeaders { color: #ffffff; background-color: #333379; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 80%; }
+.patFuncHeaders a { color:#ffffff; text-decoration:none; }
 /* patFuncMark
 patFuncModifyPatInfo
 patFuncModifyPIN
