@@ -772,4 +772,6 @@ wbresourcelist */
   text-decoration:none;
 }
 
-
+.msg {
+  margin-top:1em;
+}  
