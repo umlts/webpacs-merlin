@@ -303,7 +303,7 @@ ICON_MYLISTS=<img src="/screens/but_mylists.gif" border="0">
 
 ICON_MYLISTS_EXPORT=<img src="/screens/but_exportmylists.gif" border="0">
 
-#ICON_MYLISTS_REMOVE_DUPLICATES=Remove Titles Already in Reading History
+ICON_MYLISTS_REMOVE_DUPLICATES=<img src="/screens/but_removeduplicates.gif" border="0">
 
 ICON_MYLISTS_REQUEST=<img src="/screens/but_requestmylists.gif" border="0">
 
