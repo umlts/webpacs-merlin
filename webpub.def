@@ -7,20 +7,20 @@
 #
 # converted from HOLDINGS_POS field tag: 'a'
 #
-b|a|110|-6789|Corp Author||b|
+b|a|110|-6789|Corporate Author||b|
 b|a|111|-6789|Meeting Name||b|
 b|a||-6789|Author||b|
 #
 # converted from HOLDINGS_POS field tag: 't'
 #
-b|t|130|-6789|Uniform Titl||b|
-b|t|240|-6789|Uniform Titl||b|
+b|t|130|-6789|Uniform Title||b|
+b|t|240|-6789|Uniform Title||b|
 b|t||-6789|Title||b|
 #
 # converted from HOLDINGS_POS field tag: 'p'
 #
 b|p|26[02]|-6789|Published||b|
-b|p||-6789|Imprint||b|
+b|p||-6789|Published||b|
 #
 # converted from HOLDINGS_POS field tag: 'e'
 #
@@ -35,7 +35,7 @@ b|e|250|-6789|Edition||b|
 #
 b|x|7801|-w|Continues||b|
 b|x|78000|-w|Continues||b|
-b|x|78001|-w|Cont In Part||b|
+b|x|78001|-w|Continues In Part||b|
 b|x|78002|-w|Supersedes||b|
 b|x|78003|-w|Supersedes In Part||b|
 b|x|78004|-w|Union Of||b|
@@ -52,21 +52,21 @@ b|z|78504|-w|Absorbed By||b|
 b|z|78505|-w|Absorbed In Part By||b|
 b|z|78506|-w|Split Into||b|
 b|z|78507|-w|Merged With||b|
-b|z|78508|-w|Changed Back ||b|
-b|z||-w|Cont'd By||b|
+b|z|78508|-w|Changed Back To||b|
+b|z||-w|Continued By||b|
 #
 # next line added by cvpubdef
 b|H|||||&nbsp;
 #
-b|s||-6789|Series||b|
+b|s||-6789|Series Title||b|
 b|y|050|-6789|||b|
 b|y|096|-6789|||b|
-b|y|222|-6789|Other Title||b|
+b|y|222|-6789|Other Titles||b|
 b|y|510[34]|-6789|References||b|
 b|y|[0-7]..|-6789|||b|
 b|y|8[0-4]...|-6789|||b|
 b|y|85[0-5]..|-6789|||b|
-b|y|856..|-6789|Url||b|
+b|y|856..|-6789|URL||b|
 b|y|85[7-9]..|-6789|||b|
 b|y|8[6-9]...|-6789|||b|
 b|y|9[0-4]..|-6789|||b|
@@ -74,22 +74,22 @@ b|y|95[0-5]..|-6789|||b|
 b|y|956|-6789|File||b|
 b|y|95[7-9]..|-6789|||b|
 b|y|9[6-9]...|-6789|||b|
-b|y||-6789|Marc||b|
+b|y||-6789|MARC||b|
 b|r|3[0-4][0-57-9]|-2|Description||b|
 b|r|306|-2|||b|
 b|r|310|-2|Frequency||b|
-b|r|321|-2|Former Freq||b|
+b|r|321|-2|Former Frequency||b|
 b|r|350|-2|||b|
 b|r|35[1-8]|-2|Description||b|
 b|r|359|-2|||b|
 b|r|36[013-9]|-2|Description||b|
-b|r|362|-2|Pub History||b|
+b|r|362|-2|Publication History||b|
 b|r|3[7-9][0-9]|-2|Description||b|
-b|r||-2|Descript||b|
-b|v|508|-6789|Credits||b|
+b|r||-2|Description||b|
+b|v|508|-6789|Production Credits||b|
 b|v|511|-6789|Performers||b|
 b|v|520|-6789|Summary||b|
-b|v||-6789|Note||b|
+b|v||-6789|Notes||b|
 b|n|505|-57|Contents||b|
 b|n|524|-57|Cite As||b|
 b|n|533|-57|Format||b|
@@ -98,69 +98,70 @@ b|n|555 |-57|Indexes||b|
 b|n|5550|-57|Finding Aids||b|
 b|n|581|-57|Publications||b|
 b|n|583|-57|||b|
-b|n||-57|Note||b|
-b|q|765|-6789|Orig Title||b|
-b|q|767|-6789|Trans Title||b|
+b|n||-57|Notes||b|
+b|q|765|-6789|Other Titles||b|
+b|q|767|-6789|Other Titles||b|
 b|q|773|-6789|In||b|
 b|q|774|-6789|Includes||b|
+b|q|776|-6789|Other Physical Format||b|
 b|q||-6789|Related To||b|
 b|w|035|-6789|||b|
 b|w|76[0257]1|-6789|||b|
 b|w|77[0235-7]1|-6789|||b|
 b|w||-6789|Temp Ctr||b|
 b|d|6[0-9][0-9].0|-25|Subjects||b|
-b|d||-25|Subject||b|
-b|m|6[0-9][0-9].2|-2|Med Subjects||b|
-b|m||-2|Med Subj||b|
-b|j|650 7|-25|Add Keywords||b|
-b|j|65[34]|-25|Add Keywords||b|
+b|d||-25|Subjects||b|
+b|m|6[0-9][0-9].2|-2|Medical Subjects||b|
+b|m||-2|Medical Subject||b|
+b|j|650 7|-25|Additional Keywords||b|
+b|j|65[34]|-25|Additional Keywords||b|
 b|j|655..|-25|Genre/Form||b|
-b|j|65[6-9]|-25|Add Keywords||b|
-b|j|75[2-5]|-25|Add Keywords||b|
-b|j||-25|Add Keywds||b|
-b|b|7[01][01].[ 13456789]|-5|Other Author||b|
+b|j|65[6-9]|-25|Additional Keywords||b|
+b|j|75[2-5]|-25|Additional Keywords||b|
+b|j||-25|Additional Keywords||b|
+b|b|7[01][01].[ 13456789]|-5|Other Authors||b|
 b|b|7[01][01].2|-5|Includes||b|
-b|b||-5|Add Author||b|
-b|u|21[012]|-5|Other Title||b|
+b|b||-5|Other Authors||b|
+b|u|21[012]|-5|Other Titles||b|
 b|u|229|-5|||b|
 b|u|242|-5|Translation||b|
-b|u|243|-5|Uniform Titl||b|
-b|u|246.[0123]|-5|Other Title||b|
-b|u|246.4|-5|Cover Title||b|
-b|u|246.5|-5|Other Title||b|
-b|u|246.6|-5|Caption Title||b|
-b|u|246.7|-5|Running Title||b|
-b|u|246.8|-5|Spine Title||b|
+b|u|243|-5|Uniform Title||b|
+b|u|246.[0123]|-5|Other Titles||b|
+b|u|246.4|-5|Other Title||b|
+b|u|246.5|-5|Other Titles||b|
+b|u|246.6|-5|Other Titles||b|
+b|u|246.7|-5|Other Titles||b|
+b|u|246.8|-5|Other Titles||b|
 b|u|247|-5|Other Title||b|
 b|u|4901|-5|||b|
 b|u|730.2|-5|Includes||b|
 b|u|740|-5|Other Title||b|
 b|u|740.2|-5|Includes||b|
-b|u||-5|Add Title||b|
+b|u||-5|Other Titles||b|
 b|i|020|-c2|ISBN||b|
 b|i|022|-c2|ISSN||b|
-b|i|0224|-c2|Ismn||b|
-b|i|028|-c2|Music Pub. #||b|
-b|i|0280[12]|-c2|Issue #||b|
-b|i|0281[12]|-c2|Matrix #||b|
-b|i|0282[12]|-c2|Plate #||b|
-b|i|0283[12]|-c2|Pub #||b|
-b|i|0284[12]|-c2|Video Pub#||b|
-b|i|262|-c2|Music Pub. #||b|
-b|i||-c2|Std #||b|
-b|o||-6789|OCLC #||b|
-b|k|086|-6789|Sudoc #||b|
-b|k|09817|-6789|Modoc #||b|
-b|k|09822|-6789|Ksdoc #||b|
-b|k||-6789|Document #||b|
-b|f|027|-6789|Tech Rept #||b|
-b|f|030|-6789|Coden||b|
-b|f|070|-6789|Nal Call #||b|
-b|f|074|-6789|Gpo Item #||b|
-b|f|088|-6789|Tech Rept #||b|
-b|f||-6789|Other #||b|
-b|l||-6789|LC #||b|
-b|h||-6789|Lib. Has||b|
+b|i|0224|-c2|ISMN||b|
+b|i|028|-c2|Music/Publisher Number||b|
+b|i|0280[12]|-c2|Issue Number||b|
+b|i|0281[12]|-c2|Matrix Number||b|
+b|i|0282[12]|-c2|Plate Number||b|
+b|i|0283[12]|-c2|Publication Number||b|
+b|i|0284[12]|-c2|Video Publication Number||b|
+b|i|262|-c2|Music Publication Number||b|
+b|i||-c2|Standard Number||b|
+b|o||-6789|OCLC/WorldCat Number||b|
+b|k|086|-6789|Government Document Number||b|
+b|k|09817|-6789|Missouri Document Number||b|
+b|k|09822|-6789|Kansas Document Number||b|
+b|k||-6789|Document Number||b|
+b|f|027|-6789|Technical Report Number||b|
+b|f|030|-6789|CODEN||b|
+b|f|070|-6789|Nat'l Ag Library Control Number||b|
+b|f|074|-6789|GPO Item Number||b|
+b|f|088|-6789|Technical Report Number||b|
+b|f||-6789|Other Number||b|
+b|l||-6789|LC Control Number||b|
+b|h||-6789|Library Has||b|
 b|g|970|-2|||b|
 b|g||-2|Contents||b|
 #
