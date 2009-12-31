@@ -66,7 +66,7 @@ try {
    out += "</ol></p>";
    out += "<p><strong>NOTE:</strong> Carrier charges may apply if you cell phone service plan does not include free text messaging.</p>";
    // add buttons at bottom.  note the return false which stops the forms from actually doing anything
-   out += "<p><a href='#here' id='sendmessage' onClick='sendSMS();return false;'><img src='/screens/smssend.gif' border=0></a> <a href='#here' id='clearmessage' onClick='clearsms();return false;'><img src='/screens/smsclear.gif' border=0></a></p>";
+   out += "<p><a href='#here' id='sendmessage' onClick='this.onclick=sendSMS();return false;'><img src='/screens/smssend.gif' border=0></a> <a href='#here' id='clearmessage' onClick='clearsms();return false;'><img src='/screens/smsclear.gif' border=0></a></p>";
 
 	// we use the innerHTML property to actually set the HTML into the page
    sms.innerHTML = out+"</form>";
