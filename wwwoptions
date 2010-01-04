@@ -1927,7 +1927,7 @@ CUSTOM_MESSAGES=t
 
 #ICON_NEARBY=<span style=margin-left:10em;>More Like This</span>
 
-ICON_NEARBY=<span style=margin-left:10em;><img src="/screens/morelikethis.gif" border="0" /></span>
+#ICON_NEARBY=<span style=margin-left:10em;><img src="/screens/morelikethis.gif" border="0" /></span>
 
 AIRPAC_PORT=6060
 
