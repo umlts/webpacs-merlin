@@ -472,7 +472,16 @@ bibResourceTableHeader */
 TABLE.bibScreen { width: 99%; border: 1px solid #ffffff; }
 .bibSearchtool { text-align: center; border: 1px solid #ffffff;  }
 /* bibThumbnails */
-.bibTOC { width: 95%; border: 0px; background-color: #FFFFFF; color: #000000; text-align: left;}
+.bibTOC { width: 80%; border: 0px; background-color: #FFFFFF; color: #000000; text-align: left; margin-left:15.5%;margin-top:-3px;} 
+.bibTOC td { margin-left:50px;}
+#TOC_header {
+  background-color:#dedee7;
+  width:14.8%;
+  text-align:left;
+  position:absolute;
+  left:5px;
+  font-style:italic;
+  }
 .bibContent { border: 0px; text-align: left;}
 TABLE.bibWidgit { border: 1px solid #ffffff; }
 .navigationRow { text-align: center; white-space: nowrap; }
@@ -758,5 +767,4 @@ wbresourcelist */
 
 #sms {font-size:70%}
 
-.bibTOC th {
-  background-color:#dedee7;}
+
