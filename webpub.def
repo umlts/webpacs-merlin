@@ -61,7 +61,7 @@ b|H|||||&nbsp;
 b|s||-6789|Series Title||b|
 b|y|050|-6789|||b|
 b|y|096|-6789|||b|
-b|y|222|-6789|Other Titles||b|
+b|y|222|-6789|Other Titless||b|
 b|y|510[34]|-6789|References||b|
 b|y|[0-7]..|-6789|||b|
 b|y|8[0-4]...|-6789|||b|
@@ -99,8 +99,8 @@ b|n|5550|-57|Finding Aids||b|
 b|n|581|-57|Publications||b|
 b|n|583|-57|||b|
 b|n||-57|Notes||b|
-b|q|765|-6789|Other Titles||b|
-b|q|767|-6789|Other Titles||b|
+b|q|765|-6789|Other Titless||b|
+b|q|767|-6789|Other Titless||b|
 b|q|773|-6789|In||b|
 b|q|774|-6789|Includes||b|
 b|q|776|-6789|Other Physical Format||b|
@@ -108,11 +108,11 @@ b|q||-6789|Related To||b|
 b|w|035|-6789|||b|
 b|w|76[0257]1|-6789|||b|
 b|w|77[0235-7]1|-6789|||b|
-b|w||-6789|Temp Ctr||b|
+b|w||-6789|Temporary Control Number||b|
 b|d|6[0-9][0-9].0|-25|Subjects||b|
 b|d||-25|Subjects||b|
-b|m|6[0-9][0-9].2|-2|Medical Subjects||b|
-b|m||-2|Medical Subject||b|
+b|m|6[0-9][0-9].2|-2|Medical Subjectss||b|
+b|m||-2|Medical Subjects||b|
 b|j|650 7|-25|Additional Keywords||b|
 b|j|65[34]|-25|Additional Keywords||b|
 b|j|655..|-25|Genre/Form||b|
@@ -122,22 +122,22 @@ b|j||-25|Additional Keywords||b|
 b|b|7[01][01].[ 13456789]|-5|Other Authors||b|
 b|b|7[01][01].2|-5|Includes||b|
 b|b||-5|Other Authors||b|
-b|u|21[012]|-5|Other Titles||b|
+b|u|21[012]|-5|Other Titless||b|
 b|u|229|-5|||b|
 b|u|242|-5|Translation||b|
 b|u|243|-5|Uniform Title||b|
-b|u|246.[0123]|-5|Other Titles||b|
-b|u|246.4|-5|Other Title||b|
-b|u|246.5|-5|Other Titles||b|
-b|u|246.6|-5|Other Titles||b|
-b|u|246.7|-5|Other Titles||b|
-b|u|246.8|-5|Other Titles||b|
-b|u|247|-5|Other Title||b|
+b|u|246.[0123]|-5|Other Titless||b|
+b|u|246.4|-5|Other Titles||b|
+b|u|246.5|-5|Other Titless||b|
+b|u|246.6|-5|Other Titless||b|
+b|u|246.7|-5|Other Titless||b|
+b|u|246.8|-5|Other Titless||b|
+b|u|247|-5|Other Titles||b|
 b|u|4901|-5|||b|
 b|u|730.2|-5|Includes||b|
-b|u|740|-5|Other Title||b|
+b|u|740|-5|Other Titles||b|
 b|u|740.2|-5|Includes||b|
-b|u||-5|Other Titles||b|
+b|u||-5|Other Titless||b|
 b|i|020|-c2|ISBN||b|
 b|i|022|-c2|ISSN||b|
 b|i|0224|-c2|ISMN||b|
