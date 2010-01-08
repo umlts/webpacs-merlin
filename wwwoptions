@@ -476,7 +476,7 @@ TABLEPARAM_BIB_ORDER=width="99%" border="0" cellspacing="1"
 
 TABLEPARAM_BIB_PAGER=width="99%" border="0" cellspacing="1"
 
-TABLEPARAM_BIB_TOC=width="100%" bgcolor="#FFFFFF"
+TABLEPARAM_BIB_TOC=width="80%" bgcolor="#FFFFFF"
 
 WEBPUBDEF=true
 
