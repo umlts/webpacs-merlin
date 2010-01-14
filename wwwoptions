@@ -295,6 +295,25 @@ IMAGE_SAVE=T
 
 
 
+#    MY LISTS
+
+ICON_BACK_TO_MYLISTS=<img src="/screens/but_backmylists.gif" border="0">
+
+ICON_MYLISTS=<img src="/screens/but_mylists.gif" border="0">
+
+ICON_MYLISTS_EXPORT=<img src="/screens/but_exportmylists.gif" border="0">
+
+ICON_MYLISTS_REMOVE_DUPLICATES=<img src="/screens/but_removeduplicates.gif" border="0">
+
+ICON_MYLISTS_REQUEST=<img src="/screens/but_requestmylists.gif" border="0">
+
+ICON_MYLISTS_SAVE=<img src="/screens/but_savemylists.gif" border="0">
+
+ICON_MYLISTS_SAVE_TO_LIST=<span id="mylists">Create and/or Save to My Lists</span>
+
+MY_LISTS=t
+
+
 #    MY MILLENNIUM OPTIONS
 
 #CIRC_HIST_LIMIT_TEXT
@@ -903,7 +922,7 @@ ICON_READING_HISTORY_OPTIN=<img src="/screens/b_read_history_optin.gif" alt="Opt
 
 ICON_READING_HISTORY_OPTOUT=<img src="/screens/b_read_history_optout.gif" alt="Opt Out" border="0" />
 
-ICON_RECORDLINK=<div class="bibRecordLink" id="recordnum">&nbsp; Persistent record link: http://laurel.lso.missouri.edu%s&searchscope=0</div></font>
+ICON_RECORDLINK=<div class="bibRecordLink" id="recordnum">&nbsp; Persistent record link: http://laurel.lso.missouri.edu%s</div>
 
 ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="">&nbsp;Most relevant titles&nbsp;
 
@@ -1911,4 +1930,5 @@ CUSTOM_MESSAGES=t
 ICON_NEARBY=<span style=margin-left:10em;><img src="/screens/morelikethis.gif" border="0" /></span>
 
 AIRPAC_PORT=6060
+
 

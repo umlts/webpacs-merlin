@@ -94,28 +94,42 @@ function preload() {
 <TD WIDTH="10%">
 <!--{ifexport}-->
 <!--{export}-->
-</td>
+<!--{xif}-->
 <td WIDTH="90%">
 <strong>View and print or email your saved record(s)</strong>
-</td>
-<!--{xif}-->
-<!--{ifrequestmulti}-->
 </td>
 </tr>
 <tr>
 <TD WIDTH="10%">
+<!--{ifrequestmulti}-->
 <!--{requestmulti}-->
+<!--{xif}-->
 </td>
 <td WIDTH="90%">
 <strong>View and Request your saved record(s)</strong>
 </td>
-<!--{xif}-->
 </td>
 </tr>
+<tr>
+<TD WIDTH="10%">
+<!--{ifmylists}-->
+<!--{mylists}-->
+<!--{xif}-->
+</td>
+<td WIDTH="90%">
+<strong>Save record(s) to My Lists</strong>
+</td>
+</td>
+</tr>
+<tr>
 </TABLE>
 <TABLE WIDTH="740" ALIGN="center" CELLPADDING="15">
 <tr>
-<td>
+<td style="font-size: 80%;">
+You must have a PIN in order to proceed with requests.<br /> 
+Please return to your <a href="/patroninfo"><font color="#0000ff">
+<strong>patron record</strong></font></a> and choose the <br />
+'<font color="red"><strong>Modify PIN</strong></font>' button to create one.</a>
 <br /><br />
 <!--{prevscreen}-->
 <!--{clearmarked}-->
