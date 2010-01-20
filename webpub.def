@@ -28,6 +28,7 @@ b|e|254|-6789|Format||b|
 b|e|255|-6789|Map Info||b|
 b|e|256|-6789|Comp Info||b|
 b|e|250|-6789|Edition||b|
+
 #
 # end HOLDINGS_POS
 #
@@ -180,6 +181,7 @@ c|3||+|Latest Received||b|
 c|Q||||b|
 c|n||+|Note||b|
 #
+e|e|||Description||e|
 # end pubdef
 #
 # -----------------------------------------------------
