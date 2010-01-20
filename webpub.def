@@ -58,10 +58,17 @@ b|z||-w|Continued By||b|
 # next line added by cvpubdef
 b|H|||||b
 #
+
 b|s||-6789|Series Title||b|
+b|y|01[3-8]||Standard Number||b|
+b|y|052||Standard Number||b|
+b|y|025||Other Number||b|
+b|y|034||Other Number||b|
+b|y|036||Other Number||b|
 b|y|050|-6789|||b|
 b|y|096|-6789|||b|
 b|y|222|-6789|Other Titles||b|
+b|y|257||Additional Keywords||b|
 b|y|510[34]|-6789|References||b|
 b|y|[0-7]..|-6789|||b|
 b|y|8[0-4]...|-6789|||b|
@@ -70,9 +77,7 @@ b|y|856..|-6789|URL||b|
 b|y|85[7-9]..|-6789|||b|
 b|y|8[6-9]...|-6789|||b|
 b|y|9[0-4]..|-6789|||b|
-b|y|95[0-5]..|-6789|||b|
-b|y|956|-6789|File||b|
-b|y|95[7-9]..|-6789|||b|
+b|y|95...|-6789|||b|
 b|y|9[6-9]...|-6789|||b|
 b|y||-6789|MARC||b|
 b|r|3[0-4][0-57-9]|-2|Description||b|
@@ -188,4 +193,3 @@ i|Q||||b|
 i|%|||||b|
 #
 #end converted webpub.def
-
