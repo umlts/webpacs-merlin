@@ -768,4 +768,20 @@ wbresourcelist */
 
 #sms {font-size:70%}
 
+#mylist_btn1 {
+  background-color:#d4d0c8;
+  padding: 2px 12px;
+  margin:3px;
+  color: black;
+  border-width: 1px;
+  border-color: white black black white;
+  border-style:solid;
+}
 
+#mylist_btn1 a{
+  text-decoration:none;
+}
+
+.msg {
+  margin-top:1em;
+}  
