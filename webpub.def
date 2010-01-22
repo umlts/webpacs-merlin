@@ -182,6 +182,9 @@ c|Q||||b|
 c|n||+|Note||b|
 #
 e|e|||Description||e|
+e|w|||Vendor||e|
+e|r|||Provider||e|
+e|d|||Database Subject||e|
 # end pubdef
 #
 # -----------------------------------------------------
