@@ -104,37 +104,37 @@ AVS_TAG=XYZ
 
 #   ERM: ELECTRONIC RESOURCES MANAGEMENT
 
-BIB_LICENSE_FIELDS_s3=Permitted:Vlw|Restricted:Vlx
+BIB_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx
 
 BIB_LICENSE_FIELDS_BRIEF=<strong>Actions Allowed</strong>,Vlw|<strong>Restrictions</strong>,Vlx
 
 BIB_RESOURCE_CAPTION=Included in:
 
-BIB_RESOURCE_FIELDS_s3=:VeE|:VeT|:Vek
+BIB_RESOURCE_FIELDS=:VeE|:VeT|:Vek
 
-BIB_RESOURCE_FIELDS_BRIEF_s3=:VeY|:Vch
+BIB_RESOURCE_FIELDS_BRIEF=:VeY|:Vch
 
-BIB_RESOURCE_NUM_BRIEF_s3=A
+BIB_RESOURCE_NUM_BRIEF=A
 
 RESOURCE_ADVISORY=k
 
-RESOURCE_HOLDINGS_FIELDS_s3=Title:Vbt|LIB HAS:Vch|:VcY
+RESOURCE_HOLDINGS_FIELDS=Title:Vbt|LIB HAS:Vch|:VcY
 
 RESOURCE_HOLDINGS_MAX=3
 
-RESOURCE_LICENSE_FIELDS_s3=Permitted:Vlw|Restricted:Vlx
+RESOURCE_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx
 
-TABLEPARAM_BIB_LICENSE_s3=width="100%" border="3" cellspacing="1"
+TABLEPARAM_BIB_LICENSE=width="100%" border="3" cellspacing="1"
 
-TABLEPARAM_BIB_RESOURCE_s3=width="100%" border="3" cellspacing="1"
+TABLEPARAM_BIB_RESOURCE=width="100%" border="3" cellspacing="1"
 
-TABLEPARAM_BIB_RESOURCE_BRIEF_s3=width="100%" border="3" cellspacing="1"
+TABLEPARAM_BIB_RESOURCE_BRIEF=width="100%" border="3" cellspacing="1"
 
-TABLEPARAM_RESOURCE_BIB_s3=width="100%" border="3" cellspacing="1"
+TABLEPARAM_RESOURCE_BIB=width="100%" border="3" cellspacing="1"
 
-TABLEPARAM_RESOURCE_LICENSE_s3=width="100%" border="3" cellspacing="1"
+TABLEPARAM_RESOURCE_LICENSE=width="100%" border="3" cellspacing="1"
 
-TABLEPARAM_RESOURCE_RESOURCE_s3=width="100%" border="3" cellspacing="1"
+TABLEPARAM_RESOURCE_RESOURCE=width="100%" border="3" cellspacing="1"
 
 
 
