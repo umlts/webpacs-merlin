@@ -548,7 +548,7 @@ EXTENDED_c=3
 
 # IMAGE_MATTYPEx= 'x' specifies code for material type
 
-INDEX_EXT=c,l,j,g
+INDEX_EXT=c,l,g
 
 MEDIA=2
 
