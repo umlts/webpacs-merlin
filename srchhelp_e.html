@@ -5,7 +5,7 @@
   <!-- BEGIN srchhelps_s0.txt for MERLIN, updated 14:42:04 08-Jan-2008 by hjp -->
 
   <head>
-    <title>ALL MERLIN - Reserves Search</title>
+    <title>ALL MERLIN - Music Number Search</title>
 	<script language="JavaScript" type="text/javascript">
 <!--hide this script from non-javascript-enabled browsers
 
@@ -144,8 +144,8 @@ function preload() {
 		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
 	</tr>
 	<tr>
-		<td class="tab_cat"><a href="/search~" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_libcat','/screens/tab_libcat_over.gif','/screens/tab_libcat_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_libcat','/screens/tab_libcat_down.gif',1);"><img src="/screens/tab_libcat.gif" alt=" libcat " width="100" height="31" border="0" id="tab_libcat" /></a></td>
-		<td class="tab_reserve"><a href="/search~/e" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_reserves','/screens/tab_reserves_over.gif','/screens/tab_reserves_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_reserves','/screens/tab_reserves_down.gif',1);"><img src="/screens/tab_reserves_down.gif" alt=" reserves " width="100" height="31" border="0" id="tab_reserves" /></a></td>
+		<td class="tab_cat"><a href="/search~" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_libcat','/screens/tab_libcat_over.gif','/screens/tab_libcat_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_libcat','/screens/tab_libcat_down.gif',1);"><img src="/screens/tab_libcat_down.gif" alt=" libcat " width="100" height="31" border="0" id="tab_libcat" /></a></td>
+		<td class="tab_reserve"><a href="/search~/e" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_reserves','/screens/tab_reserves_over.gif','/screens/tab_reserves_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_reserves','/screens/tab_reserves_down.gif',1);"><img src="/screens/tab_reserves.gif" alt=" reserves " width="100" height="31" border="0" id="tab_reserves" /></a></td>
 		<td class="tab_patrec"><a href="/patroninfo" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_mylib','/screens/tab_mylib_over.gif','/screens/tab_mylib_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_mylib','/screens/tab_mylib_down.gif',1);"><img src="/screens/tab_mylib.gif" alt=" mylib " width="100" height="31" border="0" id="tab_mylib" /></a></td>
 		<td class="tab_other"><a href="/search~/v" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_other','/screens/tab_other_over.gif','/screens/tab_other_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_other','/screens/tab_other_down.gif',1);"><img src="/screens/tab_other.gif" alt=" other " width="100" height="31" border="0" id="tab_other" /></a></td>
 		<td class="tab_help"><a href="/search~/k" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_help','/screens/tab_help_over.gif','/screens/tab_help_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_help','/screens/tab_help_down.gif',1);"><img src="/screens/tab_help.gif" alt=" help " width="100" height="31" border="0" id="tab_help" /></a></td>
@@ -153,13 +153,14 @@ function preload() {
 		<td><img src="/screens/shim.gif" alt="" width="1" height="31" border="0" /></td>
 	</tr>
 	<tr>
-		<td colspan="6" style="text-align: left; vertical-align: middle; white-space: nowrap; background-color: #333379;"
-		class="smaller_reversed_nodecoration"><img src="/screens/tab_bar_bar2.gif" alt="" width="1" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
+
+		<td bgcolor="#333379"><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
+		<td colspan="5" align="left" valign="middle" nowrap bgcolor="#333379" class="smaller_reversed_nodecoration"> | <a href="/search~/Y" class="smaller_reversed_nodecoration">Keyword</a> | <a href="/search~/t" class="smaller_reversed_nodecoration">Title</a> | <a href="/search~/a" class="smaller_reversed_nodecoration">Author</a> | <a href="/search~/q" class="smaller_reversed_nodecoration">Author &amp; Title</a> | <a href="/search~/s" class="smaller_reversed_nodecoration">Journal Title</a> | <a href="/search~/h" class="smaller_reversed_nodecoration">Subject</a> | <STRONG><a href="/search~/n" class="smaller_reversed_nodecoration">Number</a></STRONG>		</td>
+		<td bgcolor="#333379"><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
 	</tr>
 </table><br />
 <!-- END site/tab_bar.tt -->
-	
+
 
 </center>
 
@@ -179,43 +180,28 @@ function preload() {
 
 <!--{availlim}-->
 
-<!-- BEGIN site/srchhelp/e.tt for MERLIN, updated 14:42:04 08-Jan-2008 by hjp -->
+<!-- BEGIN site/srchhelp/i.tt for MERLIN, updated 14:42:04 08-Jan-2008 by hjp -->
 
-<h3>Reserves Search</h3>
-<form method="get" id="search" name="search" action="/search/r">
-<table width="100%">
-<tr>
-   <td width="200" align="right" nowrap="nowrap"><label for="label2"><strong>Course name:&nbsp;</strong> </label></td>
-   <td nowrap="nowrap" align="left">
-<input type="text" name="SEARCH" size="48" value="" alt="Search"><input type="hidden" name="scope" value="0">
+<h3>Music Number Search</h3>
+
+<p>Click in the box, type the number, and press ENTER: </p>
+
+<form METHOD="GET" action="">
+  <p><input TYPE="TEXT" NAME="SEARCH" MAXLENGTH="64" SIZE="48" alt="Search"> <input
+  TYPE="SUBMIT" VALUE="Search"> </p>
   <input type="hidden" name="searchscope" value="0">
-  <input name="cmdSubmit" type="Submit" value="Search" alt="Search">
-</td>
-</tr>
-<tr>
-<td colspan="2">Type as much of the course name as you want.  For example:<em> nurs; stat 190; biology </em><br><br>
-</td>
-</tr>
-</table>
-</form>
-<form method="get" id="search2" name="search2" action="/search/p">
-<table width="100%">
-<tr>
- <td width="200" align="right" nowrap="nowrap"><label for="label3"><strong>or Instructor's last&nbsp;name:&nbsp;</strong> </label></td>
-<td nowrap="nowrap" align="left">
-<input type="text" name="SEARCH" size="48" value="" alt="Search"> <input type="hidden" name="scope" value="0">
-<input name="cmdSubmit" type="Submit" value="Search">
-</td>
-</tr>
-<input type="hidden" name="searchscope" value="0">
-<tr>
-<td colspan="2">Types as much of the INSTRUCTOR NAME as you want, last name first.  For example: <em>Ogden or odgen, linda</em><br><br>
-</td>
-</tr>
-</table>
 </form>
 
-<!-- END site/srchhelp/e.tt -->
+<p>Search here for music numbers.</p>
+
+<p><i>for example</i>
+
+<ul>
+  <li>13785-9bostonmusic</li>
+</ul>
+
+
+<!-- END site/srchhelp/i.tt -->
 
 
 
