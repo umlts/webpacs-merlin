@@ -5,7 +5,7 @@
   <!-- BEGIN srchhelps_s5.txt for MERLIN, updated 14:47:35 08-Jan-2008 by hjp -->
 
   <head>
-    <title>Missouri S&T - Reserves Search</title>
+    <title>Missouri S&T - Advanced Search</title>
 	<script language="JavaScript" type="text/javascript">
 <!--hide this script from non-javascript-enabled browsers
 
@@ -76,8 +76,8 @@ function preload() {
 </script>
   </head>
 
-  <body bgcolor="#FFFFFF" text="#000000" link="#333379" vlink="#333379" alink="#333379" onLoad="preload(); document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-
+<!--{advancedsearchbody}-->
+	
 <center>
 <!-- BEGIN site/toplogo.tt for MERLIN, updated 14:47:35 08-Jan-2008 by hjp -->
 <table border="0" cellpadding="0" cellspacing="0" width="740" ALIGN="center">
@@ -146,8 +146,8 @@ function preload() {
 		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
 	</tr>
 	<tr>
-		<td class="tab_cat"><a href="/search~S5" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_libcat','/screens/tab_libcat_over.gif','/screens/tab_libcat_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_libcat','/screens/tab_libcat_down.gif',1);"><img src="/screens/tab_libcat.gif" alt=" libcat " width="100" height="31" border="0" id="tab_libcat" /></a></td>
-		<td class="tab_reserve"><a href="/search~S5/e" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_reserves','/screens/tab_reserves_over.gif','/screens/tab_reserves_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_reserves','/screens/tab_reserves_down.gif',1);"><img src="/screens/tab_reserves_down.gif" alt=" reserves " width="100" height="31" border="0" id="tab_reserves" /></a></td>
+		<td class="tab_cat"><a href="/search~S5" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_libcat','/screens/tab_libcat_over.gif','/screens/tab_libcat_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_libcat','/screens/tab_libcat_down.gif',1);"><img src="/screens/tab_libcat_down.gif" alt=" libcat " width="100" height="31" border="0" id="tab_libcat" /></a></td>
+		<td class="tab_reserve"><a href="/search~S5/e" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_reserves','/screens/tab_reserves_over.gif','/screens/tab_reserves_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_reserves','/screens/tab_reserves_down.gif',1);"><img src="/screens/tab_reserves.gif" alt=" reserves " width="100" height="31" border="0" id="tab_reserves" /></a></td>
 		<td class="tab_patrec"><a href="/patroninfo" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_mylib','/screens/tab_mylib_over.gif','/screens/tab_mylib_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_mylib','/screens/tab_mylib_down.gif',1);"><img src="/screens/tab_mylib.gif" alt=" mylib " width="100" height="31" border="0" id="tab_mylib" /></a></td>
 		<td class="tab_other"><a href="/search~S5/v" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_other','/screens/tab_other_over.gif','/screens/tab_other_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_other','/screens/tab_other_down.gif',1);"><img src="/screens/tab_other.gif" alt=" other " width="100" height="31" border="0" id="tab_other" /></a></td>
 		<td class="tab_help"><a href="/search~S5/k" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_help','/screens/tab_help_over.gif','/screens/tab_help_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_help','/screens/tab_help_down.gif',1);"><img src="/screens/tab_help.gif" alt=" help " width="100" height="31" border="0" id="tab_help" /></a></td>
@@ -155,21 +155,22 @@ function preload() {
 		<td><img src="/screens/shim.gif" alt="" width="1" height="31" border="0" /></td>
 	</tr>
 	<tr>
-		<td colspan="6" style="text-align: left; vertical-align: middle; white-space: nowrap; background-color: #333379;"
-		class="smaller_reversed_nodecoration"><img src="/screens/tab_bar_bar2.gif" alt="" width="1" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
+
+		<td bgcolor="#333379"><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
+		<td colspan="5" align="left" valign="middle" nowrap bgcolor="#333379" class="smaller_reversed_nodecoration"> | <STRONG><a href="/search~S5/Y" class="smaller_reversed_nodecoration">Keyword</a></STRONG> | <a href="/search~S5/t" class="smaller_reversed_nodecoration">Title</a> | <a href="/search~S5/a" class="smaller_reversed_nodecoration">Author</a> | <a href="/search~S5/q" class="smaller_reversed_nodecoration">Author &amp; Title</a> | <a href="/search~S5/s" class="smaller_reversed_nodecoration">Journal Title</a> | <a href="/search~S5/h" class="smaller_reversed_nodecoration">Subject</a> | <a href="/search~S5/n" class="smaller_reversed_nodecoration">Number</a>		</td>
+		<td bgcolor="#333379"><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
 	</tr>
 </table><br />
 <!-- END site/tab_bar.tt -->
-	
+
 
 </center>
 
 <center>
 
 
-<table width="740" border="0" cellpadding="0" cellspacing="0"><tr><td align="left">
-
+	
+	
 
 <center>
 
@@ -181,51 +182,283 @@ function preload() {
 
 <!--{availlim}-->
 
-<!-- BEGIN site/srchhelp/e.tt for MERLIN, updated 14:47:35 08-Jan-2008 by hjp -->
+<!-- BEGIN site/srchhelp/X.tt for MERLIN, updated 14:47:35 08-Jan-2008 by hjp -->
 
-<h3>Reserves Search</h3>
-<form method="get" id="search" name="search" action="/search/r">
-<table width="100%">
+<!--Beginning main page content-->
+<!-- This table is purely cosmetic. It's only cell has a background color which is visible in the cellspacing gaps of the content table nested in that cell. -->
+<center>
+<!-- BEGIN TABLE #1: AVS MAIN -->
+<table id="avsMain" cellspacing="0" summary="text">
 <tr>
-   <td width="200" align="right" nowrap="nowrap"><label for="label2"><strong>Course name:&nbsp;</strong> </label></td>
-   <td nowrap="nowrap" align="left">
-<input type="text" name="SEARCH" size="48" value="" alt="Search"><input type="hidden" name="scope" value="0">
-  <input type="hidden" name="searchscope" value="5">
-  <input name="cmdSubmit" type="Submit" value="Search" alt="Search">
+<td class="pageNavArea">
+<!-- BEGIN TABLE #2: AVS SECTION -->
+<table class="avsSection" cellspacing="5" summary="text">
+<tr>
+<td class="pageMainArea" colspan="3">
+<span class="pageMainAreaHeader">Advanced Keyword Search</span>
+<!--{msg}-->
+<!--{spellcheck}-->
+<!-- BEGIN TABLE #3: AVS BORDER -->
+<table class="avsBorder" cellspacing="0" summary="text">
+<!-- HEADER ROW: LEFT -->
+<tr>
+<td class="leftcolHeader">
+Please fill in the boxes, select limits, and click Submit:
+</td>
+<!-- HEADER ROW: RIGHT  -->
+<td class="rightColHeader">Limit to:</td>
+</tr>
+<!-- END HEADER ROW -->
+<!-- BEGIN LEFT COLUMN: SEARCH TERMS -->
+<tr>
+<td class="searchTips" style="white-space: nowrap; vertical-align: top;">
+<!--{advancedsearchformbegin}-->
+<input type="hidden" name="startSearch" />
+<!-- BEGIN TABLE #4: PAGE MAIN AREA -->
+<table class="pageMainArea" style="text-align: center; vertical-align: top; padding: 2;" cellspacing="0" summary="text">
+<tr>
+<td class="pageMainAreaSubHeader" style="width: 10%;">
+Find:
+</td>
+<td>
+<input maxlength="75" size="25" name="searchText1" />
+</td>
+<td class="pageMainAreaSubHeader" width="1%">
+in
+</td>
+<td width="65%">
+<select name="fieldLimit1">
+<option value="" selected="selected">Any Field:</option>
+<option value="a:">Author:</option>
+<option value="t:">Title:</option>
+<option value="d:">Subject:</option>
+<option value="N:">Note:</option>
+<option value="c:">Table of Contents:</option>
+</select>
 </td>
 </tr>
 <tr>
-<td colspan="2">Type as much of the course name as you want.  For example:<em> nurs; stat 190; biology </em><br><br>
+<td>
+<select name="boolean1">
+<option value="+and+" selected="selected">and</option>
+<option value="+and+not+">and not</option>
+<option value="+or+">or</option>
+<option value="+near+">near</option>
+</select>
+</td>
+<td>
+<input maxlength="75" size="25" name="searchText2" />
+</td>
+<td class="pageMainAreaSubHeader" width="2%">in</td>
+<td>
+<select name="fieldLimit2">
+<option value="" selected="selected">Any Field:</option>
+<option value="a:">Author:</option>
+<option value="t:">Title:</option>
+<option value="d:">Subject:</option>
+<option value="N:">Note:</option>
+<option value="c:">Table of Contents:</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<select name="boolean2">
+<option value="+and+" selected="selected">and</option>
+<option value="+and+not+">and not</option>
+<option value="+or+">or</option>
+<option value="+near+">near</option>
+</select>
+</td>
+<td>
+<input maxlength="75" size="25" name="searchText3" />
+</td>
+<td class="pageMainAreaSubHeader" width="2%">in</td>
+<td>
+<select name="fieldLimit3">
+<option value="" selected="selected">Any Field:</option>
+<option value="a:">Author:</option>
+<option value="t:">Title:</option>
+<option value="d:">Subject:</option>
+<option value="N:">Note:</option>
+<option value="c:">Table of Contents:</option></select>
+</td>
+</tr>
+<tr>
+<td>
+<select name="boolean3">
+<option value="+and+" selected="selected">and</option>
+<option value="+and+not+">and not</option>
+<option value="+or+">or</option>
+<option value="+near+">near</option>
+</select>
+</td>
+<td>
+<input maxlength="75" size="25" name="searchText4" />
+</td>
+<td class="pageMainAreaSubHeader" width="2%">in</td>
+<td>
+<select name="fieldLimit4">
+<option value="" selected="selected">Any Field:</option>
+<option value="a:">Author:</option>
+<option value="t:">Title:</option>
+<option value="d:">Subject:</option>
+<option value="N:">Note:</option>
+<option value="c:">Table of Contents:</option>
+</select>
+<input type="hidden" name="endSearch" />
+</td>
+</tr>
+<tr>
+<td>
+<!--{advancedsubmit}-->
 </td>
 </tr>
 </table>
-</form>
-<form method="get" id="search2" name="search2" action="/search/p">
-<table width="100%">
-<tr>
- <td width="200" align="right" nowrap="nowrap"><label for="label3"><strong>or Instructor's last&nbsp;name:&nbsp;</strong> </label></td>
-<td nowrap="nowrap" align="left">
-<input type="text" name="SEARCH" size="48" value="" alt="Search"> <input type="hidden" name="scope" value="0">
-<input name="cmdSubmit" type="Submit" value="Search">
+<!-- END TABLE #4: PAGE MAIN AREA TABLE -->
+<br />
+</td>
+<!-- END LEFT COLUMN -->
+<!-- BEGIN RIGHT COLUMN: SORT & LIMIT -->
+<td class="searchTips">
+<input type="hidden" name="startLimit" />
+School:
+<!--{scope}-->
+<!--{branch}-->
+<!--{lang}-->
+<!--{DOCDATE}-->
+<!--{publish}-->
+<!--{onference}-->
+<!--{mattype}-->
+<!--{nosort}-->
+&nbsp; Sort by:
+<!--{sort}-->
+<br />
+<<<<<<< HEAD
+<p><strong>* Use ctrl/click to select more than one option in a list.</strong></p>
+=======
+>>>>>>> erm
+<!--<select name="SORT">
+<option value="D">Date</option>
+<option value="A">Title</option>
+<option value="R">Relevance</option>
+</select>-->
+
+</td>
+<!-- END RIGHT COLUMN -->
+</tr>
+</table>
+<!-- END TABLE #3: AVS BORDER -->
+<input type="hidden" name="endLimit" />
+<!--{advancedsearchformend}-->
 </td>
 </tr>
-<input type="hidden" name="searchscope" value="5">
+<!-- END TOP SECTION: SEARCH STRATEGY -->
+<!-- BEGIN BOTTOM SECTION: SEARCH TIPS -->
 <tr>
-<td colspan="2">Types as much of the INSTRUCTOR NAME as you want, last name first.  For example: <em>Ogden or odgen, linda</em><br><br>
+<td>
+<!-- BEGIN TABLE #5: AVS BORDER (2nd)-->
+<table class="avsBorder" width="100%" cellspacing="0" summary="text">
+<tr>
+<td class="table2Header" colspan="3">Search Tips</td>
+</tr>
+<tr class="searchTips">
+<td class="searchTipsCol1"> &nbsp;</td>
+<td class="searchTipsCol2"> &nbsp;</td>
+<td  class="searchTipsCol3"><div align="left"><em><strong>Examples:</strong></em></div></td>
+</tr>
+<tr>
+<td class="searchTipsCol1"><em><strong>Adjacency</strong></em></td>
+<td class="searchTipsCol2">Multiple words are searched together as one phrase.</td>
+<td class="searchTipsCol3">University of Missouri</td>
+</tr>
+<tr>
+<td class="searchTipsCol1"><em><strong>Truncation</strong></em></td>
+<td class="searchTipsCol2">
+Use * to substitute for 1-5 characters.<br />
+Use ** to substitute for any number of characters.<br />
+Use ? to substitute for a single character.
+</td>
+<td class="searchTipsCol3">
+Photograph*<br />
+huck** finn<br />
+wom?n
+</td>
+</tr>
+<tr>
+<td class="searchTipsCol1">
+<em><strong>Operators</strong></em>
+</td>
+<td class="searchTipsCol2">
+Use "AND" to search all words.<br />
+Use "OR" to search ANY single word.<br />
+Use "AND NOT" to exclude words.
+</td>
+<td class="searchTipsCol3">
+art and therapy<br />
+dog or canine<br />
+&nbsp;
+environmental policy and not U.S.
+</td>
+</tr>
+<tr>
+<td class="searchTipsCol1">&nbsp;</td>
+<td class="searchTipsCol2">
+Note that you can use these clauses in combination with
+selections from the operator pulldown menu (as indicated in
+brackets).
+</td>
+<td class="searchTipsCol3">
+History [And]<br />
+Naples or Napoli [And]<br />
+Borgia or Alexander
+</td>
+</tr>
+<tr  class="searchTips">
+<td class="searchTipsCol1"><em><strong>Proximity</strong></em></td>
+<td class="searchTipsCol2">
+Use "NEAR" to search words within 10 words of each other.<br />
+Use "WITHIN #" to search words within a specific number of
+words.
+</td>
+<td class="searchTipsCol3">
+birds near North America<br />
+&nbsp;
+missouri within 2 university
+</td>
+</tr>
+<tr class="searchTips">
+<td class="searchTipsCol1"><em><strong>Field limits</strong></em></td>
+<td class="searchTipsCol2">
+Use labels to search specific fields:<br />
+a: author t: title s: subject n: note
+</td>
+<td class="searchTipsCol3">
+a: zora and t:watching<br />
+s:hopi and s:religion
 </td>
 </tr>
 </table>
-</form>
+<!-- END TABLE #5: AVS BORDER -->
+<!--End of main page content-->
+</td>
+</tr>
+</table>
+<!-- END TABLE #2: AVS SECTION -->
+</td>
+</tr>
+</table>
+<!-- END TABLE #1: AVS MAIN -->
 
-<!-- END site/srchhelp/e.tt -->
+<!-- END site/srchhelp/X.tt -->
 
 
 
 <p class="ret2MainMenu"><a HREF="/search~S5">Return to Main Menu</a></p>
 
 
-</td></tr></table>
-
+	
+	
 
 </center>
 

@@ -2,10 +2,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <!-- BEGIN srchhelps_s4.txt for MERLIN, updated 14:43:13 08-Jan-2008 by hjp -->
+  <!-- BEGIN srchhelps_s5.txt for MERLIN, updated 14:47:35 08-Jan-2008 by hjp -->
 
   <head>
-    <title>UMKC-Law - Reserves Search</title>
+    <title>Missouri S&T - Numbers Search</title>
 	<script language="JavaScript" type="text/javascript">
 <!--hide this script from non-javascript-enabled browsers
 
@@ -76,10 +76,10 @@ function preload() {
 </script>
   </head>
 
-  <body bgcolor="#FFFFFF" text="#000000" link="#333379" vlink="#333379" alink="#333379" onLoad="preload(); document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
+  <body bgcolor="#FFFFFF" text="#000000" link="#333379" vlink="#333379" alink="#333379" onLoad="">
 
 <center>
-<!-- BEGIN site/toplogo.tt for MERLIN, updated 14:43:13 08-Jan-2008 by hjp -->
+<!-- BEGIN site/toplogo.tt for MERLIN, updated 14:47:35 08-Jan-2008 by hjp -->
 <table border="0" cellpadding="0" cellspacing="0" width="740" ALIGN="center">
 	<tr>
 		<td><img src="/screens/shim.gif" alt="" width="99" height="1" border="0" /></td>
@@ -101,7 +101,7 @@ function preload() {
 			<a href="http://mobius.umsystem.edu/search" class="smaller_reversed_nodecoration">MOBIUS</a> &gt;
 			<a href="/search~" class="smaller_reversed_nodecoration">All MERLIN</a>
 
-			&gt; <a href="/search~S4" class="smaller_reversed_nodecoration">UMKC-Law Library Catalog</a>
+			&gt; <a href="/search~S5" class="smaller_reversed_nodecoration">Missouri S&T Library Catalog</a>
 
 			</font></strong></td>
 		<td><img src="/screens/toplogo_gr_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
@@ -116,9 +116,9 @@ function preload() {
 	<tr>
 		<td><img src="/screens/toplogo_bl_fade.gif" alt="" width="251" height="18" border="0" /></td>
 		<td align="right" valign="middle" nowrap bgcolor="#333379" CLASS="smaller_reversed_nodecoration"><strong><font color="#ffffff" size="-1" face="Verdana, Arial, Helvetica, sans-serif">
-<a href="http://www.umkc.edu/" class="smaller_reversed_nodecoration">UMKC</a>
+<a href="http://www.mst.edu/" class="smaller_reversed_nodecoration">Missouri S&T</a>
  |
-<a href="http://www1.law.umkc.edu/library/" class="smaller_reversed_nodecoration">UMKC-Law Library</a>
+<a href="http://library.mst.edu/" class="smaller_reversed_nodecoration">Missouri S&T Library</a>
 			</font></strong></td>
 		<td><img src="/screens/toplogo_bl_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="1" height="18" border="0" /></td>
@@ -134,7 +134,7 @@ function preload() {
 <br />
 
 
-		<!-- BEGIN site/tab_bar.tt for MERLIN, updated 14:43:13 08-Jan-2008 by hjp -->
+		<!-- BEGIN site/tab_bar.tt for MERLIN, updated 14:47:35 08-Jan-2008 by hjp -->
 <table border="0" cellpadding="0" cellspacing="0" width="740" align="center" summary="tabs">
 	<tr>
 		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
@@ -146,22 +146,23 @@ function preload() {
 		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
 	</tr>
 	<tr>
-		<td class="tab_cat"><a href="/search~S4" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_libcat','/screens/tab_libcat_over.gif','/screens/tab_libcat_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_libcat','/screens/tab_libcat_down.gif',1);"><img src="/screens/tab_libcat.gif" alt=" libcat " width="100" height="31" border="0" id="tab_libcat" /></a></td>
-		<td class="tab_reserve"><a href="/search~S4/e" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_reserves','/screens/tab_reserves_over.gif','/screens/tab_reserves_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_reserves','/screens/tab_reserves_down.gif',1);"><img src="/screens/tab_reserves_down.gif" alt=" reserves " width="100" height="31" border="0" id="tab_reserves" /></a></td>
+		<td class="tab_cat"><a href="/search~S5" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_libcat','/screens/tab_libcat_over.gif','/screens/tab_libcat_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_libcat','/screens/tab_libcat_down.gif',1);"><img src="/screens/tab_libcat_down.gif" alt=" libcat " width="100" height="31" border="0" id="tab_libcat" /></a></td>
+		<td class="tab_reserve"><a href="/search~S5/e" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_reserves','/screens/tab_reserves_over.gif','/screens/tab_reserves_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_reserves','/screens/tab_reserves_down.gif',1);"><img src="/screens/tab_reserves.gif" alt=" reserves " width="100" height="31" border="0" id="tab_reserves" /></a></td>
 		<td class="tab_patrec"><a href="/patroninfo" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_mylib','/screens/tab_mylib_over.gif','/screens/tab_mylib_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_mylib','/screens/tab_mylib_down.gif',1);"><img src="/screens/tab_mylib.gif" alt=" mylib " width="100" height="31" border="0" id="tab_mylib" /></a></td>
-		<td class="tab_other"><a href="/search~S4/v" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_other','/screens/tab_other_over.gif','/screens/tab_other_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_other','/screens/tab_other_down.gif',1);"><img src="/screens/tab_other.gif" alt=" other " width="100" height="31" border="0" id="tab_other" /></a></td>
-		<td class="tab_help"><a href="/search~S4/k" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_help','/screens/tab_help_over.gif','/screens/tab_help_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_help','/screens/tab_help_down.gif',1);"><img src="/screens/tab_help.gif" alt=" help " width="100" height="31" border="0" id="tab_help" /></a></td>
+		<td class="tab_other"><a href="/search~S5/v" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_other','/screens/tab_other_over.gif','/screens/tab_other_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_other','/screens/tab_other_down.gif',1);"><img src="/screens/tab_other.gif" alt=" other " width="100" height="31" border="0" id="tab_other" /></a></td>
+		<td class="tab_help"><a href="/search~S5/k" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_help','/screens/tab_help_over.gif','/screens/tab_help_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_help','/screens/tab_help_down.gif',1);"><img src="/screens/tab_help.gif" alt=" help " width="100" height="31" border="0" id="tab_help" /></a></td>
 		<td><img src="/screens/tab_bar_bar1.gif" alt="" width="1" height="1" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="1" height="31" border="0" /></td>
 	</tr>
 	<tr>
-		<td colspan="6" style="text-align: left; vertical-align: middle; white-space: nowrap; background-color: #333379;"
-		class="smaller_reversed_nodecoration"><img src="/screens/tab_bar_bar2.gif" alt="" width="1" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
+
+		<td bgcolor="#333379"><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
+		<td colspan="5" align="left" valign="middle" nowrap bgcolor="#333379" class="smaller_reversed_nodecoration"> | <a href="/search~S5/Y" class="smaller_reversed_nodecoration">Keyword</a> | <a href="/search~S5/t" class="smaller_reversed_nodecoration">Title</a> | <a href="/search~S5/a" class="smaller_reversed_nodecoration">Author</a> | <a href="/search~S5/q" class="smaller_reversed_nodecoration">Author &amp; Title</a> | <a href="/search~S5/s" class="smaller_reversed_nodecoration">Journal Title</a> | <a href="/search~S5/h" class="smaller_reversed_nodecoration">Subject</a> | <a href="/search~S5/n" class="smaller_reversed_nodecoration">Number</a>		</td>
+		<td bgcolor="#333379"><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
 	</tr>
 </table><br />
 <!-- END site/tab_bar.tt -->
-	
+
 
 </center>
 
@@ -181,47 +182,35 @@ function preload() {
 
 <!--{availlim}-->
 
-<!-- BEGIN site/srchhelp/e.tt for MERLIN, updated 14:43:13 08-Jan-2008 by hjp -->
+<!-- BEGIN site/srchhelp/n.tt for MERLIN, updated 14:47:35 08-Jan-2008 by hjp -->
 
-<h3>Reserves Search</h3>
-<form method="get" id="search" name="search" action="/search/r">
-<table width="100%">
-<tr>
-   <td width="200" align="right" nowrap="nowrap"><label for="label2"><strong>Course name:&nbsp;</strong> </label></td>
-   <td nowrap="nowrap" align="left">
-<input type="text" name="SEARCH" size="48" value="" alt="Search"><input type="hidden" name="scope" value="0">
-  <input type="hidden" name="searchscope" value="4">
-  <input name="cmdSubmit" type="Submit" value="Search" alt="Search">
-</td>
-</tr>
-<tr>
-<td colspan="2">Type as much of the course name as you want.  For example:<em> nurs; stat 190; biology </em><br><br>
-</td>
-</tr>
-</table>
-</form>
-<form method="get" id="search2" name="search2" action="/search/p">
-<table width="100%">
-<tr>
- <td width="200" align="right" nowrap="nowrap"><label for="label3"><strong>or Instructor's last&nbsp;name:&nbsp;</strong> </label></td>
-<td nowrap="nowrap" align="left">
-<input type="text" name="SEARCH" size="48" value="" alt="Search"> <input type="hidden" name="scope" value="0">
-<input name="cmdSubmit" type="Submit" value="Search">
-</td>
-</tr>
-<input type="hidden" name="searchscope" value="4">
-<tr>
-<td colspan="2">Types as much of the INSTRUCTOR NAME as you want, last name first.  For example: <em>Ogden or odgen, linda</em><br><br>
-</td>
-</tr>
-</table>
-</form>
 
-<!-- END site/srchhelp/e.tt -->
+<h3>Number Search</h3>
+
+<menu>
+  <p><li><a HREF="/search~S5/c">Search for Library of Congress Call Number</a></li></p>
+  <p><li><a HREF="/search~S5/l">Search for National Library of Medicine Call Number</a> </li></p>
+<<<<<<< HEAD
+  <p><li><a HREF="/search~S5/f">Search for Local or Dewey Decimal Number</a> </li></p>
+  <p><li><a HREF="/search~S5/g">Search for Government Document Number</a> </li></p>
+  <p><li><a HREF="/search~S5/i">Search for ISBN, ISSN, or Technical Report</a> </li></p>
+  <p><li><a HREF="/search~S5/e">Search for Music Number</a> </li></p>
+  <p><li><a HREF="/search~S5/o">Search for OCLC Number</a> </li></p>
+=======
+  <p><li><a HREF="/search~S5/j">Search for Dewey Decimal Number</a> </li></p>
+  <p><li><a HREF="/search~S5/g">Search for Government Document Number</a> </li></p>
+  <p><li><a HREF="/search~S5/i">Search for ISBN, ISSN, Technical Report or Music Number</a> </li></p>
+  <p><li><a HREF="/search~S5/o">Search for OCLC Number</a> </li></p>
+  <p><li><a HREF="/search~S5/f">Search for other call number</a> </li></p>
+>>>>>>> mylists
+</menu>
+
+
+<!-- END site/srchhelp/n.tt -->
 
 
 
-<p class="ret2MainMenu"><a HREF="/search~S4">Return to Main Menu</a></p>
+<p class="ret2MainMenu"><a HREF="/search~S5">Return to Main Menu</a></p>
 
 
 </td></tr></table>
@@ -230,7 +219,7 @@ function preload() {
 </center>
 
 <center>
-<!-- BEGIN site/botlogo.tt for MERLIN, updated 14:43:13 08-Jan-2008 by hjp -->
+<!-- BEGIN site/botlogo.tt for MERLIN, updated 14:47:35 08-Jan-2008 by hjp -->
 <center>
 	<p><img src="/screens/bot_bar.gif" alt="" width="740" height="8" border="0" /></p>
 	<p><span class="bot_logo"><strong>MERLIN</strong> &middot; Missouri Education and Research Libraries Information Network<br />
