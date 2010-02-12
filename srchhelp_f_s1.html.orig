@@ -9,7 +9,7 @@
     <title>MU - Local or Dewey Call Number Search</title>
 =======
     <title>MU - Other Call Number Search</title>
->>>>>>> mylists
+>>>>>>> erm
 	<script language="JavaScript" type="text/javascript">
 <!--hide this script from non-javascript-enabled browsers
 
@@ -192,7 +192,7 @@ function preload() {
 <h3>Local or Dewey Call Number Search</h3>
 =======
 <h3>Other Call Number Search</h3>
->>>>>>> mylists
+>>>>>>> erm
 
 <p>Click in the box, type the call number, and press ENTER: </p>
 
@@ -226,7 +226,7 @@ function preload() {
 </ul>
 
 
->>>>>>> mylists
+>>>>>>> erm
 <!-- END site/srchhelp/f.tt -->
 
 

@@ -194,15 +194,15 @@ function preload() {
   <p><li><a HREF="/search~S1/f">Search for Local or Dewey Decimal Number</a> </li></p>
   <p><li><a HREF="/search~S1/g">Search for Government Document Number</a> </li></p>
   <p><li><a HREF="/search~S1/i">Search for ISBN, ISSN, or Technical Report</a> </li></p>
-  <p><li><a HREF="/search~S1/e">Search for Music Number</a> </li></p>
-  <p><li><a HREF="/search~S1/o">Search for OCLC Number</a> </li></p>
+<!--  <p><li><a HREF="/search~S1/e">Search for Music Number</a> </li></p> -->
+  <p><li><a HREF="/search~S1/o">Search for OCLC Number</a> </li></p> 
 =======
   <p><li><a HREF="/search~S1/j">Search for Dewey Decimal Number</a> </li></p>
   <p><li><a HREF="/search~S1/g">Search for Government Document Number</a> </li></p>
   <p><li><a HREF="/search~S1/i">Search for ISBN, ISSN, Technical Report or Music Number</a> </li></p>
   <p><li><a HREF="/search~S1/o">Search for OCLC Number</a> </li></p>
   <p><li><a HREF="/search~S1/f">Search for other call number</a> </li></p>
->>>>>>> mylists
+>>>>>>> erm
 </menu>
 
 

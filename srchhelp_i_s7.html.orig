@@ -9,7 +9,7 @@
     <title>UM SHS/WHMC - ISBN, ISSN, and Technical Report Number Search</title>
 =======
     <title>UM SHS/WHMC - ISBN, ISSN, Music, etc. Number Search</title>
->>>>>>> mylists
+>>>>>>> erm
 	<script language="JavaScript" type="text/javascript">
 <!--hide this script from non-javascript-enabled browsers
 
@@ -192,7 +192,7 @@ function preload() {
 <h3>ISBN, ISSN, and Technical Report Number Search</h3>
 =======
 <h3>ISBN, ISSN, Music, etc. Number Search</h3>
->>>>>>> mylists
+>>>>>>> erm
 
 <p>Click in the box, type the number, and press ENTER: </p>
 
@@ -206,7 +206,7 @@ function preload() {
 <p>Search here for standard numbers such as ISBN, ISSN, and technical report numbers.</p>
 =======
 <p>Search here for standard numbers such as ISBN, ISSN, technical report and music numbers.</p>
->>>>>>> mylists
+>>>>>>> erm
 
 <p><i>for example</i>
 
@@ -216,7 +216,7 @@ function preload() {
 <<<<<<< HEAD
 =======
   <li>13785-9bostonmusic</li>
->>>>>>> mylists
+>>>>>>> erm
   <li>jp1400439</li>
 </ul>
 
