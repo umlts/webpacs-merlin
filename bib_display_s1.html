@@ -75,7 +75,8 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 <!--{ratings}-->
 </div>
 <!--{xif}-->
-<!--{bibimage}-->
+<!--{bibimage}-->
+
 <!--<div class="bibHolds">-->
 <!-- bibHolds token goes here if used-->
 <!--</div>-->
@@ -130,9 +131,8 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 
 <!-- Script borrowed from http://library.wmitchell.edu -->
 <!-- googlebook search -->
+
 <script type="text/javascript">
-        // Configure these lines for your page
-        // Put in all the ISBNS and identifiers you know of to ensure a match
 
         
 
@@ -162,6 +162,8 @@ document.getElementById('smsfeatures').style.visibility='hidden';
          var api_url = cburl + "?jscmd=viewapi&bibkeys=" + isbnnumber;
         document.write(unescape("%3Cscript src=" + api_url +
           " type='text/javascript'%3E%3C/script%3E"));
+        
+        document.write("http://books.google.com/books?jscmd=viewapi&bibkeys=ISBN:" + isbnnumber + "&callback=addTheCover")
           
           }else {
           
@@ -183,5 +185,49 @@ document.getElementById('smsfeatures').style.visibility='hidden';
       
       <!-- end of googlebook search -->
 
-
+
+<div id="gbsthumbnail"></div>
+
+<script type="text/javascript">
+
+/* GBS Cover Script by Tim Spalding/LibraryThing */
+
+function addTheCover(booksInfo)
+{
+for (i in booksInfo)
+ {
+ var book = booksInfo[i];
+ if (book.thumbnail_url != undefined)
+  {
+  document.getElementById('gbsthumbnail').innerHTML =
+   '<img src="' + book.thumbnail_url + '"/>';
+  }
+ }
+}
+
+</script>
+
+<div id="gbsthumbnail"></div>
+
+<script type="text/javascript">
+
+/* GBS Cover Script by Tim Spalding/LibraryThing */
+
+function addTheCover(booksInfo)
+{
+for (i in booksInfo)
+ {
+ var book = booksInfo[i];
+ if (book.thumbnail_url != undefined)
+  {
+  document.getElementById('gbsthumbnail').innerHTML =
+   '<img src="' + book.thumbnail_url + '"/>';
+  }
+ }
+}
+
+</script>
+
+<script src="http://books.google.com/books?jscmd=viewapi&bibkeys=ISBN:0872879801&callback=addTheCover"></script>
+
 <!--{botlogo}-->
