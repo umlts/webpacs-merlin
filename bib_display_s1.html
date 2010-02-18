@@ -105,7 +105,7 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 <!--{recordinfo:rsyvnqwdmjbuiokflhg}-->
 
 <div id="googlebooks" align="center"> </div>
-
+
 <!--{ifhasresourcetable}-->
 <!--{resourcetable}-->
 <!--{xif}-->
@@ -129,105 +129,92 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 <div id='sms' style="visibility:hidden;display:none">
 </div>
 
-<!-- Script borrowed from http://library.wmitchell.edu -->
-<!-- googlebook search -->
+<div name="gbsLink"></div>
 
-<script type="text/javascript">
-
-        
-
-		var tr = document.getElementsByTagName('TR');
-		var isbnnumber = "";
-		for(i = 0; i < tr.length; i++) {
-			var x=tr[i].getElementsByTagName('td');
-			if (x.length == 2 && x[0].innerHTML == "ISBN") {
-				isbnnumber = x[1].innerHTML;
-				
-				isbnnumber = isbnnumber.replace(/[^\d]+/ig,"");
-
+<!-- Google Book Search viewability API script for bib record--> 
+<script type='text/javascript'> 
+// Find all the td elements
+var tdList = document.getElementsByTagName("td");
+// Make an array to store the ones with the "bibInfoLabel" class
+gbsList =  new Array();
+for (var td = 0; td < tdList.length; td++) {
+    // Get the class
+	classAttrib = tdList[td].getAttribute("class");
+	// Hack for IE
+	if(classAttrib == null) { classAttrib = tdList[td].getAttribute("className") }
+	// Store the td if it holds the label for the OCLC #
+	if((classAttrib == "bibInfoLabel") && (tdList[td].innerHTML=="OCLC/WorldCat Number")) {
+		gbsList.push(tdList[td]);
+	}
+}
+// Make an array for the numbers in the adjacent tds (probably only one, though)
+var bibnumbers = new Array();
+for (var bib = 0; bib < gbsList.length; bib++) {
+	// for IE
+	bookid = gbsList[bib].nextSibling.nextSibling;
+	// otherwise
+	if(bookid == null){
+		bookid = gbsList[bib].nextSibling
+	}
+	// Remove leading and trailing newlines from the numbers
+	bookid = bookid.innerHTML.replace(/^\s+|\s+$/g,"");
+	// Prefix the number with the label that GBS needs and store it
+	if(bookid.length > 0) {
+		bibnumbers[bib] = "OCLC:" + bookid;
+	}
+}
+ 
+// Construct the URL for the remote GBS script
+var bibapi_url ="http://books.google.com/books?jscmd=viewapi&bibkeys=" + bibnumbers.join(",");
+// Construct an inline javascript invocation of the remote GBS script
+var bibScriptLine = "%3Cscript src='" + bibapi_url + "' type='text/javascript'%3E%3C/script%3E";
+// Insert the line of script into this page so it returns the _GBSBookInfo object
+document.write(unescape(bibScriptLine));
+</script> 
+<script type='text/javascript'> 
+// Resuming the original script, add the link if the lookup succeeded
+// Just look up the first OCLC number, don't worry about any others
+var bibInfo = _GBSBookInfo[bibnumbers[0]];
+// HTML for images
+offsiteImg = '<img src="/screens/icon_offsite_blue.gif" alt="offsite" title="offsite" style="border: 0pt none ; vertical-align: middle;"> ';
+gbsPreviewImg = '<img src="/screens/gbs_preview_button1.gif" alt="Preview" title="Preview" style="border: 0pt none ; vertical-align: middle;"> ';
+if(bibInfo){
+	// Set text and link values depending on viewablity
+	if(bibInfo.preview == "full") { 
+		textGBS = ""; //"Read at Google Books"; 
+		linkGBS = bibInfo.preview_url;
+		linkImage = gbsPreviewImg;
+	}
+	if(bibInfo.preview == "partial") { 
+		textGBS = "(Limited preview)"; //"Preview at Google Books"; 
+		linkGBS = bibInfo.preview_url;
+		linkImage = gbsPreviewImg;
+	}
+	if(bibInfo.preview == "noview") { 
+		textGBS = "Information at Google Book Search";
+		linkGBS = bibInfo.info_url;
+		linkImage = offsiteImg;
+	}
+	// Rewrite the HTML inside the "gbsLink" <div> element
+	var divList = document.getElementsByTagName("div");
+    for (var div = 0; div < divList.length; div++) {
+	    // Get the class
+		nameAttrib = divList[div].getAttribute("name");
+		// Hack for IE
+		if(nameAttrib == null) { nameAttrib = divList[div].getAttribute("className") }
+		// Store the td if it holds the label for the OCLC #
+		if(nameAttrib == "gbsLink") {
+			if(bibInfo.thumbnail_url !== undefined) {
+			divList[div].innerHTML = '<img src="' + bibInfo.thumbnail_url + '&zoom=1"><br><a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + linkImage + textGBS + '</a>';
+			divList[div].style.display="";
+			} else {
+			divList[div].innerHTML = '<a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + linkImage + textGBS + '</a>';
+			divList[div].style.display="";
 			}
-		}
-		
-
-          if (isbnnumber.length > 0) {
-
-
-
-
-        var cburl = "http://books.google.com/books";
-    
-        // Retrieve the info for these bibkeys           
-
-       
-         var api_url = cburl + "?jscmd=viewapi&bibkeys=" + isbnnumber;
-        document.write(unescape("%3Cscript src=" + api_url +
-          " type='text/javascript'%3E%3C/script%3E"));
-        
-        document.write("http://books.google.com/books?jscmd=viewapi&bibkeys=ISBN:" + isbnnumber + "&callback=addTheCover")
-          
-          }else {
-          
-          }
-      </script>
-
-           <script type="text/javascript">
-        var buttonImg =
-          'http://code.google.com/apis/books/images/gbs_preview_button1.gif';
-        for (isbn in _GBSBookInfo) {
-          var b = _GBSBookInfo[isbn];
-          if (b && (b.preview == "full" || b.preview == "partial")) {
-          
-            document.getElementById("googlebooks").innerHTML = "<a href='"+ b.preview_url + "'><img src='"+ buttonImg + "' style='border:0; margin:3px;'></a>";
-
-          }
-        }
-      </script>  
-      
-      <!-- end of googlebook search -->
-
-
-<div id="gbsthumbnail"></div>
-
-<script type="text/javascript">
-
-/* GBS Cover Script by Tim Spalding/LibraryThing */
-
-function addTheCover(booksInfo)
-{
-for (i in booksInfo)
- {
- var book = booksInfo[i];
- if (book.thumbnail_url != undefined)
-  {
-  document.getElementById('gbsthumbnail').innerHTML =
-   '<img src="' + book.thumbnail_url + '"/>';
-  }
- }
+		}	
+	}
 }
+</script> 
 
-</script>
-
-<div id="gbsthumbnail"></div>
-
-<script type="text/javascript">
-
-/* GBS Cover Script by Tim Spalding/LibraryThing */
-
-function addTheCover(booksInfo)
-{
-for (i in booksInfo)
- {
- var book = booksInfo[i];
- if (book.thumbnail_url != undefined)
-  {
-  document.getElementById('gbsthumbnail').innerHTML =
-   '<img src="' + book.thumbnail_url + '"/>';
-  }
- }
-}
-
-</script>
-
-<script src="http://books.google.com/books?jscmd=viewapi&bibkeys=ISBN:0872879801&callback=addTheCover"></script>
 
 <!--{botlogo}-->
