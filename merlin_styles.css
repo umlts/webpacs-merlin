@@ -120,18 +120,35 @@ h5 { font-size: 13px; color: #323279; }
           border-bottom:9px solid #333379;
       }
     #merlin_sub_tabs {
-      width:100%;
-      height:9px;
-      background:#333379;
-      color: white;
-      font-family: Verdana, Arial, Helvetica, sans-serif;
-      font-size: 11px;
-      font-weight: normal;
-      text-decoration: none;
+	  background-color:#333379;
+	  width:100%;
       }
-    #merlin_sub_tabs span {
-      padding:0 0 0 80px;
+      
+    #merlin_sub_tabs a:link {
+	  color:#ffffff;
+	  text-decoration:none;
       }
+      
+    #merlin_sub_tabs v:link {
+	  color:#ffffff;
+	  text-decoration:none;
+      }
+
+    #merlin_sub_tabs a:visited {
+	  color:#ffffff;
+	  text-decoration:none;
+      }      
+
+    #merlin_sub_tabs a:hover {
+	  color:#ffffff;
+	  text-decoration:none;
+      }
+      
+    #merlin_sub_tabs a:active {
+	  color:#ffffff;
+	  text-decoration:none;
+      }      
+      
     #merlin_tabs ul {
           margin:0;
           padding:10px 10px 0 0;
@@ -384,7 +401,7 @@ OL { list-style-position: outside; list-style-type: decimal; }
 
 .smaller_reversed_2 { font-size: 16px; font-weight: bolder; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; }
 
-.smaller_reversed_nodecoration { font-size: 11px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; }
+.smaller_reversed_nodecoration { font-size: 11px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none;}
 
 a.smaller_reversed_nodecoration:ACTIVE, a.smaller_reversed_nodecoration:HOVER { text-decoration: underline; color: #ffff00 }
 

@@ -135,32 +135,27 @@ function preload() {
 
 
 		<!-- BEGIN site/tab_bar.tt for MERLIN, updated 14:42:51 08-Jan-2008 by hjp -->
-<table border="0" cellpadding="0" cellspacing="0" width="740" align="center" summary="tabs">
-	<tr>
-		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="240" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
-	</tr>
-	<tr>
-		<td class="tab_cat"><a href="/search~S3" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_libcat','/screens/tab_libcat_over.gif','/screens/tab_libcat_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_libcat','/screens/tab_libcat_down.gif',1);"><img src="/screens/tab_libcat_down.gif" alt=" libcat " width="100" height="31" border="0" id="tab_libcat" /></a></td>
-		<td class="tab_reserve"><a href="/search~S3/e" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_reserves','/screens/tab_reserves_over.gif','/screens/tab_reserves_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_reserves','/screens/tab_reserves_down.gif',1);"><img src="/screens/tab_reserves.gif" alt=" reserves " width="100" height="31" border="0" id="tab_reserves" /></a></td>
-		<td class="tab_patrec"><a href="/patroninfo" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_mylib','/screens/tab_mylib_over.gif','/screens/tab_mylib_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_mylib','/screens/tab_mylib_down.gif',1);"><img src="/screens/tab_mylib.gif" alt=" mylib " width="100" height="31" border="0" id="tab_mylib" /></a></td>
-		<td class="tab_other"><a href="/search~S3/v" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_other','/screens/tab_other_over.gif','/screens/tab_other_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_other','/screens/tab_other_down.gif',1);"><img src="/screens/tab_other.gif" alt=" other " width="100" height="31" border="0" id="tab_other" /></a></td>
-		<td class="tab_help"><a href="/search~S3/k" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_help','/screens/tab_help_over.gif','/screens/tab_help_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_help','/screens/tab_help_down.gif',1);"><img src="/screens/tab_help.gif" alt=" help " width="100" height="31" border="0" id="tab_help" /></a></td>
-		<td><img src="/screens/tab_bar_bar1.gif" alt="" width="1" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="1" height="31" border="0" /></td>
-	</tr>
-	<tr>
+<div id="merlin_tabs_wrapper">
+	<div id="merlin_tabs" style="border-bottom:0px;">
+		<ul>
+			<li id="current"><a href="/search~S3"><span>Library<br />Catalog</span></a></li>
+			<li><a href="/search~S3/e"><span>Course<br />Reserves</span></a></li>
 
-		<td bgcolor="#333379"><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
-		<td colspan="5" align="left" valign="middle" nowrap bgcolor="#333379" class="smaller_reversed_nodecoration"> | <a href="/search~S3/Y" class="smaller_reversed_nodecoration">Keyword</a> | <a href="/search~S3/t" class="smaller_reversed_nodecoration">Title</a> | <STRONG><a href="/search~S3/a" class="smaller_reversed_nodecoration">Author</a></STRONG> | <a href="/search~S3/q" class="smaller_reversed_nodecoration">Author &amp; Title</a> | <a href="/search~S3/s" class="smaller_reversed_nodecoration">Journal Title</a> | <a href="/search~S3/h" class="smaller_reversed_nodecoration">Subject</a> | <a href="/search~S3/n" class="smaller_reversed_nodecoration">Number</a>		</td>
-		<td bgcolor="#333379"><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
-	</tr>
-</table><br />
+			<li><a href="/patroninfo"><span>My Library<br />Account</span></a></li>
+			<li><a href="/search~S3/v"><span>Other<br />Libraries</span></a></li>
+
+			
+			<li><a href="/search~S3/y"><span>Articles &amp;<br />Databases</span></a></li>
+			<li><a href="http://pc8ga3qq6a.search.serialssolutions.com/"><span>Online<br />Journals</span></a></li>
+
+			
+
+			<li><a href="/search~S3/k"><span>?<br />Help</span></a></li>
+		</ul>
+	</div>
+	<div id="merlin_sub_tabs" class="smaller_reversed_nodecoration"> | <a href="/search~S3/Y">Keyword</a> | <a href="/search~S3/t">Title</a> | <STRONG><a href="/search~S3/a">Author</a></STRONG> | <a href="/search~S3/q">Author &amp; Title</a> | <a href="/search~S3/s">Journal Title</a> | <a href="/search~S3/h">Subject</a> | <a href="/search~S3/n">Number</a></div>
+<br />
+</div>
 <!-- END site/tab_bar.tt -->
 
 
