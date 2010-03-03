@@ -199,10 +199,10 @@ function preload() {
 							
                             	<option value="m">
 <<<<<<< HEAD
-                                    Medical Subjects (MESH)
-=======
                                     Medical Subject (MeSH)
->>>>>>> newdropdown
+=======
+                                    Medical Subjects (MESH)
+>>>>>>> erm
                                 </option>
 							
                             	<option value="s">
@@ -218,25 +218,6 @@ function preload() {
                                 </option>
 							
 <<<<<<< HEAD
-                            	<option value="j">
-                                    Dewey Call Number
-                                </option>
-							
-                            	<option value="f">
-                                    Other Call Number
-                                </option>
-							
-                            	<option value="g">
-                                    Gov Doc Number
-                                </option>
-							
-                            	<option value="i">
-                                    ISN, Standard Number
-                                </option>
-							
-                            	<option value="o">
-                                    OCLC Number
-=======
                             	<option value="f">
                                     Local or Dewey Call Number
                                 </option>
@@ -257,10 +238,6 @@ function preload() {
                                     OCLC/WorldCat Number
                                 </option>
 				
-                            	<option value="v">
-                                    Genre/Form Term
-                                </option>
-				
                             	<option value="j">
                                     Database Name (UMKC)
                                 </option>				
@@ -271,7 +248,26 @@ function preload() {
 				
                             	<option value="h">
                                     Donor/Honoree (MU)
->>>>>>> newdropdown
+=======
+                            	<option value="j">
+                                    Dewey Call Number
+                                </option>
+							
+                            	<option value="f">
+                                    Other Call Number
+                                </option>
+							
+                            	<option value="g">
+                                    Gov Doc Number
+                                </option>
+							
+                            	<option value="i">
+                                    ISN, Standard Number
+                                </option>
+							
+                            	<option value="o">
+                                    OCLC Number
+>>>>>>> erm
                                 </option>
 							
                             </select> </td>

@@ -2,12 +2,25 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+<<<<<<< HEAD
   <!-- BEGIN opacmenu_s3.html for MERLIN, updated 15:20:39 31-Dec-2007 by hjp -->
 
   <head>
   	<meta name="description" content="The on-line public access catalog for the UMKC Libraries." />
   	<meta name="keywords" content="MERLIN Library Catalog, libraries, librarians, card catalog, catalog, MERLIN, online catalog, mobius, umkc" />
     <title>UMKC Libraries Catalog</title>
+=======
+  <!-- BEGIN opacmenu_s3.html for MERLIN, updated 17:09:28 23-Jun-2009 by hjp -->
+
+  <head>
+<link rel="stylesheet" type="text/css" href="/scripts/ProStyles.css" />
+<link rel="stylesheet" type="text/css" href="/screens/merlin_styles.css" />
+<script language="JavaScript" type="text/javascript" src="/scripts/common.js"></script>
+  	<meta name="description" content="The on-line public access catalog for the UMKC Libraries." />
+  	<meta name="keywords" content="MERLIN Library Catalog, libraries, librarians, card catalog, catalog, MERLIN, online catalog, mobius, umkc" />
+    <title>UMKC Libraries Catalog</title>
+
+>>>>>>> erm
 	<script language="JavaScript" type="text/javascript">
 <!--hide this script from non-javascript-enabled browsers
 
@@ -80,11 +93,19 @@ function preload() {
   <body bgcolor="#FFFFFF" text="#000000" link="#333379" vlink="#333379" alink="#333379" onLoad="preload(); document.SearchForm.searcharg.focus(); document.SearchForm.searcharg.select();">
     
 <center>
+<<<<<<< HEAD
 <!-- BEGIN site/toplogo.tt for MERLIN, updated 15:20:39 31-Dec-2007 by hjp -->
+=======
+<!-- BEGIN site/toplogo.tt for MERLIN, updated 17:09:28 23-Jun-2009 by hjp -->
+>>>>>>> erm
 <table border="0" cellpadding="0" cellspacing="0" width="740" ALIGN="center">
 	<tr>
 		<td><img src="/screens/shim.gif" alt="" width="99" height="1" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="251" height="1" border="0" /></td>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 		<td><img src="/screens/shim.gif" alt="" width="387" height="1" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="3" height="1" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
@@ -94,6 +115,10 @@ function preload() {
 		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
 	</tr>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 	<!-- begin GREEN bar -->
 	<tr>
 		<td><img src="/screens/toplogo_gr_fade.gif" alt="" width="251" height="18" border="0" /></td>
@@ -110,6 +135,10 @@ function preload() {
 	</tr>
 	<!-- end GREEN bar -->
 	<tr>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
 	</tr>
@@ -119,6 +148,10 @@ function preload() {
 		<td align="right" valign="middle" nowrap bgcolor="#333379" CLASS="smaller_reversed_nodecoration"><strong><font color="#ffffff" size="-1" face="Verdana, Arial, Helvetica, sans-serif">
 <a href="http://www.umkc.edu/" class="smaller_reversed_nodecoration">UMKC</a>
  |
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 <a href="http://www.umkc.edu/lib/" class="smaller_reversed_nodecoration">UMKC Libraries</a>
 			</font></strong></td>
 		<td><img src="/screens/toplogo_bl_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
@@ -128,11 +161,16 @@ function preload() {
 	<tr>
 		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 	</tr>
 </table>
 
 <!-- END site/toplogo.tt -->
 <br />
+<<<<<<< HEAD
 <!-- BEGIN site/tab_bar.tt for MERLIN, updated 15:20:39 31-Dec-2007 by hjp -->
 <table border="0" cellpadding="0" cellspacing="0" width="740" align="center" summary="tabs">
 	<tr>
@@ -169,6 +207,42 @@ function preload() {
 </center>
 
 <!-- BEGIN site/quicksearch.tt for MERLIN, updated 15:20:39 31-Dec-2007 by hjp -->
+=======
+<!-- BEGIN site/tab_bar.tt for MERLIN, updated 17:09:28 23-Jun-2009 by hjp -->
+<div id="merlin_tabs_wrapper">
+	<div id="merlin_tabs">
+		<ul>
+			<li id="current"><a href="/search~S3"><span>Library<br />Catalog</span></a></li>
+			<li><a href="/search~S3/e"><span>Course<br />Reserves</span></a></li>
+
+			<li><a href="/patroninfo"><span>My Library<br />Account</span></a></li>
+			<li><a href="/search~S3/v"><span>Other<br />Libraries</span></a></li>
+
+			
+			<li><a href="/search~S3/j"><span>Articles &amp;<br />Databases</span></a></li>
+			<li><a href="http://pc8ga3qq6a.search.serialssolutions.com/"><span>Online<br />Journals</span></a></li>
+
+			
+
+			<li><a href="/search~S3/k"><span>?<br />Help</span></a></li>
+		</ul>
+	</div>
+	<div id="merlin_sub_tabs"></div>
+<br />
+</div>
+
+<!-- END site/tab_bar.tt -->
+
+<div id="merlin_content_wrapper">
+
+<center>
+
+
+
+</center>
+
+<!-- BEGIN site/quicksearch.tt for MERLIN, updated 17:09:28 23-Jun-2009 by hjp -->
+>>>>>>> erm
 
 
 <center>
@@ -179,6 +253,10 @@ function preload() {
             <td>
         
                 <form class="form" name="SearchForm" target="_parent" action="/search~S3/Y" method="get" id="SearchForm">
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
                     <table border="0" cellspacing="0" cellpadding="2" width="740" summary="text">
                         <tr>
                             <td nowrap="nowrap"><select name="searchtype">
@@ -192,6 +270,10 @@ function preload() {
                                 </option>
 							
                             	<option value="a">
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
                                     Author
                                 </option>
 							
@@ -204,12 +286,16 @@ function preload() {
                                     Medical Subject (MeSH)
 =======
                                     Medical Subjects (MESH)
->>>>>>> mylists
+>>>>>>> erm
                                 </option>
 							
                             	<option value="s">
                                     Journal, Magazine, Newspaper Title
                                 </option>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 							
                             	<option value="c">
                                     LC Call Number
@@ -254,6 +340,7 @@ function preload() {
                                 </option>
 							
                             	<option value="f">
+
                                     Other Call Number
                                 </option>
 							
@@ -268,8 +355,17 @@ function preload() {
                             	<option value="o">
                                     OCLC Number
                                 </option>
+
+				
+				<option value="y"> Database Name
+				</option>
+				
+				<option value="x"> Database Subject
+				</option>
+
+
 							
->>>>>>> mylists
+>>>>>>> erm
                             </select> </td>
 
                             <td nowrap="nowrap"><input type="TEXT" name="searcharg" maxlength="75" size="25" style="width: 250px;" /> <input type="Hidden"
@@ -288,6 +384,10 @@ function preload() {
                             	<option value="2">
                                     MU-Law
                                 </option>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 							
                             	<option value="3" selected="selected">
                                     UMKC
@@ -300,6 +400,10 @@ function preload() {
                             	<option value="5">
                                     Missouri S&T
                                 </option>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 							
                             	<option value="6">
                                     UMSL
@@ -313,6 +417,10 @@ function preload() {
                             </select> </td>
 
                             <td nowrap="nowrap"><input name="Submit" type="Submit" value="Search" /> </td>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
                         </tr>
                     </table>
                 </form>
@@ -322,9 +430,15 @@ function preload() {
 </center>
 <br />
 <!-- END site/quicksearch.tt -->
+<<<<<<< HEAD
 <!-- BEGIN site/guided_searches.tt for MERLIN, updated 15:20:39 31-Dec-2007 by hjp -->
 
 <table width="740" border="0" align="center" cellpadding="0" cellspacing="5" summary="text">
+=======
+
+<table width="740" border="0" align="center" cellpadding="0" cellspacing="5" summary="text">
+
+>>>>>>> erm
 	<tr>
 		<td colspan="3" align="center">
 			<table width="740" border="0" cellpadding="0" cellspacing="0" summary="text">
@@ -334,6 +448,10 @@ function preload() {
 			        <td width="6" height="5"><img src="/screens/bc_ur.gif" alt="" width="6" height="5" border="0" /></td>
 			    </tr>
 			    <tr bgcolor="#DEDEE7">
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			        <td width="6"><img src="/screens/shim.gif" alt="" width="6" height="1" border="0" /></td>
 			        <td width="719" nowrap="nowrap" bgcolor="#DEDEE7">
 			            <div align="center">
@@ -342,6 +460,10 @@ function preload() {
 			            </div>
 			        </td>
 			        <td width="6"><img src="/screens/shim.gif" alt="" width="6" height="5" border="0" /></td>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			    </tr>
 			    <tr>
 			        <td width="6" height="5" align="right"><img src="/screens/bc_ll.gif" alt="" width="6" height="5" border="0" /></td>
@@ -351,6 +473,10 @@ function preload() {
 			</table>
 		</td>
 	</tr>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 	<tr>
 		<td>
 			<table width="244" border="0" cellpadding="0" cellspacing="0" summary="text">
@@ -360,6 +486,10 @@ function preload() {
 			        <td width="6" height="5"><img src="/screens/bc_ur.gif" alt="" width="6" height="5" border="0" /></td>
 			    </tr>
 			    <tr bgcolor="#DEDEE7">
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			        <td width="6"><img src="/screens/shim.gif" alt="" width="6" height="1" border="0" /></td>
 			        <td width="232" nowrap="nowrap" bgcolor="#DEDEE7">
 			            <div align="center">
@@ -368,6 +498,10 @@ function preload() {
 			            </div>
 			        </td>
 			        <td width="6"><img src="/screens/shim.gif" alt="" width="6" height="5" border="0" /></td>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			    </tr>
 			    <tr>
 			        <td width="6" height="5" align="right"><img src="/screens/bc_ll.gif" alt="" width="6" height="5" border="0" /></td>
@@ -377,6 +511,10 @@ function preload() {
 			</table>
 		</td>
 		<td>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			<table width="244" border="0" cellpadding="0" cellspacing="0" summary="text">
 			    <tr>
 			        <td width="6" height="5" align="right"><img src="/screens/bc_ul.gif" alt="" width="6" height="5" border="0" /></td>
@@ -386,6 +524,10 @@ function preload() {
 			    <tr bgcolor="#DEDEE7">
 			        <td width="6"><img src="/screens/shim.gif" alt="" width="6" height="1" border="0" /></td>
 			        <td width="232" nowrap="nowrap" bgcolor="#DEDEE7">
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			            <div align="center">
 			                <a class="index" href="/search~S3/t">Title</a><br />
 			                 <span class="index_def">books, journals, audiovisuals...</span>
@@ -394,6 +536,10 @@ function preload() {
 			        <td width="6"><img src="/screens/shim.gif" alt="" width="6" height="5" border="0" /></td>
 			    </tr>
 			    <tr>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			        <td width="6" height="5" align="right"><img src="/screens/bc_ll.gif" alt="" width="6" height="5" border="0" /></td>
 			        <td width="232" height="5" bgcolor="#DEDEE7"><img src="/screens/shim.gif" alt="" width="232" height="5" border="0" /></td>
 			        <td width="6" height="5"><img src="/screens/bc_lr.gif" alt="" width="6" height="5" border="0" /></td>
@@ -403,6 +549,10 @@ function preload() {
 		<td>
 			<table width="244" border="0" cellpadding="0" cellspacing="0" summary="text">
 			    <tr>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			        <td width="6" height="5" align="right"><img src="/screens/bc_ul.gif" alt="" width="6" height="5" border="0" /></td>
 			        <td width="232" height="5" bgcolor="#DEDEE7"><img src="/screens/shim.gif" alt="" width="232" height="5" border="0" /></td>
 			        <td width="6" height="5"><img src="/screens/bc_ur.gif" alt="" width="6" height="5" border="0" /></td>
@@ -412,6 +562,10 @@ function preload() {
 			        <td width="232" nowrap="nowrap" bgcolor="#DEDEE7">
 			            <div align="center">
 			                <a class="index" href="/search~S3/s">Journal Title</a><br />
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			                 <span class="index_def">journals, magazines, newspapers...</span>
 			            </div>
 			        </td>
@@ -420,6 +574,10 @@ function preload() {
 			    <tr>
 			        <td width="6" height="5" align="right"><img src="/screens/bc_ll.gif" alt="" width="6" height="5" border="0" /></td>
 			        <td width="232" height="5" bgcolor="#DEDEE7"><img src="/screens/shim.gif" alt="" width="232" height="5" border="0" /></td>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			        <td width="6" height="5"><img src="/screens/bc_lr.gif" alt="" width="6" height="5" border="0" /></td>
 			    </tr>
 			</table>
@@ -429,6 +587,10 @@ function preload() {
 		<td>
 			<table width="244" border="0" cellpadding="0" cellspacing="0" summary="text">
 			    <tr>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			        <td width="6" height="5" align="right"><img src="/screens/bc_ul.gif" alt="" width="6" height="5" border="0" /></td>
 			        <td width="232" height="5" bgcolor="#DEDEE7"><img src="/screens/shim.gif" alt="" width="232" height="5" border="0" /></td>
 			        <td width="6" height="5"><img src="/screens/bc_ur.gif" alt="" width="6" height="5" border="0" /></td>
@@ -438,6 +600,10 @@ function preload() {
 			        <td width="232" nowrap="nowrap" bgcolor="#DEDEE7">
 			            <div align="center">
 			                <a class="index" href="/search~S3/q">Author & Title</a><br />
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			                 <span class="index_def">combined search</span>
 			            </div>
 			        </td>
@@ -446,6 +612,10 @@ function preload() {
 			    <tr>
 			        <td width="6" height="5" align="right"><img src="/screens/bc_ll.gif" alt="" width="6" height="5" border="0" /></td>
 			        <td width="232" height="5" bgcolor="#DEDEE7"><img src="/screens/shim.gif" alt="" width="232" height="5" border="0" /></td>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			        <td width="6" height="5"><img src="/screens/bc_lr.gif" alt="" width="6" height="5" border="0" /></td>
 			    </tr>
 			</table>
@@ -455,6 +625,10 @@ function preload() {
 			    <tr>
 			        <td width="6" height="5" align="right"><img src="/screens/bc_ul.gif" alt="" width="6" height="5" border="0" /></td>
 			        <td width="232" height="5" bgcolor="#DEDEE7"><img src="/screens/shim.gif" alt="" width="232" height="5" border="0" /></td>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			        <td width="6" height="5"><img src="/screens/bc_ur.gif" alt="" width="6" height="5" border="0" /></td>
 			    </tr>
 			    <tr bgcolor="#DEDEE7">
@@ -463,6 +637,10 @@ function preload() {
 			            <div align="center">
 			                <a class="index" href="/search~S3/h">Subject</a><br />
 			                 <span class="index_def">Library of Congress Headings and MeSH</span>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			            </div>
 			        </td>
 			        <td width="6"><img src="/screens/shim.gif" alt="" width="6" height="5" border="0" /></td>
@@ -472,6 +650,10 @@ function preload() {
 			        <td width="232" height="5" bgcolor="#DEDEE7"><img src="/screens/shim.gif" alt="" width="232" height="5" border="0" /></td>
 			        <td width="6" height="5"><img src="/screens/bc_lr.gif" alt="" width="6" height="5" border="0" /></td>
 			    </tr>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			</table>
 		</td>
 		<td>
@@ -481,6 +663,10 @@ function preload() {
 			        <td width="232" height="5" bgcolor="#DEDEE7"><img src="/screens/shim.gif" alt="" width="232" height="5" border="0" /></td>
 			        <td width="6" height="5"><img src="/screens/bc_ur.gif" alt="" width="6" height="5" border="0" /></td>
 			    </tr>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 			    <tr bgcolor="#DEDEE7">
 			        <td width="6"><img src="/screens/shim.gif" alt="" width="6" height="1" border="0" /></td>
 			        <td width="232" nowrap="nowrap" bgcolor="#DEDEE7">
@@ -489,6 +675,9 @@ function preload() {
 			                 <span class="index_def">call numbers, ISSNs, OCLC numbers...</span>
 			            </div>
 			        </td>
+<<<<<<< HEAD
+=======
+
 			        <td width="6"><img src="/screens/shim.gif" alt="" width="6" height="5" border="0" /></td>
 			    </tr>
 			    <tr>
@@ -498,16 +687,69 @@ function preload() {
 			    </tr>
 			</table>
 		</td>
+
+	</tr>
+	<tr>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<table width="244" border="0" cellpadding="0" cellspacing="0" summary="text">
+			    <tr>
+			        <td width="6" height="5" align="right"><img src="/screens/bc_ul.gif" alt="" width="6" height="5" border="0" /></td>
+
+			        <td width="232" height="5" bgcolor="#DEDEE7"><img src="/screens/shim.gif" alt="" width="232" height="5" border="0" /></td>
+			        <td width="6" height="5"><img src="/screens/bc_ur.gif" alt="" width="6" height="5" border="0" /></td>
+			    </tr>
+			    <tr bgcolor="#DEDEE7">
+			        <td width="6"><img src="/screens/shim.gif" alt="" width="6" height="1" border="0" /></td>
+			        <td width="232" nowrap="nowrap" bgcolor="#DEDEE7">
+			            <div align="center">
+			                <a class="index" href="/search~S3/y">Articles & Databases</a><br />
+
+			                 <span class="index_def">electronic databases and other resources</span>
+			            </div>
+			        </td>
+>>>>>>> erm
+			        <td width="6"><img src="/screens/shim.gif" alt="" width="6" height="5" border="0" /></td>
+			    </tr>
+			    <tr>
+			        <td width="6" height="5" align="right"><img src="/screens/bc_ll.gif" alt="" width="6" height="5" border="0" /></td>
+			        <td width="232" height="5" bgcolor="#DEDEE7"><img src="/screens/shim.gif" alt="" width="232" height="5" border="0" /></td>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
+			        <td width="6" height="5"><img src="/screens/bc_lr.gif" alt="" width="6" height="5" border="0" /></td>
+			    </tr>
+			</table>
+		</td>
+<<<<<<< HEAD
 	</tr>
 </table>
 
 <!-- END site/guided_searches.tt -->
 <!-- BEGIN site/botlogo.tt for MERLIN, updated 15:20:39 31-Dec-2007 by hjp -->
+=======
+		<td>
+			&nbsp;
+		</td>
+	</tr>
+</table>
+
+</div>
+
+<!-- BEGIN site/botlogo.tt for MERLIN, updated 17:09:28 23-Jun-2009 by hjp -->
+>>>>>>> erm
 <center>
 	<p><img src="/screens/bot_bar.gif" alt="" width="740" height="8" border="0" /></p>
 	<p><span class="bot_logo"><strong>MERLIN</strong> &middot; Missouri Education and Research Libraries Information Network<br />
 	a MOBIUS Library Catalog</span></p>
 	<p>
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 	<span class="bot_logo"><strong>University of Missouri:</strong><br />
 	<a class="bot_logo" href="/search~S1">MU Libraries</a> |
 	<a class="bot_logo" href="/search~S2">MU-Law Libraries</a> |
@@ -515,6 +757,10 @@ function preload() {
 	<a class="bot_logo" href="/search~S4">UMKC-Law Library</a> |
 	<a class="bot_logo" href="/search~S5">Missouri S&amp;T Library</a> |
 	<a class="bot_logo" href="/search~S6">UMSL Libraries</a><br />
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 	<a class="bot_logo" href="/search~S7">State Historical Society &amp; Western Historical Manuscript Collection</a><br />
 	</span></p>
 	<p>&nbsp;</p>
@@ -523,4 +769,10 @@ function preload() {
 <!-- END site/botlogo.tt -->
 </center>
   </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+
+<!--this is customized <screens/opacmenu_s3.html>-->
+>>>>>>> erm

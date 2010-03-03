@@ -3,6 +3,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <<<<<<< HEAD
+  <!-- BEGIN srchhelps_s0.txt for MERLIN, updated 14:42:04 08-Jan-2008 by hjp -->
+
+  <head>
+    <title>ALL MERLIN - Dewey Call Number Search</title>
+=======
   <!-- BEGIN srchhelps_s3.txt for MERLIN, updated 15:27:26 04-Sep-2008 by hjp -->
 
   <head>
@@ -10,12 +15,7 @@
 <link rel="stylesheet" type="text/css" href="/screens/merlin_styles.css" />
 <script language="JavaScript" type="text/javascript" src="/scripts/common.js"></script>
     <title>UMKC - Articles & Databases</title>
-=======
-  <!-- BEGIN srchhelps_s0.txt for MERLIN, updated 14:42:04 08-Jan-2008 by hjp -->
-
-  <head>
-    <title>ALL MERLIN - Dewey Call Number Search</title>
->>>>>>> mylists
+>>>>>>> erm
 	<script language="JavaScript" type="text/javascript">
 <!--hide this script from non-javascript-enabled browsers
 
@@ -83,6 +83,15 @@ function preload() {
 }
 
 <<<<<<< HEAD
+// stop hiding -->
+</script>
+  </head>
+
+  <body bgcolor="#FFFFFF" text="#000000" link="#333379" vlink="#333379" alink="#333379" onLoad="preload(); document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
+
+<center>
+<!-- BEGIN site/toplogo.tt for MERLIN, updated 14:42:04 08-Jan-2008 by hjp -->
+=======
 function submitSubject() {
 window.location="/search/x?" + document.subjectSearch.bySubject.options[document .subjectSearch.bySubject.selectedIndex].value;
 return true;
@@ -96,25 +105,16 @@ return true;
 
 <center>
 <!-- BEGIN site/toplogo.tt for MERLIN, updated 15:27:26 04-Sep-2008 by hjp -->
-=======
-// stop hiding -->
-</script>
-  </head>
-
-  <body bgcolor="#FFFFFF" text="#000000" link="#333379" vlink="#333379" alink="#333379" onLoad="preload(); document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-
-<center>
-<!-- BEGIN site/toplogo.tt for MERLIN, updated 14:42:04 08-Jan-2008 by hjp -->
->>>>>>> mylists
+>>>>>>> erm
 <table border="0" cellpadding="0" cellspacing="0" width="740" ALIGN="center">
 	<tr>
 		<td><img src="/screens/shim.gif" alt="" width="99" height="1" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="251" height="1" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="387" height="1" border="0" /></td>
 <<<<<<< HEAD
-
 =======
->>>>>>> mylists
+
+>>>>>>> erm
 		<td><img src="/screens/shim.gif" alt="" width="3" height="1" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
 	</tr>
@@ -125,9 +125,9 @@ return true;
 	</tr>
 	<!-- begin GREEN bar -->
 <<<<<<< HEAD
-
 =======
->>>>>>> mylists
+
+>>>>>>> erm
 	<tr>
 		<td><img src="/screens/toplogo_gr_fade.gif" alt="" width="251" height="18" border="0" /></td>
 		<td align="right" valign="middle" nowrap bgcolor="#6BBC07" class="smaller_reversed_nodecoration">
@@ -136,10 +136,10 @@ return true;
 			<a href="/search~" class="smaller_reversed_nodecoration">All MERLIN</a>
 
 <<<<<<< HEAD
-			&gt; <a href="/search~S3" class="smaller_reversed_nodecoration">UMKC Libraries Catalog</a>
-=======
 			
->>>>>>> mylists
+=======
+			&gt; <a href="/search~S3" class="smaller_reversed_nodecoration">UMKC Libraries Catalog</a>
+>>>>>>> erm
 
 			</font></strong></td>
 		<td><img src="/screens/toplogo_gr_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
@@ -150,24 +150,24 @@ return true;
 		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
 <<<<<<< HEAD
-
 =======
->>>>>>> mylists
+
+>>>>>>> erm
 	</tr>
 	<!-- begin BLUE bar -->
 	<tr>
 		<td><img src="/screens/toplogo_bl_fade.gif" alt="" width="251" height="18" border="0" /></td>
 		<td align="right" valign="middle" nowrap bgcolor="#333379" CLASS="smaller_reversed_nodecoration"><strong><font color="#ffffff" size="-1" face="Verdana, Arial, Helvetica, sans-serif">
 <<<<<<< HEAD
+<a href="http://merlin.missouri.edu/" class="smaller_reversed_nodecoration">MERLIN Web Gateway</a>
+			</font></strong></td>
+=======
 <a href="http://www.umkc.edu/" class="smaller_reversed_nodecoration">UMKC</a>
  |
 <a href="http://www.umkc.edu/lib/" class="smaller_reversed_nodecoration">UMKC Libraries</a>
 			</font></strong></td>
 
-=======
-<a href="http://merlin.missouri.edu/" class="smaller_reversed_nodecoration">MERLIN Web Gateway</a>
-			</font></strong></td>
->>>>>>> mylists
+>>>>>>> erm
 		<td><img src="/screens/toplogo_bl_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="1" height="18" border="0" /></td>
 	</tr>
@@ -183,32 +183,6 @@ return true;
 
 
 <<<<<<< HEAD
-		<!-- BEGIN site/tab_bar.tt for MERLIN, updated 15:27:26 04-Sep-2008 by hjp -->
-<div id="merlin_tabs_wrapper">
-	<div id="merlin_tabs">
-		<ul>
-			<li><a href="/search~S3"><span>Library<br />Catalog</span></a></li>
-			<li><a href="/search~S3/e"><span>Course<br />Reserves</span></a></li>
-
-			<li><a href="/patroninfo"><span>My Library<br />Account</span></a></li>
-			<li><a href="/search~S3/v"><span>Other<br />Libraries</span></a></li>
-
-			
-			<li id="current"><a href="/search~S3/y"><span>Articles &amp;<br />Databases</span></a></li>
-			<li><a href="http://pc8ga3qq6a.search.serialssolutions.com/"><span>Online<br />Journals</span></a></li>
-
-			
-
-			<li><a href="/search~S3/k"><span>?<br />Help</span></a></li>
-		</ul>
-	</div>
-	<div id="merlin_sub_tabs"></div>
-<br />
-</div>
-
-<!-- END site/tab_bar.tt -->
-	
-=======
 		<!-- BEGIN site/tab_bar.tt for MERLIN, updated 14:42:04 08-Jan-2008 by hjp -->
 <table border="0" cellpadding="0" cellspacing="0" width="740" align="center" summary="tabs">
 	<tr>
@@ -238,7 +212,33 @@ return true;
 </table><br />
 <!-- END site/tab_bar.tt -->
 
->>>>>>> mylists
+=======
+		<!-- BEGIN site/tab_bar.tt for MERLIN, updated 15:27:26 04-Sep-2008 by hjp -->
+<div id="merlin_tabs_wrapper">
+	<div id="merlin_tabs">
+		<ul>
+			<li><a href="/search~S3"><span>Library<br />Catalog</span></a></li>
+			<li><a href="/search~S3/e"><span>Course<br />Reserves</span></a></li>
+
+			<li><a href="/patroninfo"><span>My Library<br />Account</span></a></li>
+			<li><a href="/search~S3/v"><span>Other<br />Libraries</span></a></li>
+
+			
+			<li id="current"><a href="/search~S3/y"><span>Articles &amp;<br />Databases</span></a></li>
+			<li><a href="http://pc8ga3qq6a.search.serialssolutions.com/"><span>Online<br />Journals</span></a></li>
+
+			
+
+			<li><a href="/search~S3/k"><span>?<br />Help</span></a></li>
+		</ul>
+	</div>
+	<div id="merlin_sub_tabs"></div>
+<br />
+</div>
+
+<!-- END site/tab_bar.tt -->
+	
+>>>>>>> erm
 
 </center>
 
@@ -251,6 +251,43 @@ return true;
 <center>
 
 <<<<<<< HEAD
+<!--{patron}-->
+
+<!--{logout}-->
+
+</center>
+
+<!--{availlim}-->
+
+<!-- BEGIN site/srchhelp/j.tt for MERLIN, updated 14:42:04 08-Jan-2008 by hjp -->
+
+<h3>Dewey Call Number Search</h3>
+
+<p>Click in the box, type the call number, and press ENTER: </p>
+
+<form METHOD="GET" action="">
+  <p><input TYPE="TEXT" NAME="SEARCH" MAXLENGTH="64" SIZE="48" alt="Search"> <input
+  TYPE="SUBMIT" VALUE="Search"> </p>
+  <input type="hidden" name="searchscope" value="0">
+</form>
+
+<p>Type as much of the call number as you know.</p>
+
+<p><i>for example</i>
+
+<ul>
+  <li>025 J826a</li>
+  <li>980.5 j826</li>
+  <li>353.9</li>
+</ul>
+
+
+<!-- END site/srchhelp/j.tt -->
+
+
+
+<p class="ret2MainMenu"><a HREF="/search~">Return to Main Menu</a></p>
+=======
 
 
 </center>
@@ -384,44 +421,7 @@ Browse databases by<strong> SUBJECT:</strong><br />
 
 
 <p class="ret2MainMenu"><a HREF="/search~S3">Return to Main Menu</a></p>
-=======
-<!--{patron}-->
-
-<!--{logout}-->
-
-</center>
-
-<!--{availlim}-->
-
-<!-- BEGIN site/srchhelp/j.tt for MERLIN, updated 14:42:04 08-Jan-2008 by hjp -->
-
-<h3>Dewey Call Number Search</h3>
-
-<p>Click in the box, type the call number, and press ENTER: </p>
-
-<form METHOD="GET" action="">
-  <p><input TYPE="TEXT" NAME="SEARCH" MAXLENGTH="64" SIZE="48" alt="Search"> <input
-  TYPE="SUBMIT" VALUE="Search"> </p>
-  <input type="hidden" name="searchscope" value="0">
-</form>
-
-<p>Type as much of the call number as you know.</p>
-
-<p><i>for example</i>
-
-<ul>
-  <li>025 J826a</li>
-  <li>980.5 j826</li>
-  <li>353.9</li>
-</ul>
-
-
-<!-- END site/srchhelp/j.tt -->
-
-
-
-<p class="ret2MainMenu"><a HREF="/search~">Return to Main Menu</a></p>
->>>>>>> mylists
+>>>>>>> erm
 
 
 </td></tr></table>
@@ -431,15 +431,15 @@ Browse databases by<strong> SUBJECT:</strong><br />
 
 <center>
 <<<<<<< HEAD
+<!-- BEGIN site/botlogo.tt for MERLIN, updated 14:42:04 08-Jan-2008 by hjp -->
+<center>
+	<p><img src="/screens/bot_bar.gif" alt="" width="740" height="8" border="0" /></p>
+=======
 <!-- BEGIN site/botlogo.tt for MERLIN, updated 15:27:26 04-Sep-2008 by hjp -->
 <center>
 	<p><img src="/screens/bot_bar.gif" alt="" width="740" height="8" border="0" /></p>
 
-=======
-<!-- BEGIN site/botlogo.tt for MERLIN, updated 14:42:04 08-Jan-2008 by hjp -->
-<center>
-	<p><img src="/screens/bot_bar.gif" alt="" width="740" height="8" border="0" /></p>
->>>>>>> mylists
+>>>>>>> erm
 	<p><span class="bot_logo"><strong>MERLIN</strong> &middot; Missouri Education and Research Libraries Information Network<br />
 	a MOBIUS Library Catalog</span></p>
 	<p>
@@ -451,9 +451,9 @@ Browse databases by<strong> SUBJECT:</strong><br />
 	<a class="bot_logo" href="/search~S5">Missouri S&amp;T Library</a> |
 	<a class="bot_logo" href="/search~S6">UMSL Libraries</a><br />
 <<<<<<< HEAD
-
 =======
->>>>>>> mylists
+
+>>>>>>> erm
 	<a class="bot_logo" href="/search~S7">State Historical Society &amp; Western Historical Manuscript Collection</a><br />
 	</span></p>
 	<p>&nbsp;</p>
@@ -464,9 +464,9 @@ Browse databases by<strong> SUBJECT:</strong><br />
 
   </body>
 <<<<<<< HEAD
+</html>
+=======
 
 </html>
 <!--this is customized <screens/srchhelp_y_s3.html>-->
-=======
-</html>
->>>>>>> mylists
+>>>>>>> erm

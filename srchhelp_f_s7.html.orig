@@ -9,7 +9,7 @@
     <title>UM SHS/WHMC - Local or Dewey Call Number Search</title>
 =======
     <title>UM SHS/WHMC - Other Call Number Search</title>
->>>>>>> mylists
+>>>>>>> erm
 	<script language="JavaScript" type="text/javascript">
 <!--hide this script from non-javascript-enabled browsers
 
@@ -192,7 +192,7 @@ function preload() {
 <h3>Local or Dewey Call Number Search</h3>
 =======
 <h3>Other Call Number Search</h3>
->>>>>>> mylists
+>>>>>>> erm
 
 <p>Click in the box, type the call number, and press ENTER: </p>
 
@@ -221,7 +221,7 @@ function preload() {
   <li>micf 012</li>
   <li>MV 95 e</li>
   <li>video no 125 </li>
->>>>>>> mylists
+>>>>>>> erm
 </ul>
 
 
