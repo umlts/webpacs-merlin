@@ -104,7 +104,7 @@ AVS_TAG=XYZ
 
 #   ERM: ELECTRONIC RESOURCES MANAGEMENT
 
-BIB_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx
+BIB_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx|Permitted:Vlu|Permitted:Vla|Permitted:Vlt|Permitted:Vls|Permitted:Vlo|
 
 BIB_LICENSE_FIELDS_BRIEF=<strong>Actions Allowed</strong>,Vlw|<strong>Restrictions</strong>,Vlx
 
