@@ -186,6 +186,12 @@ e|e|||Description||e|
 e|w|||Vendor||e|
 e|r|||Provider||e|
 e|d|||Database Subject||e|
+#
+l|u|||Authorized Users||e|
+l|a|||Authentication Method||e|
+l|t|||Terms of Use||e|
+l|s|||Reserves Restrictions||e|
+l|o|||ILL Restrictions||e|
 # end pubdef
 #
 # -----------------------------------------------------
