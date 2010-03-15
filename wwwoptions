@@ -104,7 +104,7 @@ AVS_TAG=XYZ
 
 #   ERM: ELECTRONIC RESOURCES MANAGEMENT
 
-BIB_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx|Permitted:Vlu|Permitted:Vla|Permitted:Vlt|Permitted:Vls|Permitted:Vlo|
+BIB_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx|
 
 BIB_LICENSE_FIELDS_BRIEF=<strong>Actions Allowed</strong>,Vlw|<strong>Restrictions</strong>,Vlx
 
@@ -122,7 +122,7 @@ RESOURCE_HOLDINGS_FIELDS=Title:Vbt|LIB HAS:Vch|:VcY
 
 RESOURCE_HOLDINGS_MAX=3
 
-RESOURCE_LICENSE_FIELDS=Permitted:Vlw|Restricted:VlxPermitted:Vlu|Permitted:Vla|Permitted:Vlt|Permitted:Vls|Permitted:Vlo|
+RESOURCE_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx|Permitted:Vlu|Permitted:Vla|Permitted:Vlt|Permitted:Vls|Permitted:Vlo|
 
 TABLEPARAM_BIB_LICENSE=width="100%" border="3" cellspacing="1"
 
@@ -213,7 +213,7 @@ XSTARTOVER=/search
 
 AUTHOR_TITLE_TAG=q
 
-DROP_DOWN=Xtadmsclfgeioxjh
+DROP_DOWN=Xdmtascljfgio
 
 FRAMEURL=0
 
@@ -221,7 +221,7 @@ FRAMEURL=0
 
 KEYWORD_COLOR=Y|ALL|RED
 
-MULT_LIMITS=t
+MULT_LIMITS=f
 
 NOSEARCH=nubz
 
@@ -432,7 +432,7 @@ TABLEPARAM_PATFUNC=BORDER=0 WIDTH="100%"
 
 # BIBLOC=
 
-BIB_TOC_HEADER=<div id="TOC_header">Table of Contents</div>
+BIB_TOC_HEADER=<STRONG>Table of Contents</STRONG>
 
 DISPLAY_856=3z
 
@@ -476,7 +476,7 @@ TABLEPARAM_BIB_ORDER=width="99%" border="0" cellspacing="1"
 
 TABLEPARAM_BIB_PAGER=width="99%" border="0" cellspacing="1"
 
-TABLEPARAM_BIB_TOC=width="80%" bgcolor="#FFFFFF"
+TABLEPARAM_BIB_TOC=width="95%" bgcolor="#FFFFFF"
 
 WEBPUBDEF=true
 
