@@ -122,7 +122,7 @@ RESOURCE_HOLDINGS_FIELDS=Title:Vbt|LIB HAS:Vch|:VcY
 
 RESOURCE_HOLDINGS_MAX=3
 
-RESOURCE_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx|Permitted:Vlu|Permitted:Vla|Permitted:Vlt|Permitted:Vls|Permitted:Vlo|
+RESOURCE_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx|Authorized Users:Vlu|Authentication Method:Vla|Terms of Use:Vlt|Reserves Restrictions:Vls|ILL Restrictions:Vlo|
 
 TABLEPARAM_BIB_LICENSE=width="100%" border="3" cellspacing="1"
 
