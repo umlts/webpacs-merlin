@@ -774,4 +774,12 @@ wbresourcelist */
 
 .msg {
   margin-top:1em;
-}  
+}
+
+#gbsLink {
+  text-align:center;
+}
+
+#gbsLink img {
+  margin-top:1em;
+}

@@ -66,20 +66,12 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 <!--{innreach}-->
 <br />
 </div>
+<div id="infoTable">
+
 <!--{recordinfo:atpexz}-->
 <div class="bibRecordLink">
 <!--{recordlink}-->
 </div>
-<!--{ifhaspatrate}-->
-<div class="rateLableWrapper">
-<!--{ratings}-->
-</div>
-<!--{xif}-->
-<!--{bibimage}-->
-
-<!--<div class="bibHolds">-->
-<!-- bibHolds token goes here if used-->
-<!--</div>-->
 <!--{linkeddocs}-->
 <!--{URLS}-->
 <!--{holdingslink}-->
@@ -100,11 +92,7 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 <!--{ifTOC}-->
 <!--{TOC}-->
 <!--{xif}-->
-<!-- III sample token setting:recordinfo:ercsndjbuwi -->
-<!--SWAN's setting:recordinfo:cnfvwsdmibuxzol -->
 <!--{recordinfo:rsyvnqwdmjbuiokflhg}-->
-
-<div id="googlebooks" align="center"> </div>
 
 <!--{ifhasresourcetable}-->
 <!--{resourcetable}-->
@@ -112,9 +100,35 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 <!--{patronreviews}-->
 <!--{patronreviewsfull}-->
 <!--{xmlframe}-->
-<!--{catedit}-->
+<!--{catedit}-->
+
+</div>
+
+<div id="sidebarContent">
+  
+<!--{ifhaspatrate}-->
+
+<div class="rateLableWrapper">
+
+<!--{ratings}-->
+
+</div>
+
+<!--{xif}-->
+
+<!--{bibimage}-->
+
+<!-- just a placeholder for the sms form -->
+<div id='sms' style="visibility:hidden;display:none">
+</div>
+
+<div id="gbsLink" name="gbsLink"></div>
+
+</div>
 <br />
-<br />
+<br />
+
+<div class="clear2"></div>
 <div class="bibPager">
 <!--{pager}-->
 <br />
@@ -125,11 +139,7 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 <!--{searchhistory}-->
 </div>
 
-<!-- just a placeholder for the sms form -->
-<div id='sms' style="visibility:hidden;display:none">
-</div>
 
-<div name="gbsLink"></div>
 
 <!-- Google Book Search viewability API script for bib record--> 
 <script type='text/javascript'> 
@@ -195,6 +205,7 @@ if(bibInfo){
 		linkGBS = bibInfo.info_url;
 		linkImage = offsiteImg;
 	}
+
 	// Rewrite the HTML inside the "gbsLink" <div> element
 	var divList = document.getElementsByTagName("div");
     for (var div = 0; div < divList.length; div++) {
@@ -205,14 +216,17 @@ if(bibInfo){
 		// Store the td if it holds the label for the OCLC #
 		if(nameAttrib == "gbsLink") {
 			if(bibInfo.thumbnail_url !== undefined) {
-			divList[div].innerHTML = '<img src="' + bibInfo.thumbnail_url + '&zoom=1"><br><a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + linkImage + textGBS + '</a>';
+			divList[div].innerHTML = '<img src="' + bibInfo.thumbnail_url + '&zoom=1"><br /><a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + linkImage + '<br />' + textGBS + '</a>';
 			divList[div].style.display="";
 			} else {
-			divList[div].innerHTML = '<a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + linkImage + textGBS + '</a>';
+			divList[div].innerHTML = '<a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + linkImage + + '<br />' + textGBS + '</a>';
 			divList[div].style.display="";
 			}
-		}	
+                } 
 	}
+} else {
+  document.getElementById('infoTable').style.width = '100%';
+  document.getElementById('sidebarContent').style.width = '0%';
 }
 </script> 
 
