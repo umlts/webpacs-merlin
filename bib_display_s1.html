@@ -191,19 +191,18 @@ gbsPreviewImg = '<img src="/screens/gbs_preview_button1.gif" alt="Preview" title
 if(bibInfo){
 	// Set text and link values depending on viewablity
 	if(bibInfo.preview == "full") { 
-		textGBS = ""; //"Read at Google Books"; 
+		textGBS = "Full text at"; //"Read at Google Books"; 
 		linkGBS = bibInfo.preview_url;
 		linkImage = gbsPreviewImg;
 	}
 	if(bibInfo.preview == "partial") { 
-		textGBS = "(Limited preview)"; //"Preview at Google Books"; 
+		textGBS = "Preview & search inside book at"; //"Preview at Google Books"; 
 		linkGBS = bibInfo.preview_url;
 		linkImage = gbsPreviewImg;
 	}
 	if(bibInfo.preview == "noview") { 
-		textGBS = "Information at Google Book Search";
-		linkGBS = bibInfo.info_url;
-		linkImage = offsiteImg;
+                document.getElementById('infoTable').style.width = '100%';
+                document.getElementById('sidebarContent').style.width = '0%';
 	}
 
 	// Rewrite the HTML inside the "gbsLink" <div> element
@@ -216,10 +215,10 @@ if(bibInfo){
 		// Store the td if it holds the label for the OCLC #
 		if(nameAttrib == "gbsLink") {
 			if(bibInfo.thumbnail_url !== undefined) {
-			divList[div].innerHTML = '<img src="' + bibInfo.thumbnail_url + '&zoom=1"><br /><a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + linkImage + '<br />' + textGBS + '</a>';
+			divList[div].innerHTML = '<img src="' + bibInfo.thumbnail_url + '&zoom=1"><br /><a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + textGBS + '<br />' + linkImage + '</a>';
 			divList[div].style.display="";
 			} else {
-			divList[div].innerHTML = '<a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + linkImage + + '<br />' + textGBS + '</a>';
+			divList[div].innerHTML = '<a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + textGBS + '<br />' + linkImage + '</a>';
 			divList[div].style.display="";
 			}
                 } 
