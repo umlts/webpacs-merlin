@@ -136,6 +136,28 @@ function preload() {
 
 		<!-- BEGIN site/tab_bar.tt for MERLIN, updated 15:42:51 08-Jan-2008 by hjp -->
 <<<<<<< HEAD
+<div id="merlin_tabs_wrapper">
+	<div id="merlin_tabs">
+		<ul>
+			<li><a href="/search~S3"><span>Library<br />Catalog</span></a></li>
+			<li><a href="/search~S3/e"><span>Course<br />Reserves</span></a></li>
+
+			<li><a href="/patroninfo"><span>My Library<br />Account</span></a></li>
+			<li id="current"><a href="/search~S3/v"><span>Other<br />Libraries</span></a></li>
+
+			
+			<li><a href="/search~S3/j"><span>Articles &amp;<br />Databases</span></a></li>
+			<li><a href="http://pc8ga3qq6a.search.serialssolutions.com/"><span>Online<br />Journals</span></a></li>
+
+			
+
+			<li><a href="/search~S3/k"><span>?<br />Help</span></a></li>
+		</ul>
+	</div>
+	<div id="merlin_sub_tabs"></div>
+<br />
+</div>
+=======
 <table border="0" cellpadding="0" cellspacing="0" width="740" align="center" summary="tabs">
 	<tr>
 		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
@@ -161,29 +183,7 @@ function preload() {
 		<td><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
 	</tr>
 </table><br />
-=======
-<div id="merlin_tabs_wrapper">
-	<div id="merlin_tabs">
-		<ul>
-			<li><a href="/search~S3"><span>Library<br />Catalog</span></a></li>
-			<li><a href="/search~S3/e"><span>Course<br />Reserves</span></a></li>
-
-			<li><a href="/patroninfo"><span>My Library<br />Account</span></a></li>
-			<li id="current"><a href="/search~S3/v"><span>Other<br />Libraries</span></a></li>
-
-			
-			<li><a href="/search~S3/j"><span>Articles &amp;<br />Databases</span></a></li>
-			<li><a href="http://pc8ga3qq6a.search.serialssolutions.com/"><span>Online<br />Journals</span></a></li>
-
-			
-
-			<li><a href="/search~S3/k"><span>?<br />Help</span></a></li>
-		</ul>
-	</div>
-	<div id="merlin_sub_tabs"></div>
-<br />
-</div>
->>>>>>> erm
+>>>>>>> googleapi
 <!-- END site/tab_bar.tt -->
 	
 
