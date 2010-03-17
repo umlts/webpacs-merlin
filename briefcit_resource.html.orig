@@ -12,8 +12,6 @@
 </td>
 </tr>
 <<<<<<< HEAD
-
-=======
 <tr>
 <td colspan="2">
 <!--{fieldspec:Vee}-->
@@ -24,10 +22,20 @@
 <!--{fieldspec:Vef}-->
 </td>
 </tr>
->>>>>>> newdropdown
 <tr>
 <td colspan="2">
 <!--{fieldspec:Vek}-->
+=======
+
+<tr>
+<td colspan="2">
+<p>
+<!--{fieldspec:Vek}-->
+</p>
+<p>
+<!--{fieldspec:Veh}-->
+</p>
+>>>>>>> erm
 </td>
 </tr>
 </table>
