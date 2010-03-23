@@ -791,4 +791,12 @@ wbresourcelist */
 
 .msg {
   margin-top:1em;
-}  
+}
+
+#offlineMessage p{
+  margin: 1em 2em;
+  font-size: medium;
+  text-align:center;
+}
+
+
