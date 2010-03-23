@@ -801,16 +801,22 @@ wbresourcelist */
 
 .msg {
   margin-top:1em;
-<<<<<<< HEAD
-}  
-=======
 }
 
+<<<<<<< HEAD
 #gbsLink {
   text-align:center;
 }
 
 #gbsLink img {
-  margin-top:1em;
+  margin-bottom:1em;
 }
->>>>>>> googleapi
+=======
+#offlineMessage p{
+  margin: 1em 2em;
+  font-size: medium;
+  text-align:center;
+}
+
+
+>>>>>>> downtime
