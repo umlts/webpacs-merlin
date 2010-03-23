@@ -120,18 +120,35 @@ h5 { font-size: 13px; color: #323279; }
           border-bottom:9px solid #333379;
       }
     #merlin_sub_tabs {
-      width:100%;
-      height:9px;
-      background:#333379;
-      color: white;
-      font-family: Verdana, Arial, Helvetica, sans-serif;
-      font-size: 11px;
-      font-weight: normal;
-      text-decoration: none;
+	  background-color:#333379;
+	  width:100%;
       }
-    #merlin_sub_tabs span {
-      padding:0 0 0 80px;
+      
+    #merlin_sub_tabs a:link {
+	  color:#ffffff;
+	  text-decoration:none;
       }
+      
+    #merlin_sub_tabs v:link {
+	  color:#ffffff;
+	  text-decoration:none;
+      }
+
+    #merlin_sub_tabs a:visited {
+	  color:#ffffff;
+	  text-decoration:none;
+      }      
+
+    #merlin_sub_tabs a:hover {
+	  color:#ffffff;
+	  text-decoration:none;
+      }
+      
+    #merlin_sub_tabs a:active {
+	  color:#ffffff;
+	  text-decoration:none;
+      }      
+      
     #merlin_tabs ul {
           margin:0;
           padding:10px 10px 0 0;
@@ -384,7 +401,7 @@ OL { list-style-position: outside; list-style-type: decimal; }
 
 .smaller_reversed_2 { font-size: 16px; font-weight: bolder; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; }
 
-.smaller_reversed_nodecoration { font-size: 11px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; }
+.smaller_reversed_nodecoration { font-size: 11px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none;}
 
 a.smaller_reversed_nodecoration:ACTIVE, a.smaller_reversed_nodecoration:HOVER { text-decoration: underline; color: #ffff00 }
 
@@ -609,10 +626,7 @@ patFuncFinesTotalLabel */
 TD.patFuncFinesEntryTitle { color: #000000; background-color: #dedee7; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-weight: normal;  }
 TD.patFuncFinesTotalAmt { font-weight: bold; }
 TH.patFuncHeaders { color: #ffffff; background-color: #333379; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 80%; }
-<<<<<<< HEAD
-=======
 .patFuncHeaders a { color:#ffffff; text-decoration:none; }
->>>>>>> mylists
 /* patFuncMark
 patFuncModifyPatInfo
 patFuncModifyPIN
@@ -661,7 +675,7 @@ TD.resourceInfoLabel { width: 15%; background-color: #dedee7; font-style: italic
 TABLE.resourceInfo {width: 100%;}
 TR.resourceBibEntry { color: #000000; background-color: #dedee7; text-align: left; }
 TR.resourceBibHeader { color: #ffffff; background-color: #333379; font-weight: bold; text-align: left; }
-TD.resourceInfoLabel { background-color: #dedee7; font-style: italic; text-align: center; vertical-align: top; width: 10%;}
+TD.resourceInfoLabel { background-color: #dedee7; font-style: italic; vertical-align: top; width: 10%; font-weight:bold;}
 TD.resourceLicenseEntry { color: #000000; background-color: #dedee7; text-align: left; }
 TR.resourceLicenseHeader { color: #ffffff; background-color: #333379; font-weight: bold; text-align: left;}
 
@@ -761,9 +775,6 @@ wbresourcelist */
 
 #sms {font-size:70%}
 
-<<<<<<< HEAD
-
-=======
 #mylist_btn1 {
   background-color:#d4d0c8;
   padding: 2px 12px;
@@ -780,5 +791,15 @@ wbresourcelist */
 
 .msg {
   margin-top:1em;
-}  
->>>>>>> mylists
+}
+
+#offlineMessage p{
+  margin: 1em 2em;
+  font-size: medium;
+  text-align:center;
+}
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> downtime

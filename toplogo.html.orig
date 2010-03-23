@@ -2,10 +2,6 @@
 
 <!-- Script for sending call nubmers via SMS -->
 <script type="text/javascript" src='/screens/sms.js'> </script>
-<<<<<<< HEAD
-<script type="text/javascript" src='/screens/detection.js'> </script>
-=======
->>>>>>> erm
 
 <table border="0" cellpadding="0" cellspacing="0" width="740" ALIGN="center">
 	<tr>
@@ -54,5 +50,12 @@
 		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
 	</tr>
 </table>
+
+<<<<<<< HEAD
+<div id="offlineMessage"><p>The library catalog will be offline for maintenance on Tuesday, March 30, beginning at 9:00 AM.  During that time, you may search the <a href="http://mobius.umsystem.ed">MOBIUS catalog</a> to find library items.</p></div>  
+=======
+<div id="offlineMessage"><p>The library catalog will be offline for maintenance on Tuesday, March 30, beginning at 9:00 AM.</p></div>  
+
+>>>>>>> downtime
 
 <!-- END site/toplogo.tt -->
