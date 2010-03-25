@@ -311,7 +311,7 @@ ICON_MYLISTS_REQUEST=<img src="/screens/but_requestmylists.gif" border="0">
 
 ICON_MYLISTS_SAVE=<img src="/screens/but_savemylists.gif" border="0">
 
-ICON_MYLISTS_SAVE_TO_LIST=<span id="mylists">Create and/or Save to My Lists</span>
+ICON_MYLISTS_SAVE_TO_LIST=<span id="mylists">Create/Save to My Lists</span>
 
 MY_LISTS=t
 
