@@ -1,4 +1,4 @@
-<!-- BEGIN site/toplogo.tt for MERLIN, updated 00:06:52 12-Dec-2007 by hjp -->
+<!-- BEGIN site/toplogo.tt for MERLIN, updated 00:06:49 12-Dec-2007 by hjp -->
 
 <!-- Script for sending call nubmers via SMS -->
 <script type="text/javascript" src='/screens/sms.js'> </script>
@@ -24,7 +24,7 @@
 			<a href="http://mobius.umsystem.edu/search" class="smaller_reversed_nodecoration">MOBIUS</a> &gt;
 			<a href="/search~" class="smaller_reversed_nodecoration">All MERLIN</a>
 
-			&gt; <a href="/search~S4" class="smaller_reversed_nodecoration">UMKC-Law Library Catalog</a>
+			&gt; <a href="/search~S6" class="smaller_reversed_nodecoration">UMSL Libraries Catalog</a>
 
 			</font></strong></td>
 		<td><img src="/screens/toplogo_gr_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
@@ -39,9 +39,9 @@
 	<tr>
 		<td><img src="/screens/toplogo_bl_fade.gif" alt="" width="251" height="18" border="0" /></td>
 		<td align="right" valign="middle" nowrap bgcolor="#333379" CLASS="smaller_reversed_nodecoration"><strong><font color="#ffffff" size="-1" face="Verdana, Arial, Helvetica, sans-serif">
-<a href="http://www.umkc.edu/" class="smaller_reversed_nodecoration">UMKC</a>
+<a href="http://www.umsl.edu/" class="smaller_reversed_nodecoration">UMSL</a>
  |
-<a href="http://www1.law.umkc.edu/library/" class="smaller_reversed_nodecoration">UMKC-Law Library</a>
+<a href="http://www.umsl.edu/services/library/" class="smaller_reversed_nodecoration">UMSL Library</a>
 			</font></strong></td>
 		<td><img src="/screens/toplogo_bl_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="1" height="18" border="0" /></td>
@@ -53,7 +53,11 @@
 	</tr>
 </table>
 
+<<<<<<< HEAD
+<div id="offlineMessage"><p>The library catalog will be offline for maintenance on Tuesday, March 30, beginning at 9:00 AM.  During that time, you may search the <a href="http://mobius.umsystem.ed">MOBIUS catalog</a> to find library items.</p></div>  
+=======
 <div id="offlineMessage"><p>The library catalog will be offline for maintenance on Tuesday, March 30, beginning at 9:00 AM.</p></div>  
 
+>>>>>>> downtime
 
 <!-- END site/toplogo.tt -->
