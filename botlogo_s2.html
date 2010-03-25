@@ -1,0 +1,105 @@
+<!-- BEGIN site/botlogo.tt for MERLIN, updated 15:26:50 07-Dec-2007 by hjp -->
+<center>
+	<p><img src="/screens/bot_bar.gif" alt="" width="740" height="8" border="0" /></p>
+	<p><span class="bot_logo"><strong>MERLIN</strong> &middot; Missouri Education and Research Libraries Information Network<br />
+	a MOBIUS Library Catalog</span></p>
+	<p>
+	<span class="bot_logo"><strong>University of Missouri:</strong><br />
+	<a class="bot_logo" href="/search~S1">MU Libraries</a> |
+	<a class="bot_logo" href="/search~S2">MU-Law Libraries</a> |
+	<a class="bot_logo" href="/search~S3">UMKC Libraries</a> |
+	<a class="bot_logo" href="/search~S4">UMKC-Law Library</a> |
+	<a class="bot_logo" href="/search~S5">Missouri S&amp;T Library</a> |
+	<a class="bot_logo" href="/search~S6">UMSL Libraries</a><br />
+	<a class="bot_logo" href="/search~S7">State Historical Society &amp; Western Historical Manuscript Collection</a><br />
+	</span></p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+</center>
+
+<script type='text/javascript'> 
+// Find all the div elements
+var divList = document.getElementsByTagName("div");
+// Make an array to store the ones with the "gbs" class
+gbsList =  new Array();
+for (var div = 0; div < divList.length; div++) {
+    // Get the class
+	classAttrib = divList[div].getAttribute("class");
+	// Hack for IE
+	if(classAttrib == null) { classAttrib = divList[div].getAttribute("className") }
+	// Store the div if the class is "gbs"
+	if(classAttrib == "gbs") {
+		gbsList.push(divList[div]);
+	}
+}
+// Make an array for the numbers in the gbs divs
+var numbers = new Array();
+for (var bib = 0; bib < gbsList.length; bib++) {
+	// Remove leading and trailing newlines from the numbers
+	bookid = gbsList[bib].innerHTML.replace(/^\s+|\s+$/g,"")
+	// Prefix the number with the label that GBS needs and store it
+	if(bookid.length > 0) {
+		numbers[bib] = "OCLC:" + bookid;
+	}
+}
+// Construct the URL for the remote GBS script
+var api_url ="http://books.google.com/books?jscmd=viewapi&bibkeys=" + numbers.join(",");
+// Construct an inline javascript invocation of the remote GBS script
+var scriptLine = "%3Cscript src='" + api_url + "' type='text/javascript'%3E%3C/script%3E";
+// Insert the line of script into this page so it returns the _GSBookInfo object
+document.write(unescape(scriptLine));
+</script> 
+<script type='text/javascript'> 
+//var message= "";
+ 
+// Resuming the original script
+offsiteImg = '<img src="/screens/icon_offsite_blue.gif" alt="offsite" title="offsite" style="border: 0pt none ; vertical-align: middle;"> ';
+gbsPreviewImage = '<img src="/screens/gbs_preview_button1.gif" alt="Preview" title="Preview" style="border: 0pt none ; vertical-align: middle;"> ';
+// Iterate through the "gbs" <div> elements
+for(bib in numbers) {
+	// Look for matching GBS data
+	var bookInfo = _GBSBookInfo[numbers[bib]];
+	// If found, process it
+    if(bookInfo){
+		// Set text and link values depending on viewablity
+		if(bookInfo.preview == "full") { 
+			textGBS = ""; //"Google Book Search"; 
+			linkGBS = bookInfo.preview_url;
+			linkImage = gbsPreviewImage;
+		}
+		if(bookInfo.preview == "partial") { 
+			textGBS = "(Limited preview)" //"Preview at Google Book Search"; 
+			linkGBS = bookInfo.preview_url;
+			linkImage = gbsPreviewImage;
+		}
+		if(bookInfo.preview == "noview") { 
+			textGBS = "Information at Google Book Search"; 
+			linkGBS = bookInfo.info_url;
+			linkImage = offsiteImg;
+		}
+		// HTML for offsite image
+		offsiteImg = '<img src="/screens/icon_offsite_blue.gif" alt="offsite" title="offsite" style="border: 0pt none ; vertical-align: middle;"> ';
+		// Rewrite the HTML inside the "gbs" <div> elements
+		if(bookInfo.thumbnail_url !== undefined) {
+			gbsList[bib].innerHTML = '<img src="' + bookInfo.thumbnail_url + '&zoom=1"><br><a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + linkImage + textGBS + '</a>';
+		} else {
+		gbsList[bib].innerHTML = '<a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + linkImage + textGBS + '</a>';
+		}
+		//+ '<img src="' + bookInfo.thumbnail_url + '">'
+		// Turn on the display of the GBS link
+		gbsList[bib].style.display = 'inline';
+		//thumbCell = gbsList[bib].parentNode.nextSibling.nextSibling.nextSibling.nextSibling;
+		//message += bib + thumbCell.className + " ";
+		//if(thumbCell.innerHTML.indexOf("&nbsp;")) {
+			//alert(thumbCell.innerHTML);
+			//thumbCell.innerHTML = thumbCell.getAttribute("class");
+		    //if(thumbCell !== undefined) { 
+				//thumbCell.innerHTML = '<img src="' + bookInfo.thumbnail_url + '">';
+			//}
+		//}
+	}
+}
+	//alert(message);
+    //alert(window.location.protocol);
+</script> 
+<!-- END site/botlogo.tt -->
