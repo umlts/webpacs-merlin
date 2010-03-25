@@ -124,17 +124,17 @@ RESOURCE_HOLDINGS_MAX=3
 
 RESOURCE_LICENSE_FIELDS=Authorized Users:Vlu|Authentication Method:Vla|Terms of Use:Vlt|Reserves Restrictions:Vls|ILL Restrictions:Vlo|
 
-TABLEPARAM_BIB_LICENSE=width="100%" border="3" cellspacing="1"
+TABLEPARAM_BIB_LICENSE=id="bib_license"
 
-TABLEPARAM_BIB_RESOURCE=width="100%" border="3" cellspacing="1"
+TABLEPARAM_BIB_RESOURCE=id="bib_resource"
 
-TABLEPARAM_BIB_RESOURCE_BRIEF=width="100%" border="3" cellspacing="1"
+TABLEPARAM_BIB_RESOURCE_BRIEF=id="bib_resource_brief"
 
-TABLEPARAM_RESOURCE_BIB=width="100%" border="3" cellspacing="1"
+TABLEPARAM_RESOURCE_BIB=id="resourc_bib"
 
-TABLEPARAM_RESOURCE_LICENSE=width="100%" border="3" cellspacing="1"
+TABLEPARAM_RESOURCE_LICENSE=id="resource_license" 
 
-TABLEPARAM_RESOURCE_RESOURCE=width="100%" border="3" cellspacing="1"
+TABLEPARAM_RESOURCE_RESOURCE=id="resource_resource"
 
 
 
