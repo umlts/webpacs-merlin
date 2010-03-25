@@ -160,6 +160,8 @@ RSS_MIN_TTL=20
 
 BOTLOGO=@screens/botlogo.html
 
+BOTLOGO1=@screens/botlogo_s1.thml
+
 CLEAR_PRIVATE_INFO=yes
 
 #CUSTOM_MESSAGES
