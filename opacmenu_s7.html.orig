@@ -131,6 +131,13 @@ function preload() {
 	</tr>
 </table>
 
+<<<<<<< HEAD
+<div id="offlineMessage"><p>The library catalog will be offline for maintenance on Tuesday, March 30, beginning at 9:00 AM.  During that time, you may search the <a href="http://mobius.umsystem.ed">MOBIUS catalog</a> to find library items.</p></div>  
+=======
+<div id="offlineMessage"><p>The library catalog will be offline for maintenance on Tuesday, March 30, beginning at 9:00 AM.</p></div>  
+
+>>>>>>> downtime
+
 <!-- END site/toplogo.tt -->
 <br />
 <!-- BEGIN site/tab_bar.tt for MERLIN, updated 15:22:02 31-Dec-2007 by hjp -->
@@ -200,11 +207,7 @@ function preload() {
                                 </option>
 							
                             	<option value="m">
-<<<<<<< HEAD
                                     Medical Subject (MeSH)
-=======
-                                    Medical Subjects (MESH)
->>>>>>> erm
                                 </option>
 							
                             	<option value="s">
@@ -219,7 +222,6 @@ function preload() {
                                     NLM Call Number
                                 </option>
 							
-<<<<<<< HEAD
                             	<option value="f">
                                     Local or Dewey Call Number
                                 </option>
@@ -238,26 +240,6 @@ function preload() {
 
                             	<option value="o">
                                     OCLC/WorldCat Number
-=======
-                            	<option value="j">
-                                    Dewey Call Number
-                                </option>
-							
-                            	<option value="f">
-                                    Other Call Number
-                                </option>
-							
-                            	<option value="g">
-                                    Gov Doc Number
-                                </option>
-							
-                            	<option value="i">
-                                    ISN, Standard Number
-                                </option>
-							
-                            	<option value="o">
-                                    OCLC Number
->>>>>>> erm
                                 </option>
 							
                             </select> </td>
