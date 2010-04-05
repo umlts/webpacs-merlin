@@ -164,6 +164,8 @@ BOTLOGO1=@screens/botlogo_s1.html
 
 BOTLOGO2=@screens/botlogo_s2.html
 
+BOTLOGO6=@screens/botlogo_s6.html
+
 CLEAR_PRIVATE_INFO=yes
 
 #CUSTOM_MESSAGES
