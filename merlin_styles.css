@@ -691,6 +691,15 @@ TD.resourceInfoLabel { background-color: #dedee7; font-style: italic; vertical-a
 TD.resourceLicenseEntry { /*color: #000000; background-color: #dedee7; text-align: left; */ }
 TH.resourceLicenseHeader { background-color: #dedee7; font-style: italic; vertical-align: top; width:14%; font-weight:bold;}
 
+table#resource_license {border-top: 2px groove #032585; padding-top:1em; margin-top:.5em;}
+
+table#resource_bib {width:100%;}
+#resource_bib th {color: #FFFFFF;}
+#resource_bib td, #resource_bib th {padding: 2px;}
+
+table#bib_resource_brief {width:90%;}
+table#bib_resource {width:90%;}
+
 /***********************************************************************************/
 
 /* Spellcheck Tool Token Formatting */

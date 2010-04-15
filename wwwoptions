@@ -108,17 +108,17 @@ BIB_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx|
 
 BIB_LICENSE_FIELDS_BRIEF=<strong>Actions Allowed</strong>,Vlw|<strong>Restrictions</strong>,Vlx
 
-BIB_RESOURCE_CAPTION=Included in:
+BIB_RESOURCE_CAPTION=<div id="resourceCaption">Full Text <br />(UMKC users only):</div>
 
 BIB_RESOURCE_FIELDS=:VeE|:VeT|:Vek
 
-BIB_RESOURCE_FIELDS_BRIEF=:VeY|:Vch
+BIB_RESOURCE_FIELDS_BRIEF=:VcY|:Vch|:VeE
 
 BIB_RESOURCE_NUM_BRIEF=A
 
 RESOURCE_ADVISORY=k
 
-RESOURCE_HOLDINGS_FIELDS=Title:Vbt|LIB HAS:Vch|:VcY
+RESOURCE_HOLDINGS_FIELDS=Title:Vbt|Lib Has:Vch|Connect to Full Text:VcY
 
 RESOURCE_HOLDINGS_MAX=3
 
@@ -130,7 +130,7 @@ TABLEPARAM_BIB_RESOURCE=id="bib_resource"
 
 TABLEPARAM_BIB_RESOURCE_BRIEF=id="bib_resource_brief"
 
-TABLEPARAM_RESOURCE_BIB=id="resourc_bib"
+TABLEPARAM_RESOURCE_BIB=id="resource_bib"
 
 TABLEPARAM_RESOURCE_LICENSE=id="resource_license" 
 
@@ -454,7 +454,7 @@ ITEM_NOTE=true
 
 #ITEMOUT_MSG=Due
 
-LINK856TEXT=Link to web version:
+LINK856TEXT=<div id="link856">Link to web version:</div>
 
 MARC=yes
 
@@ -944,7 +944,7 @@ ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="">&nbsp;Other relevant 
 
 ICON_REQUEST=<img src="/screens/but_request.gif" alt="Request" border="0" />
 
-ICON_RESOURCE_RECORD_s3="Resource:"
+ICON_RESOURCE_RECORD=About Resource
 
 # ICON_RESOURCE_RECORD=<img src="/screens/resource_record.gif" alt="Resource" border="0" />
 
