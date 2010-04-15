@@ -687,8 +687,8 @@ table#resource_bib {width:100%;}
 #resource_bib th {color: #FFFFFF;}
 #resource_bib td, #resource_bib th {padding: 2px;}
 
-table#bib_resource_brief {width:100%;}
-table#bib_resource {width:100%;}
+table#bib_resource_brief {width:90%;}
+table#bib_resource {width:90%;}
 
 /***********************************************************************************/
 
