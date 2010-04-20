@@ -112,7 +112,7 @@ BIB_RESOURCE_CAPTION=<div id="resourceCaption">Full Text <br />(UMKC users only)
 
 BIB_RESOURCE_FIELDS=:VeE|:VeT|:Vek
 
-BIB_RESOURCE_FIELDS_BRIEF=:VcY|:Vch
+BIB_RESOURCE_FIELDS_BRIEF=:VcY|:Vch|:VeE
 
 BIB_RESOURCE_NUM_BRIEF=A
 
@@ -163,8 +163,6 @@ BOTLOGO=@screens/botlogo.html
 BOTLOGO1=@screens/botlogo_s1.html
 
 BOTLOGO2=@screens/botlogo_s2.html
-
-BOTLOGO3=@screens/botlogo_s3.html
 
 BOTLOGO6=@screens/botlogo_s6.html
 
@@ -221,7 +219,11 @@ XSTARTOVER=/search
 
 AUTHOR_TITLE_TAG=q
 
+<<<<<<< HEAD
+DROP_DOWN=Xdmtascljfgio
+=======
 DROP_DOWN=Xtadmsclfgeiovxjh
+>>>>>>> newdropdown
 
 FRAMEURL=0
 

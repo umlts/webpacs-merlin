@@ -130,6 +130,14 @@ function preload() {
 		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
 	</tr>
 </table>
+<div id="offlineMessage"><p>The library catalog will be offline for maintenance on Tuesday, March 30, beginning at 9:00 AM.  During that time, you may search the <a href="http://mobius.umsystem.ed">MOBIUS catalog</a> to find library items.</p></div>  
+
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> googleapi_umkc
+
 
 <!-- END site/toplogo.tt -->
 <br />
@@ -200,11 +208,7 @@ function preload() {
                                 </option>
 							
                             	<option value="m">
-<<<<<<< HEAD
                                     Medical Subject (MeSH)
-=======
-                                    Medical Subjects (MESH)
->>>>>>> erm
                                 </option>
 							
                             	<option value="s">
@@ -219,7 +223,6 @@ function preload() {
                                     NLM Call Number
                                 </option>
 							
-<<<<<<< HEAD
                             	<option value="f">
                                     Local or Dewey Call Number
                                 </option>
@@ -238,7 +241,11 @@ function preload() {
 
                             	<option value="o">
                                     OCLC/WorldCat Number
-                                </option>	
+                                </option>
+				
+                            	<option value="v">
+                                    Genre/Form Term
+                                </option>
 				
                             	<option value="j">
                                     Database Name
@@ -248,27 +255,6 @@ function preload() {
                                     Database Subject
                                 </option>				
 
-=======
-                            	<option value="j">
-                                    Dewey Call Number
-                                </option>
-							
-                            	<option value="f">
-                                    Other Call Number
-                                </option>
-							
-                            	<option value="g">
-                                    Gov Doc Number
-                                </option>
-							
-                            	<option value="i">
-                                    ISN, Standard Number
-                                </option>
-							
-                            	<option value="o">
-                                    OCLC Number
-                                </option>
->>>>>>> erm
 							
                             </select> </td>
 
