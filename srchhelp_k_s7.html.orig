@@ -2,19 +2,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<<<<<<< HEAD
   <!-- BEGIN srchhelps_s7.txt for MERLIN, updated 15:44:27 08-Jan-2008 by hjp -->
 
 
   <head>
     <title>UM SHS/WHMC - FAQ</title>
 
-=======
-  <!-- BEGIN srchhelps_s0.txt for MERLIN, updated 15:42:04 08-Jan-2008 by hjp -->
-
-  <head>
-    <title>ALL MERLIN - FAQ</title>
->>>>>>> erm
 	<script language="JavaScript" type="text/javascript">
 <!--hide this script from non-javascript-enabled browsers
 
@@ -91,9 +84,6 @@ function preload() {
 <<<<<<< HEAD
 <!-- BEGIN site/toplogo.tt for MERLIN, updated 15:44:27 08-Jan-2008 by hjp -->
 
-=======
-<!-- BEGIN site/toplogo.tt for MERLIN, updated 15:42:04 08-Jan-2008 by hjp -->
->>>>>>> erm
 <table border="0" cellpadding="0" cellspacing="0" width="740" ALIGN="center">
 	<tr>
 		<td><img src="/screens/shim.gif" alt="" width="99" height="1" border="0" /></td>
@@ -115,12 +105,8 @@ function preload() {
 			<a href="http://mobius.umsystem.edu/search" class="smaller_reversed_nodecoration">MOBIUS</a> &gt;
 			<a href="/search~" class="smaller_reversed_nodecoration">All MERLIN</a>
 
-<<<<<<< HEAD
 			&gt; <a href="/search~S7" class="smaller_reversed_nodecoration">State Historical Society & Western Historical Manuscript Collection Catalogs</a>
 
-=======
-			
->>>>>>> erm
 
 			</font></strong></td>
 		<td><img src="/screens/toplogo_gr_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
@@ -135,14 +121,10 @@ function preload() {
 	<tr>
 		<td><img src="/screens/toplogo_bl_fade.gif" alt="" width="251" height="18" border="0" /></td>
 		<td align="right" valign="middle" nowrap bgcolor="#333379" CLASS="smaller_reversed_nodecoration"><strong><font color="#ffffff" size="-1" face="Verdana, Arial, Helvetica, sans-serif">
-<<<<<<< HEAD
 <a href="http://shs.umsystem.edu/index.shtml" class="smaller_reversed_nodecoration">UM SHS</a>
  |
 <a href="http://whmc.umsystem.edu/" class="smaller_reversed_nodecoration">UM WHMC Library</a>
 
-=======
-<a href="http://merlin.missouri.edu/" class="smaller_reversed_nodecoration">MERLIN Web Gateway</a>
->>>>>>> erm
 			</font></strong></td>
 		<td><img src="/screens/toplogo_bl_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="1" height="18" border="0" /></td>
@@ -155,15 +137,14 @@ function preload() {
 </table>
 
 <!-- END site/toplogo.tt -->
+=======
+<!--{toplogo}-->
+>>>>>>> analytics
 <br />
 
 
-<<<<<<< HEAD
 		<!-- BEGIN site/tab_bar.tt for MERLIN, updated 15:44:27 08-Jan-2008 by hjp -->
 
-=======
-		<!-- BEGIN site/tab_bar.tt for MERLIN, updated 15:42:04 08-Jan-2008 by hjp -->
->>>>>>> erm
 <table border="0" cellpadding="0" cellspacing="0" width="740" align="center" summary="tabs">
 	<tr>
 		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
@@ -175,7 +156,6 @@ function preload() {
 		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
 	</tr>
 	<tr>
-<<<<<<< HEAD
 		<td class="tab_cat"><a href="/search~S7" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_libcat','/screens/tab_libcat_over.gif','/screens/tab_libcat_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_libcat','/screens/tab_libcat_down.gif',1);"><img src="/screens/tab_libcat.gif" alt=" libcat " width="100" height="31" border="0" id="tab_libcat" /></a></td>
 		<td class="tab_reserve"><a href="/search~S7/e" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_reserves','/screens/tab_reserves_over.gif','/screens/tab_reserves_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_reserves','/screens/tab_reserves_down.gif',1);"><img src="/screens/tab_reserves.gif" alt=" reserves " width="100" height="31" border="0" id="tab_reserves" /></a></td>
 
@@ -185,13 +165,6 @@ function preload() {
 		<td class="tab_help"><a href="/search~S7/k" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_help','/screens/tab_help_over.gif','/screens/tab_help_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_help','/screens/tab_help_down.gif',1);"><img src="/screens/tab_help_down.gif" alt=" help " width="100" height="31" border="0" id="tab_help" /></a></td>
 
 
-=======
-		<td class="tab_cat"><a href="/search~" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_libcat','/screens/tab_libcat_over.gif','/screens/tab_libcat_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_libcat','/screens/tab_libcat_down.gif',1);"><img src="/screens/tab_libcat.gif" alt=" libcat " width="100" height="31" border="0" id="tab_libcat" /></a></td>
-		<td class="tab_reserve"><a href="/search~/e" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_reserves','/screens/tab_reserves_over.gif','/screens/tab_reserves_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_reserves','/screens/tab_reserves_down.gif',1);"><img src="/screens/tab_reserves.gif" alt=" reserves " width="100" height="31" border="0" id="tab_reserves" /></a></td>
-		<td class="tab_patrec"><a href="/patroninfo" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_mylib','/screens/tab_mylib_over.gif','/screens/tab_mylib_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_mylib','/screens/tab_mylib_down.gif',1);"><img src="/screens/tab_mylib.gif" alt=" mylib " width="100" height="31" border="0" id="tab_mylib" /></a></td>
-		<td class="tab_other"><a href="/search~/v" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_other','/screens/tab_other_over.gif','/screens/tab_other_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_other','/screens/tab_other_down.gif',1);"><img src="/screens/tab_other.gif" alt=" other " width="100" height="31" border="0" id="tab_other" /></a></td>
-		<td class="tab_help"><a href="/search~/k" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_help','/screens/tab_help_over.gif','/screens/tab_help_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_help','/screens/tab_help_down.gif',1);"><img src="/screens/tab_help_down.gif" alt=" help " width="100" height="31" border="0" id="tab_help" /></a></td>
->>>>>>> erm
 		<td><img src="/screens/tab_bar_bar1.gif" alt="" width="1" height="1" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="1" height="31" border="0" /></td>
 	</tr>
@@ -222,12 +195,8 @@ function preload() {
 
 <!--{availlim}-->
 
-<<<<<<< HEAD
 <!-- BEGIN site/srchhelp/k.tt for MERLIN, updated 15:44:27 08-Jan-2008 by hjp -->
 
-=======
-<!-- BEGIN site/srchhelp/k.tt for MERLIN, updated 15:42:04 08-Jan-2008 by hjp -->
->>>>>>> erm
 
   <p><center><H3>MERLIN FAQ - Frequently Asked Questions</H3></p></center>
 
@@ -244,7 +213,6 @@ function preload() {
                 <li><a href="#3"> What may I borrow through MERLIN/MOBIUS?</a></li>
                 <li><a href="#4"> When should I use MOBIUS? </a></li>
                 <li><a href="#5">How do I request a book from MERLIN/MOBIUS?</a></li>
-                <li><a href="#8"> What happens if I forget my MERLIN PIN?</a></li>
                 <li><a href="#9"> How quickly will the books I request arrive?</a></li>
                 <li><a href="#10">How long will I be able to keep books that I borrow?</a></li>
                 <li><a href="#11">May I renew a book borrowed through MOBIUS?</a></li>
@@ -291,10 +259,10 @@ function preload() {
                 <p>[<a href="#top">back to top</a>]</p>
                 <p><h4>General Information</h4></p>
                 <p><h5>What is MERLIN?</span><a name="1"></a></h5></p>
-                <p> MERLIN is a cluster or group of Missouri libraries within the MOBIUS library consortium (see below). The MERLIN Library Catalog is the online library catalog that includes the collections of the following Missouri libraries: University of Missouri-Columbia , University of Missouri-Columbia Law, University of Missouri-Kansas City, University of Missouri-Kansas City Law, Missouri University of Science and Technology, University of Missouri-St. Louis, University of Missouri Archives and Western Historical Manuscripts, Saint Louis University, Saint Louis University Law, and Saint Louis University Health Sciences Center. </p>
+                <p> The MERLIN Library Catalog is the online library catalog that includes the collections of the following Missouri libraries: University of Missouri-Columbia , University of Missouri-Columbia Law, University of Missouri-Kansas City, University of Missouri-Kansas City Law, Missouri University of Science and Technology, University of Missouri-St. Louis, and the University of Missouri Archives and Western Historical Manuscripts. </p>
                 <p> [<a href="#top">back to top</a>] </p>
                 <p><h5>What is MOBIUS?<a name="2"></a></h5></p>
-                <p> MOBIUS (Missouri Bibliographic Information User System) is a consortium of over fifty Missouri college and university libraries. MOBIUS was created to allow students, faculty and staff at member libraries to borrow books from other member libraries. The MOBIUS Union Catalog is a shared online catalog which allows users to search the holdings of all member libraries. The MOBIUS catalog includes over 14 million items. </p>
+                <p> MOBIUS (Missouri Bibliographic Information User System) is a consortium of libraries in the state of Missouri. The membership includes 62 full members from colleges, universities, the Missouri State Library, and 2 public libraries (cooperating partners).  MOBIUS was created to allow students, faculty and staff at member libraries to borrow books from other member libraries. The MOBIUS Union Catalog is a shared online catalog which allows users to search the holdings of all member libraries. The MOBIUS catalog includes over 18 million items. </p>
                 <p> [<a href="#top">back to top</a>] </p>
                 <p><h5>What may I borrow through MERLIN/MOBIUS?<a name="3"></a> </h5></p>
                 <p> Students, faculty, and staff of member libraries may borrow books through the MOBIUS system. Please note that only books may be requested from another library even though videotapes, music CDs and periodical titles are listed in the catalog. </p>
@@ -309,24 +277,20 @@ function preload() {
                </blockquote>
             <ul>
               <ul>
-                    <li> Type your name </li>
-                    <li> Enter your Social Security Number or school Identification Number. SLU users enter ID + s. </li>
-                    <li> (e.g., 123456789 or 000123456). </li>
-                    <li> Enter or create your MERLIN PIN. This should be between 4 to 8 characters and something that you will remember. </li>
-                    <li> If you are creating your PIN, you will be asked to type it two more times. </li>
-                    <li> Choose a Pickup Location from drop-down menu. (The codes in this list are the institution codes for the MERLIN cluster.) This indicates where you want the book sent. </li>
+                    <li> You will be given instructions to log in using your campus e-mail username or your name and 8-digit EMPL ID (or student number). </li>
+                    <li> Once logged in, choose a Pickup Location from drop-down menu. (The codes in this list are the institution codes for the MERLIN cluster.) This indicates where you want the book sent. </li>
                     <li> Click Submit. The system will respond with a message telling you that the item is being sent. <strong>IF YOU HAVE DIFFICULTY, PLEASE ASK A LIBRARIAN FOR HELP.</strong></li>
              </ul>
           </div>
                   <p> [<a href="#top">back to top</a>] </p>
                 <p>&nbsp; </p>
-                <p> If you still do not find the book(s) you need, click on the MOBIUS Union Catalog button to search MOBIUS. </p>
+                <p> If you still do not find the book(s) you need, click on the Search MOBIUS button. </p>
                 <p> Once you have located a title you want to borrow, click on &quot;Request this Item&quot;. </p>
                 <p> You will be asked, &quot;With which cluster are you affiliated?&quot; Select MERLIN and click on the &quot;Submit information&quot; button. </p>
                  <p> At the next screen: </p>
                 <ul>
                     <li> Type your name </li>
-                    <li> Enter your Social Security Number or school Identification Number. (e.g., 123456789 or 000123456).  SLU users enter ID + s. </li>
+                    <li> Enter your 8-digit EMPL ID (or student number). </li>
                     <li> Choose a Pickup Cluster from drop-down menu. </li>
                     <li> Choose a Pickup Location from drop-down menu. (The codes in this list are the institution codes for the selected cluster.) This indicates where you want the book sent. </li>
                     <li> Submit your request. The system will respond with a message telling you that the item is being sent. <strong>IF YOU ARE HAVING DIFFICULTY, PLEASE ASK A LIBRARIAN FOR HELP. </strong></li>
@@ -335,20 +299,6 @@ function preload() {
              </ul>
           </div>
 			<BLOCKQUOTE>
-                 <p> [<a href="#top">back to top</a>] </p>
-                <p><H5>Why do I have to use my Social Security number (SS#) to request a book?<a name="6"></a></H5></p>
-               </blockquote>
-          </blockquote>
-              <blockquote>
-                  <p>University of Missouri&mdash; Columbia, University of Missouri&mdash; Kansas City, and University of Missouri&mdash; St. Louis identify most of their students, faculty, and staff by SS#. If you are a student, faculty, or staff at one of these schools your SS# may be what the system uses to verify that you are eligible to borrow the item you are requesting. </p>
-              </blockquote>
-             <blockquote>
-                <p><H5> Is my Social Security number (SS#) or other ID number encrypted (scrambled) when I click the Submit button?<a name="7"></a></H5></p>
-                <p> Yes, your SS# or other ID number is encrypted to protect your identity.</p>
-                <p><H5> What happens if I forget my MERLIN PIN? <a name="8"></a></H5></p>
-                <p> Call or visit the Circulation Department at your library and ask that your current PIN be deleted.</p>
-                <p> Create a new pin between 4 and 8 characters.</p>
-                <p> [<a href="#top">back to top</a>]</p>
                 <p><H5> How quickly will the books I request arrive? <a name="9"></a></H5></p>
                 <p> Books usually arrive at the location you specify within two to four days.</p>
                 <p> [<a href="#top">back to top</a>]</p>
@@ -357,7 +307,7 @@ function preload() {
                 <p> If the book(s) are from a MOBIUS (non-MERLIN) Library, they are checked out for 21 days.</p>
                 <p[<a href="#top">back to top</a>]</p>
                 <p><H5> May I renew a MOBIUS (non-MERLIN) book? <a name="11"></a></H5></p>
-                <p> One 21-day renewal is permitted unless another patron has requested the book.</p>
+                <p> Two 21-day renewals are permitted unless another patron has requested the book.</p>
                 <p> [<a href="#top">back to top</a>]</p>
                 <p><H5> Will I receive a bill for MOBIUS books that I don't return on time? <a name="12"></a></H5></p>
                 <p> Yes. Your library follows its normal notification and billing procedures for overdue or lost materials. For more information, contact your library. Please be aware that the charge for a lost MOBIUS book is $120.00. </span></p>
@@ -726,12 +676,8 @@ function preload() {
 
 
 
-<<<<<<< HEAD
 <p class="ret2MainMenu"><a HREF="/search~S7">Return to Main Menu</a></p>
 
-=======
-<p class="ret2MainMenu"><a HREF="/search~">Return to Main Menu</a></p>
->>>>>>> erm
 
 
 </td></tr></table>
@@ -740,12 +686,8 @@ function preload() {
 </center>
 
 <center>
-<<<<<<< HEAD
 <!-- BEGIN site/botlogo.tt for MERLIN, updated 15:44:27 08-Jan-2008 by hjp -->
 
-=======
-<!-- BEGIN site/botlogo.tt for MERLIN, updated 15:42:04 08-Jan-2008 by hjp -->
->>>>>>> erm
 <center>
 	<p><img src="/screens/bot_bar.gif" alt="" width="740" height="8" border="0" /></p>
 	<p><span class="bot_logo"><strong>MERLIN</strong> &middot; Missouri Education and Research Libraries Information Network<br />
@@ -767,4 +709,8 @@ function preload() {
 </center>
 
   </body>
+<<<<<<< HEAD
 </html>
+=======
+</html
+>>>>>>> analytics
