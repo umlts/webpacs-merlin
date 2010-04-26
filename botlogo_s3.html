@@ -17,91 +17,98 @@
 	<p>&nbsp;</p>
 </center>
 
+
+
+<!-- Google Book Search viewability API script for bib record--> 
 <script type='text/javascript'> 
-// Find all the div elements
-var divList = document.getElementsByTagName("div");
-// Make an array to store the ones with the "gbs" class
+// Find all the td elements
+var tdList = document.getElementsByTagName("td");
+// Make an array to store the ones with the "bibInfoLabel" class
 gbsList =  new Array();
-for (var div = 0; div < divList.length; div++) {
+for (var td = 0; td < tdList.length; td++) {
     // Get the class
-	classAttrib = divList[div].getAttribute("class");
+	classAttrib = tdList[td].getAttribute("class");
 	// Hack for IE
-	if(classAttrib == null) { classAttrib = divList[div].getAttribute("className") }
-	// Store the div if the class is "gbs"
-	if(classAttrib == "gbs") {
-		gbsList.push(divList[div]);
+	if(classAttrib == null) { classAttrib = tdList[td].getAttribute("className") }
+	// Store the td if it holds the label for the OCLC #
+	if((classAttrib == "bibInfoLabel") && (tdList[td].innerHTML=="OCLC/WorldCat Number")) {
+		gbsList.push(tdList[td]);
 	}
 }
-// Make an array for the numbers in the gbs divs
-var numbers = new Array();
+// Make an array for the numbers in the adjacent tds (probably only one, though)
+var bibnumbers = new Array();
 for (var bib = 0; bib < gbsList.length; bib++) {
+	// for IE
+	bookid = gbsList[bib].nextSibling.nextSibling;
+	// otherwise
+	if(bookid == null){
+		bookid = gbsList[bib].nextSibling
+	}
 	// Remove leading and trailing newlines from the numbers
-	bookid = gbsList[bib].innerHTML.replace(/^\s+|\s+$/g,"")
+	bookid = bookid.innerHTML.replace(/^\s+|\s+$/g,"");
 	// Prefix the number with the label that GBS needs and store it
 	if(bookid.length > 0) {
-		numbers[bib] = "OCLC:" + bookid;
+		bibnumbers[bib] = "OCLC:" + bookid;
 	}
 }
+ 
 // Construct the URL for the remote GBS script
-var api_url ="http://books.google.com/books?jscmd=viewapi&bibkeys=" + numbers.join(",");
+var bibapi_url ="http://books.google.com/books?jscmd=viewapi&bibkeys=" + bibnumbers.join(",");
 // Construct an inline javascript invocation of the remote GBS script
-var scriptLine = "%3Cscript src='" + api_url + "' type='text/javascript'%3E%3C/script%3E";
-// Insert the line of script into this page so it returns the _GSBookInfo object
-document.write(unescape(scriptLine));
+var bibScriptLine = "%3Cscript src='" + bibapi_url + "' type='text/javascript'%3E%3C/script%3E";
+// Insert the line of script into this page so it returns the _GBSBookInfo object
+document.write(unescape(bibScriptLine));
 </script> 
 <script type='text/javascript'> 
-//var message= "";
- 
-// Resuming the original script
+// Resuming the original script, add the link if the lookup succeeded
+// Just look up the first OCLC number, don't worry about any others
+var bibInfo = _GBSBookInfo[bibnumbers[0]];
+// HTML for images
 offsiteImg = '<img src="/screens/icon_offsite_blue.gif" alt="offsite" title="offsite" style="border: 0pt none ; vertical-align: middle;"> ';
-gbsPreviewImage = '<img src="/screens/gbs_preview_button1.gif" alt="Preview" title="Preview" style="border: 0pt none ; vertical-align: middle;"> ';
-// Iterate through the "gbs" <div> elements
-for(bib in numbers) {
-	// Look for matching GBS data
-	var bookInfo = _GBSBookInfo[numbers[bib]];
-	// If found, process it
-    if(bookInfo){
-		// Set text and link values depending on viewablity
-		if(bookInfo.preview == "full") { 
-			textGBS = ""; //"Google Book Search"; 
-			linkGBS = bookInfo.preview_url;
-			linkImage = gbsPreviewImage;
-		}
-		if(bookInfo.preview == "partial") { 
-			textGBS = "(Limited preview)" //"Preview at Google Book Search"; 
-			linkGBS = bookInfo.preview_url;
-			linkImage = gbsPreviewImage;
-		}
-		if(bookInfo.preview == "noview") { 
-			textGBS = "Information at Google Book Search"; 
-			linkGBS = bookInfo.info_url;
-			linkImage = offsiteImg;
-		}
-		// HTML for offsite image
-		offsiteImg = '<img src="/screens/icon_offsite_blue.gif" alt="offsite" title="offsite" style="border: 0pt none ; vertical-align: middle;"> ';
-		// Rewrite the HTML inside the "gbs" <div> elements
-		if(bookInfo.thumbnail_url !== undefined) {
-			gbsList[bib].innerHTML = '<img src="' + bookInfo.thumbnail_url + '&zoom=1"><br><a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + linkImage + textGBS + '</a>';
-		} else {
-		gbsList[bib].innerHTML = '<a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + linkImage + textGBS + '</a>';
-		}
-		//+ '<img src="' + bookInfo.thumbnail_url + '">'
-		// Turn on the display of the GBS link
-		gbsList[bib].style.display = 'inline';
-		//thumbCell = gbsList[bib].parentNode.nextSibling.nextSibling.nextSibling.nextSibling;
-		//message += bib + thumbCell.className + " ";
-		//if(thumbCell.innerHTML.indexOf("&nbsp;")) {
-			//alert(thumbCell.innerHTML);
-			//thumbCell.innerHTML = thumbCell.getAttribute("class");
-		    //if(thumbCell !== undefined) { 
-				//thumbCell.innerHTML = '<img src="' + bookInfo.thumbnail_url + '">';
-			//}
-		//}
+gbsPreviewImg = '<img src="/screens/gbs_preview_button1.gif" alt="Preview" title="Preview" style="border: 0pt none ; vertical-align: middle;"> ';
+if(bibInfo){
+	// Set text and link values depending on viewablity
+	if(bibInfo.preview == "full") { 
+		textGBS = "Full text at"; //"Read at Google Books"; 
+		linkGBS = bibInfo.preview_url;
+		linkImage = gbsPreviewImg;
 	}
+	if(bibInfo.preview == "partial") { 
+		textGBS = "Preview & search inside book at"; //"Preview at Google Books"; 
+		linkGBS = bibInfo.preview_url;
+		linkImage = gbsPreviewImg;
+	}
+	if(bibInfo.preview == "noview") { 
+                document.getElementById('infoTable').style.width = '100%';
+                document.getElementById('sidebarContent').style.width = '0%';
+	}
+
+	// Rewrite the HTML inside the "gbsLink" <div> element
+	var divList = document.getElementsByTagName("div");
+    for (var div = 0; div < divList.length; div++) {
+	    // Get the class
+		nameAttrib = divList[div].getAttribute("name");
+		// Hack for IE
+		if(nameAttrib == null) { nameAttrib = divList[div].getAttribute("className") }
+		// Store the td if it holds the label for the OCLC #
+		if(nameAttrib == "gbsLink") {
+			if(bibInfo.thumbnail_url !== undefined) {
+			divList[div].innerHTML = '<img src="' + bibInfo.thumbnail_url + '&zoom=1"><br /><a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + textGBS + '<br />' + linkImage + '</a>';
+			divList[div].style.display="";
+			} else {
+			divList[div].innerHTML = '<a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + textGBS + '<br />' + linkImage + '</a>';
+			divList[div].style.display="";
+			}
+                } 
+	}
+} else {
+  document.getElementById('infoTable').style.width = '100%';
+  document.getElementById('sidebarContent').style.width = '0%';
 }
-	//alert(message);
-    //alert(window.location.protocol);
+
+
 </script> 
+
 
 <!-- END site/botlogo.tt -->
 
