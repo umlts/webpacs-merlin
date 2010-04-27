@@ -51,6 +51,7 @@ for (var bib = 0; bib < gbsList.length; bib++) {
 		bibnumbers[bib] = "OCLC:" + bookid;
 	}
 }
+
  
 // Construct the URL for the remote GBS script
 var bibapi_url ="http://books.google.com/books?jscmd=viewapi&bibkeys=" + bibnumbers.join(",");
