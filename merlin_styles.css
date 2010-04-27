@@ -469,7 +469,7 @@ bibLicenseEntry
 bibLicenseHeader*/
 TABLE.bibLink { text-align: right; margin-right: 20%; background-color: #ffffff; color: #000000;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
-.bibRecordLink { background: #ffffff; color: #000000; padding-top: 2px; padding-bottom: 2px; text-align: right;
+.bibRecordLink { background: #ffffff; color: #000000; padding: 2px 4px; text-align: right;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: xx-small; font-weight: normal; font-style: normal; }
 .bibMain
 .bibOrder { width: 100%; border: 0px; }
@@ -665,19 +665,30 @@ TD.requestBibs { color: #333379; font-weight: bold; }
 
 /* Resource Display Classes */
 
-/*TABLE.resourceInfo { color: #323279; background: #ffffff; font-weight: bold; text-align: left; width: 100%;
+
+TABLE.resourceInfo { color: #323279; background: #ffffff; font-weight: bold; text-align: left; width: 100%;
 	border: 1px solid #ffffff; }
 TR.resourceInfoData { font-weight: bold; }
 .resourceInfoData { text-align: left; }
 .resourceInfoEntry { text-align: left; }
-TD.resourceInfoLabel { width: 15%; background-color: #dedee7; font-style: italic; } */
+TD.resourceInfoLabel { width: 11.4%; background-color: #dedee7; font-style: italic; } 
+
 
 TABLE.resourceInfo {width: 100%;}
 TR.resourceBibEntry { color: #000000; background-color: #dedee7; text-align: left; }
 TR.resourceBibHeader { color: #ffffff; background-color: #333379; font-weight: bold; text-align: left; }
-TD.resourceInfoLabel { background-color: #dedee7; font-style: italic; vertical-align: top; width: 10%; font-weight:bold;}
-TD.resourceLicenseEntry { color: #000000; background-color: #dedee7; text-align: left; }
-TR.resourceLicenseHeader { color: #ffffff; background-color: #333379; font-weight: bold; text-align: left;}
+TD.resourceInfoLabel { background-color: #dedee7; font-style: italic; vertical-align: top;  font-weight:bold;}
+TD.resourceLicenseEntry { /*color: #000000; background-color: #dedee7; text-align: left; */ }
+TH.resourceLicenseHeader { background-color: #dedee7; font-style: italic; vertical-align: top; width:14%; font-weight:bold;}
+
+table#resource_license {border-top: 2px groove #032585; padding-top:1em; margin-top:.5em;}
+
+table#resource_bib {width:100%;}
+#resource_bib th {color: #FFFFFF;}
+#resource_bib td, #resource_bib th {padding: 2px;}
+
+table#bib_resource_brief {width:90%;}
+table#bib_resource {width:90%;}
 
 /***********************************************************************************/
 
