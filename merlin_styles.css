@@ -506,6 +506,7 @@ TABLE.bibWidgit { border: 1px solid #ffffff; }
 /* bibXML
 patFuncReviewFull
 patFuncReviewHeadline */
+#resourceCaption {font-weight: bold;}
 
 /***********************************************************************************/
 
