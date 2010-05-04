@@ -79,7 +79,62 @@ function preload() {
 <!--{advancedsearchbody}-->
 	
 <center>
+<<<<<<< HEAD
 <!--{toplogo}-->
+=======
+<!-- BEGIN site/toplogo.tt for MERLIN, updated 14:35:09 08-Jan-2008 by hjp -->
+<table border="0" cellpadding="0" cellspacing="0" width="740" ALIGN="center">
+	<tr>
+		<td><img src="/screens/shim.gif" alt="" width="99" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="251" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="387" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="3" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+	<tr>
+		<td rowspan="5"><a href="/" target="_top"><img src="/screens/toplogo_merlin.gif" alt=" MERLIN: Missouri Education and Research Libraries Information Network " width="99" height="45" border="0" /></a></td>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+	<!-- begin GREEN bar -->
+	<tr>
+		<td><img src="/screens/toplogo_gr_fade.gif" alt="" width="251" height="18" border="0" /></td>
+		<td align="right" valign="middle" nowrap bgcolor="#6BBC07" class="smaller_reversed_nodecoration">
+			<strong><font color="#ffffff" size="-1" face="">
+			<a href="http://mobius.umsystem.edu/search" class="smaller_reversed_nodecoration">MOBIUS</a> &gt;
+			<a href="/search~" class="smaller_reversed_nodecoration">All MERLIN</a>
+
+			&gt; <a href="/search~S1" class="smaller_reversed_nodecoration">MU Libraries Catalog</a>
+
+			</font></strong></td>
+		<td><img src="/screens/toplogo_gr_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="18" border="0" /></td>
+	</tr>
+	<!-- end GREEN bar -->
+	<tr>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+	<!-- begin BLUE bar -->
+	<tr>
+		<td><img src="/screens/toplogo_bl_fade.gif" alt="" width="251" height="18" border="0" /></td>
+		<td align="right" valign="middle" nowrap bgcolor="#333379" CLASS="smaller_reversed_nodecoration"><strong><font color="#ffffff" size="-1" face="Verdana, Arial, Helvetica, sans-serif">
+<a href="http://www.missouri.edu/" class="smaller_reversed_nodecoration">MU</a>
+ |
+<a href="http://mulibraries.missouri.edu/" class="smaller_reversed_nodecoration">MU Libraries</a>
+			</font></strong></td>
+		<td><img src="/screens/toplogo_bl_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="18" border="0" /></td>
+	</tr>
+	<!-- end BLUE bar -->
+	<tr>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+</table>
+
+<!-- END site/toplogo.tt -->
+>>>>>>> newlabels
 <br />
 
 
@@ -181,8 +236,13 @@ in
 <option value="a:">Author:</option>
 <option value="t:">Title:</option>
 <option value="d:">Subject:</option>
+<<<<<<< HEAD
+<option value="c:">Table of Contents:</option>
+<option value="N:">Other:</option>
+=======
 <option value="N:">Note:</option>
 <option value="c:">Table of Contents:</option>
+>>>>>>> newlabels
 </select>
 </td>
 </tr>
@@ -205,8 +265,13 @@ in
 <option value="a:">Author:</option>
 <option value="t:">Title:</option>
 <option value="d:">Subject:</option>
+<<<<<<< HEAD
+<option value="c:">Table of Contents:</option>
+<option value="N:">Other:</option>
+=======
 <option value="N:">Note:</option>
 <option value="c:">Table of Contents:</option>
+>>>>>>> newlabels
 </select>
 </td>
 </tr>
@@ -229,8 +294,14 @@ in
 <option value="a:">Author:</option>
 <option value="t:">Title:</option>
 <option value="d:">Subject:</option>
+<<<<<<< HEAD
+<option value="c:">Table of Contents:</option>
+<option value="N:">Other:</option>
+</select>
+=======
 <option value="N:">Note:</option>
 <option value="c:">Table of Contents:</option></select>
+>>>>>>> newlabels
 </td>
 </tr>
 <tr>
@@ -252,8 +323,13 @@ in
 <option value="a:">Author:</option>
 <option value="t:">Title:</option>
 <option value="d:">Subject:</option>
+<<<<<<< HEAD
+<option value="c:">Table of Contents:</option>
+<option value="N:">Other:</option>
+=======
 <option value="N:">Note:</option>
 <option value="c:">Table of Contents:</option>
+>>>>>>> newlabels
 </select>
 <input type="hidden" name="endSearch" />
 </td>
@@ -300,7 +376,7 @@ School:
 &nbsp; Sort by:
 <!--{sort}-->
 <br />
->>>>>>> erm
+>>>>>>> newlabels
 <!--<select name="SORT">
 <option value="D">Date</option>
 <option value="A">Title</option>
@@ -448,4 +524,8 @@ s:hopi and s:religion
 </center>
 
   </body>
+<<<<<<< HEAD
 </html
+=======
+</html>
+>>>>>>> newlabels

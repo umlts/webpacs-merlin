@@ -80,7 +80,62 @@ function preload() {
   <body bgcolor="#FFFFFF" text="#000000" link="#333379" vlink="#333379" alink="#333379" onLoad="preload(); document.SearchForm.searcharg.focus(); document.SearchForm.searcharg.select();">
     
 <center>
+<<<<<<< HEAD
 <!--{toplogo}-->
+=======
+<!-- BEGIN site/toplogo.tt for MERLIN, updated 10:42:08 02-Jan-2008 by hjp -->
+<table border="0" cellpadding="0" cellspacing="0" width="740" ALIGN="center">
+	<tr>
+		<td><img src="/screens/shim.gif" alt="" width="99" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="251" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="387" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="3" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+	<tr>
+		<td rowspan="5"><a href="/" target="_top"><img src="/screens/toplogo_merlin.gif" alt=" MERLIN: Missouri Education and Research Libraries Information Network " width="99" height="45" border="0" /></a></td>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+	<!-- begin GREEN bar -->
+	<tr>
+		<td><img src="/screens/toplogo_gr_fade.gif" alt="" width="251" height="18" border="0" /></td>
+		<td align="right" valign="middle" nowrap bgcolor="#6BBC07" class="smaller_reversed_nodecoration">
+			<strong><font color="#ffffff" size="-1" face="">
+			<a href="http://mobius.umsystem.edu/search" class="smaller_reversed_nodecoration">MOBIUS</a> &gt;
+			<a href="/search~" class="smaller_reversed_nodecoration">All MERLIN</a>
+
+			&gt; <a href="/search~S1" class="smaller_reversed_nodecoration">MU Libraries Catalog</a>
+
+			</font></strong></td>
+		<td><img src="/screens/toplogo_gr_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="18" border="0" /></td>
+	</tr>
+	<!-- end GREEN bar -->
+	<tr>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+	<!-- begin BLUE bar -->
+	<tr>
+		<td><img src="/screens/toplogo_bl_fade.gif" alt="" width="251" height="18" border="0" /></td>
+		<td align="right" valign="middle" nowrap bgcolor="#333379" CLASS="smaller_reversed_nodecoration"><strong><font color="#ffffff" size="-1" face="Verdana, Arial, Helvetica, sans-serif">
+<a href="http://www.missouri.edu/" class="smaller_reversed_nodecoration">MU</a>
+ |
+<a href="http://mulibraries.missouri.edu/" class="smaller_reversed_nodecoration">MU Libraries</a>
+			</font></strong></td>
+		<td><img src="/screens/toplogo_bl_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="18" border="0" /></td>
+	</tr>
+	<!-- end BLUE bar -->
+	<tr>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+</table>
+
+<!-- END site/toplogo.tt -->
+>>>>>>> newlabels
 <br />
 <!-- BEGIN site/tab_bar.tt for MERLIN, updated 10:42:08 02-Jan-2008 by hjp -->
 <table border="0" cellpadding="0" cellspacing="0" width="740" align="center" summary="tabs">
@@ -149,7 +204,11 @@ function preload() {
                                 </option>
 							
                             	<option value="m">
+<<<<<<< HEAD
                                     Medical Subject (MeSH)
+=======
+                                    Medical Subjects (MESH)
+>>>>>>> newlabels
                                 </option>
 							
                             	<option value="s">
@@ -164,6 +223,7 @@ function preload() {
                                     NLM Call Number
                                 </option>
 							
+<<<<<<< HEAD
                             	<option value="f">
                                     Local or Dewey Call Number
                                 </option>
@@ -183,9 +243,33 @@ function preload() {
                             	<option value="o">
                                     OCLC/WorldCat Number
                                 </option>
+
+                            	<option value="v">
+                                    Genre/Form Term
+                                </option>
 				
                             	<option value="h">
                                     Donor/Honoree
+=======
+                            	<option value="j">
+                                    Dewey Call Number
+                                </option>
+							
+                            	<option value="f">
+                                    Other Call Number
+                                </option>
+							
+                            	<option value="g">
+                                    Gov Doc Number
+                                </option>
+							
+                            	<option value="i">
+                                    ISN, Standard Number
+                                </option>
+							
+                            	<option value="o">
+                                    OCLC Number
+>>>>>>> newlabels
                                 </option>
 							
                             </select> </td>
@@ -441,4 +525,8 @@ function preload() {
 <!-- END site/botlogo.tt -->
 </center>
   </body>
+<<<<<<< HEAD
 </html
+=======
+</html>
+>>>>>>> newlabels

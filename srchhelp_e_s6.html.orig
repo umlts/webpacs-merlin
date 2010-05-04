@@ -5,11 +5,7 @@
   <!-- BEGIN srchhelps_s6.txt for MERLIN, updated 14:44:04 08-Jan-2008 by hjp -->
 
   <head>
-<<<<<<< HEAD
-    <title>UMSL - Music Number Search</title>
-=======
     <title>UMSL - Reserves Search</title>
->>>>>>> mylists
 	<script language="JavaScript" type="text/javascript">
 <!--hide this script from non-javascript-enabled browsers
 
@@ -83,7 +79,62 @@ function preload() {
   <body bgcolor="#FFFFFF" text="#000000" link="#333379" vlink="#333379" alink="#333379" onLoad="preload(); document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
 
 <center>
+<<<<<<< HEAD
 <!--{toplogo}-->
+=======
+<!-- BEGIN site/toplogo.tt for MERLIN, updated 14:44:04 08-Jan-2008 by hjp -->
+<table border="0" cellpadding="0" cellspacing="0" width="740" ALIGN="center">
+	<tr>
+		<td><img src="/screens/shim.gif" alt="" width="99" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="251" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="387" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="3" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+	<tr>
+		<td rowspan="5"><a href="/" target="_top"><img src="/screens/toplogo_merlin.gif" alt=" MERLIN: Missouri Education and Research Libraries Information Network " width="99" height="45" border="0" /></a></td>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+	<!-- begin GREEN bar -->
+	<tr>
+		<td><img src="/screens/toplogo_gr_fade.gif" alt="" width="251" height="18" border="0" /></td>
+		<td align="right" valign="middle" nowrap bgcolor="#6BBC07" class="smaller_reversed_nodecoration">
+			<strong><font color="#ffffff" size="-1" face="">
+			<a href="http://mobius.umsystem.edu/search" class="smaller_reversed_nodecoration">MOBIUS</a> &gt;
+			<a href="/search~" class="smaller_reversed_nodecoration">All MERLIN</a>
+
+			&gt; <a href="/search~S6" class="smaller_reversed_nodecoration">UMSL Libraries Catalog</a>
+
+			</font></strong></td>
+		<td><img src="/screens/toplogo_gr_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="18" border="0" /></td>
+	</tr>
+	<!-- end GREEN bar -->
+	<tr>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+	<!-- begin BLUE bar -->
+	<tr>
+		<td><img src="/screens/toplogo_bl_fade.gif" alt="" width="251" height="18" border="0" /></td>
+		<td align="right" valign="middle" nowrap bgcolor="#333379" CLASS="smaller_reversed_nodecoration"><strong><font color="#ffffff" size="-1" face="Verdana, Arial, Helvetica, sans-serif">
+<a href="http://www.umsl.edu/" class="smaller_reversed_nodecoration">UMSL</a>
+ |
+<a href="http://www.umsl.edu/services/library/" class="smaller_reversed_nodecoration">UMSL Library</a>
+			</font></strong></td>
+		<td><img src="/screens/toplogo_bl_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="18" border="0" /></td>
+	</tr>
+	<!-- end BLUE bar -->
+	<tr>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+</table>
+
+<!-- END site/toplogo.tt -->
+>>>>>>> newlabels
 <br />
 
 
@@ -99,13 +150,8 @@ function preload() {
 		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
 	</tr>
 	<tr>
-<<<<<<< HEAD
-		<td class="tab_cat"><a href="/search~S6" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_libcat','/screens/tab_libcat_over.gif','/screens/tab_libcat_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_libcat','/screens/tab_libcat_down.gif',1);"><img src="/screens/tab_libcat_down.gif" alt=" libcat " width="100" height="31" border="0" id="tab_libcat" /></a></td>
-		<td class="tab_reserve"><a href="/search~S6/e" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_reserves','/screens/tab_reserves_over.gif','/screens/tab_reserves_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_reserves','/screens/tab_reserves_down.gif',1);"><img src="/screens/tab_reserves.gif" alt=" reserves " width="100" height="31" border="0" id="tab_reserves" /></a></td>
-=======
 		<td class="tab_cat"><a href="/search~S6" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_libcat','/screens/tab_libcat_over.gif','/screens/tab_libcat_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_libcat','/screens/tab_libcat_down.gif',1);"><img src="/screens/tab_libcat.gif" alt=" libcat " width="100" height="31" border="0" id="tab_libcat" /></a></td>
 		<td class="tab_reserve"><a href="/search~S6/e" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_reserves','/screens/tab_reserves_over.gif','/screens/tab_reserves_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_reserves','/screens/tab_reserves_down.gif',1);"><img src="/screens/tab_reserves_down.gif" alt=" reserves " width="100" height="31" border="0" id="tab_reserves" /></a></td>
->>>>>>> mylists
 		<td class="tab_patrec"><a href="/patroninfo" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_mylib','/screens/tab_mylib_over.gif','/screens/tab_mylib_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_mylib','/screens/tab_mylib_down.gif',1);"><img src="/screens/tab_mylib.gif" alt=" mylib " width="100" height="31" border="0" id="tab_mylib" /></a></td>
 		<td class="tab_other"><a href="/search~S6/v" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_other','/screens/tab_other_over.gif','/screens/tab_other_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_other','/screens/tab_other_down.gif',1);"><img src="/screens/tab_other.gif" alt=" other " width="100" height="31" border="0" id="tab_other" /></a></td>
 		<td class="tab_help"><a href="/search~S6/k" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_help','/screens/tab_help_over.gif','/screens/tab_help_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_help','/screens/tab_help_down.gif',1);"><img src="/screens/tab_help.gif" alt=" help " width="100" height="31" border="0" id="tab_help" /></a></td>
@@ -113,16 +159,6 @@ function preload() {
 		<td><img src="/screens/shim.gif" alt="" width="1" height="31" border="0" /></td>
 	</tr>
 	<tr>
-<<<<<<< HEAD
-
-		<td bgcolor="#333379"><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
-		<td colspan="5" align="left" valign="middle" nowrap bgcolor="#333379" class="smaller_reversed_nodecoration"> | <a href="/search~S6/Y" class="smaller_reversed_nodecoration">Keyword</a> | <a href="/search~S6/t" class="smaller_reversed_nodecoration">Title</a> | <a href="/search~S6/a" class="smaller_reversed_nodecoration">Author</a> | <a href="/search~S6/q" class="smaller_reversed_nodecoration">Author &amp; Title</a> | <a href="/search~S6/s" class="smaller_reversed_nodecoration">Journal Title</a> | <a href="/search~S6/h" class="smaller_reversed_nodecoration">Subject</a> | <STRONG><a href="/search~S6/n" class="smaller_reversed_nodecoration">Number</a></STRONG>		</td>
-		<td bgcolor="#333379"><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
-	</tr>
-</table><br />
-<!-- END site/tab_bar.tt -->
-
-=======
 		<td colspan="6" style="text-align: left; vertical-align: middle; white-space: nowrap; background-color: #333379;"
 		class="smaller_reversed_nodecoration"><img src="/screens/tab_bar_bar2.gif" alt="" width="1" height="1" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
@@ -130,7 +166,6 @@ function preload() {
 </table><br />
 <!-- END site/tab_bar.tt -->
 	
->>>>>>> mylists
 
 </center>
 
@@ -150,30 +185,6 @@ function preload() {
 
 <!--{availlim}-->
 
-<<<<<<< HEAD
-<!-- BEGIN site/srchhelp/i.tt for MERLIN, updated 14:44:04 08-Jan-2008 by hjp -->
-
-<h3>Music Number Search</h3>
-
-<p>Click in the box, type the number, and press ENTER: </p>
-
-<form METHOD="GET" action="">
-  <p><input TYPE="TEXT" NAME="SEARCH" MAXLENGTH="64" SIZE="48" alt="Search"> <input
-  TYPE="SUBMIT" VALUE="Search"> </p>
-  <input type="hidden" name="searchscope" value="6">
-</form>
-
-<p>Search here for music numbers.</p>
-
-<p><i>for example</i>
-
-<ul>
-  <li>13785-9bostonmusic</li>
-</ul>
-
-
-<!-- END site/srchhelp/i.tt -->
-=======
 <!-- BEGIN site/srchhelp/e.tt for MERLIN, updated 14:44:04 08-Jan-2008 by hjp -->
 
 <h3>Reserves Search</h3>
@@ -211,7 +222,6 @@ function preload() {
 </form>
 
 <!-- END site/srchhelp/e.tt -->
->>>>>>> mylists
 
 
 
@@ -246,4 +256,8 @@ function preload() {
 </center>
 
   </body>
+<<<<<<< HEAD
 </html
+=======
+</html>
+>>>>>>> newlabels

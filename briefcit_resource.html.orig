@@ -12,6 +12,16 @@
 </td>
 </tr>
 <<<<<<< HEAD
+
+<tr>
+<td colspan="2">
+<p>
+<!--{fieldspec:Vek}-->
+</p>
+<p>
+<!--{fieldspec:Veh}-->
+</p>
+=======
 <tr>
 <td colspan="2">
 <!--{fieldspec:Vee}-->
@@ -25,17 +35,7 @@
 <tr>
 <td colspan="2">
 <!--{fieldspec:Vek}-->
-=======
-
-<tr>
-<td colspan="2">
-<p>
-<!--{fieldspec:Vek}-->
-</p>
-<p>
-<!--{fieldspec:Veh}-->
-</p>
->>>>>>> erm
+>>>>>>> newlabels
 </td>
 </tr>
 </table>
