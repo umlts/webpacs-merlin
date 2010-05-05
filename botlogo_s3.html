@@ -57,7 +57,7 @@ document.write(unescape(scriptLine));
  
 // Resuming the original script
 offsiteImg = '<img src="/screens/icon_offsite_blue.gif" alt="offsite" title="offsite" style="border: 0pt none ; vertical-align: middle;"> ';
-gbsPreviewImage = '<img src="/screens/gbs_preview_button1.gif" alt="Preview" title="Preview" style="border: 0pt none ; vertical-align: middle;"> ';
+gbsPreviewImage = '<img src="/screens/gbs_preview_button_small.gif" alt="Preview" title="Preview" style="border: 0pt none ; vertical-align: middle; margin-top:3px"> ';
 // Iterate through the "gbs" <div> elements
 for(bib in numbers) {
 	// Look for matching GBS data
@@ -78,13 +78,13 @@ for(bib in numbers) {
 		if(bookInfo.preview == "noview") { 
 			textGBS = "Information at Google Book Search"; 
 			linkGBS = bookInfo.info_url;
-			linkImage = offsiteImg;
+			linkImage = gbsPreviewImage;
 		}
 		// HTML for offsite image
 		offsiteImg = '<img src="/screens/icon_offsite_blue.gif" alt="offsite" title="offsite" style="border: 0pt none ; vertical-align: middle;"> ';
 		// Rewrite the HTML inside the "gbs" <div> elements
 		if(bookInfo.thumbnail_url !== undefined) {
-			gbsList[bib].innerHTML = '<img src="' + bookInfo.thumbnail_url + '>';
+			gbsList[bib].innerHTML = '<img src="' + bookInfo.thumbnail_url + '"><br><a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + linkImage + '</a>';
 		} else {
 		gbsList[bib].innerHTML = '';
 		}
