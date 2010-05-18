@@ -40,8 +40,8 @@ try {
 
 } catch (e) {
 document.getElementById('smsfeatures').style.visibility='hidden';
+}
 };
-
 
 
 </script>
@@ -65,6 +65,14 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 <!--{reslink}-->
 <!--{innreach}-->
 <br />
+<<<<<<< HEAD
+</div>
+
+<!--{recordinfo:atpexz}-->
+
+<hr />
+
+=======
 </div>
 <div id="infoTable">
 
@@ -72,6 +80,7 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 <div class="bibRecordLink">
 <!--{recordlink}-->
 </div>
+>>>>>>> erm
 <!--{linkeddocs}-->
 <!--{URLS}-->
 <!--{holdingslink}-->
@@ -94,12 +103,26 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 <!--{xif}-->
 <!--{recordinfo:rsyvnqwdmjbuiokflhg}-->
 
+<<<<<<< HEAD
+<div class="bibRecordLink">
+
+<!--{recordlink}-->
+
+</div>
+
+=======
+>>>>>>> erm
 <!--{ifhasresourcetable}-->
 <!--{resourcetable}-->
 <!--{xif}-->
 <!--{patronreviews}-->
 <!--{patronreviewsfull}-->
+<<<<<<< HEAD
+<!--{xmlframe}-->
+
+=======
 <!--{xmlframe}-->
+>>>>>>> erm
 <!--{catedit}-->
 
 </div>
@@ -128,7 +151,12 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 <br />
 <br />
 
+<<<<<<< HEAD
+<div class="clear2"></div>
+
+=======
 <div class="clear2"></div>
+>>>>>>> erm
 <div class="bibPager">
 <!--{pager}-->
 <br />
@@ -139,6 +167,11 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 <!--{searchhistory}-->
 </div>
 
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> erm
 <!-- Google Book Search viewability API script for bib record--> 
 <script type='text/javascript'> 
 // Find all the td elements
@@ -188,21 +221,21 @@ offsiteImg = '<img src="/screens/icon_offsite_blue.gif" alt="offsite" title="off
 gbsPreviewImg = '<img src="/screens/gbs_preview_button1.gif" alt="Preview" title="Preview" style="border: 0pt none ; vertical-align: middle;"> ';
 if(bibInfo){
 	// Set text and link values depending on viewablity
-	if(bibInfo.preview == "full") {
-                textGBS = "Full text at"; //"Read at Google Books";  
+	if(bibInfo.preview == "full") { 
+		textGBS = "Full text at"; //"Read at Google Books"; 
 		linkGBS = bibInfo.preview_url;
 		linkImage = gbsPreviewImg;
 	}
-	if(bibInfo.preview == "partial") {
-                textGBS = "Preview & search inside book at"; //"Preview at Google Books";  
+	if(bibInfo.preview == "partial") { 
+		textGBS = "Preview & search inside book at"; //"Preview at Google Books"; 
 		linkGBS = bibInfo.preview_url;
 		linkImage = gbsPreviewImg;
 	}
-	if(bibInfo.preview == "noview") {
-                textGBS = "Information at Google Book Search"; 
-		linkGBS = bibInfo.info_url;
-		linkImage = gbsPreviewImg;
+	if(bibInfo.preview == "noview") { 
+                document.getElementById('infoTable').style.width = '100%';
+                document.getElementById('sidebarContent').style.width = '0%';
 	}
+
 	// Rewrite the HTML inside the "gbsLink" <div> element
 	var divList = document.getElementsByTagName("div");
     for (var div = 0; div < divList.length; div++) {
@@ -219,14 +252,17 @@ if(bibInfo){
 			divList[div].innerHTML = '<a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + textGBS + '<br />' + linkImage + '</a>';
 			divList[div].style.display="";
 			}
-		}	
+                } 
 	}
 } else {
   document.getElementById('infoTable').style.width = '100%';
   document.getElementById('sidebarContent').style.width = '0%';
 }
-</script>
- 
+</script> 
 
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> erm
 <!--{botlogo}-->
