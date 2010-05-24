@@ -1940,3 +1940,9 @@ ICON_NEARBY=<span style=margin-left:10em;><img src="/screens/morelikethis.gif" b
 AIRPAC_PORT=6060
 
 
+##ASRS##
+
+BUT_ASRSICON=/screens/asrs.gif
+
+
+
