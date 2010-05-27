@@ -1,10 +1,13 @@
 <!-- BEGIN site/toplogo.tt for MERLIN, updated 15:27:26 04-Sep-2008 by hjp -->
 
 <<<<<<< HEAD
+
+=======
+>>>>>>> asrs
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-6717423-14']);
+  _gaq.push(['_setAccount', 'UA-16154721-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -14,10 +17,6 @@
   })();
 
 </script>
-=======
-<LINK rel="stylesheet" media="all" type="text/css" title="web" href="/screens/merlin_styles_s3.css">
-
->>>>>>> erm
 
 <!-- Script for sending call nubmers via SMS -->
 <script type="text/javascript" src='/screens/sms.js'> </script>
