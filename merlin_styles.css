@@ -430,6 +430,14 @@ div#instructions { font-size: 90%; font-style: italic; }
 
 /***********************************************************************************/
 
+/* ASRS Styles */
+
+#asrs { width: 740px; border: 0px; padding: 0px; margin:auto;}
+
+#asrsForm { margin: 3em 0;}
+
+#asrs input {display:block; margin-top:.5em;}
+
 /* Authority Redirection Classes */
 
 TR.authterm { color: #000000; background: #dedee7; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-weight: bold; }
