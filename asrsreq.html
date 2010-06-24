@@ -18,21 +18,47 @@ startTimeout(600000, "/");
 </head>
 <body>
 
-<div class="pageContentInner">
 
-<div id="accessibleForm" class="form1Part">
+    
+<!--{toplogo}-->
 
-<!--{asrsreqform}-->
+<div id="asrs">
 
-</div><!--form2Part -->
-</div><!--pageContentInner -->
+<div class="navigationRow">
+<!--{return}-->
+</div>
 
+
+<h2>ASRS Request</h2>
+
+<p>To request an item for pick up exclusively at the Miller Nichols Library Access Services Desk, please enter your name below. Please allow 15 minutes for delivery.</p>
+
+<!--{iferrmsg}-->
+<!--{errmsg}-->
+<!--{xif}-->
+
+<div id="asrsForm">
+<!--{ifneedpatronname}-->
+<!--{nameprompt}-->
+<!--{name}-->
+<!--{xif}-->
+<!--{submit}-->
+</div>
+
+<p>To request an item to be delivered to a different University of Missouri Library:</p>
+<ul>
+    <li>Click the blue Regular Display button.</li>
+    <li>Click the blue Request button.</li>
+</ul>
+
+<div class="navigationRow">
+<!--{return}-->
+</div>
+
+</div>
 <!--{botlogo}-->
 
-<script type="text/javascript"><!--//--><![CDATA[//><!--
-try { document.forms[0].elements[1].focus(); }
-catch(err) {}
-//--><!]]></script>
+
 
 </body>
 </html>
