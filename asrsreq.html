@@ -34,13 +34,14 @@ startTimeout(600000, "/");
 
 
 <p>To request an item for pick up exclusively at the Miller Nichols Library Access Services Desk, please enter your name below. Please allow 15 minutes for delivery.</p>
-<!--{iferrmsg}-->
-<!--{errmsg}-->
-<!--{xif}-->
 
 <div id="asrsForm">
  
 <form method="post">
+
+<!--{ifpickup}-->
+<!--{pickup}-->
+<!--{xif}-->
 
 <!--{ifneedpatronname}-->
 <!--{nameprompt}-->
@@ -52,7 +53,14 @@ startTimeout(600000, "/");
 <!--{barcode}-->
 <!--{xif}-->
 
+<div id="asrsError">
+<!--{iferrmsg}-->
+<!--{errmsg}-->
+<!--{xif}-->
+</div>
+
 <!--{submit}-->
+
 </form>
 
 <p>To request an item to be delivered to a different University of Missouri Library:</p>
