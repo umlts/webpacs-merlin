@@ -434,6 +434,8 @@ div#instructions { font-size: 90%; font-style: italic; }
 
 #asrs { width: 740px; border: 0px; padding: 0px; margin:auto;}
 
+#asrsError {color:red;}
+
 #asrsForm { width:285px; float:left; padding-right:15px;}
 
 #asrsForm form {margin-bottom: 3em;}
