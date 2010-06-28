@@ -489,7 +489,17 @@ bibResourceTableHeader */
 TABLE.bibScreen { width: 99%; border: 1px solid #ffffff; }
 .bibSearchtool { text-align: center; border: 1px solid #ffffff;  }
 /* bibThumbnails */
-.bibTOC { width: 95%; border: 0px; background-color: #FFFFFF; color: #000000; text-align: left;}
+.bibTOC { width: 80%; border: 0px; background-color: #FFFFFF; color: #000000; text-align: left; margin-left:15.5%;margin-top:-3px;} 
+.bibTOC td { margin-left:50px;}
+#TOC_header {
+  background-color:#dedee7;
+  width:18.4%;
+  text-align:left;
+  left:5px;
+  font-style:italic;
+  position:relative;
+  margin-left:-121.5%;
+  }
 .bibContent { border: 0px; text-align: left;}
 TABLE.bibWidgit { border: 1px solid #ffffff; }
 .navigationRow { text-align: center; white-space: nowrap; }
@@ -794,14 +804,6 @@ wbresourcelist */
 }
 
 <<<<<<< HEAD
-#offlineMessage p{
-  margin: 1em 2em;
-  font-size: medium;
-  text-align:center;
-}
-
-
-=======
 #gbsLink {
   text-align:center;
 }
@@ -809,4 +811,12 @@ wbresourcelist */
 #gbsLink img {
   margin-bottom:1em;
 }
->>>>>>> googleapi
+=======
+#offlineMessage p{
+  margin: 1em 2em;
+  font-size: medium;
+  text-align:center;
+}
+
+
+>>>>>>> downtime

@@ -2,19 +2,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<<<<<<< HEAD
   <!-- BEGIN srchhelps_s3.txt for MERLIN, updated 15:42:51 08-Jan-2008 by hjp -->
 
 
   <head>
     <title>UMKC - FAQ</title>
 
-=======
-  <!-- BEGIN srchhelps_s0.txt for MERLIN, updated 15:42:04 08-Jan-2008 by hjp -->
-
-  <head>
-    <title>ALL MERLIN - FAQ</title>
->>>>>>> erm
 	<script language="JavaScript" type="text/javascript">
 <!--hide this script from non-javascript-enabled browsers
 
@@ -88,17 +81,67 @@ function preload() {
   <body bgcolor="#FFFFFF" text="#000000" link="#333379" vlink="#333379" alink="#333379" onLoad="">
 
 <center>
-<<<<<<< HEAD
-<!--{toplogo}-->
+<!-- BEGIN site/toplogo.tt for MERLIN, updated 15:42:51 08-Jan-2008 by hjp -->
+
+<table border="0" cellpadding="0" cellspacing="0" width="740" ALIGN="center">
+	<tr>
+		<td><img src="/screens/shim.gif" alt="" width="99" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="251" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="387" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="3" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+	<tr>
+		<td rowspan="5"><a href="/" target="_top"><img src="/screens/toplogo_merlin.gif" alt=" MERLIN: Missouri Education and Research Libraries Information Network " width="99" height="45" border="0" /></a></td>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+	<!-- begin GREEN bar -->
+	<tr>
+		<td><img src="/screens/toplogo_gr_fade.gif" alt="" width="251" height="18" border="0" /></td>
+		<td align="right" valign="middle" nowrap bgcolor="#6BBC07" class="smaller_reversed_nodecoration">
+			<strong><font color="#ffffff" size="-1" face="">
+			<a href="http://mobius.umsystem.edu/search" class="smaller_reversed_nodecoration">MOBIUS</a> &gt;
+			<a href="/search~" class="smaller_reversed_nodecoration">All MERLIN</a>
+
+			&gt; <a href="/search~S3" class="smaller_reversed_nodecoration">UMKC Libraries Catalog</a>
+
+
+			</font></strong></td>
+		<td><img src="/screens/toplogo_gr_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="18" border="0" /></td>
+	</tr>
+	<!-- end GREEN bar -->
+	<tr>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+	<!-- begin BLUE bar -->
+	<tr>
+		<td><img src="/screens/toplogo_bl_fade.gif" alt="" width="251" height="18" border="0" /></td>
+		<td align="right" valign="middle" nowrap bgcolor="#333379" CLASS="smaller_reversed_nodecoration"><strong><font color="#ffffff" size="-1" face="Verdana, Arial, Helvetica, sans-serif">
+<a href="http://www.umkc.edu/" class="smaller_reversed_nodecoration">UMKC</a>
+ |
+<a href="http://www.umkc.edu/lib/" class="smaller_reversed_nodecoration">UMKC Libraries</a>
+
+			</font></strong></td>
+		<td><img src="/screens/toplogo_bl_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="18" border="0" /></td>
+	</tr>
+	<!-- end BLUE bar -->
+	<tr>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+</table>
+
+<!-- END site/toplogo.tt -->
 <br />
 
 
 <<<<<<< HEAD
 		<!-- BEGIN site/tab_bar.tt for MERLIN, updated 15:42:51 08-Jan-2008 by hjp -->
 
-=======
-		<!-- BEGIN site/tab_bar.tt for MERLIN, updated 15:42:04 08-Jan-2008 by hjp -->
->>>>>>> erm
 <table border="0" cellpadding="0" cellspacing="0" width="740" align="center" summary="tabs">
 	<tr>
 		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
@@ -110,7 +153,6 @@ function preload() {
 		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
 	</tr>
 	<tr>
-<<<<<<< HEAD
 		<td class="tab_cat"><a href="/search~S3" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_libcat','/screens/tab_libcat_over.gif','/screens/tab_libcat_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_libcat','/screens/tab_libcat_down.gif',1);"><img src="/screens/tab_libcat.gif" alt=" libcat " width="100" height="31" border="0" id="tab_libcat" /></a></td>
 		<td class="tab_reserve"><a href="/search~S3/e" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_reserves','/screens/tab_reserves_over.gif','/screens/tab_reserves_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_reserves','/screens/tab_reserves_down.gif',1);"><img src="/screens/tab_reserves.gif" alt=" reserves " width="100" height="31" border="0" id="tab_reserves" /></a></td>
 
@@ -120,13 +162,6 @@ function preload() {
 		<td class="tab_help"><a href="/search~S3/k" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_help','/screens/tab_help_over.gif','/screens/tab_help_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_help','/screens/tab_help_down.gif',1);"><img src="/screens/tab_help_down.gif" alt=" help " width="100" height="31" border="0" id="tab_help" /></a></td>
 
 
-=======
-		<td class="tab_cat"><a href="/search~" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_libcat','/screens/tab_libcat_over.gif','/screens/tab_libcat_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_libcat','/screens/tab_libcat_down.gif',1);"><img src="/screens/tab_libcat.gif" alt=" libcat " width="100" height="31" border="0" id="tab_libcat" /></a></td>
-		<td class="tab_reserve"><a href="/search~/e" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_reserves','/screens/tab_reserves_over.gif','/screens/tab_reserves_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_reserves','/screens/tab_reserves_down.gif',1);"><img src="/screens/tab_reserves.gif" alt=" reserves " width="100" height="31" border="0" id="tab_reserves" /></a></td>
-		<td class="tab_patrec"><a href="/patroninfo" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_mylib','/screens/tab_mylib_over.gif','/screens/tab_mylib_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_mylib','/screens/tab_mylib_down.gif',1);"><img src="/screens/tab_mylib.gif" alt=" mylib " width="100" height="31" border="0" id="tab_mylib" /></a></td>
-		<td class="tab_other"><a href="/search~/v" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_other','/screens/tab_other_over.gif','/screens/tab_other_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_other','/screens/tab_other_down.gif',1);"><img src="/screens/tab_other.gif" alt=" other " width="100" height="31" border="0" id="tab_other" /></a></td>
-		<td class="tab_help"><a href="/search~/k" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_help','/screens/tab_help_over.gif','/screens/tab_help_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_help','/screens/tab_help_down.gif',1);"><img src="/screens/tab_help_down.gif" alt=" help " width="100" height="31" border="0" id="tab_help" /></a></td>
->>>>>>> erm
 		<td><img src="/screens/tab_bar_bar1.gif" alt="" width="1" height="1" border="0" /></td>
 		<td><img src="/screens/shim.gif" alt="" width="1" height="31" border="0" /></td>
 	</tr>
@@ -136,6 +171,30 @@ function preload() {
 		<td><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
 	</tr>
 </table><br />
+=======
+		<!-- BEGIN site/tab_bar.tt for MERLIN, updated 15:42:04 08-Jan-2008 by hjp -->
+<div id="merlin_tabs_wrapper">
+	<div id="merlin_tabs">
+		<ul>
+			<li><a href="/search~S3"><span>Library<br />Catalog</span></a></li>
+			<li><a href="/search~S3/e"><span>Course<br />Reserves</span></a></li>
+
+			<li><a href="/patroninfo"><span>My Library<br />Account</span></a></li>
+			<li><a href="/search~S3/v"><span>Other<br />Libraries</span></a></li>
+
+			
+			<li><a href="/search~S3/j"><span>Articles &amp;<br />Databases</span></a></li>
+			<li><a href="http://pc8ga3qq6a.search.serialssolutions.com/"><span>Online<br />Journals</span></a></li>
+
+			
+
+			<li id="current"><a href="/search~S3/k"><span>?<br />Help</span></a></li>
+		</ul>
+	</div>
+	<div id="merlin_sub_tabs"></div>
+<br />
+</div>
+>>>>>>> erm
 <!-- END site/tab_bar.tt -->
 	
 
@@ -157,12 +216,8 @@ function preload() {
 
 <!--{availlim}-->
 
-<<<<<<< HEAD
 <!-- BEGIN site/srchhelp/k.tt for MERLIN, updated 15:42:51 08-Jan-2008 by hjp -->
 
-=======
-<!-- BEGIN site/srchhelp/k.tt for MERLIN, updated 15:42:04 08-Jan-2008 by hjp -->
->>>>>>> erm
 
   <p><center><H3>MERLIN FAQ - Frequently Asked Questions</H3></p></center>
 
@@ -661,12 +716,8 @@ function preload() {
 
 
 
-<<<<<<< HEAD
 <p class="ret2MainMenu"><a HREF="/search~S3">Return to Main Menu</a></p>
 
-=======
-<p class="ret2MainMenu"><a HREF="/search~">Return to Main Menu</a></p>
->>>>>>> erm
 
 
 </td></tr></table>
@@ -675,12 +726,8 @@ function preload() {
 </center>
 
 <center>
-<<<<<<< HEAD
 <!-- BEGIN site/botlogo.tt for MERLIN, updated 15:42:51 08-Jan-2008 by hjp -->
 
-=======
-<!-- BEGIN site/botlogo.tt for MERLIN, updated 15:42:04 08-Jan-2008 by hjp -->
->>>>>>> erm
 <center>
 	<p><img src="/screens/bot_bar.gif" alt="" width="740" height="8" border="0" /></p>
 	<p><span class="bot_logo"><strong>MERLIN</strong> &middot; Missouri Education and Research Libraries Information Network<br />

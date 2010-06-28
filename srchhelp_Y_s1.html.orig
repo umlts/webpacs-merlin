@@ -353,12 +353,30 @@ School:
 <!--{lang}-->
 <!--{DOCDATE}-->
 <!--{publish}-->
+<<<<<<< HEAD
+<table border="0">
+<tr><td>Conference Proceedings:</td><td><select name="o">
+<option value="">ANY</option>
+<option value="1">Yes</option>
+<option value="0">No</option>
+
+</select>
+</td>
+</tr></table>
+<!--{mattype}-->
+<!--{nosort}-->
+<!--{sort}-->
+<br />
+
+<p><strong>* Use ctrl/click to select more than one option in a list.</strong></p>
+=======
 <!--{onference}-->
 <!--{mattype}-->
 <!--{nosort}-->
 &nbsp; Sort by:
 <!--{sort}-->
 <br />
+>>>>>>> newlabels
 <!--<select name="SORT">
 <option value="D">Date</option>
 <option value="A">Title</option>

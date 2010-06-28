@@ -356,10 +356,6 @@ function preload() {
                             	<option value="2">
                                     MU-Law
                                 </option>
-<<<<<<< HEAD
-
-=======
->>>>>>> newlabels
 							
                             	<option value="3" selected="selected">
                                     UMKC
@@ -372,10 +368,6 @@ function preload() {
                             	<option value="5">
                                     Missouri S&T
                                 </option>
-<<<<<<< HEAD
-
-=======
->>>>>>> newlabels
 							
                             	<option value="6">
                                     UMSL
@@ -389,10 +381,6 @@ function preload() {
                             </select> </td>
 
                             <td nowrap="nowrap"><input name="Submit" type="Submit" value="Search" /> </td>
-<<<<<<< HEAD
-
-=======
->>>>>>> newlabels
                         </tr>
                     </table>
                 </form>
@@ -403,14 +391,11 @@ function preload() {
 <br />
 <!-- END site/quicksearch.tt -->
 <<<<<<< HEAD
-
-<table width="740" border="0" align="center" cellpadding="0" cellspacing="5" summary="text">
-
 =======
 <!-- BEGIN site/guided_searches.tt for MERLIN, updated 15:20:39 31-Dec-2007 by hjp -->
+>>>>>>> newlabels
 
 <table width="740" border="0" align="center" cellpadding="0" cellspacing="5" summary="text">
->>>>>>> newlabels
 	<tr>
 		<td colspan="3" align="center">
 			<table width="740" border="0" cellpadding="0" cellspacing="0" summary="text">
@@ -420,10 +405,6 @@ function preload() {
 			        <td width="6" height="5"><img src="/screens/bc_ur.gif" alt="" width="6" height="5" border="0" /></td>
 			    </tr>
 			    <tr bgcolor="#DEDEE7">
-<<<<<<< HEAD
-
-=======
->>>>>>> newlabels
 			        <td width="6"><img src="/screens/shim.gif" alt="" width="6" height="1" border="0" /></td>
 			        <td width="719" nowrap="nowrap" bgcolor="#DEDEE7">
 			            <div align="center">
@@ -432,10 +413,6 @@ function preload() {
 			            </div>
 			        </td>
 			        <td width="6"><img src="/screens/shim.gif" alt="" width="6" height="5" border="0" /></td>
-<<<<<<< HEAD
-
-=======
->>>>>>> newlabels
 			    </tr>
 			    <tr>
 			        <td width="6" height="5" align="right"><img src="/screens/bc_ll.gif" alt="" width="6" height="5" border="0" /></td>
@@ -445,10 +422,6 @@ function preload() {
 			</table>
 		</td>
 	</tr>
-<<<<<<< HEAD
-
-=======
->>>>>>> newlabels
 	<tr>
 		<td>
 			<table width="244" border="0" cellpadding="0" cellspacing="0" summary="text">
@@ -649,8 +622,6 @@ function preload() {
 			        </td>
 <<<<<<< HEAD
 
-=======
->>>>>>> newlabels
 			        <td width="6"><img src="/screens/shim.gif" alt="" width="6" height="5" border="0" /></td>
 			    </tr>
 			    <tr>
@@ -660,7 +631,6 @@ function preload() {
 			    </tr>
 			</table>
 		</td>
-<<<<<<< HEAD
 
 	</tr>
 	<tr>
@@ -684,16 +654,22 @@ function preload() {
 			                 <span class="index_def">electronic databases and other resources</span>
 			            </div>
 			        </td>
+=======
+>>>>>>> newlabels
 			        <td width="6"><img src="/screens/shim.gif" alt="" width="6" height="5" border="0" /></td>
 			    </tr>
 			    <tr>
 			        <td width="6" height="5" align="right"><img src="/screens/bc_ll.gif" alt="" width="6" height="5" border="0" /></td>
 			        <td width="232" height="5" bgcolor="#DEDEE7"><img src="/screens/shim.gif" alt="" width="232" height="5" border="0" /></td>
+<<<<<<< HEAD
 
+=======
+>>>>>>> newlabels
 			        <td width="6" height="5"><img src="/screens/bc_lr.gif" alt="" width="6" height="5" border="0" /></td>
 			    </tr>
 			</table>
 		</td>
+<<<<<<< HEAD
 		<td>
 			&nbsp;
 		</td>

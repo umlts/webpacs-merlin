@@ -383,6 +383,10 @@ School:
 &nbsp; Sort by:
 <!--{sort}-->
 <br />
+<<<<<<< HEAD
+<p><strong>* Use ctrl/click to select more than one option in a list.</strong></p>
+=======
+>>>>>>> newlabels
 <!--<select name="SORT">
 <option value="D">Date</option>
 <option value="A">Title</option>
