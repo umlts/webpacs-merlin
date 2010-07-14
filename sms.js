@@ -1,7 +1,7 @@
 // JavaScript Document
 
 // set this to be the URL for the SMS script
-var smsurl = "http://mco.mobius.umsystem.edu/sms/sms-merlin.php?";
+var smsurl = "http://mobiusconsortium.org/sms/sms-merlin.php?";
 
    function showsms() {
 
