@@ -134,7 +134,7 @@ function preload() {
 </table>
 
 <!-- END site/toplogo.tt -->
->>>>>>> newdropdown
+>>>>>>> scrollmenus
 <br />
 
 
@@ -237,12 +237,12 @@ in
 <option value="t:">Title:</option>
 <option value="d:">Subject:</option>
 <<<<<<< HEAD
-<option value="N:">Note:</option>
-<option value="c:">Table of Contents:</option>
-=======
 <option value="c:">Table of Contents:</option>
 <option value="N:">Other:</option>
->>>>>>> newdropdown
+=======
+<option value="N:">Note:</option>
+<option value="c:">Table of Contents:</option>
+>>>>>>> scrollmenus
 </select>
 </td>
 </tr>
@@ -266,12 +266,12 @@ in
 <option value="t:">Title:</option>
 <option value="d:">Subject:</option>
 <<<<<<< HEAD
-<option value="N:">Note:</option>
-<option value="c:">Table of Contents:</option>
-=======
 <option value="c:">Table of Contents:</option>
 <option value="N:">Other:</option>
->>>>>>> newdropdown
+=======
+<option value="N:">Note:</option>
+<option value="c:">Table of Contents:</option>
+>>>>>>> scrollmenus
 </select>
 </td>
 </tr>
@@ -295,13 +295,13 @@ in
 <option value="t:">Title:</option>
 <option value="d:">Subject:</option>
 <<<<<<< HEAD
-<option value="N:">Note:</option>
-<option value="c:">Table of Contents:</option></select>
-=======
 <option value="c:">Table of Contents:</option>
 <option value="N:">Other:</option>
 </select>
->>>>>>> newdropdown
+=======
+<option value="N:">Note:</option>
+<option value="c:">Table of Contents:</option></select>
+>>>>>>> scrollmenus
 </td>
 </tr>
 <tr>
@@ -324,12 +324,12 @@ in
 <option value="t:">Title:</option>
 <option value="d:">Subject:</option>
 <<<<<<< HEAD
-<option value="N:">Note:</option>
-<option value="c:">Table of Contents:</option>
-=======
 <option value="c:">Table of Contents:</option>
 <option value="N:">Other:</option>
->>>>>>> newdropdown
+=======
+<option value="N:">Note:</option>
+<option value="c:">Table of Contents:</option>
+>>>>>>> scrollmenus
 </select>
 <input type="hidden" name="endSearch" />
 </td>
@@ -353,6 +353,7 @@ School:
 <!--{lang}-->
 <!--{DOCDATE}-->
 <!--{publish}-->
+<<<<<<< HEAD
 <!--{onference}-->
 <!--{mattype}-->
 <!--{nosort}-->
@@ -364,6 +365,23 @@ School:
 <option value="A">Title</option>
 <option value="R">Relevance</option>
 </select>-->
+=======
+<table border="0">
+<tr><td>Conference Proceedings:</td><td><select name="o">
+<option value="">ANY</option>
+<option value="1">Yes</option>
+<option value="0">No</option>
+
+</select>
+</td>
+</tr></table>
+
+<!--{mattype}-->
+<!--{nosort}-->
+<!--{sort}-->
+<br />
+<p><strong>To select multiple items in a scroll box menu, use CTRL-click (Windows) or the command key (Mac).</strong></p>
+>>>>>>> scrollmenus
 
 </td>
 <!-- END RIGHT COLUMN -->
@@ -510,4 +528,4 @@ s:hopi and s:religion
 </html
 =======
 </html>
->>>>>>> newdropdown
+>>>>>>> scrollmenus
