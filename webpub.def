@@ -19,7 +19,8 @@ b|t||-6789|Title||b|
 #
 # converted from HOLDINGS_POS field tag: 'p'
 #
-b|p|26[02]|-6789|Published||b|
+b|p|260|-6789|Published||b|
+b|p|262|-c2|Music Publication Number||b|
 b|p||-6789|Published||b|
 #
 # converted from HOLDINGS_POS field tag: 'e'
@@ -62,7 +63,6 @@ b|H|||||b
 #
 
 b|s||-6789|Series Title||b|
-b|y|01[3-8]||Standard Number||b|
 b|y|052||Standard Number||b|
 b|y|025||Other Number||b|
 b|y|034||Other Number||b|
@@ -93,13 +93,13 @@ b|r|36[013-9]|-2|Description||b|
 b|r|362|-2|Publication History||b|
 b|r|3[7-9][0-9]|-2|Description||b|
 b|r||-2|Description||b|
+b|v|505|-57|Contents||b|
 b|v|508|-6789|Production Credits||b|
 b|v|511|-6789|Performers||b|
 b|v|520|-6789|Summary||b|
+b|v|533|-57|Format||b|
 b|v||-6789|Notes||b|
-b|n|505|-57|Contents||b|
 b|n|524|-57|Cite As||b|
-b|n|533|-57|Format||b|
 b|n|539|-57|||b|
 b|n|555 |-57|Indexes||b|
 b|n|5550|-57|Finding Aids||b|
@@ -109,7 +109,6 @@ b|n||-57|Notes||b|
 b|q|765|-6789|Other Titles||b|
 b|q|767|-6789|Other Titles||b|
 b|q|773|-6789|In||b|
-b|q|774|-6789|Includes||b|
 b|q|776|-6789|Other Physical Format||b|
 b|q||-6789|Related To||b|
 b|w|035|-6789|||b|
@@ -125,6 +124,7 @@ b|j|65[34]|-25|Additional Keywords||b|
 b|j|655..|-25|Genre/Form||b|
 b|j|65[6-9]|-25|Additional Keywords||b|
 b|j|75[2-5]|-25|Additional Keywords||b|
+b|j|774|-6789|Includes||b|
 b|j||-25|Additional Keywords||b|
 b|b|7[01][01].[ 13456789]|-5|Other Authors||b|
 b|b|7[01][01].2|-5|Includes||b|
@@ -155,13 +155,13 @@ b|i|0281[12]|-c2|Matrix Number||b|
 b|i|0282[12]|-c2|Plate Number||b|
 b|i|0283[12]|-c2|Publication Number||b|
 b|i|0284[12]|-c2|Video Publication Number||b|
-b|i|262|-c2|Music Publication Number||b|
 b|i||-c2|Standard Number||b|
 b|o||-6789|OCLC/WorldCat Number||b|
 b|k|086|-6789|Government Document Number||b|
 b|k|09817|-6789|Missouri Document Number||b|
 b|k|09822|-6789|Kansas Document Number||b|
 b|k||-6789|Document Number||b|
+b|f|01[3-8]||Standard Number||b|
 b|f|027|-6789|Technical Report Number||b|
 b|f|030|-6789|CODEN||b|
 b|f|070|-6789|Nat'l Ag Library Control Number||b|
