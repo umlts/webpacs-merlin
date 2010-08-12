@@ -174,7 +174,7 @@ CLEAR_PRIVATE_INFO=yes
 
 FORM_FOCUS=no
 
-INSERTTAG_INHEAD=<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+INSERTTAG_INHEAD=<script type="text/javascript" src="/screens/jquery-1.4.2.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 #RESOURCETABLE
 
