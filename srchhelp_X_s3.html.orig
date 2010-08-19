@@ -79,11 +79,67 @@ function preload() {
 <!--{advancedsearchbody}-->
 	
 <center>
+<<<<<<< HEAD
 <!--{toplogo}-->
+=======
+<!-- BEGIN site/toplogo.tt for MERLIN, updated 14:42:51 08-Jan-2008 by hjp -->
+<table border="0" cellpadding="0" cellspacing="0" width="740" ALIGN="center">
+	<tr>
+		<td><img src="/screens/shim.gif" alt="" width="99" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="251" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="387" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="3" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+	<tr>
+		<td rowspan="5"><a href="/" target="_top"><img src="/screens/toplogo_merlin.gif" alt=" MERLIN: Missouri Education and Research Libraries Information Network " width="99" height="45" border="0" /></a></td>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+	<!-- begin GREEN bar -->
+	<tr>
+		<td><img src="/screens/toplogo_gr_fade.gif" alt="" width="251" height="18" border="0" /></td>
+		<td align="right" valign="middle" nowrap bgcolor="#6BBC07" class="smaller_reversed_nodecoration">
+			<strong><font color="#ffffff" size="-1" face="">
+			<a href="http://mobius.umsystem.edu/search" class="smaller_reversed_nodecoration">MOBIUS</a> &gt;
+			<a href="/search~" class="smaller_reversed_nodecoration">All MERLIN</a>
+
+			&gt; <a href="/search~S3" class="smaller_reversed_nodecoration">UMKC Libraries Catalog</a>
+
+			</font></strong></td>
+		<td><img src="/screens/toplogo_gr_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="18" border="0" /></td>
+	</tr>
+	<!-- end GREEN bar -->
+	<tr>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+	<!-- begin BLUE bar -->
+	<tr>
+		<td><img src="/screens/toplogo_bl_fade.gif" alt="" width="251" height="18" border="0" /></td>
+		<td align="right" valign="middle" nowrap bgcolor="#333379" CLASS="smaller_reversed_nodecoration"><strong><font color="#ffffff" size="-1" face="Verdana, Arial, Helvetica, sans-serif">
+<a href="http://www.umkc.edu/" class="smaller_reversed_nodecoration">UMKC</a>
+ |
+<a href="http://www.umkc.edu/lib/" class="smaller_reversed_nodecoration">UMKC Libraries</a>
+			</font></strong></td>
+		<td><img src="/screens/toplogo_bl_rnd_end.gif" alt="" width="3" height="18" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="18" border="0" /></td>
+	</tr>
+	<!-- end BLUE bar -->
+	<tr>
+		<td colspan="3"><img src="/screens/shim.gif" alt="" width="641" height="3" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="3" border="0" /></td>
+	</tr>
+</table>
+
+<!-- END site/toplogo.tt -->
+>>>>>>> scrollmenus
 <br />
 
 
 		<!-- BEGIN site/tab_bar.tt for MERLIN, updated 14:42:51 08-Jan-2008 by hjp -->
+<<<<<<< HEAD
 <div id="merlin_tabs_wrapper">
 	<div id="merlin_tabs" style="border-bottom:0px;">
 		<ul>
@@ -105,6 +161,34 @@ function preload() {
 	<div id="merlin_sub_tabs" class="smaller_reversed_nodecoration"> | <a href="/search~S3/Y">Keyword</a> | <a href="/search~S3/t">Title</a> | <a href="/search~S3/a">Author</a> | <a href="/search~S3/q">Author &amp; Title</a> | <a href="/search~S3/s">Journal Title</a> | <a href="/search~S3/h">Subject</a> | <a href="/search~S3/n">Number</a></div>
 <br />
 </div>
+=======
+<table border="0" cellpadding="0" cellspacing="0" width="740" align="center" summary="tabs">
+	<tr>
+		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="240" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+	<tr>
+		<td class="tab_cat"><a href="/search~S3" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_libcat','/screens/tab_libcat_over.gif','/screens/tab_libcat_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_libcat','/screens/tab_libcat_down.gif',1);"><img src="/screens/tab_libcat_down.gif" alt=" libcat " width="100" height="31" border="0" id="tab_libcat" /></a></td>
+		<td class="tab_reserve"><a href="/search~S3/e" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_reserves','/screens/tab_reserves_over.gif','/screens/tab_reserves_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_reserves','/screens/tab_reserves_down.gif',1);"><img src="/screens/tab_reserves.gif" alt=" reserves " width="100" height="31" border="0" id="tab_reserves" /></a></td>
+		<td class="tab_patrec"><a href="/patroninfo" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_mylib','/screens/tab_mylib_over.gif','/screens/tab_mylib_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_mylib','/screens/tab_mylib_down.gif',1);"><img src="/screens/tab_mylib.gif" alt=" mylib " width="100" height="31" border="0" id="tab_mylib" /></a></td>
+		<td class="tab_other"><a href="/search~S3/v" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_other','/screens/tab_other_over.gif','/screens/tab_other_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_other','/screens/tab_other_down.gif',1);"><img src="/screens/tab_other.gif" alt=" other " width="100" height="31" border="0" id="tab_other" /></a></td>
+		<td class="tab_help"><a href="/search~S3/k" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_help','/screens/tab_help_over.gif','/screens/tab_help_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_help','/screens/tab_help_down.gif',1);"><img src="/screens/tab_help.gif" alt=" help " width="100" height="31" border="0" id="tab_help" /></a></td>
+		<td><img src="/screens/tab_bar_bar1.gif" alt="" width="1" height="1" border="0" /></td>
+		<td><img src="/screens/shim.gif" alt="" width="1" height="31" border="0" /></td>
+	</tr>
+	<tr>
+
+		<td bgcolor="#333379"><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
+		<td colspan="5" align="left" valign="middle" nowrap bgcolor="#333379" class="smaller_reversed_nodecoration"> | <a href="/search~S3/Y" class="smaller_reversed_nodecoration">Keyword</a> | <a href="/search~S3/t" class="smaller_reversed_nodecoration">Title</a> | <a href="/search~S3/a" class="smaller_reversed_nodecoration">Author</a> | <a href="/search~S3/q" class="smaller_reversed_nodecoration">Author &amp; Title</a> | <a href="/search~S3/s" class="smaller_reversed_nodecoration">Journal Title</a> | <a href="/search~S3/h" class="smaller_reversed_nodecoration">Subject</a> | <a href="/search~S3/n" class="smaller_reversed_nodecoration">Number</a>		</td>
+		<td bgcolor="#333379"><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
+	</tr>
+</table><br />
+>>>>>>> scrollmenus
 <!-- END site/tab_bar.tt -->
 
 
@@ -176,8 +260,13 @@ in
 <option value="a:">Author:</option>
 <option value="t:">Title:</option>
 <option value="d:">Subject:</option>
+<<<<<<< HEAD
 <option value="c:">Table of Contents:</option>
 <option value="N:">Other:</option>
+=======
+<option value="N:">Note:</option>
+<option value="c:">Table of Contents:</option>
+>>>>>>> scrollmenus
 </select>
 </td>
 </tr>
@@ -200,8 +289,13 @@ in
 <option value="a:">Author:</option>
 <option value="t:">Title:</option>
 <option value="d:">Subject:</option>
+<<<<<<< HEAD
 <option value="c:">Table of Contents:</option>
 <option value="N:">Other:</option>
+=======
+<option value="N:">Note:</option>
+<option value="c:">Table of Contents:</option>
+>>>>>>> scrollmenus
 </select>
 </td>
 </tr>
@@ -224,9 +318,14 @@ in
 <option value="a:">Author:</option>
 <option value="t:">Title:</option>
 <option value="d:">Subject:</option>
+<<<<<<< HEAD
 <option value="c:">Table of Contents:</option>
 <option value="N:">Other:</option>
 </select>
+=======
+<option value="N:">Note:</option>
+<option value="c:">Table of Contents:</option></select>
+>>>>>>> scrollmenus
 </td>
 </tr>
 <tr>
@@ -248,8 +347,13 @@ in
 <option value="a:">Author:</option>
 <option value="t:">Title:</option>
 <option value="d:">Subject:</option>
+<<<<<<< HEAD
 <option value="c:">Table of Contents:</option>
 <option value="N:">Other:</option>
+=======
+<option value="N:">Note:</option>
+<option value="c:">Table of Contents:</option>
+>>>>>>> scrollmenus
 </select>
 <input type="hidden" name="endSearch" />
 </td>
@@ -273,6 +377,19 @@ School:
 <!--{lang}-->
 <!--{DOCDATE}-->
 <!--{publish}-->
+<<<<<<< HEAD
+<!--{onference}-->
+<!--{mattype}-->
+<!--{nosort}-->
+&nbsp; Sort by:
+<!--{sort}-->
+<br />
+<!--<select name="SORT">
+<option value="D">Date</option>
+<option value="A">Title</option>
+<option value="R">Relevance</option>
+</select>-->
+=======
 <table border="0">
 <tr><td>Conference Proceedings:</td><td><select name="o">
 <option value="">ANY</option>
@@ -288,6 +405,7 @@ School:
 <!--{sort}-->
 <br />
 <p><strong>To select multiple items in a scroll box menu, use CTRL-click (Windows) or the command key (Mac).</strong></p>
+>>>>>>> scrollmenus
 
 </td>
 <!-- END RIGHT COLUMN -->
@@ -434,4 +552,4 @@ s:hopi and s:religion
 </html
 =======
 </html>
->>>>>>> commenttag
+>>>>>>> scrollmenus
