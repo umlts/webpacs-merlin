@@ -1,105 +1,158 @@
-<!-- MERLIN bib_display.html updated 080411 lee -->
-<!-- Based on: SWAN bib_display.html updated 080514 lee -->
-
-<!--{toplogo}-->
-<!--{patron}-->
-<!--{logout}-->
-<br />
-<!--{ifbibdisplay}-->
-<!--{xif}-->
+<!-- MERLIN bib_display.html updated 080411 lee -->
+
+<!-- Based on: SWAN bib_display.html updated 080514 lee -->
+
+
+
+<!--{toplogo}-->
+
+<!--{patron}-->
+
+<!--{logout}-->
+
+<br />
+
+<!--{ifbibdisplay}-->
+
+<!--{xif}-->
+
 <div class="navigationRow">
 
 
-<!-- this is the button set we'll hide it if the BIB has no items -->
-<div id=smsfeatures>
+  <!-- this is the button set we'll hide it if the BIB has no items -->
+  <div id="smsfeatures">
 
-<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;"><img src="/screens/but_send.gif" border=0></a>&nbsp;&nbsp;
+  <a href="#here" name="smsbutton" id="smsbutton" onClick="showsms();return false;"><img src="/screens/but_send.gif" border=0></a>&nbsp;&nbsp;
+  </div>
+
+
+
+  <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
+
+
+
+  <script>
+  document.ready = function() {
+    var f = document.getElementById('bib_detail');
+  }
+  try { 
+   var itms = document.getElementById('bib_items');
+   var tr = itms.getElementsByTagName('TR');
+    for(i = 1; i < tr.length; i++) {
+      var x=tr[i].getElementsByTagName('TD');
+      if (x.length == 3) {
+        var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+        var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+        var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+      }
+   }	
+
+  } catch (e) {
+  //document.getElementById('smsfeatures').style.visibility='hidden';
+  }
+  };
+
+
+  </script>
+
+
+
+<!--{navrow}-->
+
+
+
+
+<br />
+
+<!--{searchhistory}-->
+
+<br />
+
+</div>
+
+<div class="bibSearchtool">
+
+<!--{searchtool}-->
+
+<!--{relsearch}-->
+
+</div>
+
+<div class="bibPager">
+
+<!--{pager}-->
+
+<br />
+
+<!--{reslink}-->
+
+<!--{innreach}-->
+
+<br />
+
+</div>
+
+<div id="infoTable">
+
+<!--{recordinfo:atpexz}-->
+
+<div class="bibRecordLink">
+
+<!--{recordlink}-->
+
+</div>
+
+<!--{linkeddocs}-->
+
+<!--{URLS}-->
+
+<!--{holdingslink}-->
+
+<!--{bloblinks}-->
+
+<!--{imagelinks}-->
+
+<!--{artthumb}-->
+
+<!--{booking}-->
+
+<!--{holdings}-->
+
+<div style="margin:5px;">
+
+<!--{items}-->
+
 </div>
 
 
 
-<!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
 
+<div>
 
+<!--{orders}-->
 
-<script>
-document.ready = function() {
-  var f = document.getElementById('bib_detail');
-}
-try { 
- var itms = document.getElementById('bib_items');
- var tr = itms.getElementsByTagName('TR');
-  for(i = 1; i < tr.length; i++) {
-    var x=tr[i].getElementsByTagName('TD');
-    if (x.length == 3) {
-      var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-      var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-      var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-    }
- }	
+</div>
 
-} catch (e) {
-document.getElementById('smsfeatures').style.visibility='hidden';
-}
-};
+<!--{ifTOC}-->
 
+<!--{TOC}-->
 
-</script>
+<!--{xif}-->
 
-
-<!--{navrow}-->
-
-
-
-<br />
-<!--{searchhistory}-->
-<br />
-</div>
-<div class="bibSearchtool">
-<!--{searchtool}-->
-<!--{relsearch}-->
-</div>
-<div class="bibPager">
-<!--{pager}-->
-<br />
-<!--{reslink}-->
-<!--{innreach}-->
-<br />
-</div>
-<div id="infoTable">
-
-<!--{recordinfo:atpexz}-->
-<div class="bibRecordLink">
-<!--{recordlink}-->
-</div>
-<!--{linkeddocs}-->
-<!--{URLS}-->
-<!--{holdingslink}-->
-<!--{bloblinks}-->
-<!--{imagelinks}-->
-<!--{artthumb}-->
-<!--{booking}-->
-<!--{holdings}-->
-<div style="margin:5px;">
-<!--{items}-->
-</div>
-
-
-
-<div>
-<!--{orders}-->
-</div>
-<!--{ifTOC}-->
-<!--{TOC}-->
-<!--{xif}-->
 <!--{recordinfo:rsyvnqwdmjbuiokflhg}-->
 
-<!--{ifhasresourcetable}-->
-<!--{resourcetable}-->
-<!--{xif}-->
-<!--{patronreviews}-->
-<!--{patronreviewsfull}-->
-<!--{xmlframe}-->
+<!--{ifhasresourcetable}-->
+
+<!--{resourcetable}-->
+
+<!--{xif}-->
+
+<!--{patronreviews}-->
+
+<!--{patronreviewsfull}-->
+
+<!--{xmlframe}-->
+
 <!--{catedit}-->
 
 </div>
@@ -124,19 +177,30 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 
 <div id="gbsLink" name="gbsLink"></div>
 
-</div>
-<br />
+</div>
+
 <br />
 
-<div class="clear2"></div>
-<div class="bibPager">
-<!--{pager}-->
-<br />
-</div>
-<div class="navigationRow">
-<!--{navrow}-->
-<br />
-<!--{searchhistory}-->
+<br />
+
+<div class="clear2"></div>
+
+<div class="bibPager">
+
+<!--{pager}-->
+
+<br />
+
+</div>
+
+<div class="navigationRow">
+
+<!--{navrow}-->
+
+<br />
+
+<!--{searchhistory}-->
+
 </div>
 
 
@@ -230,4 +294,5 @@ if(bibInfo){
 </script> 
 
 
-<!--{botlogo}-->
+<!--{botlogo}-->
+
