@@ -312,7 +312,11 @@ ICON_MYLISTS_EXPORT=<img src="/screens/but_exportmylists.gif" border="0">
 ICON_MYLISTS_REMOVE_DUPLICATES=<img src="/screens/but_removeduplicates.gif" border="0">
 
 ICON_MYLISTS_REQUEST=<img src="/screens/but_requestmylists.gif" border="0">
-
+  
+  #save buttons
+ICON_MYLISTS_BRIEF=<img src="/screens/but_savemylists.gif" alt="Add to My Lists" border="0" />
+ICON_MYLISTS_RECORD=<img src="/screens/but_savemylists.gif" alt="Add to My Lists" border="0" />
+ICON_MYLISTS_SAVE_TO_LIST=<img src="/screens/but_savemylists.gif" alt="Save to List" border="0" />
 ICON_MYLISTS_SAVE=<img src="/screens/but_savemylists.gif" border="0">
 
 ICON_MYLISTS_SAVE_TO_LIST=<span id="mylists">Create/Save to My Lists</span>
