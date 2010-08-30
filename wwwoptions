@@ -508,6 +508,8 @@ REQUEST_MULTI=Request multi|denyiflocalavail|ask|Y
 
 RSRV_FORMAT=T
 
+RSRV_ITEMTYPE=TRUE
+
 RSRV_HEADER=Reserves List
 
 TABLEPARAM_RSRV_BIBS=cellpadding="8" cellspacing="0" border="1" width="99%" BGCOLOR=#DEDEE7
