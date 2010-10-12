@@ -522,7 +522,7 @@ TABLEPARAM_RSRV_BIBS=cellpadding="8" cellspacing="0" border="1" width="99%" BGCO
 
 #   SAVING AND EXPORTING OPTIONS
 
-#BRIEF_EXPORT
+BRIEF_EXPORT=a|t|p
 
 BRIEF_EXPORT_CHKIN=h|n
 
@@ -530,7 +530,7 @@ EMAILOP=From the MERLIN Library Catalog|exporter|
 
 EXPORT_SELECT_TABLE=Sendto:email,local,browser|Format:full,brief,marc,endnote,procite
 
-# XRECTYPE=
+XRECTYPE=bi
 
 
 
@@ -1099,17 +1099,19 @@ LOC_cdiii=http://mulibraries.missouri.edu/refservices/location/Delta.html "targe
 
 LOC_cdiib=http://mulibraries.missouri.edu/refservices/location/Delta.html "target=_blank"
 
-LOC_cnbii=http://mulibraries.missouri.edu/engrstaff/maps/locmueng.htm "target=_blank"
+LOC_cnbii=http://mulibraries.missouri.edu/engineering/about/location/engrbooks.htm "target=_blank"
 
-LOC_cniib=http://mulibraries.missouri.edu/engrstaff/maps/locmueng.htm "target=_blank"
+LOC_cniib=http://mulibraries.missouri.edu/engineering/about/location/engrbooks.htm "target=_blank"
 
-LOC_cniii=http://mulibraries.missouri.edu/engrstaff/maps/locmueng.htm "target=_blank"
+LOC_cniii=http://mulibraries.missouri.edu/engineering/about/location/engrbooks.htm "target=_blank"
 
 LOC_cnoii=http://mulibraries.missouri.edu/engrstaff/maps/locmuover.htm "target=_blank"
 
-LOC_cnrii=http://mulibraries.missouri.edu/engrstaff/maps/locmuref.htm "target=_blank"
+LOC_cnrii=http://mulibraries.missouri.edu/engineering/about/location/engrreference.htm "target=_blank"
 
-LOC_cnxii=http://mulibraries.missouri.edu/engrstaff/maps/locmureser.htm "target=_blank"
+LOC_cnrri=http://mulibraries.missouri.edu/engineering/about/location/engrreadyref.htm "target=_blank"
+
+LOC_cnxii=http://mulibraries.missouri.edu/engineering/about/location/engrreserve.htm "target=_blank"
 
 LOC_cmiii=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH.htm "target=_blank"
 
