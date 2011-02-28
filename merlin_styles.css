@@ -34,7 +34,7 @@ to your IE style sheet in order for the same display across borwsers. The IE sty
 
 body, div, span, p, form, .qs, h1, h2, h3, ul, ol, li, a, td ,th, select, input, textarea
 
-{ font-family: Arial Unicode MS, Arial, Verdana, Helvetica, sans-serif; color: #1e1e48; }
+{ font-family: Verdana, Arial, Helvetica, sans-serif; color: #1e1e48; }
 
 link, alink, vlink { color: #333379;  background: #ffffff;  }
 
