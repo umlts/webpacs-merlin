@@ -1025,83 +1025,33 @@ IMAGE_MATTYPEz=/screens/icon_z.gif
 
 # UMC
 
-LOC_ceiii=http://mulibraries.missouri.edu/refservices/location/MUEllis.html "target=_blank"
+LOC_ceiii=http://mulibraries.missouri.edu/about/maps/location/muellis.htm "target=_blank"
 
-LOC_cerii=http://mulibraries.missouri.edu/refservices/location/Muellisref.html "target=_blank"
-
-LOC_cera0=http://mulibraries.missouri.edu/refservices/location/muellisrefalcove.html "target=_blank"
-
-LOC_cera1=http://mulibraries.missouri.edu/refservices/location/muellisrefalcove.html "target=_blank"
-
-LOC_cera2=http://mulibraries.missouri.edu/refservices/location/muellisrefalcove.html "target=_blank"
-
-LOC_cera3=http://mulibraries.missouri.edu/refservices/location/muellisrefalcove.html "target=_blank"
-
-LOC_cera4=http://mulibraries.missouri.edu/refservices/location/muellisrefalcove.html "target=_blank"
-
-LOC_cera5=http://mulibraries.missouri.edu/refservices/location/muellisrefalcove.html "target=_blank"
-
-LOC_cera6=http://mulibraries.missouri.edu/refservices/location/muellisrefalcove.html "target=_blank"
-
-LOC_cera7=http://mulibraries.missouri.edu/refservices/location/muellisrefalcove.html "target=_blank"
-
-LOC_cera8=http://mulibraries.missouri.edu/refservices/location/muellisrefalcove.html "target=_blank"
-
-LOC_cera9=http://mulibraries.missouri.edu/refservices/location/muellisrefalcove.html "target=_blank"
+LOC_cerii=http://mulibraries.missouri.edu/about\maps\location\ellisref.htm "target=_blank"
 
 LOC_cerli=http://mulibraries.missouri.edu/refservices/location/muellisreflockedref.html "target=_blank"
 
-LOC_cerri=http://mulibraries.missouri.edu/refservices/location/muellisrefreadyref.html "target=_blank"
+LOC_cerri=http://mulibraries.missouri.edu/about/maps/location/ellisrefreadyref.htm "target=_blank"
 
-LOC_ceri1=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
+LOC_ce15e=http://mulibraries.missouri.edu/about/maps/location/ellisstudy151e.htm "target=_blank"
 
-LOC_ceri2=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
+LOC_ce15f=http://mulibraries.missouri.edu/about/maps/location/ellisstudy151f.htm "target=_blank"
 
-LOC_ceri3=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
+LOC_ce15g=http://mulibraries.missouri.edu/about/maps/location/ellisstudy151g.htm "target=_blank"
 
-LOC_ceri4=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
+LOC_ce3d6=http://mulibraries.missouri.edu/about/maps/location/ellisstudy3d61.htm "target=_blank"
 
-LOC_ceri5=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
+LOC_ce3g1=http://mulibraries.missouri.edu/about/maps/location/ellisstudy3g61.htm "target=_blank"
 
-LOC_ceri6=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
+LOC_ce3g2=http://mulibraries.missouri.edu/about/maps/location/ellisstudy3g62.htm "target=_blank"
 
-LOC_ceri7=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
+LOC_cdiii=http://mulibraries.missouri.edu/about/maps/location/delta.htm "target=_blank"
 
-LOC_ceri8=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
-
-LOC_ceri9=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
-
-LOC_cer10=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
-
-LOC_cer11=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
-
-LOC_cer12=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
-
-LOC_cer13=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
-
-LOC_cer14=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
-
-LOC_cer15=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
-
-LOC_cer16=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
-
-LOC_cer17=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
-
-LOC_cer18=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
-
-LOC_cer19=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
-
-LOC_cer20=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
-
-LOC_cer21=http://mulibraries.missouri.edu/refservices/location/muellisreftable.html "target=_blank"
-
-LOC_cdiii=http://mulibraries.missouri.edu/refservices/location/Delta.html "target=_blank"
-
-LOC_cdiib=http://mulibraries.missouri.edu/refservices/location/Delta.html "target=_blank"
+LOC_cdiib=http://mulibraries.missouri.edu/about/maps/location/delta.htm "target=_blank"
 
 LOC_cnbii=http://mulibraries.missouri.edu/engineering/about/location/engrbooks.htm "target=_blank"
 
-LOC_cniib=http://mulibraries.missouri.edu/engineering/about/location/engrbooks.htm "target=_blank"
+LOC_cniib=hhttp://mulibraries.missouri.edu/engineering/about/location/engr.htm "target=_blank"
 
 LOC_cniii=http://mulibraries.missouri.edu/engineering/about/location/engrbooks.htm "target=_blank"
 
@@ -1125,115 +1075,131 @@ LOC_cmxii=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH%20RESERVE.ht
 
 LOC_cmoii=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH%20OVERSIZED.htm "target=_blank"
 
-LOC_cyiib=http://mulibraries.missouri.edu/refservices/location/Gaylord.html "target=_blank"
+LOC_fcaii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 
-LOC_cyiii=http://mulibraries.missouri.edu/refservices/location/Gaylord.html "target=_blank"
+LOC_fcdii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 
-LOC_fcaii=http://mulibraries.missouri.edu/refservices/location/umld.html "target=_blank"
+LOC_fceii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 
-LOC_fcdii=http://mulibraries.missouri.edu/refservices/location/umld.html "target=_blank"
+LOC_fcgii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 
-LOC_fceii=http://mulibraries.missouri.edu/refservices/location/umld.html "target=_blank"
+LOC_fciib=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 
-LOC_fcgii=http://mulibraries.missouri.edu/refservices/location/umld.html "target=_blank"
+LOC_fcjii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 
-LOC_fciib=http://mulibraries.missouri.edu/refservices/location/umld.html "target=_blank"
+LOC_fcmii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 
-LOC_fcjii=http://mulibraries.missouri.edu/refservices/location/umld.html "target=_blank"
+LOC_fcnii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 
-LOC_fcmii=http://mulibraries.missouri.edu/refservices/location/umld.html "target=_blank"
+LOC_fctii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 
-LOC_fcnii=http://mulibraries.missouri.edu/refservices/location/umld.html "target=_blank"
+LOC_fcvii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 
-LOC_fctii=http://mulibraries.missouri.edu/refservices/location/umld.html "target=_blank"
+LOC_fcyii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 
-LOC_fcvii=http://mulibraries.missouri.edu/refservices/location/umld.html "target=_blank"
+LOC_caiii=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
 
-LOC_fcyii=http://mulibraries.missouri.edu/refservices/location/umld.html "target=_blank"
+LOC_cadii=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
 
-LOC_caiii=http://mulibraries.missouri.edu/refservices/location/annex.html "target=_blank"
+LOC_caiin=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
 
-LOC_cadii=http://mulibraries.missouri.edu/refservices/location/annex.html "target=_blank"
+LOC_caiig=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
 
-LOC_caiin=http://mulibraries.missouri.edu/refservices/location/annex.html "target=_blank"
+LOC_caiij=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
 
-LOC_caiig=http://mulibraries.missouri.edu/refservices/location/annex.html "target=_blank"
+LOC_caiim=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
 
-LOC_caiij=http://mulibraries.missouri.edu/refservices/location/annex.html "target=_blank"
+LOC_caioi=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
 
-LOC_caiim=http://mulibraries.missouri.edu/refservices/location/annex.html "target=_blank"
+LOC_caion=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
 
-LOC_caioi=http://mulibraries.missouri.edu/refservices/location/annex.html "target=_blank"
+LOC_caiog=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
 
-LOC_caion=http://mulibraries.missouri.edu/refservices/location/annex.html "target=_blank"
+LOC_caioh=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
 
-LOC_caiog=http://mulibraries.missouri.edu/refservices/location/annex.html "target=_blank"
+LOC_caioj=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
 
-LOC_caioh=http://mulibraries.missouri.edu/refservices/location/annex.html "target=_blank"
+LOC_caiom=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
 
-LOC_caioj=http://mulibraries.missouri.edu/refservices/location/annex.html "target=_blank"
+LOC_caiib=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
 
-LOC_caiom=http://mulibraries.missouri.edu/refservices/location/annex.html "target=_blank"
+LOC_cex2h=http://mulibraries.missouri.edu/about/maps/location/ellissemrm202h.htm "target=_blank"
 
-LOC_caiib=http://mulibraries.missouri.edu/refservices/location/annex.html "target=_blank"
+LOC_cexi1=http://mulibraries.missouri.edu/about/maps/location/ellissemrm202I.htm "target=_blank"
 
-LOC_ce201=http://mulibraries.missouri.edu/instruction/virtour/Study_Rooms2.htm "target=_blank"
+LOC_cex2j=http://mulibraries.missouri.edu/about/maps/location/ellissemrm202J.htm "target=_blank"
 
-LOC_ce202=http://mulibraries.missouri.edu/instruction/virtour/Study_Rooms2.htm "target=_blank"
+LOC_cex61=http://mulibraries.missouri.edu/about/maps/location/ellissemrm3d61.htm "target=_blank"
 
-LOC_cecpr=http://mulibraries.missouri.edu/instruction/virtour/Current_Periodicals_Reading_Room2.htm "target=_blank"
+LOC_cex62=http://mulibraries.missouri.edu/about/maps/location/ellissemrm3d62.htm "target=_blank"
 
-LOC_ced28=http://mulibraries.missouri.edu/refservices/location/loc/muellisdocsrm28.htm "target=_blank"
+LOC_cex21=http://mulibraries.missouri.edu/about/maps/location/ellissemrm3e21.htm "target=_blank"
 
-LOC_cedci=http://mulibraries.missouri.edu/refservices/location/loc/muellisdocsmedia.htm "target=_blank"
+LOC_cexg1=http://mulibraries.missouri.edu/about/maps/location/ellissemrm3g61.htm "target=_blank"
 
-LOC_cedfi=http://mulibraries.missouri.edu/refservices/location/loc/muellisdocsmediacab.htm "target=_blank"
+LOC_cexg2=http://mulibraries.missouri.edu/about/maps/location/ellissemrm3g61.htm "target=_blank"
 
-LOC_cedii=http://mulibraries.missouri.edu/refservices/location/loc/muellisdocs.htm "target=_blank"
+LOC_cex12=http://mulibraries.missouri.edu/about/maps/location/ellissemrm4b12.html "target=_blank"
 
-LOC_cedma=http://mulibraries.missouri.edu/refservices/location/loc/muellisdocsmap.htm "target=_blank"
+LOC_ce4cs=http://mulibraries.missouri.edu/about/maps/location/ellis4a51.htm "target=_blank"
 
-LOC_cedmi=http://mulibraries.missouri.edu/refservices/location/loc/muellisdocsmicf.htm "target=_blank"
+LOC_ce201=http://mulibraries.missouri.edu/guides/virtour/selfguided/tour.asp?title=Study%20Rooms "target=_blank"
 
-LOC_cedof=http://mulibraries.missouri.edu/refservices/location/loc/muellisdocsoffice.htm "target=_blank"
+LOC_ce202=http://mulibraries.missouri.edu/guides/virtour/selfguided/tour.asp?title=Study%20Rooms "target=_blank"
 
-LOC_cedoi=http://mulibraries.missouri.edu/refservices/location/loc/muellisdocsoversize.htm "target=_blank"
+LOC_cecpr=http://mulibraries.missouri.edu/about/maps/location/ellis-cprr.htm "target=_blank"
 
-LOC_cedpi=http://mulibraries.missouri.edu/refservices/location/loc/muellisdocsposter.htm "target=_blank"
+LOC_ced28=http://mulibraries.missouri.edu/about/maps/location/ellisdocsrm28.htm "target=_blank"
 
-LOC_cedri=http://mulibraries.missouri.edu/refservices/location/loc/muellisdocsref.htm "target=_blank"
+LOC_cedci=http://mulibraries.missouri.edu/about/maps/location/ellisdocsmedia.htm "target=_blank"
 
-LOC_cejii=http://mulibraries.missouri.edu/instruction/virtour/Childrensbooks.htm "target=_blank"
+LOC_cedfi=http://mulibraries.missouri.edu/about/maps/location/ellisdocsmediacab.htm "target=_blank"
 
-LOC_celii=http://mulibraries.missouri.edu/refservices/location/ill.htm "target=_blank"
+LOC_cedii=http://mulibraries.missouri.edu/about/maps/location/ellisdocs.htm "target=_blank"
 
-LOC_cemci=http://mulibraries.missouri.edu/refservices/location/loc/muellismodocmedia.htm "target=_blank"
+LOC_cedma=http://mulibraries.missouri.edu/about/maps/location/ellisdocsmap.htm "target=_blank"
 
-LOC_cemii=http://mulibraries.missouri.edu/refservices/location/loc/muellismodoc.htm "target=_blank"
+LOC_cedmi=http://mulibraries.missouri.edu/about/maps/location/ellisdocsmicf.htm "target=_blank"
 
-LOC_cemma=http://mulibraries.missouri.edu/refservices/location/loc/muellismodocmap.htm "target=_blank"
+LOC_cedof=http://mulibraries.missouri.edu/about/maps/location/ellisdocsoffice.htm "target=_blank"
 
-LOC_cemmi=http://mulibraries.missouri.edu/refservices/location/loc/muellismodocmicf.htm "target=_blank"
+LOC_cedoi=http://mulibraries.missouri.edu/about/maps/location/ellisdocsoversize.htm "target=_blank"
 
-LOC_cemoi=http://mulibraries.missouri.edu/refservices/location/loc/muellismodocover.htm "target=_blank"
+LOC_cedpi=http://mulibraries.missouri.edu/about/maps/location/ellisdocsposter.htm "target=_blank"
 
-LOC_cempi=http://mulibraries.missouri.edu/refservices/location/loc/muellismodocposter.htm "target=_blank"
+LOC_cedri=http://mulibraries.missouri.edu/about/maps/location/ellisdocsref.htm "target=_blank"
 
-LOC_cemri=http://mulibraries.missouri.edu/refservices/location/loc/muellismodocref.htm "target=_blank"
+LOC_cejii=http://mulibraries.missouri.edu/guides/virtour/childrensbooks.htm "target=_blank"
 
-LOC_ceoli=http://mulibraries.missouri.edu/instruction/virtour/Oversized.htm "target=_blank"
+LOC_celii=http://mulibraries.missouri.edu/about/maps/location/ill.htm "target=_blank"
 
-LOC_ceoxi=http://mulibraries.missouri.edu/instruction/virtour/Oversized.htm "target=_blank"
+LOC_cemci=http://mulibraries.missouri.edu/about/maps/location/ellismodocmedia.htm "target=_blank"
 
-LOC_cequi=http://mulibraries.missouri.edu/Refservices/location/techser.htm "target=_blank"
+LOC_cemii=http://mulibraries.missouri.edu/about/maps/location/ellismodoc.htm "target=_blank"
 
-LOC_cer56=http://mulibraries.missouri.edu/Refservices/location/refrm156.htm "target=_blank"
+LOC_cemma=http://mulibraries.missouri.edu/about/maps/location/ellismodocmap.htm "target=_blank"
 
-LOC_cerai=http://mulibraries.missouri.edu/Refservices/location/loc/location_mu_ellis_data_arc.htm "target=_blank"
+LOC_cemmi=hhttp://mulibraries.missouri.edu/about/maps/location/ellismodocmicf.htm "target=_blank"
 
-LOC_cerei=http://mulibraries.missouri.edu/Refservices/location/eric.htm "target=_blank"
+LOC_cemoi=http://mulibraries.missouri.edu/about/maps/location/ellismodocover.htm "target=_blank"
 
-LOC_cerwi=http://mulibraries.missouri.edu/Refservices/location/refwrkstn.htm "target=_blank"
+LOC_cempi=http://mulibraries.missouri.edu/about/maps/location/ellismodocposter.htm "target=_blank"
+
+LOC_cemri=http://mulibraries.missouri.edu/about/maps/location/ellismodocref.htm "target=_blank"
+
+LOC_ceoli=http://mulibraries.missouri.edu/guides/virtour/oversized.htm "target=_blank"
+
+LOC_ceoxi=http://mulibraries.missouri.edu/guides/virtour/oversized.htm "target=_blank"
+
+LOC_cequi=http://mulibraries.missouri.edu/about/maps/location/techser.htm "target=_blank"
+
+LOC_cer56=http://mulibraries.missouri.edu/about/maps/location/refrm156.htm "target=_blank"
+
+LOC_cerai=http://mulibraries.missouri.edu/about/maps/location/ellisdataarc.htm "target=_blank"
+
+LOC_cerei=http://mulibraries.missouri.edu/about/maps/location/eric.htm "target=_blank"
+
+LOC_cerwi=http://mulibraries.missouri.edu/about/maps/location/refwrkstn.htm "target=_blank"
 
 LOC_cescf=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
 
@@ -1287,35 +1253,35 @@ LOC_cesti=http://mulibraries.missouri.edu/specialcollections/specprintcollection
 
 LOC_ceswi=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
 
-LOC_cetii=http://mulibraries.missouri.edu/instruction/virtour/Study_Rooms2.htm "target=_blank"
+LOC_cetii=http://mulibraries.missouri.edu/guides/virtour/selfguided/tour.asp?title=Study%20Rooms "target=_blank"
 
-LOC_ceuii=http://mulibraries.missouri.edu/instruction/virtour/Recorded_Sound_Collection2.htm "target=_blank"
+LOC_ceuii=http://mulibraries.missouri.edu/about/maps/location/recorded-sound.htm "target=_blank"
 
-LOC_ceuri=http://mulibraries.missouri.edu/instruction/virtour/Recorded_Sound_Collection2.htm "target=_blank"
+LOC_ceuri=http://mulibraries.missouri.edu/about/maps/location/recorded-sound.htm "target=_blank"
 
 LOC_cex12=http://mulibraries.missouri.edu/Refservices/location/MUellissemrm4B12.html "target=_blank"
 
-LOC_cexii=http://mulibraries.missouri.edu/accessservices/locellisreserve.html "target=_blank"
+LOC_cexii=http://mulibraries.missouri.edu/guides/reserves/ellis/print.htm "target=_blank"
 
-LOC_cgcii=http://mulibraries.missouri.edu/Refservices/location/geol.htm "target=_blank"
+LOC_cgcii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
 
-LOC_cgdii=http://mulibraries.missouri.edu/Refservices/location/geol.htm "target=_blank"
+LOC_cgdii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
 
-LOC_cgdmi=http://mulibraries.missouri.edu/Refservices/location/geol.htm "target=_blank"
+LOC_cgdmi=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
 
-LOC_cgiib=http://mulibraries.missouri.edu/Refservices/location/geol.htm "target=_blank"
+LOC_cgiib=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
 
-LOC_cgiii=http://mulibraries.missouri.edu/Refservices/location/geol.htm "target=_blank"
+LOC_cgiii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
 
-LOC_cgmii=http://mulibraries.missouri.edu/Refservices/location/geol.htm "target=_blank"
+LOC_cgmii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
 
-LOC_cgoii=http://mulibraries.missouri.edu/Refservices/location/geol.htm "target=_blank"
+LOC_cgoii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
 
-LOC_cgrii=http://mulibraries.missouri.edu/Refservices/location/geol.htm "target=_blank"
+LOC_cgrii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
 
-LOC_cgrri=http://mulibraries.missouri.edu/Refservices/location/geol.htm "target=_blank"
+LOC_cgrri=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
 
-LOC_cgxii=http://mulibraries.missouri.edu/Refservices/location/geol.htm "target=_blank"
+LOC_cgxii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
 
 LOC_chiib=http://www.muhealth.org/~library/resources/MERLIN_locations/MERLINLoc_MUHSL_Books.html "target=_blank"
 
