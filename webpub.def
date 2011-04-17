@@ -7,14 +7,14 @@
 #
 # converted from HOLDINGS_POS field tag: 'a'
 #
-b|a|110|-6789|Corporate Author||b|
-b|a|111|-6789|Meeting Name||b|
-b|a||-6789|Author||b|
+b|a|110|-67890|Corporate Author||b|
+b|a|111|-67890|Meeting Name||b|
+b|a||-67890|Author||b|
 #
 # converted from HOLDINGS_POS field tag: 't'
 #
-b|t|130|-6789|Uniform Title||b|
-b|t|240|-6789|Uniform Title||b|
+b|t|130|-67890|Uniform Title||b|
+b|t|240|-67890|Uniform Title||b|
 b|t||-6789|Title||b|
 #
 # converted from HOLDINGS_POS field tag: 'p'
@@ -35,34 +35,34 @@ b|e|250|-6789|Edition||b|
 #
 # x and z tags moved to the top MCO-011648
 #
-b|x|7801|-w|Continues||b|
-b|x|78000|-w|Continues||b|
-b|x|78001|-w|Continues In Part||b|
-b|x|78002|-w|Supersedes||b|
-b|x|78003|-w|Supersedes In Part||b|
-b|x|78004|-w|Union Of||b|
-b|x|78005|-w|Absorbed||b|
-b|x|78006|-w|Absorbed In Part||b|
-b|x|78007|-w|Split From||b|
-b|x||-w|Continues||b|
+b|x|7801|-4w|Continues||b|
+b|x|78000|-4w|Continues||b|
+b|x|78001|-4w|Continues In Part||b|
+b|x|78002|-4w|Supersedes||b|
+b|x|78003|-4w|Supersedes In Part||b|
+b|x|78004|-4w|Union Of||b|
+b|x|78005|-4w|Absorbed||b|
+b|x|78006|-4w|Absorbed In Part||b|
+b|x|78007|-4w|Split From||b|
+b|x||-4w|Continues||b|
 b|z|7851|-w|Continued By||b|
-b|z|78500|-w|Continued By||b|
-b|z|78501|-w|Continued In Part By||b|
-b|z|78502|-w|Superseded By||b|
-b|z|78503|-w|Superseded In Part By||b|
-b|z|78504|-w|Absorbed By||b|
-b|z|78505|-w|Absorbed In Part By||b|
-b|z|78506|-w|Split Into||b|
-b|z|78507|-w|Merged With||b|
-b|z|78508|-w|Changed Back To||b|
+b|z|78500|-4w|Continued By||b|
+b|z|78501|-4w|Continued In Part By||b|
+b|z|78502|-4w|Superseded By||b|
+b|z|78503|-4w|Superseded In Part By||b|
+b|z|78504|-4w|Absorbed By||b|
+b|z|78505|-4w|Absorbed In Part By||b|
+b|z|78506|-4w|Split Into||b|
+b|z|78507|-4w|Merged With||b|
+b|z|78508|-4w|Changed Back To||b|
 b|z|990||||b|
-b|z||-w|Continued By||b|
+b|z||-4w|Continued By||b|
 #
 # next line added by cvpubdef
 b|H|||||b
 #
 
-b|s||-6789|Series Title||b|
+b|s||-67890|Series Title||b|
 b|y|052||Standard Number||b|
 b|y|025||Other Number||b|
 b|y|034||Other Number||b|
@@ -98,38 +98,42 @@ b|v|508|-6789|Production Credits||b|
 b|v|511|-6789|Performers||b|
 b|v|520|-6789|Summary||b|
 b|v|533|-57|Format||b|
-b|v||-6789|Notes||b|
+b|v||-36789|Notes||b|
 b|n|524|-57|Cite As||b|
 b|n|539|-57|||b|
 b|n|555 |-57|Indexes||b|
 b|n|5550|-57|Finding Aids||b|
+b|n|518|-257|Notes||b|
+b|n|520|-257c|Notes||b|
+b|n|542||||b|
 b|n|581|-57|Publications||b|
-b|n|583|-57|||b|
+b|n|583||||b|
+b|n|588||||b|
 b|n||-57|Notes||b|
-b|q|765|-6789|Other Titles||b|
-b|q|767|-6789|Other Titles||b|
-b|q|773|-6789|In||b|
-b|q|776|-6789|Other Physical Format||b|
-b|q||-6789|Related To||b|
+b|q|765|-46789|Other Titles||b|
+b|q|767|-46789|Other Titles||b|
+b|q|773|-46789|In||b|
+b|q|776|-46789|Other Physical Format||b|
+b|q||-46789|Related To||b|
 b|w|035|-6789|||b|
 b|w|76[0257]1|-6789|||b|
 b|w|77[0235-7]1|-6789|||b|
 b|w||-6789|Temporary Control Number||b|
-b|d|6[0-9][0-9].0|-25|Subjects||b|
-b|d||-25|Subjects||b|
-b|m|6[0-9][0-9].2|-2|Medical Subjects||b|
-b|m||-2|Medical Subjects||b|
-b|j|650 7|-25|Additional Keywords||b|
-b|j|65[34]|-25|Additional Keywords||b|
-b|j|655..|-25|Genre/Form||b|
-b|j|65[6-9]|-25|Additional Keywords||b|
-b|j|75[2-5]|-25|Additional Keywords||b|
-b|j|774|-6789|Includes||b|
-b|j||-25|Additional Keywords||b|
-b|b|7[01][01].[ 13456789]|-5|Other Authors||b|
-b|b|7[01][01].2|-5|Includes||b|
-b|b|79[6-9]|-5|Donor/Honoree (MU)||b|
-b|b||-5|Other Authors||b|
+b|d|6[0-9][0-9].0|-025|Subjects||b|
+b|d||-025|Subjects||b|
+b|m|6[0-9][0-9].2|-02|Medical Subjects||b|
+b|m||-02|Medical Subjects||b|
+b|j|650 7|-025|Additional Keywords||b|
+b|j|65[34]|-025|Additional Keywords||b|
+b|j|655..|-025|Genre/Form||b|
+b|j|65[6-9]|-025|Additional Keywords||b|
+b|j|75[2-5]|-025|Additional Keywords||b|
+b|j|774|-046789|Includes||b|
+b|j||-025|Additional Keywords||b|
+b|b|7[01][01].[ 13456789]|-05|Other Authors||b|
+b|b|7[01][01].2|-05|Includes||b|
+b|b|79[6-9]|-05|Donor/Honoree (MU)||b|
+b|b||-05|Other Authors||b|
 b|u|21[012]|-5|Other Titles||b|
 b|u|229|-5|||b|
 b|u|242|-5|Translation||b|
@@ -142,10 +146,10 @@ b|u|246.7|-5|Other Titles||b|
 b|u|246.8|-5|Other Titles||b|
 b|u|247|-5|Other Titles||b|
 b|u|4901|-5|||b|
-b|u|730.2|-5|Includes||b|
+b|u|730.2|-05|Includes||b|
 b|u|740|-5|Other Titles||b|
 b|u|740.2|-5|Includes||b|
-b|u||-5|Other Titles||b|
+b|u||-05|Other Titles||b|
 b|i|020|-c2|ISBN||b|
 b|i|022|-c2|ISSN||b|
 b|i|0224|-c2|ISMN||b|
