@@ -98,8 +98,8 @@ b|v|505|-57|Contents||b|
 b|v|508|-6789|Production Credits||b|
 b|v|511|-6789|Performers||b|
 b|v|520|-6789|Summary||b|
-b|v|533||||b|
-b|v|538||||b|
+b|v|533|-5|Format||b|
+b|v|538|-5|Notes||b|
 b|v||-36789|Notes||b|
 b|n|380|-02|Notes||b|
 b|n|524|-57|Cite As||b|
