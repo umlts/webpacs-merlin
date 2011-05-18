@@ -502,7 +502,9 @@ REQUEST=Request item|denyiflocalavail|ask|Y
 
 # REQUEST_ARTICLE_IFCHKIN=
 
-REQUEST_INSTRUCTION=Any Special Instructions?
+REQUEST_INSTRUCTION=<strong>Any Special Instructions?</strong><ul><li> If there are multiple volumes available, you will be prompted for your selection on the next screen.&nbsp; <strong>Do not use the box below.</strong>&nbsp; If you want more than one volume, you will need to complete a separate request for each one.</li><li>You may request microfiche pieces from the MU Depository.&nbsp; If you are requesting separate microfiche pieces, include the numeric identifier for the fiche you want in the box below. Examples of numeric identifiers:</li><ul>  <li>2005 ASI 8486-1.2</li><li> 1988 IIS 1300-S61.19 </li><li> ED516836</li></ul></ul>
+
+#REQUEST_INSTRUCTION=<strong>Special Instructions Here</strong>
 
 REQUEST_MULTI=Request multi|denyiflocalavail|ask|Y
 

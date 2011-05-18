@@ -842,3 +842,10 @@ wbresourcelist */
 }
 
 
+.requestInstructions {
+  text-align:left;
+}
+
+#requestTable {
+  text-align:center;
+}
