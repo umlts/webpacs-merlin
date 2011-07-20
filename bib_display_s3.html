@@ -31,6 +31,7 @@
 
 
 
+
 <script>
 document.ready = function() {
   var f = document.getElementById('bib_detail');
@@ -291,6 +292,15 @@ if(bibInfo){
 }
 </script>
  
+<script>
+
+var itemLocation = $("tr.bibItemsEntry td:first").html()
+if (itemLocation.indexOf("Marr Sound Archives RooBot") > 0)
+  {
+  alert("It worked!")
+  }
+
+</script>
 
 
 <!--{botlogo}-->
