@@ -2,8 +2,6 @@
 
 <!-- Based on: SWAN bib_display.html updated 080514 lee -->
 
-
-
 <!--{toplogo}-->
 
 <!--{patron}-->
@@ -297,7 +295,10 @@ if(bibInfo){
 var itemLocation = $("tr.bibItemsEntry td:first").html()
 if (itemLocation.indexOf("Marr Sound Archives RooBot") > 0)
   {
-  alert("It worked!")
+  $.cookie('asrs', 'sound_archives');
+  if ($.cookie('asrs')){
+    alert("It worked!")
+  }
   }
 
 </script>
