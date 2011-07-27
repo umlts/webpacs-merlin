@@ -293,13 +293,15 @@ if(bibInfo){
 <script>
 
 var itemLocation = $("tr.bibItemsEntry td:first").html()
-if (itemLocation.indexOf("Marr Sound Archives RooBot") > 0)
-  {
+if (itemLocation.indexOf("Marr Sound Archives RooBot") > 0){
   $.cookie('asrs', 'sound_archives');
-  if ($.cookie('asrs')){
-    alert("It worked!")
-  }
-  }
+}else if (itemLocation.indexOf("LaBudde Special Collections RooBot") > 0){
+  $.cookie('asrs', 'special_collections');
+}else if (itemLocation.indexOf("RooBot In-Library Use") > 0){
+  $.cookie('asrs', 'in_use');
+}else if (itemLocation.indexOf("RooBot") > 0){
+  $.cookie('asrs', 'roobot');
+}
 
 </script>
 

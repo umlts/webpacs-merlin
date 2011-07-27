@@ -31,7 +31,7 @@ startTimeout(600000, "/");
 
 <h2>Robot Request</h2>
 
-
+<p id="testingParagraph"></p>
 
 <p>To request an item for pick up exclusively at the Miller Nichols Library Access Services Desk, please enter your name below. Please allow 15 minutes for delivery.</p>
 
@@ -74,11 +74,16 @@ startTimeout(600000, "/");
 
 <script>
 
+var asrsCookie = ($.cookie('asrs'))
 
-if ($.cookie('asrs')){
-    alert("It worked!")
-}else{
-    alert("It did not work!")
+if (asrsCookie == "sound_archives"){
+    $("#testingParagraph").html("The location is Marr Sound Archives RooBot.");
+}else if (asrsCookie == "special_collections"){
+    $("#testingParagraph").html("The location is LaBudde Special Collections RooBot.");
+}else if (asrsCookie == "in_use"){
+    $("#testingParagraph").html("The location is RooBot In-Library Use.");
+}else if (asrsCookie == "roobot"){
+    $("#testingParagraph").html("The location is RooBot.");
 }
 
 </script>
