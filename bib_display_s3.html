@@ -296,9 +296,11 @@ var itemLocation = $("tr.bibItemsEntry td:first").html()
 if (itemLocation.indexOf("Marr Sound Archives RooBot") > 0)
   {
   $.cookie('asrs', 'sound_archives');
-  if ($.cookie('asrs')){
-    alert("It worked!")
-  }
+  alert(($.cookie('asrs')))
+  } else if (itemLocation.indexOf("RooBot") > 0)
+  {
+  $.cookie('asrs', 'roobot');
+  alert(($.cookie('asrs')))
   }
 
 </script>
