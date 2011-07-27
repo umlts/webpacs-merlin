@@ -21,6 +21,8 @@ startTimeout(600000, "/");
 <div id="asrs">
 
 <h2>Robot Request</h2>
+
+<p id="testingParagraph"></p>
 <p>
 <!--{iferrmsgis000}-->
 <!-- No errors.-->
@@ -77,6 +79,23 @@ Your request cannot be processed at this time. Please ask a library staff member
 <!--{return}-->
 </p>
 </div><!--pageContentInner -->
+
+<script>
+
+var asrsCookie = ($.cookie('asrs'))
+
+if (asrsCookie == "sound_archives"){
+    $("#testingParagraph").html("The location is Marr Sound Archives RooBot.");
+}else if (asrsCookie == "special_collections"){
+    $("#testingParagraph").html("The location is LaBudde Special Collections RooBot.");
+}else if (asrsCookie == "in_use"){
+    $("#testingParagraph").html("The location is RooBot In-Library Use.");
+}else if (asrsCookie == "roobot"){
+    $("#testingParagraph").html("The location is RooBot.");
+}
+
+</script>
+
 <!--{botlogo}-->
 </body>
 </html>
