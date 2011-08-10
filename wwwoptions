@@ -2003,9 +2003,9 @@ LOC_kng*=http://library.umkc.edu/merlin-locations-mnl#ask
 
 LOC_knl=http://library.umkc.edu/merlin-locations-mnl#1
 
-LOC_knn=http://library.umkc.edu/merlin-locations-mnl#2
+LOC_knn=http://library.umkc.edu/merlin-locations-mnl#1
 
-LOC_knp=http://library.umkc.edu/merlin-locations-mnl#3
+LOC_knp=http://library.umkc.edu/merlin-locations-mnl#1
 
 LOC_knq=http://library.umkc.edu/merlin-locations-mnl#3
 
@@ -2027,7 +2027,7 @@ LOC_knsp=http://library.umkc.edu/merlin-locations-spec-coll#labudde
 
 LOC_knsr=http://library.umkc.edu/merlin-locations-spec-coll#labudde
 
-LOC_knsy=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+LOC_knsy*=http://library.umkc.edu/merlin-locations-spec-coll#labudde
 
 LOC_knsz*=http://library.umkc.edu/merlin-locations-spec-coll#labudde
 
