@@ -31,9 +31,7 @@ startTimeout(600000, "/");
 
 <h2>Robot Request</h2>
 
-<p id="testingParagraph"></p>
-
-<p>To request an item for pick up exclusively at the Miller Nichols Library Access Services Desk, please enter your name below. Please allow 15 minutes for delivery.</p>
+<div id="requestParagraphs"></div>
 
 <div id="asrsForm">
  
@@ -77,13 +75,13 @@ startTimeout(600000, "/");
 var asrsCookie = ($.cookie('asrs'))
 
 if (asrsCookie == "sound_archives"){
-    $("#testingParagraph").html("The location is Marr Sound Archives RooBot.");
+    $("#requestParagraphs").html("<p>This material is located in the RooBot.</p><p>The material must be used in the Marr Sound Archives.</p><p>To request delivery of this item to the Marr Sound Archives at the Miller Nichols Library, please enter your name below. Please allow at least 15 minutes for delivery.</p>");
 }else if (asrsCookie == "special_collections"){
-    $("#testingParagraph").html("The location is LaBudde Special Collections RooBot.");
+    $("#requestParagraphs").html("<p>This material is located in the RooBot.</p><p>The material must be used in LaBudde Special Collections.</p><p>To request delivery of this item to LaBudde Special Collections at the Miller Nichols Library, please enter your name below. Please allow at least 15 minutes for delivery.</p>");
 }else if (asrsCookie == "in_use"){
-    $("#testingParagraph").html("The location is RooBot In-Library Use.");
+    $("#requestParagraphs").html("<p>To request an item for pick up exclusively at the Miller Nichols Library Access Services Desk, please enter your name below. Please allow 15 minutes for delivery.</p>");
 }else if (asrsCookie == "roobot"){
-    $("#testingParagraph").html("The location is RooBot.");
+    $("#requestParagraphs").html("<p>To request an item for pick up exclusively at the Miller Nichols Library Access Services Desk, please enter your name below. Please allow 15 minutes for delivery.</p>");
 }
 
 </script>

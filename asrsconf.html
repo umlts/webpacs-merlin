@@ -22,12 +22,9 @@ startTimeout(600000, "/");
 
 <h2>Robot Request</h2>
 
-<p id="testingParagraph"></p>
-<p>
 <!--{iferrmsgis000}-->
 <!-- No errors.-->
-<p>Your request was successful.</p>
-<p>Your request will be delivered to UMK, Nichols Library Circ within 15 minutes. The item will be held for you for 1 week.</p>
+<div id="confirmParagraphs"></div>
 <!--{xif}-->
 <!--{iferrmsgis001}-->
 This item has already been requested. Please ask a library staff member for help. 
@@ -85,13 +82,13 @@ Your request cannot be processed at this time. Please ask a library staff member
 var asrsCookie = ($.cookie('asrs'))
 
 if (asrsCookie == "sound_archives"){
-    $("#testingParagraph").html("The location is Marr Sound Archives RooBot.");
+    $("#confirmParagraphs").html("<p>Your request has been processed and will be available for use in the Marr Sound Archives on the Ground Floor of the Miller Nichols Library. Hours are 9:00 a.m. - 4:30 p.m., Mon - Fri.</p>");
 }else if (asrsCookie == "special_collections"){
-    $("#testingParagraph").html("The location is LaBudde Special Collections RooBot.");
+    $("#confirmParagraphs").html("<p>Your request has been processed and will be available for use in LaBudde Special Collections on the 4th Floor of the Miller Nichols Library. Hours are 9:00 a.m. - 4:30 p.m., Mon - Fri.</p>");
 }else if (asrsCookie == "in_use"){
-    $("#testingParagraph").html("The location is RooBot In-Library Use.");
+    $("#confirmParagraphs").html("<p>Your request was successful.</p><p>Your request will be delivered to UMK, Nichols Library Circ within 15 minutes. The item will be held for you for 1 week.</p>");
 }else if (asrsCookie == "roobot"){
-    $("#testingParagraph").html("The location is RooBot.");
+    $("#confirmParagraphs").html("<p>Your request was successful.</p><p>Your request will be delivered to UMK, Nichols Library Circ within 15 minutes. The item will be held for you for 1 week.</p>");
 }
 
 </script>
