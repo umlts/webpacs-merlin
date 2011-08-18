@@ -205,6 +205,21 @@
 <div id='sms' style="visibility:hidden;display:none">
 </div>
 
+<script>
+
+var itemLocation = $("tr.bibItemsEntry td:first").html()
+if (itemLocation.indexOf("Marr Sound Archives RooBot") > 0){
+  $.cookie('asrs', 'sound_archives');
+}else if (itemLocation.indexOf("LaBudde Special Collections RooBot") > 0){
+  $.cookie('asrs', 'special_collections');
+}else if (itemLocation.indexOf("RooBot In-Library Use") > 0){
+  $.cookie('asrs', 'in_use');
+}else if (itemLocation.indexOf("RooBot") > 0){
+  $.cookie('asrs', 'roobot');
+}
+
+</script>
+
 
 
 <!--{botlogo}-->
