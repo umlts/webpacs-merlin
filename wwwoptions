@@ -122,7 +122,7 @@ RESOURCE_HOLDINGS_FIELDS=Title:Vbt|Lib Has:Vch|Connect to Full Text:VcY
 
 RESOURCE_HOLDINGS_MAX=3
 
-RESOURCE_LICENSE_FIELDS=Authorized Users:Vlu|Authentication Method:Vla|Terms of Use:Vlt|Reserves Restrictions:Vls|ILL Restrictions:Vlo|
+RESOURCE_LICENSE_FIELDS=Authorized Users:Vlu|Authentication Method:Vla|Terms of Use:Vlt|Course Use Restrictions:Vls|ILL Restrictions:Vlo|
 
 TABLEPARAM_BIB_LICENSE=id="bib_license"
 
