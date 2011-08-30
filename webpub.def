@@ -194,8 +194,7 @@ e|e|||Description||e|
 e|w|||Vendor||e|
 e|r|||Provider||e|
 e|d|||Database Subject||e|
-#
-l|s|||Course Use Restrictions||e|
+# end pubdef
 #
 # -----------------------------------------------------
 # Converted by cvpubdef from item_col_width: 1(23)[LOCATION],Cv#(30),%
