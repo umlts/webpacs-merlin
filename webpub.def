@@ -97,7 +97,7 @@ b|v|505|-57|Contents||b|
 b|v|508|-6789|Production Credits||b|
 b|v|511|-6789|Performers||b|
 b|v|520|-6789|Summary||b|
-b|v|533|-5|Format||b|
+b|v|533|-57|Format||b|
 b|v|538|-5|Notes||b|
 b|v||-36789|Notes||b|
 b|n|380|-02|Notes||b|
@@ -126,8 +126,9 @@ b|d||-025|Subjects||b|
 b|m|6[0-9][0-9].2|-02|Medical Subjects||b|
 b|m||-02|Medical Subjects||b|
 b|j|650 7|-025|Additional Keywords||b|
-b|j|65[34]|-025|Additional Keywords||b|
-b|j|655..|-025|Genre/Form||b|
+b|j|653|-025|Additional Keywords||b|
+b|j|654|-025c|Additional Keywords||b|
+b|j|655..|-025c|Genre/Form||b|
 b|j|65[6-9]|-025|Additional Keywords||b|
 b|j|75[2-5]|-025|Additional Keywords||b|
 b|j|774|-046789|Includes||b|
