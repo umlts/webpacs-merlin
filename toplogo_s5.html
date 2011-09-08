@@ -44,6 +44,14 @@ $(document).ready(function() {
       $('#searcharg').val(newSearchTerm);
     }
     });
+    
+      $('#submit').click(function () { 
+      var searchTerm = $('#searcharg').val();
+      if((/\b[atsn]:/).test(searchTerm)) {}else {
+      var newSearchTerm = searchTerm.replace(":", "");
+      $('#searcharg').val(newSearchTerm);
+    }
+    });
 
 });
 
