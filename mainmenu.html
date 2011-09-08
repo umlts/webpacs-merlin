@@ -116,14 +116,16 @@ function preload() {
 
 <script>
 
-function removeColons() {
-  
+$(document).ready(function() {
+    $('input[type="submit"]').click(function () { 
+      var searchTerm = $('#searcharg').val();
+      if((/\b[atsn]:/).test(searchTerm)) {}else {
+      var newSearchTerm = searchTerm.replace(":", "");
+      $('#searcharg').val(newSearchTerm);
+    }
+    });
 
-var searchTerm = $('#searcharg').val();
-var newSearchTerm = searchTerm.replace(":", "");
-$('#searcharg').val(newSearchTerm)
-
-}
+});
 
 </script>
 	
