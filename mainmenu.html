@@ -111,6 +111,23 @@ function preload() {
   })();
 
 </script>
+
+<script type="text/javascript" src="/screens/jquery-1.4.2.js"></script>
+
+<script>
+
+$(document).ready(function() {
+    $('input[type="submit"]').click(function () { 
+      var searchTerm = $('#searcharg').val();
+      if((/\b[atsn]:/).test(searchTerm)) {}else {
+      var newSearchTerm = searchTerm.replace(":", "");
+      $('#searcharg').val(newSearchTerm);
+    }
+    });
+
+});
+
+</script>
 	
   </head>
   <body bgcolor="#FFFFFF" text="#000000" link="#333379" vlink="#333379" alink="#333379" onLoad="preload(); document.SearchForm.searcharg.focus(); document.SearchForm.searcharg.select();">
@@ -233,7 +250,7 @@ function preload() {
 				
                             </select> </td>
 
-                            <td nowrap="nowrap"><input type="TEXT" name="searcharg" maxlength="75" size="25" style="width: 250px;" /> <input type="Hidden"
+                            <td nowrap="nowrap"><input type="TEXT" name="searcharg"  id="searcharg" maxlength="75" size="25" style="width: 250px;" /> <input type="Hidden"
                             name="SORT" value="D" /></td>
 
                             <td nowrap="nowrap"><select name="searchscope">
@@ -273,7 +290,7 @@ function preload() {
 
                             </select> </td>
 
-                            <td nowrap="nowrap"><input name="Submit" type="Submit" value="Search" /> </td>
+                            <td nowrap="nowrap"><input name="Submit" type="Submit" value="Search" onClick="removeColons()" /> </td>
                         </tr>
                     </table>
                 </form>
@@ -318,5 +335,6 @@ function preload() {
 <p align="center"><small><strong>MERLIN</strong> &middot; a MOBIUS library catalog</small></p>
 <br />
 </center>
+
   </body>
 </html>

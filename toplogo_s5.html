@@ -32,6 +32,23 @@
 
 </script>
 
+<script type="text/javascript" src="/screens/jquery-1.4.2.js"></script>
+
+<script>
+
+$(document).ready(function() {
+    $('input[type="submit"]').click(function () { 
+      var searchTerm = $('#searcharg').val();
+      if((/\b[atsn]:/).test(searchTerm)) {}else {
+      var newSearchTerm = searchTerm.replace(":", "");
+      $('#searcharg').val(newSearchTerm);
+    }
+    });
+
+});
+
+</script>
+
 <!-- Script for sending call nubmers via SMS -->
 <script type="text/javascript" src='/screens/sms.js'> </script>
 
