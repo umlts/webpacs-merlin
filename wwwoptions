@@ -969,7 +969,7 @@ ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore">more >></span>
 
 ICON_SPELLCHECK_SEARCH=Search
 
-ICON_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit" id="submit" border="0" />
+ICON_SUBMIT=<img src="/screens/b_submit.gif" id="submitButton" alt="Submit" border="0" />
 
 #ICON_UPDATELIST
 
