@@ -832,7 +832,7 @@ ICON_BIB_RESOURCE_DETAILS_s3=Full Details
 
 # ICON_BOOKCART=<img src="/screens/but_bibexport.gif" ALT="Add To Bookbag" border="0" />
 
-# ICON_BOOKCART_SAVED=<img src="/screens/but_remove_bookbag.gif" ALT="Remove From Bookbag" border="0" />
+ICON_BOOKCART_SAVED=<img src="/screens/but_remove_bookbag.gif" ALT="Remove From Bookbag" border="0" />
 
 # ICON_BOOKINGS_HEADER=<br /><span class="bibBookingsHeader">RESERVE THIS ROOM</span><br /><br />
 
