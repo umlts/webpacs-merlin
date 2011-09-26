@@ -45,13 +45,13 @@ $(document).ready(function() {
       var newSearchTerm = searchTerm.replace(":", "");
       $('#searcharg').val(newSearchTerm);
     }
-    });;
+    });
     
       $('#submitButton').click(function () { 
-      var searchTerm = $('#searcharg').val();
+      var searchTerm = $('#adv_searcharg').val();
       if((/\b[atsn]:/).test(searchTerm)) {}else {
       var newSearchTerm = searchTerm.replace(":", "");
-      $('#searcharg').val(newSearchTerm);
+      $('#adv_searcharg').val(newSearchTerm);
     }
     });
 
