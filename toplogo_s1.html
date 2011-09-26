@@ -39,11 +39,13 @@
 $(document).ready(function() {
     $('input[type="submit"]').click(function () { 
       var searchTerm = $('#searcharg').val();
-      if((/\b[atsn]:/).test(searchTerm)) {}else {
+      var searchIndex = $('[name="searchtype"]').val();
+      if((/\b[atsn]:/).test(searchTerm)) {}
+      else if (searchIndex != "Y") {} else {
       var newSearchTerm = searchTerm.replace(":", "");
       $('#searcharg').val(newSearchTerm);
     }
-    });
+    });;
     
       $('#submitButton').click(function () { 
       var searchTerm = $('#searcharg').val();
