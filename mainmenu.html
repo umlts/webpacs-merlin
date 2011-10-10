@@ -122,7 +122,7 @@ $(document).ready(function() {
       var searchIndex = $('[name="searchtype"]').val();
       if((/\b[atsn]:/).test(searchTerm)) {}
       else if (searchIndex != "Y") {} else {
-      var newSearchTerm = searchTerm.replace(":", "");
+      var newSearchTerm = searchTerm.replace(":", " ");
       $('#searcharg').val(newSearchTerm);
     }
     });
