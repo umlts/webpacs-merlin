@@ -417,7 +417,7 @@ MASK_BARCODE=T
 
 # MODIFY_PFLDS=
 
-MY_WEBPAC=F,T
+MY_WEBPAC=F,2
 
 # NEWPIN_MSG=please verify your chosen pin
 
