@@ -322,7 +322,7 @@ ICON_MYLISTS_RECORD=<img src="/screens/but_savemylists.gif" alt="Add to My Lists
 ICON_MYLISTS_SAVE_TO_LIST=<img src="/screens/but_savemylists.gif" alt="Save to List" border="0" />
 ICON_MYLISTS_SAVE=<img src="/screens/but_savemylists.gif" border="0">
 
-ICON_MYLISTS_SAVE_TO_LIST=<span id="mylists">Create/Save to My Lists</span>
+ICON_MYLISTS_SAVE_TO_LIST=<span id="mylists" class="saveButton">Create/Save to My Lists</span>
 
 MY_LISTS=t
 
@@ -957,9 +957,9 @@ ICON_RESOURCE_RECORD=About Resource
 
 # ICON_RESOURCE_RECORD=<img src="/screens/resource_record.gif" alt="Resource" border="0" />
 
-ICON_SAVEALLPAGE=<INPUT TYPE="submit" NAME="save_all_page" VALUE="Save all on page" SRC="/screens/saveallpage.gif" ALT="Save all on page">
+ICON_SAVEALLPAGE=<span class="saveButton">Save All On Page</span>
 
-ICON_SAVEMARKED=<INPUT TYPE="submit" NAME="save_marked" VALUE="Save marked records" SRC="/screens/savemarked.gif" ALT="Save marked records">
+ICON_SAVEMARKED=<span class="saveButton">Save Marked Records</span>
 
 #ICON_SORTPUDATE
 

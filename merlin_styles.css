@@ -564,7 +564,8 @@ browsePager { text-align: center; white-space: nowrap; }
 TABLE.browseResourceTable { border: 1px solid #ffffff; }
 TR.browseResourceTableEntry { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000;  text-align: center; }
 /* TR.browseResourceTableHeader */
-.browseSaveJump { border: 1px solid #ffffff; text-align: center; }
+.browseSaveJump { text-align: center; padding-bottom:6px; }
+.browseSaveJump a { text-decoration:none; }
 TR.browseSaveJump { color: #323279; background-color: #ffffff; text-align: center; }
 /* TABLE.browseScreen */
 
@@ -809,17 +810,18 @@ wbresourcelist */
 
 #sms {font-size:70%}
 
-#mylist_btn1 {
+
+.saveButton {
   background-color:#d4d0c8;
   padding: 2px 12px;
   margin:3px;
   color: black;
   border-width: 1px;
   border-color: white black black white;
-  border-style:solid;
+  border-style:solid;  
 }
 
-#mylist_btn1 a{
+.saveButton a{
   text-decoration:none;
 }
 
