@@ -181,7 +181,6 @@ INSERTTAG_INHEAD=<script type="text/javascript" src="/screens/jquery-1.4.2.js"><
 #RIGHT_CELL_WIDTH
 
 SSLPORT=80:443|2082:444|2083:2443
-#SSLPORT=80:443:laurel.lso.missouri.edu:merlin.mobius.umsystem.edu|80:443:laurel.lso.missouri.edu:merlin.mobius.umsystem.edu
 
 STARTOVER=/search
 
