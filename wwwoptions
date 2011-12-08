@@ -181,7 +181,6 @@ INSERTTAG_INHEAD=<script type="text/javascript" src="/screens/jquery-1.4.2.js"><
 #RIGHT_CELL_WIDTH
 
 SSLPORT=80:443|2082:444|2083:2443
-#SSLPORT=80:443:laurel.lso.missouri.edu:merlin.mobius.umsystem.edu|80:443:laurel.lso.missouri.edu:merlin.mobius.umsystem.edu
 
 STARTOVER=/search
 
@@ -267,7 +266,7 @@ SORT_ITEMS=true
 
 #   INN-REACH OPTIONS
 
-INNREACH=<br><img src="/screens/but_ir_holdings.gif" border=0 alt="Search MOBIUS Union Catalog">@mobius.missouri.edu(a=a;t=t;g=g;i=i;s=s;o=o;c=c;f=e;m=m;d=d;e=p;v=l;X=X*;Y=Y*;Z=Z*)
+INNREACH=<br><img src="/screens/but_ir_holdings.gif" border=0 alt="Search MOBIUS Union Catalog">@searchmobius.org(a=a;t=t;g=g;i=i;s=s;o=o;c=c;f=e;m=m;d=d;e=p;v=l;X=X*;Y=Y*;Z=Z*)
 
 # INNREACH_REMOTE=laurel.lso.missouri.edu:2082&<img src="/screens/but_ir_holdings.gif" border="0">@merlin-mobius.laurel.lso.umsystem.edu:2083(X=X;t=t;g=g;a=a;d=d;i=i)
 
