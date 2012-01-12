@@ -949,6 +949,8 @@ ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="">&nbsp;Other relevant 
 
 ICON_REQUEST=<img src="/screens/but_request.gif" alt="Request" border="0" />
 
+ICON_RESOURCE=<img src="/screens/icon_resource.gif" alt="Database Resource" border="0" />
+
 ICON_RESOURCE_RECORD=About Resource
 
 # ICON_RESOURCE_RECORD=<img src="/screens/resource_record.gif" alt="Resource" border="0" />
