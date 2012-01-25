@@ -122,7 +122,7 @@ RESOURCE_HOLDINGS_FIELDS=Title:Vbt|Lib Has:Vch|Connect to Full Text:VcY
 
 RESOURCE_HOLDINGS_MAX=3
 
-RESOURCE_LICENSE_FIELDS=Authorized Users:Vlu|Authentication Method:Vla|Terms of Use:Vlt|Reserves Restrictions:Vls|ILL Restrictions:Vlo|
+RESOURCE_LICENSE_FIELDS=Authorized Users:Vlu|Authentication Method:Vla|Terms of Use:Vlt|Course Use Restrictions:Vls|ILL Restrictions:Vlo|
 
 TABLEPARAM_BIB_LICENSE=id="bib_license"
 
@@ -181,7 +181,6 @@ INSERTTAG_INHEAD=<script type="text/javascript" src="/screens/jquery-1.4.2.js"><
 #RIGHT_CELL_WIDTH
 
 SSLPORT=80:443|2082:444|2083:2443
-#SSLPORT=80:443:laurel.lso.missouri.edu:merlin.mobius.umsystem.edu|80:443:laurel.lso.missouri.edu:merlin.mobius.umsystem.edu
 
 STARTOVER=/search
 
@@ -267,13 +266,13 @@ SORT_ITEMS=true
 
 #   INN-REACH OPTIONS
 
-INNREACH=<br><img src="/screens/but_ir_holdings.gif" border=0 alt="Search MOBIUS Union Catalog">@mobius.missouri.edu(a=a;t=t;g=g;i=i;s=s;o=o;c=c;f=e;m=m;d=d;e=p;v=l;X=X*;Y=Y*;Z=Z*)
+INNREACH=<br><img src="/screens/but_ir_holdings.gif" border=0 alt="Search MOBIUS Union Catalog">@searchmobius.org(a=a;t=t;g=g;i=i;s=s;o=o;c=c;f=e;m=m;d=d;e=p;v=l;X=X*;Y=Y*;Z=Z*)
 
 # IRSSO SETUP
 
-INNREACH_REMOTE=laurel.lso.missouri.edu&<img src="/screens/but_ir_holdings.gif" border="0">@laurel.lso.missouri.edu:2083(X=X;t=t;g=g;a=a;d=d;i=i)
+INNREACH_REMOTE=laurel.lso.missouri.edu&<img src="/screens/but_ir_holdings.gif" border="0">@laurel.lso.missouri.edu:2083(a=a;t=t;g=g;i=i;s=s;o=o;c=c;f=e;m=m;d=d;e=p;v=l;X=X*;Y=Y*;Z=Z*)
 
-INNREACH_REMOTE_SSL=laurel.lso.missouri.edu&<img src="/screens/but_ir_holdings.gif" border="0">@laurel.lso.missouri.edu:2443(X=X;t=t;g=g;a=a;d=d;i=i)
+INNREACH_REMOTE_SSL=laurel.lso.missouri.edu&<img src="/screens/but_ir_holdings.gif" border="0">@laurel.lso.missouri.edu:2443(a=a;t=t;g=g;i=i;s=s;o=o;c=c;f=e;m=m;d=d;e=p;v=l;X=X*;Y=Y*;Z=Z*)
 
 SSO_VALID_HOSTS=128.206.14.98|laurel.lso.missouri.edu|m.laurel.lso.missouri.edu|merlin-mobius.missouri.edu
 
@@ -323,7 +322,7 @@ ICON_MYLISTS_RECORD=<img src="/screens/but_savemylists.gif" alt="Add to My Lists
 ICON_MYLISTS_SAVE_TO_LIST=<img src="/screens/but_savemylists.gif" alt="Save to List" border="0" />
 ICON_MYLISTS_SAVE=<img src="/screens/but_savemylists.gif" border="0">
 
-ICON_MYLISTS_SAVE_TO_LIST=<span id="mylists">Create/Save to My Lists</span>
+ICON_MYLISTS_SAVE_TO_LIST=<span id="mylists" class="saveButton">Create/Save to My Lists</span>
 
 MY_LISTS=t
 
@@ -410,7 +409,7 @@ PATFEED_LIVE_BOOKMARKS=T
 
 #FREEZE_HOLDS[_P#]
 
-HOLD_MSG_SIMPLE=T
+HOLD_MSG_SIMPLE=F
 
 MASK_BARCODE=T
 
@@ -418,7 +417,7 @@ MASK_BARCODE=T
 
 # MODIFY_PFLDS=
 
-MY_WEBPAC=F,T
+MY_WEBPAC=F,2
 
 # NEWPIN_MSG=please verify your chosen pin
 
@@ -790,8 +789,6 @@ BUT_STAFF=/screens/but_staff.gif
 
 BUT_STARTOVER=/screens/but_startover.gif
 
-BUT_SUBMIT=/screens/b_submit.gif
-
 BUT_UNLIMAVAIL=/screens/but_unlimavail.gif
 
 BUT_VIEW_SAVES=/screens/but_view_saves.gif
@@ -838,7 +835,7 @@ ICON_BIB_RESOURCE_DETAILS_s3=Full Details
 
 # ICON_BOOKCART=<img src="/screens/but_bibexport.gif" ALT="Add To Bookbag" border="0" />
 
-# ICON_BOOKCART_SAVED=<img src="/screens/but_remove_bookbag.gif" ALT="Remove From Bookbag" border="0" />
+ICON_BOOKCART_SAVED=<img src="/screens/but_remove_bookbag.gif" ALT="Remove From Bookbag" border="0" />
 
 # ICON_BOOKINGS_HEADER=<br /><span class="bibBookingsHeader">RESERVE THIS ROOM</span><br /><br />
 
@@ -956,13 +953,15 @@ ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="">&nbsp;Other relevant 
 
 ICON_REQUEST=<img src="/screens/but_request.gif" alt="Request" border="0" />
 
+ICON_RESOURCE=<img src="/screens/icon_resource.gif" alt="Database Resource" border="0" />
+
 ICON_RESOURCE_RECORD=About Resource
 
 # ICON_RESOURCE_RECORD=<img src="/screens/resource_record.gif" alt="Resource" border="0" />
 
-ICON_SAVEALLPAGE=<INPUT TYPE="submit" NAME="save_all_page" VALUE="Save all on page" SRC="/screens/saveallpage.gif" ALT="Save all on page">
+ICON_SAVEALLPAGE=<span class="saveButton">Save All On Page</span>
 
-ICON_SAVEMARKED=<INPUT TYPE="submit" NAME="save_marked" VALUE="Save marked records" SRC="/screens/savemarked.gif" ALT="Save marked records">
+ICON_SAVEMARKED=<span class="saveButton">Save Marked Records</span>
 
 #ICON_SORTPUDATE
 
@@ -972,7 +971,7 @@ ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore">more >></span>
 
 ICON_SPELLCHECK_SEARCH=Search
 
-ICON_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit" border="0" />
+ICON_SUBMIT=<img src="/screens/b_submit.gif" id="submitButton" alt="Submit" border="0" />
 
 #ICON_UPDATELIST
 
@@ -1908,6 +1907,153 @@ LOC_fwcb=http://www.umsystem.edu/whmc/intro.html "target=_blank"
 LOC_ucwib=http://www.umsystem.edu/whmc/intro.html "target=_blank"
 
 LOC_ucwii=http://www.umsystem.edu/whmc/intro.html "target=_blank"
+
+
+# UMKC Locations
+
+LOC_fkd=http://library.umkc.edu/dental-merlin-locations#other
+
+LOC_fkh=http://library.umkc.edu/hsl-merlin-locations#other
+
+LOC_fkn=http://library.umkc.edu/merlin-locations-mnl#other
+
+LOC_kd=http://library.umkc.edu/dental-merlin-locations#print
+
+LOC_kdav*=http://library.umkc.edu/dental-merlin-locations#irl
+
+LOC_kdf=http://library.umkc.edu/dental-merlin-locations#print
+
+LOC_kdp=http://library.umkc.edu/dental-merlin-locations#print
+
+LOC_kdq=http://library.umkc.edu/dental-merlin-locations#print
+
+LOC_kdr=http://library.umkc.edu/dental-merlin-locations#print
+
+LOC_kds=http://library.umkc.edu/dental-merlin-locations#print
+
+LOC_kdt*=http://library.umkc.edu/dental-merlin-locations#print
+
+LOC_kdx=http://library.umkc.edu/dental-merlin-locations#print
+
+LOC_kdz*=http://library.umkc.edu/dental-merlin-locations#print
+
+LOC_kh=http://library.umkc.edu/hsl-merlin-locations#hsl
+
+LOC_khav=http://library.umkc.edu/hsl-merlin-locations#other
+
+LOC_khf=http://library.umkc.edu/hsl-merlin-locations#hsl
+
+LOC_khg=http://library.umkc.edu/hsl-merlin-locations#hsl
+
+LOC_khh=http://library.umkc.edu/hsl-merlin-locations#hsl
+
+LOC_khm*=http://library.umkc.edu/hsl-merlin-locations#hsl
+
+LOC_khp=http://library.umkc.edu/hsl-merlin-locations#hsl
+
+LOC_khq=http://library.umkc.edu/hsl-merlin-locations#hsl
+
+LOC_khr=http://library.umkc.edu/hsl-merlin-locations#hsl
+
+LOC_kht*=http://library.umkc.edu/hsl-merlin-locations#hsl
+
+LOC_khx=http://library.umkc.edu/hsl-merlin-locations#hsl
+
+LOC_khz*=http://library.umkc.edu/hsl-merlin-locations#hsl
+
+LOC_kn=http://library.umkc.edu/merlin-locations-mnl#kn
+
+LOC_kn0*=http://library.umkc.edu/merlin-locations-mnl#g
+
+LOC_kn1*=http://library.umkc.edu/merlin-locations-mnl#ask
+
+LOC_kna*=http://library.umkc.edu/merlin-locations-music#desk
+
+LOC_knc=http://library.umkc.edu/merlin-locations-music#books
+
+LOC_kncav=http://library.umkc.edu/merlin-locations-music#desk
+
+LOC_kncc=http://library.umkc.edu/merlin-locations-music#desk
+
+LOC_kncf=http://library.umkc.edu/merlin-locations-music#books
+
+LOC_kncj*=http://library.umkc.edu/merlin-locations-spec-coll#marr
+
+LOC_kncma=http://library.umkc.edu/merlin-locations-music#desk
+
+LOC_kncp=http://library.umkc.edu/merlin-locations-music#periodicals
+
+LOC_kncq=http://library.umkc.edu/merlin-locations-music#books
+
+LOC_kncr*=http://library.umkc.edu/merlin-locations-music#books
+
+LOC_kncs*=http://library.umkc.edu/merlin-locations-music#scores
+
+LOC_knf=http://library.umkc.edu/merlin-locations-mnl#ask
+
+LOC_kng=http://library.umkc.edu/merlin-locations-mnl#ask
+
+LOC_kngcd=http://library.umkc.edu/merlin-locations-mnl#ask
+
+LOC_kngl=http://library.umkc.edu/merlin-locations-mnl#other
+
+LOC_kngmf=http://library.umkc.edu/merlin-locations-mnl#ask
+
+LOC_kng*=http://library.umkc.edu/merlin-locations-mnl#ask
+
+LOC_knl=http://library.umkc.edu/merlin-locations-mnl#1
+
+LOC_knn=http://library.umkc.edu/merlin-locations-mnl#1
+
+LOC_knp=http://library.umkc.edu/merlin-locations-mnl#1
+
+LOC_knq=http://library.umkc.edu/merlin-locations-mnl#3
+
+LOC_knr*=http://library.umkc.edu/merlin-locations-mnl#1
+
+LOC_knsc=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+
+LOC_knsca=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+
+LOC_knscf=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+
+LOC_knscq=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+
+LOC_knse*=http://library.umkc.edu/merlin-locations-spec-coll#diastole
+
+LOC_knsms=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+
+LOC_knsp=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+
+LOC_knsr=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+
+LOC_knsy*=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+
+LOC_knsz*=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+
+LOC_knth=http://library.umkc.edu/merlin-locations-mnl#ask
+
+LOC_knu=http://library.umkc.edu/merlin-locations-mnl#4
+
+LOC_knv=http://library.umkc.edu/merlin-locations-mnl#1
+
+LOC_knw=http://library.umkc.edu/merlin-locations-mnl#2
+
+LOC_knx=http://library.umkc.edu/merlin-locations-mnl#1
+
+LOC_knxav=http://library.umkc.edu/merlin-locations-music#reserves
+
+LOC_knxc=http://library.umkc.edu/merlin-locations-music#reserves
+
+LOC_knxf=http://library.umkc.edu/merlin-locations-mnl#1
+
+LOC_knxq=http://library.umkc.edu/merlin-locations-mnl#1
+
+LOC_kr*=http://library.umkc.edu/merlin-locations-mnl#other
+
+LOC_kw=http://library.umkc.edu/merlin-locations-mnl#other
+
+
 
 CUSTOM_MESSAGES=t
 
