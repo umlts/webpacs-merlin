@@ -540,7 +540,7 @@ XRECTYPE=bi
 
 #   SEARCH RESULTS OPTIONS
 
-AUTHMSG==<em>%u</em> -- See %w <strong>%a</strong><SPAN CLASS="authPublicNote">%p</span>|<em>%u</em> -- See Also %w <strong>%a</strong><SPAN CLASS="authPublicNote">%p</span>
+AUTHMSG=<em>%u</em> -- See %w <strong>%a</strong><SPAN CLASS="authPublicNote">%p</span>|<em>%u</em> -- See Also %w <strong>%a</strong><SPAN CLASS="authPublicNote">%p</span>
 
 #AUTHMSG_SR
 
