@@ -268,9 +268,12 @@ SORT_ITEMS=true
 
 INNREACH=<br><img src="/screens/but_ir_holdings.gif" border=0 alt="Search MOBIUS Union Catalog">@searchmobius.org(a=a;t=t;g=g;i=i;s=s;o=o;c=c;f=e;m=m;d=d;e=p;v=l;X=X*;Y=Y*;Z=Z*)
 
-# INNREACH_REMOTE=laurel.lso.missouri.edu:2082&<img src="/screens/but_ir_holdings.gif" border="0">@merlin-mobius.laurel.lso.umsystem.edu:2083(X=X;t=t;g=g;a=a;d=d;i=i)
+# IRSSO SETUP
 
+INNREACH_REMOTE=laurel.lso.missouri.edu&<img src="/screens/but_ir_holdings.gif" border="0">@laurel.lso.missouri.edu:2083(a=a;t=t;g=g;i=i;s=s;o=o;c=c;f=e;m=m;d=d;e=p;v=l;X=X*;Y=Y*;Z=Z*)
+INNREACH_REMOTE_SSL=laurel.lso.missouri.edu&<img src="/screens/but_ir_holdings.gif" border="0">@laurel.lso.missouri.edu:2443(a=a;t=t;g=g;i=i;s=s;o=o;c=c;f=e;m=m;d=d;e=p;v=l;X=X*;Y=Y*;Z=Z*)
 
+SSO_VALID_HOSTS=128.206.14.98|laurel.lso.missouri.edu|m.laurel.lso.missouri.edu|merlin-mobius.missouri.edu
 
 
 
