@@ -133,6 +133,7 @@ function preload() {
 
 <!-- BEGIN site/srchhelp/X.tt for MERLIN, updated 14:43:13 08-Jan-2008 by hjp -->
 
+
 <!--Beginning main page content-->
 <!-- This table is purely cosmetic. It's only cell has a background color which is visible in the cellspacing gaps of the content table nested in that cell. -->
 <center>
@@ -272,17 +273,17 @@ in
 <!-- BEGIN RIGHT COLUMN: SORT & LIMIT -->
 <td class="searchTips">
 <input type="hidden" name="startLimit" />
-
+  
 <table border="0">
 <tr><td>School:</td><td><select name="searchscope" size="5" multiple="multiple">
+<option value="8" selected="selected"> All MERLIN</option>
 <option value="1"> MU</option>
 <option value="2"> MU-Law</option>
 <option value="3"> UMKC</option>
-<option value="4" selected="selected"> UMKC-Law</option>
+<option value="4"> UMKC-Law</option>
 <option value="5"> Missouri S&T</option>
 <option value="6"> UMSL</option>
 <option value="7"> State Historical Society</option>
-<option value="8"> All MERLIN</option>
 </select>
 </td>
 </tr></table>
@@ -291,6 +292,7 @@ in
 <!--{lang}-->
 <!--{DOCDATE}-->
 <!--{publish}-->
+
 <table border="0">
 <tr><td>Conference Proceedings:</td><td><select name="o">
 <option value="">ANY</option>
@@ -301,11 +303,53 @@ in
 </td>
 </tr></table>
 
+<table border="0">
+<tr><td><label for="n">Online:</label></td><td><select id="n" name="n">
+<option value="">ANY</option>
+<option value="cr">Online Only</option>
+</select>
+</td>
+</tr></table>
+
+<table border="0">
+<tr><td><label for="a">Audio and Video Formats:</label></td><td><select id="a" name="a" size="5" multiple="multiple">
+<option value="">ANY</option>
+<option value=""></option>
+<option value="s*">AUDIO FORMATS</option>
+<option value="s*">All Sound Recording Formats</option>
+<option value="ss">Audio cassettes</option>
+<option value="sd f">CDs</option>
+<option value="sd b">LPs</option>
+<option value="sd c">45 rpm </option>
+<option value="sd d">78 rpm</option>
+<option value="sd z">DVD-audio</option>
+<option value="st">Reel-to-reel</option>
+<option value="se">Cylinder</option>
+<option value="sq">Roll</option>
+<option value="sw">Wire recording</option>
+<option value=""></option>
+<option value="v*">VIDEO FORMATS</option>
+<option value="v*">All Video Recording Formats</option>
+<option value="vd">DVD-video</option>
+<option value="vf">VHS</option>
+<option value="mr">16/35 mm film</option>
+</select>
+</td>
+</tr></table>
+
+      <!--{govdoc}-->
+
 <!--{mattype}-->
 <!--{nosort}-->
 <!--{sort}-->
 <br />
 <p><strong>To select multiple items in a scroll box menu, use CTRL-click (Windows) or the command key (Mac).</strong></p>
+<!--<select name="SORT">
+<option value="D">Date</option>
+<option value="A">Title</option>
+<option value="R">Relevance</option>
+</select>-->
+
 
 </td>
 <!-- END RIGHT COLUMN -->
@@ -402,7 +446,7 @@ s:hopi and s:religion
 
 
 
-<p class="ret2MainMenu"><a HREF="/search~S4">Return to Main Menu</a></p>
+<p class="ret2MainMenu"><a HREF="/search~">Return to Main Menu</a></p>
 
 
 	
@@ -411,7 +455,7 @@ s:hopi and s:religion
 </center>
 
 <center>
-<!-- BEGIN site/botlogo.tt for MERLIN, updated 14:43:13 08-Jan-2008 by hjp -->
+<!-- BEGIN site/botlogo.tt for MERLIN, updated 14:42:04 08-Jan-2008 by hjp -->
 <center>
 	<p><img src="/screens/bot_bar.gif" alt="" width="740" height="8" border="0" /></p>
 	<p><span class="bot_logo"><strong>MERLIN</strong> &middot; Missouri Education and Research Libraries Information Network<br />
