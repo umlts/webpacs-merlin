@@ -1027,7 +1027,7 @@ IMAGE_MATTYPEz=/screens/icon_z.gif
 
 # CLICKABLE LOCATIONS
 
-# UMC
+# MU
 
 LOC_ceiii=http://mulibraries.missouri.edu/about/maps/location/muellis.htm "target=_blank"
 
@@ -1291,7 +1291,7 @@ LOC_chiib=http://www.muhealth.org/~library/resources/MERLIN_locations/MERLINLoc_
 
 
 
-# UMC Journalism
+# MU Journalism
 
 cjcii=http://mulibraries.missouri.edu/Journalism/locationjourclosed.htm "target=_blank"
 
@@ -1319,7 +1319,7 @@ cjxii=http://mulibraries.missouri.edu/Journalism/locationjourreserve.htm "target
 
 
 
-# UMC Archives
+# MU Archives
 
 LOC_ucaii=http://muarchives.missouri.edu/merlingw.html "target=_blank"
 
@@ -1333,7 +1333,7 @@ LOC_umaii=http://muarchives.missouri.edu/merlingw.html "target=_blank"
 
 
 
-# UMC-HSL
+# MU-HSL
 
 LOC_chaii=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
 
@@ -1789,7 +1789,7 @@ LOC_uswii=http://www.umsl.edu/library/locations/codes/uswii.htm "target=_blank"
 
 
 
-# UMC Law
+# MU Law
 
 LOC_clavi=http://law.missouri.edu/library/locationguides/clavi.html "target=_blank"
 
