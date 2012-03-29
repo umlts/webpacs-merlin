@@ -147,7 +147,12 @@ h5 { font-size: 13px; color: #323279; }
     #merlin_sub_tabs a:active {
 	  color:#ffffff;
 	  text-decoration:none;
-      }      
+      }
+      
+    #merlin_tabs .oneLine {
+	  padding-top:12px;
+	  padding-bottom:11px;
+    }
       
     #merlin_tabs ul {
           margin:0;
