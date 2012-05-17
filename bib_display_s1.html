@@ -211,28 +211,22 @@ try {
         var buttonImg = "<img src='/screens/googlebutton.gif' alt='Google Preview'>"
         var textGBS = "";
         for (ISBN in bookInfo) {
-            document.getElementById('infoTable').style.width = '75%';
-            document.getElementById('sidebarContent').style.width = '21%';
             var b = bookInfo[ISBN];
             var bookJacket =  "<img src='" + b.thumbnail_url + "&zoom=1'>";
             //form the text of Google Book contents
             if (b && (b.preview == "full")) {
                textGBS = "Full text at<br>";
                //"Google Book Search";
-               document.getElementById("googlebooks").innerHTML = bookJacket + "<a target='_blank' href='" + b.preview_url + "'>" + textGBS + buttonImg + "</a>"
+              document.getElementById("googlebooks").innerHTML = bookJacket + "<a target='_blank' href='" + b.preview_url + "'>" + textGBS + buttonImg + "</a>"
+              document.getElementById('infoTable').style.width = '75%';
+              document.getElementById('sidebarContent').style.width = '21%';
             }
             else if (b && (b.preview == "partial")) {
                 textGBS = "Preview & search inside book at<br>"
                 //"Preview at Google Book Search";
                 document.getElementById("googlebooks").innerHTML = bookJacket + "<a target='_blank' href='" + b.preview_url + "'>" + textGBS + buttonImg + "</a>"
-            }
-            else if (b && (b.preview == "noview")) {
-                textGBS = "Information at Google Book Search"
-                if (b.thumbnail_url != undefined){
-                  document.getElementById("googlebooks").innerHTML = bookJacket + "<a target='_blank' href='" + b.preview_url + "'>" + textGBS + buttonImg + "</a>"
-                }else{
-                  document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + textGBS + buttonImg + "</a>" 
-                }
+                document.getElementById('infoTable').style.width = '75%';
+                document.getElementById('sidebarContent').style.width = '21%';
             }
         }
     }
