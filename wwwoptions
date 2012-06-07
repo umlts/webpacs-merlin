@@ -79,7 +79,7 @@ STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode 
 ICON_BUT_ANOTHER=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Another Search</span></span>
 ICON_BUT_NEWSRCH=New Search
 ICON_BUT_WORDSRCH=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Search as Words</span></span>
-DROP_DOWN=Xatdc
+DROP_DOWN=Xtadmsclfgeiovxjh
 FRAMEURL=0
 #IBROWSE_MAX=10000
 KEYWORD_COLOR=Y|all|red
@@ -166,8 +166,8 @@ IMAGE_MATTYPEs=/screens/media_periodical2.gif
 IMAGE_MATTYPEv=/screens/media_recordplayer.gif
 #IMAGE_MATTYPEw=/screens/digitalaudio.gif
 IMAGE_MATTYPEx=/screens/media_resource.gif
-IMAGE_MATTYPEy=/screens/othervideo.gif
-IMAGE_MATTYPEz=/screens/edissertatoin.gif
+#IMAGE_MATTYPEy=/screens/othervideo.gif
+#IMAGE_MATTYPEz=/screens/edissertatoin.gif
 INDEX_EXT=clg
 MEDIA=2
 NO_COPIES=Currently no copies available
