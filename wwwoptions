@@ -58,21 +58,21 @@ RESOURCETABLE=valign="top"|cellpadding="0" cellspacing="0" border="0"||Resources
 INSERTTAG_INHEAD=<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4"><link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print"><script type="text/javascript" src="/screens/bibdisplay.js"></script>
 INSERTTAG_HTML=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en">
 RIGHT_CELL_WIDTH=18|25
-#SSLPORT=80:443|2082:444
+SSLPORT=80:443|2082:444|2083:2443
 CUSTOM_MESSAGES=F
 STARTOVER=/search
 STATGROUP=login
 STYLESHEET=/screens/styles.css
 SUPPRESS_OPTION=STARTOVER,ANOTHER,NEWSRCH
-TIMEOUT=600;URL=/
+TIMEOUT=600;URL=http://laurel.lso.missouri.edu/
 TOPLOGO=@screens/toplogo.html
-UPDATECIRC=true
+#UPDATECIRC=true
 XSTARTOVER=/search
 
 # Staff
 ICON_BUT_PUBLIC=<span class="button"><img src="/screens/ico_patron.png" alt=""><span class="buttonText">Patron View</span></span>
 ICON_BUT_STAFF=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Staff View</span></span>
-STAFF=1
+STAFF=15,201
 STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode at %s as %s</span>
 
 # General and Phrase Searching
@@ -81,7 +81,7 @@ ICON_BUT_NEWSRCH=New Search
 ICON_BUT_WORDSRCH=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Search as Words</span></span>
 DROP_DOWN=Xatdc
 FRAMEURL=0
-IBROWSE_MAX=10000
+#IBROWSE_MAX=10000
 KEYWORD_COLOR=Y|all|red
 MULT_LIMITS=true
 NOSEARCH=nub
@@ -109,10 +109,10 @@ RELSEARCH=restable||<span class="button"><img src="/screens/ico_magnifyingglass.
 
 # Search Results
 AUTHMSG=<h2 class="briefcitTitle"><em>%u</em> -- See %w <strong>%a</strong></h2><span class="authPublicNote">%p</span>|<h2 class="briefcitTitle">%u -- See Also %w %a </h2><span class="authPublicNote">%p</span>
-AUTHMSG_SR=athe later heading|bthe earlier heading|dthe full form of the heading|fa musical composition based on this work|gthe narrower term|hthe broader term
+#AUTHMSG_SR=athe later heading|bthe earlier heading|dthe full form of the heading|fa musical composition based on this work|gthe narrower term|hthe broader term
 BODYPARAM=bgcolor="#FFFFFF"
-BRIEF=A
-BROWSE_t=245/abhnp/0|240/afklmnopr/0|700/tmnr/0|970/t/0|/abhnpv/0
+#BRIEF=A
+#BROWSE_t=245/abhnp/0|240/afklmnopr/0|700/tmnr/0|970/t/0|/abhnpv/0
 BROWSE_HEADERS=Mark|Media
 ICON_BUT_BRIEF=<span class="button"><img src="/screens/ico_browse_brief.png" alt=""><span class="buttonText">Brief Display</span></span>
 ICON_BUT_EXTENDED=<span class="button"><img src="/screens/ico_browse_ext.png" alt=""><span class="buttonText">Extended Display</span></span>
@@ -120,8 +120,9 @@ ICON_BUT_LIMAVAIL=<span class="button"><img src="/screens/ico_list.png" alt=""><
 ICON_BUT_LIMIT=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Limit/Sort Search</span></span>
 ICON_BUT_UNLIMAVAIL=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">Show All</span></span>
 DISPLAY_245=atd
-EXTENDED=CT
-HEADING_LENGTH=100
+EXTENDED=L
+EXTENDED_c=3
+#HEADING_LENGTH=100
 ICON_856LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website
 ICON_962LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image
 #ICON_BOOKCART=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add to Bag</span></span>
@@ -159,7 +160,39 @@ IMAGE_MATTYPEv=/screens/media_vhs.gif
 IMAGE_MATTYPEw=/screens/media_periodical.gif
 IMAGE_MATTYPEz=/screens/media_bestseller.gif
 IMAGE_MATTYPE2=/screens/media_article.gif
-INDEX_EXT=coi
+
+IMAGE_MATTYPE2=/screens/icon_2.gif
+IMAGE_MATTYPE3=/screens/icon_3.gif
+IMAGE_MATTYPE4=/screens/icon_4.gif
+IMAGE_MATTYPE7=/screens/icon_7.gif
+IMAGE_MATTYPE8=/screens/icon_8.gif
+IMAGE_MATTYPE-=/screens/icon_-.gif
+IMAGE_MATTYPEa=/screens/icon_a.gif
+IMAGE_MATTYPEb=/screens/icon_b.gif
+IMAGE_MATTYPEc=/screens/icon_c.gif
+IMAGE_MATTYPEd=/screens/icon_d.gif
+IMAGE_MATTYPEe=/screens/icon_e.gif
+IMAGE_MATTYPEf=/screens/icon_f.gif
+IMAGE_MATTYPEg=/screens/icon_g.gif
+IMAGE_MATTYPEh=/screens/icon_h.gif
+IMAGE_MATTYPEi=/screens/icon_i.gif
+IMAGE_MATTYPEj=/screens/icon_j.gif
+IMAGE_MATTYPEk=/screens/icon_k.gif
+IMAGE_MATTYPEl=/screens/icon_l.gif
+IMAGE_MATTYPEm=/screens/icon_m.gif
+IMAGE_MATTYPEn=/screens/icon_n.gif
+IMAGE_MATTYPEo=/screens/icon_o.gif
+IMAGE_MATTYPEp=/screens/icon_p.gif
+IMAGE_MATTYPEr=/screens/icon_r.gif
+IMAGE_MATTYPEs=/screens/icon_s.gif
+IMAGE_MATTYPEt=/screens/icon_t.gif
+IMAGE_MATTYPEu=/screens/icon_u.gif
+IMAGE_MATTYPEv=/screens/icon_v.gif
+IMAGE_MATTYPEw=/screens/icon_w.gif
+IMAGE_MATTYPEx=/screens/icon_x.gif
+IMAGE_MATTYPEy=/screens/icon_y.gif
+IMAGE_MATTYPEz=/screens/icon_z.gif
+INDEX_EXT=clg
 MEDIA=2
 NO_COPIES=Currently no copies available
 SORT_BROWSE=t:Title|a:Author|c:Year|r:Reverse Year|n:Call Number|m:Material Type
@@ -173,8 +206,8 @@ BIB_TOC_HEADER=<strong>Table of Contents</strong>
 ICON_BUT_MARC_DISPLAY=<span class="button"><img src="/screens/ico_marc.png" alt=""><span class="buttonText">MARC Display</span></span>
 ICON_BUT_REGULAR_DISPLAY=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Regular Display</span></span>
 ICON_BUT_RTRNTB=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Browse</span></span>
-DISPLAY_856=z|false
-HOLDINGS_POS=atpR
+DISPLAY_856=z3|false
+HOLDINGS_POS=atpexz
 #HOTLINK=i^020,c^09,n^505
 ICON_BIB_HOLDINGS_ITEMS=View Copies
 #ICON_NEARBY=<img src="/screens/bullet.gif" alt="Nearby on shelf" border="0">
@@ -207,10 +240,10 @@ BIB_RESOURCE_FIELDS_BRIEF=:VcY|:Vch|:VeE
 BIB_RESOURCE_NUM_BRIEF=A
 ICON_BIB_RESOURCE_DETAILS=<span class="button"><span class=buttonText">Full Details</span></span>
 ICON_RESOURCE_RECORD=<span class="button"><span class=buttonText">View Resource Record</span></span>
-RESOURCE_ADVISORY=k
-RESOURCE_HOLDINGS_FIELDS=Title:VbT|Coverage:Vch|Full Text:VcY
-RESOURCE_HOLDINGS_MAX=12
-RESOURCE_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx|Available to:Vlf|Access notes:Vla
+#RESOURCE_ADVISORY=k
+RESOURCE_HOLDINGS_FIELDS=Title:Vbt|Lib Has:Vch|Connect to Full Text:VcY
+RESOURCE_HOLDINGS_MAX=3
+RESOURCE_LICENSE_FIELDS=Authorized Users:Vlu|Authentication Method:Vla|Terms of Use:Vlt|Course Use Restrictions:Vls|ILL Restrictions:Vlo|
 TABLEPARAM_BIB_LICENSE=width="100%" border="0" cellpadding="0"
 TABLEPARAM_BIB_RESOURCE=width="100%" border="0" cellspacing="0" cellpadding="0"
 TABLEPARAM_BIB_RESOURCE_BRIEF=width="100%" border="0" cellspacing="0" cellpadding="0"
@@ -225,10 +258,10 @@ CHECKIN_BGCOLOR=ARRIVED=#FFFFFF|EXPECTED=#FFFFFF|TO BIND/BOUND=#FFFFFF|LATE=#FFF
 CHECKIN_FONTCOLOR=ARRIVED=GREEN|EXPECTED=BLACK|TO BIND/BOUND=RED|LATE=BLACK|OTHER=BLACK
 CHECKIN_STATUS=EXPECTED=Expected|ARRIVED=Arrived|PARTIALLY RECEIVED=Partial|MISSING=Missing|BOUND=Bound|AT BINDERY=To bind|BINDERY PREP=Binding prepration|REMOVED=Removed|NOT PUBLISHED=Not published|OUT OF PRINT=Out of print|UNAVAILABLE=Unavailable|LATE=Late
 #For the above wwwoption, see page 106918 of the manual for the correct label terminology.  For the left (all caps) side of the wwwoption, use what's in the manual, not what's in Millennium. 
-DISPLAY_CHECKIN_856=z
+DISPLAY_CHECKIN_856=z3
 HOLDINGS_REQ=Deliver this article to me
 SORT_ITEMS=true
-SUPPRESS_CARD=UI
+#SUPPRESS_CARD=UI
 
 # My Lists
 MY_LISTS=true
@@ -245,15 +278,15 @@ ICON_BACK_TO_MYLISTS=<div onmousedown="this.className='pressedState';" onmouseou
 ICON_MYLISTS_RECORD=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to My Lists</span></span>
 
 # Saving and Exporting
-#BRIEF_EXPORT=c|a|t|p
+BRIEF_EXPORT=a|t|p
 ICON_BUT_BIBEXPORT=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add to Bag</span></span>
 ICON_BUT_CLEAR_MARKED=<span class="button"><img src="/screens/ico_bag_clear.png" alt=""><span class="buttonText">Empty Bag</span></span>
 ICON_BUT_EXPORT_MULTI=<span class="button"><img src="/screens/ico_disc.png" alt=""><span class="buttonText">Export Saved</span></span>
 ICON_BUT_EXPORT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Bag</span></span>
 ICON_BUT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Bag</span></span>
-EMAILOP=From the library catalog|exporter|
-EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,procite,endnote
-XRECTYPE=boi
+EMAILOP=From the MERLIN Library Catalog|exporter|
+EXPORT_SELECT_TABLE=Sendto:email,local,browser|Format:full,brief,marc,endnote,procite
+XRECTYPE=bi
 
 #Requesting
 #BIBREQUEST=true
@@ -264,10 +297,10 @@ ICON_BUT_REQUEST_RESET=<div onmousedown="this.className='pressedState';" onmouse
 ICON_BUT_REQUEST_SELECTED=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Selected</span></span></div></div>
 ICON_REQUEST=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Request
 #REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
-REQUEST=Hold this item|bib|ask|Y
+REQUEST=Request item|denyiflocalavail|ask|Y
 #REQUEST_ARTICLE_IFCHKIN=Y
-#REQUEST_INSTRUCTION=Please enter any special instructions: 
-REQUEST_MULTI=Request All Items in Book Cart|[match request wwwoption]
+REQUEST_INSTRUCTION=<strong>Any Special Instructions?</strong><ul><li> If there are multiple volumes available, you will be prompted for your selection on the next screen.&nbsp; <strong>Do not use the box below.</strong>&nbsp; If you want more than one volume, you will need to complete a separate request for each one.</li><li>You may request microfiche pieces from the MU Depository.&nbsp; If you are requesting separate microfiche pieces, include the numeric identifier for the fiche you want in the box below. Examples of numeric identifiers:</li><ul>  <li>2005 ASI 8486-1.2</li><li> 1988 IIS 1300-S61.19 </li><li> ED516836</li></ul></ul>
+REQUEST_MULTI=Request multi|denyiflocalavail|ask|Y
 
 # Patron Record
 ICON_BUT_PAT_CANCEL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel</span></span></div></div>
@@ -334,9 +367,21 @@ ICON_READING_HISTORY_OPTIN=<div onmousedown="this.className='pressedState';" onm
 ICON_READING_HISTORY_OPTOUT=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Opt Out</span></span></div></div>
 ICON_READING_HISTORY_EXPORT=<span class="button"><img src="/screens/ico_disc.png" alt=""><span class="buttonText">Export My Reading List</span></span>
 LOGGEDIN_MSG=<span class="loggedInMessage">You are logged in <span class="loggedInMoreInfo">to %s</span> as %s</span>
-NO_REVERIFY=acq,book,ill,media,mmf,req,wam,z39,mfrpro
-PATRONVIEW_START=holds,ill,mylists,fines,chkouts,bookings,psearch,mffavs,readhist,patrate,patreview,programs,irnr
-PREF_SEARCHES=25|Y
+NO_REVERIFY=req,book,media,ill,z39
+#PATRONVIEW_START=holds,ill,mylists,fines,chkouts,bookings,psearch,mffavs,readhist,patrate,patreview,programs,irnr
+PREF_SEARCHES_P1=10|Y
+PREF_SEARCHES_P2=10|Y
+PREF_SEARCHES_P3=10|Y
+PREF_SEARCHES_P4=10|Y
+PREF_SEARCHES_P5=10|Y
+PREF_SEARCHES_P9=10|Y
+PREF_SEARCHES_P15=10|Y
+#UMKC PTYPES
+PREF_SEARCHES_P41=10|Y
+PREF_SEARCHES_P42=10|Y
+PREF_SEARCHES_P43=10|Y
+PREF_SEARCHES_P44=10|Y
+PREF_SEARCHES_P45=10|Y
 PREFTEXT=Save as preferred search
 READING_HISTORY=optin|true|
 TOPLOGO_LOGGEDIN=T
@@ -389,7 +434,13 @@ ILL_HOME=/screens/ill.html
 
 # INN-Reach
 IR_PLACEMENT=1
-INNREACH=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;f=c;g=g;i=i;m=h;o=o;p=p;r=r;s=s;t=t)
+INNREACH=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+
+# IRSSO SETUP
+
+INNREACH_REMOTE=laurel.lso.missouri.edu&<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@laurel.lso.missouri.edu:2083(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+INNREACH_REMOTE_SSL=laurel.lso.missouri.edu&<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@laurel.lso.missouri.edu:2443(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+SSO_VALID_HOSTS=128.206.14.98|laurel.lso.missouri.edu|m.laurel.lso.missouri.edu|merlin-mobius.missouri.edu
 
 # Media Management
 ICON_BUT_RET2CRS=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Course</span></span>
@@ -406,7 +457,7 @@ TABLEPARAM_RSRV_BIBS=width="100%" border="0" cellpadding="0" cellspacing="0"
 # Featured Lists
 ICON_BUT_PREVSCRN=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span>
 ICON_BUT_RET2FEAT=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span>
-#FEATURED_LIST=01,02,03|FEATURED LISTS|CATEGORY|# of Titles
+FEATURED_LIST=10,260|New Titles|Campus|# Titles
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
@@ -426,31 +477,31 @@ RESLINK=bibresourcetop|browseresourcetop||
 #WBHEADERTEXT=The following resources may provide additional information about<br>#HEADER#
 
 # Patron Feeds
-RSS_MIN_TTL=10
+RSS_MIN_TTL=20
 ICON_PATFEED=<span class="button"><img src="/screens/ico_rss.gif" alt=""><span class="buttonText">My Record Feeds</span></span>
-PATFEED_CONFIG=Your Library Record News|Follow links to library record for full details.
-PATFEED_FINES_INCURRED_RECENTLY=You have new fines or fees
+PATFEED_CONFIG=Library News|Click links for details
+PATFEED_FINES_INCURRED_RECENTLY=New fee or fine
 PATFEED_HOLDS_READY=Your materials are ready to be picked up
 #PATFEED_IMAGE=/screens/rss.gif|Subscribe to a feed of your library record.|88|31
-PATFEED_ITEMS_BOOKED_TOMORROW=Materials booked tomorrow
-PATFEED_ITEMS_DUE_SOON=Materials due soon
-PATFEED_ITEMS_DUE_TODAY=Materials due today
-PATFEED_ITEMS_OVERDUE=Materials overdue
-PATFEED_ITEMS_RECALLED=Materials recalled
+PATFEED_ITEMS_DUE_SOON=You have items that are due soon
+PATFEED_ITEMS_DUE_TODAY=You have items that are due today
+PATFEED_ITEMS_OVERDUE=Items that are overdue
+PATFEED_ITEMS_BOOKED_TOMORROW=You have items booked for tomorrow
+PATFEED_ITEMS_RECALLED=Materials have been recalled
 PATFEED_LIVE_BOOKMARKS=T
 PATFEED_PROGRAM_SESSION_SOON=An event that you have registered for is coming up soon. Please log on to My Account for the event date, time and location.
 PATFEED_PROGRAM_SESSION_TOMORROW=An event that you have registered for is coming up tomorrow. Please log on to My Account for the event date, time and location.
 PATFEED_PROGRAM_SESSION_TODAY=An event that you have registered for is coming up today. Please log on to My Account for the event date, time and location.
 
 # Z39.50
-ICON_BUT_EMAIL=Email
-ICON_BUT_NEXTREC=<span class="button"><span class="buttonText" id="buttonNextRecord">Next Record</span><img src="/screens/ico_next.gif" alt=""></span>
-ICON_BUT_PREVREC=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Previous Record</span></span>
-ICON_BUT_Z39_ANOTHER=Another Database
-ICON_BUT_Z39_REQUEST=<span class="button"><img src="/screens/ico_checkbox.png" alt=""><span class="buttonText">Request</span></span>
-ICON_BUT_Z39SEARCH=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Search Other Libraries</span></span>
-Z39BROADCAST=Z39.50 Broadcast Search:Please select the Z39.50 servers to which you want to send your search
-Z39MULTI=500:100
+#ICON_BUT_EMAIL=Email
+#ICON_BUT_NEXTREC=<span class="button"><span class="buttonText" id="buttonNextRecord">Next Record</span><img src="/screens/ico_next.gif" alt=""></span>
+#ICON_BUT_PREVREC=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Previous Record</span></span>
+#ICON_BUT_Z39_ANOTHER=Another Database
+#ICON_BUT_Z39_REQUEST=<span class="button"><img src="/screens/ico_checkbox.png" alt=""><span class="buttonText">Request</span></span>
+#ICON_BUT_Z39SEARCH=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Search Other Libraries</span></span>
+#Z39BROADCAST=Z39.50 Broadcast Search:Please select the Z39.50 servers to which you want to send your search
+#Z39MULTI=500:100
 
 # Partner
 ICON_BUT_RETHOME=<span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Home</span></span>
@@ -532,3 +583,531 @@ TABLEPARAM_PROG_SECTIONS=width="100%" border="0" cellspacing="0" align="center"
 # Scoping
 
 LOCKSCOPE=no
+
+# CLICKABLE LOCATIONS
+
+# MU
+
+LOC_ceiii=http://mulibraries.missouri.edu/about/maps/location/muellis.htm "target=_blank"
+LOC_cerii=http://mulibraries.missouri.edu/about\maps\location\ellisref.htm "target=_blank"
+LOC_cerli=http://mulibraries.missouri.edu/refservices/location/muellisreflockedref.html "target=_blank"
+LOC_cerri=http://mulibraries.missouri.edu/about/maps/location/ellisrefreadyref.htm "target=_blank"
+LOC_ce15e=http://mulibraries.missouri.edu/about/maps/location/ellisstudy151e.htm "target=_blank"
+LOC_ce15f=http://mulibraries.missouri.edu/about/maps/location/ellisstudy151f.htm "target=_blank"
+LOC_ce15g=http://mulibraries.missouri.edu/about/maps/location/ellisstudy151g.htm "target=_blank"
+LOC_ce3d6=http://mulibraries.missouri.edu/about/maps/location/ellisstudy3d61.htm "target=_blank"
+LOC_ce3g1=http://mulibraries.missouri.edu/about/maps/location/ellisstudy3g61.htm "target=_blank"
+LOC_ce3g2=http://mulibraries.missouri.edu/about/maps/location/ellisstudy3g62.htm "target=_blank"
+LOC_cdiii=http://mulibraries.missouri.edu/about/maps/location/delta.htm "target=_blank"
+LOC_cdiib=http://mulibraries.missouri.edu/about/maps/location/delta.htm "target=_blank"
+LOC_cnbii=http://mulibraries.missouri.edu/engineering/about/location/engrbooks.htm "target=_blank"
+LOC_cniib=hhttp://mulibraries.missouri.edu/engineering/about/location/engr.htm "target=_blank"
+LOC_cniii=http://mulibraries.missouri.edu/engineering/about/location/engrbooks.htm "target=_blank"
+LOC_cnoii=http://mulibraries.missouri.edu/engrstaff/maps/locmuover.htm "target=_blank"
+LOC_cnrii=http://mulibraries.missouri.edu/engineering/about/location/engrreference.htm "target=_blank"
+LOC_cnrri=http://mulibraries.missouri.edu/engineering/about/location/engrreadyref.htm "target=_blank"
+LOC_cnxii=http://mulibraries.missouri.edu/engineering/about/location/engrreserve.htm "target=_blank"
+LOC_cmiii=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH.htm "target=_blank"
+LOC_cmiib=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH.htm "target=_blank"
+LOC_cmrii=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH%20REFERENCE.htm "target=_blank"
+LOC_cmrri=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH%20REFERENCE.htm "target=_blank"
+LOC_cmxii=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH%20RESERVE.htm "target=_blank"
+LOC_cmoii=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH%20OVERSIZED.htm "target=_blank"
+LOC_fcaii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
+LOC_fcdii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
+LOC_fceii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
+LOC_fcgii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
+LOC_fciib=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
+LOC_fcjii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
+LOC_fcmii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
+LOC_fcnii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
+LOC_fctii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
+LOC_fcvii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
+LOC_fcyii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
+LOC_caiii=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_cadii=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caiin=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caiig=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caiij=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caiim=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caioi=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caion=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caiog=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caioh=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caioj=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caiom=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caiib=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_cex2h=http://mulibraries.missouri.edu/about/maps/location/ellissemrm202h.htm "target=_blank"
+LOC_cexi1=http://mulibraries.missouri.edu/about/maps/location/ellissemrm202I.htm "target=_blank"
+LOC_cex2j=http://mulibraries.missouri.edu/about/maps/location/ellissemrm202J.htm "target=_blank"
+LOC_cex61=http://mulibraries.missouri.edu/about/maps/location/ellissemrm3d61.htm "target=_blank"
+LOC_cex62=http://mulibraries.missouri.edu/about/maps/location/ellissemrm3d62.htm "target=_blank"
+LOC_cex21=http://mulibraries.missouri.edu/about/maps/location/ellissemrm3e21.htm "target=_blank"
+LOC_cexg1=http://mulibraries.missouri.edu/about/maps/location/ellissemrm3g61.htm "target=_blank"
+LOC_cexg2=http://mulibraries.missouri.edu/about/maps/location/ellissemrm3g61.htm "target=_blank"
+LOC_cex12=http://mulibraries.missouri.edu/about/maps/location/ellissemrm4b12.html "target=_blank"
+LOC_ce4cs=http://mulibraries.missouri.edu/about/maps/location/ellis4a51.htm "target=_blank"
+LOC_ce201=http://mulibraries.missouri.edu/guides/virtour/selfguided/tour.asp?title=Study%20Rooms "target=_blank"
+LOC_ce202=http://mulibraries.missouri.edu/guides/virtour/selfguided/tour.asp?title=Study%20Rooms "target=_blank"
+LOC_cecpr=http://mulibraries.missouri.edu/about/maps/location/ellis-cprr.htm "target=_blank"
+LOC_ced28=http://mulibraries.missouri.edu/about/maps/location/ellisdocsrm28.htm "target=_blank"
+LOC_cedci=http://mulibraries.missouri.edu/about/maps/location/ellisdocsmedia.htm "target=_blank"
+LOC_cedfi=http://mulibraries.missouri.edu/about/maps/location/ellisdocsmediacab.htm "target=_blank"
+LOC_cedii=http://mulibraries.missouri.edu/about/maps/location/ellisdocs.htm "target=_blank"
+LOC_cedma=http://mulibraries.missouri.edu/about/maps/location/ellisdocsmap.htm "target=_blank"
+LOC_cedmi=http://mulibraries.missouri.edu/about/maps/location/ellisdocsmicf.htm "target=_blank"
+LOC_cedof=http://mulibraries.missouri.edu/about/maps/location/ellisdocsoffice.htm "target=_blank"
+LOC_cedoi=http://mulibraries.missouri.edu/about/maps/location/ellisdocsoversize.htm "target=_blank"
+LOC_cedpi=http://mulibraries.missouri.edu/about/maps/location/ellisdocsposter.htm "target=_blank"
+LOC_cedri=http://mulibraries.missouri.edu/about/maps/location/ellisdocsref.htm "target=_blank"
+LOC_cejii=http://mulibraries.missouri.edu/guides/virtour/childrensbooks.htm "target=_blank"
+LOC_celii=http://mulibraries.missouri.edu/about/maps/location/ill.htm "target=_blank"
+LOC_cemci=http://mulibraries.missouri.edu/about/maps/location/ellismodocmedia.htm "target=_blank"
+LOC_cemii=http://mulibraries.missouri.edu/about/maps/location/ellismodoc.htm "target=_blank"
+LOC_cemma=http://mulibraries.missouri.edu/about/maps/location/ellismodocmap.htm "target=_blank"
+LOC_cemmi=hhttp://mulibraries.missouri.edu/about/maps/location/ellismodocmicf.htm "target=_blank"
+LOC_cemoi=http://mulibraries.missouri.edu/about/maps/location/ellismodocover.htm "target=_blank"
+LOC_cempi=http://mulibraries.missouri.edu/about/maps/location/ellismodocposter.htm "target=_blank"
+LOC_cemri=http://mulibraries.missouri.edu/about/maps/location/ellismodocref.htm "target=_blank"
+LOC_ceoli=http://mulibraries.missouri.edu/guides/virtour/oversized.htm "target=_blank"
+LOC_ceoxi=http://mulibraries.missouri.edu/guides/virtour/oversized.htm "target=_blank"
+LOC_cequi=http://mulibraries.missouri.edu/about/maps/location/techser.htm "target=_blank"
+LOC_cer56=http://mulibraries.missouri.edu/about/maps/location/refrm156.htm "target=_blank"
+LOC_cerai=http://mulibraries.missouri.edu/about/maps/location/ellisdataarc.htm "target=_blank"
+LOC_cerei=http://mulibraries.missouri.edu/about/maps/location/eric.htm "target=_blank"
+LOC_cerwi=http://mulibraries.missouri.edu/about/maps/location/refwrkstn.htm "target=_blank"
+LOC_cescf=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesci=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesdi=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesfi=http://mulibraries.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
+LOC_cesfm=http://mulibraries.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
+LOC_ceshi=http://mulibraries.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
+LOC_cesji=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesla=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesmc=http://mulibraries.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
+LOC_cesmf=http://mulibraries.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
+LOC_cesmp=http://mulibraries.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
+LOC_cesof=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesoi=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cespf=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cespi=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cespn=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cespp=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cespr=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cespx=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesri=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesrr=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cessa=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cessf=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cessm=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesti=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_ceswi=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cetii=http://mulibraries.missouri.edu/guides/virtour/selfguided/tour.asp?title=Study%20Rooms "target=_blank"
+LOC_ceuii=http://mulibraries.missouri.edu/about/maps/location/recorded-sound.htm "target=_blank"
+LOC_ceuri=http://mulibraries.missouri.edu/about/maps/location/recorded-sound.htm "target=_blank"
+LOC_cex12=http://mulibraries.missouri.edu/Refservices/location/MUellissemrm4B12.html "target=_blank"
+LOC_cexii=http://mulibraries.missouri.edu/guides/reserves/ellis/print.htm "target=_blank"
+LOC_cgcii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgdii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgdmi=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgiib=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgiii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgmii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgoii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgrii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgrri=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgxii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_chiib=http://www.muhealth.org/~library/resources/MERLIN_locations/MERLINLoc_MUHSL_Books.html "target=_blank"
+
+# MU Journalism
+
+cjcii=http://mulibraries.missouri.edu/Journalism/locationjourclosed.htm "target=_blank"
+cjfii=http://mulibraries.missouri.edu/Journalism/ "target=_blank"
+cjiib=http://mulibraries.missouri.edu/Journalism/locationjour.htm "target=_blank"
+cjiii=http://mulibraries.missouri.edu/Journalism/ locationjour.htm "target=_blank"
+cjmii=http://mulibraries.missouri.edu/Journalism/locationjourmorgue.htm "target=_blank"
+cjnii=http://mulibraries.missouri.edu/Journalism/locationjournewspaper.htm "target=_blank"
+cjoii=http://mulibraries.missouri.edu/Journalism/locationjouroversize.htm "target=_blank"
+cjpii=http://mulibraries.missouri.edu/Journalism/locationjourjournal.htm "target=_blank"
+cjpoi=http://mulibraries.missouri.edu/Journalism/locationjourfoi.htm "target=_blank"
+cjrii=http://mulibraries.missouri.edu/Journalism/locationjourref.htm "target=_blank"
+cjrri=http://mulibraries.missouri.edu/Journalism/locationjourreadyref.htm "target=_blank"
+cjxii=http://mulibraries.missouri.edu/Journalism/locationjourreserve.htm "target=_blank"
+
+# MU Archives
+
+LOC_ucaii=http://muarchives.missouri.edu/merlingw.html "target=_blank"
+LOC_ucari=http://muarchives.missouri.edu/merlingw.html "target=_blank"
+LOC_ucaib=http://muarchives.missouri.edu/merlingw.html "target=_blank"
+LOC_umaib=http://muarchives.missouri.edu/merlingw.html "target=_blank"
+LOC_umaii=http://muarchives.missouri.edu/merlingw.html "target=_blank"
+
+# MU-HSL
+
+LOC_chaii=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
+LOC_chcai=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
+LOC_chcii=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
+LOC_chcli=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
+LOC_cheii=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
+LOC_chgii=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
+LOC_chgmi=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
+LOC_chhib=http://library.muhealth.org/search/merlinlocations/muhslhealthconnection.htm "target=_blank"
+LOC_chhii=http://library.muhealth.org/search/merlinlocations/muhslhealthconnection.htm "target=_blank"
+LOC_chiib=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
+LOC_chiii=http://library.muhealth.org/search/merlinlocations/muhslbooks.htm "target=_blank"
+LOC_chill=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
+LOC_chmii=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
+LOC_chmim=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
+LOC_chmmi=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
+LOC_chmri=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
+LOC_choii=http://library.muhealth.org/search/merlinlocations/muhsloversizebooks.htm "target=_blank"
+LOC_choni=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
+LOC_chpic=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
+LOC_chpii=http://library.muhealth.org/search/merlinlocations/muhsljournals.htm "target=_blank"
+LOC_chpil=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
+LOC_chpim=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
+LOC_chpin=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
+LOC_chpio=http://library.muhealth.org/search/merlinlocations/muhsloversizejournals.htm "target=_blank"
+LOC_chrib=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
+LOC_chric=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
+LOC_chrid=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
+LOC_chrii=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
+LOC_chrin=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
+LOC_chrio=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
+LOC_chsii=http://library.muhealth.org/about/locations/rarebookroom.htm "target=_blank"
+LOC_chsoi=http://library.muhealth.org/about/locations/rarebookroom.htm "target=_blank"
+LOC_chxii=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
+LOC_chxir=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
+LOC_fchii=http://library.muhealth.org/search/merlinlocations/muhsldepository.htm "target=_blank
+
+# MST
+
+LOC_rwaci=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
+LOC_rwafi=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
+LOC_rwaii=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
+LOC_rwapi=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
+LOC_rwiig=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
+LOC_rwkii=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
+LOC_rwmii=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
+LOC_rwovg=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
+LOC_rwwii=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
+LOC_uraii=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
+LOC_urwii=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
+LOC_rwbri=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwbrr=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwcii=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwcnd=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwcnv=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwcom=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwdcd=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwdfr=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwdxx=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwfri=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwgca=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwgck=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwgcn=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwgcs=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwgii=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwlii=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwmuu=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwpci=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwpdi=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwpri=http://library.mst.edu/generallibinfo/firstfloor.html target=_blank"
+LOC_rwrib=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwric=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwrii=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwrir=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwsdi=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwxii=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
+LOC_rwii2=http://library.mst.edu/generallibinfo/secondfloor.html "target=_blank"
+LOC_rwii3=http://library.mst.edu/generallibinfo/thirdfloor.html "target=_blank"
+LOC_rwov2=http://library.mst.edu/generallibinfo/secondfloor.html "target=_blank"
+LOC_rwtii=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
+LOC_rwvii=http://library.mst.edu/generallibinfo/secondfloor.html  "target=_blank"
+LOC_rwbii=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
+LOC_rwdfi=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
+LOC_rwdii=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
+LOC_rwfii=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
+LOC_rwflr=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
+LOC_rwpfi=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
+LOC_rwpii=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
+LOC_rwpmi=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
+LOC_rwtmi=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
+LOC_rwfli=http://library.mst.edu/generallibinfo/secondfloor.html "target=_blank"
+
+
+
+# UMSL
+
+LOC_fsb=http://www.umsl.edu/library/locations/codes/fsb.htm "target=_blank"
+LOC_fse=http://www.umsl.edu/library/locations/codes/fse.htm "target=_blank"
+LOC_fsh=http://www.umsl.edu/library/locations/codes/fsh.htm "target=_blank"
+LOC_fsj=http://www.umsl.edu/library/locations/codes/fsj.htm "target=_blank"
+LOC_fsm=http://www.umsl.edu/library/locations/codes/fsm.htm "target=_blank"
+LOC_saiib=http://www.umsl.edu/library/locations/codes/saiib.htm "target=_blank"
+LOC_saiii=http://www.umsl.edu/library/locations/codes/saiii.htm "target=_blank"
+LOC_seaii=http://www.umsl.edu/library/locations/codes/seaii.htm "target=_blank"
+LOC_seaui=http://www.umsl.edu/library/locations/codes/seaui.htm "target=_blank"
+LOC_secii=http://www.umsl.edu/library/locations/codes/secii.htm "target=_blank"
+LOC_seddi=http://www.umsl.edu/library/locations/codes/seddi.htm "target=_blank"
+LOC_sedii=http://www.umsl.edu/library/locations/codes/sedii.htm "target=_blank"
+LOC_sedmi=http://www.umsl.edu/library/locations/codes/sedmi.htm "target=_blank"
+LOC_seeii=http://www.umsl.edu/library/locations/codes/seeii.htm "target=_blank"
+LOC_seiib=http://www.umsl.edu/library/locations/codes/seiib.htm "target=_blank"
+LOC_seiii=http://www.umsl.edu/library/locations/codes/seiii.htm "target=_blank"
+LOC_sejii=http://www.umsl.edu/library/locations/codes/sejii.htm "target=_blank"
+LOC_semii=http://www.umsl.edu/library/locations/codes/semii.htm "target=_blank"
+LOC_seoii=http://www.umsl.edu/library/locations/codes/seoii.htm "target=_blank"
+LOC_serdi=http://www.umsl.edu/library/locations/codes/serdi.htm "target=_blank"
+LOC_serii=http://www.umsl.edu/library/locations/codes/serii.htm "target=_blank"
+LOC_serin=http://www.umsl.edu/library/locations/codes/serin.htm "target=_blank"
+LOC_sermi=http://www.umsl.edu/library/locations/codes/sermi.htm "target=_blank"
+LOC_sexii=http://www.umsl.edu/library/locations/codes/sexii.htm "target=_blank"
+LOC_shaii=http://www.umsl.edu/library/locations/codes/shaii.htm "target=_blank"
+LOC_shdii=http://www.umsl.edu/library/locations/codes/shdii.htm "target=_blank"
+LOC_shdmi=http://www.umsl.edu/library/locations/codes/shdmi.htm "target=_blank"
+LOC_shhii=http://www.umsl.edu/library/locations/codes/shhii.htm "target=_blank"
+LOC_shiib=http://www.umsl.edu/library/locations/codes/shiib.htm "target=_blank"
+LOC_shiii=http://www.umsl.edu/library/locations/codes/shiii.htm "target=_blank"
+LOC_shmii=http://www.umsl.edu/library/locations/codes/shmii.htm "target=_blank"
+LOC_shoii=http://www.umsl.edu/library/locations/codes/shoii.htm "target=_blank"
+LOC_shrii=http://www.umsl.edu/library/locations/codes/shrii.htm "target=_blank"
+LOC_shrmi=http://www.umsl.edu/library/locations/codes/shrmi.htm "target=_blank"
+LOC_shxii=http://www.umsl.edu/library/locations/codes/shxii.htm "target=_blank"
+LOC_sjbii=http://www.umsl.edu/library/locations/codes/sjbii.htm "target=_blank"
+LOC_sjbsi=http://www.umsl.edu/library/locations/codes/sjbsi.htm "target=_blank"
+LOC_sjcai=http://www.umsl.edu/library/locations/codes/sjcai.htm "target=_blank"
+LOC_sjcbi=http://www.umsl.edu/library/locations/codes/sjcbi.htm "target=_blank"
+LOC_sjcii=http://www.umsl.edu/library/locations/codes/sjcii.htm "target=_blank"
+LOC_sjcir=http://www.umsl.edu/library/locations/codes/sjcir.htm "target=_blank"
+LOC_sjcoi=http://www.umsl.edu/library/locations/codes/sjcoi.htm "target=_blank"
+LOC_sjcoo=http://www.umsl.edu/library/locations/codes/sjcoo.htm "target=_blank"
+LOC_sjcui=http://www.umsl.edu/library/locations/codes/sjcui.htm "target=_blank"
+LOC_sjdii=http://www.umsl.edu/library/locations/codes/sjdii.htm "target=_blank"
+LOC_sjdmi=http://www.umsl.edu/library/locations/codes/sjdmi.htm "target=_blank"
+LOC_sjeii=http://www.umsl.edu/library/locations/codes/sjeii.htm "target=_blank"
+LOC_sjfii=http://www.umsl.edu/library/locations/codes/sjfii.htm "target=_blank"
+LOC_sjiib=http://www.umsl.edu/library/locations/codes/sjiib.htm "target=_blank"
+LOC_sjiii=http://www.umsl.edu/library/locations/codes/sjiii.htm "target=_blank"
+LOC_sjiif=http://www.umsl.edu/library/locations/codes/sjiif.htm "target=_blank"
+LOC_sjili=http://www.umsl.edu/library/locations/codes/sjili.htm "target=_blank"
+LOC_sjmdi=http://www.umsl.edu/library/locations/codes/sjmdi.htm "target=_blank"
+LOC_sjmii=http://www.umsl.edu/library/locations/codes/sjmii.htm "target=_blank"
+LOC_sjofi=http://www.umsl.edu/library/locations/codes/sjofi.htm "target=_blank"
+LOC_sjoii=http://www.umsl.edu/library/locations/codes/sjoii.htm "target=_blank"
+LOC_sjpci=http://www.umsl.edu/library/locations/codes/sjpci.htm "target=_blank"
+LOC_sjpco=http://www.umsl.edu/library/locations/codes/sjpco.htm "target=_blank"
+LOC_sjpcq=http://www.umsl.edu/library/locations/codes/sjpcq.htm "target=_blank"
+LOC_sjpcr=http://www.umsl.edu/library/locations/codes/sjpcr.htm "target=_blank"
+LOC_sjpcx=http://www.umsl.edu/library/locations/codes/sjpcx.htm "target=_blank"
+LOC_sjpii=http://www.umsl.edu/library/locations/codes/sjpii.htm "target=_blank"
+LOC_sjpoi=http://www.umsl.edu/library/locations/codes/sjpoi.htm "target=_blank"
+LOC_sjrai=http://www.umsl.edu/library/locations/codes/sjrai.htm "target=_blank"
+LOC_sjrdi=http://www.umsl.edu/library/locations/codes/sjrdi.htm "target=_blank"
+LOC_sjrid=http://www.umsl.edu/library/locations/codes/sjrid.htm "target=_blank"
+LOC_sjrii=http://www.umsl.edu/library/locations/codes/sjrii.htm "target=_blank"
+LOC_sjrli=http://www.umsl.edu/library/locations/codes/sjrli.htm "target=_blank"
+LOC_sjrmi=http://www.umsl.edu/library/locations/codes/sjrmi.htm "target=_blank"
+LOC_sjrni=http://www.umsl.edu/library/locations/codes/sjrni.htm "target=_blank"
+LOC_sjroi=http://www.umsl.edu/library/locations/codes/sjroi.htm "target=_blank"
+LOC_sjrri=http://www.umsl.edu/library/locations/codes/sjrri.htm "target=_blank"
+LOC_sjsii=http://www.umsl.edu/library/locations/codes/sjsii.htm "target=_blank"
+LOC_sjsoi=http://www.umsl.edu/library/locations/codes/sjsoi.htm "target=_blank"
+LOC_sjsui=http://www.umsl.edu/library/locations/codes/sjsui.htm "target=_blank"
+LOC_sjsuo=http://www.umsl.edu/library/locations/codes/sjsuo.htm "target=_blank"
+LOC_sjtai=http://www.umsl.edu/library/locations/codes/sjtai.htm "target=_blank"
+LOC_sjtii=http://www.umsl.edu/library/locations/codes/sjtii.htm "target=_blank"
+LOC_sjxii=http://www.umsl.edu/library/locations/codes/sjxii.htm "target=_blank"
+LOC_smaii=http://www.umsl.edu/library/locations/codes/smaii.htm "target=_blank"
+LOC_smani=http://www.umsl.edu/library/locations/codes/smani.htm "target=_blank"
+LOC_smaoi=http://www.umsl.edu/library/locations/codes/smaoi.htm "target=_blank"
+LOC_smbai=http://www.umsl.edu/library/locations/codes/smbai.htm "target=_blank"
+LOC_smbba=http://www.umsl.edu/library/locations/codes/smbba.htm "target=_blank"
+LOC_smbbi=http://www.umsl.edu/library/locations/codes/smbbi.htm "target=_blank"
+LOC_smbgi=http://www.umsl.edu/library/locations/codes/smbgi.htm "target=_blank"
+LOC_smbii=http://www.umsl.edu/library/locations/codes/smbii.htm "target=_blank"
+LOC_smbni=http://www.umsl.edu/library/locations/codes/smbni.htm "target=_blank"
+LOC_smboi=http://www.umsl.edu/library/locations/codes/smboi.htm "target=_blank"
+LOC_smbon=http://www.umsl.edu/library/locations/codes/smbon.htm "target=_blank"
+LOC_smiib=http://www.umsl.edu/library/locations/codes/smiib.htm "target=_blank"
+LOC_smiii=http://www.umsl.edu/library/locations/codes/smiii.htm "target=_blank"
+LOC_smini=http://www.umsl.edu/library/locations/codes/smini.htm "target=_blank"
+LOC_smioi=http://www.umsl.edu/library/locations/codes/smioi.htm "target=_blank"
+LOC_smion=http://www.umsl.edu/library/locations/codes/smion.htm "target=_blank"
+LOC_smofi=http://www.umsl.edu/library/locations/codes/smofi.htm "target=_blank"
+LOC_smpai=http://www.umsl.edu/library/locations/codes/smpai.htm "target=_blank"
+LOC_smper=http://www.umsl.edu/library/locations/codes/smper.htm "target=_blank"
+LOC_smpii=http://www.umsl.edu/library/locations/codes/smpii.htm "target=_blank"
+LOC_smpni=http://www.umsl.edu/library/locations/codes/smpni.htm "target=_blank"
+LOC_smpoi=http://www.umsl.edu/library/locations/codes/smpoi.htm "target=_blank"
+LOC_smpon=http://www.umsl.edu/library/locations/codes/smpon.htm "target=_blank"
+LOC_smrii=http://www.umsl.edu/library/locations/codes/smrii.htm "target=_blank"
+LOC_smroi=http://www.umsl.edu/library/locations/codes/smroi.htm "target=_blank"
+LOC_smsai=http://www.umsl.edu/library/locations/codes/smsai.htm "target=_blank"
+LOC_smsat=http://www.umsl.edu/library/locations/codes/smsat.htm "target=_blank"
+LOC_smsbi=http://www.umsl.edu/library/locations/codes/smsbi.htm "target=_blank"
+LOC_smsbo=http://www.umsl.edu/library/locations/codes/smsbo.htm "target=_blank"
+LOC_smsca=http://www.umsl.edu/library/locations/codes/smsca.htm "target=_blank"
+LOC_smscf=http://www.umsl.edu/library/locations/codes/smscf.htm "target=_blank"
+LOC_smsch=http://www.umsl.edu/library/locations/codes/smsch.htm "target=_blank"
+LOC_smsci=http://www.umsl.edu/library/locations/codes/smsci.htm "target=_blank"
+LOC_smsco=http://www.umsl.edu/library/locations/codes/smsco.htm "target=_blank"
+LOC_smsda=http://www.umsl.edu/library/locations/codes/smsda.htm "target=_blank"
+LOC_smsei=http://www.umsl.edu/library/locations/codes/smsei.htm "target=_blank"
+LOC_smsha=http://www.umsl.edu/library/locations/codes/smsha.htm "target=_blank"
+LOC_smshe=http://www.umsl.edu/library/locations/codes/smshe.htm "target=_blank"
+LOC_smshi=http://www.umsl.edu/library/locations/codes/smshi.htm "target=_blank"
+LOC_smsho=http://www.umsl.edu/library/locations/codes/smsho.htm "target=_blank"
+LOC_smshw=http://www.umsl.edu/library/locations/codes/smshw.htm "target=_blank"
+LOC_smsli=http://www.umsl.edu/library/locations/codes/smsli.htm "target=_blank"
+LOC_smslo=http://www.umsl.edu/library/locations/codes/smslo.htm "target=_blank"
+LOC_smsmi=http://www.umsl.edu/library/locations/codes/smsmi.htm "target=_blank"
+LOC_smsne=http://www.umsl.edu/library/locations/codes/smsne.htm "target=_blank"
+LOC_smsoi=http://www.umsl.edu/library/locations/codes/smsoi.htm "target=_blank"
+LOC_smspe=http://www.umsl.edu/library/locations/codes/smspe.htm "target=_blank"
+LOC_smsph=http://www.umsl.edu/library/locations/codes/smsph.htm "target=_blank"
+LOC_smsqi=http://www.umsl.edu/library/locations/codes/smsqi.htm "target=_blank"
+Loc_smsro=http://www.umsl.edu/services/library/locations/codes/smsro.htm "target=_blank"
+LOC_smsti=http://www.umsl.edu/library/locations/codes/smsti.htm "target=_blank"
+LOC_smsyi=http://www.umsl.edu/library/locations/codes/smsyi.htm "target=_blank"
+LOC_usaib=http://www.umsl.edu/library/locations/codes/usaib.htm "target=_blank"
+LOC_usaii=http://www.umsl.edu/library/locations/codes/usaii.htm "target=_blank"
+LOC_uswib=http://www.umsl.edu/library/locations/codes/uswib.htm "target=_blank"
+LOC_uswii=http://www.umsl.edu/library/locations/codes/uswii.htm "target=_blank"
+
+# MU Law
+
+LOC_clavi=http://law.missouri.edu/library/locationguides/clavi.html "target=_blank"
+LOC_clcai=http://law.missouri.edu/library/locationguides/clcai.html "target=_blank"
+LOC_clcrj=http://law.missouri.edu/library/locationguides/clcrj.html "target=_blank"
+LOC_cldii=http://law.missouri.edu/library/locationguides/cldii.html "target=_blank"
+LOC_cldof=http://law.missouri.edu/library/locationguides/cldof.html "target=_blank"
+LOC_cldom=http://law.missouri.edu/library/locationguides/cldom.html "target=_blank"
+LOC_cliii=http://law.missouri.edu/library/locationguides/cliii.html "target=_blank"
+LOC_clpri=http://law.missouri.edu/library/locationguides/clpri.html "target=_blank"
+LOC_clrai=http://law.missouri.edu/library/locationguides/clrai.html "target=_blank"
+LOC_clrii=http://law.missouri.edu/library/locationguides/clrii.html "target=_blank"
+LOC_clssi=http://law.missouri.edu/library/locationguides/clssi.html "target=_blank"
+LOC_clxii=http://law.missouri.edu/library/locationguides/clxii.html "target=_blank"
+LOC_fcl=http://law.missouri.edu/library/locationguides/fcl.html "target=_blank"
+LOC_cll03=http://law.missouri.edu/library/libraryinformation/locationguides/cll03.html "target=_blank"
+LOC_cll22=http://law.missouri.edu/library/libraryinformation/locationguides/cll22.html "target=_blank"
+LOC_cladi=http://law.missouri.edu/library/libraryinformation/locationguides/cladi.html "target=_blank"
+LOC_clfei=http://law.missouri.edu/library/libraryinformation/locationguides/clfei.html "target=_blank"
+LOC_clfoi=http://law.missouri.edu/library/libraryinformation/locationguides/clfoi.html "target=_blank"
+LOC_cl224=http://law.missouri.edu/library/libraryinformation/locationguides/cl224.html "target=_blank"
+LOC_cl225=http://law.missouri.edu/library/libraryinformation/locationguides/cl225.html "target=_blank"
+LOC_cl24b=http://law.missouri.edu/library/libraryinformation/locationguides/cl224.html "target=_blank"
+LOC_cl24c=http://law.missouri.edu/library/libraryinformation/locationguides/cl224.html "target=_blank"
+LOC_cl26a=http://law.missouri.edu/library/libraryinformation/locationguides/cl26a.html "target=_blank"
+LOC_cl26b=http://law.missouri.edu/library/libraryinformation/locationguides/cl26a.html "target=_blank"
+LOC_clfvi=http://law.missouri.edu/library/libraryinformation/locationguides/clfvi.html "target=_blank"
+LOC_clmdi=http://law.missouri.edu/library/libraryinformation/locationguides/clmdi.html "target=_blank"
+LOC_clmii=http://law.missouri.edu/library/libraryinformation/locationguides/clmdi.html "target=_blank"
+LOC_cllai=http://law.missouri.edu/library/libraryinformation/locationguides/cllai.html "target=_blank"
+LOC_clpii=http://law.missouri.edu/library/libraryinformation/locationguides/clpii.html "target=_blank"
+LOC_clpla=http://law.missouri.edu/library/libraryinformation/locationguides/clpla.html "target=_blank"
+LOC_clsif=http://law.missouri.edu/library/libraryinformation/locationguides/clsif.html "target=_blank"
+LOC_clmli=http://law.missouri.edu/library/libraryinformation/locationguides/clmdi.html "target=_blank"
+LOC_cldor=http://law.missouri.edu/library/libraryinformation/locationguides/cldor.html "target=_blank"
+LOC_clpif=http://law.missouri.edu/library/libraryinformation/locationguides/clpif.html "target=_blank"
+LOC_clsii=http://law.missouri.edu/library/libraryinformation/locationguides/clsif.html "target=_blank"
+LOC_clsil=http://law.missouri.edu/library/libraryinformation/locationguides/clsif.html "target=_blank"
+LOC_clsup=http://law.missouri.edu/library/libraryinformation/locationguides/clsup.html "target=_blank"
+LOC_cl121=http://law.missouri.edu/library/libraryinformation/locationguides/cl121.html "target=_blank"
+LOC_clmoi=http://law.missouri.edu/library/libraryinformation/locationguides/clmoi.html "target=_blank"
+
+# State Historical Society Clickable Locations
+LOC_cseii=http://www.umsystem.edu/shs/csrii.shtml "target=_blank"
+LOC_csiib=http://www.umsystem.edu/shs/csrii.shtml "target=_blank"
+LOC_csiii=http://www.umsystem.edu/shs/csrii.shtml "target=_blank"
+LOC_csmfi=http://www.umsystem.edu/shs/csrii.shtml "target=_blank"
+LOC_csmii=http://www.umsystem.edu/shs/csrii.shtml "target=_blank"
+LOC_csnii=http://www.umsystem.edu/shs/csrii.shtml "target=_blank"
+LOC_csrci=http://www.umsystem.edu/shs/csrii.shtml "target=_blank"
+LOC_csrii=http://www.umsystem.edu/shs/csrii.shtml "target=_blank"
+LOC_csroi=http://www.umsystem.edu/shs/csrii.shtml "target=_blank"
+LOC_fcs=http://www.umsystem.edu/shs/csrii.shtml "target=_blank"
+LOC_fcsb=http://www.umsystem.edu/shs/csrii.shtml "target=_blank"
+
+# WHMC-COLUMBIAClickable Locations
+
+LOC_fwc=http://www.umsystem.edu/whmc/intro.html "target=_blank"
+LOC_fwcb=http://www.umsystem.edu/whmc/intro.html "target=_blank"
+LOC_ucwib=http://www.umsystem.edu/whmc/intro.html "target=_blank"
+LOC_ucwii=http://www.umsystem.edu/whmc/intro.html "target=_blank"
+
+# UMKC Locations
+
+LOC_fkd=http://library.umkc.edu/dental-merlin-locations#other
+LOC_fkh=http://library.umkc.edu/hsl-merlin-locations#other
+LOC_fkn=http://library.umkc.edu/merlin-locations-mnl#other
+LOC_kd=http://library.umkc.edu/dental-merlin-locations#print
+LOC_kdav*=http://library.umkc.edu/dental-merlin-locations#irl
+LOC_kdf=http://library.umkc.edu/dental-merlin-locations#print
+LOC_kdp=http://library.umkc.edu/dental-merlin-locations#print
+LOC_kdq=http://library.umkc.edu/dental-merlin-locations#print
+LOC_kdr=http://library.umkc.edu/dental-merlin-locations#print
+LOC_kds=http://library.umkc.edu/dental-merlin-locations#print
+LOC_kdt*=http://library.umkc.edu/dental-merlin-locations#print
+LOC_kdx=http://library.umkc.edu/dental-merlin-locations#print
+LOC_kdz*=http://library.umkc.edu/dental-merlin-locations#print
+LOC_kh=http://library.umkc.edu/hsl-merlin-locations#hsl
+LOC_khav=http://library.umkc.edu/hsl-merlin-locations#other
+LOC_khf=http://library.umkc.edu/hsl-merlin-locations#hsl
+LOC_khg=http://library.umkc.edu/hsl-merlin-locations#hsl
+LOC_khh=http://library.umkc.edu/hsl-merlin-locations#hsl
+LOC_khm*=http://library.umkc.edu/hsl-merlin-locations#hsl
+LOC_khp=http://library.umkc.edu/hsl-merlin-locations#hsl
+LOC_khq=http://library.umkc.edu/hsl-merlin-locations#hsl
+LOC_khr=http://library.umkc.edu/hsl-merlin-locations#hsl
+LOC_kht*=http://library.umkc.edu/hsl-merlin-locations#hsl
+LOC_khx=http://library.umkc.edu/hsl-merlin-locations#hsl
+LOC_khz*=http://library.umkc.edu/hsl-merlin-locations#hsl
+LOC_kn=http://library.umkc.edu/merlin-locations-mnl#kn
+LOC_kn0*=http://library.umkc.edu/merlin-locations-mnl#g
+LOC_kn1*=http://library.umkc.edu/merlin-locations-mnl#ask
+LOC_kna*=http://library.umkc.edu/merlin-locations-music#desk
+LOC_knc=http://library.umkc.edu/merlin-locations-music#books
+LOC_kncav=http://library.umkc.edu/merlin-locations-music#desk
+LOC_kncc=http://library.umkc.edu/merlin-locations-music#desk
+LOC_kncf=http://library.umkc.edu/merlin-locations-music#books
+LOC_kncj*=http://library.umkc.edu/merlin-locations-spec-coll#marr
+LOC_kncma=http://library.umkc.edu/merlin-locations-music#desk
+LOC_kncp=http://library.umkc.edu/merlin-locations-music#periodicals
+LOC_kncq=http://library.umkc.edu/merlin-locations-music#books
+LOC_kncr*=http://library.umkc.edu/merlin-locations-music#books
+LOC_kncs*=http://library.umkc.edu/merlin-locations-music#scores
+LOC_knf=http://library.umkc.edu/merlin-locations-mnl#ask
+LOC_kng=http://library.umkc.edu/merlin-locations-mnl#ask
+LOC_kngcd=http://library.umkc.edu/merlin-locations-mnl#ask
+LOC_kngl=http://library.umkc.edu/merlin-locations-mnl#other
+LOC_kngmf=http://library.umkc.edu/merlin-locations-mnl#ask
+LOC_kng*=http://library.umkc.edu/merlin-locations-mnl#ask
+LOC_knl=http://library.umkc.edu/merlin-locations-mnl#1
+LOC_knn=http://library.umkc.edu/merlin-locations-mnl#1
+LOC_knp=http://library.umkc.edu/merlin-locations-mnl#1
+LOC_knq=http://library.umkc.edu/merlin-locations-mnl#3
+LOC_knr*=http://library.umkc.edu/merlin-locations-mnl#1
+LOC_knsc=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+LOC_knsca=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+LOC_knscf=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+LOC_knscq=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+LOC_knse*=http://library.umkc.edu/merlin-locations-spec-coll#diastole
+LOC_knsms=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+LOC_knsp=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+LOC_knsr=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+LOC_knsy*=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+LOC_knsz*=http://library.umkc.edu/merlin-locations-spec-coll#labudde
+LOC_knth=http://library.umkc.edu/merlin-locations-mnl#ask
+LOC_knu=http://library.umkc.edu/merlin-locations-mnl#4
+LOC_knv=http://library.umkc.edu/merlin-locations-mnl#1
+LOC_knw=http://library.umkc.edu/merlin-locations-mnl#2
+LOC_knx=http://library.umkc.edu/merlin-locations-mnl#1
+LOC_knxav=http://library.umkc.edu/merlin-locations-music#reserves
+LOC_knxc=http://library.umkc.edu/merlin-locations-music#reserves
+LOC_knxf=http://library.umkc.edu/merlin-locations-mnl#1
+LOC_knxq=http://library.umkc.edu/merlin-locations-mnl#1
+LOC_kr*=http://library.umkc.edu/merlin-locations-mnl#other
+LOC_kw=http://library.umkc.edu/merlin-locations-mnl#other
+
