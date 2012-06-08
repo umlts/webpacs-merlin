@@ -120,7 +120,7 @@ BIB_RESOURCE_NUM_BRIEF=A
 
 RESOURCE_HOLDINGS_FIELDS=Title:Vbt|Lib Has:Vch|Connect to Full Text:VcY
 
-RESOURCE_HOLDINGS_MAX=3
+RESOURCE_HOLDINGS_MAX=10
 
 RESOURCE_LICENSE_FIELDS=Authorized Users:Vlu|Authentication Method:Vla|Terms of Use:Vlt|Course Use Restrictions:Vls|ILL Restrictions:Vlo|
 
