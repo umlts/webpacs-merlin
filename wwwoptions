@@ -218,7 +218,7 @@ ICON_BIB_RESOURCE_DETAILS=<span class="button"><span class=buttonText">Full Deta
 ICON_RESOURCE_RECORD=<span class="button"><span class=buttonText">View Resource Record</span></span>
 #RESOURCE_ADVISORY=k
 RESOURCE_HOLDINGS_FIELDS=Title:Vbt|Lib Has:Vch|Connect to Full Text:VcY
-RESOURCE_HOLDINGS_MAX=3
+RESOURCE_HOLDINGS_MAX=10
 RESOURCE_LICENSE_FIELDS=Authorized Users:Vlu|Authentication Method:Vla|Terms of Use:Vlt|Course Use Restrictions:Vls|ILL Restrictions:Vlo|
 TABLEPARAM_BIB_LICENSE=width="100%" border="0" cellpadding="0"
 TABLEPARAM_BIB_RESOURCE=width="100%" border="0" cellspacing="0" cellpadding="0"
