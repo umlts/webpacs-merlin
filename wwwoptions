@@ -241,17 +241,17 @@ SORT_ITEMS=true
 
 # My Lists
 MY_LISTS=true
-ICON_MYLISTS=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">My Lists</span></span>
+ICON_MYLISTS=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">Wish List</span></span>
 ICON_MYLISTS_EXPORT=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Export List</span></span></div></div>
 ICON_MYLISTS_MOVE=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Move Marked</span></span></div></div>
 ICON_MYLISTS_REQUEST=<span class="button"><img src="/screens/ico_checkmark_16px.png" alt=""><span class="buttonText">Request</span></span>
 ICON_MYLISTS_REMOVE_DUPLICATES=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Remove Duplicates</span></span></div></div>
 ICON_MYLISTS_RENAME=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Change Name/Description</span></span></div></div>
-ICON_MYLISTS_SAVE=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to My Lists</span></span>
-ICON_MYLISTS_SAVE_TO_LIST=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add Marked to My Lists</span></span>
-ICON_MYLISTS_BRIEF=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to My Lists</span></span>
-ICON_BACK_TO_MYLISTS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Back to My Lists</span></span></div></div>
-ICON_MYLISTS_RECORD=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to My Lists</span></span>
+ICON_MYLISTS_SAVE=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to Wish List</span></span>
+ICON_MYLISTS_SAVE_TO_LIST=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add Marked to Wish List</span></span>
+ICON_MYLISTS_BRIEF=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to Wish List</span></span>
+ICON_BACK_TO_MYLISTS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Back to Wish List</span></span></div></div>
+ICON_MYLISTS_RECORD=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to Wish List</span></span>
 
 # Saving and Exporting
 BRIEF_EXPORT=a|t|p
