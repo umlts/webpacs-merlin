@@ -327,6 +327,8 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitLeft, .briefcitResourceLeft { display:inline; float:left; margin-bottom:30px; padding:0; text-align:left; width:41px; }
 
+.briefcitRequest { float: display:inline; float: left: }
+
 .briefcitResourceLeft { margin-bottom:20px; }
 
 .briefcitItems  { border-top:1px solid #ECECEC; clear:both; margin:8px 0 8px 0; padding-left:10px; width:90%; }
@@ -344,8 +346,6 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 .briefcitItemsHeader h2 { color:#F7960C; font-size:1em; margin:0; }
 
 .briefcitItemsMain { float:left; width:85%; }
-
-.briefcitMark { float:right; }
 
 .briefcitMedia, .bibMedia, .briefcitResourceMedia, .briefcitProgramMedia, td.browseEntryMedia, td.browseSubEntryMedia { color:#878787; font-size:.7em; line-height:.95em; margin-top:6em; overflow:hidden; width:41px; text-align:center; }
 
