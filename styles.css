@@ -1152,19 +1152,26 @@ tr.highlight { background:#FFFFE4; }
 	float: left;
 }
 #tabs ul li.active {
-	background: #F1F4EB;
+	background: #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
 }
 #tabs ul li {
-	background: #F8F9F4;
+	background: url("/screens/gold_gradient.png") repeat-x scroll 50% 50% #FFBD29;
+        border: 1px solid #C0C0C0;
+        margin-bottom: -1px;
+}
+#tabs ul li:hover {
+        background: #FFFFFF;
 }
 #tabs ul li.active a {
 	color: #333333;
 }
 #tabs .tabContent {
-	background: #F1F4EB;
+	background: #FFFFFF;
 	clear: both;
 	padding: 15px;
 	min-height: 100px;
+        border: 1px solid #C0C0C0;
 }
 #tabs div h3 {
 	margin-bottom: 12px;
@@ -1177,11 +1184,6 @@ tr.highlight { background:#FFFFE4; }
 	padding: 8px;
 	color: #000;
 	font-weight: bold;
-}
-
-#tabs .browseSearchtool {
-    background:none;
-    border:none;
 }
 
 .thumbs {
