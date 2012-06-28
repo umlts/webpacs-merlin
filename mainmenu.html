@@ -33,50 +33,61 @@ obj.submit();
 <body>
 <!--{toplogo}-->
 
+<script type="text/javascript">
+
+$(document).ready(function(){
+$('#tabs .tabContent').hide();
+$('#tabs .tabContent:first').show();
+$('#tabs ul li:first').addClass('active');
+$('#tabs ul li a').click(function(){ 
+$('#tabs ul li').removeClass('active');
+$(this).parent().addClass('active'); 
+var currentTab = $(this).attr('href'); 
+$('#tabs .tabContent').hide();
+$(currentTab).show();
+return false;
+});
+});
+</script>
+
 <div class="pageContentInner mainSearch">
 
-<h1 class="accessibleAddInfo">Search</h1>
+ <div id="tabs">
+    <ul>
+      <li><a href="#tab-1">Word</a></li>
+      <li><a href="#tab-2">Title</a></li>
+      <li><a href="#tab-3">Author</a></li>
+    </ul>
 
-<div id="accessibleForm" class="form1Part">
-<div class="browseSearchtool">
+    <div id="tab-1" class="tabContent">
+ 
+ <div class="browseSearchtool">
 <form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
-
-
 <input type="hidden" id="iiiFormHandle_1">
 
 <!-- Optional legend:
 <fieldset>
 <legend>Type the search term you want to find.</legend>-->
 <div class="formEntryArea">
-<div class="inlineBlock">
 <label for="searchtype" class="accessibleAddInfo">Search type</label>
 <select name="searchtype" id="searchtype">
-<option value="Y" selected="selected">Keyword</option>
-<option value="t">Title</option>
+<option value="t" selected="selected">Title & BPH Abbrev. Search</option>
+<option value="X">Keyword</option>
 <option value="a">Author</option>
-<option value="d">Subject (LC)</option>
-<option value="m">Medical Subject (MeSH)</option>
-<option value="s">Journal, Magazine, Newspaper Title</option>
-<option value="c">LC Call Number</option>
-<option value="l">NLM Call Number</option>
-<option value="f">Local or Dewey Call Number</option>
-<option value="g">Government Document Number</option>
-<option value="e">Music Number</option>
-<option value="i">ISBN, ISSN, Standard Number</option>
-<option value="o">OCLC/WorldCat Number</option>
-<option value="v">Genre/Form Term</option>
-<option value="j">Database Name (UMKC)</option>				
-<option value="x">Database Subject (UMKC)</option>
-<option value="h">Donor/Honoree</option>
+<option value="s">Journal Title</option>
+<option value="d">Subject</option>
+<option value="c">Call Number</option>
+<option value="h">Mentor Number</option>
+<option value="i">ISBN/ISSN Number</option>
+<option value="b">Barcode Search</option>
+<option value=",">Bib ID</option>
 </select>
 <!--{nosort}-->
 <label for="searcharg" class="accessibleAddInfo">Search term</label>
 <input maxlength="75" name="searcharg" size="20" >
-</div>
-<div class="inlineBlock">
 <label for="scope" class="accessibleAddInfo">Location</label>
 <!--{scope}-->
-<span class="formButtonArea">
+<span class="nowrap formButtonArea">
 
   <!--{submit}-->
 
@@ -86,12 +97,24 @@ obj.submit();
 <input type="submit" class="submitHidden">
 
 </span>
-</div>
 </div><!-- formEntryArea -->
-<!--</fieldset> optional-->
 </form>
 </div><!-- browseSearchtool -->
-</div><!-- form1Part -->
+    </div>
+    <div id="tab-2" class="tabContent">
+
+      <h3>Tab 2</h3>
+      <p><img src="http://papermashup.com/demos/jquery-gallery/images/t2.png" width="120" height="120" class="thumbs"/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur enim. Nullam id ligula in nisl tincidunt feugiat. Curabitur eu magna porttitor ligula bibendum rhoncus. Etiam dignissim. Duis lobortis porta risus. Quisque velit metus, dignissim in, rhoncus at, congue quis, mi. Praesent vel lorem. Suspendisse ut dolor at justo tristique dapibus. Morbi erat mi, rutrum a, aliquam nec <br/>
+        <a href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe to my feed here</a></p>
+    </div>
+    <div id="tab-3" class="tabContent">
+      <h3>Tab 3</h3>
+
+      <p><img src="http://papermashup.com/demos/jquery-gallery/images/t3.png" width="120" height="120" class="thumbs"/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur enim. Nullam id ligula in nisl tincidunt feugiat. Curabitur eu magna porttitor ligula bibendum rhoncus. Etiam dignissim. Duis lobortis porta risus. Quisque velit metus, dignissim in, rhoncus at, congue quis, mi. Praesent vel lorem. Suspendisse ut dolor at justo tristique dapibus. Morbi erat mi, rutrum a, aliquam nec, mattis semper, leo. Maecenas blandit risus vitae quam. Vivamus ut odio.<br/>
+        <a href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe to my feed here</a></p>
+    </div>
+
+  </div>
 
 </div><!--pageContentInner -->
 

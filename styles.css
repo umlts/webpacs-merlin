@@ -1118,3 +1118,75 @@ tr.highlight { background:#FFFFE4; }
 .wblinkdisplay form { margin-bottom:8px; }
 
 .wbnoresources { display:block; margin: 3px 0; }
+
+/* Tab styles */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#tabs {
+	margin: 50px 0;
+        width:700px;
+        margin-left:auto;
+        margin-right:auto;
+}
+#tabs ul {
+	float: left;
+	background: #fff;
+	width: 500px;
+	padding-top: 4px;
+}
+#tabs li {
+	margin-left: 8px;
+	list-style: none;
+}
+#tabs li:first-child {
+	margin-left: 0;
+}
+* html #tabs li {
+	display: inline;
+}
+#tabs li, #tabs li a {
+	float: left;
+}
+#tabs ul li.active {
+	background: #F1F4EB;
+}
+#tabs ul li {
+	background: #F8F9F4;
+}
+#tabs ul li.active a {
+	color: #333333;
+}
+#tabs .tabContent {
+	background: #F1F4EB;
+	clear: both;
+	padding: 15px;
+	min-height: 100px;
+}
+#tabs div h3 {
+	margin-bottom: 12px;
+}
+#tabs div p {
+	line-height: 150%;
+}
+#tabs ul li a {
+	text-decoration: none;
+	padding: 8px;
+	color: #000;
+	font-weight: bold;
+}
+
+#tabs .browseSearchtool {
+    background:none;
+    border:none;
+}
+
+.thumbs {
+	float:left;
+	border:#000 solid 1px;
+	margin-bottom:20px;
+	margin-right:20px;
+}
