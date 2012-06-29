@@ -95,6 +95,8 @@ strong .button { display:block; font-weight:normal; margin-top:15px; }
 
 .pageContent p { margin-left:20px; }
 
+.pageContentInner { padding-bottom:20px; }
+
 .pageContentInner p { margin-left:0px; }
 
 /* end status message area */
@@ -119,7 +121,6 @@ a:hover  { color: #7C14B8; }
 #accessibleForm h2 { margin-left:15px; margin-bottom:0; margin-top:12px }
 #accessibleForm span.formLabel { display:block; padding-top:3px; }
 #accessibleForm span.formLabelExample { font-style:italic; }
-#accessibleForm .formEntryArea, #accessibleForm .ecommerceFormEntryArea { margin:3px 0 0 15px; }
 #accessibleForm .formButtonArea .formButtonArea {margin-left:12px; display:inline;}
 #accessibleForm font { font-size:1em; padding:10px; }
 #accessibleForm p { margin-bottom:5px; margin-top:3px; }
@@ -136,13 +137,24 @@ a:hover  { color: #7C14B8; }
 
 .additionalCopies { margin: 20px 6px; }
 
-.advancedSearch td { padding-right:5px; text-align:right; vertical-align:top; width:5em; }
+.advancedSearch .formEntryArea {
+    margin:1em 0 0 15px;
+}
 
-.advancedSearch label { text-align:right; }
+.advancedSearch .formEntryArea td:first-child {
+    width:15em;
+}
 
-.advancedSearch fieldset fieldset legend { visibility:hidden; line-height:0px; }
+.advancedSearch fieldset {
+    padding-bottom:20px;
+    margin-top:20px;
+}
 
-#accessibleForm .advancedSearch fieldset fieldset { border:none; padding:0; text-align:left; margin:0 0 6px 0; }
+.advancedSearch option {
+    padding:0 3px; 
+}
+
+#accessibleForm .advancedSearch fieldset fieldset { border:none; padding:0; text-align:left; }
 
 #alertMessage {
     margin-left:1em;
@@ -947,6 +959,16 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .searchNavBut { vertical-align:bottom; margin:3px 10px 3px 5px; }
 
+#searchTips hr {
+    width:45%;
+    margin:1.75em auto;
+    color:#CCCCCC;
+}
+
+#searchTips p { margin-top:.75em; }
+
+#searchTips ul { margin:.5em 0 .5em 3em; }
+
 #skipNav a, #cproSkipNav a:hover, #cproSkipNav a:visited { position:absolute; left:0px; top:-5000px; width:1px; height:1px; overflow:hidden; }
 
 #skipNav a:active, #skipNav a:focus { position:static; width:auto; height:auto; margin-bottom:3px; background:#FFFFFF; }
@@ -1132,37 +1154,37 @@ tr.highlight { background:#FFFFE4; }
         margin-left:auto;
         margin-right:auto;
 }
-#tabs ul {
+#tabs #tabRow {
 	float: left;
 	background: #fff;
 	padding-top: 4px;
 }
-#tabs li {
+#tabs .tab {
 	margin-left: 8px;
 	list-style: none;
 }
-#tabs li:first-child {
+#tabs .tab:first-child {
 	margin-left: 0;
 }
 * html #tabs li {
 	display: inline;
 }
-#tabs li, #tabs li a {
+#tabs .tab, #tabs .tab a {
 	float: left;
 }
-#tabs ul li.active {
+#tabs ul .tab.active {
 	background: #FFFFFF;
         border-bottom: 1px solid #FFFFFF;
 }
-#tabs ul li {
+#tabs ul .tab {
 	background: url("/screens/gold_gradient.png") repeat-x scroll 50% 50% #FFBD29;
         border: 1px solid #C0C0C0;
         margin-bottom: -1px;
 }
-#tabs ul li:hover {
+#tabs ul .tab:hover {
         background: #FFFFFF;
 }
-#tabs ul li.active a {
+#tabs ul .tab.active a {
 	color: #333333;
 }
 #tabs .tabContent {
@@ -1175,10 +1197,7 @@ tr.highlight { background:#FFFFE4; }
 #tabs div h3 {
 	margin-bottom: 12px;
 }
-#tabs div p {
-	line-height: 150%;
-}
-#tabs ul li a {
+#tabs ul .tab a {
 	text-decoration: none;
 	padding: 8px;
 	color: #000;
