@@ -150,10 +150,6 @@ a:hover  { color: #7C14B8; }
     margin-top:20px;
 }
 
-.advancedSearch option {
-    padding:0 3px; 
-}
-
 #accessibleForm .advancedSearch fieldset fieldset { border:none; padding:0; text-align:left; }
 
 #alertMessage {
@@ -965,13 +961,8 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 #searchTips hr {
     width:45%;
-    margin:1.75em auto;
     color:#CCCCCC;
 }
-
-#searchTips p { margin-top:.75em; }
-
-#searchTips ul { margin:.5em 0 .5em 3em; }
 
 #skipNav a, #cproSkipNav a:hover, #cproSkipNav a:visited { position:absolute; left:0px; top:-5000px; width:1px; height:1px; overflow:hidden; }
 
@@ -1147,11 +1138,6 @@ tr.highlight { background:#FFFFE4; }
 
 /* Tab styles */
 
-* {
-	margin: 0;
-	padding: 0;
-}
-
 #tabs {
 	margin: 50px 0;
         width:700px;
@@ -1161,7 +1147,8 @@ tr.highlight { background:#FFFFE4; }
 #tabs #tabRow {
 	float: left;
 	background: #fff;
-	padding-top: 4px;
+	padding:0;
+        margin:0;
 }
 #tabs .tab {
 	margin-left: 8px;
