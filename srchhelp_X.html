@@ -18,22 +18,47 @@ startTimeout(600000, "/");
 </head>
 <!--{advancedsearchbody}-->
 <!--{toplogo}-->
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$('#tabs .tabContent').hide();
+	$('#tabs .tabContent:first').show();
+	$('#tabs ul li:first').addClass('active');
+	$('#tabs ul li a').click(function(){ 
+		$('#tabs ul li').removeClass('active');
+		$(this).parent().addClass('active'); 
+		var currentTab = $(this).attr('href'); 
+		$('#tabs .tabContent').hide();
+		$(currentTab).show();
+		return false;
+	});
+});
+</script>
 <div class="pageContentInner">
+
+<div id="tabs">
+    <ul>
+      <li><a href="#tab-1">Quick Search</a></li>
+      <li><a href="#tab-2">Advanced</a></li>
+      <li><a href="#tab-3">Author & Title</a></li>
+      <li><a href="#tab-4">Subjects</a></li>
+      <li><a href="#tab-5">Numbers/Others</a></li>
+    </ul>
+    
+   <div id="tab-1" class="tabContent">
 <h1 class="pageHeader">Advanced Keyword Search</h1>
 <!--{msg}-->
-<!--{spellcheck}-->
-<div class="miscButtons">
-<!--{innreach}-->
-</div>
 
-<div class="form3Part" id="accessibleForm">
+<div id="accessibleForm">
 
 <!--{advancedsearchformbegin}-->
-<div class="form3PartAbove">
+
 <fieldset>
 <legend>Enter Search Terms</legend>
 <div class="formEntryArea">
-<!--{advancedsearch}-->
+<input type="hidden" name="fieldLimit1" value="" />
+<input maxlength="75" size="35" name="searchText1" />
+<!--{scope}-->
 </div>
 <input type="hidden" name="startLimit" >
 <div class="formEntryArea">
@@ -48,13 +73,15 @@ startTimeout(600000, "/");
 </span>
 </div>
 </fieldset>
-</div> <!-- form3PartAbove -->
 
-<div class="form3PartBelow">
 
-<div class="formLeft advancedSearch">
+
 <fieldset>
 <legend>Add Limits (Optional)</legend>
+
+<div class="formEntryArea">
+<!--{DOCDATE}-->
+</div>
 
 <div class="formEntryArea">
 <table border="0">
@@ -65,7 +92,7 @@ Library
 </label>
 </td>
 <td>
-<!--{scope}-->
+
 </td>
 </tr>
 </table>
@@ -80,9 +107,7 @@ Library
 <div class="formEntryArea">
 <!--{lang}-->
 </div>
-<div class="formEntryArea">
-<!--{DOCDATE}-->
-</div>
+
 <div class="formEntryArea">
 <!--{publish}-->
 </div>
@@ -91,49 +116,37 @@ Library
 </div>
 </fieldset>
 <input type="hidden" name="endLimit" >
-</div> <!-- formLeft -->
-
-<div class="formRight">
-<table class="tipsTable">
-<caption>Search Tips</caption>
-<!-- <tr valign="top"><th align="left">Adjacency</th>
-<td>Multiple words are searched together as one phrase.<br>
-<span style="text-decoration:underline">Example</span> : world health organization</td>
-</tr> -->
-<tr><th>Wildcards</th>
-<td>
-Words may be right-hand truncated using an asterisk ('*') in place of other characters. <!-- Use '**' for open-ended truncation of over five characters.--> The '*' wildcard may also be embedded in a search string. You may use '?' to replace a single character anywhere within a word.<br>
-<span style="text-decoration:underline">Examples</span> : environment* polic*, wom?n</td>
-</tr>
-<tr><th>Boolean Operators</th>
-<td>
-Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br>
-<span style="text-decoration:underline">Example</span> : stocks and bonds<br>
-<span style="text-decoration:underline">Example</span> : (alaska or canada) and (adventure and not vacation)</td>
-</tr>
-<tr><th>Field limits</th>
-<td>
-A field limit causes the system to search only the specified field for the specified word(s).</td>
-</tr>
-<tr>
-<th>Grouping</th>
-<td>
-Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
-</td>
-</tr>
-<!-- <tr valign="top"><th align="left">Proximity Operators</th>
-<td>
-Use "near" to specify words close to each other, in any order.<br>
-<span style="text-decoration:underline">Example</span> : california near university</td>
-</tr> -->
-</table>
-</div> <!-- formRight -->
-<div class="clear"></div>
-</div> <!-- form3PartBelow -->
 
 <!--{advancedsearchformend}-->
 </div> <!-- form3Part -->
 
+    </div>
+    <div id="tab-2" class="tabContent">
+
+      <h3>Tab 2</h3>
+      <p><img src="http://papermashup.com/demos/jquery-gallery/images/t2.png" width="120" height="120" class="thumbs"/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur enim. Nullam id ligula in nisl tincidunt feugiat. Curabitur eu magna porttitor ligula bibendum rhoncus. Etiam dignissim. Duis lobortis porta risus. Quisque velit metus, dignissim in, rhoncus at, congue quis, mi. Praesent vel lorem. Suspendisse ut dolor at justo tristique dapibus. Morbi erat mi, rutrum a, aliquam nec <br/>
+        <a href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe to my feed here</a></p>
+    </div>
+    <div id="tab-3" class="tabContent">
+      <h3>Tab 3</h3>
+
+      <p><img src="http://papermashup.com/demos/jquery-gallery/images/t3.png" width="120" height="120" class="thumbs"/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur enim. Nullam id ligula in nisl tincidunt feugiat. Curabitur eu magna porttitor ligula bibendum rhoncus. Etiam dignissim. Duis lobortis porta risus. Quisque velit metus, dignissim in, rhoncus at, congue quis, mi. Praesent vel lorem. Suspendisse ut dolor at justo tristique dapibus. Morbi erat mi, rutrum a, aliquam nec, mattis semper, leo. Maecenas blandit risus vitae quam. Vivamus ut odio.<br/>
+        <a href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe to my feed here</a></p>
+    </div>
+    <div id="tab-4" class="tabContent">
+      <h3>Tab 4</h3>
+
+      <p><img src="http://papermashup.com/demos/jquery-gallery/images/t3.png" width="120" height="120" class="thumbs"/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur enim. Nullam id ligula in nisl tincidunt feugiat. Curabitur eu magna porttitor ligula bibendum rhoncus. Etiam dignissim. Duis lobortis porta risus. Quisque velit metus, dignissim in, rhoncus at, congue quis, mi. Praesent vel lorem. Suspendisse ut dolor at justo tristique dapibus. Morbi erat mi, rutrum a, aliquam nec, mattis semper, leo. Maecenas blandit risus vitae quam. Vivamus ut odio.<br/>
+        <a href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe to my feed here</a></p>
+    </div>
+    <div id="tab-5" class="tabContent">
+      <h3>Tab 5</h3>
+
+      <p><img src="http://papermashup.com/demos/jquery-gallery/images/t3.png" width="120" height="120" class="thumbs"/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur enim. Nullam id ligula in nisl tincidunt feugiat. Curabitur eu magna porttitor ligula bibendum rhoncus. Etiam dignissim. Duis lobortis porta risus. Quisque velit metus, dignissim in, rhoncus at, congue quis, mi. Praesent vel lorem. Suspendisse ut dolor at justo tristique dapibus. Morbi erat mi, rutrum a, aliquam nec, mattis semper, leo. Maecenas blandit risus vitae quam. Vivamus ut odio.<br/>
+        <a href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe to my feed here</a></p>
+    </div>
+
+  </div>
 </div><!-- pageContentInner -->
 <!--{botlogo}-->
 </body>
