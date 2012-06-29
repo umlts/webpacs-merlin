@@ -31,7 +31,7 @@ $item 			= "\nLoc: ".$location."\nCall: ".$callNumber;
 //echo "document.write('Debug: ".$location." ".$callNumber."');";
 
 //Change this url to your own catalog
-$url = "http://mcotrain.umsystem.edu/record=".$bib;
+$url = "http://laurel.lso.missouri.edu/record=".$bib;
 
 //Use the bib number to get the title information for the item from the catalog
 $catalogItemPage = get_url_contents($url);
