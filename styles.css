@@ -204,7 +204,7 @@ a:hover  { color: #7C14B8; }
 
 .bibDisplayItemsMain, .resourceLicenseArea { float:right; width:80%; }
 
-.bibDisplayJacket  { float:left; margin:0 0 1em 5%; display:inline; width:6em; }
+.bibDisplayJacket  { float:left; margin:0 0 1em 20px; display:inline; width:150px; text-align:center; }
 
 .bibLinks th { text-align:center; }
 
@@ -355,7 +355,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitItemsMain { float:left; width:85%; }
 
-.briefcitMedia, .bibMedia, .briefcitResourceMedia, .briefcitProgramMedia, td.browseEntryMedia, td.browseSubEntryMedia { color:#878787; font-size:.7em; line-height:.95em; margin-top:6em; overflow:hidden; width:41px; text-align:center; }
+.briefcitMedia, .bibMedia, .briefcitResourceMedia, .briefcitProgramMedia, td.browseEntryMedia, td.browseSubEntryMedia { color:#878787; font-size:.7em; line-height:.95em; overflow:hidden; width:41px; text-align:center; }
 
 .briefcitResourceMedia, .briefcitProgramMedia { margin-top:3em; }
 
@@ -618,6 +618,10 @@ div .bibResourceSidebar { display:none; }
 .pageContent div.helpContent { padding-bottom:12em; }
 
 .pageContent > table .browseSearchtool em { margin-left:0px; }
+
+#googlebooks img {
+    margin-top:1em;
+}
 
 .helpContent h3 { font-size:1.1em; margin-bottom:0px; }
 
