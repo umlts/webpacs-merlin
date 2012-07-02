@@ -667,6 +667,8 @@ div .bibResourceSidebar { display:none; }
 
 .indexList li {list-style-type:none;}
 
+.indexSearch input#searcharg { width:40%; }
+
 .inlineBlock {display:inline-block; zoom: 1; *display: inline;}
 
 .itemSelect { width:50em; }
@@ -682,6 +684,12 @@ div .bibResourceSidebar { display:none; }
 .libinfoRight ul { padding-left:15px; }
 
 .libinfoRight li {  }
+
+.limitColumn { width:40%; float: left; }
+
+.limits { margin-bottom:1em; float:left; width:100%; }
+
+.limits label { display:block; margin:0.25em 0; }
 
 .loggedInMessage { color:#999999; font-size:.8em; font-style:normal; float:right; margin:1px 5px 0 0; }
 
