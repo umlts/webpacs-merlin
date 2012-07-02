@@ -64,7 +64,7 @@ STARTOVER=/search
 STATGROUP=login
 STYLESHEET=/screens/styles.css
 SUPPRESS_OPTION=STARTOVER,ANOTHER,NEWSRCH
-TIMEOUT=600;URL=http://laurel.lso.missouri.edu/
+TIMEOUT=600;URL=http://laurel.lso.missouri.edu/search/X
 TOPLOGO=@screens/toplogo.html
 #UPDATECIRC=true
 XSTARTOVER=/search
