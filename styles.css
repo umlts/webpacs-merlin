@@ -693,6 +693,18 @@ div .bibResourceSidebar { display:none; }
 
 .limits label { display:block; margin:0.25em 0; }
 
+.linkBanner {
+    background:#9D1C21;
+    margin:0;
+    position:relative;
+    text-align:right;
+    clear:both;
+    float:right;
+    width:100%;
+    height:18px;
+    border-bottom:2px solid #003466;
+}
+
 .loggedInMessage { color:#999999; font-size:.8em; font-style:normal; float:right; margin:1px 5px 0 0; }
 
 .loggedInMoreInfo { display:none; position:absolute; top:-5000px; right:-5000px; }
@@ -723,7 +735,7 @@ div .bibResourceSidebar { display:none; }
 
 .miscButtons { margin-bottom: 1em;}
 
-.mobiusLogo, .clusterLogo { position:absolute; right:10px; top:26px;}
+.mobiusLogo, .clusterLogo { position:absolute; right:10px; top:13px;}
 
 .msg td { padding-top:3px; }
 
@@ -1020,7 +1032,7 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .topLogo img { border:0; display:block; margin-left:auto; margin-right:auto }
 
-.topLogoImage { padding:10px; width:180px; }
+.topLogoImage { padding:5px; width:180px; }
 
 .mobiusLogo, .clusterLogo {width:250px;}
 
