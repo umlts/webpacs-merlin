@@ -137,20 +137,20 @@ a:hover  { color: #7C14B8; }
 
 .additionalCopies { margin: 20px 6px; }
 
-.advancedSearch .formEntryArea {
+.quickSearch .formEntryArea {
     margin:1em 0 0 15px;
 }
 
-.advancedSearch .formEntryArea td:first-child {
+.quickSearch .formEntryArea td:first-child {
     width:15em;
 }
 
-.advancedSearch fieldset {
+.quickSearch fieldset {
     padding-bottom:20px;
     margin-top:20px;
 }
 
-#accessibleForm .advancedSearch fieldset fieldset { border:none; padding:0; text-align:left; }
+#accessibleForm .quickSearch fieldset fieldset { border:none; padding:0; text-align:left; }
 
 #alertMessage {
     margin-left:1em;
@@ -686,6 +686,8 @@ div .bibResourceSidebar { display:none; }
 .libinfoRight li {  }
 
 .limitColumn { width:40%; float: left; }
+
+.limitColumn:nth-child(2) { width:60%; }
 
 .limits { margin-bottom:1em; float:left; width:100%; }
 

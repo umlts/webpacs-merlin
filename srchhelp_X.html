@@ -32,6 +32,10 @@ $(document).ready(function(){
 		$(currentTab).show();
 		return false;
 	});
+	$('.searchtype').change(function(){
+            $('.innerQuickSearch').hide();
+            $('.' + this.value + ' .innerQuickSearch').show();
+	});
 });
 </script>
 <div class="pageContentInner">
@@ -47,11 +51,25 @@ $(document).ready(function(){
     
    <div id="tab-1" class="tabContent">
         <h1 class="pageHeader">Quick Search</h1>
+        
+<div id="accessibleForm" class="quickSearch X">
+    
+<div class="innerQuickSearch">
+
 <!--{msg}-->
         
-        <div id="accessibleForm" class="advancedSearch">
-        
 <!--{advancedsearchformbegin}-->
+
+        <div class="limits">
+        <div class="limitColumn">
+        <label> <input name="searchtype" class="searchtype" value="X" checked="checked" type="radio"> Keyword </label> 
+        <label> <input name="searchtype" class="searchtype" value="t" type="radio"> Title begins with </label>
+        </div>
+        <div class="limitColumn">
+        <label> <input name="searchtype" class="searchtype" value="s" type="radio"> Journal & Newspapers title begins with </label>
+        <label> <input name="searchtype" class="searchtype" value="a" type="radio"> Author (last name first) </label>
+        </div>
+        </div>
         
         <div class="formEntryArea">
         <input type="hidden" name="fieldLimit1" value="" />
@@ -141,9 +159,9 @@ $(document).ready(function(){
         <input type="hidden" name="endLimit" >
         
 <!--{advancedsearchformend}-->
-        </div> <!-- form3Part -->
         
-        <div id="searchTips">
+        
+        <div class="searchTips">
         <p><strong>Search tips for Keyword Search</strong></p>
           <p>Use keywords from the title, author, subjects or notes.</p>
           <p><em>Examples:</em></p>
@@ -152,32 +170,54 @@ $(document).ready(function(){
             <li><em>&quot;achievement test&quot;</em></li>
           </ul>
           <p>For more options, use an Advanced Search. </p>
-         <hr>
-          <p><strong>Search tips for Title begins with</strong></p>
-        <p>Use this search if you have the title of the book, video, etc. Enter words starting at the beginnning of the title.  Exclude initial articles such as &quot;the&quot;, &quot;an&quot;, and &quot;de&quot; (German). </p>
-        <p><em>Examples:</em></p>
-        <ul>
-          <li><em>Intruder in the Dust</em></li>
-          <li><em>Adventures of Huckleberry Finn</em></li>
-          </ul>
-         <hr>
-        <p><strong>Search tips for Journal &amp; Newspaper Title begins with</strong></p>
-        <p>Search for exact titles for journals, newspapers, or magazines. Enter words starting at the beginning of the title.</p>
-        <p><em>Example:</em></p>
-        <ul>
-          <li><em>journal of management inquiry</em></li>
-          </ul>
-        <p>If your search is unsuccessful, try a keyword search. </p>
-         <hr>
-        <p><strong>Search Tips for Author</strong> People: Type LAST NAME, FIRST NAME <em>Examples:</em></p>
-        <ul>
-          <li><em>Powell, Lawrence Clark</em></li>
-        </ul>
-        Corporate Body or Conference name: Type as much of the EXACT NAME as you know. Start at the beginning. <em>Examples:</em>
-        <ul>
-          <li><em>Amnesty International</em></li>
-        </ul>
         </div>
+        
+</div>
+
+        </div> <!-- advancedSearch -->
+        
+        <div class="quickSearch t s a">
+            
+        <div class="innerQuickSearch">
+            
+            <form action="/search/" method="get" id="search" class="indexSearch" name="search">
+            
+            <div class="limits">
+            <div class="limitColumn">
+            <label> <input name="searchtype" class="searchtype" value="X" type="radio"> Keyword </label> 
+            <label> <input name="searchtype" class="searchtype" value="t" checked="checked" type="radio"> Title begins with </label>
+            </div>
+            <div class="limitColumn">
+            <label> <input name="searchtype" class="searchtype" value="s" type="radio"> Journal & Newspapers title begins with </label>
+            <label> <input name="searchtype" class="searchtype" value="a" type="radio"> Author (last name first) </label>
+            </div>
+            </div>
+            
+            <div class="clear"></div>
+        
+<!--{nosort}-->
+        
+            <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+        
+<!--{scope}-->
+        
+        
+            <input value="Search" type="submit"> </label></div>
+        
+            </form>
+
+            <p><strong>Search tips for Title begins with</strong></p>
+            <p>Use this search if you have the title of the book, video, etc. Enter words starting at the beginnning of the title.  Exclude initial articles such as &quot;the&quot;, &quot;an&quot;, and &quot;de&quot; (German). </p>
+            <p><em>Examples:</em></p>
+            <ul>
+            <li><em>Intruder in the Dust</em></li>
+            <li><em>Adventures of Huckleberry Finn</em></li>
+            </ul>
+            
+        </div>
+            
+        </div>
+
 
     </div>
     <div id="tab-2" class="tabContent">
@@ -200,11 +240,11 @@ $(document).ready(function(){
         
         <div class="limits">
         <div class="limitColumn">
-        <label> <input name="searchtype" value="d" checked="checked" type="radio"> Subject (Library of Congress) </label> 
-        <label> <input name="searchtype" value="m" type="radio"> Medical Subject (MeSH) </label>
+        <label> <input name="searchtype" class="searchtype" value="d" checked="checked" type="radio"> Subject (Library of Congress) </label> 
+        <label> <input name="searchtype" class="searchtype" value="m" type="radio"> Medical Subject (MeSH) </label>
         </div>
         <div class="limitColumn">
-        <label> <input name="searchtype" value="v" type="radio"> Genre/Form </label>
+        <label> <input name="searchtype" class="searchtype" value="v" type="radio"> Genre/Form </label>
         </div>
         </div>
         
@@ -230,16 +270,16 @@ $(document).ready(function(){
         
         <div class="limits">
         <div class="limitColumn">
-        <label> <input name="searchtype" value="i" checked="checked" type="radio"> ISBN/ISSN/Standard Number </label> 
-        <label> <input name="searchtype" value="g" type="radio"> Government Publication </label>
-        <label> <input name="searchtype" value="e" type="radio"> Music Number </label>
-        <label> <input name="searchtype" value="o" type="radio"> OCLC/WorldCatalog </label>
+        <label> <input name="searchtype" class="searchtype" value="i" checked="checked" type="radio"> ISBN/ISSN/Standard Number </label> 
+        <label> <input name="searchtype" class="searchtype" value="g" type="radio"> Government Publication </label>
+        <label> <input name="searchtype" class="searchtype" value="e" type="radio"> Music Number </label>
+        <label> <input name="searchtype" class="searchtype" value="o" type="radio"> OCLC/WorldCatalog </label>
         </div>
         <div class="limitColumn">
-        <label> <input name="searchtype" value="c" type="radio"> Call Number (Library of Congress) </label>
-        <label> <input name="searchtype" value="l" type="radio"> Medical Call Number </label>
-        <label> <input name="searchtype" value="f" type="radio"> Dewey/Other Call Number </label>
-        <label> <input name="searchtype" value="h" type="radio"> Donor/Honoree (MU only) </label>
+        <label> <input name="searchtype" class="searchtype" value="c" type="radio"> Call Number (Library of Congress) </label>
+        <label> <input name="searchtype" class="searchtype" value="l" type="radio"> Medical Call Number </label>
+        <label> <input name="searchtype" class="searchtype" value="f" type="radio"> Dewey/Other Call Number </label>
+        <label> <input name="searchtype" class="searchtype" value="h" type="radio"> Donor/Honoree (MU only) </label>
         </div>
         </div>
         
