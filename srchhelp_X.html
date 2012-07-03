@@ -40,6 +40,9 @@ $(document).ready(function(){
             $('.' + this.value + ' .innerQuickSearch').show();
             $('input.searchtype[value=' + this.value + ']').attr('checked', true);
 	});
+	$('#limitsLink').click(function(){
+             $('#optionalLimits').toggle();
+	});
 });
 </script>
 <div class="pageContentInner">
@@ -82,6 +85,9 @@ $(document).ready(function(){
                     </div>
                     <input type="hidden" name="startLimit" >
                     <div class="formEntryArea">
+                        <a href="#" id="limitsLink">Refine your keyword search by language, year, and more</a> (+)
+                    </div>
+                    <div class="formEntryArea">
 <!--{availlim}-->
                     </div>
                     <div class="formButtonArea">
@@ -93,8 +99,9 @@ $(document).ready(function(){
                     </span>
                     </div>
         
-        
-                    <fieldset>
+
+
+                    <fieldset id="optionalLimits">
                     <legend>Add Limits (Optional)</legend>
         
                     <div class="formEntryArea">
