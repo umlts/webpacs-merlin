@@ -32,9 +32,13 @@ $(document).ready(function(){
 		$(currentTab).show();
 		return false;
 	});
-	$('.searchtype').change(function(){
+        $('input.searchtype[value=X]').attr('checked', true);
+        $('.innerQuickSearch').hide();
+        $('.X .innerQuickSearch').show();
+	$('input.searchtype').change(function(){
             $('.innerQuickSearch').hide();
             $('.' + this.value + ' .innerQuickSearch').show();
+            $('input.searchtype[value=' + this.value + ']').attr('checked', true);
 	});
 });
 </script>
@@ -185,7 +189,7 @@ $(document).ready(function(){
             <div class="limits">
             <div class="limitColumn">
             <label> <input name="searchtype" class="searchtype" value="X" type="radio"> Keyword </label> 
-            <label> <input name="searchtype" class="searchtype" value="t" checked="checked" type="radio"> Title begins with </label>
+            <label> <input name="searchtype" class="searchtype" value="t" type="radio"> Title begins with </label>
             </div>
             <div class="limitColumn">
             <label> <input name="searchtype" class="searchtype" value="s" type="radio"> Journal & Newspapers title begins with </label>
@@ -205,6 +209,8 @@ $(document).ready(function(){
             <input value="Search" type="submit"> </label></div>
         
             </form>
+            
+            <div class="searchTips">
 
             <p><strong>Search tips for Title begins with</strong></p>
             <p>Use this search if you have the title of the book, video, etc. Enter words starting at the beginnning of the title.  Exclude initial articles such as &quot;the&quot;, &quot;an&quot;, and &quot;de&quot; (German). </p>
@@ -213,6 +219,8 @@ $(document).ready(function(){
             <li><em>Intruder in the Dust</em></li>
             <li><em>Adventures of Huckleberry Finn</em></li>
             </ul>
+            
+            </div>
             
         </div>
             
