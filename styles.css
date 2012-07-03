@@ -108,10 +108,10 @@ td { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-style: 
 th { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; }
 
 /* traditional link colors are suggested for better usability */
-a:link { color: #014184; }
-a:active { color: #7C14B8; }
-a:visited { color: #7C14B8; }
-a:hover  { color: #7C14B8; }
+a:link { color: #014184; text-decoration:none; }
+a:active { color: #6E0000; text-decoration:underline; }
+a:visited { color: #6E0000; text-decoration: none;  }
+a:hover  { color: #6E0000; text-decoration:underline; }
 
 /* Section 2 */
 /* named styles listed in alphabetical order */
@@ -747,6 +747,8 @@ div .bibResourceSidebar { display:none; }
 
 .navigationRow select { font-size:.83333em; width:200px; margin-top: 15px; }
 
+#optionalLimits { display:none; }
+
 .pageContent { clear:both; }
 
 .pageContent > br { display:none; }
@@ -973,10 +975,12 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .searchNavBut { vertical-align:bottom; margin:3px 10px 3px 5px; }
 
-#searchTips hr {
+.searchTips hr {
     width:45%;
     color:#CCCCCC;
 }
+
+.searchTips { margin:1.5em 0 0 15px; }
 
 #skipNav a, #cproSkipNav a:hover, #cproSkipNav a:visited { position:absolute; left:0px; top:-5000px; width:1px; height:1px; overflow:hidden; }
 
