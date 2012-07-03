@@ -1,4 +1,5 @@
-        <p><strong>Search Tips for Author</strong> People: Type LAST NAME, FIRST NAME <em>Examples:</em></p>
+        <p><strong>Search Tips for Author</strong></p>
+        People: Type LAST NAME, FIRST NAME <em>Examples:</em>
         <ul>
           <li><em>Powell, Lawrence Clark</em></li>
         </ul>
