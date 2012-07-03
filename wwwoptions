@@ -125,8 +125,8 @@ EXTENDED_c=3
 #HEADING_LENGTH=100
 ICON_856LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website
 ICON_962LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image
-ICON_BOOKCART=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add to Bag</span></span>
-ICON_BOOKCART_SAVED=<span class="button"><img src="/screens/ico_bag_minus.png" alt=""><span class="buttonText">Remove From Bag</span></span>
+ICON_BOOKCART=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add to Folder</span></span>
+ICON_BOOKCART_SAVED=<span class="button"><img src="/screens/ico_bag_minus.png" alt=""><span class="buttonText">Remove From Folder</span></span>
 ICON_FULLRECORD=See Full Record
 ICON_LOCATEINRESULTS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Locate in results</span></span></div></div>
 ICON_PAGING_CAPTION=Result Page&nbsp;
@@ -135,7 +135,7 @@ ICON_PAGING_PREV=Prev
 ICON_PROGRAM=<img src="/screens/media_program.gif" border="0" alt="Library Event">
 ICON_RESOURCE=<img src="/screens/media_resource.gif" alt="Internet Resource">
 ICON_SAVEALLPAGE=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add All On Page to Folder</span></span>
-ICON_SAVEMARKED=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add Marked to Bag</span></span>
+ICON_SAVEMARKED=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add Marked to Folder</span></span>
 IMAGE_MATTYPE-=/screens/media_book.gif
 IMAGE_MATTYPE2=/screens/media_ebook.gif
 IMAGE_MATTYPE3=/screens/media_periodical2.gif
@@ -255,11 +255,11 @@ ICON_MYLISTS_RECORD=<span class="button"><img src="/screens/ico_list_add.png" al
 
 # Saving and Exporting
 BRIEF_EXPORT=a|t|p
-ICON_BUT_BIBEXPORT=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add to Bag</span></span>
-ICON_BUT_CLEAR_MARKED=<span class="button"><img src="/screens/ico_bag_clear.png" alt=""><span class="buttonText">Empty Bag</span></span>
+ICON_BUT_BIBEXPORT=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add to Folder</span></span>
+ICON_BUT_CLEAR_MARKED=<span class="button"><img src="/screens/ico_bag_clear.png" alt=""><span class="buttonText">Empty Folder</span></span>
 ICON_BUT_EXPORT_MULTI=<span class="button"><img src="/screens/ico_disc.png" alt=""><span class="buttonText">Export Saved</span></span>
-ICON_BUT_EXPORT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Bag</span></span>
-ICON_BUT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Bag</span></span>
+ICON_BUT_EXPORT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Folder</span></span>
+ICON_BUT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Folder</span></span>
 EMAILOP=From the MERLIN Library Catalog|exporter|
 EXPORT_SELECT_TABLE=Sendto:email,local,browser|Format:full,brief,marc,endnote,procite
 XRECTYPE=bi
