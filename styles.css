@@ -693,6 +693,8 @@ div .bibResourceSidebar { display:none; }
 
 .limits label { display:block; margin:0.25em 0; }
 
+#limitsLink { margin-bottom:1em; }
+
 .linkBanner {
     background:#9D1C21;
     margin:0;
