@@ -20,18 +20,34 @@ startTimeout(600000, "/");
 <!--{toplogo}-->
 <script type="text/javascript">
 
+$(window).bind('hashchange', function() {
+		$('#tabs ul li').removeClass('active');
+		$('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
+		$('#tabs .tabContent').hide();
+		$(window.location.hash).show();
+
+});
+
+
 $(document).ready(function(){
 	$('#tabs .tabContent').hide();
-	$('#tabs .tabContent:first').show();
-	$('#tabs ul li:first').addClass('active');
-	$('#tabs ul li a').click(function(){ 
+        if (window.location.hash) {
+            $(window.location.hash).show();
+            $('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
+        }else{
+            $('#tabs .tabContent:first').show();
+            $('#tabs ul li:first').addClass('active');
+        }
+        //So switching tabs will work with IE7
+	$('#tabs ul li a').click(function(){
 		$('#tabs ul li').removeClass('active');
 		$(this).parent().addClass('active'); 
 		var currentTab = $(this).attr('href'); 
 		$('#tabs .tabContent').hide();
 		$(currentTab).show();
-		return false;
 	});
+
+
         $('input.searchtype[value=X]').attr('checked', true);
         $('.innerQuickSearch').hide();
         $('.X .innerQuickSearch').show();
