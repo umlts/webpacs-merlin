@@ -43,7 +43,7 @@ BOTLOGO=@screens/botlogo.html
 ICON_BUT_CANCEL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel</span></span></div></div>
 ICON_BUT_CLOSEWINDOW=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Close Window</span></span>
 ICON_BUT_RET2CAT=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Catalog</span></span>
-ICON_BUT_STARTOVER=<span class="button"><img src="/screens/ico_startover.png" alt=""><span class="buttonText">Start Over</span></span>
+ICON_BUT_STARTOVER=<span class="navButtonOneLine">Start Over</span>
 FORM_FOCUS=true
 ICON_CANCEL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel</span></span></div></div>
 ICON_OK=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">OK</span></span></div></div>
@@ -70,15 +70,15 @@ TOPLOGO=@screens/toplogo.html
 XSTARTOVER=/search
 
 # Staff
-ICON_BUT_PUBLIC=<span class="button"><img src="/screens/ico_patron.png" alt=""><span class="buttonText">Patron View</span></span>
-ICON_BUT_STAFF=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Staff View</span></span>
+ICON_BUT_PUBLIC=<span class="navButtonOneLine">Patron View</span>
+ICON_BUT_STAFF=<span class="navButtonOneLine">Staff View</span>
 STAFF=15,201
 STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode at %s as %s</span>
 
 # General and Phrase Searching
-ICON_BUT_ANOTHER=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Another Search</span></span>
+ICON_BUT_ANOTHER=<span class="navButton">Another Search</span>
 ICON_BUT_NEWSRCH=New Search
-ICON_BUT_WORDSRCH=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Search as Words</span></span>
+ICON_BUT_WORDSRCH=<span class="navButton">Search as Words</span>
 DROP_DOWN=Xtadmsclfgeiovxjh
 FRAMEURL=0
 #IBROWSE_MAX=10000
@@ -90,8 +90,8 @@ OFFER_HISTORY=true
 # Advanced Searching
 AVS_MODIFY_TAG=X
 AVS_TAG=XYZ
-ICON_BUT_MODIFY=<span class="button"><img src="/screens/ico_magnifyingglass_modify.png" alt=""><span class="buttonText">Modify Search</span></span>
-ICON_BUT_SHOWSIM=<span class="button"><img src="/screens/ico_more.png" alt=""><span class="buttonText">Find Related</span></span>
+ICON_BUT_MODIFY=<span class="navButton">Modify Search</span>
+ICON_BUT_SHOWSIM=<span class="navButtonOneLine">Find Related</span>
 ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;<h1 class="browseSuperEntryTitle">Most relevant titles</h1>&nbsp;
 ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;<h1 class="browseSuperEntryTitle">Highly relevant titles</h1>&nbsp;
 ICON_REL_GROUP_3=<img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;<h1 class="browseSuperEntryTitle">Very relevant titles</h1>&nbsp;
@@ -114,10 +114,10 @@ BODYPARAM=bgcolor="#FFFFFF"
 #BRIEF=A
 #BROWSE_t=245/abhnp/0|240/afklmnopr/0|700/tmnr/0|970/t/0|/abhnpv/0
 BROWSE_HEADERS=Mark|Media
-ICON_BUT_BRIEF=<span class="button"><img src="/screens/ico_browse_brief.png" alt=""><span class="buttonText">Brief Display</span></span>
-ICON_BUT_EXTENDED=<span class="button"><img src="/screens/ico_browse_ext.png" alt=""><span class="buttonText">Extended Display</span></span>
+ICON_BUT_BRIEF=<span class="navButtonOneLine">Brief Display</span>
+ICON_BUT_EXTENDED=<span class="navButton">Extended Display</span>
 ICON_BUT_LIMAVAIL=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">Limit to Available</span></span>
-ICON_BUT_LIMIT=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Limit/Sort Search</span></span>
+ICON_BUT_LIMIT=<span class="navButton">Limit/Sort Search</span>
 ICON_BUT_UNLIMAVAIL=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">Show All</span></span>
 DISPLAY_245=atd
 EXTENDED=L
@@ -125,8 +125,8 @@ EXTENDED_c=3
 #HEADING_LENGTH=100
 ICON_856LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website
 ICON_962LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image
-ICON_BOOKCART=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add to Folder</span></span>
-ICON_BOOKCART_SAVED=<span class="button"><img src="/screens/ico_bag_minus.png" alt=""><span class="buttonText">Remove From Folder</span></span>
+ICON_BOOKCART=<span class="navButton">Add to Folder</span>
+ICON_BOOKCART_SAVED=<span class="navButtonYellow navButton">Remove From Folder</span>
 ICON_FULLRECORD=See Full Record
 ICON_LOCATEINRESULTS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Locate in results</span></span></div></div>
 ICON_PAGING_CAPTION=Result Page&nbsp;
@@ -179,9 +179,9 @@ TABLEPARAM_BROWSE=width="100%" cellpadding="0" cellspacing="0" border="0"|align=
 
 # Record Displays
 BIB_TOC_HEADER=<strong>Table of Contents</strong>
-ICON_BUT_MARC_DISPLAY=<span class="button"><img src="/screens/ico_marc.png" alt=""><span class="buttonText">MARC Display</span></span>
-ICON_BUT_REGULAR_DISPLAY=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Regular Display</span></span>
-ICON_BUT_RTRNTB=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Browse</span></span>
+ICON_BUT_MARC_DISPLAY=<span class="navButton">MARC Display</span>
+ICON_BUT_REGULAR_DISPLAY=<span class="navButton">Regular Display</span>
+ICON_BUT_RTRNTB=<span class="navButton">Return to Browse</span>
 DISPLAY_856=z3|false
 HOLDINGS_POS=atpexz
 #HOTLINK=i^020,c^09,n^505
@@ -247,31 +247,31 @@ ICON_MYLISTS_MOVE=<div onmousedown="this.className='pressedState';" onmouseout="
 ICON_MYLISTS_REQUEST=<span class="button"><img src="/screens/ico_checkmark_16px.png" alt=""><span class="buttonText">Request</span></span>
 ICON_MYLISTS_REMOVE_DUPLICATES=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Remove Duplicates</span></span></div></div>
 ICON_MYLISTS_RENAME=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Change Name/Description</span></span></div></div>
-ICON_MYLISTS_SAVE=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to Wish List</span></span>
+ICON_MYLISTS_SAVE=<span class="navButton">Add to Wish List</span>
 ICON_MYLISTS_SAVE_TO_LIST=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add Marked to Wish List</span></span>
 ICON_MYLISTS_BRIEF=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to Wish List</span></span>
 ICON_BACK_TO_MYLISTS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Back to Wish List</span></span></div></div>
-ICON_MYLISTS_RECORD=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to Wish List</span></span>
+ICON_MYLISTS_RECORD=<span class="navButton">Add to Wish List</span>
 
 # Saving and Exporting
 BRIEF_EXPORT=a|t|p
-ICON_BUT_BIBEXPORT=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add to Folder</span></span>
-ICON_BUT_CLEAR_MARKED=<span class="button"><img src="/screens/ico_bag_clear.png" alt=""><span class="buttonText">Empty Folder</span></span>
-ICON_BUT_EXPORT_MULTI=<span class="button"><img src="/screens/ico_disc.png" alt=""><span class="buttonText">Export Saved</span></span>
+ICON_BUT_BIBEXPORT=<span class="navButton">Add to Folder</span>
+ICON_BUT_CLEAR_MARKED=<span class="navButton">Empty Folder</span>
+ICON_BUT_EXPORT_MULTI=<span class="navButtonOneLine">Export Saved</span>
 ICON_BUT_EXPORT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Folder</span></span>
-ICON_BUT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Folder</span></span>
+ICON_BUT_VIEW_SAVES=<span class="navButton">View Folder</span>
 EMAILOP=From the MERLIN Library Catalog|exporter|
 EXPORT_SELECT_TABLE=Sendto:email,local,browser|Format:full,brief,marc,endnote,procite
 XRECTYPE=bi
 
 #Requesting
 #BIBREQUEST=true
-ICON_BUT_REQUEST=<span class="button"><img src="/screens/ico_checkmark.png" alt=""><span class="buttonText">Request</span></span>
+ICON_BUT_REQUEST=<span class="navButtonOneLine">Request</span>
 ICON_BUT_REQUEST_ALL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Available</span></span></div></div>
-ICON_BUT_REQUEST_MULTI=<span class="button"><img src="/screens/ico_request_multi.png" alt=""><span class="buttonText">Request Saved</span></span>
+ICON_BUT_REQUEST_MULTI=<span class="navButton">Request Saved</span>
 ICON_BUT_REQUEST_RESET=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Reset Form</span></span></div></div>
 ICON_BUT_REQUEST_SELECTED=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Selected</span></span></div></div>
-ICON_REQUEST=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Request
+ICON_REQUEST=<span class="navButtonOneLine">Request</span>
 #REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
 REQUEST=Request item|denyiflocalavail|ask|Y
 #REQUEST_ARTICLE_IFCHKIN=Y
@@ -410,12 +410,12 @@ ILL_HOME=/screens/ill.html
 
 # INN-Reach
 IR_PLACEMENT=1
-INNREACH=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+INNREACH=<span class="navButton">Search MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
 
 # IRSSO SETUP
 
-INNREACH_REMOTE=laurel.lso.missouri.edu&<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@laurel.lso.missouri.edu:2083(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
-INNREACH_REMOTE_SSL=laurel.lso.missouri.edu&<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@laurel.lso.missouri.edu:2443(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+INNREACH_REMOTE=laurel.lso.missouri.edu&<span class="navButton">Search MOBIUS</span>@laurel.lso.missouri.edu:2083(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+INNREACH_REMOTE_SSL=laurel.lso.missouri.edu&<span class="navButton">Search MOBIUS</span>@laurel.lso.missouri.edu:2443(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
 SSO_VALID_HOSTS=128.206.14.98|laurel.lso.missouri.edu|m.laurel.lso.missouri.edu|merlin-mobius.missouri.edu
 
 # Media Management
@@ -431,8 +431,8 @@ RSRV_FORMAT=true
 TABLEPARAM_RSRV_BIBS=width="100%" border="0" cellpadding="0" cellspacing="0"
 
 # Featured Lists
-ICON_BUT_PREVSCRN=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span>
-ICON_BUT_RET2FEAT=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span>
+ICON_BUT_PREVSCRN=<span class="navButtonOneLine">Back</span>
+ICON_BUT_RET2FEAT=<span class="navButtonOneLine">Back</span>>
 FEATURED_LIST=10,260|New Titles|Campus|# Titles
 
 # Content Linking and Other Resources
