@@ -118,7 +118,7 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 #accessibleForm { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; }
 #accessibleForm fieldset { border: 1px solid #CCCCCC; }
 #accessibleForm form legend { font-weight:bold; }
-#accessibleForm h2 { margin-left:15px; margin-bottom:0; margin-top:12px; font-weight:normal; }
+#accessibleForm h2 { margin-bottom:0; margin-top:12px; font-weight:normal; }
 #accessibleForm span.formLabel { display:block; padding-top:3px; }
 #accessibleForm span.formLabelExample { font-style:italic; }
 #accessibleForm .formButtonArea .formButtonArea {margin-left:12px; display:inline;}
@@ -136,6 +136,8 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 .formsTogether .form1Part { width:96%; }
 
 .additionalCopies { margin: 20px 6px; }
+
+.X a:hover {text-decoration:none; }
 
 .quickSearch .formEntryArea {
     margin:1em 0 0 15px;
@@ -702,9 +704,9 @@ div .bibResourceSidebar { display:none; }
 
 .limits label { display:block; margin:0.25em 0; }
 
-#limitsLink { margin-bottom:1em; color: #6E0000; }
+a#limitsLink { margin-bottom:1em; color: #6E0000; }
 
-#limitsLink:hover { cursor:pointer; }
+#limitsLink:hover { cursor:pointer; text-decoration:underline; }
 
 .linkBanner {
     background:#9D1C21;
@@ -775,6 +777,10 @@ span.navButton, span.navButtonOneLine {
 
 span.navButton {
     padding: 6px 7px;
+}
+
+span.navButton:hover {
+    text-decoration:none !important;
 }
 
 span.navButtonOneLine {
