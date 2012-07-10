@@ -700,7 +700,9 @@ div .bibResourceSidebar { display:none; }
 
 .limits label { display:block; margin:0.25em 0; }
 
-#limitsLink { margin-bottom:1em; }
+#limitsLink { margin-bottom:1em; color: #6E0000; }
+
+#limitsLink:hover { cursor:pointer; }
 
 .linkBanner {
     background:#9D1C21;
