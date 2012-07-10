@@ -3,7 +3,7 @@
 <!-- Rel 2009B Example Set -->
 <!-- This File Last Changed: 23 Mar 2010 -->
 <head>
-<title>MERLIN Catalog - ASRS Request</title>
+<title>MERLIN Catalog - Robot Request</title>
 <script language="JavaScript">
 <!-- Hide the JS
 startTimeout(600000, "/");
@@ -20,11 +20,11 @@ startTimeout(600000, "/");
 <!--{toplogo}-->
 <div class="pageContentInner">
 
-<h1 class="pageHeader">ASRS Request</h1>
+<h1 class="pageHeader">Robot Request</h1>
 <p>
 <!--{iferrmsgis000}-->
 <!-- No errors.-->
-Your item has been requested.
+<div id="confirmParagraphs"></div>
 <!--{xif}-->
 <!--{iferrmsgis001}-->
 This item has already been requested. Please ask a library staff member for help. (001)
@@ -76,6 +76,22 @@ Your request cannot be processed at this time. Please ask a library staff member
 <!--{return}-->
 </p>
 </div><!--pageContentInner -->
+
+<script>
+
+var asrsCookie = ($.cookie('asrs'))
+
+if (asrsCookie == "sound_archives"){
+    $("#confirmParagraphs").html("<p>Your request has been processed and will be available for use in the Marr Sound Archives on the Ground Floor of the Miller Nichols Library. Hours are 9:00 a.m. - 4:30 p.m., Mon - Fri.</p>");
+}else if (asrsCookie == "special_collections"){
+    $("#confirmParagraphs").html("<p>Your request has been processed and will be available for use in LaBudde Special Collections on the 4th Floor of the Miller Nichols Library. Hours are 9:00 a.m. - 4:30 p.m., Mon - Fri.</p>");
+}else if (asrsCookie == "in_use"){
+    $("#confirmParagraphs").html("<p>Your request was successful.</p><p>Your request will be delivered to UMK, Nichols Library Circ within 15 minutes. The item will be held for you for 1 week.</p>");
+}else if (asrsCookie == "roobot"){
+    $("#confirmParagraphs").html("<p>Your request was successful.</p><p>Your request will be delivered to UMK, Nichols Library Circ within 15 minutes. The item will be held for you for 1 week.</p>");
+}
+
+</script>
 <!--{botlogo}-->
 </body>
 </html>
