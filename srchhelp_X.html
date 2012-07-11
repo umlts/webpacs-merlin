@@ -254,10 +254,107 @@ $(document).ready(function(){
 
     </div><!--tab1-->
     <div id="tab-2" class="tabContent">
+        <h1 class="pageHeader">Advanced Search</h1>
+        
+            <div id="accessibleForm" class="advancedSearch">
 
-      <h3>Tab 2</h3>
-      <p><img src="http://papermashup.com/demos/jquery-gallery/images/t2.png" width="120" height="120" class="thumbs"/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur enim. Nullam id ligula in nisl tincidunt feugiat. Curabitur eu magna porttitor ligula bibendum rhoncus. Etiam dignissim. Duis lobortis porta risus. Quisque velit metus, dignissim in, rhoncus at, congue quis, mi. Praesent vel lorem. Suspendisse ut dolor at justo tristique dapibus. Morbi erat mi, rutrum a, aliquam nec <br/>
-        <a href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe to my feed here</a></p>
+<!--{advancedsearchformbegin}-->
+
+<fieldset>
+<legend>Enter Search Terms</legend>
+<div class="formEntryArea">
+<!--{advancedsearch}-->
+</div>
+<input type="hidden" name="startLimit" >
+<div class="formEntryArea">
+<!--{availlim}-->
+</div>
+<div class="formButtonArea">
+<span>
+<!--{advancedsubmit}-->
+</span>
+<span>
+<!--{clearform}-->
+</span>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Add Limits (Optional)</legend>
+
+<div class="formEntryArea" id="form3PartAdvLimitSort">
+<!--{sort}-->
+</div>
+
+<div class="formEntryArea">
+<table border="0">
+<tr>
+<td>
+<label for="searchscope">
+Library
+</label>
+</td>
+<td>
+<!--{scope}-->
+</td>
+</tr>
+</table>
+</div>
+
+<div class="formEntryArea">
+<!--{branch}-->
+</div>
+<div class="formEntryArea">
+<!--{lang}-->
+</div>
+<div class="formEntryArea">
+<!--{publish}-->
+</div>
+<div class="formEntryArea">
+<!--{mattype}-->
+</div>
+<div class="formEntryArea">
+<!--{DOCDATE}-->
+</div>
+</fieldset>
+<input type="hidden" name="endLimit" >
+    
+<table class="tipsTable">
+<caption>Search Tips</caption>
+<!-- <tr valign="top"><th align="left">Adjacency</th>
+<td>Multiple words are searched together as one phrase.<br>
+<span style="text-decoration:underline">Example</span> : world health organization</td>
+</tr> -->
+<tr><th>Wildcards</th>
+<td>
+Words may be right-hand truncated using an asterisk ('*') in place of other characters. <!-- Use '**' for open-ended truncation of over five characters.--> The '*' wildcard may also be embedded in a search string. You may use '?' to replace a single character anywhere within a word.<br>
+<span style="text-decoration:underline">Examples</span> : environment* polic*, wom?n</td>
+</tr>
+<tr><th>Boolean Operators</th>
+<td>
+Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br>
+<span style="text-decoration:underline">Example</span> : stocks and bonds<br>
+<span style="text-decoration:underline">Example</span> : (alaska or canada) and (adventure and not vacation)</td>
+</tr>
+<tr><th>Field limits</th>
+<td>
+A field limit causes the system to search only the specified field for the specified word(s).</td>
+</tr>
+<tr>
+<th>Grouping</th>
+<td>
+Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
+</td>
+</tr>
+<!-- <tr valign="top"><th align="left">Proximity Operators</th>
+<td>
+Use "near" to specify words close to each other, in any order.<br>
+<span style="text-decoration:underline">Example</span> : california near university</td>
+</tr> -->
+</table>
+
+<!--{advancedsearchformend}-->
+            </div>
     </div>
     <div id="tab-3" class="tabContent">
       <h3>Tab 3</h3>
