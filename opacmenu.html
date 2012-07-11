@@ -36,30 +36,12 @@ obj.submit();
 <script type="text/javascript">
 
 $(document).ready(function(){
-	$('#tabs .tabContent').hide();
-	$('#tabs .tabContent:first').show();
-	$('#tabs ul li:first').addClass('active');
-	$('#tabs ul li a').click(function(){ 
-		$('#tabs ul li').removeClass('active');
-		$(this).parent().addClass('active'); 
-		var currentTab = $(this).attr('href'); 
-		$('#tabs .tabContent').hide();
-		$(currentTab).show();
-		return false;
-	});
+window.location = "/search/X"
 });
 </script>
 
 <div class="pageContentInner mainSearch">
 
- <div id="tabs">
-    <ul>
-      <li><a href="#tab-1">Word</a></li>
-      <li><a href="#tab-2">Title</a></li>
-      <li><a href="#tab-3">Author</a></li>
-    </ul>
-
-    <div id="tab-1" class="tabContent">
  
 			<h1 class="accessibleAddInfo">Search</h1>
 		
@@ -119,22 +101,8 @@ $(document).ready(function(){
 		</div><!-- browseSearchtool -->
 		</div><!-- form1Part -->
 
-    </div>
-    <div id="tab-2" class="tabContent">
 
-      <h3>Tab 2</h3>
-      <p><img src="http://papermashup.com/demos/jquery-gallery/images/t2.png" width="120" height="120" class="thumbs"/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur enim. Nullam id ligula in nisl tincidunt feugiat. Curabitur eu magna porttitor ligula bibendum rhoncus. Etiam dignissim. Duis lobortis porta risus. Quisque velit metus, dignissim in, rhoncus at, congue quis, mi. Praesent vel lorem. Suspendisse ut dolor at justo tristique dapibus. Morbi erat mi, rutrum a, aliquam nec <br/>
-        <a href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe to my feed here</a></p>
-    </div>
-    <div id="tab-3" class="tabContent">
-      <h3>Tab 3</h3>
-
-      <p><img src="http://papermashup.com/demos/jquery-gallery/images/t3.png" width="120" height="120" class="thumbs"/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur enim. Nullam id ligula in nisl tincidunt feugiat. Curabitur eu magna porttitor ligula bibendum rhoncus. Etiam dignissim. Duis lobortis porta risus. Quisque velit metus, dignissim in, rhoncus at, congue quis, mi. Praesent vel lorem. Suspendisse ut dolor at justo tristique dapibus. Morbi erat mi, rutrum a, aliquam nec, mattis semper, leo. Maecenas blandit risus vitae quam. Vivamus ut odio.<br/>
-        <a href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe to my feed here</a></p>
-    </div>
-
-  </div>
-
+ 
 </div><!--pageContentInner -->
 
 <!--{botlogo}-->

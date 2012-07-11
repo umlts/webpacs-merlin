@@ -1,194 +1,114 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <!-- Rel 2009B Example Set -->
-<!-- This File Last Changed: 29 Apr 2010 -->
+<!-- Updated: 09 June 2010 -->
 <head>
-<title>MERLIN Catalog - Advanced Keyword Search</title>
-<script language="JavaScript">
-<!-- Hide the JS
-startTimeout(600000, "/");
-// -->
-
-</script>
-<noscript>
-<meta http-equiv="Refresh" content="600;URL=/" />
-</noscript>
+<title>MERLIN Catalog</title>
 <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
+<script type="text/javascript">/* <![CDATA[ */
+function iiiSearchValidate() {
+	try{
+	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
+		return false;
+		}
+	}
+	catch(err) {
+	}
+  return true;
+}
+
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+if(iiiSearchValidate()){
+obj.submit();
+}
+}
+/* ]]> */
+</script>
 </head>
-<!--{advancedsearchbody}-->
+<body>
 <!--{toplogo}-->
+
 <script type="text/javascript">
 
 $(document).ready(function(){
-	$('#tabs .tabContent').hide();
-	$('#tabs .tabContent:first').show();
-	$('#tabs ul li:first').addClass('active');
-	$('#tabs ul li a').click(function(){ 
-		$('#tabs ul li').removeClass('active');
-		$(this).parent().addClass('active'); 
-		var currentTab = $(this).attr('href'); 
-		$('#tabs .tabContent').hide();
-		$(currentTab).show();
-		return false;
-	});
+window.location = "/search/X"
 });
 </script>
-<div class="pageContentInner">
 
-<div id="tabs">
-    <ul>
-      <li><a href="#tab-1">Quick Search</a></li>
-      <li><a href="#tab-2">Advanced</a></li>
-      <li><a href="#tab-3">Author & Title</a></li>
-      <li><a href="#tab-4">Subjects</a></li>
-      <li><a href="#tab-5">Numbers/Others</a></li>
-    </ul>
-    
-   <div id="tab-1" class="tabContent">
-<h1 class="pageHeader">Advanced Keyword Search</h1>
-<!--{msg}-->
-<!--{spellcheck}-->
-<div class="miscButtons">
-<!--{innreach}-->
-</div>
+<div class="pageContentInner mainSearch">
 
-<div class="form3Part" id="accessibleForm">
-
-<!--{advancedsearchformbegin}-->
-<div class="form3PartAbove">
-<fieldset>
-<legend>Enter Search Terms</legend>
-<div class="formEntryArea">
-<!--{advancedsearch}-->
-</div>
-<input type="hidden" name="startLimit" >
-<div class="formEntryArea">
-<!--{availlim}-->
-</div>
-<div class="formButtonArea">
-<span>
-<!--{advancedsubmit}-->
-</span>
-<span>
-<!--{clearform}-->
-</span>
-</div>
-</fieldset>
-</div> <!-- form3PartAbove -->
-
-<div class="form3PartBelow">
-
-<div class="formLeft advancedSearch">
-<fieldset>
-<legend>Add Limits (Optional)</legend>
-
-<div class="formEntryArea">
-<table border="0">
-<tr>
-<td>
-<label for="searchscope">
-Library
-</label>
-</td>
-<td>
+ 
+			<h1 class="accessibleAddInfo">Search</h1>
+		
+		<div id="accessibleForm" class="form1Part">
+		<div class="browseSearchtool">
+		<form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
+		
+		
+		<input type="hidden" id="iiiFormHandle_1">
+		
+		<!-- Optional legend:
+		<fieldset>
+		<legend>Type the search term you want to find.</legend>-->
+		<div class="formEntryArea">
+		<div class="inlineBlock">
+		<label for="searchtype" class="accessibleAddInfo">Search type</label>
+		<select name="searchtype" id="searchtype">
+		<option value="Y" selected="selected">Keyword</option>
+		<option value="t">Title</option>
+		<option value="a">Author</option>
+		<option value="d">Subject (LC)</option>
+		<option value="m">Medical Subject (MeSH)</option>
+		<option value="s">Journal, Magazine, Newspaper Title</option>
+		<option value="c">LC Call Number</option>
+		<option value="l">NLM Call Number</option>
+		<option value="f">Local or Dewey Call Number</option>
+		<option value="g">Government Document Number</option>
+		<option value="e">Music Number</option>
+		<option value="i">ISBN, ISSN, Standard Number</option>
+		<option value="o">OCLC/WorldCat Number</option>
+		<option value="v">Genre/Form Term</option>
+		<option value="j">Database Name (UMKC)</option>				
+		<option value="x">Database Subject (UMKC)</option>
+		<option value="h">Donor/Honoree</option>
+		</select>
+<!--{nosort}-->
+		<label for="searcharg" class="accessibleAddInfo">Search term</label>
+		<input maxlength="75" name="searcharg" size="20" >
+		</div>
+		<div class="inlineBlock">
+		<label for="scope" class="accessibleAddInfo">Location</label>
 <!--{scope}-->
-</td>
-</tr>
-</table>
-</div>
+		<span class="formButtonArea">
+		
+		  <!--{submit}-->
+		
+		<input type="hidden" id="iiiFormHandle_1"/>
+		<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
+		
+		<input type="submit" class="submitHidden">
+		
+		</span>
+		</div>
+		</div><!-- formEntryArea -->
+		<!--</fieldset> optional-->
+		</form>
+		</div><!-- browseSearchtool -->
+		</div><!-- form1Part -->
 
-<div class="formEntryArea">
-<!--{branch}-->
-</div>
-<div class="formEntryArea">
-<!--{mattype}-->
-</div>
-<div class="formEntryArea">
-<!--{lang}-->
-</div>
-<div class="formEntryArea">
-<!--{DOCDATE}-->
-</div>
-<div class="formEntryArea">
-<!--{publish}-->
-</div>
-<div class="formEntryArea" id="form3PartAdvLimitSort">
-<!--{sort}-->
-</div>
-</fieldset>
-<input type="hidden" name="endLimit" >
-</div> <!-- formLeft -->
 
-<div class="formRight">
-<table class="tipsTable">
-<caption>Search Tips</caption>
-<!-- <tr valign="top"><th align="left">Adjacency</th>
-<td>Multiple words are searched together as one phrase.<br>
-<span style="text-decoration:underline">Example</span> : world health organization</td>
-</tr> -->
-<tr><th>Wildcards</th>
-<td>
-Words may be right-hand truncated using an asterisk ('*') in place of other characters. <!-- Use '**' for open-ended truncation of over five characters.--> The '*' wildcard may also be embedded in a search string. You may use '?' to replace a single character anywhere within a word.<br>
-<span style="text-decoration:underline">Examples</span> : environment* polic*, wom?n</td>
-</tr>
-<tr><th>Boolean Operators</th>
-<td>
-Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br>
-<span style="text-decoration:underline">Example</span> : stocks and bonds<br>
-<span style="text-decoration:underline">Example</span> : (alaska or canada) and (adventure and not vacation)</td>
-</tr>
-<tr><th>Field limits</th>
-<td>
-A field limit causes the system to search only the specified field for the specified word(s).</td>
-</tr>
-<tr>
-<th>Grouping</th>
-<td>
-Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
-</td>
-</tr>
-<!-- <tr valign="top"><th align="left">Proximity Operators</th>
-<td>
-Use "near" to specify words close to each other, in any order.<br>
-<span style="text-decoration:underline">Example</span> : california near university</td>
-</tr> -->
-</table>
-</div> <!-- formRight -->
-<div class="clear"></div>
-</div> <!-- form3PartBelow -->
+ 
+</div><!--pageContentInner -->
 
-<!--{advancedsearchformend}-->
-</div> <!-- form3Part -->
-
-    </div>
-    <div id="tab-2" class="tabContent">
-
-      <h3>Tab 2</h3>
-      <p><img src="http://papermashup.com/demos/jquery-gallery/images/t2.png" width="120" height="120" class="thumbs"/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur enim. Nullam id ligula in nisl tincidunt feugiat. Curabitur eu magna porttitor ligula bibendum rhoncus. Etiam dignissim. Duis lobortis porta risus. Quisque velit metus, dignissim in, rhoncus at, congue quis, mi. Praesent vel lorem. Suspendisse ut dolor at justo tristique dapibus. Morbi erat mi, rutrum a, aliquam nec <br/>
-        <a href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe to my feed here</a></p>
-    </div>
-    <div id="tab-3" class="tabContent">
-      <h3>Tab 3</h3>
-
-      <p><img src="http://papermashup.com/demos/jquery-gallery/images/t3.png" width="120" height="120" class="thumbs"/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur enim. Nullam id ligula in nisl tincidunt feugiat. Curabitur eu magna porttitor ligula bibendum rhoncus. Etiam dignissim. Duis lobortis porta risus. Quisque velit metus, dignissim in, rhoncus at, congue quis, mi. Praesent vel lorem. Suspendisse ut dolor at justo tristique dapibus. Morbi erat mi, rutrum a, aliquam nec, mattis semper, leo. Maecenas blandit risus vitae quam. Vivamus ut odio.<br/>
-        <a href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe to my feed here</a></p>
-    </div>
-    <div id="tab-4" class="tabContent">
-      <h3>Tab 4</h3>
-
-      <p><img src="http://papermashup.com/demos/jquery-gallery/images/t3.png" width="120" height="120" class="thumbs"/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur enim. Nullam id ligula in nisl tincidunt feugiat. Curabitur eu magna porttitor ligula bibendum rhoncus. Etiam dignissim. Duis lobortis porta risus. Quisque velit metus, dignissim in, rhoncus at, congue quis, mi. Praesent vel lorem. Suspendisse ut dolor at justo tristique dapibus. Morbi erat mi, rutrum a, aliquam nec, mattis semper, leo. Maecenas blandit risus vitae quam. Vivamus ut odio.<br/>
-        <a href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe to my feed here</a></p>
-    </div>
-    <div id="tab-5" class="tabContent">
-      <h3>Tab 5</h3>
-
-      <p><img src="http://papermashup.com/demos/jquery-gallery/images/t3.png" width="120" height="120" class="thumbs"/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur enim. Nullam id ligula in nisl tincidunt feugiat. Curabitur eu magna porttitor ligula bibendum rhoncus. Etiam dignissim. Duis lobortis porta risus. Quisque velit metus, dignissim in, rhoncus at, congue quis, mi. Praesent vel lorem. Suspendisse ut dolor at justo tristique dapibus. Morbi erat mi, rutrum a, aliquam nec, mattis semper, leo. Maecenas blandit risus vitae quam. Vivamus ut odio.<br/>
-        <a href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe to my feed here</a></p>
-    </div>
-
-  </div>
-</div><!-- pageContentInner -->
 <!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].searcharg.focus(); }
+catch(err) {}
+//--><!]]></script>
 </body>
 </html>
