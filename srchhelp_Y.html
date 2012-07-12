@@ -20,18 +20,37 @@ startTimeout(600000, "/");
 <!--{toplogo}-->
 <script type="text/javascript">
 
+//Switching the tabs
+$(window).bind('hashchange', function() {
+		$('#tabs ul li').removeClass('active');
+		$('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
+		$('#tabs .tabContent').hide();
+		$(window.location.hash).show();
+
+});
+
+
 $(document).ready(function(){
+    
+    //Switching the tabs
 	$('#tabs .tabContent').hide();
-	$('#tabs .tabContent:first').show();
-	$('#tabs ul li:first').addClass('active');
-	$('#tabs ul li a').click(function(){ 
+        if (window.location.hash) {
+            $(window.location.hash).show();
+            $('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
+        }else{
+            $('#tabs .tabContent:first').show();
+            $('#tabs ul li:first').addClass('active');
+        }
+        //So switching tabs will work with IE7
+	$('#tabs ul li a').click(function(){
 		$('#tabs ul li').removeClass('active');
 		$(this).parent().addClass('active'); 
 		var currentTab = $(this).attr('href'); 
 		$('#tabs .tabContent').hide();
 		$(currentTab).show();
-		return false;
 	});
+
+    //Switching the menu when the radio button is changed
         $('input.searchtype[value=X]').attr('checked', true);
         $('.innerQuickSearch').hide();
         $('.X .innerQuickSearch').show();
@@ -43,8 +62,18 @@ $(document).ready(function(){
 	$('#limitsLink').click(function(){
              $('#optionalLimits').toggle();
 	});
+        
+    //Remove the colons from advanced search
+    $('#advancedSubmit').click(function () { 
+      var searchTerm = $('.advancedInput').val();
+      if((/\b[atsn]:/).test(searchTerm)) {}else {
+      var newSearchTerm = searchTerm.replace(":", " ");
+      $('.advancedInput').val(newSearchTerm);
+    }
+    });
 });
 </script>
+
 <div class="pageContentInner">
 
 <div id="tabs">
@@ -64,12 +93,14 @@ $(document).ready(function(){
                 <div class="innerQuickSearch">
 
 <!--{msg}-->
+
+<!--{innreach}-->
         
 <!--{advancedsearchformbegin}-->
 
                     <div class="limits">
                     <div class="limitColumn">
-                    <label> <input name="searchtype" class="searchtype" value="X" checked="checked" type="radio"> Keyword </label> 
+                    <label> <input name="searchtype" class="searchtype" value="Y" checked="checked" type="radio"> Keyword </label> 
                     <label> <input name="searchtype" class="searchtype" value="t" type="radio"> Title begins with </label>
                     </div>
                     <div class="limitColumn">
@@ -80,7 +111,7 @@ $(document).ready(function(){
         
                     <div class="formEntryArea">
                     <input type="hidden" name="fieldLimit1" value="" />
-                    <input maxlength="75" size="35" name="searchText1" />
+                    <input class="advancedInput" maxlength="75" size="35" name="searchText1" />
 <!--{scope}-->
                     </div>
                     <input type="hidden" name="startLimit" >
@@ -88,7 +119,7 @@ $(document).ready(function(){
 <!--{availlim}-->
                     </div>
                     <div class="formEntryArea">
-                        <a href="#" id="limitsLink">Refine your keyword search by language, year, and more</a> (+)
+                        <a id="limitsLink">Refine your keyword search by language, year, and more (+)</a>
                     </div>
                     <div class="formButtonArea">
                     <span>
@@ -236,10 +267,173 @@ $(document).ready(function(){
 
     </div><!--tab1-->
     <div id="tab-2" class="tabContent">
+        <h1 class="pageHeader">Advanced Search</h1>
+        
+            <div id="accessibleForm" class="advancedSearch">
 
-      <h3>Tab 2</h3>
-      <p><img src="http://papermashup.com/demos/jquery-gallery/images/t2.png" width="120" height="120" class="thumbs"/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur enim. Nullam id ligula in nisl tincidunt feugiat. Curabitur eu magna porttitor ligula bibendum rhoncus. Etiam dignissim. Duis lobortis porta risus. Quisque velit metus, dignissim in, rhoncus at, congue quis, mi. Praesent vel lorem. Suspendisse ut dolor at justo tristique dapibus. Morbi erat mi, rutrum a, aliquam nec <br/>
-        <a href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe to my feed here</a></p>
+<!--{advancedsearchformbegin}-->
+
+<fieldset>
+<legend>Enter Search Terms</legend>
+<div class="formEntryArea">
+<!--{advancedsearch}-->
+</div>
+<input type="hidden" name="startLimit" >
+<div class="formEntryArea">
+<!--{availlim}-->
+</div>
+<div class="formButtonArea">
+<span>
+<!--{advancedsubmit}-->
+</span>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Add Limits (Optional)</legend>
+
+<div class="formEntryArea" id="form3PartAdvLimitSort">
+<!--{sort}-->
+</div>
+
+<div class="formEntryArea">
+<table border="0">
+<tr>
+<td>
+<label for="searchscope">
+Library
+</label>
+</td>
+<td>
+<!--{scope}-->
+</td>
+</tr>
+</table>
+</div>
+
+<div class="formEntryArea">
+<!--{branch}-->
+</div>
+<div class="formEntryArea">
+<!--{lang}-->
+</div>
+<div class="formEntryArea">
+<!--{DOCDATE}-->
+</div>
+<div class="formEntryArea">
+<!--{publish}-->
+</div>
+
+<div class="formEntryArea">
+<table border="0">
+<tr>
+<td>Conference Proceedings:</td>
+<td>
+<select name="o">
+<option value="">ANY</option>
+<option value="1">Yes</option>
+<option value="0">No</option>
+</select>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="formEntryArea">
+<table border="0">
+<tr>
+<td><label for="n">Online:</label></td>
+<td>
+<select id="n" name="n">
+<option value="">ANY</option>
+<option value="cr">Online Only</option>
+</select>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="formEntryArea">
+<table border="0">
+<tr>
+<td><label for="a">Audio and Video Formats:</label></td>
+<td>
+<select id="a" name="a" size="5" multiple="multiple">
+<option value="">ANY</option>
+<option value=""></option>
+<option value="s*">AUDIO FORMATS</option>
+<option value="s*">All Sound Recording Formats</option>
+<option value="ss">Audio cassettes</option>
+<option value="sd f">CDs</option>
+<option value="sd b">LPs</option>
+<option value="sd c">45 rpm </option>
+<option value="sd d">78 rpm</option>
+<option value="sd z">DVD-audio</option>
+<option value="st">Reel-to-reel</option>
+<option value="se">Cylinder</option>
+<option value="sq">Roll</option>
+<option value="sw">Wire recording</option>
+<option value=""></option>
+<option value="v*">VIDEO FORMATS</option>
+<option value="v*">All Video Recording Formats</option>
+<option value="vd">DVD-video</option>
+<option value="vf">VHS</option>
+<option value="mr">16/35 mm film</option>
+</select>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="formEntryArea">
+<!--{mattype}-->
+</div>
+
+<div class="formButtonArea">
+<span>
+<!--{clearform}-->
+</span>
+</div>
+
+</fieldset>
+<input type="hidden" name="endLimit" >
+    
+<table class="tipsTable">
+<caption>Search Tips</caption>
+<!-- <tr valign="top"><th align="left">Adjacency</th>
+<td>Multiple words are searched together as one phrase.<br>
+<span style="text-decoration:underline">Example</span> : world health organization</td>
+</tr> -->
+<tr><th>Wildcards</th>
+<td>
+Words may be right-hand truncated using an asterisk ('*') in place of other characters. <!-- Use '**' for open-ended truncation of over five characters.--> The '*' wildcard may also be embedded in a search string. You may use '?' to replace a single character anywhere within a word.<br>
+<span style="text-decoration:underline">Examples</span> : environment* polic*, wom?n</td>
+</tr>
+<tr><th>Boolean Operators</th>
+<td>
+Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br>
+<span style="text-decoration:underline">Example</span> : stocks and bonds<br>
+<span style="text-decoration:underline">Example</span> : (alaska or canada) and (adventure and not vacation)</td>
+</tr>
+<tr><th>Field limits</th>
+<td>
+A field limit causes the system to search only the specified field for the specified word(s).</td>
+</tr>
+<tr>
+<th>Grouping</th>
+<td>
+Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
+</td>
+</tr>
+<!-- <tr valign="top"><th align="left">Proximity Operators</th>
+<td>
+Use "near" to specify words close to each other, in any order.<br>
+<span style="text-decoration:underline">Example</span> : california near university</td>
+</tr> -->
+</table>
+
+<!--{advancedsearchformend}-->
+            </div>
     </div>
     <div id="tab-3" class="tabContent">
       <h3>Tab 3</h3>
@@ -275,6 +469,18 @@ $(document).ready(function(){
         <input value="Search" type="submit"> </label></div>
         
         </form>
+        
+                    <div class="searchTips">
+                        <p><strong>Search Tips for Subjects (Library of Congress)</strong></p>
+                        <p>Search Library of Congress Subject Headings for people, topics, or events.</p>
+                        <p><em>Examples:</em></p>
+                        <ul>
+                          <li><em>Sports for women</em></li>
+                          <li><em>Automobiles</em></li>
+                          <li><em>Wilder, Laura Ingalls</em></li>
+                          </ul>
+                        <p>If your search is unsuccessful, try a Keyword search. </p>
+                    </div>
 
     </div>
     <div id="tab-5" class="tabContent">
@@ -294,7 +500,7 @@ $(document).ready(function(){
         <label> <input name="searchtype" class="searchtype" value="c" type="radio"> Call Number (Library of Congress) </label>
         <label> <input name="searchtype" class="searchtype" value="l" type="radio"> Medical Call Number </label>
         <label> <input name="searchtype" class="searchtype" value="f" type="radio"> Dewey/Other Call Number </label>
-        <label> <input name="searchtype" class="searchtype" value="h" type="radio"> Donor/Honoree (MU only) </label>
+        <label> <input name="searchtype" class="searchtype" value="h" type="radio"> Donor/Honoree </label>
         </div>
         </div>
         
@@ -310,6 +516,19 @@ $(document).ready(function(){
         <input value="Search" type="submit"> </label></div>
         
         </form>
+        
+                    <div class="searchTips">
+                        <p><strong>Search Tips for Subjects (Library of Congress)</strong></p>
+                        <p>Search Library of Congress Subject Headings for people, topics, or events.</p>
+                        <p><em>Examples:</em></p>
+                        <ul>
+                          <li><em>Sports for women</em></li>
+                          <li><em>Automobiles</em></li>
+                          <li><em>Wilder, Laura Ingalls</em></li>
+                          </ul>
+                        <p>If your search is unsuccessful, try a Keyword search. </p>
+                    </div>
+    
     </div>
 
   </div>

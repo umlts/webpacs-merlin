@@ -20,6 +20,7 @@ startTimeout(600000, "/");
 <!--{toplogo}-->
 <script type="text/javascript">
 
+//Switching the tabs
 $(window).bind('hashchange', function() {
 		$('#tabs ul li').removeClass('active');
 		$('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
@@ -30,6 +31,8 @@ $(window).bind('hashchange', function() {
 
 
 $(document).ready(function(){
+    
+    //Switching the tabs
 	$('#tabs .tabContent').hide();
         if (window.location.hash) {
             $(window.location.hash).show();
@@ -47,7 +50,7 @@ $(document).ready(function(){
 		$(currentTab).show();
 	});
 
-
+    //Switching the menu when the radio button is changed
         $('input.searchtype[value=X]').attr('checked', true);
         $('.innerQuickSearch').hide();
         $('.X .innerQuickSearch').show();
@@ -59,8 +62,18 @@ $(document).ready(function(){
 	$('#limitsLink').click(function(){
              $('#optionalLimits').toggle();
 	});
+        
+    //Remove the colons from advanced search
+    $('#advancedSubmit').click(function () { 
+      var searchTerm = $('.advancedInput').val();
+      if((/\b[atsn]:/).test(searchTerm)) {}else {
+      var newSearchTerm = searchTerm.replace(":", " ");
+      $('.advancedInput').val(newSearchTerm);
+    }
+    });
 });
 </script>
+
 <div class="pageContentInner">
 
 <div id="tabs">
@@ -87,7 +100,7 @@ $(document).ready(function(){
 
                     <div class="limits">
                     <div class="limitColumn">
-                    <label> <input name="searchtype" class="searchtype" value="X" checked="checked" type="radio"> Keyword </label> 
+                    <label> <input name="searchtype" class="searchtype" value="Y" checked="checked" type="radio"> Keyword </label> 
                     <label> <input name="searchtype" class="searchtype" value="t" type="radio"> Title begins with </label>
                     </div>
                     <div class="limitColumn">
@@ -98,7 +111,7 @@ $(document).ready(function(){
         
                     <div class="formEntryArea">
                     <input type="hidden" name="fieldLimit1" value="" />
-                    <input maxlength="75" size="35" name="searchText1" />
+                    <input class="advancedInput" maxlength="75" size="35" name="searchText1" />
 <!--{scope}-->
                     </div>
                     <input type="hidden" name="startLimit" >

@@ -26,7 +26,18 @@ $(document).ready(function () {
 	//$('#b option:not([value^="z"])').detach(); 
 	//selectAny.prependTo("#b")
 	//Hides the out-of-scope locations
-});
+	
+	//Remove the colon from keyword searches
+	$('input[type="submit"]').click(function () {
+		var searchTerm = $('#searcharg').val();
+		var searchIndex = $('[name="searchtype"]').val();
+		if((/\b[atsn]:/).test(searchTerm)) {}
+		else if (searchIndex != "X") {} else {
+			var newSearchTerm = searchTerm.replace(":", " ");
+			$('#searcharg').val(newSearchTerm);
+		}
+		});
+	});
 </script>
 
 <script type="text/javascript">
