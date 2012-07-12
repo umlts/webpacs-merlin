@@ -1,0 +1,40 @@
+{include file="include/head.html"}
+
+<div class="basicpad">
+    <input type="hidden" name="searcharg" id="searcharg" value="{$searcharg|escape:'html'}">
+    <input type="hidden" name="scope" id="scope" value="{$scope}">
+    
+    {include file="pages/searchbox.html"}
+
+    {if $blanksearch} 
+        <div class="bigerror">
+            Please enter search keywords above.
+        </div>
+    {else}
+        <div id="resultshead">
+            <div>Getting results for <b>{$searcharg|escape:'html'}</b>...</div>
+            <img src="static/spinner.gif" id="searchspinner" alt="spinner" />
+        </div>
+    {/if}
+</div>
+
+    <div id="results">
+    </div>
+
+{if !$blanksearch}
+    <div class="topborder"></div>
+
+    <div class="basicpad">
+        <button class="morebutton" id="more">More...</button>
+
+        <div id="morespinner">
+            <img src="static/spinner.gif">
+        </div>
+
+        <div id="nomore" class="hide smallhead">
+            End of results. 
+        </div>
+    {/if}
+</div>
+
+{include file="include/foot.html"}

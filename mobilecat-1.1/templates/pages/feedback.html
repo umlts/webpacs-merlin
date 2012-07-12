@@ -1,0 +1,62 @@
+{include file="include/head.html"}
+
+<div class="basicpad">
+
+<br>
+
+<p>
+Please use the following form to provide feedback about the
+{$catalogname} Mobile application. You may also email: <a href="mailto:{$feedback_email}">{$feedback_email}</a>
+</p>
+
+<br>
+
+<form action="send_feedback">
+
+    <table>
+
+        <tr>
+
+            <td><b>Email address</b></td>
+            
+            <td>
+                <input type="text" name="email" value="{$saved_email}">
+            </td>
+
+        </tr>
+
+        <tr>
+            <td><b>Device (e.g., iPhone)</b></td>
+
+            <td>
+                <input type="text" name="device">
+            </td>
+
+        </tr>
+
+        <tr>
+            <td><b>Browser (e.g., Safari)</b></td>
+
+            <td>
+                <input type="text" name="browser">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <textarea id="feedback" name="feedback" rows="10"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Send Feedback">
+            </td>
+        </tr>
+
+    </table>
+</form>
+
+
+</div>
+{include file="include/foot.html"}

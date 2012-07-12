@@ -1,0 +1,23 @@
+{* if it's not a text, the title goes at the top; otherwise at the bottom *}
+{if !$is_text}
+{foreach from=$r.info_keys item=k}
+{$r.info[$k]}
+{/foreach}
+
+{/if}
+{foreach from=$r.locations item=loc}
+{foreach from=$loc item=l}
+{$l.location} {$l.call}
+{/foreach}
+{/foreach}
+
+{if $is_text}
+{foreach from=$r.info_keys item=k}
+{$r.info[$k]}
+{/foreach}
+{/if}
+{strip}
+{if !$is_text}
+{$catalogurl}/record={$r.bibid}
+{/if}
+{/strip}

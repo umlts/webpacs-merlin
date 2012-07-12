@@ -1,0 +1,11 @@
+{include file="include/pickhead.html"}
+    <span class="formheight">
+        <form action="{$baseurl}send_email">
+            Email: <input type="text" size="20" name="email" value="{$saved_email}">
+
+            <input type="hidden" name="bibid" value="{$bibid}">
+            <input type="Submit" value="Send">
+
+        </form>
+    </span>
+{include file="include/pickfoot.html"}

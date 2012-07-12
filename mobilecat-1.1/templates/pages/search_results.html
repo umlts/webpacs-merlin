@@ -1,0 +1,42 @@
+{foreach from=$results item=res key=resindex}
+  {if $res}
+    <div class="bres {if $resindex&1}oddres{/if}" id="bres{$res.bibid}">
+      <a class="bhead invis" id="bhead{$res.bibid}" style="font-weight: normal;" 
+        {if $js}
+          href="#"
+        {else}
+          href="{$baseurl}detail?bibid={$res.bibid}{if $scope != NULL}&scope={$scope}{/if}"
+        {/if}
+      >
+
+		  <table>
+ 		    <tr>
+          <td class="cover_image">
+            <img class="cov_im" src="{$res.cover_image}">
+          </td>
+          <td class="wide_cell">
+            <span class="title">{$res.title}</span>
+            {if $res.author}<br /><span class="author_pub">{$res.author}</span>{/if}
+            {if $res.media}<br /><b>{$res.media}</b>{/if}
+            {foreach from=$res.extra item=extra}
+              {$extra}
+            {/foreach} 
+
+            {if $res.location}<br /><span class="location"><em>{$res.location}</em></span>{/if}
+            {if $res.callno}<br /><br /><span style='font-weight: bold;'>{$res.callno}</span>{/if}
+              {if $res.status}  <span class="status">{$res.status}</span>{/if}
+              {if $res.isbn}<span class="isbn hide" id="{$res.isbn}">{$res.isbn}</span>{/if}
+          </td>
+          
+          <td class="morelink">
+            <img src="static/moreinfo.gif" />
+          </td>
+        </tr>
+      </table>
+
+      </a>
+
+    <div class="hide det" id="det{$res.bibid}" style="background-color: white;"></div>
+    </div>
+  {/if}
+{/foreach}

@@ -1,0 +1,43 @@
+{include file="include/head.html"}
+
+
+<div class="basicpad">
+
+    {include file="pages/searchbox.html"}
+
+    {if $blanksearch} 
+        <div class="bigerror">
+            Please enter search keywords above.
+        </div>
+    {else}
+ 
+        <div id="resultshead">
+            {$num} results for <b>{$searcharg|escape:'html'}</b>
+        </div>
+    {/if}
+
+</div>
+
+{if !$blanksearch}
+    {include file="pages/search_results.html"}
+
+    <div class="topborder"></div>
+
+    <div class="nojsformpad">
+        <div class="clear">
+            {if $prev}
+                <a class="button" href="{$baseurl}search_nojs?searcharg={$searcharg|escape:'url'}&url={$prev|escape:'url'}{if $scope}&scope={$scope}{/if}"><span>&lt;&lt;Previous</span></a>
+            {/if}
+
+            {if $next}
+                <a class="button" href="{$baseurl}search_nojs?searcharg={$searcharg|escape:'url'}&url={$next|escape:'url'}{if $scope}&scope={$scope}{/if}"><span>Next&gt;&gt;</span></a>
+            {else}
+                <div class="smallhead">
+                    End of results.
+                </div>
+            {/if}
+        </div>
+    </div>
+{/if}
+
+{include file="include/foot.html"}

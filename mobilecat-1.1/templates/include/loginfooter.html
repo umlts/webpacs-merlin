@@ -1,0 +1,8 @@
+           {if $saved_name}
+               Welcome, {$saved_name} | <a href="{$baseurl}logout_accept">Log Out</a>
+            {else}
+                <a href="{$baseurl}login">Log into your {$catalogname} account</a>
+            {/if}
+            | <a href="{$catalogurl}?forcefull=1">Full {$catalogname}</a> 
+            | <a href="{$baserul}feedback">Feedback</a> 
+

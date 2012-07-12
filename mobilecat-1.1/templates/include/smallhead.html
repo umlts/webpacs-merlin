@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+        <meta name="apple-touch-fullscreen" content="YES"> 
+
+        <link type="text/css" href="static/mobile.css" rel="stylesheet" />
+
+        <link rel="apple-touch-icon" href="static/apple-touch-icon.png" />
+
+        {if $js}
+            <script type="text/javascript" src="static/jquery/jquery.js"></script> 
+            <script type="text/javascript" src="static/global.js"></script>
+            {foreach from=$jsfiles item=jsfile}
+                <script type="text/javascript" src="{$jsfile}"></script>
+            {/foreach}
+        <script type="text/javascript">
+            var BASEURL = "{$baseurl}";
+        </script>
+        {/if}
+
+        <title>{$catalogname}</title>
+    
+    </head>
+
+    <body>

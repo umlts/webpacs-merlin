@@ -1,0 +1,15 @@
+{include file="include/pickhead.html"}
+    <span class="formheight">
+        <form action="{$baseurl}login_accept">
+            <input type="hidden" name="redirect" value="{$redirect}">
+            <input type="hidden" name="small" value="1">
+
+            Name <input type="text" size="6" name="name" value="{$saved_name}">
+            Barcode <input type="text" size="14" name="code" value="{$saved_code}">
+
+            
+            <input type="submit" value="Login">
+
+        </form>
+    </span>
+{include file="include/pickfoot.html"}
