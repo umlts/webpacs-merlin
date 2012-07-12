@@ -1,0 +1,34 @@
+{include file="include/head.html"}
+
+<div class="basicpad">
+
+<p>
+
+    <a href="?delta={$delta-1}">&lt;&lt; Previous</a>
+
+    {$date}
+    
+    <a href="?delta={$delta+1}">Next &gt;&gt;</a>
+    
+</p>
+
+
+<table>
+{assign var=lastcol value=""}
+{foreach from=$events item=college}
+    {foreach from=$college item=event}
+        {if $lastcol != $event.college}
+                <tr>
+                    <td colspan=2 align=left> <b>{$event.college}</b> </td>
+                </tr>
+            {assign var=lastcol value=$event.college}
+        {/if}
+        <tr>
+            <td>{$event.name}</td>
+            <td>{$event.sched}</td>
+        </tr>
+    {/foreach}
+{/foreach}
+</table>
+
+{include file="include/foot.html"}

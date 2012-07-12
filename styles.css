@@ -137,7 +137,7 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 .additionalCopies { margin: 20px 6px; }
 
-.X a:hover {text-decoration:none; }
+.Y a:hover {text-decoration:none; }
 
 .quickSearch .formEntryArea, .advancedSearch .formEntryArea {
     margin:1em 0 0 15px;
@@ -1090,6 +1090,8 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 /* end staff */
 
 .testLinkedDocs img { border:0; }
+
+.tipLeft { width: 10em; display:inline-block; }
 
 .tipsTable caption { margin-top:10px; }
 

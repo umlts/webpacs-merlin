@@ -1,0 +1,3 @@
+{if (!$js) and ($search_arg)}
+&nbsp;|&nbsp;<a href="{$baseurl}search_nojs?searcharg={$search_arg}{if $last_results}&url={$last_results}{/if}{if $scope}&scope={$scope}{/if}">Back to search</a>
+{/if}

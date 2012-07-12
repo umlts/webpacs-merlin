@@ -1,0 +1,28 @@
+{include file="include/head.html"}
+
+<div class="basicpad">
+
+{if $cookies_disabled}
+        <p class="bigerror">Please enable cookies to login.</p>
+{/if}
+
+
+    {if $error} 
+        <div class="invalid-login">
+            Invalid login, try again.
+        </div>
+    {/if}
+    <form action="{$baseurl}login_accept">
+        <input type="hidden" name="redirect" value="{$redirect}">
+
+        <b>Name (e.g., Jane Smith)</b><br>
+        <input class="login" type="text" name="name" value="{$saved_name}"><br><br>
+
+        <b>Barcode (14 digits)</b><br>
+        <input class="login" type="text" name="code" value="{$saved_code}"><br><br>
+
+        <input class="gobutton" type="submit" value="Login">
+    </form>
+</div>
+
+{include file="include/foot.html"}

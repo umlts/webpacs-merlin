@@ -1,0 +1,20 @@
+    <span class="basicpad">
+
+        <ul class="footermenu bgcolor2">
+            <li> <a href="{$baseurl}my_account">My account</a></li>
+            <li> <a href="{$baseurl}list_saved">Saved items</a></li>
+   
+            {if !$is_index}
+                <li> <a href="{$baseurl}">New search</a></li>
+            {/if}
+
+            <li> <a href="{$baseurl}contact">Hours &amp; contact info</a>
+        
+        </ul>
+        <div id="loginfooter" class="smallhead">
+            {include file="include/loginfooter.html"}
+        </div>
+
+        {include file="include/statscollector.html"}
+    </body>
+</html>

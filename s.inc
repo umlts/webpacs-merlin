@@ -4,4 +4,4 @@
         <ul>
           <li><em>journal of management inquiry</em></li>
           </ul>
-        <p>If your search is unsuccessful, try a keyword search. </p>
+        <p>If your search is unsuccessful, try a Keyword search. </p>

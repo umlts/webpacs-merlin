@@ -1,0 +1,102 @@
+<div class="basicpad bibdata">
+        {foreach from=$r.locations key=name item=locs}
+            <b>{$name}</b><br>
+            {foreach from=$locs item=loc}
+                <span class="callno">{$loc.call} </span> - 
+               {if $loc.available} 
+                   <span class="avail">{$loc.status}</span>
+               {else}
+                   <span class="noavail">{$loc.status}</span>
+               {/if}
+               <br>
+            {/foreach}
+        {/foreach}
+
+        {foreach from=$r.orders item=order}
+            {$order}<br>
+        {/foreach}
+
+        {if $r.info_all}
+            {$r.info_all}<br>
+        {/if}
+            
+        {foreach from=$r.links item=link}
+            <a class="wide" href="{$link[0]}" target="_blank">{$link[1]}</a>
+        {/foreach}
+
+    <a href="{$catalogurl}/record={$r.bibid}" target="_blank">Full {$catalogname} record</a>{include file="include/backlink_search.html"}
+
+    <div class="clear">
+        <a class="button" 
+            {if $js}
+                onclick="return load_to_iframe('{$baseurl}email_form?bibid={$r.bibid}', '{$r.bibid}');" 
+            {/if}
+            
+            {if $js}
+                href="#"
+            {else}
+                href="{$baseurl}email_form?bibid={$r.bibid}"
+            {/if}
+            ><span>Email</span></a>
+
+        <a class="button"
+            {if $js}
+                onclick="return load_to_iframe('{$baseurl}text_form?bibid={$r.bibid}', '{$r.bibid}');" 
+            {/if}
+            
+            {if $js}
+                href="#"
+            {else}
+                href="{$baseurl}text_form?bibid={$r.bibid}"
+            {/if}
+            ><span>Text</span></a>
+
+        {if $r.request_url}
+         <a class="button"
+            {if $js}
+                onclick="return load_to_iframe('{$baseurl}request_form?bibid={$r.bibid}&url={$r.request_url|escape:'url'}', '{$r.bibid}');" 
+            {/if}
+          
+           
+            {if $js}
+                href="#"
+            {else}
+                href="{$baseurl}request_form?bibid={$r.bibid}&url={$r.request_url|escape:'url'}"
+            {/if} 
+            ><span>Request</span></a>
+        {/if}
+
+        {if !$r.is_saved}
+            <a  class="button" 
+                {if $js}
+                    onclick="return save_list('{$r.bibid}');" 
+                {/if}
+
+                {if $js}
+                    href="#"
+                {else}
+                    href="{$baseurl}save?bibid={$r.bibid}"
+                {/if}
+                ><span>Save</span></a>
+        {else}
+            <a class="button"
+                {if $js}
+                    onclick="return delete_list('{$r.bibid}');"
+                {/if}
+                
+                {if $js} 
+                    href="#"
+                {else}
+                    href="{$baseurl}delete?bibid={$r.bibid}"
+                {/if}
+                ><span>Unsave</span></a>
+        {/if}
+    </div> {* clear *}
+
+
+    {if $js}
+        <iframe class="hide" id="frame{$r.bibid}"></iframe>
+    {/if}
+
+</div> {* bib data *}
+

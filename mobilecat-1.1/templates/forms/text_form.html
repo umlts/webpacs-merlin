@@ -1,0 +1,21 @@
+{include file="include/pickhead.html"}
+
+    <span class="formheight">
+        <form action="{$baseurl}send_email">
+            Cell #:
+            <input type="text" size="13" name="text" value="{$saved_text}">
+            <select name="domain">
+            {foreach from=$mobile_domains key=name item=domain}
+                {if $domain == $saved_domain}
+                    <option value="{$domain}" selected>{$name}</option>
+                {else}
+                    <option value="{$domain}">{$name}</option>
+                {/if}
+            {/foreach}
+
+            <input type="hidden" name="bibid" value="{$bibid}">
+            <input type="submit" value="Send">
+        </form>
+    </span>
+
+{include file="include/pickfoot.html"}

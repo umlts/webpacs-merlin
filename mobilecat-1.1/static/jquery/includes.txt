@@ -1,0 +1,7 @@
+# Using JQuery only
+<script type="text/javascript" src="http://trilogy.brynmawr.edu/jquery/jquery.js"></script>
+
+# Using JQuery UI
+<link type="text/css" href="http://trilogy.brynmawr.edu/jquery/theme/ui.all.css" rel="stylesheet" /> 
+<script type="text/javascript" src="http://trilogy.brynmawr.edu/jquery/jquery.js"></script>
+<script type="text/javascript" src="http://trilogy.brynmawr.edu/jquery/jquery-ui.js"></script>

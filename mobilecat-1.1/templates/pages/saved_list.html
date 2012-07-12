@@ -1,0 +1,65 @@
+{include file="include/head.html"}
+
+{if $cookies_disabled}                                                                
+    <p class="bigerror">Please enable cookies to use saved items.</p>
+{/if} 
+
+<br>
+
+{if !empty($records)}
+<div class="smallhead basicpad">Your saved items</div>
+    {foreach from=$records item=r}
+        <div class="bres">
+            <a class="bhead" 
+                {if $js}
+                    onclick="return show_details(this);"
+                {/if}
+
+                {if $js}
+                    href="#"
+                {else}
+                    href="{$baseurl}detail?bibid={$r.bibid}"
+                {/if}
+                    >
+                {include file="pages/detail_head.html"}
+           </a>
+            
+            <div class="hide det">
+                {include file="pages/detail.html"}
+            </div>
+        </div>
+    {/foreach}
+
+<div class="topborder"></div>
+
+<div class="basicpad">
+This list of saved items is associated with a cookie on this mobile device. It is limited to a maximum of 15 items. 
+
+    <div class="clear">
+        <a class="button" 
+
+            {if $js}
+                onclick="return load_to_iframe('{$baseurl}delete?bibid=all', 'clear');"
+            {/if}
+
+            {if !$js}
+                href="{$baseurl}delete?bibid=all&redirect=1"
+            {else} 
+                href="#"
+            {/if}
+
+            ><span>Clear Saved List</span></a>
+    </div>
+
+{if $js}
+    <iframe class="hide" id="frameclear"></iframe>
+{/if}
+</div>
+
+
+{else}
+
+    <div class="smallhead basicpad">No saved items</div>
+{/if}
+
+{include file="include/foot.html"}

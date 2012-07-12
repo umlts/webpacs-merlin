@@ -1,0 +1,375 @@
+body,td,p {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    border: 0px;
+}
+
+.bres {
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #000;
+}
+
+.oddres {
+}
+
+td.wide_cell {
+ width: 100%;
+}
+
+td.morelink {
+   vertical-align: bottom; 
+   padding-bottom: .5em;
+}
+
+.searchbox {
+    margin-top: 5px;
+    width: 98%;
+    font-size: 30px;
+}
+
+.searchboxgray {
+    color: #bbb;
+}
+
+.scopedrop {
+    margin-top: 5px; 
+    width: 98%; 
+    font-size: 20px; 
+    padding-left: 3px;
+}
+    
+input, select {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+input.login {
+    font-size: 30px;
+    width: 98%;
+}
+
+.title {
+    font-weight: bold;
+    color: #000;
+}
+
+.attn{
+    color: red;
+}
+
+.gobutton {
+    font-size: 30px;
+    width: 98%;
+    margin-top: 5px; 
+}
+
+.morebutton {
+    margin-top: 10px;
+    font-size: 32px;
+    height: 40px;
+    width: 100%;
+}
+
+.bigtitle1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #e57246;
+}
+
+.bigtitle2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #36647b;
+}
+
+.smalltitle {
+    font-size: 20px;
+    font-weight: normal;
+    color: #ba4a49;
+}
+
+a {
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #e57246;
+}
+
+a.invis {
+    color: inherit;
+    text-decoration: inherit;
+    background-color: inherit;
+}
+
+#morespinner {
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+    height: 40px;
+}
+
+.basicpad {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.bigcenterpad {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
+#feedback {
+    width: 100%;
+}
+
+#resultshead {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#searchspinner {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.smallhead {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.smallhead a {
+    font-size: 16px;
+}
+
+.bhead {
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+
+}
+
+.hide {
+    display: none;
+}
+
+table.detailinfo {
+    width: 100%;
+    border-spacing: 0px;
+}
+
+table.detailinfo tr {
+    padding: 0px;
+}
+
+table.detailinfo td {
+    height: 35px;
+    display: block;
+    /*background-color: #eee; */
+    border-bottom: 2px solid #fff;
+}
+
+table.detailinfo a {
+    text-decoration: none;
+    display: block;
+    color: #e57246;
+}
+
+table.detailinfo form {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+table.detailrow {
+    width: 100%;
+    border-spacing: 0px;
+}
+
+table.detailrow tr {
+    padding: 0px;
+    border-spacing: 0px;
+}
+
+table.detailrow td {
+    border-spacing: 0px;
+    border-bottom: none;
+}
+
+
+ul.footermenu {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+ul.footermenu li {
+    padding-left: 5px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    margin-top: 3px;
+}
+
+ul.footermenu a {
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    color: #36647b;
+    background-color: #eee;
+}
+
+.callno {
+    padding-left: 15px;
+}
+
+.avail {
+        color: green;
+}
+
+.noavail {
+        color: red;
+}
+
+.invalid-login {
+    border: 1px solid red;
+    padding: 5px;
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.det {
+    min-height: 100px;
+}
+
+.cover_image {
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+img.cov_im {
+    max-height: 100px; 
+    max-width: 75px; 
+}
+
+.topborder {
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+a img {
+    border: none;
+}
+
+a.biglink {
+    background-color: #eee;
+    border: 1px solid black;
+    padding: 10px;
+    line-height: 40px;
+}
+
+iframe {
+    margin-top: 10px;
+    border: 0px solid #fff;
+    width: 100%;
+    height: 40px; 
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin: 1em;
+}
+
+.bigerror {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div.menubar {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* From http://www.oscaralexander.com/tutorials/how-to-make-sexy-buttons-with-css.html */ 
+.clear { /* generic container (i.e. div) for floating buttons */
+    overflow: hidden;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a.button {
+    background: transparent url('bg_button_a.gif') no-repeat scroll top right;
+    color: #000;
+    display: block;
+    float: left;
+    font: normal 12px helvetica, arial, sans-serif;
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 18px; /* sliding doors padding */
+    text-decoration: none;
+}
+
+a.button span {
+    background: transparent url('bg_button_span.gif') no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 5px 0 5px 18px;
+}
+
+a.wide {
+    display: block;
+}
+
+.bibdata {
+    line-height: 200%;
+}
+
+.nojsformpad {
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+table.hours th {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+table.hours td {
+    vertical-align: top;
+}
+
+table.hours tr {
+    line-height: 150%;
+}
+
+ul.contact {
+    margin-top: 5px;
+}
+
+ul.contact li {
+    line-height: 150%;
+}

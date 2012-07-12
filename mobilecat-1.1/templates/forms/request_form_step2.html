@@ -1,0 +1,23 @@
+{include file="include/pickhead.html"}
+
+    <span class="formheight">
+        <form action="{$baseurl}request_submit_accept" method="post">
+
+            <select name="radio">
+                {foreach from=$locs item=l}
+                    <option value="{$l.itemid}">{$l.location} {$l.call} {$l.status}</option>
+                {/foreach}
+            </select>
+
+            <input type="hidden" name="request_url" value="{$url|escape:'html'}">
+            <input type="hidden" name="bibid" value="{$bibid}"> 
+            
+            {foreach from=$hidden key=k item=v}
+                <input type="hidden" name="{$k}" value="{$v}">
+            {/foreach}
+
+            <input type=submit value="request">
+
+        </form>
+    </span>
+{include file="include/pickfoot.html"}

@@ -1,0 +1,24 @@
+    {if $js}
+        <form id="searchform" action="search">
+    {else}
+        <form id="searchform" action="search_nojs">
+    {/if}
+            <input type="text" name="searcharg" id="searchbox" class="searchbox" value="{$searcharg|escape:'html'}">
+            <br />
+            {if $scoping}
+            <select name="scope" id="scope" class="scopedrop">
+            {foreach from=$scopes item=scope_option}
+
+            {if $scope}
+            <option value="{$scope_option.value}" {if $scope_option.value == $scope} selected="selected"{/if}>{$scope_option.name}</option>
+            {else}
+            <option value="{$scope_option.value}" {if $scope_option.value == $def_scope} selected="selected"{/if}>{$scope_option.name}</option>
+            {/if}
+            {/foreach}
+            </select>
+            {/if}
+            <br>
+            <input type="submit" value="Search" class="gobutton">
+            <br>
+
+        </form>

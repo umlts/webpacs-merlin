@@ -5,3 +5,9 @@
           <li><em>Intruder in the Dust</em></li>
           <li><em>Adventures of Huckleberry Finn</em></li>
           </ul>
+        <ul>
+          <li><div class="tipLeft">science</div>Finds titles that begin with the word "science"</li>
+          <li><div class="tipLeft">science|</div>Add a | (bar symbol) to find an exact match</li>
+        </ul>
+          
+          <p>If your search is unsuccessful, try a Keyword search.</p>

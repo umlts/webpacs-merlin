@@ -1,0 +1,4 @@
+# This allows us to reference .php files without having .php in the URL
+RewriteEngine on
+RewriteRule ^$ index.php [L]
+RewriteRule ^([^\/\.]*)$ $1.php [L]
