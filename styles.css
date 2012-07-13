@@ -143,8 +143,9 @@ a:hover  { color: #6E0000; text-decoration:underline; }
     margin:1em 0 0 15px;
 }
 
-.quickSearch .formEntryArea td:first-child, .advancedSearch .formEntryArea td:first-child, #form3PartAdvLimitSort label {
+.quickSearch .formEntryArea td:first-child, .advancedSearch .formEntryArea td:first-child, #form3PartAdvLimitSort label, #authorTitle label {
     width:15em;
+    float:left;
 }
 
 .quickSearch fieldset {
@@ -185,6 +186,10 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 #asrs input {
     display:block;
     margin:.5em 0 1.5em;
+}
+
+#authorTitle .formEntryArea {
+    margin-top:.5em;
 }
 
 .availLimMessage { font-style:normal; }
