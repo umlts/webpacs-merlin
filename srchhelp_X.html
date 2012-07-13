@@ -436,10 +436,52 @@ Use "near" to specify words close to each other, in any order.<br>
             </div>
     </div>
     <div id="tab-3" class="tabContent">
-      <h3>Tab 3</h3>
 
-      <p><img src="http://papermashup.com/demos/jquery-gallery/images/t3.png" width="120" height="120" class="thumbs"/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur enim. Nullam id ligula in nisl tincidunt feugiat. Curabitur eu magna porttitor ligula bibendum rhoncus. Etiam dignissim. Duis lobortis porta risus. Quisque velit metus, dignissim in, rhoncus at, congue quis, mi. Praesent vel lorem. Suspendisse ut dolor at justo tristique dapibus. Morbi erat mi, rutrum a, aliquam nec, mattis semper, leo. Maecenas blandit risus vitae quam. Vivamus ut odio.<br/>
-        <a href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe to my feed here</a></p>
+            <h1 class="pageHeader">Author & Title</h1>
+
+            <form name="frmAuthorTitle" method="get" action="/search/q" id="authorTitle">
+
+            <!-- Optional legend:
+            <legend>Type the author and title you want to find, then press the Enter key or click Submit.</legend>
+            -->
+            <div class="formEntryArea">
+            <span class="formLabel">
+            <label for="author">Author:</label>
+            </span>
+            <input name="author" size="48">
+            </div>
+            <div class="formEntryArea">
+            <span class="formLabel">
+            <label for="title">Title:</label>
+            </span>
+            <input name="title" size="48">
+            </div>
+            
+            <div class="formButtonArea">
+            <input type="submit" value="Search">
+            </div>
+
+            </form>
+
+            
+            <div class="searchTips">
+            <p><strong>Search Tips for Author AND title searches</strong></p>
+              <p>Type the LAST NAME first for personal names. Type as much of the <strong>EXACT NAME</strong> of a corporate body or conference as you wish (start at the beginning). </p>
+              <p><em>Examples:</em></p>
+              <ul>
+                <li><em>Powell, Lawrence Clark</em></li>
+                <li><em>Amnesty International</em></li>
+              </ul>
+              <p>Words in Title: Type keywords from the title </p>
+              <p><em> Example:</em></p>
+              <ul>
+                <li>books writers essays</li>
+              </ul>
+          
+            </div>
+
+            
+
     </div>
     <div id="tab-4" class="tabContent">
         
@@ -518,15 +560,12 @@ Use "near" to specify words close to each other, in any order.<br>
         </form>
         
                     <div class="searchTips">
-                        <p><strong>Search Tips for Subjects (Library of Congress)</strong></p>
-                        <p>Search Library of Congress Subject Headings for people, topics, or events.</p>
+                        <p><strong>Search Tips for ISBN, ISSN, Technical Report numbers and other standard numbers</strong></p>
+                        <p>Type in the number starting at the beginning of the number.</p>
                         <p><em>Examples:</em></p>
                         <ul>
-                          <li><em>Sports for women</em></li>
-                          <li><em>Automobiles</em></li>
-                          <li><em>Wilder, Laura Ingalls</em></li>
+                          <li><em>0307337332</em></li>
                           </ul>
-                        <p>If your search is unsuccessful, try a Keyword search. </p>
                     </div>
     
     </div>
