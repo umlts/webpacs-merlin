@@ -269,6 +269,8 @@ $(document).ready(function(){
     <div id="tab-2" class="tabContent">
         <h1 class="pageHeader">Advanced Search</h1>
         
+<p>Please fill in the form, select limits, click Submit (or choose a <a href="/search/X#tab-1">Simple Keyword Search</a>).</p>
+        
             <div id="accessibleForm" class="advancedSearch">
 
 <!--{advancedsearchformbegin}-->
@@ -291,6 +293,8 @@ $(document).ready(function(){
 
 <fieldset>
 <legend>Add Limits (Optional)</legend>
+
+<p>In each box hold down the CTRL or Apple key to select more than one.</p>
 
 <div class="formEntryArea" id="form3PartAdvLimitSort">
 <!--{sort}-->
@@ -396,7 +400,18 @@ Library
 </div>
 
 </fieldset>
+          
 <input type="hidden" name="endLimit" >
+    
+<div class="searchTips">
+
+          <p><strong>Search Tips for Advanced Searches</strong></p>
+        <p>Advanced searches are keyword searches which can be limited to specific fields: Titles, Authors, Subjects, Tables of Contents, and Other fields. </p>
+        <p>Truncation: educat* finds educate, educated, education, etc.</p>
+        <p>Phrase search: "physical therapy"</p>
+        <a id="moreLink"><p>More Search Tips</p></a>
+        
+</div>
     
 <table class="tipsTable">
 <caption>Search Tips</caption>
