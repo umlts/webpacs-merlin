@@ -103,7 +103,7 @@ strong .button { display:block; font-weight:normal; margin-top:15px; }
 
 table { border-collapse:collapse; }
 
-td { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-style: normal; font-weight : normal; }
+td, #resourceTitle { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-style: normal; font-weight : normal; }
 
 th { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; }
 
@@ -232,7 +232,7 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 .bibDisplayItemsHeader h2, .resourceDisplayLicenseHeader h2 { color:#F7960C; font-size:1.2em; margin:0; }
 
-.bibDisplayItemsMain, .resourceLicenseArea { float:right; width:80%; }
+.bibDisplayItemsMain { float:right; width:80%; }
 
 .bibDisplayJacket  { float:left; margin:0 0 1em 20px; display:inline; width:150px; text-align:center; }
 
@@ -251,8 +251,6 @@ h1.bibDisplayTitle { display:inline; font-size:1em; }
 .bibInfoData { vertical-align:top; }
 
 .bibInfoLabel, .resourceInfoLabel { color:#767C70; padding-right:.7em; text-align:right; vertical-align:top; font-weight:bold; font-style:normal; }
-
-.resourceInfoLabel  { width:15%; }
 
 table.bibItems { clear:both; }
 
@@ -958,6 +956,10 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 #bibDisplayBody .rateData a:link, #bibDisplayBody .rateData a:visited { padding:0; }
 
+.resourceLicence { margin-top:2em; }
+
+ .resourceLicenseArea  { float:left; margin-left:5%; width:80%; }
+
 .relSearchLink img { }
 
 .relSearch { padding:0 10%; text-align:left; font-size:.83333em; }
@@ -1006,6 +1008,14 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 .resourceDisplayBibs { margin-bottom:20px; }
 
+.resourceInfoData b { font-size:1.1em; }
+
+.resourceInfoData p,  .resourceLicenseEntry p { margin-left:0; }
+
+.resourceInfoLabel  { width:10%; padding-right:1.5em; }
+
+.resourceLicenseHeader, .resourceLicenseEntry { padding:.5em 0; vertical-align:top; }
+
 .pageContent > a > #resourcelink { float:right; margin-right:10px; }
 
 .recordPager { float:right; }
@@ -1015,6 +1025,8 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 .resourcePager { width:10em; margin-left:auto; }
 
 table.resourceResource { margin:15px; width:95%; }
+
+#resourceTitle { margin-bottom:1em; text-align:center; font-size:1.1em; }
 
 table.reserveBibs { margin:25px 0 20px 15%; width:65%; }
 

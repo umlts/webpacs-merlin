@@ -211,12 +211,12 @@ TABLEPARAM_BIB_TOC=border="0" cellspacing="0"
 # Electronic Resource Management
 BIB_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx
 #BIB_LICENSE_FIELDS_BRIEF=
-BIB_RESOURCE_CAPTION=<strong>This title is available electronically via:</strong>
+BIB_RESOURCE_CAPTION=<strong>UMKC users can link to this resource via:</strong>
 BIB_RESOURCE_FIELDS=:VeT|:VeE|:Vek
 BIB_RESOURCE_FIELDS_BRIEF=:VcY|:Vch|:VeE
 BIB_RESOURCE_NUM_BRIEF=A
 ICON_BIB_RESOURCE_DETAILS=<span class="button"><span class=buttonText">Full Details</span></span>
-ICON_RESOURCE_RECORD=<span class="button"><span class=buttonText">View Resource Record</span></span>
+ICON_RESOURCE_RECORD=<span class="button"><span class=buttonText">About Resource</span></span>
 #RESOURCE_ADVISORY=k
 RESOURCE_HOLDINGS_FIELDS=Title:Vbt|Lib Has:Vch|Connect to Full Text:VcY
 RESOURCE_HOLDINGS_MAX=10
