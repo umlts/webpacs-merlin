@@ -95,6 +95,13 @@ strong .button { display:block; font-weight:normal; margin-top:15px; }
 
 .pageContent p { margin-left:20px; }
 
+.pageContentColumn {
+float:right;
+margin-left:1%;
+padding:1%;
+width:71%;
+}
+
 .pageContentInner { padding-bottom:20px; }
 
 .pageContentInner p { margin-left:0px; }
@@ -1042,6 +1049,12 @@ table.reserveBibs { margin:25px 0 20px 15%; width:65%; }
 
 #bibDisplayBody .reviewLinks a:link, #bibDisplayBody .reviewLinks a:active, #bibDisplayBody .reviewLinks a:visited  { color:#369699; }
 
+.rightColumn {
+float:right;
+margin:2% 1.75%;
+width:20.25%;
+}
+
 .rssArea div, .rssArea span { padding:0; }
 
 .rssArea { border-top:8px solid #E8F2F9; margin-top:1em; }
@@ -1070,6 +1083,41 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 #searchNavMenu { margin:0; text-align:right; }
 
 .searchNavBut { vertical-align:bottom; margin:3px 10px 3px 5px; }
+
+#searchOptions {
+    border:1px solid #C0C0C0;
+    padding:0.5em;
+}
+
+#searchOptions h1 {
+border-bottom:1px dashed #5E5D5D;
+color:#5E5D5D;
+font-size:small;
+font-weight:bold;
+letter-spacing:1px;
+margin:5px 0 0;
+padding:2px;
+}
+
+#searchOptions ul {
+font-size:15px;
+margin:0 20px;
+padding:0;
+}
+
+#searchOptions ul li {
+list-style-type:none;
+padding:4px 0;
+text-indent:-14px;
+}
+
+#searchOptions ul li a {
+color:#444444;
+margin:0 0 0 3px;
+padding:0;
+text-decoration:none;
+cursor:pointer;
+}
 
 .searchTips hr {
     width:45%;
