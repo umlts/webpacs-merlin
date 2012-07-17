@@ -6,12 +6,13 @@
 <script type="text/javascript" src="/screens/jquery.cookie.js"></script>
 <script type="text/javascript" src="/screens/domainredirect.js"></script>
 <script type="text/javascript" src="/screens/mobileredirect.js"></script>
-<!--<script src="/screens/menu-collapsed.js" type="text/javascript"></script>-->
+<script src="/screens/menu-collapsed.js" type="text/javascript"></script>
 <script type="text/javascript" src='/screens/sms.js'> </script>
 <script src="/screens/jquery.corner.js"></script>
 <script>
 $('.tabContent').corner('bottom tr');
 $('.tab').corner('top');
+$('#searchOptions').corner();
 </script>
 <script type="text/javascript">
 $(document).ready(function () {
@@ -68,6 +69,28 @@ if (document.body){document.body.className = "bodybg";}
 </div><!--topLogo-->
 
 <div class="clear"></div>
-<div class="pageContent"><!-- content container -->
+<div class="rightColumn">
+<div id="searchOptions">
+
+<ul>
+	<li><a href="/search">New Search</a></li>
+	<li><a href="/patroninfo">My Library Account</a></li>
+	<li><a href="/search/b">Course Reserves</a></li>
+	<li>Articles & Journals</li>
+	<li><a>Merlin (UM) Libraries</a>
+		<ul>
+			<li><a href="/search~S5/X">Missouri S&T</a></li>
+			<li><a href="/search~S1/X">MU</a></li>
+			<li><a href="/search~S3/X">UMKC</a></li>
+			<li><a href="/search~S6/X">UMSL</a></li>
+			<li><a href="/search~S7/X">State Historical Society</a></li>
+		</ul>
+	</li>
+	<li><a href="/help">Help</a></li>
+</ul>
+
+</div><!--searchOptions-->
+</div><!--rightColumn-->
+<div class="pageContentColumn"><!-- content container -->
 <a name="content" id="content"></a>
 <!--end toplogo.html-->
