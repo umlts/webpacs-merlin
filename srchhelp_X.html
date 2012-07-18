@@ -22,18 +22,22 @@ startTimeout(600000, "/");
 
 //Switching the tabs
 $(window).bind('hashchange', function() {
+                //To make sure the first radio is selected, showing the correct search examples
                 var tabID = window.location.hash
                 var firstRadio = $(tabID + ' .limits label:first input')
                 $(firstRadio).click();
                 $(".searchTips").load("/screens/" + firstRadio.val() + ".inc");
+                
+                //To make the Advanced search page happy
+                
+                $('.innerQuickSearch').hide();
+                $('.X .innerQuickSearch').show();
+                
+                //To change tabs
 		$('#tabs ul li').removeClass('active');
 		$('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
 		$('#tabs .tabContent').hide();
 		$(window.location.hash).show();
-               
-
-                //alert($(window.location.hash + '.limits').html())
-
 });
 
 
@@ -41,7 +45,7 @@ $(document).ready(function(){
     
     //Switching the tabs
 	$('#tabs .tabContent').hide();
-        if (window.location.hash) {
+        if (window.location.hash.length > 0) {
             $(window.location.hash).show();
             $('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
         }else{
