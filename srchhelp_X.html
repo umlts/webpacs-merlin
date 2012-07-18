@@ -22,10 +22,16 @@ startTimeout(600000, "/");
 
 //Switching the tabs
 $(window).bind('hashchange', function() {
+                var tabID = window.location.hash
+                $(tabID + ' .limits label:first input').click();
+                //$(tabID + ' .limits label:not(:first-child) input').attr('checked', false);
 		$('#tabs ul li').removeClass('active');
 		$('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
 		$('#tabs .tabContent').hide();
 		$(window.location.hash).show();
+               
+
+                //alert($(window.location.hash + '.limits').html())
 
 });
 
