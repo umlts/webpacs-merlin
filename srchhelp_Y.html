@@ -17,39 +17,12 @@ startTimeout(600000, "/");
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
 </head>
 <body id="frontPage" onload="if (location.search.indexOf('SUBKEY') != -1 || location.search.indexOf('SEARCH') != -1 || location.search.indexOf('searcharg=') != -1 ) modifySearch(document.location.search); init_progsearch(); if (document.search) document.search.searchText1.focus();">
-<div id="frontPage">
 <!--{toplogo}-->
 <script type="text/javascript">
 
-//Switching the tabs
-$(window).bind('hashchange', function() {
-		$('#tabs ul li').removeClass('active');
-		$('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
-		$('#tabs .tabContent').hide();
-		$(window.location.hash).show();
-
-});
 
 
 $(document).ready(function(){
-    
-    //Switching the tabs
-	$('#tabs .tabContent').hide();
-        if (window.location.hash) {
-            $(window.location.hash).show();
-            $('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
-        }else{
-            $('#tabs .tabContent:first').show();
-            $('#tabs ul li:first').addClass('active');
-        }
-        //So switching tabs will work with IE7
-	$('#tabs ul li a').click(function(){
-		$('#tabs ul li').removeClass('active');
-		$(this).parent().addClass('active'); 
-		var currentTab = $(this).attr('href'); 
-		$('#tabs .tabContent').hide();
-		$(currentTab).show();
-	});
 
     //Switching the menu when the radio button is changed
         $('input.searchtype[value=X]').attr('checked', true);
@@ -79,198 +52,15 @@ $(document).ready(function(){
 
 <div id="tabs">
     <ul id="tabRow">
-      <li class="tab"><a href="#tab-1">Quick Search</a></li>
-      <li class="tab"><a href="#tab-2">Advanced</a></li>
-      <li class="tab"><a href="#tab-3">Author & Title</a></li>
-      <li class="tab"><a href="#tab-4">Subjects</a></li>
-      <li class="tab"><a href="#tab-5">Numbers/Other</a></li>
+      <li class="tab"><a href="/search/X#tab-1">Quick Search</a></li>
+      <li class="tab"><a>Advanced</a></li>
+      <li class="tab"><a href="/search/X#tab-3">Author & Title</a></li>
+      <li class="tab"><a href="/search/X#tab-4">Subjects</a></li>
+      <li class="tab"><a href="/search/X#tab-5">Numbers/Other</a></li>
     </ul>
     
-   <div id="tab-1" class="tabContent">
-        <h1 class="pageHeader">Quick Search</h1>
-        
-            <div id="accessibleForm" class="quickSearch X">
-                
-                <div class="innerQuickSearch">
-
-<!--{msg}-->
-
-<!--{innreach}-->
-        
-<!--{advancedsearchformbegin}-->
-
-                    <div class="limits">
-                    <div class="limitColumn">
-                    <label> <input name="searchtype" class="searchtype" value="Y" checked="checked" type="radio"> Keyword </label> 
-                    <label> <input name="searchtype" class="searchtype" value="t" type="radio"> Title begins with </label>
-                    </div>
-                    <div class="limitColumn">
-                    <label> <input name="searchtype" class="searchtype" value="s" type="radio"> Journal & Newspapers title begins with </label>
-                    <label> <input name="searchtype" class="searchtype" value="a" type="radio"> Author (last name first) </label>
-                    </div>
-                    </div>
-        
-                    <div class="formEntryArea">
-                    <input type="hidden" name="fieldLimit1" value="" />
-                    <input class="advancedInput" maxlength="75" size="35" name="searchText1" />
-<!--{scope}-->
-                    </div>
-                    <input type="hidden" name="startLimit" >
-                    <div class="formEntryArea">
-<!--{availlim}-->
-                    </div>
-                    <div class="formEntryArea">
-                        <a id="limitsLink">Refine your keyword search by language, year, and more (+)</a>
-                    </div>
-                    <div class="formButtonArea">
-                    <span>
-<!--{advancedsubmit}-->
-                    </span>
-                    <span>
-<!--{clearform}-->
-                    </span>
-                    </div>
-        
-
-
-                    <fieldset id="optionalLimits">
-                    <legend>Add Limits (Optional)</legend>
-        
-                    <div class="formEntryArea">
-<!--{DOCDATE}-->
-        </div>
-        
-                    <div class="formEntryArea">
-                    <table border="0">
-                    <tr><td><label for="n">Online:</label></td><td><select id="n" name="n">
-                    <option value="">ANY</option>
-                    <option value="cr">Online Only</option>
-                    </select>
-                    </td>
-                    </tr></table>
-                    </div>
-        
-            <!--{govdoc}-->
-            
-                    <div class="formEntryArea">
-<!--{lang}-->
-                    </div>
-                    
-                    <div class="formEntryArea">
-<!--{branch}-->
-                    </div>
-                    
-                    <div class="formEntryArea">
-                    <table border="0">
-                    <tr><td><label for="a">Audio and Video Formats:</label></td><td><select id="a" name="a" size="5" multiple="multiple">
-                    <option value="">ANY</option>
-                    <option value=""></option>
-                    <option value="s*">AUDIO FORMATS</option>
-                    <option value="s*">All Sound Recording Formats</option>
-                    <option value="ss">Audio cassettes</option>
-                    <option value="sd f">CDs</option>
-                    <option value="sd b">LPs</option>
-                    <option value="sd c">45 rpm </option>
-                    <option value="sd d">78 rpm</option>
-                    <option value="sd z">DVD-audio</option>
-                    <option value="st">Reel-to-reel</option>
-                    <option value="se">Cylinder</option>
-                    <option value="sq">Roll</option>
-                    <option value="sw">Wire recording</option>
-                    <option value=""></option>
-                    <option value="v*">VIDEO FORMATS</option>
-                    <option value="v*">All Video Recording Formats</option>
-                    <option value="vd">DVD-video</option>
-                    <option value="vf">VHS</option>
-                    <option value="mr">16/35 mm film</option>
-                    </select>
-                    </td>
-                    </tr></table>
-                    </div>
-                    
-                    
-                    <div class="formEntryArea">
-<!--{mattype}-->
-                    </div>
-                    
-                    
-                    <div class="formEntryArea">
-<!--{publish}-->
-                    </div>
-                    
-                    </fieldset>
-                    <input type="hidden" name="endLimit" >
-        
-<!--{advancedsearchformend}-->
-        
-        
-                    <div class="searchTips">
-                    <p><strong>Search tips for Keyword Search</strong></p>
-                      <p>Use keywords from the title, author, subjects or notes.</p>
-                      <p><em>Examples:</em></p>
-                      <ul>
-                        <li><em>evolution and altruism</em></li>
-                        <li><em>&quot;achievement test&quot;</em></li>
-                      </ul>
-                      <p>For more options, use an Advanced Search. </p>
-                    </div>
-        
-                </div><!-- quickSearchInner -->
-
-            </div> <!-- quickSearch -->
-        
-            <div class="quickSearch t s a">
-            
-                <div class="innerQuickSearch">
-            
-                    <form action="/search/" method="get" id="search" class="indexSearch" name="search">
-                    
-                    <div class="limits">
-                    <div class="limitColumn">
-                    <label> <input name="searchtype" class="searchtype" value="X" type="radio"> Keyword </label> 
-                    <label> <input name="searchtype" class="searchtype" value="t" type="radio"> Title begins with </label>
-                    </div>
-                    <div class="limitColumn">
-                    <label> <input name="searchtype" class="searchtype" value="s" type="radio"> Journal & Newspapers title begins with </label>
-                    <label> <input name="searchtype" class="searchtype" value="a" type="radio"> Author (last name first) </label>
-                    </div>
-                    </div>
-                    
-                    <div class="clear"></div>
-        
-<!--{nosort}-->
-        
-                    <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
-        
-<!--{scope}-->
-        
-        
-                    <input value="Search" type="submit"> </label></div>
-        
-                    </form>
-            
-                    <div class="searchTips">
-        
-                    <p><strong>Search tips for Title begins with</strong></p>
-                    <p>Use this search if you have the title of the book, video, etc. Enter words starting at the beginnning of the title.  Exclude initial articles such as &quot;the&quot;, &quot;an&quot;, and &quot;de&quot; (German). </p>
-                    <p><em>Examples:</em></p>
-                    <ul>
-                    <li><em>Intruder in the Dust</em></li>
-                    <li><em>Adventures of Huckleberry Finn</em></li>
-                    </ul>
-                    
-                    </div>
-            
-                </div><!--quickSearchInner-->
-            
-            </div><!--quickSearch-->
-
-
-    </div><!--tab1-->
     <div id="tab-2" class="tabContent">
         <h1 class="pageHeader">Advanced Search</h1>
-        
-<p>Please fill in the form, select limits, click Submit (or choose a <a href="/search/X#tab-1">Simple Keyword Search</a>).</p>
         
             <div id="accessibleForm" class="advancedSearch">
 
@@ -294,8 +84,6 @@ $(document).ready(function(){
 
 <fieldset>
 <legend>Add Limits (Optional)</legend>
-
-<p>In each box hold down the CTRL or Apple key to select more than one.</p>
 
 <div class="formEntryArea" id="form3PartAdvLimitSort">
 <!--{sort}-->
@@ -401,18 +189,7 @@ School:
 </div>
 
 </fieldset>
-          
 <input type="hidden" name="endLimit" >
-    
-<div class="searchTips">
-
-          <p><strong>Search Tips for Advanced Searches</strong></p>
-        <p>Advanced searches are keyword searches which can be limited to specific fields: Titles, Authors, Subjects, Tables of Contents, and Other fields. </p>
-        <p>Truncation: educat* finds educate, educated, education, etc.</p>
-        <p>Phrase search: "physical therapy"</p>
-        <a id="moreLink"><p>More Search Tips</p></a>
-        
-</div>
     
 <table class="tipsTable">
 <caption>Search Tips</caption>
@@ -450,101 +227,6 @@ Use "near" to specify words close to each other, in any order.<br>
 
 <!--{advancedsearchformend}-->
             </div>
-    </div>
-    <div id="tab-3" class="tabContent">
-      <h3>Tab 3</h3>
-
-      <p><img src="http://papermashup.com/demos/jquery-gallery/images/t3.png" width="120" height="120" class="thumbs"/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur enim. Nullam id ligula in nisl tincidunt feugiat. Curabitur eu magna porttitor ligula bibendum rhoncus. Etiam dignissim. Duis lobortis porta risus. Quisque velit metus, dignissim in, rhoncus at, congue quis, mi. Praesent vel lorem. Suspendisse ut dolor at justo tristique dapibus. Morbi erat mi, rutrum a, aliquam nec, mattis semper, leo. Maecenas blandit risus vitae quam. Vivamus ut odio.<br/>
-        <a href="http://feeds2.feedburner.com/AshleyFord-Papermashupcom">Subscribe to my feed here</a></p>
-    </div>
-    <div id="tab-4" class="tabContent">
-        
-        <h1 class="pageHeader">Subjects</h1>
-        
-        <form action="/search/" method="get" id="search" class="indexSearch" name="search">
-        
-        <div class="limits">
-        <div class="limitColumn">
-        <label> <input name="searchtype" class="searchtype" value="d" checked="checked" type="radio"> Subject (Library of Congress) </label> 
-        <label> <input name="searchtype" class="searchtype" value="m" type="radio"> Medical Subject (MeSH) </label>
-        </div>
-        <div class="limitColumn">
-        <label> <input name="searchtype" class="searchtype" value="v" type="radio"> Genre/Form </label>
-        </div>
-        </div>
-        
-        <div class="clear"></div>
-        
-<!--{nosort}-->
-        
-        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
-        
-<!--{scope}-->
-        
-        
-        <input value="Search" type="submit"> </label></div>
-        
-        </form>
-        
-                    <div class="searchTips">
-                        <p><strong>Search Tips for Subjects (Library of Congress)</strong></p>
-                        <p>Search Library of Congress Subject Headings for people, topics, or events.</p>
-                        <p><em>Examples:</em></p>
-                        <ul>
-                          <li><em>Sports for women</em></li>
-                          <li><em>Automobiles</em></li>
-                          <li><em>Wilder, Laura Ingalls</em></li>
-                          </ul>
-                        <p>If your search is unsuccessful, try a Keyword search. </p>
-                    </div>
-
-    </div>
-    <div id="tab-5" class="tabContent">
-
-        <h1 class="pageHeader">Numbers/Other</h1>
-        
-        <form action="/search/" method="get" id="search" class="indexSearch" name="search">
-        
-        <div class="limits">
-        <div class="limitColumn">
-        <label> <input name="searchtype" class="searchtype" value="i" checked="checked" type="radio"> ISBN/ISSN/Standard Number </label> 
-        <label> <input name="searchtype" class="searchtype" value="g" type="radio"> Government Publication </label>
-        <label> <input name="searchtype" class="searchtype" value="e" type="radio"> Music Number </label>
-        <label> <input name="searchtype" class="searchtype" value="o" type="radio"> OCLC/WorldCatalog </label>
-        </div>
-        <div class="limitColumn">
-        <label> <input name="searchtype" class="searchtype" value="c" type="radio"> Call Number (Library of Congress) </label>
-        <label> <input name="searchtype" class="searchtype" value="l" type="radio"> Medical Call Number </label>
-        <label> <input name="searchtype" class="searchtype" value="f" type="radio"> Dewey/Other Call Number </label>
-        <label> <input name="searchtype" class="searchtype" value="h" type="radio"> Donor/Honoree </label>
-        </div>
-        </div>
-        
-        <div class="clear"></div>
-        
-<!--{nosort}-->
-        
-        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
-        
-<!--{scope}-->
-        
-        
-        <input value="Search" type="submit"> </label></div>
-        
-        </form>
-        
-                    <div class="searchTips">
-                        <p><strong>Search Tips for Subjects (Library of Congress)</strong></p>
-                        <p>Search Library of Congress Subject Headings for people, topics, or events.</p>
-                        <p><em>Examples:</em></p>
-                        <ul>
-                          <li><em>Sports for women</em></li>
-                          <li><em>Automobiles</em></li>
-                          <li><em>Wilder, Laura Ingalls</em></li>
-                          </ul>
-                        <p>If your search is unsuccessful, try a Keyword search. </p>
-                    </div>
-    
     </div>
 
   </div>
