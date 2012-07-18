@@ -1124,7 +1124,7 @@ cursor:pointer;
     color:#CCCCCC;
 }
 
-.searchTips { margin:1.5em 0 0 15px; }
+.searchTips, .searchTipsX { margin:1.5em 0 0 15px; }
 
 #skipNav a, #cproSkipNav a:hover, #cproSkipNav a:visited { position:absolute; left:0px; top:-5000px; width:1px; height:1px; overflow:hidden; }
 
