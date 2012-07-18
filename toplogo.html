@@ -18,7 +18,7 @@ $('#searchOptions').corner();
 $(document).ready(function () {
 	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
 
-	$(".searchtype").change(function(){
+	$(".searchtype").click(function(){
 		$(".searchTips").load("/screens/" + this.value + ".inc");
 	});
 	//Changes the search examples
