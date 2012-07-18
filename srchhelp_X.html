@@ -61,14 +61,14 @@ $(document).ready(function(){
 		$(currentTab).show();
 	});
 
-    //Switching the menu when the radio button is changed
+    //Switching the Keyword/Title menu when the radio button is changed
         $('input.searchtype[value=X]').attr('checked', true);
         $('.innerQuickSearch').hide();
         $('.X .innerQuickSearch').show();
-	$('input.searchtype').change(function(){
+	$('input.searchtype').click(function(){
             $('.innerQuickSearch').hide();
             $('.' + this.value + ' .innerQuickSearch').show();
-            $('input.searchtype[value=' + this.value + ']').attr('checked', true);
+            $('input.searchtype[value=' + this.value + ']').attr('checked', 'checked');
 	});
 	$('#moreLink').click(function(){
              $('#optionalLimits').toggle();
@@ -111,7 +111,7 @@ $(document).ready(function(){
 
                     <div class="limits">
                     <div class="limitColumn">
-                    <label> <input name="searchtype" class="searchtype" value="Y" checked="checked" type="radio"> Keyword </label> 
+                    <label> <input name="searchtype" class="searchtype" value="X" checked="checked" type="radio"> Keyword </label> 
                     <label> <input name="searchtype" class="searchtype" value="t" type="radio"> Title begins with </label>
                     </div>
                     <div class="limitColumn">
