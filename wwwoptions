@@ -61,14 +61,14 @@ INSERTTAG_HTML=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "h
 RIGHT_CELL_WIDTH=18|25
 SSLPORT=80:443|2082:444|2083:2443
 CUSTOM_MESSAGES=F
-STARTOVER=/search
+STARTOVER=/search/X
 STATGROUP=login
 STYLESHEET=/screens/styles.css
 SUPPRESS_OPTION=STARTOVER,NEWSRCH
 TIMEOUT=600;URL=http://laurel.lso.missouri.edu/search/X
 TOPLOGO=@screens/toplogo.html
 #UPDATECIRC=true
-XSTARTOVER=/search
+STARTOVER=/search/X
 
 # Staff
 ICON_BUT_PUBLIC=<span class="navButtonOneLine">Patron View</span>
@@ -321,7 +321,7 @@ PIN_ALPHA_NUM=false
 PIN_NUM_ONLY=false
 PIN_RESET=true
 #PIN_RESET_EMAIL=Request to reset your library PIN|INSERT LIBRARY FROM EMAIL HERE|INSERT LIBRARY REPLY-TO EMAIL HERE
-PSTARTOVER=/search
+STARTOVER=/search/X
 SEEPUDATE=true
 TABLEPARAM_PATDISP=border="0"|border="0"|border="0"
 TABLEPARAM_PATFUNC=border="0"|border="0"|border="0"
