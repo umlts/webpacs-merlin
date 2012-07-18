@@ -1166,7 +1166,7 @@ cursor:pointer;
 
 .topLogo img { border:0; display:block; margin-left:auto; margin-right:auto }
 
-.topLogoImage { padding:5px; width:180px; }
+.topLogoImage { padding:10px 10px 15px 20px; width:180px; }
 
 .mobiusLogo, .clusterLogo {width:250px;}
 
@@ -1308,40 +1308,6 @@ tr.highlight { background:#FFFFE4; }
         margin-left:auto;
         margin-right:auto;
 }
-#tabs #tabRow {
-	float: left;
-	background: #fff;
-	padding:0;
-        margin:0;
-}
-#tabs .tab {
-	margin-left: 8px;
-	list-style: none;
-}
-#tabs .tab:first-child {
-	margin-left: 0;
-}
-* html #tabs li {
-	display: inline;
-}
-#tabs .tab, #tabs .tab a {
-	float: left;
-}
-#tabs ul .tab.active {
-	background: #FFFFFF;
-        border-bottom: 1px solid #FFFFFF;
-}
-#tabs ul .tab {
-	background: url("/screens/gold_gradient.png") repeat-x scroll 50% 50% #FFBD29;
-        border: 1px solid #C0C0C0;
-        margin-bottom: -1px;
-}
-#tabs ul .tab:hover {
-        background: #FFFFFF;
-}
-#tabs ul .tab.active a {
-	color: #333333;
-}
 #tabs .tabContent {
 	background: #FFFFFF;
 	clear: both;
@@ -1352,19 +1318,51 @@ tr.highlight { background:#FFFFE4; }
 #tabs div h3 {
 	margin-bottom: 12px;
 }
-#tabs ul .tab a {
+#tabRow {
+	float: left;
+	background: #fff;
+	padding:0;
+        margin:0;
+}
+#tabRow .tab {
+	margin-left: 8px;
+	list-style: none;
+}
+#tabRow .tab:first-child {
+	margin-left: 0;
+}
+* html #tabRpw li {
+	display: inline;
+}
+#tabRow .tab, #tabRow .tab a {
+	float: left;
+}
+#tabRow ul .tab.active {
+	background: #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
+}
+ul#tabRow .tab {
+	background: url("/screens/gold_gradient.png") repeat-x scroll 50% 50% #FFBD29;
+        border: 1px solid #C0C0C0;
+        margin-bottom: -1px;
+}
+ul#tabRow .tab:hover {
+        background: #FFFFFF;
+}
+ul#tabRow.tab.active a {
+	color: #333333;
+}
+ul#tabRow .tab a {
 	text-decoration: none;
 	padding: 8px;
 	color: #000;
 	font-weight: bold;
 }
-
-.thumbs {
-	float:left;
-	border:#000 solid 1px;
-	margin-bottom:20px;
-	margin-right:20px;
+#tabsToplogo {
+    padding-left:20px;
 }
+
+#frontPage #tabsToplogo { display:none; }
 
 /* Texting Feature */
 
