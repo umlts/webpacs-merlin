@@ -257,7 +257,7 @@ ICON_MYLISTS_RECORD=<span class="navButton">Add to My Lists</span>
 # Saving and Exporting
 BRIEF_EXPORT=a|t|p
 ICON_BUT_BIBEXPORT=<span class="navButton">Add to Folder</span>
-ICON_BUT_CLEAR_MARKED=<span class="navButton">Empty Folder</span>
+ICON_BUT_CLEAR_MARKED=<span class="navButtonOneLine">Empty Folder</span>
 ICON_BUT_EXPORT_MULTI=<span class="navButtonOneLine">Export Saved</span>
 ICON_BUT_EXPORT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Folder</span></span>
 ICON_BUT_VIEW_SAVES=<span class="navButton">View Folder</span>
