@@ -80,7 +80,7 @@ STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode 
 ICON_BUT_ANOTHER=<span class="navButton">Another Search</span>
 ICON_BUT_NEWSRCH=New Search
 ICON_BUT_WORDSRCH=<span class="navButton">Search as Words</span>
-DROP_DOWN=Xtadmsclfgeiovxjh
+DROP_DOWN=Xtadms
 FRAMEURL=0
 #IBROWSE_MAX=10000
 KEYWORD_COLOR=Y|all|red
