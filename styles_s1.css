@@ -6,3 +6,7 @@
     padding:25px;
     width:89px;
 }
+
+ul#tabRow .tab {
+	background: url("/screens/gold_gradient.png") repeat-x scroll 50% 50% #FFBD29;
+}
