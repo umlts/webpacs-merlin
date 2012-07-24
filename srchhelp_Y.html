@@ -69,7 +69,49 @@ $(document).ready(function(){
 <fieldset>
 <legend>Enter Search Terms</legend>
 <div class="formEntryArea">
-<!--{advancedsearch}-->
+<select name="fieldLimit1" class="keywordSegment">
+
+<option value="" selected="selected">Any Field:</option>
+<option value="a:">Author:</option>
+<option value="t:">Title:</option>
+<option value="d:">Subject (LC):</option>
+<option value="N:">Note:</option>
+</select>
+<input maxlength="75" size="35" name="searchText1" />
+<br />
+<select name="boolean1">
+
+<option value="%20and%20" selected="selected">And</option>
+<option value="%20and%20not%20">And not</option>
+<option value="%20or%20">Or</option>
+</select>
+<br />
+<select name="fieldLimit2" class="keywordSegment">
+
+<option value="" selected="selected">Any Field:</option>
+<option value="a:">Author:</option>
+<option value="t:">Title:</option>
+<option value="d:">Subject (LC):</option>
+<option value="N:">Note:</option>
+</select>
+<input maxlength="75" size="35" name="searchText2" />
+<br />
+<select name="boolean2">
+
+<option value="%20and%20" selected="selected">And</option>
+<option value="%20and%20not%20">And not</option>
+<option value="%20or%20">Or</option>
+</select>
+<br />
+<select name="fieldLimit3"  class="keywordSegment">
+
+<option value="" selected="selected">Any Field:</option>
+<option value="a:">Author:</option>
+<option value="t:">Title:</option>
+<option value="d:">Subject (LC):</option>
+<option value="N:">Note:</option>
+</select>
+<input maxlength="75" size="35" name="searchText3" />
 </div>
 <input type="hidden" name="startLimit" >
 <div class="formEntryArea">
