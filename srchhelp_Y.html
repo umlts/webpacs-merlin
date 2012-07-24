@@ -74,8 +74,9 @@ $(document).ready(function(){
 <option value="" selected="selected">Any Field:</option>
 <option value="a:">Author:</option>
 <option value="t:">Title:</option>
-<option value="d:">Subject (LC):</option>
-<option value="N:">Note:</option>
+<option value="d:">Subject:</option>
+<option value="c:">Table of Contents:</option>
+<option value="N:">Other:</option>
 </select>
 <input maxlength="75" size="35" name="searchText1" />
 <br />
@@ -91,8 +92,9 @@ $(document).ready(function(){
 <option value="" selected="selected">Any Field:</option>
 <option value="a:">Author:</option>
 <option value="t:">Title:</option>
-<option value="d:">Subject (LC):</option>
-<option value="N:">Note:</option>
+<option value="d:">Subject:</option>
+<option value="c:">Table of Contents:</option>
+<option value="N:">Other:</option>
 </select>
 <input maxlength="75" size="35" name="searchText2" />
 <br />
@@ -108,8 +110,9 @@ $(document).ready(function(){
 <option value="" selected="selected">Any Field:</option>
 <option value="a:">Author:</option>
 <option value="t:">Title:</option>
-<option value="d:">Subject (LC):</option>
-<option value="N:">Note:</option>
+<option value="d:">Subject:</option>
+<option value="c:">Table of Contents:</option>
+<option value="N:">Other:</option>
 </select>
 <input maxlength="75" size="35" name="searchText3" />
 </div>
@@ -126,6 +129,8 @@ $(document).ready(function(){
 
 <fieldset>
 <legend>Add Limits (Optional)</legend>
+                    
+<p>In each box hold down the CTRL or Apple key to select more than one.</p>
 
 <div class="formEntryArea" id="form3PartAdvLimitSort">
 <!--{sort}-->
@@ -232,6 +237,13 @@ School:
 
 </fieldset>
 <input type="hidden" name="endLimit" >
+    
+<div class="searchTips">
+<p><strong>Search tips for Keyword Search</strong></p>
+<p>Advanced searches are keyword searches which can be limited to specific fields: Titles, Authors, Subjects, Tables of Contents, and other fields. </p>
+<p><em>Truncation:</em> educat* finds educate, educated, education, etc.</p>
+<p><em>Phrase search:</em> "physical therapy"</p>
+</div>
     
 <table class="tipsTable">
 <caption>Search Tips</caption>
