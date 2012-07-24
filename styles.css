@@ -1164,7 +1164,24 @@ cursor:pointer;
 
 .tipLeft { width: 10em; display:inline-block; }
 
+.tipsTable { margin-top:2em; display:none; }
+
 .tipsTable caption { margin-top:10px; }
+
+.tipsTable td { padding:1em .5em; }
+
+.tipsTable th {
+    font-weight:bold;
+}
+
+.tipsTable td:nth-child(1) {
+    width:10%;
+    font-weight:bold;
+}
+
+.tipsTable td:nth-child(3) {
+    width:50%;
+}
 
 .topLinks a { float:right; }
 

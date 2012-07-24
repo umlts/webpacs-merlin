@@ -34,7 +34,7 @@ $(document).ready(function(){
             $('input.searchtype[value=' + this.value + ']').attr('checked', true);
 	});
 	$('#moreLink').click(function(){
-             $('#optionalLimits').toggle();
+             $('.tipsTable').toggle();
 	});
         
     //Remove the colons from advanced search
@@ -243,40 +243,141 @@ School:
 <p>Advanced searches are keyword searches which can be limited to specific fields: Titles, Authors, Subjects, Tables of Contents, and other fields. </p>
 <p><em>Truncation:</em> educat* finds educate, educated, education, etc.</p>
 <p><em>Phrase search:</em> "physical therapy"</p>
+<p><a id="moreLink">More Search Tips</a></p>
 </div>
+
+
     
 <table class="tipsTable">
-<caption>Search Tips</caption>
-<!-- <tr valign="top"><th align="left">Adjacency</th>
-<td>Multiple words are searched together as one phrase.<br>
-<span style="text-decoration:underline">Example</span> : world health organization</td>
-</tr> -->
-<tr><th>Wildcards</th>
-<td>
-Words may be right-hand truncated using an asterisk ('*') in place of other characters. <!-- Use '**' for open-ended truncation of over five characters.--> The '*' wildcard may also be embedded in a search string. You may use '?' to replace a single character anywhere within a word.<br>
-<span style="text-decoration:underline">Examples</span> : environment* polic*, wom?n</td>
-</tr>
-<tr><th>Boolean Operators</th>
-<td>
-Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br>
-<span style="text-decoration:underline">Example</span> : stocks and bonds<br>
-<span style="text-decoration:underline">Example</span> : (alaska or canada) and (adventure and not vacation)</td>
-</tr>
-<tr><th>Field limits</th>
-<td>
-A field limit causes the system to search only the specified field for the specified word(s).</td>
-</tr>
-<tr>
-<th>Grouping</th>
-<td>
-Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
-</td>
-</tr>
-<!-- <tr valign="top"><th align="left">Proximity Operators</th>
-<td>
-Use "near" to specify words close to each other, in any order.<br>
-<span style="text-decoration:underline">Example</span> : california near university</td>
-</tr> -->
+          <tr>
+            <th>Search Tip</th>
+            <th>Definition</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>Truncation/ Wildcard</td>
+            <td>Searches for variant forms of the word by replacing any number of characters. At least 2 characters must precede the truncation symbol.</td>
+            <td>Use <strong>*</strong> to substitute for 1-5 characters. Example: educ* 
+              Use <strong>**</strong> to substitute for any number of    characters. Example: huck** finn <br />
+                <br />
+                Use <strong>?</strong> or <strong>*</strong> to substitute for a single character. Example: wom?n</td>
+          </tr>
+          <tr>
+            <td>Adjacency/ Phrase searching</td>
+            <td>
+              To search for an exact phrase, enclose your search in quotes. Multiple    words, without quotes, are retrieved in any order and in any part of    the record. </strong></td>
+            <td>Example: <br />
+                "physical therapy"
+              Example: <br />
+                "reading comprehension strategies""</td>
+          </tr>
+          <tr>
+            <td>Proximity</td>
+            <td>Determines    spatial relationship of search terms. </td>
+            <td> Use:<br />
+                NEAR <br />
+                to    search words within 10 words of each other.<br />
+                Example: <br />
+                audubon near birds<br />
+                <br />
+                Use:<br />
+                WITHIN # <br />
+                to    search words within a specific number of words.</p>
+              <p>                Example: <br />
+                accounting within 5</p>
+              <p>
+                Use:<br />
+              BEFORE <br />
+                to    determine order of search terms. First term must come before second. <br />
+              </p>
+              <p>Example: <br />
+                pay before  television              </p>
+              <p>Use:<br />
+                AFTER<br />
+                to determine order of search terms. First    term must come after second. <br />
+                Example: <br />
+                television after cable  </td>
+          </tr>
+          <tr>
+            <td>Operators/ Boolean operators</td>
+            <td>The Boolean    operators are used to limit or expand search results. You may also exclude    terms from search results. </td>
+            <td> Use:<br />
+                AND <br />
+                to limit search    results to those that contain all search terms. </p>
+              <p>Example: <br />
+                child* and television</p>
+              <p>Use:<br />
+                OR <br />
+                to expand search results to those that contain one or more search terms.<br />
+                Example: <br />
+                lawyer or attorney                </p>
+              <p>Use: <br />
+                AND NOT <br />
+                to exclude the    term that follows. <br />
+                Example:<br />
+                dolphin* and not football </p></td>
+          </tr>
+          <tr>
+            <td>Field limits</td>
+            <td><strong>Specify fields (parts of the record) to search using the drop down menu </strong>(as indicated in brackets in the examples)<strong>.</strong>
+              Note that you can    use field limits in combination with selections from the operator drop down    menu (as indicated in brackets in the example).
+              You may also use    labels to search specific fields as part of a combined search. Labels are    a:author t:title s:subject n:note c:table of contents </td>
+            <td valign="top"><strong>&nbsp;&quot;</strong><strong>second    language acquisition&quot; </strong><strong>[in Title:]</strong>
+              
+              zora [in Author:] [AND] <br />
+                watching [in Title:] a:zora and t:watching s:hopi and s:religion</td>
+          </tr>
+          <tr>
+            <td>Punctuation</td>
+            <td><strong>Ampersand</strong> ( &amp;) is treated as if it    were the word &ldquo;and&rdquo; spelled out. 
+              <strong>Apostrophes </strong>are removed.
+              Other punctuation    marks are replaced by spaces for purposes of searching.</td>
+            <td><p>Example:<br />
+              War &amp; Peace = War and Peace </p>
+              <p>Example:<br />
+              Doll's House = Dolls House</p>
+              <p> Example:<br />
+              St. Louis = St    Louis</p></td>
+          </tr>
+          <tr>
+            <td>Initial articles</td>
+            <td>The catalog will    ignore the initial article of a search such as; <strong>a, an, the, etc. </strong>beginning the search with the second word. You    may chose or may chose not to enter these initial articles. </td>
+            <td valign="top"><p>Enter the initial    article twice to retrieve titles beginning with a word which is normally    considered to be an initial article.
+              </p>
+              <p>Example: a a to z    book of cars</p></td>
+          </tr>
+</table>
+
+<table class="tipsTable">
+
+            <tr>
+              <td>Relevance </td>
+              <td><ul>
+                <li>Keyword search results    are automatically ranked by    relevancy. This is intended to bring the best results to the top.</li>
+                <li>Results will appear in    up to 5 groups. Each group is ordered by date.</li>
+                <li>To deactivate ranked    results, select: Author, Title, Subject, or Note from the Any Field drop down    menu OR enclose your search string in quote marks OR choose to sort your    ranked results by Date or Title. </li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td><p>Most relevant</td>
+              <td>The search term appears in the title proper. </td>
+            </tr>
+            <tr>
+              <td>Highly relevant</td>
+              <td> The search term appears in the subtitle. </td>
+            </tr>
+            <tr>
+              <td> Very relevant </td>
+              <td> The search term appears in contents, summary, or note    fields or subject or other added heading fields.  </td>
+            </tr>
+            <tr>
+              <td> Relevant </td>
+              <td> The Boolean AND pulls words from the search term in the title proper and/or subtitle. </td>
+            </tr>
+            <tr>
+              <td> Other relevant</td>
+              <td> The Boolean AND pulls words from the search term from anywhere else in the record. </td>
+            </tr>
 </table>
 
 <!--{advancedsearchformend}-->
