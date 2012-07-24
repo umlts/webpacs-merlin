@@ -716,6 +716,8 @@ div .bibResourceSidebar { display:none; }
 
 .itemSelect form > input { margin:8px 0 0; }
 
+.keywordSegment { margin-left:5.5em; }
+
 .libinfoLeft { float:left; margin:0 20px 0 2px; }
 
 .libinfoRight { float:left; }
