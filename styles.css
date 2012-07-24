@@ -1346,7 +1346,7 @@ tr.highlight { background:#FFFFE4; }
         border-bottom: 1px solid #FFFFFF;
 }
 ul#tabRow .tab {
-	background: url("/screens/gold_gradient.png") repeat-x scroll 50% 50% #FFBD29;
+	background: url("/screens/pale_gold_gradient.png") repeat-x scroll 50% 50% #FFBD29;
         border: 1px solid #C0C0C0;
         margin-bottom: -1px;
 }
