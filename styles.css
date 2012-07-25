@@ -217,7 +217,7 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 .bibDisplayContent { padding:10px 0 10px 10px; }
 
-.bibDisplayContentMain, .resourceDisplayContentMain  { float:left; width:59%; margin-left:1.5em; display:inline; }
+.bibDisplayContentMain, .resourceDisplayContentMain  { float:left; width:75%; margin-left:1.5em; display:inline; }
 
 .bibDisplayContentMain table, .bibDisplayUrls table, table.reserveBibs, .resourceDisplayContentMain table, .bibDisplayReviews  { border:0; font-size:.8824em; }
 
@@ -1338,6 +1338,10 @@ tr.highlight { background:#FFFFE4; }
         width:700px;
         margin-left:auto;
         margin-right:auto;
+}
+
+.bibDisplayContentMain #tabs {
+        width:100%;
 }
 #tabs .tabContent {
 	background: #FFFFFF;
