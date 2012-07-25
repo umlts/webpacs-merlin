@@ -249,7 +249,7 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 .bibMedia   img { margin-top:10px;  }
 
-.bibDisplayPermLink { float:right; }
+.bibDisplayPermLink { float:right; margin:1em 0 1.5em; font-style:italic; font-size:.9em; }
 
 .bibDisplayProgramInfo { float:right; font-size:1.1em; margin:5% 5% 15px 0; }
 
