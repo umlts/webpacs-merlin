@@ -3,3 +3,14 @@
 .topLogoImage {
     padding:20px 20px 30px;
 }
+
+ul#tabRow .tab {
+    max-width:7.7em;
+    height:3.5em;
+}
+
+ul#tabRow .tab a {
+    text-align:center;
+    font-size:.9em;
+    padding:7px;
+}

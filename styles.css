@@ -172,8 +172,8 @@ a:hover  { color: #6E0000; text-decoration:underline; }
     font-weight:bold;
 }
 
-.articles fieldset {
-    padding:1.5em !important;
+.articles {
+    padding:1.5em;
     margin:2em .5em;
 }
 
