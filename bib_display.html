@@ -13,7 +13,7 @@ $(document).ready(function(){
             $('#tabs ul li:first').addClass('active');
         }
         
-	$('#tabs ul li a').click(function(){
+	$('#tabs #tabRow li a').click(function(){
                 //Switching the tabs
 		$('#tabs ul li').removeClass('active');
 		$(this).parent().addClass('active'); 
@@ -133,6 +133,14 @@ $(document).ready(function(){
       <li class="tab"><a href="#tab-2">More Details</a></li>
       <li class="tab"><a href="#tab-3">Find Similar Items</a></li>
     </ul>
+    <ul id="byTabRow">
+        <li class="tab"><a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;">
+            <span class="button">
+            <img src="/screens/ico_phone.gif" border=0 style="margin:0">
+               <span class="buttonText">Text Call Number</span>
+            </span>
+        </a></li>
+    </ul>
     
     <div id="tab-1" class="tabContent">
         <div class="bibDisplayItems">
@@ -156,15 +164,6 @@ $(document).ready(function(){
     </div><!--tab3-->
 </div>
 
-       <a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;">
-        <div id="smsfeatures" class="resourceButton">
-            <span class="button">
-            <img src="/screens/ico_phone.gif" border=0 style="margin:0">
-               <span class="buttonText">Text Call Number</span>
-            </span>
-            </div>
-           
-        </a>
 
 <!--{ifTOC}-->
 <!--{TOC}-->
