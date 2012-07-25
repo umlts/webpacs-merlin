@@ -241,7 +241,7 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 .bibDisplayItemsMain { float:right; width:80%; }
 
-.bibDisplayJacket  { float:left; margin:0 0 1em 20px; display:inline; width:150px; text-align:center; }
+.bibDisplayJacket  { float:left; display:inline; width:150px; text-align:center; }
 
 .bibLinks th { text-align:center; }
 
