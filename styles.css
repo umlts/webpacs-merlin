@@ -1368,7 +1368,7 @@ tr.highlight { background:#FFFFE4; }
 #tabRow .tab, #tabRow .tab a {
 	float: left;
 }
-#tabRow ul .tab.active {
+ul#tabRow .tab.active {
 	background: #FFFFFF;
         border-bottom: 1px solid #FFFFFF;
 }
