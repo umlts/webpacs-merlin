@@ -52,8 +52,11 @@ $(document).ready(function(){
             $('#tabs .tabContent:first').show();
             $('#tabs ul li:first').addClass('active');
         }
-        //So switching tabs will work with IE7
+        
 	$('#tabs ul li a').click(function(){
+                //The scrollbar should always be at the top when the tab is clicked
+                $(document).scrollTop(0);
+                //So switching tabs will work with IE7
 		$('#tabs ul li').removeClass('active');
 		$(this).parent().addClass('active'); 
 		var currentTab = $(this).attr('href'); 
