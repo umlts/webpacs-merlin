@@ -127,7 +127,7 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 #accessibleForm form legend { font-weight:bold; }
 #accessibleForm h2 { margin-bottom:0; margin-top:12px; font-weight:normal; }
 #accessibleForm span.formLabel { display:block; padding-top:3px; }
-#accessibleForm span.formLabelExample { font-style:italic; }
+#accessibleForm div.formLabelExample { font-style:italic; }
 #accessibleForm .formButtonArea .formButtonArea {margin-left:12px; display:inline;}
 #accessibleForm font { font-size:1em; padding:10px; }
 #accessibleForm p { margin-bottom:5px; margin-top:3px; }
@@ -620,8 +620,6 @@ div .bibResourceSidebar { display:none; }
 
 .form2Part, .form1Part, .mylistsSavePage form  { background:#FFFFFF url(tile_vgradient.jpg) repeat-x scroll left top; border:1px solid #D3D3D3; float:left; margin-bottom:15px; }
 
-.form2Part fieldset, .form1Part fieldset { padding:0.35em 2em 0.75em 0; }
-
 .form2Part formLabel, .form1Part formLabel { font-size:.8824em; }
 
 .form3Part fieldset { padding:5px; }
@@ -637,6 +635,14 @@ div .bibResourceSidebar { display:none; }
 .form3PartBelow { background:#FFFFFF url('tile_vgradient.jpg') repeat-x scroll left top; clear:both; margin-top:1em; }
 
 .formLogin label { display:block; padding-top:3px; }
+
+.formLogin .formButtonArea {
+    margin-left:0 !important;
+}
+
+.formLogin .formEntryArea {
+    margin-bottom:1.25em !important;
+}
 
 .formLeft { float:left; padding:10px 10px 10px; }
 
@@ -759,6 +765,8 @@ a#moreLink { margin-bottom:1em; color: #6E0000; }
 .loginForm { background:#F2F2F2; float:right; margin:15px; width:40%; }
 
 .loginForm fieldset { border: 3px solid #E7E7E7; color:#444444; margin:0 6px 0 6px; }
+
+#loginHelp { clear:both; padding-top:2em; }
 
 .mainMenuContent { margin-top:45px; text-align:left; }
 
