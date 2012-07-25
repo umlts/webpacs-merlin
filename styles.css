@@ -1353,23 +1353,23 @@ tr.highlight { background:#FFFFE4; }
 #tabs div h3 {
 	margin-bottom: 12px;
 }
-#tabRow {
+#tabRow, #byTabRow {
 	float: left;
 	background: #fff;
 	padding:0;
         margin:0;
 }
-#tabRow .tab {
+#tabRow .tab , #byTabRow .tab{
 	margin-left: 8px;
 	list-style: none;
 }
 #tabRow .tab:first-child {
 	margin-left: 0;
 }
-* html #tabRpw li {
+* html #tabRow li {
 	display: inline;
 }
-#tabRow .tab, #tabRow .tab a {
+#tabRow .tab, #tabRow .tab a, #byTabRow .tab, #byTabRow .tab a {
 	float: left;
 }
 ul#tabRow .tab.active {
@@ -1387,7 +1387,7 @@ ul#tabRow .tab:hover {
 ul#tabRow.tab.active a {
 	color: #333333;
 }
-ul#tabRow .tab a {
+ul#tabRow .tab a, ul#byTabRow .tab a {
 	text-decoration: none;
 	padding: 8px;
 	color: #000;
@@ -1395,6 +1395,14 @@ ul#tabRow .tab a {
 }
 #tabsToplogo {
     padding-left:20px;
+}
+
+#byTabRow {
+    margin-bottom:-15px;
+}
+
+#byTabRow a {
+    margin-top:-15px;
 }
 
 #frontPage #tabsToplogo { display:none; }
