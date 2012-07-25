@@ -227,7 +227,7 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 .bibDisplayContentMore { border-top:1px dashed #767C70; clear:both; margin-bottom:15px; padding-top:20px; }
 
-.bibDisplayItems  { margin:8px 0 0 10%; width:80%; }
+.bibDisplayItems  { margin:8px; width:95%; }
 
 .bibDisplayItems table, .requestMultiItems table { border:0; border-collapse: collapse; margin-bottom:20px; }
 
@@ -267,7 +267,7 @@ table.bibItems { clear:both; }
 
 .bibItems { border:none; }
 
-.bibItems .bibItemsEntry td, .bibItems .bibItemsHeader th { padding:1px 8px; }
+.bibItems .bibItemsEntry td, .bibItems .bibItemsHeader th { padding:5px 8px; }
 
 .bibRecordLink { padding:8px 0 8px 6px; }
 

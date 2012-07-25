@@ -1,4 +1,66 @@
 <!--{toplogo}-->
+<script type="text/javascript">
+
+$(document).ready(function(){
+    
+    //Loading the correct content when the tab is clicked from another page
+	$('#tabs .tabContent').hide();
+        if (window.location.hash.length > 0) {
+            $(window.location.hash).show();
+            $('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
+        }else{
+            $('#tabs .tabContent:first').show();
+            $('#tabs ul li:first').addClass('active');
+        }
+        
+	$('#tabs ul li a').click(function(){
+                //Switching the tabs
+		$('#tabs ul li').removeClass('active');
+		$(this).parent().addClass('active'); 
+		var currentTab = $(this).attr('href'); 
+		$('#tabs .tabContent').hide();
+		$(currentTab).show();
+                
+                //To make the Advanced search page happy
+                
+                $('.innerQuickSearch').hide();
+                $('.X .innerQuickSearch').show();
+                
+                //To make sure the first radio is selected, showing the correct search examples
+                var firstRadio = $(currentTab + ' .limits label:first input')
+                $(firstRadio).click();
+                $(".searchTips").load("/screens/" + firstRadio.val() + ".inc");
+                
+                //This makes it so the scrollbar doesn't jump to the anchor tag.  It also, unfortunately, makes it so the back button doesn't work.  
+                return false;
+	});
+
+    //Switching the Keyword/Title menu when the radio button is changed
+        $('input.searchtype[value=X]').attr('checked', true);
+        $('.innerQuickSearch').hide();
+        $('.X .innerQuickSearch').show();
+	$('input.searchtype').click(function(){
+            $('.innerQuickSearch').hide();
+            $('.' + this.value + ' .innerQuickSearch').show();
+            $('input.searchtype[value=' + this.value + ']').attr('checked', 'checked');
+	});
+	$('#moreLink').click(function(){
+             $('#optionalLimits').toggle();
+	});
+        
+    //Remove the colons from advanced search
+    $('#advancedSubmit').click(function () { 
+      var searchTerm = $('.advancedInput').val();
+      if((/\b[atsn]:/).test(searchTerm)) {}else {
+      var newSearchTerm = searchTerm.replace(":", " ");
+      $('.advancedInput').val(newSearchTerm);
+    }
+    });
+    
+    //The scrollbar should always be at the top when the page loads
+    $(document).scrollTop(0);
+});
+</script>
 <!--{ifbibdisplay}-->
 <!--{xif}-->
 <!--{catedit}-->
@@ -39,7 +101,7 @@
 <!--{recordinfo:t}-->
 </h1>
 
-<!--{recordinfo:pRe}-->
+<!--{recordinfo:pexz}-->
 
 <!--{ifhaspatrate}-->
 <div class="bibDisplayRatings">
@@ -60,33 +122,52 @@
 <!--{imagelinks}-->
 <!--{artthumb}-->
 <!--{xmlframe}-->
+
+<div id="tabs">
+    <ul id="tabRow">
+      <li class="tab"><a href="#tab-1">Locations</a></li>
+      <li class="tab"><a href="#tab-2">More Details</a></li>
+      <li class="tab"><a href="#tab-3">Find Similar Items</a></li>
+    </ul>
+    
+    <div id="tab-1" class="tabContent">
+        <div class="bibDisplayItems">
+<!--{items}-->
+        </div>
+
+<!--{orders}-->
+    </div><!--tab1-->
+    <div id="tab-2" class="tabContent">
+        <div class="bibDisplayItems">
+<!--{items}-->
+        </div>
+        <div class="bibDisplayContentMore">
+<!--{recordinfo:#}-->
+        </div>
+    </div><!--tab2-->
+    <div id="tab-3" class="tabContent">
+        <div class="bibDisplayContentMore">
+<!--{recordinfo:admjbs}-->
+        </div>
+    </div><!--tab3-->
+</div>
+
+       <a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;">
+        <div id="smsfeatures" class="resourceButton">
+            <span class="button">
+            <img src="/screens/ico_phone.gif" border=0 style="margin:0">
+               <span class="buttonText">Text Call Number</span>
+            </span>
+            </div>
+           
+        </a>
+
 <!--{ifTOC}-->
 <!--{TOC}-->
 <!--{xif}-->
 <!--{holds}-->
 <!--{holdings}-->
 
-<div class="bibDisplayItems">
-<div class="bibDisplayItemsHeader"><h2>Copies</h2></div>
-<div class="bibDisplayItemsMain">
-<!--{items}-->
-<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;">
-<div id="smsfeatures" class="resourceButton">
-    <span class="button">
-    <img src="/screens/ico_phone.gif" border=0 style="margin:0">
-       <span class="buttonText">Text Call Number</span>
-    </span>
-    </div>
-   
-</a>
-</div>
-</div>
-
-<!--{orders}-->
-
-<div class="bibDisplayContentMore">
-<!--{recordinfo:#}-->
-</div>
 
 <!--{IFELCONTENT:365}-->
 <!-- Replace the number for your enhanced content in Pathfinder Pro -->
