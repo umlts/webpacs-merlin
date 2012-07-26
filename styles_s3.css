@@ -14,3 +14,16 @@ ul#tabRow .tab a {
     font-size:.9em;
     padding:7px;
 }
+
+.bibDisplayContentMain ul#tabRow .tab {
+    max-width:none;
+    height:inherit;
+}
+
+.bibDisplayContentMain #byTabRow {
+    margin-bottom:-18px;
+}
+
+.bibDisplayContentMain #byTabRow a {
+    margin-top:-19px;
+}
