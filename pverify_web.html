@@ -1,267 +1,144 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <!-- BEGIN pverify_web.html for MERLIN, updated 22:20:33 21-Jan-2009 by hjp -->
-
-  <head>
-    <title>MERLIN Library Catalog</title>
-	<script language="JavaScript" type="text/javascript">
-<!--hide this script from non-javascript-enabled browsers
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-function MM_nbGroup(event, grpName) { //v6.0
-var i,img,nbArr,args=MM_nbGroup.arguments;
-  if (event == "init" && args.length > 2) {
-    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
-      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
-      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
-      nbArr[nbArr.length] = img;
-      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
-        if (!img.MM_up) img.MM_up = img.src;
-        img.src = img.MM_dn = args[i+1];
-        nbArr[nbArr.length] = img;
-    } }
-  } else if (event == "over") {
-    document.MM_nbOver = nbArr = new Array();
-    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
-      if (!img.MM_up) img.MM_up = img.src;
-      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])?args[i+1] : img.MM_up);
-      nbArr[nbArr.length] = img;
-    }
-  } else if (event == "out" ) {
-    for (i=0; i < document.MM_nbOver.length; i++) { img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
-  } else if (event == "down") {
-    nbArr = document[grpName];
-    if (nbArr) for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
-    document[grpName] = nbArr = new Array();
-    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
-      if (!img.MM_up) img.MM_up = img.src;
-      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
-      nbArr[nbArr.length] = img;
-  } }
-  return true;
-}
-
-/* Older functions that swaps images, saved for backwards compatibility. */
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-  return true;
-}
-
-/* Functions that handle preload. */
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-  var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-  return true;
-}
-
-function preload() {
-  MM_preloadImages("/screens/tab_help.gif","/screens/tab_help_over.gif","/screens/tab_help_overdown.gif","/screens/tab_help_down.gif","/screens/tab_libcat.gif","/screens/tab_libcat_over.gif","/screens/tab_libcat_overdown.gif","/screens/tab_libcat_down.gif","/screens/tab_mylib.gif","/screens/tab_mylib_over.gif","/screens/tab_mylib_overdown.gif","/screens/tab_mylib_down.gif","/screens/tab_other.gif","/screens/tab_other_over.gif","/screens/tab_other_overdown.gif","/screens/tab_other_down.gif","/screens/tab_reserves.gif","/screens/tab_reserves_over.gif","/screens/tab_reserves_overdown.gif","/screens/tab_reserves_down.gif");
-  return true;
-}
-
-// stop hiding -->
-</script>
-  </head>
-  <body bgcolor="#FFFFFF" text="#000000" link="#333379" vlink="#333379" alink="#333379" onLoad="preload();">
-    
 <!--{toplogo}-->
-<br />
+<link rel="stylesheet" type="text/css" href="/screens/styles_login.css" />
+<div class="form1Part codeHelp">
+<h3>UM ID Help</h3>
+<p>8-digit EMPL ID (or student number)**</p>
+<blockquote>Example: 12563478</blockquote>
+<ul>
+    <li><strong>Student ID Help:</strong>
+        <ul>
+            <li><a href="http://joess.mst.edu/">MO S&T ID#</a> ; <a href="http://mulibraries.missouri.edu/showmehow/findemplid.htm">MU (Mizzou) ID#</a> ; <a href="https://fusion1.umkc.edu/lookup.cfm">UMKC ID#</a> ; <a href="http://www.umsl.edu/library/access_services/mermob/acsexplainidnums.htm">UMSL ID#</a></li>
+        </ul>
+    </li>
+    <li><strong>Faculty and staff ID Help:</strong>
+        <ul>
+            <li><a href="https://myhr.umsystem.edu/psp/prd/?cmd=login">Login to myHR</a> to find your ID on your paycheck stub</li>
+            <li><a href="http://merlin.missouri.edu/help/merlin-id">How to find your ID</a> in the HR System</li>
+        </ul>
+    </li>
+</ul>
 
-<!-- BEGIN site/tab_bar.tt for MERLIN, updated 22:20:33 21-Jan-2009 by hjp -->
-<table border="0" cellpadding="0" cellspacing="0" width="740" align="center" summary="tabs">
-	<tr>
-		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="100" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="240" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="1" height="1" border="0" /></td>
-	</tr>
-	<tr>
-		<td class="tab_cat"><a href="/search~" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_libcat','/screens/tab_libcat_over.gif','/screens/tab_libcat_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_libcat','/screens/tab_libcat_down.gif',1);"><img src="/screens/tab_libcat.gif" alt=" libcat " width="100" height="31" border="0" id="tab_libcat" /></a></td>
-		<td class="tab_reserve"><a href="/screens/course_reserves.html" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_reserves','/screens/tab_reserves_over.gif','/screens/tab_reserves_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_reserves','/screens/tab_reserves_down.gif',1);"><img src="/screens/tab_reserves.gif" alt=" reserves " width="100" height="31" border="0" id="tab_reserves" /></a></td>
-		<td class="tab_patrec"><a href="/patroninfo" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_mylib','/screens/tab_mylib_over.gif','/screens/tab_mylib_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_mylib','/screens/tab_mylib_down.gif',1);"><img src="/screens/tab_mylib_down.gif" alt=" mylib " width="100" height="31" border="0" id="tab_mylib" /></a></td>
-		<td class="tab_other"><a href="/search~/v" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_other','/screens/tab_other_over.gif','/screens/tab_other_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_other','/screens/tab_other_down.gif',1);"><img src="/screens/tab_other.gif" alt=" other " width="100" height="31" border="0" id="tab_other" /></a></td>
-		<td class="tab_help"><a href="/search~/k" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','tab_help','/screens/tab_help_over.gif','/screens/tab_help_overdown.gif',1);" onClick="MM_nbGroup('down','tab_bar','tab_help','/screens/tab_help_down.gif',1);"><img src="/screens/tab_help.gif" alt=" help " width="100" height="31" border="0" id="tab_help" /></a></td>
-		<td><img src="/screens/tab_bar_bar1.gif" alt="" width="1" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="1" height="31" border="0" /></td>
-	</tr>
-	<tr>
-		<td colspan="6" style="text-align: left; vertical-align: middle; white-space: nowrap; background-color: #333379;"
-		class="smaller_reversed_nodecoration"><img src="/screens/tab_bar_bar2.gif" alt="" width="1" height="1" border="0" /></td>
-		<td><img src="/screens/shim.gif" alt="" width="1" height="9" border="0" /></td>
-	</tr>
-</table><br />
-<!-- END site/tab_bar.tt -->
+<p>**<strong>If you are, or have been, <em>affiliated with more than one campus</em></strong> (as a student and/or employee), you must use your <strong>one-letter</strong> campus code following the 8-digit ID:</p>
 
-<center>
-<p><font color="red"><strong>Protect your privacy!</strong><br />
-To prevent others (who use this PC after you) from seeing your personal library information,<br />
-please remember to click the red "LOG OUT" button, and close your Web browser.</font></p>
-</center>
-<table width="740" align="center" cellpadding="0" cellspacing="0" summary="pverify">
-<tr>
-<td>
-<p><strong>Login to view your circulation record, <a class="link" href="#renew">renew items</a>, and <a class="link" href="#holds">place holds</a>.</strong></p>
-<center>
-<!--{patron}-->
-<!--{logout}-->
-</center>
-<form method="post">
-<p>
+<blockquote>
+    <ul>
+        <li>00426543<strong>c</strong>  MU (Mizzou)</li>
+        <li>11223344<strong>r</strong>  MO S&T</li>
+        <li>22334455<strong>k</strong>  UMKC</li>
+        <li>33445566<strong>t</strong>  UMSL</li>
+    </ul>
+</blockquote>
+
+<p>Courtesy & Proxy borrowers:</p>
+<p>Please inquire at your Home Library Circulation Desk.</p>
+</div>
+<div class="pageContentInner">
+<h1 class="pageHeader">Login</h1>
+<div class="form1Part formLogin" id="accessibleForm">
+<!--{formbegin}-->
 <!--{iferrmsg}-->
-<font color="red" size="+2"><em>
+<span class="errormessage">
 <!--{iferrmsgisPIN}-->
 <!--{newpinmsg}-->
 <!--{else}-->
 <!--{errmsg}-->
 <!--{xif}-->
-</em></font><br />
-<br />
-<br />
+</span>
 <!--{xif}-->
-</p>
-<table width="100%" border="0" cellspacing="0" cellpadding="2" summary="patform">
-<tr>
-<td valign="top" width="1%">
-<!--=================== BEGIN MAIN PATRON FORM ====================-->
+
+<fieldset>
+<legend>
+<!--{enterinfo}-->
+</legend>
+
+<!--{ifextpat}-->
+<h2>Students, Staff, and Faculty</h2>
+<div class="formEntryArea">
+<label for="extpatid"><span class="formLabel">
+Username:
+</span></label>
+<!--{extpatid}-->
+<label for="extpatpw"><span class="formLabel">
+Password:
+</span></label>
+<!--{extpatpw}-->
+</div>
+<h2>Visitors</h2>
+<!--{xif}-->
+
 <!--{ifneedpatronname}-->
-<p><strong>
+<div class="formEntryArea">
 <!--{nameprompt}-->
-</strong>
-<br />
 <!--{name}-->
-<br />
-<em>
+<div class="formLabelExample">
 <!--{nameexample}-->
-</em></p>
+</div>
+</div>
 <!--{xif}-->
+
 <!--{ifneedpatronverify}-->
-<p><font color="red"><strong>8-digit EMPL ID or student number</strong></font>
+<div class="formEntryArea">
+<!--{barcodeprompt}-->
 <!--{barcode}-->
-<br />
-<em>
+<div class="formLabelExample">
 <!--{barcodeexample}-->
-</em></p>
+</div>
+</div>
+
 <!--{ifneedspin}-->
-<p>
+
 <!--{iferrmsgisPIN}-->
-<!--{pin1prompt}-->
-<br />
-<!--{pin1}-->
-<br />
-<!--{pin2prompt}-->
-<br />
-<!--{pin2}-->
-<!--{else}-->
-<!--{pin}-->
-<!--{xif}-->
-<!--{xif}-->
-</p>
-<!--{xif}-->
 <p>
-<!--{submit}-->
+<!--{newpinmsg}-->
 </p>
-<!--==================== END MAIN PATRON FORM ====================-->
-</td>
-<td valign="top" align="center">
-<!-- BEGIN site/id_help.tt for MERLIN, updated 22:20:33 21-Jan-2009 by hjp -->
-<table width="170" border="1" align="center" cellpadding="2" cellspacing="0" summary="IDhelp">
-  <tr>
-    <td colspan="3" nowrap="nowrap">
-      <div class="um_center">
-        <strong>UM ID HELP</strong>
-      </div>
-    </td>
-  </tr>
-  <tr class="um_idbox" valign="top">
-    <td colspan="3" nowrap="nowrap" class="idhelp">
-      <p class="um_left">
-        <strong>Univ Missouri (all four campuses):</strong><br>
-        <span class="um_blue">8-digit EMPL ID (or student number)</span><span class="um_red_bold">**</span>
-      </p>
-      <blockquote>
-        <blockquote>
-          <p class="um_left">
-            Example: <span class="um_big_blue_bold">12563478</span>
-          </p>
-        </blockquote>
-      </blockquote>
-      <div class="um_left">
-        <ul>
-          <li>
-            <strong>Student ID Help:</strong>
-            <ul>
-              <li>
-                <a href="http://joess.mst.edu">MO S&amp;T ID#</a> ; <a href="http://mulibraries.missouri.edu/showmehow/findemplid.htm">MU (Mizzou) ID#</a> ; <a href="https://fusion1.umkc.edu/lookup.cfm">UMKC ID#</a> ; <a href="http://www.umsl.edu/library/access_services/mermob/acsexplainidnums.htm">UMSL ID#</a><br>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong>Faculty and staff ID Help:</strong>
-            <ul>
-              <li>
-                <a href="https://myhr.umsystem.edu/psp/prd/?cmd=login">Login to myHR</a> to find your ID on your paycheck stub
-              </li>
-              <li>
-                <a href="http://merlin.missouri.edu/help/merlin-id">How to find your ID</a> in the HR System
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <p class="um_left">
-        <span class="um_red">**</span><strong>If you are, or have been, <span class="um_red">affiliated with</span></strong> <span class="um_red"><strong>more than one campus</strong></span><br>
-        (as a student and/or employee), you must use your <strong>one-letter</strong><br>
-        campus code following the 8-digit ID:
-      </p>
-      <blockquote>
-        <p class="um_left">
-          <span class="um_blue">00426543<span class="um_red_bold">c</span>&nbsp; MU (Mizzou)<br>
-          11223344<span class="um_red_bold">r</span>&nbsp; MO S&amp;T<br>
-          22334455<span class="um_red_bold">k</span>&nbsp; UMKC<br>
-          33445566<span class="um_red_bold">t</span>&nbsp; UMSL</span><br>
-        </p>
-      </blockquote>
-      <div class="um_bold">
-        Courtesy &amp; Proxy borrowers:<br>
-        Please inquire at your Home Library Circulation Desk.
-      </div>
-    </td>
-  </tr>
-</table>
-<!-- END site/id_help.tt -->
-</td>
-</tr>
-</table>
-</form>
-<table width="100%" summary="text">
-<tr>
-<td>
-<!--{startover}-->
-</td>
-</tr>
-</table>
-<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" summary="text">
-<tr>
-<td bgcolor="#DEDEE7"><strong>Renew Items<a name="renew" id="renew"></a></strong></td>
-</tr>
-<tr>
-<td bgcolor="#FFFFFF">
+<div class="formEntryArea">
+<!-- <label for="pin1"> -->
+<span class="formLabel">
+<!--{pin1prompt}-->
+</span>
+<!--{pin1}-->
+<!-- </label> -->
+</div>
+<div class="formEntryArea">
+<!-- <label for="pin2"> -->
+<span class="formLabel">
+<!--{pin2prompt}-->
+</span>
+<!--{pin2}-->
+<!-- </label> -->
+</div>
+
+<!--{else}-->
+<div class="formEntryArea">
+<!--{pinprompt}-->
+<!--{pin}-->
+<div class="formLabelExample">
+<!--{pininstructions}-->
+</div>
+</div>
+
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+
+    <!--{ifalternate_id}-->
+    <!--{user_name}-->
+    <!--{xif}-->
+
+<div class="formButtonArea">
+<!--{ifneedspin}-->
+<!--{pinresetrequest}-->
+<!--{xif}-->
+<!--{submit}-->
+<input type="submit" class="submitHidden">
+</div>
+</fieldset>
+<!--{formend}-->
+
+</div>
+
+<div id="loginHelp">
+<p><strong>Renew Items</strong></p>
 <ul>
 <li>Login</li>
 <li>Click on <strong>"...Items currently checked out"</strong></li>
@@ -269,13 +146,8 @@ please remember to click the red "LOG OUT" button, and close your Web browser.</
 <li>New due dates will be displayed in addition to the word "<em>Renewed</em>" in italics</li>
 <li><em>Important note: Items that other patrons have placed on hold and restricted loans cannot be renewed; a system message will tell you the renewal is not possible</em></li>
 </ul>
-</td>
-</tr>
-<tr>
-<td bgcolor="#DEDEE7"><strong>Place Holds<a name="holds" id="holds"></a></strong></td>
-</tr>
-<tr>
-<td bgcolor="#FFFFFF">
+
+<p><strong>Place Holds</strong></p>
 <ul>
 <li>Login</li>
 <li>Click on <strong>Search the Catalog</strong></li>
@@ -285,15 +157,8 @@ please remember to click the red "LOG OUT" button, and close your Web browser.</
 <li>Click on <strong>Submit</strong></li>
 <li><em>You will receive the message "Your request for this item has been sent to the library."</em></li>
 </ul>
-<br />
-</td>
-</tr>
 
-<tr>
-<td bgcolor="#DEDEE7"><strong>Activate your Reading History</strong></td>
-</tr>
-<tr>
-  <td bgcolor="#FFFFFF">
+<p><strong>Activate Your Reading History</strong></p>
       <ul>
         <li>Log in to <a href="/patroninfo">My Library Account</a>.</li>
         <li>Click on the Reading History button.</li>
@@ -302,14 +167,8 @@ please remember to click the red "LOG OUT" button, and close your Web browser.</
         <li>If you want to <strong>remove items</strong> from your reading history fill in the mark box, and hit the <a href="/search~/k#delsel">Delete Selected</a> button. You may also use the <a href="/search~/k#delall">Delete All button</a>.</li>
         <li>If you want to deactivate <strong>Reading History</strong> hit the <a href="/search~/k#delall">Delete All</a> button, and then the "<a href="/search~/k#optout">Opt Out</a>" button.</li>
       </ul>
-    </td>
-</tr>
 
-<tr>
-<td bgcolor="#DEDEE7"><strong>My Lists</strong></td>
-</tr>
-<tr>
-  <td bgcolor="#FFFFFF">
+<p><strong>My Lists</strong></p>
  <p> You can set up and add to custom lists of books and other library materials found in the catalog.</p>
                 <ol>
 		  <li>Log in to your library account.</li>
@@ -325,17 +184,12 @@ please remember to click the red "LOG OUT" button, and close your Web browser.</
 		  <li>View your bookbag.</li>
 		  <li>Save to My Lists.</li>
 		</ol>
- </td>
-</tr>
+</div>
 
 
-
-</table>
-<!--{startover}-->
-</td>
-</tr>
-</table>
+</div><!-- pageContentInner -->
 <!--{botlogo}-->
-
-  </body>
-</html>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].elements[1].focus(); }
+catch(err) {}
+//--><!]]></script>

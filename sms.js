@@ -79,7 +79,7 @@ try {
    findPos(document.getElementById('smsbutton'),sms,-110,50);
 } catch (e) {
 	// doesn't work?  hide the SMS buttons
-document.getElementById('smsfeatures').style.visibility='hidden';
+	//document.getElementById('smsfeatures').style.visibility='hidden';
 }
 return false;
 }
@@ -146,6 +146,6 @@ function findPos(obj,obj2,lofset,tofset) {
 // Grab the bib number of the item
    function getbib() {
      var buttonBlock = document.getElementById('navigationRow').innerHTML;
-	 sms.style.visibility = 'hidden';
-	 sms.style.display = 'none';
+//	 sms.style.visibility = 'hidden';
+//	 sms.style.display = 'none';
 	 }
