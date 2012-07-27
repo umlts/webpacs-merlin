@@ -1,52 +1,77 @@
-<!-- MERLIN bib_display.html updated 080923 lee -->
-
 <!--{toplogo}-->
-<!--{patron}-->
-<!--{logout}-->
-<br />
 <!--{ifbibdisplay}-->
 <!--{xif}-->
-<div class="navigationRow">
+<!--{catedit}-->
+
+<div id="bibDisplayBody">
+<div class="navigationRowRecord">
 <!--{navrow}-->
-<br />
-<!--{searchhistory}-->
-<br />
+<!--{innreach}-->
 </div>
-<div class="bibSearchtool">
+<div id="bibDisplayContent">
+<div class="bibSearch">
 <!--{searchtool}-->
-<!--{relsearch}-->
+<div class="bibSearchHistory">
+<!--{searchhistory}-->
 </div>
+</div><!-- bibSearch -->
+
 <div class="bibPager">
 <!--{pager}-->
-<br />
-<!--{reslink}-->
-<!--{innreach}-->
-<br />
 </div>
-<div style="text-align:center;font-size:150%;padding-right:0px;">
+
+<div class="bibClear"></div>
+
+
+<div class="bibDisplayJacket">
+<!--{bibimage}-->
+<div class="bibMedia">
+<!--{media}-->
+</div>
+</div>
+
+<div class="resourceDisplayContentMain">
+
+
+<div id="resourceTitle">
 <!--{resourcelink}-->
 </div>
 
 
 <!--{recordinfo:hebjgwr}-->
 
+<!--{ifhaspatrate}-->
+<div class="bibDisplayRatings">
+<!--{ratings}-->
+</div>
+<!--{xif}-->
 
-
-<!--{license}-->
-
-<!--{bib}-->
-
-
+<div class="bibDisplayPermLink actionButtonArea">
 <!--{recordlink}-->
+</div>
+
+<div class="clear"></div>
+
+<div class="resourceLicence">
+
+<div class="resourceDisplayLicenseHeader"><h2>License</h2></div>
+<div class="resourceLicenseArea">
+<!--{license}-->
+</div>
 
 
-<div class="bibPager">
-<!--{pager}-->
-<br />
 </div>
-<div class="navigationRow">
-<!--{navrow}-->
-<br />
-<!--{searchhistory}-->
+
+<div class="clear"></div>
+<div class="resourceDisplayBibs">
+<!--{bib}-->
 </div>
+
+<!--{relsearch}-->
+
+<!--{reslink}-->
+</div><!-- close resourceDisplayContentMain -->
+</div><!-- close bibDisplayContent -->
+<div class="clear"></div>
+</div><!-- close bibDisplayBody -->
 <!--{botlogo}-->

@@ -1,116 +1,49 @@
-<!-- BEGIN site/botlogo.tt for MERLIN, updated 15:26:50 07-Dec-2007 by hjp -->
-<center>
-	<p><img src="/screens/bot_bar.gif" alt="" width="740" height="8" border="0" /></p>
-	<p><span class="bot_logo"><strong>MERLIN</strong> &middot; Missouri Education and Research Libraries Information Network<br />
-	a MOBIUS Library Catalog</span></p>
-	<p>
-	<span class="bot_logo"><strong>University of Missouri System:</strong><br />
-	<a class="bot_logo" href="/search~S1">MU Libraries</a> |
-	<a class="bot_logo" href="/search~S2">MU Law Library</a> |
-	<a class="bot_logo" href="/search~S3">UMKC Libraries</a> |
-	<a class="bot_logo" href="/search~S4">UMKC-Law Library</a> |
-	<a class="bot_logo" href="/search~S5">Missouri S&amp;T Library</a> |
-	<a class="bot_logo" href="/search~S6">UMSL Libraries</a><br />
-	<a class="bot_logo" href="/search~S7">The State Historical Society of Missouri</a><br />
-	</span></p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-</center>
-
+<!-- begin botlogo.html file -->
+<!-- Rel 2009B Example Set -->
+<!-- Updated: Sept 2009 -->
+</div><!-- pageContent  -->
+<div style="clear:both"></div>
+<div id="botlogo">
+<p><strong>MERLIN</strong> - <strong>M</strong>issouri <strong>E</strong>ducation and <strong>R</strong>esearch <strong>L</strong>ibraries <strong>I</strong>nformation <strong>N</strong>etwork</p>
+<p>The shared library catalog of the four University of Missouri campuses</p>
+<p>and the State Historical Society of Missouri</p>
+</div>
 <script type="text/javascript">
 document.write(unescape("%3Cscript src='" + ((document.location.protocol=="https:")?"https://snapabug.appspot.com":"http://www.snapengage.com") + "/snapabug.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">
 SnapABug.addButton("6752f269-447a-4d14-9493-5a4e72696eb5","1","55%");
 </script><p><a href="#" onclick="return SnapABug.startLink();"><img border="0" src="https://snapabug.appspot.com/statusImage?w=6752f269-447a-4d14-9493-5a4e72696eb5" /></a></p>
+</div><!-- fullPage -->
+</div><!-- min-height -->
+<link rel="shortcut icon" type="ximage/icon" href="/screens/favicon.ico" />
+<script type="text/javascript">
 
-<!-- Google Book Search viewability API script for bib record--> 
-<script type='text/javascript'> 
-// Find all the div elements
-var divList = document.getElementsByTagName("div");
-// Make an array to store the ones with the "gbs" class
-gbsList =  new Array();
-for (var div = 0; div < divList.length; div++) {
-    // Get the class
-	classAttrib = divList[div].getAttribute("class");
-	// Hack for IE
-	if(classAttrib == null) { classAttrib = divList[div].getAttribute("className") }
-	// Store the div if the class is "gbs"
-	if(classAttrib == "gbs") {
-		gbsList.push(divList[div]);
-	}
-}
-// Make an array for the numbers in the gbs divs
-var numbers = new Array();
-for (var bib = 0; bib < gbsList.length; bib++) {
-	// Remove leading and trailing newlines from the numbers
-	bookid = gbsList[bib].innerHTML.replace(/^\s+|\s+$/g,"")
-	// Prefix the number with the label that GBS needs and store it
-	if(bookid.length > 0) {
-		numbers[bib] = "OCLC:" + bookid;
-	}
-}
-// Construct the URL for the remote GBS script
-var api_url ="http://books.google.com/books?jscmd=viewapi&bibkeys=" + numbers.join(",");
-// Construct an inline javascript invocation of the remote GBS script
-var scriptLine = "%3Cscript src='" + api_url + "' type='text/javascript'%3E%3C/script%3E";
-// Insert the line of script into this page so it returns the _GSBookInfo object
-document.write(unescape(scriptLine));
-</script> 
-<script type='text/javascript'> 
-//var message= "";
- 
-// Resuming the original script
-offsiteImg = '<img src="/screens/icon_offsite_blue.gif" alt="offsite" title="offsite" style="border: 0pt none ; vertical-align: middle;"> ';
-gbsPreviewImage = '<img src="/screens/gbs_preview_button_small.gif" alt="Preview" title="Preview" style="border: 0pt none ; vertical-align: middle; margin-top:3px"> ';
-// Iterate through the "gbs" <div> elements
-for(bib in numbers) {
-	// Look for matching GBS data
-	var bookInfo = _GBSBookInfo[numbers[bib]];
-	// If found, process it
-    if(bookInfo){
-		// Set text and link values depending on viewablity
-		if(bookInfo.preview == "full") { 
-			textGBS = ""; //"Google Book Search"; 
-			linkGBS = bookInfo.preview_url;
-			linkImage = gbsPreviewImage;
-		}
-		if(bookInfo.preview == "partial") { 
-			textGBS = "(Limited preview)" //"Preview at Google Book Search"; 
-			linkGBS = bookInfo.preview_url;
-			linkImage = gbsPreviewImage;
-		}
-		if(bookInfo.preview == "noview") { 
-			textGBS = "Information at Google Book Search"; 
-			linkGBS = bookInfo.info_url;
-			linkImage = gbsPreviewImage;
-		}
-		// HTML for offsite image
-		offsiteImg = '<img src="/screens/icon_offsite_blue.gif" alt="offsite" title="offsite" style="border: 0pt none ; vertical-align: middle;"> ';
-		// Rewrite the HTML inside the "gbs" <div> elements
-		if(bookInfo.thumbnail_url !== undefined) {
-			gbsList[bib].innerHTML = '<img src="' + bookInfo.thumbnail_url + '"><br><a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + linkImage + '</a>';
-		} else {
-		gbsList[bib].innerHTML = '';
-		}
-		//+ '<img src="' + bookInfo.thumbnail_url + '">'
-		// Turn on the display of the GBS link
-		gbsList[bib].style.display = 'inline';
-		//thumbCell = gbsList[bib].parentNode.nextSibling.nextSibling.nextSibling.nextSibling;
-		//message += bib + thumbCell.className + " ";
-		//if(thumbCell.innerHTML.indexOf("&nbsp;")) {
-			//alert(thumbCell.innerHTML);
-			//thumbCell.innerHTML = thumbCell.getAttribute("class");
-		    //if(thumbCell !== undefined) { 
-				//thumbCell.innerHTML = '<img src="' + bookInfo.thumbnail_url + '">';
-			//}
-		//}
-	}
-}
-	//alert(message);
-    //alert(window.location.protocol);
-</script> 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21929696-1']);
+  _gaq.push(['_setDomainName', 'lso.missouri.edu']);
+  _gaq.push(['_setAllowHash', false]);
+  _gaq.push(['_trackPageview']);
 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
+</script>
 
-<!-- END site/botlogo.tt -->
+<script type="text/javascript">
 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16154721-1']);
+  _gaq.push(['_setDomainName', 'merlin.mobius.umsystem.edu']);
+  _gaq.push(['_setAllowHash', false]);
+  _gaq.push(['_trackPageview']);
 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- end botlogo.html file -->
