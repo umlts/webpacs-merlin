@@ -1,468 +1,548 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 29 Apr 2010 -->
+<head>
+<title>MERLIN Catalog - Advanced Keyword Search</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <!-- BEGIN srchhelps_s3.txt for MERLIN, updated 14:42:51 08-Jan-2008 by hjp -->
-
-  <head>
-    <title>UMKC - Advanced Search</title>
-	<script language="JavaScript" type="text/javascript">
-<!--hide this script from non-javascript-enabled browsers
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-function MM_nbGroup(event, grpName) { //v6.0
-var i,img,nbArr,args=MM_nbGroup.arguments;
-  if (event == "init" && args.length > 2) {
-    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
-      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
-      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
-      nbArr[nbArr.length] = img;
-      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
-        if (!img.MM_up) img.MM_up = img.src;
-        img.src = img.MM_dn = args[i+1];
-        nbArr[nbArr.length] = img;
-    } }
-  } else if (event == "over") {
-    document.MM_nbOver = nbArr = new Array();
-    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
-      if (!img.MM_up) img.MM_up = img.src;
-      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])?args[i+1] : img.MM_up);
-      nbArr[nbArr.length] = img;
-    }
-  } else if (event == "out" ) {
-    for (i=0; i < document.MM_nbOver.length; i++) { img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
-  } else if (event == "down") {
-    nbArr = document[grpName];
-    if (nbArr) for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
-    document[grpName] = nbArr = new Array();
-    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
-      if (!img.MM_up) img.MM_up = img.src;
-      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
-      nbArr[nbArr.length] = img;
-  } }
-  return true;
-}
-
-/* Older functions that swaps images, saved for backwards compatibility. */
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-  return true;
-}
-
-/* Functions that handle preload. */
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-  var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-  return true;
-}
-
-function preload() {
-  MM_preloadImages("/screens/tab_help.gif","/screens/tab_help_over.gif","/screens/tab_help_overdown.gif","/screens/tab_help_down.gif","/screens/tab_libcat.gif","/screens/tab_libcat_over.gif","/screens/tab_libcat_overdown.gif","/screens/tab_libcat_down.gif","/screens/tab_mylib.gif","/screens/tab_mylib_over.gif","/screens/tab_mylib_overdown.gif","/screens/tab_mylib_down.gif","/screens/tab_other.gif","/screens/tab_other_over.gif","/screens/tab_other_overdown.gif","/screens/tab_other_down.gif","/screens/tab_reserves.gif","/screens/tab_reserves_over.gif","/screens/tab_reserves_overdown.gif","/screens/tab_reserves_down.gif");
-  return true;
-}
-
-// stop hiding -->
 </script>
-  </head>
-
-<!--{advancedsearchbody}-->
-	
-<center>
+<script>
+function submitSubject() {
+    window.location="/search~s3/x?" + document.subjectSearch.bySubject.options[document .subjectSearch.bySubject.selectedIndex].value;
+    return true;
+}
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+<body id="frontPage" onload="if (location.search.indexOf('SUBKEY') != -1 || location.search.indexOf('SEARCH') != -1 || location.search.indexOf('searcharg=') != -1 ) modifySearch(document.location.search); init_progsearch(); if (document.search) document.search.searchText1.focus();">
 <!--{toplogo}-->
-<br />
+<script type="text/javascript">
 
+$(document).ready(function(){
+    
+    //Loading the correct content when the tab is clicked from another page
+	$('#tabs .tabContent').hide();
+        if (window.location.hash.length > 0) {
+            $(window.location.hash).show();
+            $('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
+        }else{
+            $('#tabs .tabContent:first').show();
+            $('#tabs ul li:first').addClass('active');
+        }
+        
+	$('#tabs ul li a').click(function(){
+                //Switching the tabs
+		$('#tabs ul li').removeClass('active');
+		$(this).parent().addClass('active'); 
+		var currentTab = $(this).attr('href'); 
+		$('#tabs .tabContent').hide();
+		$(currentTab).show();
+                
+                //To make the Advanced search page happy
+                
+                $('.innerQuickSearch').hide();
+                $('.X .innerQuickSearch').show();
+                
+                //To make sure the first radio is selected, showing the correct search examples
+                var firstRadio = $(currentTab + ' .limits label:first input')
+                $(firstRadio).click();
+                $(".searchTips").load("/screens/" + firstRadio.val() + ".inc");
+                
+                //This makes it so the scrollbar doesn't jump to the anchor tag.  It also, unfortunately, makes it so the back button doesn't work.  
+                return false;
+	});
 
-		<!-- BEGIN site/tab_bar.tt for MERLIN, updated 14:42:51 08-Jan-2008 by hjp -->
-<div id="merlin_tabs_wrapper">
-	<div id="merlin_tabs" style="border-bottom:0px;">
-		<ul>
-			<li id="current"><a href="/search~S3"><span>Library<br />Catalog</span></a></li>
-			<li><a href="/screens/course_reserves_s3.html"><span>Course<br />Reserves</span></a></li>
+    //Switching the Keyword/Title menu when the radio button is changed
+        $('input.searchtype[value=X]').attr('checked', true);
+        $('.innerQuickSearch').hide();
+        $('.X .innerQuickSearch').show();
+	$('input.searchtype').click(function(){
+            $('.innerQuickSearch').hide();
+            $('.' + this.value + ' .innerQuickSearch').show();
+            $('input.searchtype[value=' + this.value + ']').attr('checked', 'checked');
+	});
+	$('#moreLink').click(function(){
+             $('#optionalLimits').toggle();
+	});
+        
+    //Remove the colons from advanced search
+    $('#advancedSubmit').click(function () { 
+      var searchTerm = $('.advancedInput').val();
+      if((/\b[atsn]:/).test(searchTerm)) {}else {
+      var newSearchTerm = searchTerm.replace(":", " ");
+      $('.advancedInput').val(newSearchTerm);
+    }
+    });
+    
+    //The scrollbar should always be at the top when the page loads
+    $(document).scrollTop(0);
+});
+</script>
 
-			<li><a href="/patroninfo"><span>My Library<br />Account</span></a></li>
-			<li><a href="/search~S3/v"><span>Other<br />Libraries</span></a></li>
+<div class="pageContentInner">
 
-			
-			<li><a href="/search~S3/j"><span>Articles &amp;<br />Databases</span></a></li>
-			<li><a href="http://pc8ga3qq6a.search.serialssolutions.com/"><span>Online<br />Journals</span></a></li>
-			<li><a href="http://libguides.library.umkc.edu/index.php"><span class="oneLine">LibGuides</span></a></li>
+<div id="tabs">
+    <ul id="tabRow">
+      <li class="tab"><a href="#tab-1">Quick Search</a></li>
+      <li class="tab"><a href="/search/Y">Advanced</a></li>
+      <li class="tab"><a href="#tab-3">Author & Title</a></li>
+      <li class="tab"><a href="#tab-4">Subjects</a></li>
+      <li class="tab"><a href="#tab-5">Numbers/ Other</a></li>
+      <li class="tab"><a href="#tab-6">Articles & Databases</a></li>
+      <li class="tab"><a href="http://pc8ga3qq6a.search.serialssolutions.com/">Online Journals & e-Books</a></li>
+    </ul>
+    
+   <div id="tab-1" class="tabContent">
+        <h1 class="pageHeader">Quick Search</h1>
+        
+            <div id="accessibleForm" class="quickSearch X">
+                
+                <div class="innerQuickSearch">
 
-			
-
-			<li><a href="/search~S3/k"><span>?<br />Help</span></a></li>
-		</ul>
-	</div>
-	<div id="merlin_sub_tabs" class="smaller_reversed_nodecoration"> | <a href="/search~S3/Y">Keyword</a> | <a href="/search~S3/t">Title</a> | <a href="/search~S3/a">Author</a> | <a href="/search~S3/q">Author &amp; Title</a> | <a href="/search~S3/s">Journal Title</a> | <a href="/search~S3/h">Subject</a> | <a href="/search~S3/n">Number</a></div>
-<br />
-</div>
-<!-- END site/tab_bar.tt -->
-
-
-</center>
-
-<center>
-
-
-	
-	
-
-<center>
-
-<!--{patron}-->
-
-<!--{logout}-->
-
-</center>
-
-<!--{availlim}-->
-
-<!-- BEGIN site/srchhelp/X.tt for MERLIN, updated 14:42:51 08-Jan-2008 by hjp -->
-
-
-<!--Beginning main page content-->
-<!-- This table is purely cosmetic. It's only cell has a background color which is visible in the cellspacing gaps of the content table nested in that cell. -->
-<center>
-<!-- BEGIN TABLE #1: AVS MAIN -->
-<table id="avsMain" cellspacing="0" summary="text">
-<tr>
-<td class="pageNavArea">
-<!-- BEGIN TABLE #2: AVS SECTION -->
-<table class="avsSection" cellspacing="5" summary="text">
-<tr>
-<td class="pageMainArea" colspan="3">
-<span class="pageMainAreaHeader">Advanced Keyword Search</span>
 <!--{msg}-->
-<!--{spellcheck}-->
-<!-- BEGIN TABLE #3: AVS BORDER -->
-<table class="avsBorder" cellspacing="0" summary="text">
-<!-- HEADER ROW: LEFT -->
-<tr>
-<td class="leftcolHeader">
-Please fill in the boxes, select limits, and click Submit:
-</td>
-<!-- HEADER ROW: RIGHT  -->
-<td class="rightColHeader">Limit to:</td>
-</tr>
-<!-- END HEADER ROW -->
-<!-- BEGIN LEFT COLUMN: SEARCH TERMS -->
-<tr>
-<td class="searchTips" style="white-space: nowrap; vertical-align: top;">
+
+<!--{innreach}-->
+        
 <!--{advancedsearchformbegin}-->
-<input type="hidden" name="startSearch" />
-<!-- BEGIN TABLE #4: PAGE MAIN AREA -->
-<table class="pageMainArea" style="text-align: center; vertical-align: top; padding: 2;" cellspacing="0" summary="text">
-<tr>
-<td class="pageMainAreaSubHeader" style="width: 10%;">
-Find:
-</td>
-<td>
-<input maxlength="75" size="25" name="searchText1" id="adv_searcharg" />
-</td>
-<td class="pageMainAreaSubHeader" width="1%">
-in
-</td>
-<td width="65%">
-<select name="fieldLimit1">
-<option value="" selected="selected">Any Field:</option>
-<option value="a:">Author:</option>
-<option value="t:">Title:</option>
-<option value="d:">Subject:</option>
-<option value="c:">Table of Contents:</option>
-<option value="N:">Other:</option>
-</select>
-</td>
-</tr>
-<tr>
-<td>
-<select name="boolean1">
-<option value="+and+" selected="selected">and</option>
-<option value="+and+not+">and not</option>
-<option value="+or+">or</option>
-<option value="+near+">near</option>
-</select>
-</td>
-<td>
-<input maxlength="75" size="25" name="searchText2" />
-</td>
-<td class="pageMainAreaSubHeader" width="2%">in</td>
-<td>
-<select name="fieldLimit2">
-<option value="" selected="selected">Any Field:</option>
-<option value="a:">Author:</option>
-<option value="t:">Title:</option>
-<option value="d:">Subject:</option>
-<option value="c:">Table of Contents:</option>
-<option value="N:">Other:</option>
-</select>
-</td>
-</tr>
-<tr>
-<td>
-<select name="boolean2">
-<option value="+and+" selected="selected">and</option>
-<option value="+and+not+">and not</option>
-<option value="+or+">or</option>
-<option value="+near+">near</option>
-</select>
-</td>
-<td>
-<input maxlength="75" size="25" name="searchText3" />
-</td>
-<td class="pageMainAreaSubHeader" width="2%">in</td>
-<td>
-<select name="fieldLimit3">
-<option value="" selected="selected">Any Field:</option>
-<option value="a:">Author:</option>
-<option value="t:">Title:</option>
-<option value="d:">Subject:</option>
-<option value="c:">Table of Contents:</option>
-<option value="N:">Other:</option>
-</select>
-</td>
-</tr>
-<tr>
-<td>
-<select name="boolean3">
-<option value="+and+" selected="selected">and</option>
-<option value="+and+not+">and not</option>
-<option value="+or+">or</option>
-<option value="+near+">near</option>
-</select>
-</td>
-<td>
-<input maxlength="75" size="25" name="searchText4" />
-</td>
-<td class="pageMainAreaSubHeader" width="2%">in</td>
-<td>
-<select name="fieldLimit4">
-<option value="" selected="selected">Any Field:</option>
-<option value="a:">Author:</option>
-<option value="t:">Title:</option>
-<option value="d:">Subject:</option>
-<option value="c:">Table of Contents:</option>
-<option value="N:">Other:</option>
-</select>
-<input type="hidden" name="endSearch" />
-</td>
-</tr>
-<tr>
-<td>
-<!--{advancedsubmit}-->
-</td>
-</tr>
-</table>
-<!-- END TABLE #4: PAGE MAIN AREA TABLE -->
-<br />
-</td>
-<!-- END LEFT COLUMN -->
-<!-- BEGIN RIGHT COLUMN: SORT & LIMIT -->
-<td class="searchTips">
-<input type="hidden" name="startLimit" />
-  
-<table border="0">
-<tr><td>School:</td><td>
+
+                    <div class="limits">
+                    <div class="limitColumn">
+                    <label> <input name="searchtype" class="searchtype" value="X" checked="checked" type="radio"> Keyword </label> 
+                    <label> <input name="searchtype" class="searchtype" value="t" type="radio"> Title begins with </label>
+                    </div>
+                    <div class="limitColumn">
+                    <label> <input name="searchtype" class="searchtype" value="s" type="radio"> Journal & Newspapers title begins with </label>
+                    <label> <input name="searchtype" class="searchtype" value="a" type="radio"> Author (last name first) </label>
+                    </div>
+                    </div>
+        
+                    <div class="formEntryArea">
+                    <input type="hidden" name="fieldLimit1" value="" />
+                    <input class="advancedInput" maxlength="75" size="35" name="searchText1" />
 <!--{scope}-->
-</td>
-</tr></table>
+                    </div>
+                    <input type="hidden" name="startLimit" >
+                    <div class="formEntryArea">
+<!--{availlim}-->
+                    </div>
+                    <div class="formEntryArea">
+                        <a id="moreLink">Refine your keyword search by language, year, and more (+)</a>
+                    </div>
+                    <div class="formButtonArea">
+                    <span>
+<!--{advancedsubmit}-->
+                    </span>
+                    <span>
+<!--{clearform}-->
+                    </span>
+                    </div>
+        
 
-<!--{branch}-->
-<!--{lang}-->
+
+                    <fieldset id="optionalLimits">
+                    <legend>Add Limits (Optional)</legend>
+                    
+<p>In each box hold down the CTRL or Apple key to select more than one.</p>
+        
+                    <div class="formEntryArea">
 <!--{DOCDATE}-->
-<!--{publish}-->
-
-<table border="0">
-<tr><td>Conference Proceedings:</td><td><select name="o">
-<option value="">ANY</option>
-<option value="1">Yes</option>
-<option value="0">No</option>
-
-</select>
-</td>
-</tr></table>
-
-<table border="0">
-<tr><td><label for="n">Online:</label></td><td><select id="n" name="n">
-<option value="">ANY</option>
-<option value="cr">Online Only</option>
-</select>
-</td>
-</tr></table>
-
-<table border="0">
-<tr><td><label for="a">Audio and Video Formats:</label></td><td><select id="a" name="a" size="5" multiple="multiple">
-<option value="">ANY</option>
-<option value=""></option>
-<option value="s*">AUDIO FORMATS</option>
-<option value="s*">All Sound Recording Formats</option>
-<option value="ss">Audio cassettes</option>
-<option value="sd f">CDs</option>
-<option value="sd b">LPs</option>
-<option value="sd c">45 rpm </option>
-<option value="sd d">78 rpm</option>
-<option value="sd z">DVD-audio</option>
-<option value="st">Reel-to-reel</option>
-<option value="se">Cylinder</option>
-<option value="sq">Roll</option>
-<option value="sw">Wire recording</option>
-<option value=""></option>
-<option value="v*">VIDEO FORMATS</option>
-<option value="v*">All Video Recording Formats</option>
-<option value="vd">DVD-video</option>
-<option value="vf">VHS</option>
-<option value="mr">16/35 mm film</option>
-</select>
-</td>
-</tr></table>
-
-      <!--{govdoc}-->
-
+        </div>
+        
+                    <div class="formEntryArea">
+                    <table border="0">
+                    <tr><td><label for="n">Online:</label></td><td><select id="n" name="n">
+                    <option value="">ANY</option>
+                    <option value="cr">Online Only</option>
+                    </select>
+                    </td>
+                    </tr></table>
+                    </div>
+        
+            <!--{govdoc}-->
+            
+                    <div class="formEntryArea">
+<!--{lang}-->
+                    </div>
+                    
+                    <div class="formEntryArea">
+<!--{branch}-->
+                    </div>
+                    
+                    <div class="formEntryArea">
+                    <table border="0">
+                    <tr><td><label for="a">Audio and Video Formats:</label></td><td><select id="a" name="a" size="5" multiple="multiple">
+                    <option value="">ANY</option>
+                    <option value=""></option>
+                    <option value="s*">AUDIO FORMATS</option>
+                    <option value="s*">All Sound Recording Formats</option>
+                    <option value="ss">Audio cassettes</option>
+                    <option value="sd f">CDs</option>
+                    <option value="sd b">LPs</option>
+                    <option value="sd c">45 rpm </option>
+                    <option value="sd d">78 rpm</option>
+                    <option value="sd z">DVD-audio</option>
+                    <option value="st">Reel-to-reel</option>
+                    <option value="se">Cylinder</option>
+                    <option value="sq">Roll</option>
+                    <option value="sw">Wire recording</option>
+                    <option value=""></option>
+                    <option value="v*">VIDEO FORMATS</option>
+                    <option value="v*">All Video Recording Formats</option>
+                    <option value="vd">DVD-video</option>
+                    <option value="vf">VHS</option>
+                    <option value="mr">16/35 mm film</option>
+                    </select>
+                    </td>
+                    </tr></table>
+                    </div>
+                    
+                    
+                    <div class="formEntryArea">
 <!--{mattype}-->
-<!--{nosort}-->
-<!--{sort}-->
-<br />
-<p><strong>To select multiple items in a scroll box menu, use CTRL-click (Windows) or the command key (Mac).</strong></p>
-<!--<select name="SORT">
-<option value="D">Date</option>
-<option value="A">Title</option>
-<option value="R">Relevance</option>
-</select>-->
-
-
-</td>
-<!-- END RIGHT COLUMN -->
-</tr>
-</table>
-<!-- END TABLE #3: AVS BORDER -->
-<input type="hidden" name="endLimit" />
+                    </div>
+                    
+                    
+                    <div class="formEntryArea">
+<!--{publish}-->
+                    </div>
+                    
+                    </fieldset>
+                    <input type="hidden" name="endLimit" >
+        
 <!--{advancedsearchformend}-->
-</td>
-</tr>
-<!-- END TOP SECTION: SEARCH STRATEGY -->
-<!-- BEGIN BOTTOM SECTION: SEARCH TIPS -->
-<tr>
-<td>
-<!-- BEGIN TABLE #5: AVS BORDER (2nd)-->
-<table class="avsBorder" width="100%" cellspacing="0" summary="text">
-<tr>
-<td class="table2Header" colspan="3">Search Tips</td>
-</tr>
-<tr class="searchTips">
-<td class="searchTipsCol1"> &nbsp;</td>
-<td class="searchTipsCol2"> &nbsp;</td>
-<td  class="searchTipsCol3"><div align="left"><em><strong>Examples:</strong></em></div></td>
-</tr>
-<tr>
-<td class="searchTipsCol1"><em><strong>Adjacency</strong></em></td>
-<td class="searchTipsCol2">Multiple words are searched together as one phrase.</td>
-<td class="searchTipsCol3">University of Missouri</td>
-</tr>
-<tr>
-<td class="searchTipsCol1"><em><strong>Truncation</strong></em></td>
-<td class="searchTipsCol2">
-Use * to substitute for multiple characters.<br />
-Use ? to substitute for a single character.
-</td>
-<td class="searchTipsCol3">
-Photograph*<br />
-wom?n
-</td>
-</tr>
-<tr>
-<td class="searchTipsCol1">
-<em><strong>Operators</strong></em>
-</td>
-<td class="searchTipsCol2">
-Use "AND" to search all words.<br />
-Use "OR" to search ANY single word.<br />
-Use "AND NOT" to exclude words.
-</td>
-<td class="searchTipsCol3">
-art and therapy<br />
-dog or canine<br />
-&nbsp;
-environmental policy and not U.S.
-</td>
-</tr>
-<tr>
-<td class="searchTipsCol1">&nbsp;</td>
-<td class="searchTipsCol2">
-Note that you can use these clauses in combination with
-selections from the operator pulldown menu (as indicated in
-brackets).
-</td>
-<td class="searchTipsCol3">
-History [And]<br />
-Naples or Napoli [And]<br />
-Borgia or Alexander
-</td>
-</tr>
-<tr class="searchTips">
-<td class="searchTipsCol1"><em><strong>Field limits</strong></em></td>
-<td class="searchTipsCol2">
-Use labels to search specific fields:<br />
-a: author t: title s: subject n: note
-</td>
-<td class="searchTipsCol3">
-a: zora and t:watching<br />
-s:hopi and s:religion
-</td>
-</tr>
-</table>
-<!-- END TABLE #5: AVS BORDER -->
-<!--End of main page content-->
-</td>
-</tr>
-</table>
-<!-- END TABLE #2: AVS SECTION -->
-</td>
-</tr>
-</table>
-<!-- END TABLE #1: AVS MAIN -->
+        
+        
+                    <div class="searchTipsX">
+                    <p><strong>Search tips for Keyword Search</strong></p>
+                      <p>Use keywords from the title, author, subjects or notes.</p>
+                      <p><em>Examples:</em></p>
+                      <ul>
+                        <li><em>evolution and altruism</em></li>
+                        <li><em>&quot;achievement test&quot;</em></li>
+                      </ul>
+                      <p>For more options, use an Advanced Search. </p>
+                    </div>
+        
+                </div><!-- quickSearchInner -->
 
-<!-- END site/srchhelp/X.tt -->
+            </div> <!-- quickSearch -->
+        
+            <div class="quickSearch t s a">
+            
+                <div class="innerQuickSearch">
+            
+                    <form action="/search/" method="get" id="search" class="indexSearch" name="search">
+                    
+                    <div class="limits">
+                    <div class="limitColumn">
+                    <label> <input name="searchtype" class="searchtype" value="X" type="radio"> Keyword </label> 
+                    <label> <input name="searchtype" class="searchtype" value="t" type="radio"> Title begins with </label>
+                    </div>
+                    <div class="limitColumn">
+                    <label> <input name="searchtype" class="searchtype" value="s" type="radio"> Journal & Newspapers title begins with </label>
+                    <label> <input name="searchtype" class="searchtype" value="a" type="radio"> Author (last name first) </label>
+                    </div>
+                    </div>
+                    
+                    <div class="clear"></div>
+        
+<!--{nosort}-->
+        
+                    <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+        
+<!--{scope}-->
+        
+        
+                    <input value="Search" type="submit"> </label></div>
+        
+                    </form>
+            
+                    <div class="searchTips">
+        
+                    <p><strong>Search tips for Title begins with</strong></p>
+                    <p>Use this search if you have the title of the book, video, etc. Enter words starting at the beginnning of the title.  Exclude initial articles such as &quot;the&quot;, &quot;an&quot;, and &quot;de&quot; (German). </p>
+                    <p><em>Examples:</em></p>
+                    <ul>
+                    <li><em>Intruder in the Dust</em></li>
+                    <li><em>Adventures of Huckleberry Finn</em></li>
+                    </ul>
+                    
+                    </div>
+            
+                </div><!--quickSearchInner-->
+            
+            </div><!--quickSearch-->
 
 
+    </div><!--tab1-->
+    <div id="tab-2" class="tabContent">
+    </div>
+    <div id="tab-3" class="tabContent">
 
-<p class="ret2MainMenu"><a HREF="/search~">Return to Main Menu</a></p>
+            <h1 class="pageHeader">Author & Title</h1>
 
+            <form name="frmAuthorTitle" method="get" action="/search/q" id="authorTitle">
 
-	
-	
+            <!-- Optional legend:
+            <legend>Type the author and title you want to find, then press the Enter key or click Submit.</legend>
+            -->
+            <div class="formEntryArea">
+            <span class="formLabel">
+            <label for="author">Author:</label>
+            </span>
+            <input name="author" size="48">
+            </div>
+            <div class="formEntryArea">
+            <span class="formLabel">
+            <label for="title">Title:</label>
+            </span>
+            <input name="title" size="48">
+            </div>
+            
+            <div class="formButtonArea">
+            <input type="submit" value="Search">
+            </div>
 
-</center>
+            </form>
 
-<center>
-<!-- BEGIN site/botlogo.tt for MERLIN, updated 14:42:04 08-Jan-2008 by hjp -->
-<center>
-	<p><img src="/screens/bot_bar.gif" alt="" width="740" height="8" border="0" /></p>
-	<p><span class="bot_logo"><strong>MERLIN</strong> &middot; Missouri Education and Research Libraries Information Network<br />
-	a MOBIUS Library Catalog</span></p>
-	<p>
-	<span class="bot_logo"><strong>University of Missouri:</strong><br />
-	<a class="bot_logo" href="/search~S1">MU Libraries</a> |
-	<a class="bot_logo" href="/search~S2">MU Law Library</a> |
-	<a class="bot_logo" href="/search~S3">UMKC Libraries</a> |
-	<a class="bot_logo" href="/search~S4">UMKC-Law Library</a> |
-	<a class="bot_logo" href="/search~S5">Missouri S&amp;T Library</a> |
-	<a class="bot_logo" href="/search~S6">UMSL Libraries</a><br />
-	<a class="bot_logo" href="/search~S7">The State Historical Society of Missouri</a><br />
-	</span></p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-</center>
-<!-- END site/botlogo.tt -->
-</center>
+            
+            <div class="searchTips">
+            <p><strong>Search Tips for Author AND title searches</strong></p>
+              <p>Type the LAST NAME first for personal names. Type as much of the <strong>EXACT NAME</strong> of a corporate body or conference as you wish (start at the beginning). </p>
+              <p><em>Examples:</em></p>
+              <ul>
+                <li><em>Powell, Lawrence Clark</em></li>
+                <li><em>Amnesty International</em></li>
+              </ul>
+              <p>Words in Title: Type keywords from the title </p>
+              <p><em> Example:</em></p>
+              <ul>
+                <li>books writers essays</li>
+              </ul>
+          
+            </div>
 
-  </body>
+            
+
+    </div>
+    <div id="tab-4" class="tabContent">
+        
+        <h1 class="pageHeader">Subjects</h1>
+        
+        <form action="/search/" method="get" id="search" class="indexSearch" name="search">
+        
+        <div class="limits">
+        <div class="limitColumn">
+        <label> <input name="searchtype" class="searchtype" value="d" checked="checked" type="radio"> Subject (Library of Congress) </label> 
+        <label> <input name="searchtype" class="searchtype" value="m" type="radio"> Medical Subject (MeSH) </label>
+        </div>
+        <div class="limitColumn">
+        <label> <input name="searchtype" class="searchtype" value="v" type="radio"> Genre/Form </label>
+        </div>
+        </div>
+        
+        <div class="clear"></div>
+        
+<!--{nosort}-->
+        
+        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+        
+<!--{scope}-->
+        
+        
+        <input value="Search" type="submit"> </label></div>
+        
+        </form>
+        
+                    <div class="searchTips">
+                        <p><strong>Search Tips for Subjects (Library of Congress)</strong></p>
+                        <p>Search Library of Congress Subject Headings for people, topics, or events.</p>
+                        <p><em>Examples:</em></p>
+                        <ul>
+                          <li><em>Sports for women</em></li>
+                          <li><em>Automobiles</em></li>
+                          <li><em>Wilder, Laura Ingalls</em></li>
+                          </ul>
+                        <p>If your search is unsuccessful, try a Keyword search. </p>
+                    </div>
+
+    </div>
+    <div id="tab-5" class="tabContent">
+
+        <h1 class="pageHeader">Numbers/Other</h1>
+        
+        <form action="/search/" method="get" id="search" class="indexSearch" name="search">
+        
+        <div class="limits">
+        <div class="limitColumn">
+        <label> <input name="searchtype" class="searchtype" value="i" checked="checked" type="radio"> ISBN/ISSN/Standard Number </label> 
+        <label> <input name="searchtype" class="searchtype" value="g" type="radio"> Government Publication </label>
+        <label> <input name="searchtype" class="searchtype" value="e" type="radio"> Music Number </label>
+        <label> <input name="searchtype" class="searchtype" value="o" type="radio"> OCLC/WorldCatalog </label>
+        </div>
+        <div class="limitColumn">
+        <label> <input name="searchtype" class="searchtype" value="c" type="radio"> Call Number (Library of Congress) </label>
+        <label> <input name="searchtype" class="searchtype" value="l" type="radio"> Medical Call Number </label>
+        <label> <input name="searchtype" class="searchtype" value="f" type="radio"> Dewey/Other Call Number </label>
+        <label> <input name="searchtype" class="searchtype" value="h" type="radio"> Donor/Honoree </label>
+        </div>
+        </div>
+        
+        <div class="clear"></div>
+        
+<!--{nosort}-->
+        
+        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+        
+<!--{scope}-->
+        
+        
+        <input value="Search" type="submit"> </label></div>
+        
+        </form>
+        
+                    <div class="searchTips">
+                        <p><strong>Search Tips for ISBN, ISSN, Technical Report numbers and other standard numbers</strong></p>
+                        <p>Type in the number starting at the beginning of the number.</p>
+                        <p><em>Examples:</em></p>
+                        <ul>
+                          <li><em>0307337332</em></li>
+                          </ul>
+                    </div>
+    
+    </div>
+    <div id="tab-6" class="tabContent">
+    
+        <h1 class="pageHeader">Articles and Databases</h1>
+        
+        <fieldset class="articles">
+        <legend>Alphabetical list of database titles:</legend>
+        
+        <a href="/search/j?a">A</a> |
+        <a href="/search/j?b">B</a> |
+        <a href="/search/j?c">C</a> |
+        <a href="/search/j?d">D</a> |
+        <a href="/search/j?e">E</a> |
+        <a href="/search/j?f">F</a> |
+        <a href="/search/j?g">G</a> |
+        <a href="/search/j?h">H</a> |
+        <a href="/search/j?i">I</a> |
+        <a href="/search/j?j">J</a> |
+        <a href="/search/j?k">K</a> |
+        <a href="/search/j?l">L</a> |
+        <a href="/search/j?m">M</a> |
+        <a href="/search/j?n">N</a> |
+        <a href="/search/j?o">O</a>|
+        <a href="/search/j?p">P</a> |
+        <a href="/search/j?q">Q</a> |
+        <a href="/search/j?r">R</a> |
+        <a href="/search/j?s">S</a> |
+        <a href="/search/j?t">T</a> |
+        <a href="/search/j?u">U</a> |
+        <a href="/search/j?v">V</a> |
+        <a href="/search/j?w">W</a> |
+        <a href="/search/j?x">X</a> |
+        <a href="/search/j?y">Y</a> |
+        <a href="/search/j?z">Z</a> |
+        <a href="/search/j?1">#</a> |
+        <a href="/search/j?00000">All titles</a>
+        </fieldset>
+        
+        <fieldset class="articles">
+        <legend>Browse databases by subject or type:</legend>
+        <form action="javascript:submitSubject();" onSubmit="submitSubject();" method="get" name="subjectSearch" class="unpadded">
+        <select name="bySubject" size="8">
+        <option value="pre 18th century">Pre-18th Century Primary Sources (400-1700)</option>
+        <option value="18th century primary sources">18th-Century Primary Sources (1700s)</option>
+        <option value="19th century primary sources">19th-Century Primary Sources (1800s)</option>
+        <option value="20th century primary sources">20th-Century Primary Sources (1900s)</option>
+        <option value="anthropology">Anthropology</option>
+        <option value="architecture urban planning and design">Architecture Urban Planning and Design</option>
+        <option value="art and art history">Art and Art History</option>
+        <option value="biography">Biography</option>
+        <option value="biological sciences">Biological Sciences</option>
+        <option value="book reviews">Book Reviews</option>
+        <option value="business and public administration">Business and Public Administration</option>
+        <option value="career and college resources">Career and College Resources</option>
+        <option value="chemistry">Chemistry</option>
+        <option value="communication studies">Communication Studies</option>
+        <option value="computer science and electrical engineering">Computer Science and Electrical Engineering</option>
+        <option value="criminal justice and criminology">Criminal Justice and Criminology</option>
+        <option value="dance">Dance</option>
+        <option value="dentistry">Dentistry</option>
+        <option value="digital archival collections">Digital Archival Collections</option>
+        <option value="dissertations theses and conference proceedings">Dissertations, Theses, and Conference Proceedings</option>
+        <option value="e books">E-Books</option>
+        <option value="e reference">E-Reference (Encyclopedias, Dictionaries, and Handbooks)</option>
+        <option value="economics">Economics</option>
+        <option value="education">Education</option>
+        <option value="engineering">Engineering</option>
+        <option value="english literature">English Literature</option>
+        <option value="environmental studies">Environmental Studies</option>
+        <option value="ethnic studies">Ethnic Studies</option>
+        <option value="film studies">Film Studies</option>
+        <option value="fine and performing arts">Fine and Performing Arts</option>
+        <option value="foreign languages and literatures">Foreign Languages and Literatures</option>
+        <option value="general and multidisciplinary">General and Multidisciplinary</option>
+        <option value="geosciences and geography">Geosciences and Geography</option>
+        <option value="government information">Government Information</option>
+        <option value="health sciences biosciences">Health Sciences/Biosciences</option>
+        <option value="history">History</option>
+        <option value="humanities">Humanities</option>
+        <option value="images sound and video">Images, Sound, and Video</option>
+        <option value="kansas city metro research">Kansas City Metro Research</option>
+        <option value="language and linguistics">Language and Linguistics</option>
+        <option value="law">Law</option>
+        <option value="library science">Library Science</option>
+        <option value="mathematics and statistics">Mathematics and Statistics</option>
+        <option value="medicine">Medicine</option>
+        <option value="music">Music</option>
+        <option value="new databases">New Databases</option>
+        <option value="news">News</option>
+        <option value="nursing">Nursing</option>
+        <option value="pharmacy">Pharmacy</option>
+        <option value="philosophy">Philosophy</option>
+        <option value="physics and astronomy">Physics and Astronomy</option>
+        <option value="political science">Political Science</option>
+        <option value="psychology">Psychology</option>
+        <option value="religious studies">Religious Studies</option>
+        <option value="science and technology">Science and Technology</option>
+        <option value="social sciences">Social Sciences</option>
+        <option value="social work">Social Work</option>
+        <option value="sociology">Sociology</option>
+        <option value="statistics and data">Statistics and Data</option>
+        <option value="tests and test reviews">Tests and Test Reviews</option>
+        <option value="theatre">Theatre</option>
+        <option value="trial databases">Trial Databases</option>
+        <option value="womens and gender studies">Women's and Gender Studies</option>
+        </select>
+        <input type="submit" name="Submit" value="Search">
+        </form>
+        </fieldset>
+        
+        <fieldset class="articles">
+        <legend>Database links</legend>
+        <div id="linkList">
+        <a href="/search~s3/x?new+databases">New Databases</a>
+        <a href="/search~s3/x?trial+databases">Trial Databases</a>
+        <a href="http://umkc.summon.serialssolutions.com/">RooSearch</a>
+        <a href="http://umkclibrarieserblog.wordpress.com/">Online Resources Blog</a>
+        <a href="http://library.umkc.edu/databases-responsibilities">UMKC Libraries Statement on Responsibilities of Users of Electronic Resources</a>
+        </div>
+        </fieldset>
+        
+    </div>
+
+  </div>
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
+</body>
 </html>

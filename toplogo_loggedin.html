@@ -1,33 +1,112 @@
-<!-- begin toplogo_loggedin.html file -->
-<!-- 2005LE Version, example set from 3 November, 2004-->
-<!-- This file last changed: 5 October, 2004 -->
-<!--{toplogo}-->
-<br />
-<center>
-<table width="100%" border="0" cellspacing="0" cellpadding="2" align="center">
-<tr> 
-<td colspan="2"><img src="/screens/spacer.gif" height="2" width="1" alt="" /></td>
-</tr>
-<tr valign="middle"> 
-<td align="center" class="pageNavArea"> 
-<!--Beginning navigation bar at the top of the page-->
-<!--{logout}-->
-<!--{patronrecord}-->
-<!--{startover}-->
-<a href="/search"><img src="/screens/b_newsrch.gif" onclick="return replace_or_redraw('/search')" width="69" height="36" alt="New Search" 
-	border="0" /></a>
-<!--End of the top navigation bar-->
-</td>
-<td width="209" align="right" class="pageNavArea"> 
-<!-- Beginning of library logo area -->
-&nbsp; 
-<!-- End of library logo area -->
-</td>
-</tr>
-</table>
-</center>
+<!-- begin toplogo.html file -->
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 06 Oct 2010 -->
 
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="/screens/jquery.cookie.js"></script>
+<script type="text/javascript" src="/screens/domainredirect.js"></script>
+<script type="text/javascript" src="/screens/mobileredirect.js"></script>
+<script src="/screens/menu-collapsed.js" type="text/javascript"></script>
+<script type="text/javascript" src='/screens/sms.js'> </script>
+<script src="/screens/jquery.corner.js"></script>
+<script>
+$('.tabContent').corner('bottom tr');
+$('.tab').corner('top');
+$('#searchOptions').corner();
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
 
-
-<!-- end of toplogo_loggedin.html file -->
-
+	$(".searchtype").click(function(){
+		$(".searchTips").load("/screens/" + this.value + ".inc");
+	});
+	//Changes the search examples
+	
+	//var selectAny = $('#b option[value=""]')
+	//$('#b option:not([value^="z"])').detach(); 
+	//selectAny.prependTo("#b")
+	//Hides the out-of-scope locations
+	
+	//Remove the colon from keyword searches
+	$('input[type="submit"]').click(function () {
+		var searchTerm = $('#searcharg').val();
+		var searchIndex = $('[name="searchtype"]').val();
+		if((/\b[atsn]:/).test(searchTerm)) {}
+		else if (searchIndex != "X") {} else {
+			var newSearchTerm = searchTerm.replace(":", " ");
+			$('#searcharg').val(newSearchTerm);
+		}
+		});
+	});
+</script>
+
+<script type="text/javascript">
+if (document.body){document.body.className = "bodybg";}
+</script>
+
+<link rel="stylesheet" type="text/css" href="/screens/styles_s0.css" / >
+
+<div class="minHeight">
+<div class="fullPage">
+
+<div id="skipNav"><a href="#content" tabindex="1">Skip to content</a></div>
+<div class="topLogo">
+
+<div class="topLogoImage">
+<a href="/search/X" tabindex="10"><img src="/screens/merlin.png" alt="MERLIN Catalog"></a>
+</div>
+
+<div class="mobiusLogo">
+<a href="http://searchmobius.org"><img src="/screens/mobius.png" alt="MOBIUS Catalog"></a>
+</div>
+
+<div id="tabsToplogo">
+    <ul id="tabRow">
+      <li class="tab"><a href="/search/X#tab-1">Quick Search</a></li>
+      <li class="tab"><a href="/search/Y">Advanced</a></li>
+      <li class="tab"><a href="/search/X#tab-3">Author & Title</a></li>
+      <li class="tab"><a href="/search/X#tab-4">Subjects</a></li>
+      <li class="tab"><a href="/search/X#tab-5">Numbers/Other</a></li>
+    </ul>
+</div>
+
+<div id="alertMessage"></div>
+
+<div class="linkBanner">
+</div>
+
+</div><!--topLogo-->
+
+<div class="clear"></div>
+<div class="rightColumn">
+<div id="searchOptions">
+
+<ul>
+	<li>
+<!--{startover}-->	
+	</li>
+	<li>
+<!--{patronrecord}-->
+	</li>
+	<li>
+<!--{logout}-->
+	</li>
+	<li><a href="/search/b">Course Reserves</a></li>
+	<li><a>Merlin (UM) Libraries</a>
+		<ul>
+			<li><a href="/search~S5/X">Missouri S&T</a></li>
+			<li><a href="/search~S1/X">MU</a></li>
+			<li><a href="/search~S3/X">UMKC</a></li>
+			<li><a href="/search~S6/X">UMSL</a></li>
+			<li><a href="/search~S7/X">State Historical Society</a></li>
+		</ul>
+	</li>
+	<li><a href="/help">Help</a></li>
+</ul>
+
+</div><!--searchOptions-->
+</div><!--rightColumn-->
+<div class="pageContentColumn"><!-- content container -->
+<a name="content" id="content"></a>
+<!--end toplogo.html-->
