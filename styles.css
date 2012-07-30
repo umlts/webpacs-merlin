@@ -1377,7 +1377,7 @@ ul#tabRow .tab.active {
         border-bottom: 1px solid #FFFFFF;
 }
 ul#tabRow .tab {
-	background: url("/screens/pale_gold_gradient.png") repeat-x scroll 50% 50% #FFBD29;
+	background: url("/screens/pale_gold_gradient.png") repeat-x scroll 50% 50% #F6D56A;
         border: 1px solid #C0C0C0;
         margin-bottom: -1px;
 }
