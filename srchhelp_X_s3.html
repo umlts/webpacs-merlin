@@ -56,8 +56,11 @@ $(document).ready(function(){
                 $(firstRadio).click();
                 $(".searchTips").load("/screens/" + firstRadio.val() + ".inc");
                 
-                //This makes it so the scrollbar doesn't jump to the anchor tag.  It also, unfortunately, makes it so the back button doesn't work.  
-                return false;
+                //This makes it so the scrollbar doesn't jump to the anchor tag.  It also, unfortunately, makes it so the back button doesn't work.
+                
+                if(currentTab.indexOf("http") == -1){
+                    return false;
+                }
 	});
 
     //Switching the Keyword/Title menu when the radio button is changed
