@@ -1413,6 +1413,10 @@ ul#tabRow .tab a, ul#byTabRow .tab a {
 #byTabRow a {
     margin-top:-16px;
 }
+#byTabRow img {
+    margin:0;
+    border:0;
+}
 
 #frontPage #tabsToplogo { display:none; }
 

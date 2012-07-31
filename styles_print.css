@@ -22,15 +22,11 @@ table.browseScreen td { width:18%; }
 
 #bibDisplayBody div[align="center"] { display:none; }
 
-#bibDisplayContent { display:block !important; }
-
-.bibDisplayContentMain, .resourceDisplayContentMain { margin-left:1em; width:78%; }
-
-.bibDisplayJacket, .bibMedia { width: 80px; }
+.bibDisplayContentMain, .resourceDisplayContentMain { margin-left:1em; width:100%; }
 
 .bibMedia { margin-top:2em; text-align:left; }
 
-.bibDisplayJacket { margin:0 0 1em 0; }
+.bibDisplayJacket { display:none; }
 
 .briefcitMedia, .bibMedia, .briefcitResourceMedia, .briefcitProgramMedia, td.browseEntryMedia, td.browseSubEntryMedia { font-size:50%; }
 
@@ -45,6 +41,10 @@ th.bibItemsHeader { color:#000000; font-family:Times New Roman,Times,Georgia,ser
 .bibDisplayItemsHeader h2, .resourceDisplayLicenseHeader h2 { color:#767C70; }
 
 #bibDisplayBody .resourceDisplayBibs a:link  { font-size:80%; }
+
+#botlogo {
+    display:none; 
+}
 
 .briefcitActions { display:none; }
 
@@ -94,11 +94,15 @@ h2.briefcitTitle { font-size:10pt; }
 
 .helpContent #formLinks { display:none; }
 
+.linkBanner { display:none; }
+
 .loggedInMessage { display:none; }
 
 #mobiusLogo { top:10px; }
 
 #mobiusLogo img {max-height:50px}
+
+.pageContentColumn { float:none; width:100%; }
 
 .patActionsLinks, .patTop, .patFuncArea { outline:none; }
 
@@ -127,5 +131,15 @@ tr.patFuncHeaders { border-bottom:1px solid #888888; }
 .resourceDisplayContentMain { float:left; margin-left:1em; padding-left:4em; position:absolute; left:0; }
 
 .resourceDisplayBibs td, .resourceDisplayBibs th, .resourceLicenseHeader { font-family:Times New Roman,Times,Georgia,serif; font-size:10pt; }
+
+.rightColumn { display:none; }
+
+#tabs .tabContent { display:inline; border:none; }
+
+#tabRow, #byTabRow { display:none; }
+
+#tab-1 { display:inline; }
+
+#tab-2, #tab-3 { display:none; }
 
 .topLogoSmall img, #scopeLogo img {max-height:60px;}
