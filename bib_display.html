@@ -148,15 +148,6 @@ $(document).ready(function(){
         <div class="bibDisplayItems">
 <!--{items}-->
         </div>
-
-<!--{orders}-->
-    </div><!--tab1-->
-    <div id="tab-2" class="tabContent">
-<!--{holds}-->
-<!--{holdings}-->
-        <div class="bibDisplayItems">
-<!--{items}-->
-        </div>
         <div class="bibDisplayContentMore">
 <!--{recordinfo:rv}-->
 <!--{ifTOC}-->
@@ -164,11 +155,16 @@ $(document).ready(function(){
 <!--{xif}-->
 <!--{recordinfo:synqdmbujikflo}-->
         </div>
+    </div><!--tab1-->
+    <div id="tab-2" class="tabContent">
+<!--{recordinfo:rv}-->
+<!--{ifTOC}-->
+<!--{TOC}-->
+<!--{xif}-->
+<!--{recordinfo:synqdmbujikflo}-->
     </div><!--tab2-->
     <div id="tab-3" class="tabContent">
-        <div class="bibDisplayContentMore">
 <!--{recordinfo:admjbs}-->
-        </div>
     </div><!--tab3-->
 </div>
 
@@ -262,7 +258,7 @@ if (itemLocation.indexOf("Marr Sound Archives RooBot") > 0){
 </script>
 <script type='text/javascript'>
        
-var ISBN = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData").text().replace(/[^0123456789]/g,"")
+var ISBN = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData").html().replace(/[^0123456789]/g,"")
 
 var cburl = "http://books.google.com/books";
 // Retrieve the info for these bibkeys
