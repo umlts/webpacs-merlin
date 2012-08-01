@@ -133,7 +133,7 @@ EXTENDED_c=3
 #HEADING_LENGTH=100
 ICON_856LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website
 ICON_962LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image
-ICON_BOOKCART=<span class="navButton">Add to Folder</span>
+ICON_BOOKCART=<span class="navButtonOneLine">Add to Folder</span>
 ICON_BOOKCART_SAVED=<span class="navButtonYellow navButton">Remove From Folder</span>
 ICON_FULLRECORD=See Full Record
 ICON_LOCATEINRESULTS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Locate in results</span></span></div></div>
@@ -263,7 +263,7 @@ ICON_MYLISTS_RECORD=<span class="navButton">Add to My Lists</span>
 
 # Saving and Exporting
 BRIEF_EXPORT=a|t|p
-ICON_BUT_BIBEXPORT=<span class="navButton">Add to Folder</span>
+ICON_BUT_BIBEXPORT=<span class="navButtonOneLine">Add to Folder</span>
 ICON_BUT_CLEAR_MARKED=<span class="navButtonOneLine">Empty Folder</span>
 ICON_BUT_EXPORT_MULTI=<span class="navButtonOneLine">Export Saved</span>
 ICON_BUT_EXPORT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Folder</span></span>
