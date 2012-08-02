@@ -24,6 +24,10 @@ table.browseScreen td { width:18%; }
 
 .bibDisplayContentMain, .resourceDisplayContentMain { margin-left:1em; width:100%; }
 
+.bibDisplayContentMain, bibDisplayContentMain #tabs {
+    float:none; margin:0; width:inherit;
+}
+
 .bibMedia { margin-top:2em; text-align:left; }
 
 .bibDisplayJacket { display:none; }
@@ -89,6 +93,10 @@ h2.briefcitTitle { font-size:10pt; }
 .briefcitCell { font-size:10pt; }
 
 .briefcitMedia { margin-top:20px; }
+
+.fullPage {
+    width:90%;
+}
 
 .helpTopics { display:none; }
 
