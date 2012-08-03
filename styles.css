@@ -267,7 +267,7 @@ table.bibItems { clear:both; }
 
 .bibItems { border:none; }
 
-.bibItems .bibItemsEntry td, .bibItems .bibItemsHeader th { padding:5px 8px; }
+.bibItems .bibItemsEntry td, .bibItems .bibItemsHeader th { padding:5px 8px; text-align:left; }
 
 .bibRecordLink { padding:8px 0 8px 6px; }
 
