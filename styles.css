@@ -1406,6 +1406,11 @@ ul#tabRow .tab a, ul#byTabRow .tab a {
     padding-left:20px;
 }
 
+#tabsToplogo ul#tabRow .tab a {
+    font-size:.9em;
+    padding:6px;
+}
+
 #byTabRow {
     margin-bottom:-15px;
 }
