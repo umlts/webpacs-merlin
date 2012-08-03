@@ -788,7 +788,7 @@ a#moreLink { margin-bottom:1em; color: #6E0000; }
 
 .miscButtons { margin-bottom: 1em;}
 
-.mobiusLogo, .clusterLogo { position:absolute; right:10px; top:40px;}
+.mobiusLogo, .clusterLogo { position:absolute; right:10px; top:38px;}
 
 .msg td { padding-top:3px; }
 
@@ -1198,7 +1198,7 @@ cursor:pointer;
 
 .topLogo img { border:0; display:block; margin-left:auto; margin-right:auto }
 
-.topLogoImage { padding:10px 10px 15px 20px; width:180px; }
+.topLogoImage { padding:15px 10px 15px 20px; width:180px; }
 
 .mobiusLogo, .clusterLogo {width:250px;}
 
