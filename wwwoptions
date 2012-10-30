@@ -422,8 +422,8 @@ INNREACH=<span class="navButton">Search MOBIUS</span>@searchmobius.org(X=X*;Y=Y*
 
 # IRSSO SETUP
 
-INNREACH_REMOTE=laurel.lso.missouri.edu&<span class="navButton">New MOBIUS Search</span>@laurel.lso.missouri.edu:2083(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
-INNREACH_REMOTE_SSL=laurel.lso.missouri.edu&<span class="navButton">New MOBIUS Search</span>@laurel.lso.missouri.edu:2443(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+INNREACH_REMOTE=laurel.lso.missouri.edu&<span class="navButton">MOBIUS Search</span>@laurel.lso.missouri.edu:2083(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+INNREACH_REMOTE_SSL=laurel.lso.missouri.edu&<span class="navButton">MOBIUS Search</span>@laurel.lso.missouri.edu:2443(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
 SSO_VALID_HOSTS=128.206.14.98|laurel.lso.missouri.edu|m.laurel.lso.missouri.edu|merlin-mobius.missouri.edu
 
 # Media Management
@@ -601,7 +601,8 @@ LOC_cmrii=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH%20REFERENCE.
 LOC_cmrri=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH%20REFERENCE.htm "target=_blank"
 LOC_cmxii=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH%20RESERVE.htm "target=_blank"
 LOC_cmoii=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH%20OVERSIZED.htm "target=_blank"
-LOC_fcaii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
+LOC_fca*=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
+#LOC_fcaii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 LOC_fcdii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 LOC_fceii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 LOC_fcgii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
