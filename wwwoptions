@@ -199,6 +199,7 @@ ICON_BIB_PAGING_CAPTION=
 ICON_BIB_PAGING_NEXT=<span class="button"><span class="buttonText" id="buttonNextRecord">Next Record</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BIB_PAGING_PREV=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Previous Record</span></span>
 ICON_RECORDLINK=<span class="button"><img src="/screens/ico_bookmark.png" alt="">Persistent record link: http://laurel.lso.missouri.edu%s</span>
+ITEMS_MSG_BRIEF=Click here for additional copies/volumes of this item
 LINK856TEXT=Connect to
 MARC=yes
 SHOWOREC=no_cdate
@@ -418,7 +419,7 @@ ILL_HOME=/screens/ill.html
 
 # INN-Reach
 IR_PLACEMENT=1
-INNREACH=<span class="navButton">Search MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+INNREACH=<span class="navButton">Search<br>MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
 
 # IRSSO SETUP
 
@@ -447,6 +448,7 @@ FEATURED_LIST=10,260|New Titles|Campus|# Titles
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
 #BIBIMAGE=http://contentcafe2b.btol.com/ContentCafe/Jacket.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;Return=T&amp;Type=S&amp;Value=%s&amp;erroroverride=1|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=Y
 #BIBIMAGE=https://contentcafe2b.btol.com/ContentCafe/Jacket.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;Return=T&amp;Type=S&amp;Value=%s&amp;erroroverride=1|I|https://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=Y
+BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=umkc|I|http://www.syndetics.com/index.aspx?isbn=%s/LC.GIF&client=umkc
 BIBIMAGE_TEXT=Book Cover
 BUT_ENCYCPD=/screens/encycpd.gif
 BUT_FULL_TEXT=/screens/full_text.gif
@@ -606,6 +608,7 @@ LOC_fca*=http://mulibraries.missouri.edu/collections/annex-depository.htm "targe
 LOC_fcdii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 LOC_fceii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 LOC_fcgii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
+LOC_fch2i=http://library.muhealth.org/search/merlinlocations/muhsldepository.htm "target=_blank"
 LOC_fciib=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 LOC_fcjii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
 LOC_fcmii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
