@@ -292,7 +292,7 @@ ICON_BUT_PAT_CANCEL=<div onmousedown="this.className='pressedState';" onmouseout
 ICON_BUT_PAT_CANCELALL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel All</span></span></div></div>
 BUT_PAT_CANCELMARK=/screens/pat_cancelmark.gif
 ICON_BUT_PAT_CANCELMARK=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel Selected</span></span></div></div>
-#ICON_BUT_PAT_CHKOUTS=
+ICON_BUT_PAT_CHKOUTS=Renew/Review items currently checked out
 #ICON_BUT_PAT_FINES=<span class="button"><img src="/screens/ico_payment.png" alt=""><span class="buttonText">Fines</span></span>
 #ICON_BUT_PAT_HOLDS=
 ICON_BUT_PAT_INFO=<span class="button"><img src="/screens/ico_patron.png" alt=""><span class="buttonText">Modify Personal Information</span></span>
