@@ -249,7 +249,7 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 .bibMedia   img { margin-top:10px;  }
 
-.bibDisplayPermLink { float:right; margin:1em 0 1.5em; font-style:italic; font-size:.9em; }
+.bibDisplayPermLink { display: block; }
 
 .bibDisplayProgramInfo { float:right; font-size:1.1em; margin:5% 5% 15px 0; }
 
@@ -257,7 +257,11 @@ h1.bibDisplayTitle { display:inline; font-size:1em; }
 
 .bibInfoData { vertical-align:top; }
 
-.bibInfoLabel, .resourceInfoLabel { color:#767C70; padding-right:.7em; text-align:right; vertical-align:top; font-weight:bold; font-style:normal; }
+.bibRecordLink .bibInfoLabel { width:14%; }
+
+.bibInfoLabel, .resourceInfoLabel { color:#767C70; padding-right:.7em; padding-bottom: .1em; text-align:right; vertical-align:top; font-weight:bold; font-style:normal; }
+
+.resourceInfoLabel  { width:15%; }
 
 table.bibItems { clear:both; }
 
@@ -269,7 +273,11 @@ table.bibItems { clear:both; }
 
 .bibItems .bibItemsEntry td, .bibItems .bibItemsHeader th { padding:5px 8px; text-align:left; }
 
-.bibRecordLink { padding:8px 0 8px 6px; }
+.bibRecordLink { font-style:normal; padding-left:0px ; font-size:.9em; }
+
+.bibRecordLink div { float:left; }
+
+.bibRecordLink .bibInfoLabel { width:14%; }
 
 .bibResourceSidebar { background:#FFFFFF url('tile_vgradient.jpg') repeat-x top left; display:inline; float:right; margin-right:10px; width:192px; padding-bottom:10px; }
 
