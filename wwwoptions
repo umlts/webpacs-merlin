@@ -280,7 +280,7 @@ ICON_BUT_REQUEST_ALL=<div onmousedown="this.className='pressedState';" onmouseou
 ICON_BUT_REQUEST_MULTI=<span class="navButton">Request Saved</span>
 ICON_BUT_REQUEST_RESET=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Reset Form</span></span></div></div>
 ICON_BUT_REQUEST_SELECTED=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Selected</span></span></div></div>
-ICON_REQUEST=<span class="navButtonOneLine">Request</span>
+ICON_REQUEST=<span class="navButtonSmall navButton">Request</span>
 #REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
 REQUEST=Request item|denyiflocalavail|ask|Y
 #REQUEST_ARTICLE_IFCHKIN=Y
