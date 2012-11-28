@@ -192,13 +192,13 @@ ICON_BUT_REGULAR_DISPLAY=<span class="navButton">Return to Browse</span>
 ICON_BUT_RTRNTB=<span class="navButton">Return to Browse</span>
 DISPLAY_856=z3|false
 HOLDINGS_POS=atpexz
-#HOTLINK=i^020,c^09,n^505
+HOTLINK=i^024,i^028,g^086
 ICON_BIB_HOLDINGS_ITEMS=View Copies
 ICON_NEARBY=<img src="/screens/nearby.png" alt="Nearby on shelf">
 ICON_BIB_PAGING_CAPTION= 
 ICON_BIB_PAGING_NEXT=<span class="button"><span class="buttonText" id="buttonNextRecord">Next Record</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BIB_PAGING_PREV=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Previous Record</span></span>
-ICON_RECORDLINK=<span class="button"><img src="/screens/ico_bookmark.png" alt="">Persistent record link: http://laurel.lso.missouri.edu%s</span>
+ICON_RECORDLINK=<div class="bibRecordLink"><div class="bibInfoLabel">Link to this record</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
 ITEMS_MSG_BRIEF=Click here for additional copies/volumes of this item
 LINK856TEXT=Connect to
 MARC=yes
