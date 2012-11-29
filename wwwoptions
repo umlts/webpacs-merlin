@@ -188,7 +188,7 @@ TABLEPARAM_BROWSE=width="100%" cellpadding="0" cellspacing="0" border="0"|align=
 # Record Displays
 BIB_TOC_HEADER=<strong>Table of Contents</strong>
 ICON_BUT_MARC_DISPLAY=<span class="navButton">MARC Display</span>
-ICON_BUT_REGULAR_DISPLAY=<span class="navButton">Return to Browse</span>
+ICON_BUT_REGULAR_DISPLAY=<span class="navButton">Return to Record</span>
 ICON_BUT_RTRNTB=<span class="navButton">Return to Browse</span>
 DISPLAY_856=z3|false
 HOLDINGS_POS=atpexz
