@@ -257,7 +257,6 @@ ICON_MYLISTS_REQUEST=<span class="button"><img src="/screens/ico_checkmark_16px.
 ICON_MYLISTS_REMOVE_DUPLICATES=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Remove Duplicates</span></span></div></div>
 ICON_MYLISTS_RENAME=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Change Name/Description</span></span></div></div>
 ICON_MYLISTS_SAVE=<span class="navButton">Add to My Lists</span>
-#ICON_MYLISTS_SAVE_TO_LIST=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add Marked to My Lists</span></span>
 ICON_MYLISTS_SAVE_TO_LIST=<span></span>
 ICON_MYLISTS_BRIEF=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to My Lists</span></span>
 ICON_BACK_TO_MYLISTS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Back to My Lists</span></span></div></div>
