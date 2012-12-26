@@ -50,10 +50,11 @@ startTimeout(600000, "/");
     <li><a href="#searching9">How can I print, email or save a list of items from the catalog?</a></li>
     <h3>My Account</h3>
     <li><a href="#account1">What are My Lists?</a></li>
-    <li><a href="#account2">What is my Reading History</a></li>
+    <li><a href="#account2">What are Preferred Searches?</a></li>
+    <li><a href="#account3">What is my Reading History?</a></li>
 </ul>
 
-<h1>General Information</h1>
+<h1 class="helpHead">General Information</h1>
 <a name="general1"></a>
 <h2 class="helpSubhead">What is MERLIN?</h2>
 
@@ -85,7 +86,7 @@ startTimeout(600000, "/");
 <a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Back to top</span></span></a>
 </p>
 
-<h1>Borrowing Books from Missouri Libraries</h1>
+<h1 class="helpHead">Borrowing Books from Missouri Libraries</h1>
 
 <a name="borrowing1"></a>
 <h2 class="helpSubhead">What may I borrow through MERLIN/MOBIUS?</h2>
@@ -217,6 +218,8 @@ startTimeout(600000, "/");
 <a name="borrowing11"></a>
 <h2 class="helpSubhead">How do I know which library owns the book I need?</h2>
 
+<p>When you view the full entry for an item, you will see a column marked "Location". Here you will find the name of each library that owns the item. Click on the location code for a map or explanation.</p>
+
 <p>If you are searching the comprehensive MOBIUS catalog, you will see listings for libraries in all of the clusters statewide. <a href="http://laurel.lso.missouri.edu:2083/screens/libinfo.html">Map and List of MOBIUS libraries by cluster.</a></p>
 
 <p class="actionButtonArea">
@@ -236,7 +239,7 @@ startTimeout(600000, "/");
 </p>
 
 
-<h1>Help with Searching</h1>
+<h1 class="helpHead">Help with Searching</h1>
 
 <a name="searching1"></a>
 <h2 class="helpSubhead">What does the Quick Search box do?</h2>
@@ -270,20 +273,20 @@ startTimeout(600000, "/");
         </ul>
     </li>
     <li><strong>Do a SUBJECT search</strong> instead of a keyword search. LC Subject searches cover a standardized list of terms and do not search other fields, such as author, table of contents, note, etc.</li>
-    <li>Use the: <span class="navButton">Modify Search</span> button to narrow to a particular publication year or years, material type, language, words in title, etc.</li>
+    <li>Use the: <span class="navButton">Modify Search</span> button to narrow to a particular publication year or years, material type, language, words in title, etc. For example, you can have the computer rerun a search on World War II and limit the results to DVDs by selecting DVD-video as your Audio and Video format.</li>
     <li><strong>Include more than one search term</strong> in a KEYWORD search. Your results will be limited to items that contain ALL of your search terms. You may include the word AND between search terms, but it is not required:
         <ul>
             <li><strong>television and children</strong></li>
             <li><strong>television children</strong></li>
         </ul>
     </li>
-    <li><strong>Use the word NOT</strong> before a word to eliminate it from your KEYWORD search. The computer will look for items that mention the first term but omit any items that mention the term after the NOT.<
+    <li><strong>Use the word NOT</strong> before a word to eliminate it from your KEYWORD search. The computer will look for items that mention the first term but omit any items that mention the term after the NOT.
     <ul>
         <li><strong>Recreation not hiking</strong></li>
     </ul>
     </li>
     <li><strong>Do a TITLE search</strong> instead of a keyword search. Sometimes you can find a handful of books with titles that begin with your topic, e.g. Management. As an alternative, you can select Title from the drop-down box to search for that word in the title of a work. This should also produce fewer results than a keyword search.</li>
-    
+</ul>
 
 <p class="actionButtonArea">
 <a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Back to top</span></span></a>
@@ -298,6 +301,7 @@ startTimeout(600000, "/");
 <li><strong>Do a KEYWORD</strong> search using the word OR between search terms. This will find items containing at least one of the keywords or phrases.   <strong>Example:</strong> advertising OR marketing</li>
 <li><strong>Use an asterisk*</strong> to truncate or cut off the endings of words. The computer will search for variations of a word by adding an asterisk.</li>
 <li>Example: <strong>train*</strong> searches for items containing <strong>train</strong> or <strong>training</strong> or <strong>trainers</strong> or <strong>trained</strong></li>
+<li>Note, however, that if you truncate your search term, and there are too many different words that can be generated (e.g., cat* generates cat, cats, catalog, catalpa, Cathy, category, catnip, catheter, catch, etc.), MERLIN will "give up" and tell you it cannot find any results at all. If this happens, try putting more letters before the asterix or just use OR instead.</li>
 </ul>
 
 
@@ -313,10 +317,11 @@ startTimeout(600000, "/");
 <ul>
 <li>Check your spelling. Unfortunately, the computer won't do this for you. You can use an asterisk * if you know at least part of a word.</li>
 <blockquote>Example: <strong>Dostoevsk*</strong> (will find Dostoevsk<strong>y</strong> or Dostoevsk<strong>ii</strong>)</blockquote>
+<li>Check your use of the * for truncation, however.  If you truncate your search term, and there are too many different words that can be generated (e.g., cat* generates cat, cats, catalog, catalpa, Cathy, category, catnip, catheter, catch, etc.), MERLIN will "give up" and tell you it cannot find any results at all.  If this happens, try putting more letters before the asterix or just use OR instead.</li>
 <li>If you want the computer to fill in more than 5 letters, use two asterisks:</li>
 <blockquote>Example: <strong>totalit**</strong> (for a search on totalitarianism)</blockquote>
 <li>Do a keyword search. This is the most general type of search you can do.</li>
-<li>Make sure you are doing the correct kind of search. Trying to search for an author’s name in the journal name field usually won't work. Check that you have selected the correct kind of search.</li>
+<li>Make sure you are doing the correct kind of search. Trying to search for an author's name in the journal name field usually won't work. Check that you have selected the correct kind of search.</li>
 <li>Do a simple search on fewer keywords. Simplify your search by limiting the number of words you are stringing together.</li>
 <blockquote><strong>Example:</strong> instead of personnel AND training AND computer-assisted instruction AND evaluation, try:
 <blockquote><strong>computer-assisted instruction and evaluation</strong></blockquote>
@@ -376,37 +381,72 @@ startTimeout(600000, "/");
 <a name="searching9"></a>
 <h2 class="helpSubhead">How can I print, e-mail or download a list of items from the catalog? </h2>
 
-<ul>
+<ol>
 <li>Do a search and have the search results on your screen.</li>
-<li>Click: <span class="navButton">Add to Folder</span> next to each item you want. Continue to mark and save records on subsequent screens.</li>
-<li>Click: <span class="navButtonOneLine">View Folder</span> to view the items you've added to the folder.</li>
-<li>Click Select All to select all the items in your folder, or re-select individual items using  the checkboxes next to each item.  Then click: <span class="navButton">Export Saved</span></li>
+<li>Click on the checkbox next to each item you want on the current screen.</li><img src="screens/book_checkbox.PNG">
+<li>Click on <span class="button"><img alt="" src="/screens/ico_folder_add.png"><span class="buttonText">Save to Folder</span></span> to save the records to a folder.</li>
+<li>Proceed to subsequent screens and follow the above steps.</li>
+<li>Click <span class="navButtonOneLine">View Saved Records</span> to view the items you've added to the folder.</li>
+<li>Click <span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Select All</span></span> to select all the items in your folder, or re-select individual items using  the checkboxes next to each item.  Then click <span class="navButtonOneLine">Export Saved</span></li>
 <li>On the next screen, under Send List To, there are options to email the list, "send" it to your screen (for printing) or save it to your Local Disk.</li>
-</ul>
+</ol>
 
 
 <p class="actionButtonArea">
 <a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Back to top</span></span></a>
 </p>
 
-<h1>My Account</h1>
+<h1 class="helpHead">My Account</h1>
 
 <a name="account1"></a>
 <h2 class="helpSubhead">What are My Lists?</h2>
 
 <p>You can set up and add to custom lists of books and other library materials found in the catalog.  These lists are available to you whenever you log in, not just during any one session.</p>
+<ol>
+<li>Search the library catalog. After you get your search results of two or more records, check the boxes next to the records you want to save to a list.</li>
+<li>Using the "select a list" dropdown menu, select a list name or select "- Create a new list -"</li>
+<li>If you have chosen to create a new list, you will be taken to a screen where you can enter the list name and a description if you wish.</li>
+<li>Click the "return to previous screen" button to return to the catalog, or click the "My Library Account" button at the top of the screen to see there is now an option for "My Lists" in the blue box on your account screen.</li>
+<ul><li><strong>If your result list has only one record, follow these steps:</strong></li></ul>
+<ol>
+<li>Add the item to your folder.</li>
+<li>View your folder.</li>
+<li>Save to My Lists.</li>
+</ol>
+</ol>
 
 
 <p class="actionButtonArea">
 <a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Back to top</span></span></a>
 </p>
 
-<a name="account1"></a>
-<h2 class="helpSubhead">What is my Reading History</h2>
+<a name="account2"></a>
+<h2 class="helpSubhead">What are Preferred Searches?</h2>
 
-<p>Patrons may keep a record of the MERLIN materials that they check out. Please carefully read this disclaimer before opting in to this service. 
+<p>Preferred Searches allow you to save a complicated search, to be rerun at a later date.  For example, if you'd like to check every so often whether your library has purchased recent books published by university presses, about the environmental history of Missouri, especially its forests and bodies of water, you might create a complicated advanced search like this:</p>
+<img src="screens/ex_preferred_srch.PNG">
+
+
+<p>If you would like to run this search again after a few months, without having to remember the whole search, you can save the search as a preferred search.  Just click <img alt="" src="screens/preferred_srch.PNG"> that appears toward the top of your results list screen, next to the Search button. Later on, when you want to rerun the search, just log into your MERLIN account and select <span class="button"><img alt="" src="/screens/ico_magnifyingglass.png"><span class="buttonText">Preferred Searches</span></span> from your list of options.  On the next screen you will be able to re-run the search or delete the list.</p>
+
+<p class="actionButtonArea">
+<a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Back to top</span></span></a>
 </p>
 
+<a name="account3"></a>
+<h2 class="helpSubhead">What is my Reading History?</h2>
+
+<p>Patrons may keep a record of the MERLIN materials that they check out.</p>
+<p><strong>To activate reading history:</strong></p>
+<ol>
+<li>Log in to My Library Account.</li>
+<li>Click <span class="button"><img alt="" src="/screens/ico_clock.png"><span class="buttonText">Reading History</span></span></li>
+<li>Activate My Reading History - Click <span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Opt In</span></span></li>
+<li>After Opting in, all your MERLIN checkouts will be recorded and accessible in Your Reading History (does not apply to MOBIUS books).</li>
+<li>If you want to <strong>remove items</strong> from your reading history fill in the mark box, and click <span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Delete Marked</span></span> You may also use <span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Delete All</span></span></li>
+<li>If you want to deactivate <strong>Reading History</strong> click the Delete All button, and then <span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Opt Out</span></span></li>
+</ol>
+<p><strong>Please carefully read this disclaimer before opting in to this service:</strong></p>
 <p>Reading History is a new feature in My Library Account that allows you to track and list many of the materials you have checked out from the MERLIN (MU, MST, UMKC, UMSL) Libraries. You may choose whether or not you would like this feature enabled within your library account. However, there are some important considerations that you should keep in mind:</p>
 <ol>
 <li>The list of items in your Reading History will display only MERLIN (MU, MST, UMKC, UMSL) materials that you have checked out. In other words, nothing that you borrow from MOBIUS or Interlibrary Loan will be included in this Reading History list.</li>
