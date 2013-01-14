@@ -801,6 +801,7 @@ a#moreLink { margin-bottom:1em; color: #6E0000; }
 .mylistsSavePage form { padding:10px; color:#000000; float:none; }
 
 .mylistsSavePage .pageMainAreaHeader { font-size:1.3333em; font-weight:bold; }
+.mylistsSelect {display:none;}
 
 span.navButton, span.navButtonOneLine {
     background: transparent url('button_blank.gif') no-repeat;
