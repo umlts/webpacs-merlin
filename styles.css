@@ -362,11 +362,12 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 #botlogo p { margin:.5em 0; }
 
-#botlogo li {display: inline; list-style-type:circle; border-left: 1px solid #D3D3D3; padding: 0 5px;}      
+#botlogo li {display: inline; list-style-type:circle; border-left: 1px solid #D3D3D3; padding: 0 5px;}
 
-#botlogo ul {margin-top:.5em;}      
+#botlogo ul {margin-top:.5em;}
 
 #botlogo .first {border:none;} 
+
 
 /* Brief Citation display styles */
 
