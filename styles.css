@@ -360,6 +360,12 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 #botlogo p { margin:.5em 0; }
 
+#botlogo li {display: inline; list-style-type:circle; border-left: 1px solid #D3D3D3; padding: 0 5px;}      
+
+#botlogo ul {margin-top:.5em;}      
+
+#botlogo .first {border:none;} 
+
 /* Brief Citation display styles */
 
 .briefcitActions { text-align:left; }
@@ -809,6 +815,7 @@ a#moreLink { margin-bottom:1em; color: #6E0000; }
 .mylistsSavePage form { padding:10px; color:#000000; float:none; }
 
 .mylistsSavePage .pageMainAreaHeader { font-size:1.3333em; font-weight:bold; }
+.mylistsSelect {display:none;}
 
 span.navButton, span.navButtonOneLine {
     background: transparent url('button_blank.gif') no-repeat;
