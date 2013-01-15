@@ -245,6 +245,8 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 .bibLinks th { text-align:center; }
 
+.bibLinks td { padding-top: 4px; }
+
 .bibMedia  { margin-left:auto; margin-right:auto; }
 
 .bibMedia   img { margin-top:10px;  }
@@ -273,7 +275,7 @@ table.bibItems { clear:both; }
 
 .bibItems .bibItemsEntry td, .bibItems .bibItemsHeader th { padding:5px 8px; text-align:left; }
 
-.bibRecordLink { font-style:normal; padding-left:0px ; font-size:.9em; }
+.bibRecordLink { font-style:normal; padding-left:0px ; padding-top:8px; font-size:.9em; }
 
 .bibRecordLink div { float:left; }
 

@@ -199,7 +199,7 @@ ICON_NEARBY=<img src="/screens/nearby.png" alt="Nearby on shelf">
 ICON_BIB_PAGING_CAPTION= 
 ICON_BIB_PAGING_NEXT=<span class="button"><span class="buttonText" id="buttonNextRecord">Next Record</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BIB_PAGING_PREV=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Previous Record</span></span>
-ICON_RECORDLINK=<div class="bibRecordLink"><div class="bibInfoLabel">Link to this record</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
+ICON_RECORDLINK=<div class="bibRecordLink"><div class="bibInfoLabel">Permanent Link</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
 ITEMS_MSG_BRIEF=Click here for additional copies/volumes of this item
 LINK856TEXT=Connect to
 MARC=yes
