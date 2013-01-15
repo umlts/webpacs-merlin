@@ -135,6 +135,7 @@ ICON_856LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-righ
 ICON_962LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image
 #ICON_BOOKCART=<span class="navButton">Add to Folder</span>
 ICON_BOOKCART_SAVED=<span class="navButtonYellow navButton">Remove From Folder</span>
+ICON_BOOKCART_SAVED=<span class="navButtonYellow navButton">Remove From Saved</span>
 ICON_FULLRECORD=See Full Record
 ICON_LOCATEINRESULTS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Locate in results</span></span></div></div>
 ICON_PAGING_CAPTION=Result Page&nbsp;
@@ -142,8 +143,8 @@ ICON_PAGING_NEXT=Next
 ICON_PAGING_PREV=Prev
 ICON_PROGRAM=<img src="/screens/media_program.gif" border="0" alt="Library Event">
 ICON_RESOURCE=<img src="/screens/media_resource.gif" alt="Internet Resource">
-ICON_SAVEALLPAGE=<span class="button"><img src="/screens/ico_folder_add.png" alt=""><span class="buttonText">Add All On Page to Folder</span></span>
-ICON_SAVEMARKED=<span class="button"><img src="/screens/ico_folder_add.png" alt=""><span class="buttonText">Add Marked to Folder</span></span>
+ICON_SAVEALLPAGE=<span class="button"><img src="/screens/ico_folder_add.png" alt=""><span class="buttonText">Save All on Page</span></span>
+ICON_SAVEMARKED=<span class="button"><img src="/screens/ico_folder_add.png" alt=""><span class="buttonText">Save Marked</span></span>
 IMAGE_MATTYPE-=/screens/media_book.gif
 IMAGE_MATTYPE2=/screens/media_ebook.gif
 IMAGE_MATTYPE3=/screens/media_eperiodical.gif
@@ -199,6 +200,7 @@ ICON_BIB_PAGING_CAPTION=
 ICON_BIB_PAGING_NEXT=<span class="button"><span class="buttonText" id="buttonNextRecord">Next Record</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BIB_PAGING_PREV=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Previous Record</span></span>
 ICON_RECORDLINK=<div class="bibRecordLink"><div class="bibInfoLabel">Link to this record</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
+ICON_RECORDLINK=<span class="button"><img src="/screens/ico_bookmark.png" alt="">Persistent record link: http://laurel.lso.missouri.edu%s</span>
 ITEMS_MSG_BRIEF=Click here for additional copies/volumes of this item
 LINK856TEXT=Connect to
 MARC=yes
@@ -265,10 +267,10 @@ ICON_MYLISTS_RECORD=<span class="navButton">Add to My Lists</span>
 # Saving and Exporting
 BRIEF_EXPORT=a|t|p
 ICON_BUT_BIBEXPORT=<span class="navButtonOneLine">Add to Folder</span>
-ICON_BUT_CLEAR_MARKED=<span class="navButtonOneLine">Empty Folder</span>
+ICON_BUT_CLEAR_MARKED=<span class="navButton">Clear Saved Records</span>
 ICON_BUT_EXPORT_MULTI=<span class="navButtonOneLine">Export Saved</span>
-ICON_BUT_EXPORT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Folder</span></span>
-ICON_BUT_VIEW_SAVES=<span class="navButtonOneLine">View Folder</span>
+ICON_BUT_EXPORT_VIEW_SAVES=<span class="navButton"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Saved Records</span></span>
+ICON_BUT_VIEW_SAVES=<span class="navButton">View Saved Records</span>
 EMAILOP=From the MERLIN Library Catalog|exporter|
 EXPORT_SELECT_TABLE=Sendto:email,local,browser|Format:full,brief,marc,endnote,procite
 XRECTYPE=bi
