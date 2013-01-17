@@ -682,7 +682,7 @@ div .bibResourceSidebar { display:none; }
 
 .helpContent h4 { font-size:1em; margin-bottom:0px; }
 
-.helpContent p { margin:5px 0 0 10px; }
+.helpContent p { margin:5px 15px; }
 
 .helpContent ul, .helpContent ol { margin-top:3px; margin-bottom:3px; }
 
@@ -834,7 +834,7 @@ span.navButton:hover {
 }
 
 span.navButtonOneLine {
-    padding: 11px 7px;
+    padding: 9px 7px;
 }
 
 span.navButtonSmall {
