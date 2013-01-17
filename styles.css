@@ -686,11 +686,11 @@ div .bibResourceSidebar { display:none; }
     margin-top:1em;
 }
 
-.helpContent h3 { font-size:1.1em; margin-bottom:0px; }
+.helpContent h3 { font-size:1.1em; margin-bottom:5px; }
 
 .helpContent h4 { font-size:1em; margin-bottom:0px; }
 
-.helpContent p { margin:5px 0; }
+.helpContent p { margin:5px 15px; }
 
 .helpContent ul, .helpContent ol { margin-top:3px; margin-bottom:3px; }
 
