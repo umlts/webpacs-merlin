@@ -568,7 +568,9 @@ TABLEPARAM_PROG_SECTIONS=width="100%" border="0" cellspacing="0" align="center"
 
 # ASRS
 
-ICON_BUT_ASRSICON=<span class="button"><img src="/screens/ico_kangaroo.png" alt=""><span class="buttonText">Pick Up @ Miller Nichols</span></span>
+#ICON_BUT_ASRSICON=<span class="navButton">Pick Up @ Miller Nichols</span>
+ICON_BUT_ASRSICON=<div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Pick Up @ Miller Nichols</span></span></div></div>
+
 
 # Scoping
 
