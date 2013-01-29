@@ -233,7 +233,7 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 .bibDisplayItems th, .reserveBibs th, .resourceDisplayBibs th, .resourceResource th { color:#767C70; }
 
-.bibDisplayItems td, .reserveBibs td, .resourceDisplayBibs td, .resourceResource td, .bibItems td, .bibHoldings td, .bibVol td { border-top:1px solid #ECECEC; border-bottom:none; vertical-align:top; }
+.bibDisplayItems td, .reserveBibs td, .resourceDisplayBibs td, .resourceResource td, .bibItems td, .bibHoldings td {word-break:break-all; padding: 3px 12px 3px 2px;}, .bibVol td { border-top:1px solid #ECECEC; border-bottom:none; vertical-align:top; }
 
 .bibDisplayItemsHeader, .resourceDisplayLicenseHeader { font-size:.8333em; float:left; margin:.5em 0 0 5%; }
 
