@@ -237,6 +237,8 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 .bibDisplayItemsHeader, .resourceDisplayLicenseHeader { font-size:.8333em; float:left; margin:.5em 0 0 5%; }
 
+.bibHoldingsLabel { white-space:nowrap;}
+
 .bibDisplayItemsHeader h2, .resourceDisplayLicenseHeader h2 { color:#F7960C; font-size:1.2em; margin:0; }
 
 .bibDisplayItemsMain { float:right; width:80%; }
