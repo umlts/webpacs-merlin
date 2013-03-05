@@ -255,7 +255,7 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 .bibMedia   img { margin-top:10px;  }
 
-.bibDisplayPermLink { display: block; }
+.bibDisplayPermLink { display: table; padding-bottom: 0.5em; }
 
 .bibDisplayProgramInfo { float:right; font-size:1.1em; margin:5% 5% 15px 0; }
 
