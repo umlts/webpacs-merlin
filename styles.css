@@ -245,6 +245,24 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 .bibDisplayJacket  { float:left; display:inline; width:150px; text-align:center; }
 
+table.bibLinks {
+    background-color: #F4F4F4;
+    border-radius: 15px 15px 15px 15px;
+    margin-top: 1em;
+}
+
+.bibDisplayUrls th{
+    padding:.5em 0 .25em 0;
+}
+
+.bibDisplayUrls td{
+    padding-bottom:..25em;
+}
+
+.bibDisplayUrls td:last-child{
+    padding-bottom:1em;
+}
+
 .bibItems td {padding: 3px 12px 3px 2px;}
 
 .bibLinks th { text-align:center; }
@@ -255,7 +273,7 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 .bibMedia   img { margin-top:10px;  }
 
-.bibDisplayPermLink { display: table; padding-bottom: 0.5em; }
+.bibDisplayPermLink { display: table; }
 
 .bibDisplayProgramInfo { float:right; font-size:1.1em; margin:5% 5% 15px 0; }
 
