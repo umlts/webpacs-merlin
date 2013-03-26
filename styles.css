@@ -61,7 +61,11 @@ body > * { text-align:left;}
 
 caption { border-bottom:1px solid #D3D3D3; font-weight:bold; text-align:center; }
 
-center a {text-decoration:none;}
+center a {display: inline-block;
+    font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+    text-decoration: none;
+    vertical-align: text-top;
+    width: auto;}
 
 div center table { border-color:#D3D3D3; margin-top:10px; margin-bottom:10px; }
 
