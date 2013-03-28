@@ -708,9 +708,11 @@ div .bibResourceSidebar { display:none; }
 
 .helpTopics { padding:5px; width:30em; }
 
-.helpTopics li { list-style-type:none; }
+.helpTopics li { list-style-type:none; padding-top: 2px;}
 
 .helpExample h4 { margin-top:0px; }
+
+.pageContentInner .helpHead { font-size: 1.9em; padding-top: 20px;}
 
 .pageContentInner .helpSubhead { border-top:4px solid #E8E8E8; margin:45px 0 5px; }
 
