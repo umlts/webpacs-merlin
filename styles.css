@@ -1044,6 +1044,16 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 .requestResult font { font-size:1.4em; }
 
+.connectButton { background: url('connect-button.png'); color: #000000;
+    cursor: pointer;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    height: 30px;
+    line-height: 11px;
+    text-align: center;
+    width: 75px;}
+
 .resourceButton {text-align:center;}
 
 .resourceButton img {margin:.5em;border:none;}
