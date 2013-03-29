@@ -690,6 +690,10 @@ div .bibResourceSidebar { display:none; }
     margin-top:1em;
 }
 
+.helpGenreRight { width: 14em; display:inline-block;}
+
+.helpGenreLeft { width: 14em; display:inline-block;}
+
 .helpContent h3 { font-size:1.1em; margin-bottom:5px; }
 
 .helpContent h4 { font-size:1em; margin-bottom:0px; }
