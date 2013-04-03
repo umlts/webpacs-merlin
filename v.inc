@@ -1,5 +1,5 @@
         <p><strong>Search Tips for Genre/Form terms</strong></p>
-        <p>The Genre/Form headings describes what a work is versus what it is about. Examples of genres are horror films, science fiction and thrillers. In the term Horror films "horror" is the genre and "films" is the form.</p>
+        <p>Genre/form headings describe what a work is rather than what it is about, for example: horror films, biography, or maps.</p>
     <p>Note that <strong>search results may not be comprehensive</strong> as Genre/Form headings are new to MERLIN.</p>
         <p>More examples of genre/form headings.</p>
             
