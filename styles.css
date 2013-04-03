@@ -692,7 +692,7 @@ div .bibResourceSidebar { display:none; }
 
 .helpGenreRight { width: 14em; display:inline-block;}
 
-.helpGenreLeft { width: 14em; display:inline-block;}
+.helpGenreLeft { width: 15em; float:left;}
 
 .helpContent h3 { font-size:1.1em; margin-bottom:5px; }
 
