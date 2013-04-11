@@ -237,9 +237,9 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 .bibDisplayItems th, .reserveBibs th, .resourceDisplayBibs th, .resourceResource th { color:#767C70; }
 
-.bibHoldings td:first-child { word-break:normal; padding: 3px 3px 3px 2px;}
+.bibDisplayItems td,.bibHoldings td:first-child { word-break:normal; padding: 3px 3px 3px 2px;}
 
-.bibDisplayItems td, .reserveBibs td, .resourceDisplayBibs td, .resourceResource td, .bibHoldings td {word-break:break-all; padding: 3px 12px 3px 2px;}
+.reserveBibs td, .resourceDisplayBibs td, .resourceResource td, .bibHoldings td {word-break:break-all; padding: 3px 12px 3px 2px;}
 
 .bibVol td { border-top:1px solid #ECECEC; border-bottom:none; vertical-align:top; }
 
