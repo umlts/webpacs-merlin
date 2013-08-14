@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 09 June 2010 -->
+<head>
+<title>MERLIN Catalog</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
+<script type="text/javascript">/* <![CDATA[ */
+function iiiSearchValidate() {
+	try{
+	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
+		return false;
+		}
+	}
+	catch(err) {
+	}
+  return true;
+}
+
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+if(iiiSearchValidate()){
+obj.submit();
+}
+}
+/* ]]> */
+</script>
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
+</head>
+<body>
+<!--{toplogo}-->
+
+<div class="pageContentInner mainSearch">
+
+<h1 class="accessibleAddInfo">&#25628;&#32034;</h1>
+
+<div id="accessibleForm" class="form1Part">
+<div class="browseSearchtool">
+<form action="/search*chx/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
+
+<input type="hidden" id="iiiFormHandle_1">
+
+<!-- Optional legend:
+<fieldset>
+<legend>&#38190;&#20837;&#24744;&#35201;&#23547;&#25214;&#30340;&#25628;&#32034;&#35789;&#27719;&#12290;</legend>-->
+<div class="formEntryArea">
+<label for="searchtype" class="accessibleAddInfo">&#25628;&#32034;&#31867;&#22411;</label>
+<select name="searchtype" id="searchtype">
+<option value="X" selected="selected">&#20851;&#38190;&#23383;</option>
+<option value="t">&#26631;&#39064;</option>
+<option value="s">&#26434;&#24535;&#21002;&#21517;</option>
+<option value="a">&#20316;&#32773;</option>
+<option value="d">&#20027;&#39064;</option>
+<option value="y">&#36164;&#28304;&#21517;&#31216;</option>
+</select>
+<!--{nosort}-->
+<label for="searcharg" class="accessibleAddInfo">&#25628;&#32034;&#39033;&#30446;</label>
+<input maxlength="75" name="searcharg" size="20" >
+<label for="scope" class="accessibleAddInfo">&#22320;&#28857;</label>
+<!--{scope}-->
+<span class="nowrap formButtonArea">
+
+  <!--{submit}-->
+
+<input type="hidden" id="iiiFormHandle_1"/>
+<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#25552;&#20132;</span></span></div></div></a>
+
+<input type="submit" style="display:none">
+
+</span>
+</div><!-- formEntryArea -->
+<!--</fieldset> optional-->
+</form>
+</div><!-- browseSearchtool -->
+</div><!-- form1Part -->
+
+<div class="mainMenuContent">
+<div class="mainMenuContentLeft">
+<img src="/screens/main.jpg" height=249 width=355>
+</div>
+<div class="mainMenuContentRight">
+<ul>
+<!-- <li><a href="[encore IP/iii/encore]">&#25628;&#32034; Encore</a></li> -->
+<!-- <li><a href="/iii/calendar/month">&#33410;&#30446;&#26085;&#21382;</a></li> -->
+<li><a href="/ftlist*chx">&#26032;&#20070;&#36890;&#21578;</a></li>
+<!-- <li><a href="/rpro*chx">Research Pro</a></li>
+<!-- <li><a href="/search*chx/y">&#26597;&#35810;&#30005;&#23376;&#36164;&#28304;</a></li>
+<li><a href="/illb*chx">Interlibrary Loan</a></li>
+<li><a href="[WebPAC IP:2090]">KidsOnline &#12304;&#20799;&#31461;&#32593;&#12305;</a></li> -->
+</ul>
+</div>
+</div>
+
+
+</div><!--pageContentInner -->
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].searcharg.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+# -----------------------------------------------------
+# MERLIN webpub.def updated 080514 lee
+#-----------------------------------------------------
+# Converted by cvpubdef from pubdef
+# -----------------------------------------------------
+# converted by cvpubdef from HOLDINGS_POS: atpe
+#
+# converted from HOLDINGS_POS field tag: 'a'
+#
+b|a|110|-67890|{u4F01}{u4E1A}{u4F5C}{u8005}||b|
+b|a|111|-67890|Meeting Name||b|
+b|a||-67890|{u4F5C}{u8005}||b|
+#
+# converted from HOLDINGS_POS field tag: 't'
+#
+b|t|130|-67890|{u7EDF}{u4E00}{u6807}{u9898}||b|
+b|t|240|-67890|{u7EDF}{u4E00}{u6807}{u9898}||b|
+b|t||-6789|{u9898}{u540D}||b|
+#
+# converted from HOLDINGS_POS field tag: 'p'
+#
+b|p|260|-6789|Published||b|
+b|p|262|-c2|Music Publication Number||b|
+b|p||-6789|Published||b|
+#
+# converted from HOLDINGS_POS field tag: 'e'
+#
+b|e|254|-6789|{u683C}{u5F0F}||b|
+b|e|255|-6789|Map Info||b|
+b|e|256|-6789|Comp Info||b|
+b|e|250|-6789|{u7248}{u672C}||b|
+
+#
+# end HOLDINGS_POS
+#
+# x and z tags moved to the top MCO-011648
+#
+b|x|7801|-4w|{u5148}{u524D}{u9898}{u540D}||b|
+b|x|78000|-4w|{u5148}{u524D}{u9898}{u540D}||b|
+b|x|78001|-4w|{u90E8}{u5206}{u7EE7}{u7EED}||b|
+b|x|78002|-4w|{u53D6}{u4EE3}||b|
+b|x|78003|-4w|{u90E8}{u5206}{u53D6}{u4EE3}||b|
+b|x|78004|-4w|Union Of||b|
+b|x|78005|-4w|{u5438}{u6536}||b|
+b|x|78006|-4w|{u90E8}{u5206}{u5438}{u6536}||b|
+b|x|78007|-4w|Split From||b|
+b|x||-4w|{u5148}{u524D}{u9898}{u540D}||b|
+b|z|7851|-w|{u540E}{u7EE7}{u9898}{u540D}||b|
+b|z|78500|-4w|{u540E}{u7EE7}{u9898}{u540D}||b|
+b|z|78501|-4w|{u5DF2}{u90E8}{u5206}{u7EE7}{u7EED}||b|
+b|z|78502|-4w|{u6240}{u53D6}{u4EE3}||b|
+b|z|78503|-4w|{u90E8}{u5206}{u6240}{u53D6}{u4EE3}||b|
+b|z|78504|-4w|{u5438}{u6536}||b|
+b|z|78505|-4w|{u90E8}{u5206}{u5438}{u6536}||b|
+b|z|78506|-4w|{u5206}{u88C2}{u6210}||b|
+b|z|78507|-4w|{u5408}{u5E76}||b|
+b|z|78508|-4w|{u6539}{u56DE}||b|
+b|z|990||||b|
+b|z||-4w|{u540E}{u7EE7}{u9898}{u540D}||b|
+#
+# next line added by cvpubdef
+b|H|||||b
+#
+
+b|s||-67890|Series Title||b|
+b|y|052||Standard Number||b|
+b|y|025||Other Number||b|
+b|y|034||Other Number||b|
+b|y|036||Other Number||b|
+b|y|050|-6789|||b|
+b|y|096|-6789|||b|
+b|y|222|-6789|Other Titles||b|
+b|y|257||Additional Keywords||b|
+b|y|510[34]|-6789|References||b|
+b|y|[0-7]..|-6789|||b|
+b|y|8[0-4]...|-6789|||b|
+b|y|85[0-5]..|-6789|||b|
+b|y|856..|-6789|{u7F51}{u5740}||b|
+b|y|85[7-9]..|-6789|||b|
+b|y|8[6-9]...|-6789|||b|
+b|y|9[0-4]..|-6789|||b|
+b|y|95...|-6789|||b|
+b|y|9[6-9]...|-6789|||b|
+b|y||-6789|MARC||b|
+b|r|306|-2|||b|
+b|r|310|-2|Frequency||b|
+b|r|321|-2|{u524D}{u9891}{u7387}||b|
+b|r|33[6-8]||||b|
+b|r|350|-2|||b|
+b|r|35[1-8]|-2|{u8F7D}{u4F53}{u5F62}{u6001}||b|
+b|r|359|-2|||b|
+b|r|36[013-9]|-2|{u8F7D}{u4F53}{u5F62}{u6001}||b|
+b|r|362|-2|Publication History||b|
+b|r|3[7-9][0-9]|-2|{u8F7D}{u4F53}{u5F62}{u6001}||b|
+b|r||-2|{u8F7D}{u4F53}{u5F62}{u6001}||b|
+b|v|505|-57|{u5185}{u5BB9}||b|
+b|v|508|-6789|Production Credits||b|
+b|v|511|-6789|Performers||b|
+b|v|520|-6789|{u6458}{u8981}||b|
+b|v|533|-57|{u683C}{u5F0F}||b|
+b|v|538|-5|Notes||b|
+b|v||-36789|Notes||b|
+b|n|380|-02|Notes||b|
+b|n|524|-57|Cite As||b|
+b|n|539|-57|||b|
+b|n|555 |-57|{u7D22}{u5F15}||b|
+b|n|5550|-57|{u5BFB}{u627E}{u8F85}{u52A9}||b|
+b|n|518|-257|Notes||b|
+b|n|520|-257c|Notes||b|
+b|n|542||||b|
+b|n|581|-57|{u51FA}{u7248}{u7269}||b|
+b|n|583||||b|
+b|n|588||||b|
+b|n||-57|Notes||b|
+b|q|765|-46789|Other Titles||b|
+b|q|767|-46789|Other Titles||b|
+b|q|773|-46789|In||b|
+b|q|776|-46789|Other Physical Format||b|
+b|q||-46789|{u76F8}{u5173}{u6587}{u732E}||b|
+b|w|035|-6789|||b|
+b|w|76[0257]1|-6789|||b|
+b|w|77[0235-7]1|-6789|||b|
+b|w||-6789|Temporary Control Number||b|
+b|d|6[0-9][0-9].0|-025|{u4E3B}{u9898}||b|
+b|d||-025|{u4E3B}{u9898}||b|
+b|m|6[0-9][0-9].2|-02|Medical Subjects||b|
+b|m||-02|Medical Subjects||b|
+b|j|650 7|-025|Additional Keywords||b|
+b|j|653|-025|Additional Keywords||b|
+b|j|654|-025c|Additional Keywords||b|
+b|j|655..|-025c|{u7C7B}{u578B}/{u8868}{u683C}||b|
+b|j|65[6-9]|-025|Additional Keywords||b|
+b|j|75[2-5]|-025|Additional Keywords||b|
+b|j|774|-046789|Includes||b|
+b|j||-025|Additional Keywords||b|
+b|b|7[01][01].[ 13456789]|-05|Other Authors||b|
+b|b|7[01][01].2|-05|Includes||b|
+b|b|79[6-9]|-05|Donor/Honoree||b|
+b|b||-05|Other Authors||b|
+b|u|21[012]|-5|Other Titles||b|
+b|u|229|-5|||b|
+b|u|242|-5|Translation||b|
+b|u|243|-5|{u7EDF}{u4E00}{u6807}{u9898}||b|
+b|u|246.[0123]|-5|Other Titles||b|
+b|u|246.4|-5|Other Titles||b|
+b|u|246.5|-5|Other Titles||b|
+b|u|246.6|-5|Other Titles||b|
+b|u|246.7|-5|Other Titles||b|
+b|u|246.8|-5|Other Titles||b|
+b|u|247|-5|Other Titles||b|
+b|u|4901|-5|||b|
+b|u|730.2|-05|Includes||b|
+b|u|740|-5|Other Titles||b|
+b|u|740.2|-5|Includes||b|
+b|u||-05|Other Titles||b|
+b|i|020|-c2|{u56FD}{u9645}{u6807}{u51C6}{u4E66}{u53F7}||b|
+b|i|022|-c2|{u56FD}{u9645}{u6807}{u51C6}{u671F}{u520A}{u7F16}{u53F7}||b|
+b|i|0224|-c2|ISMN||b|
+b|i|028|-c2|Music/Publisher Number||b|
+b|i|0280[12]|-c2|Issue Number||b|
+b|i|0281[12]|-c2|Matrix Number||b|
+b|i|0282[12]|-c2|Plate Number||b|
+b|i|0283[12]|-c2|Publication Number||b|
+b|i|0284[12]|-c2|Video Publication Number||b|
+b|i||-c2|Standard Number||b|
+b|o||-6789|OCLC/WorldCat Number||b|
+b|k|086|-6789|Government Document Number||b|
+b|k|09817|-6789|Missouri Document Number||b|
+b|k|09822|-6789|Kansas Document Number||b|
+b|k||-6789|Document Number||b|
+b|f|01[3-8]||Standard Number||b|
+b|f|027|-6789|Technical Report Number||b|
+b|f|030|-6789|CODEN||b|
+b|f|070|-6789|Nat'l Ag Library Control Number||b|
+b|f|074|-6789|GPO Item Number||b|
+b|f|088|-6789|Technical Report Number||b|
+b|f||-6789|Other Number||b|
+b|l||-6789|LC Control Number||b|
+b|h||-6789|Library Has||b|
+b|g|970|-2|||b|
+b|g||-2|{u5185}{u5BB9}||b|
+#
+c|$||+|Loc||b|&nbsp;
+c|C||&|||b|&nbsp;
+c|Q||||b|
+c|i||a|{u8D44}{u6599}{u6807}{u8BC6}||b|
+c|h||-8x|Lib. Has||b|
+c|2||+|{u6700}{u65B0}{u6536}{u5230}||b|&nbsp;
+c|3||+|{u6700}{u65B0}{u6536}{u5230}||b|
+c|Q||||b|
+c|n||+|{u9644}{u6CE8}||b|
+#
+e|j|||Connect||e|
+e|h|||{u516C}{u5171}{u6CE8}{u8BB0}||e|
+e|e|||{u8F7D}{u4F53}{u5F62}{u6001}||e|
+e|w|||{u4E66}{u5546}||e|
+e|r|||Provider||e|
+e|d|||Database Subject||e|
+# end pubdef
+#
+# -----------------------------------------------------
+# Converted by cvpubdef from item_col_width: 1(23)[LOCATION],Cv#(30),%
+# -----------------------------------------------------
+i|1|||{u9986}{u85CF}{u5730}|33|b|
+i|C||||43|b|&nbsp;
+i|v||||24|b|&nbsp;
+i|#|||||b|&nbsp;
+i|Q||||b|
+i|%|||||b|
+#
+#end converted webpub.def
