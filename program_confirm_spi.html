@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 12 Apr 2010 -->
+<head>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<link rel="stylesheet" href="/screens/styles.css" type="text/css">
+<link rel="stylesheet" href="/screens/progreg_styles.css" type="text/css">
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
+</head>
+<body>
+<!-- begin toplogo_loggedin.html file -->
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 06 Oct 2010 -->
+<script type="text/javascript">
+if (document.body){document.body.className = "bodybg";}
+</script>
+
+<div class="minHeight">
+<div class="fullPage">
+
+<div id="skipNav"><a href="#content" tabindex="1">Saltar al contenido</a></div>
+
+<div class="topLogo">
+
+<div class="topLinks">
+<ul id="topLinksList">
+
+<li>
+<a href="/patroninfo*spi">Volver a su registro</a>
+</li>
+<li><a href="/logout*spi" tabindex="120">Salir</a></li>
+<li><a href="/help*spi" tabindex="115">Ayuda</a></li>
+<li><a href="#" onClick="window.print();" tabindex="110"><span class="buttonTopLinks"><img src="/screens/ico_printer.gif" alt=""><span class="buttonTopLinksText">Imprimir</span></span></a></li>
+<li><a href="/search*spi/" tabindex="105">B&#250;squeda nueva</a></li>
+</ul>
+</div>
+
+<div class="topLogoSmall">
+<a href="/*spi" tabindex="10"><img src="/screens/logo_sm.jpg" height="40" width="280" alt="P&#225;gina de Inicio del Cat&#225;logo"></a>
+</div>
+
+</div><!--topLogo-->
+
+<div class="topMyLibrary">
+<div id="topMyLibraryHeader"><h1>Mi biblioteca</h1></div>
+<ul id="toplogoMoreNav">
+<!-- Toplogo alt links. -->
+<!--<li><a href="/acquire*spi">Sugerir una compra</a></li>
+<li><a href="/suggest*spi">Dejar comentarios</a></li>
+-->
+
+<!-- Dropdown menus -->
+	<li id="first">
+		<div><a href="/patroninfo*spi">Mi biblioteca</a></div>
+		<ul>
+            <li><a href="/patroninfo*spi">Mi cuenta</a></li>
+            <!--<li><a href="/selfreg*spi">Crear una cuenta</a></li> -->
+            <li><a href="/libinfo*spi">Acerca de la biblioteca</a></li>
+            <li><a href="/acquire*spi">Sugerir una compra</a></li>
+            <li><a href="/suggest*spi">Comentarios</a></li>
+		</ul>
+	</li>
+
+	<li>
+		<div><a href="/help*spi">Ayuda</a></div>
+		<ul>
+			<li><a href="/help*spi#searching">Buscando</a></li>
+			<li><a href="/help*spi#searchtips">Consejos sobre la B&#250;squeda Avanzada</a></li>
+			<li><a href="/help*spi#prefsearch">Guardando sus b&#250;squedas</a></li>
+			<li><a href="/help*spi#renewals">Renovaciones</a></li>
+			<li><a href="/help*spi#feepay">pago</a></li>
+			<li><a href="/help*spi#rpro">Research Pro</a></li>
+			<li><a href="/help*spi#programs">Eventos y Programas de la Comunidad</a></li>
+		</ul>
+	</li>
+<!--
+	<li id="last">
+		<div><a href="#">Caracter&#237;sticas</a></div>
+		<ul>
+            <li><a href="<encore IP/iii/encore>">Buscar en Encore</a></li>
+            <li><a href="/iii/calendar/month">Calendario de eventos</a></li>
+            <li><a href="/ftlist*spi">Listados especiales</a></li>
+            <li><a href="/rpro*spi">Research Pro</a></li>
+            <li><a href="/search*spi/y">Encontrar recursos-e</a></li>
+            <li><a href="/illb*spi">Pr&#233;stamo Inter-bibliotecario</a></li>
+		</ul>
+	</li> -->
+<!-- End dropdown menus -->    
+    
+</ul>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+//Enable optional dropdown menu for additional navigation options.
+if (document.all&&document.getElementById) {
+	navRoot = document.getElementById("toplogoMoreNav");
+	for (i=0; i<navRoot.childNodes.length; i++) {
+		node = navRoot.childNodes[i];
+		if (node.nodeName=="LI") {
+			node.onmouseover=function() {
+				this.className+=" over";
+			}
+			node.onmouseout=function() {
+				this.className=this.className.replace(" over", "");
+			}
+		}
+	}
+}
+
+//--><!]]></script>
+
+</div><!--myLibrary-->
+<div class="topNavClear"></div>
+
+<div class="searchNav">
+<script language="JavaScript"> 
+<!--
+function GotoURL() { 
+//top.location.href = dl.specializedSearch.options[dl.specializedSearch.selectedIndex].value;
+window.location.assign(document.getElementById("specializedSearch").value);
+return false;
+} 
+// -->
+</script>
+<div id="searchNavMenu">
+<select name="specializedSearch" id="specializedSearch">
+<option selected="selected" value=" ">(M&#225;s b&#250;squedas)</option>
+<option value="/search*spi/X">B&#250;squeda avanzada</option>
+<option value="/search*spi/t">T&#237;tulo</option>
+<option value="/search*spi/s">T&#237;tulo de revista</option>
+<option value="/search*spi/a">Autor</option>
+<option value="/search*spi/d">Materia</option>
+<option value="/search*spi/y">Nombre del recurso</option>
+<option value="/search*spi/c">Signatura</option>
+<option value="/search*spi/i">ISBN</option>
+<option value="/search*spi/g">N&#186; Documento Gobierno</option>
+<option value="/search*spi/q">Autor y T&#237;tulo</option>
+<!--<option value="/search*spi/p">Instructor</option>
+<option value="/search*spi/r">Curso</option> -->
+</select>
+<input type="image" src="/screens/ico_go.gif" class="searchNavBut" value="Go" onclick="GotoURL();" >
+</div>
+</div><!--searchNav-->
+<div class="clear"></div>
+<div class="pageContent"><!-- content container -->
+<a name="content" id="content"></a>
+<!--end toplogo_loggedin.html-->
+
+<div class="progContent"><!-- right container -->
+<div class="progNavrow">
+<!--{return}-->
+</div>
+<div class="progNavMessage">Se ha conectado como:
+<!--{patronname}-->
+</div>
+<!--{iferrmsg}-->
+<div class="errorMessageStatus">
+<br/>
+<!--{errmsg}-->
+</div>
+<!--{xif}-->
+<br/>
+<!--{else}-->
+<!--Begin the main content table-->
+<div class="progRegConf">Confirmaci&#243;n de inscripci&#243;n</div>
+<div class="progName">
+<!--{progname}-->
+</div>
+<div class="progRegDescArea">
+<table cellspacing="0" cellpadding="0" class="progRegConfirm">
+<tr>
+<td colspan="2">
+<strong>
+<div>
+<!--{registeredstatuses}-->
+</div>
+<div>
+<!--{waitlistedstatuses}-->
+</div>
+</strong>
+</td>
+</tr>
+<tr><td class="progConfLabel">Descripci&#243;n:</td>
+<td id="program_desc" class="value">
+<!--{progdesc}-->
+</td> 
+</tr>
+<tr><td class="progConfLabel">Instructor:</td>
+<td>
+<!--{instructor}-->
+</td>
+</tr>
+<!--{iffee}-->
+<tr><td class="progConfLabel">Precio:</td>
+<td>
+<!--{price}-->
+</td>
+</tr>
+<!--{xif}-->
+<tr><td class="progConfLabel">En:</td>
+<td>
+<!--{sessionsummary}-->
+</td>
+</tr>
+<tr><td class="progConfLabel">Sesi&#243;n(es):</td>
+<td>
+<!--{viewhidesessionlist}-->
+</td>
+</tr>
+<tr><td class="progConfLabel">Ubicaci&#243;n:</td>
+<td>
+<!--{location}-->
+</td>
+</tr>
+<tr><td class="progConfLabel">Notas:</td>
+<td>
+<!--{publicnote}-->
+</td>
+</tr>
+</table>
+</div>
+<div id="program_thumbnail" class="progThumbnail">
+<!--{progthumbnail}-->
+</div>
+<div style="clear:both"></div>
+<!--End of main page content-->
+<!--{xif}-->
+<!--{botlogo}-->
+</body>
+</html>
