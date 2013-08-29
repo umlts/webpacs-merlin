@@ -74,6 +74,25 @@ TOPLOGO4=@screens/toplogo_s4.html
 TOPLOGO5=@screens/toplogo_s5.html
 TOPLOGO6=@screens/toplogo_s6.html
 TOPLOGO7=@screens/toplogo_s7.html
+
+TOPLOGO_spi=@screens/toplogo_spi.html
+TOPLOGO1_spi=@screens/toplogo_s1_spi.html
+TOPLOGO2_spi=@screens/toplogo_s2_spi.html
+TOPLOGO3_spi=@screens/toplogo_s3_spi.html
+TOPLOGO4_spi=@screens/toplogo_s4_spi.html
+TOPLOGO5_spi=@screens/toplogo_s5_spi.html
+TOPLOGO6_spi=@screens/toplogo_s6_spi.html
+TOPLOGO7_spi=@screens/toplogo_s7_spi.html
+
+TOPLOGO_chx=@screens/toplogo_chx.html
+TOPLOGO1_chx=@screens/toplogo_s1_chx.html
+TOPLOGO2_chx=@screens/toplogo_s2_chx.html
+TOPLOGO3_chx=@screens/toplogo_s3_chx.html
+TOPLOGO4_chx=@screens/toplogo_s4_chx.html
+TOPLOGO5_chx=@screens/toplogo_s5_chx.html
+TOPLOGO6_chx=@screens/toplogo_s6_chx.html
+TOPLOGO7_chx=@screens/toplogo_s7_chx.html
+
 #UPDATECIRC=true
 STARTOVER=/search/X
 
