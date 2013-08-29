@@ -1,0 +1,137 @@
+<!-- begin toplogo.html file -->
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 06 Oct 2010 -->
+<script type="text/javascript">
+if (document.body){document.body.className = "bodybg";}
+</script>
+
+<div class="minHeight">
+<div class="fullPage">
+
+<div id="skipNav"><a href="#content" tabindex="1">Saltar al contenido</a></div>
+<div class="topLogo">
+
+<div class="topLinks">
+<ul id="topLinksList">
+<li><a href="/patroninfo*spi" tabindex="120">Login</a></li>
+<li><a href="/help*spi" tabindex="115">Ayuda</a></li>
+<li><a href="#" onclick="iiiSwitchLang('eng')">English</a></li>
+<li><a href="#" onclick="iiiSwitchLang('chx')">&#31616;&#20307;&#20013;&#25991;</a></li>
+<li><a href="#" onClick="window.print();" tabindex="110"><span class="buttonTopLinks"><img src="/screens/ico_printer.gif" alt=""><span class="buttonTopLinksText">Imprimir</span></span></a></li>
+<li><a href="/search*spi/" tabindex="105">B&#250;squeda nueva</a></li>
+</ul>
+</div>
+
+<div class="topLogoSmall">
+<a href="/*spi" tabindex="10"><img src="/screens/logo_sm.jpg" height="40" width="280" alt="P&#225;gina de Inicio del Cat&#225;logo"></a>
+</div>
+
+</div><!--topLogo-->
+
+
+<div class="topMyLibrary">
+<div id="topMyLibraryHeader"><h1>Mi biblioteca</h1></div>
+
+<ul id="toplogoMoreNav">
+<!-- Toplogo alt links. -->
+<!--<li><a href="/acquire*spi">Sugerir una compra</a></li>
+<li><a href="/suggest*spi">Dejar comentarios</a></li>
+-->
+
+<!-- Dropdown menus -->
+	<li id="first">
+		<div><a href="/patroninfo*spi">Mi biblioteca</a></div>
+		<ul>
+            <li><a href="/patroninfo*spi">Mi cuenta</a></li>
+            <!--<li><a href="/selfreg*spi">Crear una cuenta</a></li> -->
+            <li><a href="/libinfo*spi">Acerca de la biblioteca</a></li>
+            <li><a href="/acquire*spi">Sugerir una compra</a></li>
+            <li><a href="/suggest*spi">Comentarios</a></li>
+		</ul>
+	</li>
+
+	<li>
+		<div><a href="/help*spi">Ayuda</a></div>
+		<ul>
+			<li><a href="/help*spi#searching">Buscando</a></li>
+			<li><a href="/help*spi#searchtips">Consejos sobre la B&#250;squeda Avanzada</a></li>
+			<li><a href="/help*spi#prefsearch">Guardando sus b&#250;squedas</a></li>
+			<li><a href="/help*spi#renewals">Renovaciones</a></li>
+			<li><a href="/help*spi#feepay">pago</a></li>
+			<li><a href="/help*spi#rpro">Research Pro</a></li>
+			<li><a href="/help*spi#programs">Eventos y Programas de la Comunidad</a></li>
+		</ul>
+	</li>
+<!--
+	<li id="last">
+		<div><a href="#">Caracter&#237;sticas</a></div>
+		<ul>
+            <li><a href="<encore IP/iii/encore>">Buscar en Encore</a></li>
+            <li><a href="/iii/calendar/month">Calendario de eventos</a></li>
+            <li><a href="/ftlist*spi">Listados especiales</a></li>
+            <li><a href="/rpro*spi">Research Pro</a></li>
+            <li><a href="/search*spi/y">Encontrar recursos-e</a></li>
+            <li><a href="/illb*spi">Pr&#233;stamo Inter-bibliotecario</a></li>
+		</ul>
+	</li> -->
+<!-- End dropdown menus -->    
+    
+</ul>
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+//Enable optional dropdown menu for additional navigation options.
+if (document.all&&document.getElementById) {
+	navRoot = document.getElementById("toplogoMoreNav");
+	for (i=0; i<navRoot.childNodes.length; i++) {
+		node = navRoot.childNodes[i];
+		if (node.nodeName=="LI") {
+			node.onmouseover=function() {
+				this.className+=" over";
+			}
+			node.onmouseout=function() {
+				this.className=this.className.replace(" over", "");
+			}
+		}
+	}
+}
+
+//--><!]]></script>
+
+</div><!--myLibrary-->
+<div class="topNavClear"></div>
+
+<div class="searchNav">
+<script language="JavaScript"> 
+<!--
+function GotoURL() { 
+//top.location.href = dl.specializedSearch.options[dl.specializedSearch.selectedIndex].value;
+window.location.assign(document.getElementById("specializedSearch").value);
+return false;
+} 
+// -->
+</script>
+<div id="searchNavMenu">
+<select name="specializedSearch" id="specializedSearch">
+<option selected="selected" value=" ">(M&#225;s b&#250;squedas)</option>
+<option value="/search*spi/X">B&#250;squeda avanzada</option>
+<option value="/search*spi/t">T&#237;tulo</option>
+<option value="/search*spi/s">T&#237;tulo de revista</option>
+<option value="/search*spi/a">Autor</option>
+<option value="/search*spi/d">Materia</option>
+<option value="/search*spi/y">Nombre del recurso</option>
+<option value="/search*spi/c">Signatura</option>
+<option value="/search*spi/i">ISBN</option>
+<option value="/search*spi/g">N&#186; Documento Gobierno</option>
+<option value="/search*spi/q">Autor y T&#237;tulo</option>
+<!--<option value="/search/p">Instructor</option>
+<option value="/search*spi/r">Curso</option> -->
+</select>
+<input type="image" src="/screens/ico_go.gif" class="searchNavBut" value="Go" onclick="GotoURL();" >
+</div>
+
+</div><!--searchNav-->
+<div class="clear"></div>
+<div class="pageContent"><!-- content container -->
+<a name="content" id="content"></a>
+<!--end toplogo.html-->
