@@ -89,14 +89,14 @@ $(document).ready(function(){
 
 <div id="tabs">
     <ul id="tabRow">
-      <li class="tab"><a href="#tab-1">Quick Search</a></li>
-      <li class="tab"><a href="/search/Y">Advanced</a></li>
-      <li class="tab"><a href="#tab-3">Subjects</a></li>
-      <li class="tab"><a href="#tab-4">Numbers/Other</a></li>
+      <li class="tab"><a href="/search*spi/X#tab-1">B&#250;squeda R&#225;pida</a></li>
+      <li class="tab"><a href="/search*spi/Y">B&#250;squeda avanzada</option>
+      <li class="tab"><a href="/search*spi/X#tab-3">Subjects</a></li>
+      <li class="tab"><a href="/search*spi/X#tab-4">Numbers/Other</a></li>
     </ul>
     
    <div id="tab-1" class="tabContent">
-        <h1 class="pageHeader">Quick Search</h1>
+        <h1 class="pageHeader">B&#250;squeda R&#225;pida</h1>
         
             <div id="accessibleForm" class="quickSearch X">
                 
@@ -232,16 +232,16 @@ $(document).ready(function(){
             
                 <div class="innerQuickSearch">
             
-                    <form action="/search/" method="get" id="search" class="indexSearch" name="search">
+                    <form action="/search*spi/" method="get" id="search" class="indexSearch" name="search">
                     
                     <div class="limits">
                     <div class="limitColumn">
-                    <label> <input name="searchtype" class="searchtype" value="/search*spi/X" checked="checked" type="radio"> B&#250;squeda por palabra clave </label> 
-                    <label> <input name="searchtype" class="searchtype" value="/search*spi/t" type="radio"> B&#250;squeda por t&#237;tulo </label>
+                    <label> <input name="searchtype" class="searchtype" value="X" checked="checked" type="radio"> B&#250;squeda por palabra clave </label> 
+                    <label> <input name="searchtype" class="searchtype" value="t" type="radio"> B&#250;squeda por t&#237;tulo </label>
                     </div>
                     <div class="limitColumn">
-                    <label> <input name="searchtype" class="searchtype" value="/search*spi/s" type="radio"> Journal, Magazine, Newspaper title begins with </label>
-                    <label> <input name="searchtype" class="searchtype" value="/search*spi/a" type="radio"> Autor </label>
+                    <label> <input name="searchtype" class="searchtype" value="s" type="radio"> Journal, Magazine, Newspaper title begins with </label>
+                    <label> <input name="searchtype" class="searchtype" value="a" type="radio"> Autor </label>
                     </div>
                     </div>
                     
@@ -293,7 +293,7 @@ $(document).ready(function(){
         
         <h1 class="pageHeader">Subjects</h1>
         
-        <form action="/search/" method="get" id="search" class="indexSearch" name="search">
+        <form action="/search*spi/" method="get" id="search" class="indexSearch" name="search">
         
         <div class="limits">
         <div class="limitColumn">
@@ -335,7 +335,7 @@ $(document).ready(function(){
 
         <h1 class="pageHeader">Numbers/Other</h1>
         
-        <form action="/search/" method="get" id="search" class="indexSearch" name="search">
+        <form action="/search*spi/" method="get" id="search" class="indexSearch" name="search">
         
         <div class="limits">
         <div class="limitColumn">
