@@ -46,10 +46,7 @@ $(document).ready(function(){
                 $('.innerQuickSearch').hide();
                 $('.X .innerQuickSearch').show();
                 
-                //To make sure the first radio is selected, showing the correct search examples
-                var firstRadio = $(currentTab + ' .limits label:first input')
-                $(firstRadio).click();
-                $(".searchTips").load("/screens/" + firstRadio.val() + ".inc");
+                
                 
                 //This makes it so the scrollbar doesn't jump to the anchor tag.  It also, unfortunately, makes it so the back button doesn't work.
                 
