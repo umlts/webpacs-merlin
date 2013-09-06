@@ -18,8 +18,9 @@ startTimeout(1800000, "/");
 </head>
 <body id="frontPage" onload="if (location.search.indexOf('SUBKEY') != -1 || location.search.indexOf('SEARCH') != -1 || location.search.indexOf('searcharg=') != -1 ) modifySearch(document.location.search); init_progsearch(); if (document.search) document.search.searchText1.focus();">
 <!--{toplogo}-->
-<script type="text/javascript">
 
+<script type="text/javascript">
+    
 $(document).ready(function(){
     
     //Loading the correct content when the tab is clicked from another page
@@ -61,7 +62,7 @@ $(document).ready(function(){
         $('input.searchtype[value=X]').attr('checked', true);
         $('.innerQuickSearch').hide();
         $('.X .innerQuickSearch').show();
-	$('input.searchtype').click(function(){
+   	$('input.searchtype').click(function(){
             $('.innerQuickSearch').hide();
             $('.' + this.value + ' .innerQuickSearch').show();
             $('input.searchtype[value=' + this.value + ']').attr('checked', 'checked');
@@ -78,10 +79,12 @@ $(document).ready(function(){
       $('.advancedInput').val(newSearchTerm);
     }
     });
-    
+
+
     //The scrollbar should always be at the top when the page loads
     $(document).scrollTop(0);
 });
+
 </script>
 
 <div class="pageContentInner">
@@ -120,7 +123,7 @@ $(document).ready(function(){
         
                     <div class="formEntryArea">
                     <input type="hidden" name="fieldLimit1" value="" />
-                    <input class="advancedInput" maxlength="100" size="35" name="searchText1" />
+                    <input class="advancedInput" maxlength="100" size="35" name="searchText1" autofocus>
 <!--{scope}-->
 <!--{advancedsubmit}-->
                     </div>
@@ -248,7 +251,7 @@ $(document).ready(function(){
         
 <!--{nosort}-->
         
-                    <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+                    <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text" autofocus>
         
 <!--{scope}-->
         
@@ -297,7 +300,7 @@ $(document).ready(function(){
         
 <!--{nosort}-->
         
-        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text" autofocus>
         
 <!--{scope}-->
         
@@ -344,7 +347,7 @@ $(document).ready(function(){
         
 <!--{nosort}-->
         
-        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text" autofocus>
         
 <!--{scope}-->
         
