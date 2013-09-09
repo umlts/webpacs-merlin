@@ -20,7 +20,17 @@ startTimeout(1800000, "/");
 <!--{toplogo}-->
 
 <script type="text/javascript">
-    
+ function upDatequickSearch () {
+                    //Variable for searcharg to hold search term when radio is switched
+   $("#quickSearcharg").val($("#advSearcharg").val());
+        
+ }  
+
+ function upDateAdvSearch () {
+
+        $("#advSearcharg").val($("#quickSearcharg").val());
+
+ } 
 $(document).ready(function(){
     
     //Loading the correct content when the tab is clicked from another page
@@ -46,6 +56,9 @@ $(document).ready(function(){
                 $('.innerQuickSearch').hide();
                 $('.X .innerQuickSearch').show();
                 
+
+        
+               
                 //To make sure the first radio is selected, showing the correct search examples
                 var firstRadio = $(currentTab + ' .limits label:first input')
                 $(firstRadio).click();
@@ -56,16 +69,23 @@ $(document).ready(function(){
                 if(currentTab.indexOf("http") == -1){
                     return false;
                 }
+                       
+
 	});
 
     //Switching the Keyword/Title menu when the radio button is changed
         $('input.searchtype[value=X]').attr('checked', true);
         $('.innerQuickSearch').hide();
         $('.X .innerQuickSearch').show();
+
+
+
    	$('input.searchtype').click(function(){
             $('.innerQuickSearch').hide();
             $('.' + this.value + ' .innerQuickSearch').show();
             $('input.searchtype[value=' + this.value + ']').attr('checked', 'checked');
+
+
 	});
 	$('#moreLink').click(function(){
              $('#optionalLimits').toggle();
@@ -83,6 +103,7 @@ $(document).ready(function(){
 
     //The scrollbar should always be at the top when the page loads
     $(document).scrollTop(0);
+
 });
 
 </script>
@@ -123,7 +144,8 @@ $(document).ready(function(){
         
                     <div class="formEntryArea">
                     <input type="hidden" name="fieldLimit1" value="" />
-                    <input class="advancedInput" maxlength="100" size="35" name="searchText1" autofocus>
+                    <input onkeyup="javascript:upDatequickSearch();" onchange="javascript:upDatequickSearch();" id="advSearcharg" class="advancedInput" maxlength="100" size="35" name="searchText1" autofocus>
+
 <!--{scope}-->
 <!--{advancedsubmit}-->
                     </div>
@@ -251,7 +273,7 @@ $(document).ready(function(){
         
 <!--{nosort}-->
         
-                    <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text" autofocus>
+                    <div class="searchBox"><input onkeyup="javascript:upDateAdvSearch();" onchange="javascript:upDateAdvSearch();" name="searcharg" value="" id="quickSearcharg" class="text" type="text" maxlength="100" size="35">
         
 <!--{scope}-->
         
@@ -300,7 +322,7 @@ $(document).ready(function(){
         
 <!--{nosort}-->
         
-        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text" autofocus>
+        <div class="searchBox"><input name="searcharg" value="" id="searchargTab3" class="text" type="text" maxlength="100" size="35">
         
 <!--{scope}-->
         
@@ -347,7 +369,7 @@ $(document).ready(function(){
         
 <!--{nosort}-->
         
-        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text" autofocus>
+        <div class="searchBox"><input name="searcharg" value="" id="searchargTab4" class="text" type="text" maxlength="100" size="35">
         
 <!--{scope}-->
         
