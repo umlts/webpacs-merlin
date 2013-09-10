@@ -25,6 +25,17 @@ function submitSubject() {
 <body id="frontPage" onload="if (location.search.indexOf('SUBKEY') != -1 || location.search.indexOf('SEARCH') != -1 || location.search.indexOf('searcharg=') != -1 ) modifySearch(document.location.search); init_progsearch(); if (document.search) document.search.searchText1.focus();">
 <!--{toplogo}-->
 <script type="text/javascript">
+function upDatequickSearch () {
+                    //Variable for searcharg to hold search term when radio is switched
+   $("#quickSearcharg").val($("#advSearcharg").val());
+        
+ }  
+
+ function upDateAdvSearch () {
+
+        $("#advSearcharg").val($("#quickSearcharg").val());
+
+ } 
 
 $(document).ready(function(){
     
@@ -128,7 +139,7 @@ $(document).ready(function(){
         
                     <div class="formEntryArea">
                     <input type="hidden" name="fieldLimit1" value="" />
-                    <input class="advancedInput" maxlength="100" size="35" name="searchText1" />
+                    <input onkeyup="javascript:upDatequickSearch();" onchange="javascript:upDatequickSearch();" id="advSearcharg" class="advancedInput" maxlength="100" size="35" name="searchText1" autofocus>
 <!--{scope}-->
 <!--{advancedsubmit}-->
                     </div>
@@ -256,7 +267,7 @@ $(document).ready(function(){
         
 <!--{nosort}-->
         
-                    <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+                    <div class="searchBox"><input onkeyup="javascript:upDateAdvSearch();" onchange="javascript:upDateAdvSearch();" name="searcharg" value="" id="quickSearcharg" class="text" type="text" maxlength="100" size="35">
         
 <!--{scope}-->
         
@@ -305,7 +316,7 @@ $(document).ready(function(){
         
 <!--{nosort}-->
         
-        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+        <div class="searchBox"><input name="searcharg" value="" id="searchargTab3" class="text" type="text" maxlength="100" size="35">
         
 <!--{scope}-->
         
@@ -352,7 +363,7 @@ $(document).ready(function(){
         
 <!--{nosort}-->
         
-        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+        <div class="searchBox"><input name="searcharg" value="" id="searchargTab4" class="text" type="text" maxlength="100" size="35">
         
 <!--{scope}-->
         
