@@ -48,6 +48,20 @@ $(document).ready(function(){
     
     //The scrollbar should always be at the top when the page loads
     $(document).scrollTop(0);
+
+
+
+    var i = $("#advancedSearchBoxes input").length;
+    var j = i + 1;
+    var moreSearchBoolean = '<br /><select name="boolean1' + i + '"><option value="%20and%20" selected="selected">And</option><option value="%20and%20not%20">And not</option><option value="%20or%20">Or</option><option value="%20near%20">Near</option><option value="%20before%20">Before</option><option value="%20after%20">After</option></select><br />'
+    var moreSearchField = '<select class="keywordSegment" name="fieldLimit1' + j + '"><option value="" selected="selected">Anywhere:</option><option value="a:">Author:</option><option value="t:">Title:</option><option value="d:">Subject:</option><option value="c:">Table of Contents:</option><option value="N:">Note:</option></select>'
+    var moreSearchInput = '<input style="margin: 0 4px;" maxlength="75" size="35" name="searchText1' + j + ' " />'
+
+    $("#addMore").click(function() {
+        $("#advancedSearchBoxes").append(moreSearchBoolean);
+        $("#advancedSearchBoxes").append(moreSearchField);
+        $("#advancedSearchBoxes").append(moreSearchInput);
+    });
 });
 </script>
 
@@ -75,7 +89,7 @@ $(document).ready(function(){
 
 <fieldset>
 <legend>Enter Search Terms</legend>
-<div class="formEntryArea">
+<div class="formEntryArea" id="advancedSearchBoxes">
 <select name="fieldLimit1" class="keywordSegment">
 
 <option value="" selected="selected">Anywhere:</option>
@@ -125,6 +139,7 @@ $(document).ready(function(){
 </div>
 <input type="hidden" name="startLimit" >
 <div class="formEntryArea">
+  <a href="#" id="addMore">+ Add more search terms</a>
 <!--{availlim}-->
 </div>
 <div class="formButtonArea">
