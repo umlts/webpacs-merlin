@@ -17,6 +17,7 @@ startTimeout(1800000, "/");
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
 </head>
 <body id="frontPage" onload="if (location.search.indexOf('SUBKEY') != -1 || location.search.indexOf('SEARCH') != -1 || location.search.indexOf('searcharg=') != -1 ) modifySearch(document.location.search); init_progsearch(); if (document.search) document.search.searchText1.focus();">
+<!--{advancedsearchbody}-->
 <!--{toplogo}-->
 <script type="text/javascript">
 
@@ -53,9 +54,9 @@ $(document).ready(function(){
 
     var i = $("#advancedSearchBoxes input").length;
     var j = i + 1;
-    var moreSearchBoolean = '<br /><select name="boolean1' + i + '"><option value="%20and%20" selected="selected">And</option><option value="%20and%20not%20">And not</option><option value="%20or%20">Or</option><option value="%20near%20">Near</option><option value="%20before%20">Before</option><option value="%20after%20">After</option></select><br />'
-    var moreSearchField = '<select class="keywordSegment" name="fieldLimit1' + j + '"><option value="" selected="selected">Anywhere:</option><option value="a:">Author:</option><option value="t:">Title:</option><option value="d:">Subject:</option><option value="c:">Table of Contents:</option><option value="N:">Note:</option></select>'
-    var moreSearchInput = '<input style="margin: 0 4px;" maxlength="75" size="35" name="searchText1' + j + ' " />'
+    var moreSearchBoolean = '<select name="boolean' + i + '"><option value="%20and%20" selected="selected">And</option><option value="%20and%20not%20">And not</option><option value="%20or%20">Or</option><option value="%20near%20">Near</option><option value="%20before%20">Before</option><option value="%20after%20">After</option></select><br />'
+    var moreSearchField = '<select name="fieldLimit' + j + '"><option value="" selected="selected">Any Field:</option><option value="a:">Author:</option><option value="t:">Title:</option><option value="d:">Subject (LC):</option><option value="N:">Note:</option></select>'
+    var moreSearchInput = '<input style="margin: 0 4px;" maxlength="75" size="35" name="searchText' + j + ' " />'
 
     $("#addMore").click(function() {
         $("#advancedSearchBoxes").append(moreSearchBoolean);
@@ -90,52 +91,8 @@ $(document).ready(function(){
 <fieldset>
 <legend>Enter Search Terms</legend>
 <div class="formEntryArea" id="advancedSearchBoxes">
-<select name="fieldLimit1" class="keywordSegment">
+<!--{advancedsearch}-->
 
-<option value="" selected="selected">Anywhere:</option>
-<option value="a:">Author:</option>
-<option value="t:">Title:</option>
-<option value="d:">Subject:</option>
-<option value="c:">Table of Contents:</option>
-<option value="N:">Notes and Genre:</option>
-</select>
-<input maxlength="100" size="35" name="searchText1" />
-<br />
-<select name="boolean1">
-
-<option value="%20and%20" selected="selected">And</option>
-<option value="%20and%20not%20">And not</option>
-<option value="%20or%20">Or</option>
-</select>
-<br />
-<select name="fieldLimit2" class="keywordSegment">
-
-<option value="" selected="selected">Anywhere:</option>
-<option value="a:">Author:</option>
-<option value="t:">Title:</option>
-<option value="d:">Subject:</option>
-<option value="c:">Table of Contents:</option>
-<option value="N:">Notes and Genre:</option>
-</select>
-<input maxlength="100" size="35" name="searchText2" />
-<br />
-<select name="boolean2">
-
-<option value="%20and%20" selected="selected">And</option>
-<option value="%20and%20not%20">And not</option>
-<option value="%20or%20">Or</option>
-</select>
-<br />
-<select name="fieldLimit3"  class="keywordSegment">
-
-<option value="" selected="selected">Anywhere:</option>
-<option value="a:">Author:</option>
-<option value="t:">Title:</option>
-<option value="d:">Subject:</option>
-<option value="c:">Table of Contents:</option>
-<option value="N:">Notes and Genre:</option>
-</select>
-<input maxlength="100" size="35" name="searchText3" />
 </div>
 
 <div class="formEntryArea">
