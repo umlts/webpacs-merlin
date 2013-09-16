@@ -50,7 +50,7 @@ $(document).ready(function(){
                 //To make sure the first radio is selected, showing the correct search examples
                 var firstRadio = $(currentTab + ' .limits label:first input')
                 $(firstRadio).click();
-                $(".searchTips").load("/screens/" + spi + firstRadio.val() + ".inc");
+                $(".searchTips").load("/screens/" + firstRadio.val() + "spi.inc");
                 
                 
                 //This makes it so the scrollbar doesn't jump to the anchor tag.  It also, unfortunately, makes it so the back button doesn't work.
@@ -112,12 +112,12 @@ $(document).ready(function(){
 
                     <div class="limits">
                     <div class="limitColumn">
-                    <label> <input name="/search*spi/" class="searchtype" value="X" checked="checked" type="radio"> B&#250;squeda por palabra clave </label> 
-                    <label> <input name="/search*spi/" class="searchtype" value="t" type="radio"> B&#250;squeda por t&#237;tulo </label>
+                    <label> <input name="searchtype" class="searchtype" value="X" checked="checked" type="radio"> B&#250;squeda por palabra clave </label> 
+                    <label> <input name="search*spi" class="searchtype" value="t" type="radio"> B&#250;squeda por t&#237;tulo </label>
                     </div>
                     <div class="limitColumn">
-                    <label> <input name="/search*spi/" class="searchtype" value="s" type="radio"> Journal, Magazine, Newspaper title begins with </label>
-                    <label> <input name="/search*spi/" class="searchtype" value="a" type="radio"> Autor </label>
+                    <label> <input name="searchtype" class="searchtype" value="s" type="radio"> Journal, Magazine, Newspaper title begins with </label>
+                    <label> <input name="searchtype" class="searchtype" value="a" type="radio"> Autor </label>
                     </div>
                     </div>
         
