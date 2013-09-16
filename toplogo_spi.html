@@ -10,7 +10,10 @@
 $(document).ready(function () {
 	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
 
-	);
+		$(".searchtype").click(function(){
+		$(".searchTips").load("/screens/" + spi + this.value + ".inc");
+	});
+
 	//Changes the search examples
 	
 	//var selectAny = $('#b option[value=""]')
