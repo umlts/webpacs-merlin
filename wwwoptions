@@ -41,6 +41,10 @@
 AVAILLIM_STATS=-,o,e
 BOTLOGO=@screens/botlogo.html
 BOTLOGO3=@screens/botlogo_s3.html
+BOTLOGO_spi=@screens/botlogo_spi.html
+BOTLOGO3_spi=@screens/botlogo_spi_s3.html
+BOTLOGO_chx=@screens/botlogo_chx.html
+BOTLOGO3_chx=@screens/botlogo_chx_s3.html
 ICON_BUT_CANCEL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel</span></span></div></div>
 ICON_BUT_CLOSEWINDOW=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Close Window</span></span>
 ICON_BUT_RET2CAT=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Catalog</span></span>
@@ -76,22 +80,22 @@ TOPLOGO6=@screens/toplogo_s6.html
 TOPLOGO7=@screens/toplogo_s7.html
 
 TOPLOGO_spi=@screens/toplogo_spi.html
-TOPLOGO1_spi=@screens/toplogo_s1_spi.html
-TOPLOGO2_spi=@screens/toplogo_s2_spi.html
-TOPLOGO3_spi=@screens/toplogo_s3_spi.html
-TOPLOGO4_spi=@screens/toplogo_s4_spi.html
-TOPLOGO5_spi=@screens/toplogo_s5_spi.html
-TOPLOGO6_spi=@screens/toplogo_s6_spi.html
-TOPLOGO7_spi=@screens/toplogo_s7_spi.html
+TOPLOGO1_spi=@screens/toplogo_spi_s1.html
+TOPLOGO2_spi=@screens/toplogo_spi_s2.html
+TOPLOGO3_spi=@screens/toplogo_spi_s3.html
+TOPLOGO4_spi=@screens/toplogo_spi_s4.html
+TOPLOGO5_spi=@screens/toplogo_spi_s5.html
+TOPLOGO6_spi=@screens/toplogo_spi_s6.html
+TOPLOGO7_spi=@screens/toplogo_spi_s7.html
 
 TOPLOGO_chx=@screens/toplogo_chx.html
-TOPLOGO1_chx=@screens/toplogo_s1_chx.html
-TOPLOGO2_chx=@screens/toplogo_s2_chx.html
-TOPLOGO3_chx=@screens/toplogo_s3_chx.html
-TOPLOGO4_chx=@screens/toplogo_s4_chx.html
-TOPLOGO5_chx=@screens/toplogo_s5_chx.html
-TOPLOGO6_chx=@screens/toplogo_s6_chx.html
-TOPLOGO7_chx=@screens/toplogo_s7_chx.html
+TOPLOGO1_chx=@screens/toplogo_chx_s1.html
+TOPLOGO2_chx=@screens/toplogo_chx_s2.html
+TOPLOGO3_chx=@screens/toplogo_chx_s3.html
+TOPLOGO4_chx=@screens/toplogo_chx_s4.html
+TOPLOGO5_chx=@screens/toplogo_chx_s5.html
+TOPLOGO6_chx=@screens/toplogo_chx_s6.html
+TOPLOGO7_chx=@screens/toplogo_chx_s7.html
 
 #UPDATECIRC=true
 STARTOVER=/search/X
@@ -1125,7 +1129,6 @@ LOC_kw=http://library.umkc.edu/merlin-locations-mnl#other
 
 #spanish wwwoptions
 AVAILLIM_spi=<span class="availLimMessage">Limitar la b&#250;squeda a ejemplares disponibles</span>|<span class="availLimMessage">Resultados de la b&#250;squeda limitados a ejemplares disponibles</span>
-BOTLOGO_spi=@screens/botlogo_spi.html
 ICON_BUT_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
 ICON_BUT_CLOSEWINDOW_spi=<span class="button"><img src="/screens/ico_x.gif" alt=""><span class="buttonText">Cerrar ventana</span></span>
 ICON_BUT_RET2CAT_spi=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">Volver al cat&#225;logo</span></span>
