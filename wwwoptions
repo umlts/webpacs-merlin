@@ -1128,32 +1128,33 @@ LOC_kr*=http://library.umkc.edu/merlin-locations-mnl#other
 LOC_kw=http://library.umkc.edu/merlin-locations-mnl#other
 
 #spanish wwwoptions
-AVAILLIM_spi=<span class="availLimMessage">Limitar la b&#250;squeda a ejemplares disponibles</span>|<span class="availLimMessage">Resultados de la b&#250;squeda limitados a ejemplares disponibles</span>
+#AVAILLIM_spi=<span class="availLimMessage">Limitar la b&#250;squeda a ejemplares disponibles</span>|<span class="availLimMessage">Resultados de la b&#250;squeda limitados a ejemplares disponibles</span>
+BOTLOGO_spi=@screens/botlogo_spi.html
 ICON_BUT_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
-ICON_BUT_CLOSEWINDOW_spi=<span class="button"><img src="/screens/ico_x.gif" alt=""><span class="buttonText">Cerrar ventana</span></span>
-ICON_BUT_RET2CAT_spi=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">Volver al cat&#225;logo</span></span>
-ICON_BUT_STARTOVER_spi=<span class="button"><img src="/screens/ico_startover.gif" alt=""><span class="buttonText">/search*spi</span></span>
+ICON_BUT_CLOSEWINDOW_spi=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Cerrar ventana</span></span>
+ICON_BUT_RET2CAT_spi=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Volver al cat&#225;logo</span></span>
+ICON_BUT_STARTOVER_spi=<span class="navButtonOneLine">/search*spi</span>
 ICON_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
 ICON_OK_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">OK</span></span></div></div>
-ICON_PREVPAGE_spi=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">Previo</span></span>
+ICON_PREVPAGE_spi=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Previo</span></span>
 ICON_SUBMIT_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Enviar</span></span></div></div>
 ICON_UPDATELIST_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Actualizar lista</span></span></div></div>
 ICON_CLEAR_ALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Borrar todo</span></span></div></div>
 ICON_CLEAR_FORM_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Borrar formulario</span></span></div></div>
 ICON_DELETE_SELECTED_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Borrar seleccionado</span></span></div></div>
 ICON_SELECT_ALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Guardar todo</span></span></div></div>
-#RESOURCETABLE_spi=valign="top"|cellpadding="0" cellspacing="0" border="0"||Recursos
+RESOURCETABLE_spi=valign="top"|cellpadding="0" cellspacing="0" border="0"||Recursos
 STARTOVER_spi=/search*spi
 TOPLOGO_spi=@screens/toplogo_spi.html
 XSTARTOVER_spi=/search*spi
-ICON_BUT_PUBLIC_spi=<span class="button"><img src="/screens/ico_patron.gif" alt=""><span class="buttonText">Vista usuario</span></span>
-ICON_BUT_STAFF_spi=<span class="button"><img src="/screens/ico_gear.gif" alt=""><span class="buttonText">Vista del personal</span></span>
+ICON_BUT_PUBLIC_spi=<span class="navButtonOneLine">Vista usuario</span>
+ICON_BUT_STAFF_spi=<span class="navButtonOneLine">Vista del personal</span>
 STAFF_LOGGEDIN_MSG_spi=<span class="loggedInMessage">Est&#225; conectado como "personal" en %s como %s</span>
-ICON_BUT_ANOTHER_spi=<span class="button"><img src="/screens/ico_magnifyingglass.gif" alt=""><span class="buttonText">Otra b&#250;squeda</span></span>
-ICON_BUT_NEWSRCH_spi=<span class="button"><img src="/screens/ico_startover.gif" alt=""><span class="buttonText">Inicio</span></span>
-ICON_BUT_WORDSRCH_spi=<span class="button"><img src="/screens/ico_magnifyingglass.gif" alt=""><span class="buttonText">Buscar como palabras</span></span>
-ICON_BUT_MODIFY_spi=<span class="button"><img src="/screens/ico_magnifyingglass_modify.gif" alt=""><span class="buttonText">Modificar b&#250;squeda</span></span>
-ICON_BUT_SHOWSIM_spi=<span class="button"><img src="/screens/ico_more.gif" alt=""><span class="buttonText">M&#225;s como este</span></span>
+ICON_BUT_ANOTHER_spi=<span class="navButton">Otra b&#250;squeda</span>
+ICON_BUT_NEWSRCH_spi=<span class="navButtonOneLine">Inicio</span>
+ICON_BUT_WORDSRCH_spi=<span class="navButton">Buscar como palabras</span>
+ICON_BUT_MODIFY_spi=<span class="navButton">Modificar b&#250;squeda</span>
+ICON_BUT_SHOWSIM_spi=<span class="navButtonOneLine">M&#225;s como este</span>
 ICON_REL_GROUP_1_spi=<img src="/screens/relevance5.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">M&#225;s relevantes t&#237;tulos</h1>&nbsp;
 ICON_REL_GROUP_2_spi=<img src="/screens/relevance4.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">Altamente relevantes t&#237;tulos</h1>&nbsp;
 ICON_REL_GROUP_3_spi=<img src="/screens/relevance3.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">Muy relevante t&#237;tulos</h1>&nbsp;
@@ -1161,16 +1162,16 @@ ICON_REL_GROUP_4_spi=<img src="/screens/relevance2.gif" alt="">&nbsp;<h1 class="
 ICON_REL_GROUP_5_spi=<img src="/screens/relevance1.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">Otra relevancia t&#237;tulos&</h1>&nbsp;
 RELSEARCH_spi=restable||<span class="button"><img src="/screens/ico_magnifyingglass.gif" border="0" alt=""><span class="buttonText">Ver B&#250;squedas relacionadas</span>
 AUTHMSG_spi=<h2 class="briefcitTitle"><em>%u</em> -- V&#233;ase %w <strong>%a</strong></h2><span class="authPublicNote">%p</span>|<h2 class="briefcitTitle">%u -- V&#233;ase adem&#225;s %w %a </h2><span class="authPublicNote">%p</span>
-AUTHMSG_SR_spi=ael encabezamiento siguiente|bel encabezamiento anterior|dla forma completa del encabezamiento|funa composici&#243;n musical basada en esta obra|gel t&#233;rmino espec&#237;fico|hel t&#233;rmino gen&#233;rico
-ICON_BUT_BRIEF_spi=<span class="button"><img src="/screens/ico_browse_brief.gif" alt=""><span class="buttonText">Visualizaci&#243;n breve</span></span>
-ICON_BUT_EXTENDED_spi=<span class="button"><img src="/screens/ico_browse_ext.gif" alt=""><span class="buttonText">Visualizaci&#243;n extendida</span></span>
-ICON_BUT_LIMAVAIL_spi=<span class="button"><img src="/screens/ico_list.gif" alt=""><span class="buttonText">Limitar a disponible</span></span>
-ICON_BUT_LIMIT_spi=<span class="button"><img src="/screens/ico_gear.gif" alt=""><span class="buttonText">Limitar/Ordenar b&#250;squeda</span></span>
-ICON_BUT_UNLIMAVAIL_spi=<span class="button"><img src="/screens/ico_list.gif" alt=""><span class="buttonText">Mostrar todo</span></span>
+#AUTHMSG_SR_spi=ael encabezamiento siguiente|bel encabezamiento anterior|dla forma completa del encabezamiento|funa composici&#243;n musical basada en esta obra|gel t&#233;rmino espec&#237;fico|hel t&#233;rmino gen&#233;rico
+ICON_BUT_BRIEF_spi=<span class="navButtonOneLine">Visualizaci&#243;n breve</span>
+ICON_BUT_EXTENDED_spi=<span class="navButton">Visualizaci&#243;n extendida</span>
+ICON_BUT_LIMAVAIL_spi=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">Limitar a disponible</span></span>
+ICON_BUT_LIMIT_spi=<span class="navButton">Limitar/Ordenar b&#250;squeda</span>
+ICON_BUT_UNLIMAVAIL_spi=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">Mostrar todo</span></span>
 ICON_856LINK_spi=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Sitio Web
 ICON_962LINK_spi=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Imagen digital
-#ICON_BOOKCART_spi=<span class="button"><img src="/screens/ico_bag_add.gif" alt=""><span class="buttonText">A&#241;adir a la cesta</span></span>
-ICON_BOOKCART_SAVED_spi=<span class="button"><img src="/screens/ico_bag_minus.gif" alt=""><span class="buttonText">Eliminar de la cesta</span></span>
+#ICON_BOOKCART_spi=<span class="navButton"><img src="/screens/ico_bag_add.gif" alt=""><span class="buttonText">A&#241;adir a la cesta</span></span>
+ICON_BOOKCART_SAVED_spi=<span class="navButtonYellow navButton">Eliminar de la cesta</span>
 ICON_FULLRECORD_spi=Ver registro completo
 ICON_LOCATEINRESULTS_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Localizar en resultados</span></span></div></div>
 ICON_PAGING_CAPTION_spi=P&#225;gina de resultados&nbsp;
@@ -1178,19 +1179,19 @@ ICON_PAGING_NEXT_spi=Sig
 ICON_PAGING_PREV_spi=Ant
 ICON_PROGRAM_spi=<img src="/screens/media_program.gif" border="0" alt="Eventos de la biblioteca">
 ICON_RESOURCE_spi=<img src="/screens/media_resource.gif" alt="Recurso de internet">
-ICON_SAVEALLPAGE_spi=<span class="button"><img src="/screens/ico_bag_add.gif" alt=""><span class="buttonText">A&#241;adir todos en la p&#225;gina</span></span>
-ICON_SAVEMARKED_spi=<span class="button"><img src="/screens/ico_bag_add.gif" alt=""><span class="buttonText">A&#241;adir los marcados a la cesta</span></span>
+ICON_SAVEALLPAGE_spi=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">A&#241;adir todos en la p&#225;gina</span></span>
+ICON_SAVEMARKED_spi=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">A&#241;adir los marcados a la cesta</span></span>
 NO_COPIES_spi=No hay ejemplares disponibles en este momento
 SORT_BROWSE_spi=t:T&#237;tulo|a:Autor|c:A&#241;o|r:Inverso A&#241;o|n:Signatura|m:Tipo de material
 BIB_TOC_HEADER_spi=<strong>Tabla de contenidos</strong>
-ICON_BUT_MARC_DISPLAY_spi=<span class="button"><img src="/screens/ico_marc.gif" alt=""><span class="buttonText">Visualizaci&#243;n MARC</span></span>
-ICON_BUT_REGULAR_DISPLAY_spi=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">Visualizaci&#243;n normal</span></span>
-ICON_BUT_RTRNTB_spi=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">Volver al listado</span></span>
+ICON_BUT_MARC_DISPLAY_spi=<span class="navButton">Visualizaci&#243;n MARC</span>
+ICON_BUT_REGULAR_DISPLAY_spi=<span class="navButton">Visualizaci&#243;n normal</span>
+ICON_BUT_RTRNTB_spi=<span class="navButton">Volver al listado</span>
 ICON_BIB_HOLDINGS_ITEMS_spi=Ver Copias
-#ICON_NEARBY_spi=<img src="/screens/bullet.gif" alt="Ejemplares cercanos en la estanter&#237;a" border="0">
+ICON_NEARBY_spi=<img src="/screens/nearby.png" alt="Ejemplares cercanos en la estanter&#237;a" border="0">
 ICON_BIB_PAGING_NEXT_spi=<span class="button"><span class="buttonText" id="buttonNextRecord">Registro siguiente</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BIB_PAGING_PREV_spi=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Registro anterior</span></span>
-ICON_RECORDLINK_spi=<a href="%s"><span class="button"><img src="/screens/ico_bookmark.gif" alt=""><span class="buttonText">Enlace permanente</span></span></a>
+ICON_RECORDLINK_spi=<div class="bibRecordLink"><div class="bibInfoLabel">Enlace permanente</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
 LINK856TEXT_spi=Conectar a
 BIB_LICENSE_FIELDS_spi=Permitido:Vlw|Restringido:Vlx
 BIB_RESOURCE_CAPTION_spi=<strong>Este t&#237;tulo est&#225; disponible electr&#243;nicamente a trav&#233;s de:</strong>
@@ -1198,32 +1199,32 @@ ICON_BIB_RESOURCE_DETAILS_spi=<span class="button"><span class=buttonText">Datos
 ICON_RESOURCE_RECORD_spi=<span class="button"><span class=buttonText">Ver registro de recurso</span></span>
 RESOURCE_HOLDINGS_FIELDS_spi=T&#237;tulo:VbT|Cobertura:Vch|Texto completo:VcY
 RESOURCE_LICENSE_FIELDS_spi=Permitido:Vlw|Restringido:Vlx|Disponible para:Vlf|Notas de acceso:Vla
-ICON_BUT_CARDFORM_BOX_spi=<span class="button"><img src="/screens/ico_gear.gif" alt=""><span class="buttonText">Visualizaci&#243;n caja</span></span>
-ICON_BUT_CARDFORM_LIN_spi=<span class="button"><img src="/screens/ico_gear.gif" alt=""><span class="buttonText">Visualizaci&#243;n l&#237;nea</span></span>
+ICON_BUT_CARDFORM_BOX_spi=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Visualizaci&#243;n caja</span></span>
+ICON_BUT_CARDFORM_LIN_spi=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Visualizaci&#243;n l&#237;nea</span></span>
 CHECKIN_STATUS_spi=RECIBIDO=Aqu&#237;|ESPERADO=A punto de empezar|ENCUADERNACI&#211;N=En encuadernaci&#243;n|ATRASADO=Atrasado|Otros=Ver personal
 HOLDINGS_REQ_spi=Entregarme el art&#237;culo
-ICON_MYLISTS_spi=<span class="button"><img src="/screens/ico_list.gif" alt=""><span class="buttonText">Mis Listas</span></span>
+ICON_MYLISTS_spi=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">Mis Listas</span></span>
 ICON_MYLISTS_EXPORT_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Exportar lista</span></span></div></div>
 ICON_MYLISTS_MOVE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Mover marcados</span></span></div></div>
 ICON_MYLISTS_REQUEST_spi=<span class="button"><img src="/screens/ico_checkmark_16px.gif" alt=""><span class="buttonText">Solicitar</span></span>
 ICON_MYLISTS_REMOVE_DUPLICATES_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Eliminar duplicados</span></span></div></div>
 ICON_MYLISTS_RENAME_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cambiar Nombre/Descripci&#243;n</span></span></div></div>
-ICON_MYLISTS_SAVE_spi=<span class="button"><img src="/screens/ico_list_add.gif" alt=""><span class="buttonText">A&#241;adir a Mis Listas</span></span>
-ICON_MYLISTS_SAVE_TO_LIST_spi=<span class="button"><img src="/screens/ico_list_add.gif" alt=""><span class="buttonText">A&#241;adir los marcados a Mis Listas</span></span>
-ICON_MYLISTS_BRIEF_spi=<span class="button"><img src="/screens/ico_list_add.gif" alt=""><span class="buttonText">A&#241;adir a Mis Listas</span></span>
+ICON_MYLISTS_SAVE_spi=<span class="navButton">A&#241;adir a Mis Listas</span>
+ICON_MYLISTS_SAVE_TO_LIST_spi=<span></span>
+ICON_MYLISTS_BRIEF_spi=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">A&#241;adir a Mis Listas</span></span>
 ICON_BACK_TO_MYLISTS_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Volver a Mis Listas</span></span></div></div>
-ICON_MYLISTS_RECORD_spi=<span class="button"><img src="/screens/ico_list_add.gif" alt=""><span class="buttonText">A&#241;adir a Mis Listas</span></span>
-ICON_BUT_BIBEXPORT_spi=<span class="button"><img src="/screens/ico_bag_add.gif" alt=""><span class="buttonText">A&#241;adir a la cesta</span></span>
-ICON_BUT_CLEAR_MARKED_spi=<span class="button"><img src="/screens/ico_bag_clear.gif" alt=""><span class="buttonText">Vaciar cesta</span></span>
-ICON_BUT_EXPORT_MULTI_spi=<span class="button"><img src="/screens/ico_disc.gif" alt=""><span class="buttonText">Exportar guardados</span></span>
-ICON_BUT_EXPORT_VIEW_SAVES_spi=<span class="button"><img src="/screens/ico_bag.gif" alt=""><span class="buttonText">Ver cesta</span></span>
-ICON_BUT_VIEW_SAVES_spi=<span class="button"><img src="/screens/ico_bag.gif" alt=""><span class="buttonText">Ver cesta</span></span>
-ICON_BUT_REQUEST_spi=<span class="button"><img src="/screens/ico_checkmark.gif" alt=""><span class="buttonText">Solicitud</span></span>
+ICON_MYLISTS_RECORD_spi=<span class="navButton">A&#241;adir a Mis Listas</span>
+ICON_BUT_BIBEXPORT_spi=<span class="navButton"><img src="/screens/ico_bag_add.gif" alt=""><span class="buttonText">A&#241;adir a la cesta</span></span>
+ICON_BUT_CLEAR_MARKED_spi=<span class="navButton">Vaciar cesta</span>
+ICON_BUT_EXPORT_MULTI_spi=<span class="navButton">Exportar guardados</span>
+ICON_BUT_EXPORT_VIEW_SAVES_spi=<span class="navButton">Ver cesta</span></span>
+ICON_BUT_VIEW_SAVES_spi=<span class="navButton">Ver cesta</span>
+ICON_BUT_REQUEST_spi=<span class="navButtonOneLine">Solicitud</span>
 ICON_BUT_REQUEST_ALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Solicitud disponible</span></span></div></div>
-ICON_BUT_REQUEST_MULTI_spi=<span class="button"><img src="/screens/ico_request_multi.gif" alt=""><span class="buttonText">B&#250;squeda guardada</span></span>
+ICON_BUT_REQUEST_MULTI_spi=<span class="navButton">B&#250;squeda guardada</span>
 ICON_BUT_REQUEST_RESET_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Reiniciar formulario</span></span></div></div>
 ICON_BUT_REQUEST_SELECTED_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Solicitar selecci&#243;n</span></span></div></div>
-ICON_REQUEST_spi=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Solicitud
+ICON_REQUEST_spi=<span class="navButtonSmall navButton">Solicitud</span>
 #REQFILLTIME_spi=14|<br>Solicitud disponible en aproximadamente %d d&#237;as|<br>Disponibilidad estimada actualmente: aproximadamente %d d&#237;as|<br>Este material puede estar disponible inmediatamente
 REQUEST_spi=Reservar este ejemplar|bib|ask|Y
 #REQUEST_INSTRUCTION_spi=Indique las instruciones especiales, por favor:
@@ -1231,21 +1232,21 @@ REQUEST_MULTI_spi=Solicitar todos los ejemplares en el carro|bib|ask
 ICON_BUT_PAT_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
 ICON_BUT_PAT_CANCELALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar Todo</span></span></div></div>
 ICON_BUT_PAT_CANCELMARK_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar Selecci&#243;n</span></span></div></div>
-#ICON_BUT_PAT_FINES_spi=<span class="button"><img src="/screens/ico_payment.gif" alt=""><span class="buttonText">Multas</span></span>
-ICON_BUT_PAT_INFO_spi=<span class="button"><img src="/screens/ico_patron.gif" alt=""><span class="buttonText">Modificar informaci&#243;n personal</span></span>
-ICON_BUT_PAT_MSGS_spi=<span class="button"><img src="/screens/ico_browse_brief.gif" alt=""><span class="buttonText">Mensaje de la biblioteca</span></span>
-ICON_BUT_PAT_PIN_spi=<span class="button"><img src="/screens/ico_pin.gif" alt=""><span class="buttonText">Modificar PIN</span></span>
+#ICON_BUT_PAT_FINES_spi=<span class="button"><img src="/screens/ico_payment.png" alt=""><span class="buttonText">Multas</span></span>
+ICON_BUT_PAT_INFO_spi=<span class="button"><img src="/screens/ico_patron.png" alt=""><span class="buttonText">Modificar informaci&#243;n personal</span></span>
+ICON_BUT_PAT_MSGS_spi=<span class="button"><img src="/screens/ico_browse_brief.png" alt=""><span class="buttonText">Mensaje de la biblioteca</span></span>
+ICON_BUT_PAT_PIN_spi=<span class="button"><img src="/screens/ico_pin.png" alt=""><span class="buttonText">Modificar PIN</span></span>
 ICON_BUT_PAT_RENEWALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Renovar todo</span></span></div></div>
 ICON_BUT_PAT_RENEWMARK_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Renovar marcado</span></span></div></div>
 ICON_BUT_PAT_SORTBYCHKOUT_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Ordenar por pr&#233;stamo</span></span></div></div>
 ICON_BUT_PAT_SORTBYDUE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Ordenar por fecha de devoluci&#243;n</span></span></div></div>
 ICON_BUT_PAT_SUBMIT_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Enviar</span></span></div></div>
-ICON_BUT_PSTARTOVER_spi=<span class="button"><img src="/screens/ico_startover.gif" alt=""><span class="buttonText">Inicio</span></span>
+ICON_BUT_PSTARTOVER_spi=<span class="button"><img src="/screens/ico_startover.png" alt=""><span class="buttonText">Inicio</span></span>
 ICON_BUT_UPDATE_HOLDS_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Actualizar lista</span></span></div></div>
-ICON_CLOSEWINDOW_spi=<span class="button"><img src="/screens/ico_x.gif" alt=""><span class="buttonText">Cerrar ventana</span></span>
+ICON_CLOSEWINDOW_spi=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Cerrar ventana</span></span>
 ICON_PAT_CANCELALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar Todo</span></span></div></div>
 ICON_PAT_CANCELMARK_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar Selecci&#243;n</span></span></div></div>
-ICON_PIN_RESET_spi=<span class="button"><img src="/screens/ico_questionmark.gif" alt=""><span class="buttonText">&#191;A olvidado su PIN?</span></span>
+ICON_PIN_RESET_spi=<span class="button"><img src="/screens/ico_questionmark.png" alt=""><span class="buttonText">&#191;A olvidado su PIN?</span></span>
 ICON_SORTPUDATE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Ordenar por recogida</span></span></div></div>
 ICON_SORTREQDATE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Ordenar por solicitud</span></span></div></div>
 NEWPIN_MSG_spi=Indique un N&#250;mero de Identificaci&#243;n Personal (PIN)
@@ -1259,10 +1260,10 @@ CIRC_HIST_LIMIT_TEXT_spi=Limitar a t&#237;tulos que no est&#225;n en mi historia
 ALTERNATE_ID_EMAIL_spi=username@replacesitename.com|Ha cambiado su nombre de usuario
 ICON_PAT_DELETE_ALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Borrar todo</span></span></div></div>
 ICON_PAT_DELETE_MARKED_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Borrar marcado</span></span></div></div>
-ICON_READING_HISTORY_spi=<span class="button"><img src="/screens/ico_clock.gif" alt=""><span class="buttonText">Mi historial de lectura</span></span>
+ICON_READING_HISTORY_spi=<span class="button"><img src="/screens/ico_clock.png" alt=""><span class="buttonText">Mi historial de lectura</span></span>
 ICON_READING_HISTORY_OPTIN_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Activar</span></span></div></div>
 ICON_READING_HISTORY_OPTOUT_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Desactivar</span></span></div></div>
-ICON_READING_HISTORY_EXPORT_spi=<span class="button"><img src="/screens/ico_disc.gif" alt=""><span class="buttonText">Exportar Mi historial de lectura</span></span>
+ICON_READING_HISTORY_EXPORT_spi=<span class="button"><img src="/screens/ico_disc.png" alt=""><span class="buttonText">Exportar Mi historial de lectura</span></span>
 LOGGEDIN_MSG_spi=<span class="loggedInMessage">Se ha conectado <span class="loggedInMoreInfo">a %s</span> como %s</span>
 PREFTEXT_spi=Guardar como b&#250;squeda preferida
 ICON_PATRATE_spi=<span class="button"><img src="/screens/patrate.gif" alt=""><span class="buttonText">Mis valoraciones</span></span>
@@ -1271,34 +1272,34 @@ ICON_RATE_MY_spi=<img src="/screens/rate_my.gif" border="0" width="15" height="1
 ICON_RATE_NEED_spi=<img src="/screens/rate_need.gif" border="0" width="15" height="14" alt="Valorar este material" title="Valorar este material">
 ICON_RATE_NO_spi=<img src="/screens/rate_no.gif" border="0" width="75" height="14" alt="Este material no ha sido valorado a&#250;n" title="Este material no ha sido valorado a&#250;n">
 ICON_RATE_PAD_spi=<img src="/screens/rate_pad.gif" border="0" width="15" height="14" alt="Valorado %d comienza desde 5 basado en %n valoraciones" title="Valorado %d comienza desde 5 basado en %n valoraciones">
-ICON_PATREVIEW_spi=<span class="button"><img src="/screens/ico_review.gif" alt=""><span class="buttonText">Mis Rese&#241;as</span></span>
-ICON_PATREVIEW_ADD_spi=<span class="button"><img src="/screens/ico_review_sm.gif" alt=""><span class="buttonText">A&#241;adir una rese&#241;a</span></span>
+ICON_PATREVIEW_spi=<span class="button"><img src="/screens/ico_review.png" alt=""><span class="buttonText">Mis Rese&#241;as</span></span>
+ICON_PATREVIEW_ADD_spi=<span class="button"><img src="/screens/ico_review_sm.png" alt=""><span class="buttonText">A&#241;adir una rese&#241;a</span></span>
 PATREVIEW_ABUSE_NOTIFY_spi=Reportado rese&#241;a de abuso|Biblioteca ejemplo|web@example.org
 CC_APPROVED_spi=Su pago ha sido aprobado.
 CC_DECLINED_spi=Lo siento. Su pago ha sido denegado. Confirme que la informaci&#243;n se ha introducido correctamente o pague en la biblioteca.
 #CC_EMAIL_RECEIPT_spi=Recibo de pago a su biblioteca|circadm@example.org|onlinepayments@example.org
 #DONATE_NOTIFY_spi=Se ha recibido un donativo nuevo|circadm@example.org|donormgmt@example.org
-ICON_PAY_spi=<span class="button"><img src="/screens/ico_payment.gif" alt=""><span class="buttonText">Pago en l&#237;nea</span></span>
+ICON_PAY_spi=<span class="button"><img src="/screens/ico_payment.png" alt=""><span class="buttonText">Pago en l&#237;nea</span></span>
 ICON_PAY_CLEAR_ALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Borrar todo</span></span></div></div>
 ICON_PAY_SELECT_ALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Seleccionar todo</span></span></div></div>
-ICON_PRINT_spi=<span class="button"><img src="/screens/ico_printer_alt.gif" alt=""><span class="buttonText">Imprimir</span></span>
+ICON_PRINT_spi=<span class="button"><img src="/screens/ico_printer_alt.png" alt=""><span class="buttonText">Imprimir</span></span>
 ICON_PAY_CONTINUE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Continuar</span></span></div></div>
 #MINDONATE_spi=1000|Los donativos deben ser de al menos 10.00 &#8364; para cubrir los costes de procesamiento. Gracias.
 #PAYAMTS_spi=500|Visite la biblioteca para pagar esta cantidad, por favor|00
 BOOKINGS_DAY_LEGEND_spi=<span class="bookingsLegend">La biblioteca cierra en <span id="closed">X</span> horas. No hay ejemplares disponibles en <span id="unavailable">horas</span> en gris.</span>
 BOOKINGS_MONTH_LEGEND_spi=<span class="bookingsLegend">La biblioteca cierra el <span id="closed">X</span> d&#237;as. No hay ejemplares disponibles en <span id="unavailable">d&#237;as</span> en gris.</span>
-ICON_BOOKINGS_HEADER_spi=<span class="button"><img src="/screens/ico_checkbox.gif" alt=""><span class="buttonText">Guardar este material</span></span>
+ICON_BOOKINGS_HEADER_spi=<span class="button"><img src="/screens/ico_checkbox.png" alt=""><span class="buttonText">Guardar este material</span></span>
 ICON_DAILYCAL_spi=Ver calendario diario
 ICON_HOURLYCAL_spi=Ver calendario por horas
 ICON_NEXTCAL_spi=Siguiente
 ICON_PREVCAL_spi=Previo
 ICON_BUT_ILL_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
-ICON_BUT_ILL_FORM_spi=<span class="button"><img src="/screens/ico_gear.gif" alt=""><span class="buttonText">Formulario de Pr&#233;stamo Inter-Bibliotecario</span></span>
+ICON_BUT_ILL_FORM_spi=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Formulario de Pr&#233;stamo Inter-Bibliotecario</span></span>
 ICON_BUT_ILL_HOME_spi=<span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Solicitud nueva</span></span>
-ICON_BUT_PAT_ILL_FORM_spi=<span class="button"><img src="/screens/ico_gear.gif" alt=""><span class="buttonText">Formulario de Pr&#233;stamo Inter-Bibliotecario</span></span>
-ICON_BUT_PAT_ILL_spi=<span class="button"><img src="/screens/ico_gear.gif" alt=""><span class="buttonText">Pr&#233;stamo Inter-bibliotecario</span></span>
+ICON_BUT_PAT_ILL_FORM_spi=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Formulario de Pr&#233;stamo Inter-Bibliotecario</span></span>
+ICON_BUT_PAT_ILL_spi=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Pr&#233;stamo Inter-bibliotecario</span></span>
 ILL_CONF_EMAIL_SUBJECT_spi=Notificaci&#243;n para la biblioteca de solicitud de pr&#233;stamo inter-bibiotecario
-ICON_BUT_RET2CRS_spi=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">Volver al curso</span></span>
+ICON_BUT_RET2CRS_spi=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Volver al curso</span></span>
 #RSRV_HEADER_spi=Materiales para este curso
 #RSRV_HEADER_spi=T&#237;tulos destacados este mes
 ICON_BUT_PREVSCRN_spi=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">Volver</span></span>
@@ -1307,9 +1308,9 @@ ICON_BUT_RET2FEAT_spi=<span class="button"><img src="/screens/ico_back.gif" alt=
 BIBIMAGE_TEXT_spi=Cubierta del libro
 #WEBADDRESS_spi=|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=N||<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|-1
 #WEBADDRESS_spi=http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&amp;field-keywords=%s|I|http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&field-isbn=%s|<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|-1
-ICON_BUT_CLOSEFRAME_spi=<span class="button"><img src="/screens/ico_x.gif" alt=""><span class="buttonText">Cerrar marco</span></span>
-ICON_BUT_RESOURCELINK_spi=<div id="resourcelink"><span class="button"><img src="/screens/ico_globe.gif" alt=""><span class="buttonText">Otros recursos</span></span></div>
-ICON_BUT_RET2RESOURCE_spi=<div id="resourcelink"><span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">Volver</span></span></div>
+ICON_BUT_CLOSEFRAME_spi=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Cerrar marco</span></span>
+ICON_BUT_RESOURCELINK_spi=<div id="resourcelink"><span class="button"><img src="/screens/ico_globe.png" alt=""><span class="buttonText">Otros recursos</span></span></div>
+ICON_BUT_RET2RESOURCE_spi=<div id="resourcelink"><span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Volver</span></span></div>
 #WBHEADERTEXT_spi=Los siguientes recursos le pueden proporcionar informaci&#243;n adicional sobre<br>#ENCABEZAMIENTO#
 ICON_PATFEED_spi=<span class="button"><img src="/screens/ico_rss.gif" alt=""><span class="buttonText">Mis Registros Feeds</span></span>
 PATFEED_CONFIG_spi=Novedades de Su Registro de la Biblioteca|Para ver m&#225;s informaci&#243;n, siga los enlaces de la biblioteca.
@@ -1328,21 +1329,21 @@ ICON_BUT_EMAIL_spi=Email
 ICON_BUT_NEXTREC_spi=<span class="button"><span class="buttonText" id="buttonNextRecord">Registro siguiente</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BUT_PREVREC_spi=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Registro anterior</span></span>
 ICON_BUT_Z39_ANOTHER_spi=Otra base de datos
-ICON_BUT_Z39_REQUEST_spi=<span class="button"><img src="/screens/ico_checkbox.gif" alt=""><span class="buttonText">Solicitud</span></span>
-ICON_BUT_Z39SEARCH_spi=<span class="button"><img src="/screens/ico_magnifyingglass.gif" alt=""><span class="buttonText">Buscar en otras bibliotecas</span></span>
+ICON_BUT_Z39_REQUEST_spi=<span class="button"><img src="/screens/ico_checkbox.png" alt=""><span class="buttonText">Solicitud</span></span>
+ICON_BUT_Z39SEARCH_spi=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Buscar en otras bibliotecas</span></span>
 Z39BROADCAST_spi=B&#250;squeda Z39.50:Selecciones los servidores en los que quiere realizar la consulta
 ICON_BUT_RETHOME_spi=<span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Inicio</span></span>
 #SELFREG_ERROR_EMAIL_spi=circadm|example@example.org|Error de Auto-inscripci&#243;n|example@example.org
 #SELFREG_INFO_EMAIL_spi=circadm|example@example.org|Nueva inscripci&#243;n de usuario|example@example.org
 ICON_MFFAVS_HOME_spi=<span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Inicio</span></span>
-ICON_MFFAVS_SEARCH_spi=<span class="button"><img src="/screens/ico_magnifyingglass.gif" alt=""><span class="buttonText">Buscar</span></span>
-ICON_PAT_MFFAVS_spi=<span class="button"><img src="/screens/ico_globe.gif" alt=""><span class="buttonText">Mi Research Pro</span></span>
+ICON_MFFAVS_SEARCH_spi=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Buscar</span></span>
+ICON_PAT_MFFAVS_spi=<span class="button"><img src="/screens/ico_globe.png" alt=""><span class="buttonText">Mi Research Pro</span></span>
 MFFAVS_CONFIRM_spi=Su grupo, %s, se ha guardado correctamente.
 MFFAVS_DENY_spi=Funci&#243;n no disponible. Contacte con la biblioteca, por favor.
 #MFFAVS_HOME_spi=http://researchpro-[C&#211;DIGOSITIO]:[PUERTO]/iii/mfrpro-[C&#211;DIGOSITIO]/loadSearchPage.do?searchtype=simple&amp;searchpage=simple&amp;accountid=[CUENTA]&amp;accountpassword=[CUENTA]&amp;language=eng
 #MFFAVS_URL_spi=true|[CUENTA]|[CUENTA]|/mfgo/http://researchpro-[C&#211;DIGOSITIO]:[PUERTO]/iii/mfrpro-[C&#211;DIGOSITIO]/search.do
 ICON_SPELLCHECK_MORE_spi=<span class="spellcheckToolMore">m&#225;s&nbsp;&raquo;</span>
-ICON_SPELLCHECK_SEARCH_spi=<img src="/screens/ico_go.gif" class="button" border="0" alt="Buscar">
+ICON_SPELLCHECK_SEARCH_spi=<img src="/screens/ico_go.png" class="button" border="0" alt="Buscar">
 SPELLCHECK_spi=<span class="spellcheckTool">&#191;Quiso decir %a? %s </span>
 MF_ICON_ADVANCED_SEARCH_spi=B&#250;squeda avanzada
 MF_ICON_CLEAR_spi=Borrar formulario
@@ -1369,10 +1370,10 @@ MF_RESULTSVIEW_spi=tabbed,Ver resultados, presentado por recurso|standard,Ver to
 MF_SEARCHINDEX_spi=Keywords,Palabras clave|:CREATOR,Autor|:TITLE,T&#237;tulo|:SUBJECT,Materia
 MF_TOPLOGO_spi=@screens/toplogo_spi.html
 PROGRAM_SECTION_FIELDS_spi=Fecha/hora:VsT|En:Vss|Localizaci&#243;n:Fs285|Instructor:Vsn|Estado:VsS
-ICON_BUT_PAT_PROGRAMS_spi=<span class="button"><img src="/screens/ico_calendar.gif" alt=""><span class="buttonText">Eventos de la Biblioteca</span></span>
+ICON_BUT_PAT_PROGRAMS_spi=<span class="button"><img src="/screens/ico_calendar.png" alt=""><span class="buttonText">Eventos de la Biblioteca</span></span>
 ICON_BUT_PAT_SORTBYDATE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Ordenar por fecha</span></span></div></div>
 ICON_BUT_PAT_SORTBYNAME_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Ordenar por nombre</span></span></div></div>
-ICON_RET2PROG_spi=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">Volver a eventos</span></span>
+ICON_RET2PROG_spi=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Volver a eventos</span></span>
 ICON_REGISTER_spi=<br><strong>Click para Inscribirse</strong>
 ICON_ADD_TO_WAITLIST_spi=<br><strong>A&#241;adir a lista de espera</strong>
 ICON_VIEW_ADDITIONAL_SESSIONS_spi=<span class="button"><span class="buttonText">Ver sesiones adicionales</span></span>
