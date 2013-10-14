@@ -38,7 +38,7 @@ $(document).ready(function () {
 if (document.body){document.body.className = "bodybg";}
 </script>
 
-<link rel="stylesheet" type="text/css" href="/screens/styles_s1.css" / >
+<link rel="stylesheet" type="text/css" href="/screens/styles_s0.css" / >
 
 <div class="minHeight">
 <div class="fullPage">
@@ -47,134 +47,57 @@ if (document.body){document.body.className = "bodybg";}
 <div class="topLogo">
 
 <div class="topLogoImage">
-<a href="http://mulibraries.missouri.edu/" tabindex="10"><img src="/screens/mu.png" alt="MU"></a>
+<a href="/search*chx/X" tabindex="10"><img src="/screens/merlin.png" alt="MERLIN Catalog"></a>
 </div>
 
-<div class="clusterLogo">
-<a href="/search~S0/X" tabindex="10"><img src="/screens/merlin.png" alt="MERLIN Catalog"></a>
-</div>	
-
-<div class="topLinks">
-<ul id="topLinksList">
-<li><a href="/patroninfo*chx" tabindex="120">&#30331;&#20837;</a></li>
-<li><a href="/help*chx" tabindex="115">&#24110;&#21161;</a></li>
-<li><a href="#" onclick="iiiSwitchLang('eng')">English</a></li>
-<li><a href="#" onclick="iiiSwitchLang('spi')">Espa&#241;ol</a></li>
-<li><a href="#" onClick="window.print();" tabindex="110"><span class="buttonTopLinks"><img src="/screens/ico_printer.gif" alt=""><span class="buttonTopLinksText">&#25171;&#21360;</span></span></a></li>
-<li><a href="/search*chx/" tabindex="105">&#26032;&#25628;&#32034;</a></li>
-</ul>
+<div class="mobiusLogo">
+<a href="http://laurel.lso.missouri.edu:2083/"><img src="/screens/mobius.png" alt="MOBIUS Catalog"></a>
 </div>
 
-<div class="topLogoSmall">
-<a href="/*chx" tabindex="10"><img src="/screens/logo_sm.jpg" height="40" width="280" alt="&#30446;&#24405;&#20027;&#39029;"></a>
+<div id="tabsToplogo">
+    <ul id="tabRow">    	
+      <li class="tab"><a href="/search*chx/X#tab-1">Quick Search</a></li>
+      <li class="tab"><a href="/search*chx/Y">&#39640;&#32423;&#20851;&#38190;&#35789;</option>
+      <li class="tab"><a href="/search*chx/X#tab-3">Subjects</a></li>
+      <li class="tab"><a href="/search*chx/X#tab-4">Numbers/Other</a></li>
+    </ul>
+</div>
+
+<div id="alertMessage"></div>
+
+<div class="linkBanner">
 </div>
 
 </div><!--topLogo-->
 
+<div class="clear"></div>
+<div class="rightColumn">
+<div id="searchOptions">
 
-<div class="topMyLibrary">
-<div id="topMyLibraryHeader"><h1>&#25105;&#30340;&#22270;&#20070;&#39302;</h1></div>
-
-<ul id="toplogoMoreNav">
-<!-- Toplogo alt links. -->
-<!--<li><a href="/acquire*chx">&#25512;&#33616;&#37319;&#36141;</a></li>
-<li><a href="/suggest*chx">&#30041;&#35780;&#35770;</a></li>
--->
-
-<!-- Dropdown menus -->
-	<li id="first">
-		<div><a href="/patroninfo*chx">&#25105;&#30340;&#22270;&#20070;&#39302;</a></div>
+<ul>
+	<li><a href="/search*chx/X">&#26032;&#25628;&#32034;</option>
+	<li><a href="/patroninfo*chx">&#25105;&#30340;&#22270;&#20070;&#39302;</a></li>
+	<li><a href="/search*spi/b">&#26465;&#30721;&#25628;&#32034;</a></li>
+	<li><a>MERLIN (UM) Libraries</a>
 		<ul>
-            <li><a href="/patroninfo*chx">&#25105;&#30340;&#36134;&#25143;</a></li>
-            <!--<li><a href="/selfreg*chx">&#24320;&#19968;&#20010;&#24080;&#25143;</a></li> -->
-            <li><a href="/libinfo*chx">&#20851;&#20110;&#22270;&#20070;&#39302;</a></li>
-            <li><a href="/acquire*chx">&#25512;&#33616;&#37319;&#36141;</a></li>
-            <li><a href="/suggest*chx">&#35780;&#35770;</a></li>
+			<li><a href="http://library.mst.edu/">Missouri S&T</a></li>
+			<li><a href="http://mulibraries.missouri.edu/">MU</a></li>
+			<li><a href="http://www.law.missouri.edu/library/">MU-Law</a></li>
+			<li><a href="http://library.umkc.edu/">UMKC</a></li>
+			<li><a href="http://www1.law.umkc.edu/library/">UMKC-Law</a></li>		
+			<li><a href="http://www.umsl.edu/library">UMSL</a></li>
+			<li><a href="http://shs.umsystem.edu/index.shtml">State Historical Society</a></li>
 		</ul>
 	</li>
-
-	<li>
-		<div><a href="/help*chx">&#24110;&#21161;&#20027;&#39064;</a></div>
-		<ul>
-			<li><a href="/help*chx#searching">&#25628;&#32034;&#20013;</a></li>
-			<li><a href="/help*chx#searchtips">&#39640;&#32423;&#20851;&#38190;&#23383;&#25628;&#32034;&#23567;&#38182;&#22218; </a></li>
-			<li><a href="/help*chx#prefsearch">&#20648;&#22791;&#24744;&#30340;&#25628;&#32034;&#20013;</a></li>
-			<li><a href="/help*chx#renewals">&#32493;&#20511;</a></li>
-			<li><a href="/help*chx#feepay">&#36153;&#29992;&#20184;&#27454;</a></li>
-			<li><a href="/help*chx#rpro">Research Pro</a></li>
-			<li><a href="/help*chx#programs">&#22270;&#20070;&#39302;&#27963;&#21160;&#19982;&#31038;&#21306;&#33410;&#30446;</a></li>
-		</ul>
-	</li>
-<!--
-	<li id="last">
-		<div><a href="#">&#29305;&#28857;</a></div>
-		<ul>
-            <li><a href="<encore IP/iii/encore>">&#25628;&#32034; Encore</a></li>
-            <li><a href="/iii/calendar/month">&#33410;&#30446;&#26085;&#21382;</a></li>
-            <li><a href="/ftlist*chx">&#26032;&#20070;&#36890;&#21578;</a></li>
-            <li><a href="/rpro*chx">Research Pro</a></li>
-            <li><a href="/search*chx/y">&#26597;&#35810;&#30005;&#23376;&#36164;&#28304;</a></li>
-            <li><a href="/illb*chx">Interlibrary Loan</a></li>
-		</ul>
-	</li> -->
-<!-- End dropdown menus -->    
-    
+	<li><a href="http://laurel.lso.missouri.edu:2083">New MOBIUS Search</a></li>
+	<li><a href="/help*chx">&#24110;&#21161;&#20027;&#39064;</a></li>
+	<li><a href="#" onclick="iiiSwitchLang('eng')">English</a></li>
+	<li><a href="#" onclick="iiiSwitchLang('chx')">&#31616;&#20307;&#20013;&#25991;</a></li>
 </ul>
 
-<script type="text/javascript"><!--//--><![CDATA[//><!--
-
-//Enable optional dropdown menu for additional navigation options.
-if (document.all&&document.getElementById) {
-	navRoot = document.getElementById("toplogoMoreNav");
-	for (i=0; i<navRoot.childNodes.length; i++) {
-		node = navRoot.childNodes[i];
-		if (node.nodeName=="LI") {
-			node.onmouseover=function() {
-				this.className+=" over";
-			}
-			node.onmouseout=function() {
-				this.className=this.className.replace(" over", "");
-			}
-		}
-	}
-}
-
-//--><!]]></script>
-
-</div><!--myLibrary-->
-<div class="topNavClear"></div>
-
-<div class="searchNav">
-<script language="JavaScript"> 
-<!--
-function GotoURL() { 
-//top.location.href = dl.specializedSearch.options[dl.specializedSearch.selectedIndex].value;
-window.location.assign(document.getElementById("specializedSearch").value);
-return false;
-} 
-// -->
-</script>
-<div id="searchNavMenu">
-<select name="specializedSearch" id="specializedSearch">
-<option selected="selected" value=" ">&#12304;&#26356;&#22810;&#25628;&#32034;&#12305;</option>
-<option value="/search*chx/X">&#39640;&#32423;&#20851;&#38190;&#35789;</option>
-<option value="/search*chx/t">&#26631;&#39064;</option>
-<option value="/search*chx/s">&#26434;&#24535;&#21002;&#21517;</option>
-<option value="/search*chx/a">&#20316;&#32773;</option>
-<option value="/search*chx/d">&#20027;&#39064;</option>
-<option value="/search*chx/y">&#36164;&#28304;&#21517;&#31216;</option>
-<option value="/search*chx/c">&#32034;&#20070;&#21495;</option>
-<option value="/search*chx/i">&#22269;&#38469;&#26631;&#20934;&#20070;&#21495; ISBN</option>
-<option value="/search*chx/g">&#25919;&#24220;&#25991;&#20214;#</option>
-<option value="/search*chx/q">&#20316;&#32773;&#19982;&#26631;&#39064;</option>
-<!--<option value="/search/p">&#35762;&#24072;</option>
-<option value="/search*chx/r">&#22797;&#26412;</option> -->
-</select>
-<input type="image" src="/screens/ico_go.gif" class="searchNavBut" value="Go" onclick="GotoURL();" >
-</div>
-
-</div><!--searchNav-->
-<div class="clear"></div>
-<div class="pageContent"><!-- content container -->
+</div><!--searchOptions-->
+</div><!--rightColumn-->
+<div class="pageContentColumn"><!-- content container -->
 <a name="content" id="content"></a>
-<!--end toplogo.html-->
+<!--end toplogo.html-->	
+
