@@ -96,7 +96,7 @@ ICON_BUT_REQUEST_RESET_spi=<div onmousedown="this.className='pressedState';" onm
 ICON_BUT_REQUEST_SELECTED_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Solicitar selecci&#243;n</span></span></div></div>
 ICON_REQUEST_spi=<span class="navButtonSmall navButton">Solicitud</span>
 #REQFILLTIME_spi=14|<br>Solicitud disponible en aproximadamente %d d&#237;as|<br>Disponibilidad estimada actualmente: aproximadamente %d d&#237;as|<br>Este material puede estar disponible inmediatamente
-REQUEST_spi=Reservar este ejemplar|bib|ask|Y
+REQUEST_spi=Reservar este ejemplar|denyiflocalavail|ask|Y
 #REQUEST_INSTRUCTION_spi=Indique las instruciones especiales, por favor:
 REQUEST_MULTI_spi=Solicitar todos los ejemplares en el carro|bib|ask
 ICON_BUT_PAT_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
