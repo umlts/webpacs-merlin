@@ -285,6 +285,9 @@ table.bibItems { clear:both; }
 
 .bibItems .bibItemsEntry td, .bibItems .bibItemsHeader th { padding:5px 8px; text-align:left; }
 
+.bibItemsHeader th:first-child + th + th + th {color: red;}
+.bibItemsEntry td:first-child + td + td + td {color: red;}
+
 .bibRecordLink { font-style:normal; padding-left:0px ; padding-top:8px; font-size:.9em; }
 
 .bibRecordLink div { float:left; }
