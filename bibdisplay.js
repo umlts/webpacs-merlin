@@ -19,7 +19,7 @@ function init() {
 	highlightRows();
 	stripeSubjectTables();
 	stripeBrowseTables();
-	
+
 };
 
 /* for Mozilla/Opera9 */
