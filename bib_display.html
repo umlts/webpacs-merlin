@@ -60,8 +60,9 @@ $(document).ready(function(){
     
     //The scrollbar should always be at the top when the page loads
     $(document).scrollTop(0);
-    
-  $('.bibItemsEntry').append("tr:nth-child(4n)");
+  
+  $('.bibItemsHeader:first').append("<td align='center' colspan='4'>" + "Public Note" + "</td>");
+
 });
 </script>
 
