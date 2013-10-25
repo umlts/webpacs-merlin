@@ -46,12 +46,10 @@ $(document).ready(function(){
                 $('.innerQuickSearch').hide();
                 $('.X .innerQuickSearch').show();
                 
-
                 //To make sure the first radio is selected, showing the correct search examples
                 var firstRadio = $(currentTab + ' .limits label:first input')
                 $(firstRadio).click();
                 $(".searchTips").load("/screens/" + firstRadio.val() + "spi.inc");
-                
                 
                 //This makes it so the scrollbar doesn't jump to the anchor tag.  It also, unfortunately, makes it so the back button doesn't work.
                 
@@ -93,7 +91,7 @@ $(document).ready(function(){
     <ul id="tabRow">
       <li class="tab"><a href="/search*spi/X#tab-1">B&#250;squeda R&#225;pida</a></li>
       <li class="tab"><a href="/search*spi/Y">B&#250;squeda avanzada</option>
-      <li class="tab"><a href="/search*spi/X#tab-3">Subjects</a></li>
+      <li class="tab"><a href="/search*spi/X#tab-3">Materia</a></li>
       <li class="tab"><a href="/search*spi/X#tab-4">Numbers/Other</a></li>
     </ul>
     
@@ -112,12 +110,12 @@ $(document).ready(function(){
 
                     <div class="limits">
                     <div class="limitColumn">
-                    <label> <input name="searchtype" class="searchtype" value="X" checked="checked" type="radio"> B&#250;squeda por palabra clave </label> 
-                    <label> <input name="search*spi" class="searchtype" value="t" type="radio"> B&#250;squeda por t&#237;tulo </label>
+                    <label> <input name="searchtype" class="searchtype" value="/search*spi/X" checked="checked" type="radio"> Palabra Clave </label> 
+                    <label> <input name="searchtype" class="searchtype" value="/search*spi/t" type="radio"> T&#237;tulo </label>
                     </div>
                     <div class="limitColumn">
-                    <label> <input name="searchtype" class="searchtype" value="s" type="radio"> Journal, Magazine, Newspaper title begins with </label>
-                    <label> <input name="searchtype" class="searchtype" value="a" type="radio"> Autor </label>
+                    <label> <input name="searchtype" class="searchtype" value="/search*spi/s" type="radio"> Journal, Magazine, Newspaper title begins with </label>
+                    <label> <input name="searchtype" class="searchtype" value="/search*spi/a" type="radio"> Autor </label>
                     </div>
                     </div>
         
@@ -238,8 +236,8 @@ $(document).ready(function(){
                     
                     <div class="limits">
                     <div class="limitColumn">
-                    <label> <input name="searchtype" class="searchtype" value="X" checked="checked" type="radio"> B&#250;squeda por palabra clave </label> 
-                    <label> <input name="searchtype" class="searchtype" value="t" type="radio"> B&#250;squeda por t&#237;tulo </label>
+                    <label> <input name="searchtype" class="searchtype" value="X" checked="checked" type="radio"> Palabra Clave </label> 
+                    <label> <input name="searchtype" class="searchtype" value="t" type="radio"> T&#237;tulo </label>
                     </div>
                     <div class="limitColumn">
                     <label> <input name="searchtype" class="searchtype" value="s" type="radio"> Journal, Magazine, Newspaper title begins with </label>
@@ -293,13 +291,13 @@ $(document).ready(function(){
     </div>
     <div id="tab-3" class="tabContent">
         
-        <h1 class="pageHeader">Subjects</h1>
+        <h1 class="pageHeader">Materia</h1>
         
         <form action="/search*spi/" method="get" id="search" class="indexSearch" name="search">
         
         <div class="limits">
         <div class="limitColumn">
-        <label> <input name="searchtype" class="searchtype" value="d" checked="checked" type="radio"> Subject (Library of Congress) </label> 
+        <label> <input name="searchtype" class="searchtype" value="d" checked="checked" type="radio"> Materia </label> 
         <label> <input name="searchtype" class="searchtype" value="m" type="radio"> Medical Subject (MeSH) </label>
         </div>
         <div class="limitColumn">
@@ -341,10 +339,10 @@ $(document).ready(function(){
         
         <div class="limits">
         <div class="limitColumn">
-        <label> <input name="searchtype" class="searchtype" value="i" checked="checked" type="radio"> ISBN/ISSN/Standard Number </label> 
-        <label> <input name="searchtype" class="searchtype" value="g" type="radio"> Government Publication </label>
+        <label> <input name="searchtype" class="searchtype" value="i" checked="checked" type="radio"> ISBN/ISSN </label> 
+        <label> <input name="searchtype" class="searchtype" value="g" type="radio"> Documento Gubernamental </label>
         <label> <input name="searchtype" class="searchtype" value="e" type="radio"> Music Number </label>
-        <label> <input name="searchtype" class="searchtype" value="o" type="radio"> OCLC/WorldCat </label>
+        <label> <input name="searchtype" class="searchtype" value="o" type="radio"> N&#250;mero de utilidad </label>
         </div>
         <div class="limitColumn">
         <label> <input name="searchtype" class="searchtype" value="c" type="radio"> Call Number (Library of Congress) </label>
