@@ -82,8 +82,8 @@ $(document).ready(function(){
 <option value="" selected="selected">Palabra clave:</option>
 <option value="a:">Autor</option>
 <option value="t:">T&#237;tulo</option>
-<option value="d:">B&#250;squeda por materia</option>
-<option value="c:">B&#250;squeda por signatura:</option>
+<option value="d:">Materia</option>
+<option value="c:">Signatura:</option>
 <option value="N:">Notes and Genre:</option>
 </select>
 <input maxlength="100" size="35" name="searchText1" />
@@ -100,8 +100,8 @@ $(document).ready(function(){
 <option value="" selected="selected">Palabra clave:</option>
 <option value="a:">Autor</option>
 <option value="t:">T&#237;tulo</option>
-<option value="d:">B&#250;squeda por materia</option>
-<option value="c:">B&#250;squeda por signatura:</option>
+<option value="d:">Materia</option>
+<option value="c:">Signatura:</option>
 <option value="N:">Notes and Genre:</option>
 </select>
 <input maxlength="100" size="35" name="searchText2" />
@@ -118,8 +118,8 @@ $(document).ready(function(){
 <option value="" selected="selected">Palabra clave:</option>
 <option value="a:">Autor</option>
 <option value="t:">T&#237;tulo</option>
-<option value="d:">B&#250;squeda por materia</option>
-<option value="c:">B&#250;squeda por signatura:</option>
+<option value="d:">Materia</option>
+<option value="c:">Signatura:</option>
 <option value="N:">Notes and Genre:</option>
 </select>
 <input maxlength="100" size="35" name="searchText3" />
@@ -246,12 +246,8 @@ $(document).ready(function(){
 <input type="hidden" name="endLimit" >
     
 <div class="searchTips">
-<p><strong>Consejos sobre la b&#250;squeda</strong></p>
-<p>Indique la palabra clave que quiere encontrar. Por ejemplo:</p>
-<ul>
-<li>dise&#241;o</li>
-<li>rojas celestina</li>
-</ul>
+<p><strong>Search tips for Keyword Search</strong></p>
+<p>IAdvanced searches are keyword searches which can be limited to specific fields: Titles, Authors, Subjects, Tables of Contents, and other fields. </p>
 <p><em>Truncation:</em> educat* finds educate, educated, education, etc.</p>
 <p><em>Phrase search:</em> "physical therapy"</p>
 <p><a id="moreLink">More Search Tips</a></p>
@@ -271,30 +267,11 @@ $(document).ready(function(){
           <td>Se pueden truncar las palabras usande el asterisco ('*'), que reemplaza a otros caracteres. Use '**' para truncar hasta cinco caracteres. El comod&#237;n '*' se puede incluir en la cadena de b&#250;squeda. Puede usar '?' para reemplazar un caracter en cualquier lugar de la palabra.<br>
           <span style="text-decoration:underline">Ejemplos</span> : pol&#237;t* ambient*, Anders?n</td>
           </tr>
-
+        
           <tr>
-            <td>Truncation/ Wildcard</td>
-            <td>Searches for variant forms of the word by replacing any number of characters. At least 2 characters must precede the truncation symbol.</td>
-            <td>Use <strong>*</strong> to substitute for 1-5 characters. Example: educ* 
-              Use <strong>**</strong> to substitute for any number of    characters. Example: huck** finn <br />
-                <br />
-                Use <strong>?</strong> or <strong>*</strong> to substitute for a single character. Example: wom?n</td>
-          </tr>
-
-        <tr>
-          <th>Adyacencia</th>
-        <td>Las palabras m&#250;ltiples se buscan juntas como una frase.<br>
-        <span style="text-decoration:underline">Ejemplo</span> : organizaci&#243;n muldial de la salud</td>
-        </tr>
-
-          <tr>
-            <td>Adjacency/ Phrase searching</td>
-            <td>
-              To search for an exact phrase, enclose your search in quotes. Multiple    words, without quotes, are retrieved in any order and in any part of    the record. </strong></td>
-            <td>Example: <br />
-                "physical therapy"
-              Example: <br />
-                "reading comprehension strategies""</td>
+            <th>Adyacencia</th>
+          <td>Las palabras m&#250;ltiples se buscan juntas como una frase.<br>
+          <span style="text-decoration:underline">Ejemplo</span> : organizaci&#243;n muldial de la salud</td>
           </tr>
 
           <tr>
@@ -343,34 +320,15 @@ $(document).ready(function(){
           </tr>
 
           <tr>
-            <td>Operators/ Boolean operators</td>
-            <td>The Boolean    operators are used to limit or expand search results. You may also exclude    terms from search results. </td>
-            <td> Use:<br />
-                AND <br />
-                to limit search    results to those that contain all search terms. </p>
-              <p>Example: <br />
-                child* and television</p>
-              <p>Use:<br />
-                OR <br />
-                to expand search results to those that contain one or more search terms.<br />
-                Example: <br />
-                lawyer or attorney                </p>
-              <p>Use: <br />
-                AND NOT <br />
-                to exclude the    term that follows. <br />
-                Example:<br />
-                dolphin* and not football </p></td>
-          </tr>
-          <tr>
-            <td>Field limits</td>
-            <td><strong>Specify fields (parts of the record) to search using the drop down menu </strong>(as indicated in brackets in the examples)<strong>.</strong>
-              Note that you can    use field limits in combination with selections from the operator drop down    menu (as indicated in brackets in the example).
-              You may also use    labels to search specific fields as part of a combined search. Labels are    a:author t:title s:subject n:note c:table of contents </td>
+            <td>L&#237;mites por campo</td>
+            <td>Es posible limitar los campos seleccionando un campo de limitaci&#243;n de la lista. Estos l&#237;mites aparecen antes de la frase o palabra a buscar. La limitaci&#243;n por campo hace que el sistema solo busque el campo o palabra(s) especificado(s).
+                  a:Autor t:T&#237;tulo s:Materia n:Nota c:table of contents </td>
             <td valign="top"><strong>&nbsp;&quot;</strong><strong>second    language acquisition&quot; </strong><strong>[in Title:]</strong>
               
               zora [in Author:] [AND] <br />
                 watching [in Title:] a:zora and t:watching s:hopi and s:religion</td>
           </tr>
+
           <tr>
             <td>Punctuation</td>
             <td><strong>Ampersand</strong> ( &amp;) is treated as if it    were the word &ldquo;and&rdquo; spelled out. 
@@ -383,6 +341,7 @@ $(document).ready(function(){
               <p> Example:<br />
               St. Louis = St    Louis</p></td>
           </tr>
+
           <tr>
             <td>Initial articles</td>
             <td>The catalog will    ignore the initial article of a search such as; <strong>a, an, the, etc. </strong>beginning the search with the second word. You    may chose or may chose not to enter these initial articles. </td>
