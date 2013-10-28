@@ -1129,7 +1129,7 @@ LOC_kw=http://library.umkc.edu/merlin-locations-mnl#other
 
 #spanish wwwoptions
 #AVAILLIM_spi=<span class="availLimMessage">Limitar la b&#250;squeda a ejemplares disponibles</span>|<span class="availLimMessage">Resultados de la b&#250;squeda limitados a ejemplares disponibles</span>
-BOTLOGO_spi=@screens/botlogo_spi.html
+#BOTLOGO_spi=@screens/botlogo_spi.html
 ICON_BUT_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
 ICON_BUT_CLOSEWINDOW_spi=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Cerrar ventana</span></span>
 ICON_BUT_RET2CAT_spi=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Volver al cat&#225;logo</span></span>
@@ -1383,7 +1383,7 @@ ICON_PROGRAM_CAL_spi=<span class="button"><img src="/screens/ico_calendar.gif" a
 # chx wwwoptions
 
 #AVAILLIM_chx=<span class="availLimMessage">&#21487;&#29992;&#26465;&#27454;&#38480;&#21046;&#25628;&#32034;</span>|<span class="availLimMessage">&#21487;&#29992;&#26465;&#27454;&#38480;&#21046;&#25628;&#32034;&#32467;&#26524;</span>
-BOTLOGO_chx=@screens/botlogo_chx.html
+#BOTLOGO_chx=@screens/botlogo_chx.html
 ICON_BUT_CANCEL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#21462;&#28040;</span></span></div></div>
 ICON_BUT_CLOSEWINDOW_chx=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">&#20851;&#38381;&#35270;&#31383;</span></span>
 ICON_BUT_RET2CAT_chx=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">&#22238;&#33267;&#30446;&#24405;</span></span>
