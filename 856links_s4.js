@@ -2,8 +2,8 @@ function hideLinks(){
     
     var stringsToHide = new Array ();
     stringsToHide[1] = new Array ("mul.missouri", "EW3DM6ND8C");
-    stringsToHide[4] = new Array ("umkc", "PC8GA3QQ6A");
-    stringsToHide[5] = new Array ("mst", "UM9MH3KU7S");
+    stringsToHide[4] = new Array ("umkc", "PC8GA3QQ6A", "UMKC");
+    stringsToHide[5] = new Array ("mst", "UM9MH3KU7S", "MS&T");
     stringsToHide[6] = new Array ("umsl", "UMSL", "FN2VR5VT8L");
     
 
