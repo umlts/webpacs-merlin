@@ -47,7 +47,12 @@ $(document).ready(function(){
 	$('#moreLink').click(function(){
              $('#optionalLimits').toggle();
 	});
-        
+
+
+$('.holdingsDivider:last').append($('center'));
+
+//$('tr.bibItemsHeader').prepend($('center'));//works but spaced wierd
+
     //Remove the colons from advanced search
     $('#advancedSubmit').click(function () { 
       var searchTerm = $('.advancedInput').val();
