@@ -78,6 +78,8 @@ form a { display:table-cell; display:inline-block; }
 /* This rule causes search form elements to resize along with the rest of the text on the page if the user resizes text. */
 input, select, textarea { font-size:.97em; }
 
+input[value="View additional copies or search for a specific volume/copy"] { margin-top: 5px; margin-bottom: 5px; }
+
 /* This rule uses CSS2 to give a nicer effect in compliant browsers, while avoiding an annoying display effect in Internet Explorer 6 */
 input[type="checkbox"] { background-color: #FFF8EF; }
 
