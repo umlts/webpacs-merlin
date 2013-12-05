@@ -1065,7 +1065,7 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 .resourceButton img {margin:.5em;border:none;}
 
-.resourceDisplayContentMain { width:68%; }
+.resourceDisplayContentMain { width:80%; }
 
 .resourceDisplayBibs { margin-bottom:20px; }
 
@@ -1073,7 +1073,7 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 .resourceInfoData p,  .resourceLicenseEntry p { margin-left:0; }
 
-.resourceInfoLabel  { width:10%; padding-right:1.5em; }
+.resourceInfoLabel  { width:1%; padding-right:1.5em; }
 
 .resourceLicenseHeader, .resourceLicenseEntry { padding:.5em 0; vertical-align:top; }
 
