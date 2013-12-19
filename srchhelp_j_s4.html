@@ -21,17 +21,111 @@ function submitSubject() {
 </noscript>
 <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<link rel="stylesheet" type="text/css" href="/screens/styles_s3.css" / >
 </head>
 <body>
-<!--{toplogo}-->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="/screens/jquery.cookie.js"></script>
+<script src="/screens/menu-collapsed.js" type="text/javascript"></script>
+<script type="text/javascript" src='/screens/sms.js'> </script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
+
+	$(".searchtype").click(function(){
+		$(".searchTips").load("/screens/" + this.value + ".inc");
+	});
+	//Changes the search examples
+	
+	//var selectAny = $('#b option[value=""]')
+	//$('#b option:not([value^="z"])').detach(); 
+	//selectAny.prependTo("#b")
+	//Hides the out-of-scope locations
+	
+	//Remove the colon from keyword searches
+	$('input[type="submit"]').click(function () {
+		var searchTerm = $('#searcharg').val();
+		var searchIndex = $('[name="searchtype"]').val();
+		if((/\b[atsn]:/).test(searchTerm)) {}
+		else if (searchIndex != "X") {} else {
+			var newSearchTerm = searchTerm.replace(":", " ");
+			$('#searcharg').val(newSearchTerm);
+		}
+		});
+	});
+</script>
+
+<script type="text/javascript">
+if (document.body){document.body.className = "bodybg";}
+</script>
+
+<link rel="stylesheet" type="text/css" href="/screens/styles_s3.css" / >
+
+<div class="minHeight">
+<div class="fullPage">
+
+<div id="skipNav"><a href="#content" tabindex="1">Skip to content</a></div>
+<div class="topLogo">
+
+<div class="topLogoImage">
+<a href="http://www1.law.umkc.edu/library/" tabindex="10"><img src="/screens/umkclaw.png" alt="UMKC"></a>
+</div>
+
+<div class="clusterLogo">
+<a href="/search~S0/X" tabindex="10"><img src="/screens/merlin.png" alt="MERLIN Catalog"></a>
+</div>
+
+<div id="tabsToplogo">
+    <ul id="tabRow">
+      <li class="tab"><a href="/search/X#tab-5">Articles & Databases</a></li>
+      <li class="tab"><a href="http://pc8ga3qq6a.search.serialssolutions.com/">Online Journals & e-Books</a></li>
+    </ul>
+</div>
+
+<div id="alertMessage"></div>
+
+<div class="linkBanner">
+</div>
+
+</div>
+
+<div class="clear"></div>
+<div class="rightColumn">
+<div id="searchOptions">
+
+<ul>
+	<li><a href="/search/X">New Search</a></li>
+	<li><a href="http://libguides.library.umkc.edu/index.php">Research Guides</a></li>
+	<li><a href="/patroninfo">My Library Account</a></li>
+	<li><a href="/search/b">Course Reserves</a></li>
+	<li><a href="http://library.umkc.edu/newacq/newtitles.html">New Titles</a></li>
+	<li><a>Other Libraries</a>
+		<ul>
+			<li><a href="http://library.mst.edu/">Missouri S&T</a></li>
+			<li><a href="http://mulibraries.missouri.edu/">MU</a></li>
+			<li><a href="http://www.law.missouri.edu/library/">MU-Law</a></li>		
+			<li><a href="http://www.umsl.edu/library">UMSL</a></li>
+			<li><a href="http://shs.umsystem.edu/index.shtml">State Historical Society</a></li>
+		</ul>
+	</li>
+	<li><a href="http://laurel.lso.missouri.edu:2083">New MOBIUS Search</a></li>
+	<li><a href="/help">Help</a></li>
+</ul>
+
+</div><!--searchOptions-->
+</div><!--rightColumn-->
+<div class="pageContentColumn"><!-- content container -->
+<a name="content" id="content"></a>
+
 <div class="pageContentInner">
 
 <h1 class="pageHeader">Articles and Databases</h1>
-
+<h3>Databases by: <a href="#dbname">Name,</a> <a href="#dbsubject">Subject,</a> <a href="#dbtype">Type,</a> | <a href="#dbresearch">Research Help</a></h3>	
 <div id="accessibleForm" class="articles form1Part">
 
+<a name="dbname"></a>	
 <fieldset>
-<legend>Alphabetical list of database titles:</legend>
+<legend>Browse Databases by Name:</legend>
 
 <a href="/search~S4/j?a">A</a> |
 <a href="/search~S4/j?b">B</a> |
@@ -63,91 +157,117 @@ function submitSubject() {
 <a href="/search~S4/j?00000">All titles</a>
 </fieldset>
 
-<fieldset>
-<legend>Browse databases by subject or type:</legend>
-<form action="javascript:submitSubject();" onSubmit="submitSubject();" method="get" name="subjectSearch" class="unpadded">
-<select name="bySubject" size="8">
-<option value="pre 18th century">Pre-18th Century Primary Sources (400-1700)</option>
-<option value="18th century primary sources">18th-Century Primary Sources (1700s)</option>
-<option value="19th century primary sources">19th-Century Primary Sources (1800s)</option>
-<option value="20th century primary sources">20th-Century Primary Sources (1900s)</option>
-<option value="anthropology">Anthropology</option>
-<option value="architecture urban planning and design">Architecture Urban Planning and Design</option>
-<option value="art and art history">Art and Art History</option>
-<option value="biography">Biography</option>
-<option value="biological sciences">Biological Sciences</option>
-<option value="book reviews">Book Reviews</option>
-<option value="business and public administration">Business and Public Administration</option>
-<option value="career and college resources">Career and College Resources</option>
-<option value="chemistry">Chemistry</option>
-<option value="communication studies">Communication Studies</option>
-<option value="computer science and electrical engineering">Computer Science and Electrical Engineering</option>
-<option value="criminal justice and criminology">Criminal Justice and Criminology</option>
-<option value="dance">Dance</option>
-<option value="dentistry">Dentistry</option>
-<option value="digital archival collections">Digital Archival Collections</option>
-<option value="dissertations theses and conference proceedings">Dissertations, Theses, and Conference Proceedings</option>
-<option value="e books">E-Books</option>
-<option value="e reference">E-Reference (Encyclopedias, Dictionaries, and Handbooks)</option>
-<option value="economics">Economics</option>
-<option value="education">Education</option>
-<option value="engineering">Engineering</option>
-<option value="english literature">English Literature</option>
-<option value="environmental studies">Environmental Studies</option>
-<option value="ethnic studies">Ethnic Studies</option>
-<option value="film studies">Film Studies</option>
-<option value="fine and performing arts">Fine and Performing Arts</option>
-<option value="foreign languages and literatures">Foreign Languages and Literatures</option>
-<option value="general and multidisciplinary">General and Multidisciplinary</option>
-<option value="geosciences and geography">Geosciences and Geography</option>
-<option value="government information">Government Information</option>
-<option value="health sciences biosciences">Health Sciences/Biosciences</option>
-<option value="history">History</option>
-<option value="humanities">Humanities</option>
-<option value="images sound and video">Images, Sound, and Video</option>
-<option value="kansas city metro research">Kansas City Metro Research</option>
-<option value="language and linguistics">Language and Linguistics</option>
-<option value="law">Law</option>
-<option value="library science">Library Science</option>
-<option value="mathematics and statistics">Mathematics and Statistics</option>
-<option value="medicine">Medicine</option>
-<option value="music">Music</option>
-<option value="new databases">New Databases</option>
-<option value="news">News</option>
-<option value="nursing">Nursing</option>
-<option value="pharmacy">Pharmacy</option>
-<option value="philosophy">Philosophy</option>
-<option value="physics and astronomy">Physics and Astronomy</option>
-<option value="political science">Political Science</option>
-<option value="psychology">Psychology</option>
-<option value="religious studies">Religious Studies</option>
-<option value="science and technology">Science and Technology</option>
-<option value="social sciences">Social Sciences</option>
-<option value="social work">Social Work</option>
-<option value="sociology">Sociology</option>
-<option value="statistics and data">Statistics and Data</option>
-<option value="tests and test reviews">Tests and Test Reviews</option>
-<option value="theatre">Theatre</option>
-<option value="trial databases">Trial Databases</option>
-<option value="womens and gender studies">Women's and Gender Studies</option>
-</select>
-<input type="submit" name="Submit" value="Search">
-</form>
-</fieldset>
+<a name="dbsubject"></a>
+<fieldset class="articles">
+<legend>Databases By Subject</legend>
 
-<fieldset>
-<legend>Database links</legend>
-<div id="linkList">
-<a href="/search~S4/x?new+databases">New Databases</a>
-<a href="/search~S4/x?trial+databases">Trial Databases</a>
-<a href="http://umkc.summon.serialssolutions.com/">RooSearch</a>
-<a href="http://umkclibrarieserblog.wordpress.com/">Online Resources Blog</a>
-<a href="http://library.umkc.edu/databases-responsibilities">UMKC Libraries Statement on Responsibilities of Users of Electronic Resources</a>
+<div class="row">
+<ul class="databaseListing span7">
+<li><a href="/search~S4/x?anthropology">Anthropology</a></li>
+<li><a href="/search~S4/x?architecture urban planning and design">Architecture Urban Planning and Design</a></li>
+<li><a href="/search~S4/x?art and art history">Art and Art History</a></li>
+<li><a href="/search~S4/x?biological sciences">Biological Sciences</a></li>
+<li><a href="/search~S4/x?business and public administration">Business and Public Administration</a></li>
+<li><a href="/search~S4/x?chemistry">Chemistry</a></li>
+<li><a href="/search~S4/x?communication studies">Communication Studies</a></li>
+<li><a href="/search~S4/x?computer science and electrical engineering">Computer Science and Electrical Engineering</a></li>
+<li><a href="/search~S4/x?criminal justice and criminology">Criminal Justice and Criminology</a></li>
+<li><a href="/search~S4/x?dance">Dance</a></li>
+<li><a href="/search~S4/x?dentistry">Dentistry</a></li>
+<li><a href="/search~S4/x?economics">Economics</a></li>
+<li><a href="/search~S4/x?education">Education</a></li>
+<li><a href="/search~S4/x?engineering">Engineering</a></li>
+<li><a href="/search~S4/x?english literature">English Literature</a></li>
+<li><a href="/search~S4/x?environmental studies">Environmental Studies</a></li>
+<li><a href="/search~S4/x?ethnic studies">Ethnic Studies</a></li>
+<li><a href="/search~S4/x?film studies">Film Studies</a></li>
+<li><a href="/search~S4/x?fine and performing arts">Fine and Performing Arts</a></li>
+<li><a href="/search~S4/x?foreign languages and literatures">Foreign Languages and Literatures</li>
+<li><a href="/search~S4/x?general and multidisciplinary">General and Multidisciplinary</a></li>
+<li><a href="/search~S4/x?geosciences and geography">Geosciences and Geography</a></li>
+<li><a href="/search~S4/x?health sciences biosciences">Health Sciences/Biosciences</a></li>
+</ul>
+
+<ul class="databaseListing span6">
+<li><a href="/search~S4/x?history">History</a></li>
+<li><a href="/search~S4/x?humanities">Humanities</a></li>
+<li><a href="/search~S4/x?kansas city metro research">Kansas City Metro Research</a></li>
+<li><a href="/search~S4/x?language and linguistics">Language and Linguistics</a></li>
+<li><a href="/search~S4/x?law">Law</a></li>
+<li><a href="/search~S4/x?library science">Library Science</a></li>
+<li><a href="/search~S4/x?mathematics and statistics">Mathematics and Statistics</a></li>
+<li><a href="/search~S4/x?medicine">Medicine</a></li>
+<li><a href="/search~S4/x?music">Music</a></li>
+<li><a href="/search~S4/x?nursing">Nursing</a></li>
+<li><a href="/search~S4/x?pharmacy">Pharmacy</a></li>
+<li><a href="/search~S4/x?philosophy">Philosophy</a></li>
+<li><a href="/search~S4/x?physics and astronomy">Physics and Astronomy</a></li>
+<li><a href="/search~S4/x?political science">Political Science</a></li>
+<li><a href="/search~S4/x?psychology">Psychology</a></li>
+<li><a href="/search~S4/x?religious studies">Religious Studies</a></li>
+<li><a href="/search~S4/x?science and technology">Science and Technology</a></li>
+<li><a href="/search~S4/x?social sciences">Social Sciences</a></li>
+<li><a href="/search~S4/x?social work">Social Work</a></li>
+<li><a href="/search~S4/x?sociology">Sociology</a></li>
+<li><a href="/search~S4/x?theatre">Theatre</a></li>
+<li><a href="/search~S4/x?womens and gender studies">Women's and Gender Studies</a></li>
+</ul>
+
 </div>
 </fieldset>
 
+<p class="actionButtonArea">
+<a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Back to top</span></span></a>
+</p>
 
-</div><!--form1Part -->
+<a name="dbtype"></a>
+<fieldset class="articles">
+<legend>Databases By Type</legend>
+<div class="row">
+<ul class="databaseListing span7">
+<li><a href="/search~S4/x?pre 18th century">Pre-18th Century Primary Sources (400-1700)</a></li>
+<li><a href="/search~S4/x?18th century primary sources">18th-Century Primary Sources (1700s)</a></li>
+<li><a href="/search~S4/x?19th century primary sources">19th-Century Primary Sources (1800s)</a></li>
+<li><a href="/search~S4/x?20th century primary sources">20th-Century Primary Sources (1900s)</a></li>
+<li><a href="/search~S4/x?audio">Audio</a></li>
+<li><a href="/search~S4/x?biography">Biography</a></li>
+<li><a href="/search~S4/x?book reviews">Book Reviews</a></li>
+<li><a href="/search~S4/x?career and college resources">Career and College Resources</a></li>
+<li><a href="/search~S4/x?digital archival collections">Digital Archival Collections</a></li>
+<li><a href="/search~S4/x?dissertations theses and conference proceedings">Dissertations, Theses, and Conference Proceedings</a></li>
+</ul>
+<ul class="databaseListing span6">
+<li><a href="/search~S4/x?e books">E-Books</a></li>
+<li><a href="/search~S4/x?e reference">E-Reference (Encyclopedias, Dictionaries, and Handbooks)</a></li>
+<li><a href="/search~S4/x?government information">Government Information</a></li>
+<li><a href="/search~S4/x?images">Images</a></li>
+<li><a href="/search~S4/x?news">News</a></li>
+<li><a href="/search~S4/x?statistics and data">Statistics and Data</a></li>
+<li><a href="/search~S4/x?tests and test reviews">Tests and Test Reviews</a></li>
+<li><a href="/search~S4/x?video">Video</a></li>
+</ul>
+
+</div>
+</fieldset>
+
+<p class="actionButtonArea">
+<a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Back to top</span></span></a>
+</p>
+
+<a name="dbresearch"></a>
+<fieldset class="articles">
+<legend>Need help with your research?</legend>
+<div class="row">
+<ul class="databaseListing span6">
+<li><a href="http://library.umkc.edu/ask-a-librarian">Ask A Librarian</a></li>
+<li><a href="http://libguides.library.umkc.edu/index.php">Research Guides</a></li>
+<li><a href="http://library.umkc.edu/form/research-workshops">Research Workshops</a></li>
+</ul>
+</div>
+</fieldset>
+</div>
+
+
 </div><!-- pageContentInner -->
 
 <!--{botlogo}-->
