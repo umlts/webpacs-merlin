@@ -41,14 +41,14 @@ ul#tabRow .tab a {
     line-height: 1.75;
 }
 
-.span7 {
+/*.span7 {
   width: 60%;
 }
 
 
 .span6 {
   width: 37%;
-}
+}*/
 
 .row [class*="span"]:first-child {
     margin-left: 0;
@@ -59,4 +59,17 @@ ul#tabRow .tab a {
     display: block;
     float: left;
     min-height: 28px;
+}
+
+#dbRows, #dbType {
+    width: 100%
+}
+
+#rowRight, #typeRight {
+    float: right;
+    width: 46%;
+}
+#rowLeft, #typeLeft {
+    float: left;
+    width: 48%;
 }
