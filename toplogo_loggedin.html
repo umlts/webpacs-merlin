@@ -30,6 +30,11 @@ $(document).ready(function () {
 			$('#searcharg').val(newSearchTerm);
 		}
 		});
+
+		$('.pageMainAreaHeader').text(function (i, old) {
+     return old
+         .replace('Save Records in Bookcart to a List', 'Save Records to a List');
+		});
 	});
 </script>
 
