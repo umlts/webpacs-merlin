@@ -233,23 +233,26 @@ if (itemLocation.indexOf("Marr Sound Archives RooBot") > 0){
             var bookJacket =  "<img src='" + b.thumbnail_url + "&zoom=1'>";
             //form the text of Google Book contents
             if (b && (b.preview == "full")) {
-                //textGBS = "<p>Full Text</p>";
+                textGBS = "<p>Full Text</p>";
                 //"Google Book Search";
                 document.getElementById("googlebooks").innerHTML = bookJacket + "<a href='" + b.preview_url + "'>" + buttonImg + textGBS + "</a>"
             }
             else if (b && (b.preview == "partial")) {
-                //textGBS = "<p>Limited Preview</p>"
+                textGBS = "<p>Limited Preview</p>"
                 //"Preview at Google Book Search";
                 document.getElementById("googlebooks").innerHTML = bookJacket + "<a href='" + b.preview_url + "'>" + buttonImg + textGBS + "</a>"
             }
             else if (b && (b.preview == "noview")) {
+                //textGBS = "<p>Search in Google Books</p>" 
                 //"Preview at Google Book Search";
-                if (b.thumbnail_url != undefined){
-                document.getElementById("googlebooks").innerHTML = bookJacket + "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
+                if (b.thumbnail_url != undefined){ 
+                document.getElementById("googlebooks").innerHTML = bookJacket 
+                  //"<a href='" + b.preview_url + "'>" + bookJacket + "</a>"
+
                 }
             }
             else {
-                //document.getElementById("googlebooks").innerHTML = "None available.";
+                //document.getElementById("googlebooks").innerHTML = bookJacket + "None available.";
             }
     }
 }
