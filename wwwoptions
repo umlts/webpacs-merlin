@@ -1194,14 +1194,18 @@ ICON_BIB_PAGING_PREV_spi=<span class="button"><img src="/screens/ico_previous.gi
 ICON_RECORDLINK_spi=<div class="bibRecordLink"><div class="bibInfoLabel">Enlace permanente</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
 LINK856TEXT_spi=Conectar a
 BIB_LICENSE_FIELDS_spi=Permitido:Vlw|Restringido:Vlx
-BIB_RESOURCE_CAPTION_spi=<strong>Este t&#237;tulo est&#225; disponible electr&#243;nicamente a trav&#233;s de:</strong>
+BIB_RESOURCE_CAPTION_spi=<strong>Usuarios de la UMKC se pueden conectar con esta fuente de informaci&#243;n :</strong>
 ICON_BIB_RESOURCE_DETAILS_spi=<span class="button"><span class=buttonText">Datos completos</span></span>
-ICON_RESOURCE_RECORD_spi=<span class="button"><span class=buttonText">Ver registro de recurso</span></span>
-RESOURCE_HOLDINGS_FIELDS_spi=T&#237;tulo:VbT|Cobertura:Vch|Texto completo:VcY
-RESOURCE_LICENSE_FIELDS_spi=Permitido:Vlw|Restringido:Vlx|Disponible para:Vlf|Notas de acceso:Vla
+ICON_RESOURCE_RECORD_spi=<span class="button"><span class=buttonText">Acerca de esta Fuente de Informaci&#243;n</span></span>
+RESOURCE_HOLDINGS_FIELDS_spi=T&#237;tulo:VbT|Biblioteca Tiene:Vch|Conectar con el Texto Completo:VcY
+RESOURCE_LICENSE_FIELDS_spi=Usuarios Autorizados:Vlu|Manera de Autentificación:Vla|Condiciones de Uso:Vlt|Restricciones Pertinentes al Curso:Vls|Restricciones del Servicio de 
+Préstamo Interbibliotecario:Vlo|
 ICON_BUT_CARDFORM_BOX_spi=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Visualizaci&#243;n caja</span></span>
 ICON_BUT_CARDFORM_LIN_spi=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Visualizaci&#243;n l&#237;nea</span></span>
-CHECKIN_STATUS_spi=RECIBIDO=Aqu&#237;|ESPERADO=A punto de empezar|ENCUADERNACI&#211;N=En encuadernaci&#243;n|ATRASADO=Atrasado|Otros=Ver personal
+CHECKIN_STATUS_spi=PREVISTO=Previsto;|RECIBIDO=Recibido|ENV&#205;O PARCIAL=Env&#237;o Parcial|PERDIDO=Perdido|ENCUADERNADO=Encuadernado|EN LA ENCUADERNADORA=En la Encuadernadora|
+
+CHECKIN_STATUS=EXPECTED=Expected|ARRIVED=Arrived|PARTIALLY RECEIVED=Partial|MISSING=Missing|BOUND=Bound|AT BINDERY=To bind|BINDERY PREP=Binding prepration|REMOVED=Removed|NOT PUBLISHED=Not published|OUT OF PRINT=Out of print|UNAVAILABLE=Unavailable|LATE=Late
+
 HOLDINGS_REQ_spi=Entregarme el art&#237;culo
 ICON_MYLISTS_spi=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">Mis Listas</span></span>
 ICON_MYLISTS_EXPORT_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Exportar lista</span></span></div></div>
@@ -1214,7 +1218,7 @@ ICON_MYLISTS_SAVE_TO_LIST_spi=<span></span>
 ICON_MYLISTS_BRIEF_spi=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">A&#241;adir a Mis Listas</span></span>
 ICON_BACK_TO_MYLISTS_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Volver a Mis Listas</span></span></div></div>
 ICON_MYLISTS_RECORD_spi=<span class="navButton">A&#241;adir a Mis Listas</span>
-ICON_BUT_BIBEXPORT_spi=<span class="navButton"><img src="/screens/ico_bag_add.gif" alt=""><span class="buttonText">A&#241;adir a la cesta</span></span>
+ICON_BUT_BIBEXPORT_spi=<span class="navButton">A&#241;adir en carpeta</span>
 ICON_BUT_CLEAR_MARKED_spi=<span class="navButton">Vaciar cesta</span>
 ICON_BUT_EXPORT_MULTI_spi=<span class="navButton">Exportar guardados</span>
 ICON_BUT_EXPORT_VIEW_SAVES_spi=<span class="navButton">Ver cesta</span></span>
