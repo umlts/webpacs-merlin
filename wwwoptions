@@ -1154,7 +1154,7 @@ ICON_BUT_ANOTHER_spi=<span class="navButton">Otra b&#250;squeda</span>
 ICON_BUT_NEWSRCH_spi=<span class="navButtonOneLine">Inicio</span>
 ICON_BUT_WORDSRCH_spi=<span class="navButton">Buscar como palabras</span>
 ICON_BUT_MODIFY_spi=<span class="navButton">Modificar b&#250;squeda</span>
-ICON_BUT_SHOWSIM_spi=<span class="navButtonOneLine">M&#225;s como este</span>
+ICON_BUT_SHOWSIM_spi=<span class="navButtonOneLine">Buscar Informaci&#243;n Similar</span>
 ICON_REL_GROUP_1_spi=<img src="/screens/relevance5.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">M&#225;s relevantes t&#237;tulos</h1>&nbsp;
 ICON_REL_GROUP_2_spi=<img src="/screens/relevance4.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">Altamente relevantes t&#237;tulos</h1>&nbsp;
 ICON_REL_GROUP_3_spi=<img src="/screens/relevance3.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">Muy relevante t&#237;tulos</h1>&nbsp;
@@ -1171,7 +1171,7 @@ ICON_BUT_UNLIMAVAIL_spi=<span class="button"><img src="/screens/ico_list.png" al
 ICON_856LINK_spi=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Sitio Web
 ICON_962LINK_spi=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Imagen digital
 #ICON_BOOKCART_spi=<span class="navButton"><img src="/screens/ico_bag_add.gif" alt=""><span class="buttonText">A&#241;adir a la cesta</span></span>
-ICON_BOOKCART_SAVED_spi=<span class="navButtonYellow navButton">Eliminar de la cesta</span>
+ICON_BOOKCART_SAVED_spi=<span class="navButtonYellow navButton">Retirar de guardados</span>
 ICON_FULLRECORD_spi=Ver registro completo
 ICON_LOCATEINRESULTS_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Localizar en resultados</span></span></div></div>
 ICON_PAGING_CAPTION_spi=P&#225;gina de resultados&nbsp;
@@ -1180,7 +1180,7 @@ ICON_PAGING_PREV_spi=Ant
 ICON_PROGRAM_spi=<img src="/screens/media_program.gif" border="0" alt="Eventos de la biblioteca">
 ICON_RESOURCE_spi=<img src="/screens/media_resource.gif" alt="Recurso de internet">
 ICON_SAVEALLPAGE_spi=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">A&#241;adir todos en la p&#225;gina</span></span>
-ICON_SAVEMARKED_spi=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">A&#241;adir los marcados a la cesta</span></span>
+ICON_SAVEMARKED_spi=<span class="button"><img src="/screens/ico_folder_add.png" alt=""><span class="buttonText">Guardar Seleccionado</span></span>
 NO_COPIES_spi=No hay ejemplares disponibles en este momento
 SORT_BROWSE_spi=t:T&#237;tulo|a:Autor|c:A&#241;o|r:Inverso A&#241;o|n:Signatura|m:Tipo de material
 BIB_TOC_HEADER_spi=<strong>Tabla de contenidos</strong>
@@ -1192,6 +1192,7 @@ ICON_NEARBY_spi=<img src="/screens/nearby.png" alt="Ejemplares cercanos en la es
 ICON_BIB_PAGING_NEXT_spi=<span class="button"><span class="buttonText" id="buttonNextRecord">Registro siguiente</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BIB_PAGING_PREV_spi=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Registro anterior</span></span>
 ICON_RECORDLINK_spi=<div class="bibRecordLink"><div class="bibInfoLabel">Enlace permanente</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
+ITEMS_MSG_BRIEF_spi=Clic aqu&#237; para ver m&#225;s copias/vol&#250;menes de esta materia
 LINK856TEXT_spi=Conectar a
 BIB_LICENSE_FIELDS_spi=Permitido:Vlw|Restringido:Vlx
 BIB_RESOURCE_CAPTION_spi=<strong>Usuarios de la UMKC se pueden conectar con esta fuente de informaci&#243;n :</strong>
@@ -1202,10 +1203,7 @@ RESOURCE_LICENSE_FIELDS_spi=Usuarios Autorizados:Vlu|Manera de Autentificación:
 Préstamo Interbibliotecario:Vlo|
 ICON_BUT_CARDFORM_BOX_spi=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Visualizaci&#243;n caja</span></span>
 ICON_BUT_CARDFORM_LIN_spi=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Visualizaci&#243;n l&#237;nea</span></span>
-CHECKIN_STATUS_spi=PREVISTO=Previsto;|RECIBIDO=Recibido|ENV&#205;O PARCIAL=Env&#237;o Parcial|PERDIDO=Perdido|ENCUADERNADO=Encuadernado|EN LA ENCUADERNADORA=En la Encuadernadora|
-
-CHECKIN_STATUS=EXPECTED=Expected|ARRIVED=Arrived|PARTIALLY RECEIVED=Partial|MISSING=Missing|BOUND=Bound|AT BINDERY=To bind|BINDERY PREP=Binding prepration|REMOVED=Removed|NOT PUBLISHED=Not published|OUT OF PRINT=Out of print|UNAVAILABLE=Unavailable|LATE=Late
-
+CHECKIN_STATUS_spi=PREVISTO=Previsto;|RECIBIDO=Recibido|ENV&#205;O PARCIAL=Env&#237;o Parcial|PERDIDO=Perdido|ENCUADERNADO=Encuadernado|EN LA ENCUADERNADORA=En la Encuadernadora|PREPARACI&#211;N PARA ENCUADERNAR=Preparaci&#243;n Para Encuadernar|RETIRADO=Retirado|NO PUBLICADO=No Publicado|AGOTADO=Agotado|NO DISPONIBLE=No Disponible|RETRASADO=Retrasado
 HOLDINGS_REQ_spi=Entregarme el art&#237;culo
 ICON_MYLISTS_spi=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">Mis Listas</span></span>
 ICON_MYLISTS_EXPORT_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Exportar lista</span></span></div></div>
@@ -1219,9 +1217,9 @@ ICON_MYLISTS_BRIEF_spi=<span class="button"><img src="/screens/ico_list_add.png"
 ICON_BACK_TO_MYLISTS_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Volver a Mis Listas</span></span></div></div>
 ICON_MYLISTS_RECORD_spi=<span class="navButton">A&#241;adir a Mis Listas</span>
 ICON_BUT_BIBEXPORT_spi=<span class="navButton">A&#241;adir en carpeta</span>
-ICON_BUT_CLEAR_MARKED_spi=<span class="navButton">Vaciar cesta</span>
-ICON_BUT_EXPORT_MULTI_spi=<span class="navButton">Exportar guardados</span>
-ICON_BUT_EXPORT_VIEW_SAVES_spi=<span class="navButton">Ver cesta</span></span>
+ICON_BUT_CLEAR_MARKED_spi=<span class="navButton">Borrar Guardados</span>
+ICON_BUT_EXPORT_MULTI_spi=<span class="navButton">Exportar Guardados</span>
+ICON_BUT_EXPORT_VIEW_SAVES_spi=<span class="navButton"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">Ver Guardados</span></span>
 ICON_BUT_VIEW_SAVES_spi=<span class="navButton">Ver cesta</span>
 ICON_BUT_REQUEST_spi=<span class="navButtonOneLine">Solicitud</span>
 ICON_BUT_REQUEST_ALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Solicitud disponible</span></span></div></div>
@@ -1231,11 +1229,12 @@ ICON_BUT_REQUEST_SELECTED_spi=<div onmousedown="this.className='pressedState';" 
 ICON_REQUEST_spi=<span class="navButtonSmall navButton">Solicitud</span>
 #REQFILLTIME_spi=14|<br>Solicitud disponible en aproximadamente %d d&#237;as|<br>Disponibilidad estimada actualmente: aproximadamente %d d&#237;as|<br>Este material puede estar disponible inmediatamente
 REQUEST_spi=Reservar este ejemplar|denyiflocalavail|ask|Y
-#REQUEST_INSTRUCTION_spi=Indique las instruciones especiales, por favor:
+REQUEST_INSTRUCTION_spi=<strong>&#191;Cualquier instrucci&#243;n especial?</strong><ul><li> Si hay disponible m&#250;ltiples vol&#250;menes, la pr&#243;xima pantalla le solicitar&#225; escoger uno de ellos.&nbsp; <strong>Por favor no utilizar el cuadro de abajo.</strong>&nbsp; Si usted solicita m&#225;s de un volumen, necesitar&#225;  completar un nuevo pedido para cada uno.</li><li>Usted si puede pedir distintas hojas de microficha  del dep&#243;sito de la MU.&nbsp; Si esta solicitando distintas hojas de microficha por favor que se incluya el n&#250;mero de  identificaci&#243;n de cada uno de ellos en el cuadro de abajo. Ejemplos de n&#250;meros de identificaci&#243;n:</li><ul>  <li>2005 ASI 8486-1.2</li><li> 1988 IIS 1300-S61.19 </li><li> ED516836</li></ul></ul>
 REQUEST_MULTI_spi=Solicitar todos los ejemplares en el carro|bib|ask
 ICON_BUT_PAT_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
 ICON_BUT_PAT_CANCELALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar Todo</span></span></div></div>
 ICON_BUT_PAT_CANCELMARK_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar Selecci&#243;n</span></span></div></div>
+ICON_BUT_PAT_CHKOUTS_spi=Renovar/Examinar material actualmente prestado
 #ICON_BUT_PAT_FINES_spi=<span class="button"><img src="/screens/ico_payment.png" alt=""><span class="buttonText">Multas</span></span>
 ICON_BUT_PAT_INFO_spi=<span class="button"><img src="/screens/ico_patron.png" alt=""><span class="buttonText">Modificar informaci&#243;n personal</span></span>
 ICON_BUT_PAT_MSGS_spi=<span class="button"><img src="/screens/ico_browse_brief.png" alt=""><span class="buttonText">Mensaje de la biblioteca</span></span>
