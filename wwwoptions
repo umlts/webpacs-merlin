@@ -1130,6 +1130,7 @@ LOC_kw=http://library.umkc.edu/merlin-locations-mnl#other
 #spanish wwwoptions
 #AVAILLIM_spi=<span class="availLimMessage">Limitar la b&#250;squeda a ejemplares disponibles</span>|<span class="availLimMessage">Resultados de la b&#250;squeda limitados a ejemplares disponibles</span>
 #BOTLOGO_spi=@screens/botlogo_spi.html
+ICON_BUT_ASRSICON=<div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Recoger en Miller Nichols</span></span></div></div>
 ICON_BUT_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
 ICON_BUT_CLOSEWINDOW_spi=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Cerrar ventana</span></span>
 ICON_BUT_RET2CAT_spi=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Volver al cat&#225;logo</span></span>
@@ -1192,6 +1193,15 @@ ICON_NEARBY_spi=<img src="/screens/nearby.png" alt="Ejemplares cercanos en la es
 ICON_BIB_PAGING_NEXT_spi=<span class="button"><span class="buttonText" id="buttonNextRecord">Registro siguiente</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BIB_PAGING_PREV_spi=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Registro anterior</span></span>
 ICON_RECORDLINK_spi=<div class="bibRecordLink"><div class="bibInfoLabel">Enlace permanente</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
+
+INNREACH_spi=<span class="navButton">Buscar en<br>MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+
+# IRSSO SETUP
+
+INNREACH_REMOTE_spi=laurel.lso.missouri.edu&<span class="navButton">B&#250;squeda MOBIUS</span>@laurel.lso.missouri.edu:2083(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+INNREACH_REMOTE_SSL_spi=laurel.lso.missouri.edu&<span class="navButton">B&#250;squeda MOBIUS</span>@laurel.lso.missouri.edu:2443(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+SSO_VALID_HOSTS=128.206.14.98|laurel.lso.missouri.edu|m.laurel.lso.missouri.edu|merlin-mobius.missouri.edu
+
 ITEMS_MSG_BRIEF_spi=Clic aqu&#237; para ver m&#225;s copias/vol&#250;menes de esta materia
 LINK856TEXT_spi=Conectar a
 BIB_LICENSE_FIELDS_spi=Permitido:Vlw|Restringido:Vlx
@@ -1233,7 +1243,7 @@ REQUEST_INSTRUCTION_spi=<strong>&#191;Cualquier instrucci&#243;n especial?</stro
 REQUEST_MULTI_spi=Solicitar todos los ejemplares en el carro|bib|ask
 ICON_BUT_PAT_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
 ICON_BUT_PAT_CANCELALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar Todo</span></span></div></div>
-ICON_BUT_PAT_CANCELMARK_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar Selecci&#243;n</span></span></div></div>
+ICON_BUT_PAT_CANCELMARK_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Anular Selecciones</span></span></div></div>
 ICON_BUT_PAT_CHKOUTS_spi=Renovar/Examinar material actualmente prestado
 #ICON_BUT_PAT_FINES_spi=<span class="button"><img src="/screens/ico_payment.png" alt=""><span class="buttonText">Multas</span></span>
 ICON_BUT_PAT_INFO_spi=<span class="button"><img src="/screens/ico_patron.png" alt=""><span class="buttonText">Modificar informaci&#243;n personal</span></span>
@@ -1245,10 +1255,10 @@ ICON_BUT_PAT_SORTBYCHKOUT_spi=<div onmousedown="this.className='pressedState';" 
 ICON_BUT_PAT_SORTBYDUE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Ordenar por fecha de devoluci&#243;n</span></span></div></div>
 ICON_BUT_PAT_SUBMIT_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Enviar</span></span></div></div>
 ICON_BUT_PSTARTOVER_spi=<span class="button"><img src="/screens/ico_startover.png" alt=""><span class="buttonText">Inicio</span></span>
-ICON_BUT_UPDATE_HOLDS_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Actualizar lista</span></span></div></div>
+ICON_BUT_UPDATE_HOLDS_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Anular Selecciones</span></span></div></div>
 ICON_CLOSEWINDOW_spi=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Cerrar ventana</span></span>
 ICON_PAT_CANCELALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar Todo</span></span></div></div>
-ICON_PAT_CANCELMARK_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar Selecci&#243;n</span></span></div></div>
+ICON_PAT_CANCELMARK_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Anular Selecciones</span></span></div></div>
 ICON_PIN_RESET_spi=<span class="button"><img src="/screens/ico_questionmark.png" alt=""><span class="buttonText">&#191;A olvidado su PIN?</span></span>
 ICON_SORTPUDATE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Ordenar por recogida</span></span></div></div>
 ICON_SORTREQDATE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Ordenar por solicitud</span></span></div></div>
@@ -1316,15 +1326,15 @@ ICON_BUT_RESOURCELINK_spi=<div id="resourcelink"><span class="button"><img src="
 ICON_BUT_RET2RESOURCE_spi=<div id="resourcelink"><span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Volver</span></span></div>
 #WBHEADERTEXT_spi=Los siguientes recursos le pueden proporcionar informaci&#243;n adicional sobre<br>#ENCABEZAMIENTO#
 ICON_PATFEED_spi=<span class="button"><img src="/screens/ico_rss.gif" alt=""><span class="buttonText">Mis Registros Feeds</span></span>
-PATFEED_CONFIG_spi=Novedades de Su Registro de la Biblioteca|Para ver m&#225;s informaci&#243;n, siga los enlaces de la biblioteca.
+PATFEED_CONFIG_spi=Noticias bibliotecarias|Hacer click para informaci&#243;n detallada.
 PATFEED_FINES_INCURRED_RECENTLY_spi=Tiene multas o cargos nuevos
 PATFEED_HOLDS_READY_spi=Sus materiales est&#225;n listos para ser recogidos
 #PATFEED_IMAGE_spi=/screens/rss.gif|Suscribir su registro de la biblioteca a un feed.|88|31
 PATFEED_ITEMS_BOOKED_TOMORROW_spi=Materiales guardados ma&#241;ana
-PATFEED_ITEMS_DUE_SOON_spi=Materiales que vencen en seguida
-PATFEED_ITEMS_DUE_TODAY_spi=Materiales que vencen hoy
-PATFEED_ITEMS_OVERDUE_spi=Materiales vencidos
-PATFEED_ITEMS_RECALLED_spi=Materiales reclamados
+PATFEED_ITEMS_DUE_SOON_spi=Usted tiene &#237;tems prestados que pronto se vencer&#225;n
+PATFEED_ITEMS_DUE_TODAY_spi=Usted tiene &#237;tems prestados que  se vencer&#225;n hoy
+PATFEED_ITEMS_OVERDUE_spi=&#205;tems que han vencido en fecha
+PATFEED_ITEMS_RECALLED_spi=Materias han sido recordadas
 PATFEED_PROGRAM_SESSION_SOON_spi=Uno de los eventos para los que se ha matriculado va a empezar pronto. Con&#233;ctese a Mi cuenta para conocer la fecha, hora y localizaci&#243;n del evento.
 PATFEED_PROGRAM_SESSION_TOMORROW_spi=Uno de los eventos para los que se ha matriculado es para ma&#241;ana. Con&#233;ctese a Mi cuenta para conocer la fecha, hora y localizaci&#243;n del evento.
 PATFEED_PROGRAM_SESSION_TODAY_spi=Uno de los eventos para los que se ha matriculado es para hoy. Con&#233;ctese a Mi cuenta para conocer la fecha, hora y localizaci&#243;n del evento.
