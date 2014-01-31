@@ -10,4 +10,4 @@
           <li><div class="tipLeft">science|</div>Add a | (bar symbol) to find an exact match</li>
         </ul>
           
-          <p>If your search is unsuccessful, try a Keyword search.</p>
+          <p>Si su b&#250;squeda no tiene &#233;xito, pruebe una b&#250;squeda de palabra clave.</p>

@@ -5,5 +5,5 @@
             <li><em>evolution and altruism</em></li>
             <li><em>&quot;achievement test&quot;</em></li>
           </ul>
-          <p>For more options, use an Advanced Search. </p>
+          <p>Si su b&#250;squeda no tiene &#233;xito, pruebe una b&#250;squeda avanzada. </p>
         </div
