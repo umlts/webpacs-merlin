@@ -1421,7 +1421,7 @@ ICON_BUT_ANOTHER_chx=<span class="navButton">&#20854;&#20182;&#25628;&#32034;</s
 ICON_BUT_NEWSRCH_chx=<span class="navButtonOneLine">&#37325;&#26032;&#25628;&#32034;</span>
 ICON_BUT_WORDSRCH_chx=<span class="navButton">&#20851;&#38190;&#35789;&#25628;&#32034;</span>
 ICON_BUT_MODIFY_chx=<span class="navButton">&#20462;&#25913;&#25628;&#32034;</span>
-ICON_BUT_SHOWSIM_chx=<span class="navButtonOneLine">&#26356;&#22810;&#27492;&#31867;</span>
+ICON_BUT_SHOWSIM_chx=<span class="navButtonOneLine">&#30456;&#20851;&#26597;&#25214;</span>
 ICON_REL_GROUP_1_chx=<img src="/screens/relevance5.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">&#26368;&#26377;&#20851;&#30340; &#26631;&#39064;</h1>&nbsp;
 ICON_REL_GROUP_2_chx=<img src="/screens/relevance4.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">&#39640;&#24230;&#26377;&#20851;&#30340; &#26631;&#39064;</h1>&nbsp;
 ICON_REL_GROUP_3_chx=<img src="/screens/relevance3.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">&#38750;&#24120;&#26377;&#20851;&#30340; &#26631;&#39064;</h1>&nbsp;
@@ -1438,7 +1438,7 @@ ICON_BUT_UNLIMAVAIL_chx=<span class="button"><img src="/screens/ico_list.png" al
 ICON_856LINK_chx=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">&#32593;&#39029;
 ICON_962LINK_chx=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">&#25968;&#30721;&#24433;&#20687;
 #ICON_BOOKCART_chx=<span class="navButton">&#28155;&#21152;&#33267;&#20070;&#34955;</span>
-ICON_BOOKCART_SAVED_chx=<span class="navButtonYellow navButton">&#20174;&#20070;&#34955;&#20013;&#21024;&#38500;</span>
+ICON_BOOKCART_SAVED_chx=<span class="navButtonYellow navButton">&#21024;&#38500;&#20445;&#23384;&#35760;&#24405;</span>
 ICON_FULLRECORD_chx=&#21442;&#30475;&#35814;&#23613;&#35760;&#24405;
 ICON_LOCATEINRESULTS_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#20301;&#20110;&#32467;&#26524;&#20013;</span></span></div></div>
 ICON_PAGING_CAPTION_chx=&#32467;&#26524;&#39029;&nbsp;
@@ -1447,7 +1447,7 @@ ICON_PAGING_PREV_chx=&#21069;
 ICON_PROGRAM_chx=<img src="/screens/media_program.gif" border="0" alt="&#22270;&#20070;&#39302;&#27963;&#21160;">
 ICON_RESOURCE_chx=<img src="/screens/media_resource.gif" alt="&#32593;&#38469;&#36164;&#28304;">
 ICON_SAVEALLPAGE_chx=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">&#20840;&#28155;&#21152;&#22312;&#39029;</span></span>
-ICON_SAVEMARKED_chx=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">&#28155;&#21152;&#24050;&#26631;&#33267;&#20070;&#34955;</span></span>
+ICON_SAVEMARKED_chx=<span class="button"><img src="/screens/ico_folder_add.png" alt=""><span class="buttonText">&#20445;&#23384;&#26631;&#35760;</span></span>
 NO_COPIES_chx=&#30446;&#21069;&#27809;&#25335;&#36125;&#22797;&#21360;&#26412;&#21487;&#29992;
 SORT_BROWSE_chx=t:{u6807}{u9898}|a:{u4F5C}{u8005}|c:{u5E74}|r:{u53CD}{u5411}{u5E74}|n:{u7D22}{u4E66}{u53F7}|m:{u8D44}{u6599}{u79CD}{u7C7B}
 BIB_TOC_HEADER_chx=<strong>&#30446;&#24405;</strong>
@@ -1459,6 +1459,16 @@ ICON_BIB_HOLDINGS_ITEMS_chx=&#26597;&#30475;&#25335;&#36125;&#22797;&#21360;&#26
 ICON_BIB_PAGING_NEXT_chx=<span class="button"><span class="buttonText" id="buttonNextRecord">&#19979;&#19968;&#35760;&#24405;</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BIB_PAGING_PREV_chx=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">&#21069;&#19968;&#35760;&#24405;</span></span>
 ICON_RECORDLINK_chx=<div class="bibRecordLink"><div class="bibInfoLabel">&#27704;&#20037;&#38142;&#25509;</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
+
+INNREACH_chx=<span class="navButton">MOBIUS<br>&#26816;&#32034;</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+
+# IRSSO SETUP
+
+INNREACH_REMOTE_chx=laurel.lso.missouri.edu&<span class="navButton">MOBIUS&#26816;&#32034;</span>@laurel.lso.missouri.edu:2083(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+INNREACH_REMOTE_SSL_chx=laurel.lso.missouri.edu&<span class="navButton">MOBIUS&#26816;&#32034;</span>@laurel.lso.missouri.edu:2443(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+SSO_VALID_HOSTS=128.206.14.98|laurel.lso.missouri.edu|m.laurel.lso.missouri.edu|merlin-mobius.missouri.edu
+
+ITEMS_MSG_BRIEF=&#28857;&#20987;&#36825;&#37324;&#26597;&#30475;&#22797;&#26412;
 LINK856TEXT_chx=&#25509;&#36890;
 BIB_LICENSE_FIELDS_chx=&#20801;&#35768;:Vlw|&#38480;&#21046;:Vlx
 BIB_RESOURCE_CAPTION_chx=<strong>UMKC&#29992;&#25143;&#21487;&#20197;&#36890;&#36807;&#38142;&#25509;&#21040;&#36825;&#20010;&#36164;&#28304;</strong>
@@ -1494,11 +1504,11 @@ ICON_BUT_REQUEST_SELECTED_chx=<div onmousedown="this.className='pressedState';" 
 ICON_REQUEST_chx=<span class="navButtonSmall navButton">&#35201;&#27714;</span>
 #REQFILLTIME_chx=14|<br>&#21487;&#21033;&#29992;&#35201;&#27714;&#32422;&#20110; %d &#26085;|<br>&#30446;&#21069;&#20272;&#35745;&#21487;&#29992;&#24230;: &#32422;&#20110; %d &#26085;|<br>&#27492;&#36164;&#26009;&#20063;&#35768;&#31435;&#21363;&#21487;&#29992;
 REQUEST_chx=&#20445;&#30041;&#27492;&#39033;&#30446;|denyiflocalavail|ask|Y
-#REQUEST_INSTRUCTION_chx=&#35831;&#36755;&#20837;&#20219;&#20309;&#29305;&#21035;&#25552;&#31034;:
-REQUEST_MULTI_chx=&#39044;&#23450;&#20070;&#36710;&#20869;&#25152;&#26377;&#39033;&#30446;|bib|ask
+REQUEST_INSTRUCTION_chx=<strong>&#29305;&#21035;&#35828;&#26126;</strong><ul><li> &#22914;&#26524;&#26377;&#22810;&#20010;&#21367;/&#20876;&#65292;&#20250;&#25552;&#31034;&#24744;&#30340;&#36873;&#25321;&#21487;&#33021;&#22312;&#19979;&#19968;&#30028;&#38754;&nbsp; <strong>&#19981;&#35201;&#20351;&#29992;&#19979;&#38754;&#30340;&#25991;&#26412;&#26694;</strong>&nbsp; &#22914;&#26524;&#24744;&#38656;&#35201;&#22810;&#20010;&#21367;/&#20876;, &#23545;&#27599;&#20010;&#21367;&#20876;&#24744;&#23558;&#38656;&#35201;&#25191;&#34892;&#21333;&#29420;&#30340;&#35831;&#27714;</li><li>&#24744;&#21487;&#20197;&#20174;MU&#20070;&#24211;&#20511;&#38405;&#32553;&#24433;&#33014;&#29255;&nbsp; I&#22914;&#26524;&#24744;&#38656;&#35201;&#21333;&#29420;&#30340;&#32553;&#24433;&#33014;&#29255;, &#35831;&#24744;&#22312;&#19979;&#26694;&#20013;&#22635;&#20837;&#20854;&#25968;&#23383;&#26631;&#35782;&#31526;. &#20363;&#22914;:</li><ul>  <li>2005 ASI 8486-1.2</li><li> 1988 IIS 1300-S61.19 </li><li> ED516836</li></ul></ul>
 ICON_BUT_PAT_CANCEL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#21462;&#28040;</span></span></div></div>
 ICON_BUT_PAT_CANCELALL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#20840;&#21462;&#28040;</span></span></div></div>
 ICON_BUT_PAT_CANCELMARK_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#21462;&#28040;&#36873;&#25321;</span></span></div></div>
+ICON_BUT_PAT_CHKOUTS_chx=&#32493;&#20511;/&#27983;&#35272;&#24050;&#20511;&#20986;&#20070;&#30446;
 #ICON_BUT_PAT_FINES_chx=<span class="button"><img src="/screens/ico_payment.png" alt=""><span class="buttonText">&#32602;&#27454;</span></span>
 ICON_BUT_PAT_INFO_chx=<span class="button"><img src="/screens/ico_patron.png" alt=""><span class="buttonText">&#20462;&#25913;&#20010;&#20154;&#36164;&#26009;</span></span>
 ICON_BUT_PAT_MSGS_chx=<span class="button"><img src="/screens/ico_browse_brief.png" alt=""><span class="buttonText">&#26469;&#33258;&#22270;&#20070;&#39302;&#20043;&#28040;&#24687;</span></span>
