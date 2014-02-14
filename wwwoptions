@@ -1130,7 +1130,7 @@ LOC_kw=http://library.umkc.edu/merlin-locations-mnl#other
 #spanish wwwoptions
 #AVAILLIM_spi=<span class="availLimMessage">Limitar la b&#250;squeda a ejemplares disponibles</span>|<span class="availLimMessage">Resultados de la b&#250;squeda limitados a ejemplares disponibles</span>
 #BOTLOGO_spi=@screens/botlogo_spi.html
-ICON_BUT_ASRSICON=<div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Recoger en Miller Nichols</span></span></div></div>
+ICON_BUT_ASRSICON_spi=<div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Recoger en Miller Nichols</span></span></div></div>
 ICON_BUT_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
 ICON_BUT_CLOSEWINDOW_spi=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Cerrar ventana</span></span>
 ICON_BUT_RET2CAT_spi=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Volver al cat&#225;logo</span></span>
@@ -1397,6 +1397,7 @@ ICON_PROGRAM_CAL_spi=<span class="button"><img src="/screens/ico_calendar.gif" a
 
 #AVAILLIM_chx=<span class="availLimMessage">&#21487;&#29992;&#26465;&#27454;&#38480;&#21046;&#25628;&#32034;</span>|<span class="availLimMessage">&#21487;&#29992;&#26465;&#27454;&#38480;&#21046;&#25628;&#32034;&#32467;&#26524;</span>
 #BOTLOGO_chx=@screens/botlogo_chx.html
+ICON_BUT_ASRSICON_chx=<div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#22312;Miller Nichols&#22788;&#39046;&#21462;</span></span></div></div>
 ICON_BUT_CANCEL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#21462;&#28040;</span></span></div></div>
 ICON_BUT_CLOSEWINDOW_chx=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">&#20851;&#38381;&#35270;&#31383;</span></span>
 ICON_BUT_RET2CAT_chx=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">&#22238;&#33267;&#30446;&#24405;</span></span>
@@ -1590,15 +1591,15 @@ ICON_BUT_RESOURCELINK_chx=<div id="resourcelink"><span class="button"><img src="
 ICON_BUT_RET2RESOURCE_chx=<div id="resourcelink"><span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">&#22238;</span></span></div>
 #WBHEADERTEXT_chx=&#20197;&#19979;&#36164;&#28304;&#20063;&#35768;&#21487;&#25191;&#34892;&#39069;&#22806;&#20449;&#24687;&#26377;&#20851;&#20110;<br>#HEADER#
 ICON_PATFEED_chx=<span class="button"><img src="/screens/ico_rss.gif" alt=""><span class="buttonText">&#25105;&#30340;&#35760;&#24405;Feeds</span></span>
-PATFEED_CONFIG_chx=&#24744;&#30340;&#22270;&#20070;&#39302;&#35760;&#24405;&#26032;&#38395;|&#38543;&#38142;&#25509;&#33267;&#22270;&#20070;&#39302;&#35760;&#24405;&#26597;&#21462;&#20840;&#37096;&#35814;&#24773;&#12290;
+PATFEED_CONFIG_chx=&#22270;&#20070;&#39302;&#26032;&#38395;&#20449;&#24687;|&#28857;&#20987;&#38142;&#25509;&#35265;&#35814;&#24773;
 PATFEED_FINES_INCURRED_RECENTLY_chx=&#24744;&#26377;&#26032;&#32602;&#27454;&#25110;&#20184;&#36153;
 PATFEED_HOLDS_READY_chx=&#24744;&#30340;&#26448;&#26009;&#24050;&#20934;&#22791;&#21487;&#38543;&#26102;&#25552;&#21462;
 #PATFEED_IMAGE_chx=/screens/rss.gif|&#35746;&#38405;&#24744;&#30340;&#22270;&#20070;&#39302;&#35760;&#24405;&#20043;feed&#12290;|88|31
 PATFEED_ITEMS_BOOKED_TOMORROW_chx=&#26448;&#26009;&#39044;&#23450;&#20026;&#26126;&#22825;
-PATFEED_ITEMS_DUE_SOON_chx=&#26448;&#26009;&#21363;&#23558;&#21040;&#26399;
-PATFEED_ITEMS_DUE_TODAY_chx=&#26448;&#26009;&#20170;&#22825;&#21040;&#26399;
-PATFEED_ITEMS_OVERDUE_chx=&#26448;&#26009;&#24050;&#36807;&#26399;
-PATFEED_ITEMS_RECALLED_chx=&#26448;&#26009;&#24050;&#21484;&#22238;
+PATFEED_ITEMS_DUE_SOON_chx=&#21363;&#23558;&#21040;&#26399;&#20070;&#30446;
+PATFEED_ITEMS_DUE_TODAY_chx=&#20170;&#26085;&#21040;&#26399;&#20070;&#30446;
+PATFEED_ITEMS_OVERDUE_chx=&#36926;&#26399;&#20070;&#30446;
+PATFEED_ITEMS_RECALLED_chx=&#39044;&#32422;&#20070;&#30446;
 PATFEED_PROGRAM_SESSION_SOON_chx=&#24744;&#24050;&#27880;&#20876;&#20043;&#27963;&#21160;&#21363;&#23558;&#25512;&#20986;&#12290; &#35831;&#30331;&#20837;&#24744;&#30340;&#35835;&#32773;&#24080;&#25143;&#23547;&#30475;&#27963;&#21160;&#26085;&#26399;&#65292;&#26102;&#38388;&#21644;&#22320;&#28857;&#12290;
 PATFEED_PROGRAM_SESSION_TOMORROW_chx=&#24744;&#24050;&#27880;&#20876;&#20043;&#27963;&#21160;&#23558;&#20110;&#26126;&#22825;&#25512;&#20986;&#12290; &#35831;&#30331;&#20837;&#24744;&#30340;&#35835;&#32773;&#24080;&#25143;&#23547;&#30475;&#27963;&#21160;&#26085;&#26399;&#65292;&#26102;&#38388;&#21644;&#22320;&#28857;&#12290;
 PATFEED_PROGRAM_SESSION_TODAY_chx=&#24744;&#24050;&#27880;&#20876;&#20043;&#27963;&#21160;&#23558;&#20110;&#20170;&#22825;&#25512;&#20986;&#12290; &#35831;&#30331;&#20837;&#24744;&#30340;&#35835;&#32773;&#24080;&#25143;&#23547;&#30475;&#27963;&#21160;&#26085;&#26399;&#65292;&#26102;&#38388;&#21644;&#22320;&#28857;&#12290;
