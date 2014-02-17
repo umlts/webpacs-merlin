@@ -1,6 +1,5 @@
         <p><strong>&#23450;&#26399;&#25628;&#32034;</strong></p>
-        <p>Search for exact titles for journals, newspapers, or magazines. Enter words starting at the beginning of the title.</p>
-        <p><em>Example:</em></p>
+        <p>&#23450;&#26399;&#25628;&#32034;. &#38543;&#24847;&#38190;&#20837;&#22810;&#25110;&#23569;&#30340;&#26631;&#39064;&#12290;&#20363;:</p>
         <ul>
           <li><em>journal of management inquiry</em></li>
           </ul>
