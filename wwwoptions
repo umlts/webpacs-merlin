@@ -1461,8 +1461,7 @@ ICON_BIB_PAGING_NEXT_chx=<span class="button"><span class="buttonText" id="butto
 ICON_BIB_PAGING_PREV_chx=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">&#21069;&#19968;&#35760;&#24405;</span></span>
 ICON_RECORDLINK_chx=<div class="bibRecordLink"><div class="bibInfoLabel">&#27704;&#20037;&#38142;&#25509;</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
 
-INNREACH_chx=<span class="navButton">MOBIUS<br>&#26816;&#32034;</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
-
+INNREACH_chx=<span class="navButton">Search<br>MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
 # IRSSO SETUP
 
 INNREACH_REMOTE_chx=laurel.lso.missouri.edu&<span class="navButton">MOBIUS&#26816;&#32034;</span>@laurel.lso.missouri.edu:2083(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
@@ -1487,7 +1486,7 @@ ICON_MYLISTS_MOVE_chx=<div onmousedown="this.className='pressedState';" onmouseo
 ICON_MYLISTS_REQUEST_chx=<span class="button"><img src="/screens/ico_checkmark_16px.png" alt=""><span class="buttonText">&#35201;&#27714;</span></span>
 ICON_MYLISTS_REMOVE_DUPLICATES_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#21024;&#38500;&#37325;&#22797;&#39033;</span></span></div></div>
 ICON_MYLISTS_RENAME_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#26356;&#25913;&#21517;&#31216;/&#25551;&#36848;</span></span></div></div>
-ICON_MYLISTS_SAVE_chx=<"navButton">&#28155;&#21152;&#33267;&#25105;&#30340;&#21015;&#34920;</span>
+ICON_MYLISTS_SAVE_chx=<"navButtonOneline">&#28155;&#21152;&#33267;&#25105;&#30340;&#21015;&#34920;</span>
 ICON_MYLISTS_SAVE_TO_LIST_chx=<span class="button"><img src="/screens/ico_list_add.gif" alt=""><span class="buttonText">&#28155;&#21152;&#24050;&#26631;&#33267;&#25105;&#30340;&#21015;&#34920;</span></span>
 ICON_MYLISTS_BRIEF_chx=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">&#28155;&#21152;&#33267;&#25105;&#30340;&#21015;&#34920;</span></span>
 ICON_BACK_TO_MYLISTS_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#22238;&#33267;&#25105;&#30340;&#21015;&#34920;</span></span></div></div>
