@@ -85,7 +85,7 @@ $(document).ready(function(){
 <option value="a:">Autor</option>
 <option value="t:">T&#237;tulo</option>
 <option value="d:">Materia</option>
-<option value="c:">Signatura:</option>
+<option value="c:">Tabla de Contenidos:</option>
 <option value="N:">Notes and Genre:</option>
 </select>
 <input maxlength="100" size="35" name="searchText1" />
@@ -103,7 +103,7 @@ $(document).ready(function(){
 <option value="a:">Autor</option>
 <option value="t:">T&#237;tulo</option>
 <option value="d:">Materia</option>
-<option value="c:">Signatura:</option>
+<option value="c:">Tabla de Contenidos:</option>
 <option value="N:">Notes and Genre:</option>
 </select>
 <input maxlength="100" size="35" name="searchText2" />
@@ -121,7 +121,7 @@ $(document).ready(function(){
 <option value="a:">Autor</option>
 <option value="t:">T&#237;tulo</option>
 <option value="d:">Materia</option>
-<option value="c:">Signatura:</option>
+<option value="c:">Tabla de Contenidos:</option>
 <option value="N:">Notes and Genre:</option>
 </select>
 <input maxlength="100" size="35" name="searchText3" />
@@ -210,7 +210,6 @@ $(document).ready(function(){
 <option value="">ANY</option>
 <option value=""></option>
 <option value="s*">AUDIO FORMATS</option>
-<option value="/search*spi/s">T&#237;tulo de revista</option>
 <option value="s*">All Sound Recording Formats</option>
 <option value="ss">Audio cassettes</option>
 <option value="sd f">CDs</option>
@@ -249,14 +248,10 @@ $(document).ready(function(){
     
 <div class="searchTips">
 <p><strong>Consejos sobre la b&#250;squeda</strong></p>
-<p>Indique la palabra clave que quiere encontrar. Por ejemplo:</p>
-<ul>
-<li>dise&#241;o</li>
-<li>rojas celestina</li>
-</ul>
-<p><em>Truncation:</em> educat* finds educate, educated, education, etc.</p>
-<p><em>Phrase search:</em> "physical therapy"</p>
-<p><a id="moreLink">More Search Tips</a></p>
+<p>Indique la palabra clave que quiere encontrar. </p>
+<p><em>Truncamiento :</em> educat* finds educate, educated, education, etc.</p>
+<p><em>B&#250;squedas de frase:</em> "physical therapy"</p>
+<p><a id="moreLink">Consejos para Búsquedas </a></p>
 </div>
 
 
@@ -264,35 +259,33 @@ $(document).ready(function(){
 <table class="tipsTable">
           <tr>
             <th>Consejos sobre la b&#250;squeda</th>
-            <th>Definition</th>
-            <th>Example</th>
+            <th>Definici&#243;n</th>
+            <th>Ejemplo</th>
           </tr>
 
           <tr>
             <th>Comodines</th>
           <td>Se pueden truncar las palabras usande el asterisco ('*'), que reemplaza a otros caracteres. Use '**' para truncar hasta cinco caracteres. El comod&#237;n '*' se puede incluir en la cadena de b&#250;squeda. Puede usar '?' para reemplazar un caracter en cualquier lugar de la palabra.<br>
-          <span style="text-decoration:underline">Ejemplos</span> : pol&#237;t* ambient*, Anders?n</td>
+          <span style="text-decoration:underline">Ejemplos</span> : environment* polic*, wom?n</td>
           </tr>
         
           <tr>
             <th>Adyacencia</th>
           <td>Las palabras m&#250;ltiples se buscan juntas como una frase.<br>
-          <span style="text-decoration:underline">Ejemplo</span> : organizaci&#243;n muldial de la salud</td>
+          <span style="text-decoration:underline">Ejemplo</span> : world health organization</td>
           </tr>
 
           <tr>
             <th>Operadores de proximidad</th>
           <td>Use "near" para especificar palabras una al lado de la otra, en cualquier orden.<br>
-          <span style="text-decoration:underline">Ejemplo</span> : california near universidad</td>
+          <span style="text-decoration:underline">Ejemplo</span> : california near university</td>
           </tr>
 
           <tr>
-            <td>Proximity</td>
-            <td>Determines    spatial relationship of search terms. </td>
-            <td> Use:<br />
+            <td> Ejemplo:<br />
                 NEAR <br />
                 to    search words within 10 words of each other.<br />
-                Example: <br />
+                Ejemplo: <br />
                 audubon near birds<br />
                 <br />
                 Use:<br />
@@ -301,11 +294,11 @@ $(document).ready(function(){
               <p>                Example: <br />
                 accounting within 5</p>
               <p>
-                Use:<br />
+                Ejemplo:<br />
               BEFORE <br />
                 to    determine order of search terms. First term must come before second. <br />
               </p>
-              <p>Example: <br />
+              <p>Ejemplo: <br />
                 pay before  television              </p>
               <p>Use:<br />
                 AFTER<br />
@@ -317,8 +310,8 @@ $(document).ready(function(){
           <tr>
             <th>Operadores Booleanos</th>
           <td>Use "and" u "or" para especificar multiples palabras en cualquier campo, cualquier orden. Use "and not" para excluir palabras.<br>
-          <span style="text-decoration:underline">Ejemplo</span> : accioness and bonos<br>
-          <span style="text-decoration:underline">Ejemplo</span> : (alaska or canada) and (aventura and not vacaci&#243;n)</td>
+          <span style="text-decoration:underline">Ejemplo</span> : stocks and bonds<br>
+          <span style="text-decoration:underline">Ejemplo</span> : (stocks or bonds) and (stocks and not bonds)</td>
           </tr>
           <tr>
             <th>Limitar por campos</th>
@@ -328,7 +321,7 @@ $(document).ready(function(){
           <tr>
             <td>L&#237;mites por campo</td>
             <td>Es posible limitar los campos seleccionando un campo de limitaci&#243;n de la lista. Estos l&#237;mites aparecen antes de la frase o palabra a buscar. La limitaci&#243;n por campo hace que el sistema solo busque el campo o palabra(s) especificado(s).
-                  a:Autor t:T&#237;tulo s:Materia n:Nota c:table of contents </td>
+                  a:Autor t:T&#237;tulo s:Materia n:Nota c:Tabla de contenidos </td>
             <td valign="top"><strong>&nbsp;&quot;</strong><strong>second    language acquisition&quot; </strong><strong>[in Title:]</strong>
               
               zora [in Author:] [AND] <br />
@@ -360,32 +353,25 @@ $(document).ready(function(){
 <table class="tipsTable">
 
             <tr>
-              <td>Relevance </td>
+              <td>Agrupar </td>
               <td><ul>
-                <li>Keyword search results    are automatically ranked by    relevancy. This is intended to bring the best results to the top.</li>
-                <li>Results will appear in    up to 5 groups. Each group is ordered by date.</li>
-                <li>To deactivate ranked    results, select: Author, Title, Subject, or Note from the Anywhere drop down    menu OR enclose your search string in quote marks OR choose to sort your    ranked results by Date or Title. </li>
+                <li>Los resultados de la b&#250;squeda por palabra clave generalmente se agrupan por relevancia para mostrar los t&#237;tulos m&#225;s apropiados primero. Cada grupo tiene un nivel similar de relevancia y los resultados se ordenan dentro del propio grupo por fecha o t&#237;tulo. Si quiere obtener un conjunto de resultados no agrupados, utilice los operadores booleanos para formar una consulta compleja.</li>
               </ul></td>
             </tr>
             <tr>
-              <td><p>Most relevant</td>
-              <td>The search term appears in the title proper. </td>
+              <td><p>&nbsp;M&#225;s relevantes t&#237;</td>
+              </tr>
+            <tr>
+              <td>&nbsp;Altamente relevantes t&#237;tulos&nbsp;</td>
             </tr>
             <tr>
-              <td>Highly relevant</td>
-              <td> The search term appears in the subtitle. </td>
+              <td> &nbsp;Muy relevante t&#237;tulos&nbsp; </td>
             </tr>
             <tr>
-              <td> Very relevant </td>
-              <td> The search term appears in contents, summary, or note    fields or subject or other added heading fields.  </td>
+              <td> &nbsp;Relevante t&#237;tulos&nbsp; </td>
             </tr>
             <tr>
-              <td> Relevant </td>
-              <td> The Boolean AND pulls words from the search term in the title proper and/or subtitle. </td>
-            </tr>
-            <tr>
-              <td> Other relevant</td>
-              <td> The Boolean AND pulls words from the search term from anywhere else in the record. </td>
+              <td> &nbsp;Otra relevancia t&#237;tulos&nbsp;</td>
             </tr>
 </table>
 
