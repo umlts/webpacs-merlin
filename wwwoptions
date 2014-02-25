@@ -1490,7 +1490,7 @@ ICON_MYLISTS_SAVE_chx=<span class="navButtonOneLine">&#28155;&#21152;&#33267;&#2
 ICON_MYLISTS_SAVE_TO_LIST_chx=<span></span>
 ICON_MYLISTS_BRIEF_chx=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">&#28155;&#21152;&#33267;<br>&#25105;&#30340;&#21015;&#34920;</span></span>
 ICON_BACK_TO_MYLISTS_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#22238;&#33267;&#25105;&#30340;&#21015;&#34920;</span></span></div></div>
-ICON_MYLISTS_RECORD_chx=<span class=""navButton">&#28155;&#21152;&#33267;&#25105;&#30340;&#21015;&#34920;</span>
+ICON_MYLISTS_RECORD_chx=<span class="navButton">&#28155;&#21152;&#33267;&#25105;&#30340;&#21015;&#34920;</span>
 ICON_BUT_BIBEXPORT_chx=<span class="navButton">&#20445;&#23384;&#21040;&#25991;&#20214;&#22841;</span>
 ICON_BUT_CLEAR_MARKED_chx=<span class="navButton">&#28165;&#38500;&#20445;&#23384;&#35760;&#24405;</span>
 ICON_BUT_EXPORT_MULTI_chx=<span class="navButton">&#36716;&#20986;&#24050;&#23384;</span>
