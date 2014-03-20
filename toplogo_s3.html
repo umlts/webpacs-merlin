@@ -39,6 +39,11 @@ $(document).ready(function () {
 		$("ul li:nth-child(2)").css({'border':'0'});
 		$("ul li:nth-child(3)").css({'border':'0'});
 		$("ul li:nth-child(4)").css({'border':'0'});
+		$("td .browseEntryMark").hide();
+	};
+		if ($("td:contains('Database Name')").length > 0 ){	
+		$("td .browseHeaderMark").hide();	
+		$("td .browseEntryMark").hide();
 	};
 	});
 </script>
