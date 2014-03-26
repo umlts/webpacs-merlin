@@ -31,6 +31,22 @@ $(document).ready(function () {
 			$('#searcharg').val(newSearchTerm);
 		}
 		});
+	if ($("td:contains('Database Subjects')").length > 0 ){	
+		$("[href='/search/X#tab-1']").hide();
+		$("[href='/search/Y']").hide();
+		$("[href='/search/X#tab-3']").hide();
+		$("[href='/search/X#tab-4']").hide();
+		$('li').first().css({'border':'0'});
+		$("ul li:nth-child(2)").css({'border':'0'});
+		$("ul li:nth-child(3)").css({'border':'0'});
+		$("ul li:nth-child(4)").css({'border':'0'});
+		$("td .browseEntryMark").hide();
+	};
+		if ($("td:contains('Database Name')").length > 0 ){	
+		$("td .browseSaveJump").hide();
+		$("td .browseHeaderMark").hide();	
+		$("td .browseEntryMark").hide();
+	};
 	});
 </script>
 
