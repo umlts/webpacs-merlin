@@ -140,7 +140,8 @@ $(document).ready(function(){
 <p>In each box hold down the CTRL or Apple key to select more than one.</p>
 
 <div class="formEntryArea" id="form3PartAdvLimitSort">
-<!--{sort}-->
+<label for="SORT"> TEST: Search and Sort:</label><select name="SORT" id="SORT">
+<option value="D" selected="selected">sorted by relevance</option><option value="DX">sorted by date</option><option value="AX">sorted by title</option></select>
 </div>
 
 <div class="formEntryArea">
@@ -161,9 +162,33 @@ School:
 <div class="formEntryArea">
 <!--{branch}-->
 </div>
+
+
 <div class="formEntryArea">
-<!--{lang}-->
+<table border="0">
+<tr><td><label for="l">TEST:Language of Work:</label></td><td><select id="l" name="l" size="5" multiple="multiple">
+<option value="">ANY</option>
+<option value="eng">英文</option>
+<option value="fre">法文</option>
+<option value="ger">德文</option>
+<option value="ita">意大利文</option>
+<option value="spa">西班牙文</option>
+<option value="rus">Russian</option>
+<option value="jpn">Japanese</option>
+<option value="chi">中文</option>
+<option value="bul">Bulgarian</option>
+<option value="kor">Korean</option>
+<option value="may">Malay</option>
+<option value="tha">Thai</option>
+<option value="heb">Hebrew</option>
+<option value="yid">Yiddish</option>
+<option value="ara">Arabic</option>
+</select>
+</td>
+</tr></table>
+
 </div>
+
 <div class="formEntryArea">
 <!--{DOCDATE}-->
 </div>
@@ -233,7 +258,40 @@ School:
 </div>
 
 <div class="formEntryArea">
-<!--{mattype}-->
+<table border="0">
+<tr><td><label for="m">TEST: 資料類型:</label></td><td><select id="m" name="m" size="5" multiple="multiple">
+<option value="">ANY</option>
+<option value="a"> Books</option>
+<option value="2"> Ebooks</option>
+<option value="t"> Theses/Dissertations</option>
+<option value="z"> Online Theses/Dissertatn</option>
+<option value="s"> Journals/Newspapers</option>
+<option value="3"> Online Journals/Newspapr</option>
+<option value="g"> DVD/Videos</option>
+<option value="h"> Online Films/Videos</option>
+<option value="y"> Other Films/Videos</option>
+<option value="4"> Slides</option>
+<option value="j"> CD/DVD-Audios</option>
+<option value="w"> Online Sound Recordings</option>
+<option value="i"> Vinyl Sound Recordings</option>
+<option value="u"> Other Sound Recordings</option>
+<option value="c"> Scores</option>
+<option value="b"> Online Scores</option>
+<option value="k"> Images</option>
+<option value="l"> Online Images</option>
+<option value="r"> 3-D Objects</option>
+<option value="e"> Maps</option>
+<option value="d"> Online Maps</option>
+<option value="m"> Software</option>
+<option value="o"> Kits</option>
+<option value="p"> Mixed Materials</option>
+<option value="n"> Online Mixed Materials</option>
+<option value="x"> Other Online Resources</option>
+<option value="f"> Microforms</option>
+</select>
+</td>
+</tr></table>
+
 </div>
 
 <div class="formButtonArea">
