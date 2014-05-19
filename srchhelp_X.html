@@ -19,11 +19,21 @@ startTimeout(1800000, "/");
 <body id="frontPage" onload="if (location.search.indexOf('SUBKEY') != -1 || location.search.indexOf('SEARCH') != -1 || location.search.indexOf('searcharg=') != -1 ) modifySearch(document.location.search); init_progsearch(); if (document.search) document.search.searchText1.focus();">
 <!--{toplogo}-->
 <script type="text/javascript">
+ function upDatequickSearch () {
+                    //Variable for searcharg to hold search term when radio is switched
+   $("#quickSearcharg").val($("#advSearcharg").val());
+        
+ }
 
+ function upDateAdvSearch () {
+
+        $("#advSearcharg").val($("#quickSearcharg").val());
+
+ }
 $(document).ready(function(){
     
     //Loading the correct content when the tab is clicked from another page
-	$('#tabs .tabContent').hide();
+    $('#tabs .tabContent').hide();
         if (window.location.hash.length > 0) {
             $(window.location.hash).show();
             $('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
@@ -32,13 +42,13 @@ $(document).ready(function(){
             $('#tabs ul li:first').addClass('active');
         }
         
-	$('#tabs ul li a').click(function(){
+    $('#tabs ul li a').click(function(){
                 //Switching the tabs
-		$('#tabs ul li').removeClass('active');
-		$(this).parent().addClass('active'); 
-		var currentTab = $(this).attr('href'); 
-		$('#tabs .tabContent').hide();
-		$(currentTab).show();
+        $('#tabs ul li').removeClass('active');
+        $(this).parent().addClass('active'); 
+        var currentTab = $(this).attr('href'); 
+        $('#tabs .tabContent').hide();
+        $(currentTab).show();
                 
                 //To make the Advanced search page happy
                 
@@ -55,20 +65,20 @@ $(document).ready(function(){
                 if(currentTab.indexOf("http") == -1){
                     return false;
                 }
-	});
+    });
 
     //Switching the Keyword/Title menu when the radio button is changed
         $('input.searchtype[value=X]').attr('checked', true);
         $('.innerQuickSearch').hide();
         $('.X .innerQuickSearch').show();
-	$('input.searchtype').click(function(){
+    $('input.searchtype').click(function(){
             $('.innerQuickSearch').hide();
             $('.' + this.value + ' .innerQuickSearch').show();
             $('input.searchtype[value=' + this.value + ']').attr('checked', 'checked');
-	});
-	$('#moreLink').click(function(){
+    });
+    $('#moreLink').click(function(){
              $('#optionalLimits').toggle();
-	});
+    });
         
     //Remove the colons from advanced search
     $('#advancedSubmit').click(function () { 
@@ -120,7 +130,8 @@ $(document).ready(function(){
         
                     <div class="formEntryArea">
                     <input type="hidden" name="fieldLimit1" value="" />
-                    <input class="advancedInput" maxlength="100" size="35" name="searchText1" />
+                    <input onkeyup="javascript:upDatequickSearch();" onchange="javascript:upDatequickSearch();" id="advSearcharg" class="advancedInput" maxlength="100" size="35" name="searchText1" autofocus>
+
 <!--{scope}-->
 <!--{advancedsubmit}-->
                     </div>
@@ -248,7 +259,7 @@ $(document).ready(function(){
         
 <!--{nosort}-->
         
-                    <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+                    <div class="searchBox"><input onkeyup="javascript:upDateAdvSearch();" onchange="javascript:upDateAdvSearch();" name="searcharg" value="" id="quickSearcharg" class="text" type="text" maxlength="100" size="35">
         
 <!--{scope}-->
         
@@ -297,7 +308,7 @@ $(document).ready(function(){
         
 <!--{nosort}-->
         
-        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+        <div class="searchBox"><input name="searcharg" value="" id="searchargTab3" class="text" type="text" maxlength="100" size="35">
         
 <!--{scope}-->
         
@@ -344,7 +355,7 @@ $(document).ready(function(){
         
 <!--{nosort}-->
         
-        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+        <div class="searchBox"><input name="searcharg" value="" id="searchargTab4" class="text" type="text" maxlength="100" size="35">
         
 <!--{scope}-->
         

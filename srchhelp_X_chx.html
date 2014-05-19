@@ -22,6 +22,16 @@ startTimeout(1800000, "/");
 <script type="text/javascript">
 
 $(document).ready(function(){
+    //Variable for searcharg to hold search term when radio is switched
+   $("#quickSearcharg").val($("#advSearcharg").val());
+        
+ }
+
+ function upDateAdvSearch () {
+
+        $("#advSearcharg").val($("#quickSearcharg").val());
+
+ }
     
     //Loading the correct content when the tab is clicked from another page
   $('#tabs .tabContent').hide();
