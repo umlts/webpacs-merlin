@@ -4,7 +4,7 @@
 $(document).ready(function(){
     
     //Loading the correct content when the tab is clicked from another page
-	$('#tabs .tabContent').hide();
+  $('#tabs .tabContent').hide();
         if (window.location.hash.length > 0) {
             $(window.location.hash).show();
             $('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
@@ -13,13 +13,13 @@ $(document).ready(function(){
             $('#tabs ul li:first').addClass('active');
         }
         
-	$('#tabs #tabRow li a').click(function(){
+  $('#tabs #tabRow li a').click(function(){
                 //Switching the tabs
-		$('#tabs ul li').removeClass('active');
-		$(this).parent().addClass('active'); 
-		var currentTab = $(this).attr('href'); 
-		$('#tabs .tabContent').hide();
-		$(currentTab).show();
+    $('#tabs ul li').removeClass('active');
+    $(this).parent().addClass('active'); 
+    var currentTab = $(this).attr('href'); 
+    $('#tabs .tabContent').hide();
+    $(currentTab).show();
                 
                 //To make the Advanced search page happy
                 
@@ -33,23 +33,29 @@ $(document).ready(function(){
                 
                 //This makes it so the scrollbar doesn't jump to the anchor tag.  It also, unfortunately, makes it so the back button doesn't work.  
                 return false;
-	});
+  });
 
     //Switching the Keyword/Title menu when the radio button is changed
         $('input.searchtype[value=X]').attr('checked', true);
         $('.innerQuickSearch').hide();
         $('.X .innerQuickSearch').show();
-	$('input.searchtype').click(function(){
+  $('input.searchtype').click(function(){
             $('.innerQuickSearch').hide();
             $('.' + this.value + ' .innerQuickSearch').show();
             $('input.searchtype[value=' + this.value + ']').attr('checked', 'checked');
-	});
-	$('#moreLink').click(function(){
+  });
+  $('#moreLink').click(function(){
              $('#optionalLimits').toggle();
-	});
-        
+});
+
+
+$('.vol').append($('center'));
+
+
+//$('tr.bibItemsHeader').prepend($('center'));//works but spaced wierd
+
     //Remove the colons from advanced search
-    $('#advancedSubmit').click(function () { 
+    $('#advancedSubmit').click(function () {
       var searchTerm = $('.advancedInput').val();
       if((/\b[atsn]:/).test(searchTerm)) {}else {
       var newSearchTerm = searchTerm.replace(":", " ");
@@ -96,7 +102,7 @@ $(document).ready(function(){
 
 <!-- just a placeholder for the sms form -->
 <div id='sms' style="visibility:hidden;display:none">
-</div>  
+</div>
 
 <!--{recordinfo:a}-->
 
@@ -130,6 +136,8 @@ $(document).ready(function(){
 <!--{artthumb}-->
 <!--{xmlframe}-->
 
+
+
 <div id="tabs">
     <ul id="tabRow">
       <li class="tab"><a href="#tab-1">Locations</a></li>
@@ -149,37 +157,40 @@ $(document).ready(function(){
             </span>
         </a></li>
     </ul>
-
-	<div id="tab-1" class="tabContent">
+    
+    <div id="tab-1" class="tabContent">
 <!--{holds}-->
 <!--{holdings}-->
-		<div class="bibDisplayItems">
+<div class="vol"></div>
+        <div class="bibDisplayItems">
 <!--{items}-->
-		</div>
+        </div>
 <!--{orders}-->
-		<div class="bibDisplayContentMore">
+        <div class="bibDisplayContentMore">
 <!--{recordinfo:rv}-->
 <!--{ifTOC}-->
 <!--{TOC}-->
 <!--{xif}-->
 <!--{recordinfo:synqdmbujikflo}-->
-		</div>
-	</div><!--tab1-->
+        </div>
+    </div><!--tab1-->
     <div id="tab-2" class="tabContent">
 <!--{recordinfo:atdmjbus}-->
     </div><!--tab3-->
 </div>
 
+
 </div>
+
 
 </div><!-- close bibDisplayContent -->
 <div class="clear"></div>
 </div><!-- close bibDisplayBody -->
 
-    <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
+    <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist. If they don't, we hide the buttons -->
        <script>
        var f = document.getElementById('bib_detail');
-       try { 
+       try {
         var itms = document.getElementById('bib_items');
         var tr = itms.getElementsByTagName('TR');
         for(i = 1; i < tr.length; i++) {
@@ -213,32 +224,35 @@ if (itemLocation.indexOf("Marr Sound Archives RooBot") > 0){
 <!--{botlogo}-->
 
 
-<script type='text/javascript'> 
+<script type='text/javascript'>
     var ProcessResults = function(bookInfo) {
         var buttonImg = "<img src='/screens/googlebutton.gif' alt='Google Preview'>"
         var textGBS = "";
         for (ISBN in bookInfo) {
             var b = bookInfo[ISBN];
-            var bookJacket =  "<img src='" + b.thumbnail_url + "&zoom=1'>";
+            var bookJacket = "<img src='" + b.thumbnail_url + "&zoom=1'>";
             //form the text of Google Book contents
             if (b && (b.preview == "full")) {
-                //textGBS = "<p>Full Text</p>";
+                textGBS = "<p>Full Text</p>";
                 //"Google Book Search";
                 document.getElementById("googlebooks").innerHTML = bookJacket + "<a href='" + b.preview_url + "'>" + buttonImg + textGBS + "</a>"
             }
             else if (b && (b.preview == "partial")) {
-                //textGBS = "<p>Limited Preview</p>"
+                textGBS = "<p>Limited Preview</p>"
                 //"Preview at Google Book Search";
                 document.getElementById("googlebooks").innerHTML = bookJacket + "<a href='" + b.preview_url + "'>" + buttonImg + textGBS + "</a>"
             }
             else if (b && (b.preview == "noview")) {
+                //textGBS = "<p>Search in Google Books</p>"
                 //"Preview at Google Book Search";
                 if (b.thumbnail_url != undefined){
-                document.getElementById("googlebooks").innerHTML = bookJacket + "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
+                document.getElementById("googlebooks").innerHTML = bookJacket
+                  //"<a href='" + b.preview_url + "'>" + bookJacket + "</a>"
+
                 }
             }
             else {
-                //document.getElementById("googlebooks").innerHTML = "None available.";
+                //document.getElementById("googlebooks").innerHTML = bookJacket + "None available.";
             }
     }
 }
@@ -258,4 +272,3 @@ document.documentElement.firstChild.appendChild(s);
 //alert (api_url);
 
 </script>
-
