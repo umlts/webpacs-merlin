@@ -26,6 +26,17 @@ function submitSubject() {
 <body id="frontPage" onload="if (location.search.indexOf('SUBKEY') != -1 || location.search.indexOf('SEARCH') != -1 || location.search.indexOf('searcharg=') != -1 ) modifySearch(document.location.search); init_progsearch(); if (document.search) document.search.searchText1.focus();">
 <!--{toplogo}-->
 <script type="text/javascript">
+function upDatequickSearch () {
+                    //Variable for searcharg to hold search term when radio is switched
+   $("#quickSearcharg").val($("#advSearcharg").val());
+        
+ }
+
+ function upDateAdvSearch () {
+
+        $("#advSearcharg").val($("#quickSearcharg").val());
+
+ }
 
 $(document).ready(function(){
     
@@ -417,59 +428,63 @@ $(document).ready(function(){
         <div id="dbRows">
         <div id="rowLeft">
         <ul class="databaseListing span7">
-        <li><a href="/search~S4*spi/x?anthropology">Anthropology</a></li>
-        <li><a href="/search~S4*spi/x?architecture urban planning and design">Architecture Urban Planning and Design</a></li>
-        <li><a href="/search~S4*spi/x?art and art history">Art and Art History</a></li>
-        <li><a href="/search~S4*spi/x?biological sciences">Biological Sciences</a></li>
-        <li><a href="/search~S4*spi/x?business and public administration">Business and Public Administration</a></li>
-        <li><a href="/search~S4*spi/x?chemistry">Chemistry</a></li>
-        <li><a href="/search~S4*spi/x?communication studies">Communication Studies</a></li>
-        <li><a href="/search~S4*spi/x?computer science and electrical engineering">Computer Science and Electrical Engineering</a></li>
-        <li><a href="/search~S4*spi/x?criminal justice and criminology">Criminal Justice and Criminology</a></li>
-        <li><a href="/search~S4*spi/x?dance">Dance</a></li>
-        <li><a href="/search~S4*spi/x?dentistry">Dentistry</a></li>
-        <li><a href="/search~S4*spi/x?economics">Economics</a></li>
-        <li><a href="/search~S4*spi/x?education">Education</a></li>
-        <li><a href="/search~S4*spi/x?engineering">Engineering</a></li>
-        <li><a href="/search~S4*spi/x?english literature">English Literature</a></li>
-        <li><a href="/search~S4*spi/x?environmental studies">Environmental Studies</a></li>
-        <li><a href="/search~S4*spi/x?ethnic studies">Ethnic Studies</a></li>
-        <li><a href="/search~S4*spi/x?film studies">Film Studies</a></li>
-        <li><a href="/search~S4*spi/x?fine and performing arts">Fine and Performing Arts</a></li>
-        <li><a href="/search~S4*spi/x?foreign languages and literatures">Foreign Languages and Literatures</li>
-        <li><a href="/search~S4*spi/x?general and multidisciplinary">General and Multidisciplinary</a></li>
-        <li><a href="/search~S4*spi/x?geosciences and geography">Geosciences and Geography</a></li>
-        <li><a href="/search~S4*spi/x?health sciences biosciences">Health Sciences/Biosciences</a></li>
-        </ul>
-        </div>
-        <div id="rowRight">
-        <ul class="databaseListing span6">
-        <li><a href="/search~S4*spi/x?history">History</a></li>
-        <li><a href="/search~S4*spi/x?humanities">Humanities</a></li>
-        <li><a href="/search~S4*spi/x?kansas city metro research">Kansas City Metro Research</a></li>
-        <li><a href="/search~S4*spi/x?language and linguistics">Language and Linguistics</a></li>
-        <li><a href="/search~S4*spi/x?law">Law</a></li>
-        <li><a href="/search~S4*spi/x?library science">Library Science</a></li>
-        <li><a href="/search~S4*spi/x?mathematics and statistics">Mathematics and Statistics</a></li>
-        <li><a href="/search~S4*spi/x?medicine">Medicine</a></li>
-        <li><a href="/search~S4*spi/x?music">Music</a></li>
-        <li><a href="/search~S4*spi/x?nursing">Nursing</a></li>
-        <li><a href="/search~S4*spi/x?pharmacy">Pharmacy</a></li>
-        <li><a href="/search~S4*spi/x?philosophy">Philosophy</a></li>
-        <li><a href="/search~S4*spi/x?physics and astronomy">Physics and Astronomy</a></li>
-        <li><a href="/search~S4*spi/x?political science">Political Science</a></li>
-        <li><a href="/search~S4*spi/x?psychology">Psychology</a></li>
-        <li><a href="/search~S4*spi/x?religious studies">Religious Studies</a></li>
-        <li><a href="/search~S4*spi/x?science and technology">Science and Technology</a></li>
-        <li><a href="/search~S4*spi/x?social sciences">Social Sciences</a></li>
-        <li><a href="/search~S4*spi/x?social work">Social Work</a></li>
-        <li><a href="/search~S4*spi/x?sociology">Sociology</a></li>
-        <li><a href="/search~S4*spi/x?theatre">Theatre</a></li>
-        <li><a href="/search~S4*spi/x?womens and gender studies">Women's and Gender Studies</a></li>
-        </ul>
-        </div>
-        </div>
-        </fieldset>
+<li><a href="/search~S4*spi/x?accounting">Accounting</a></li>
+<li><a href="/search~S4*spi/x?anthropology">Anthropology</a></li>
+<li><a href="/search~S4*spi/x?architecture urban planning and design">Architecture Urban Planning and Design</a></li>
+<li><a href="/search~S4*spi/x?art and art history">Art and Art History</a></li>
+<li><a href="/search~S4*spi/x?biological sciences">Biological Sciences</a></li>
+<li><a href="/search~S4*spi/x?black studies">Black Studies</a></li>
+<li><a href="/search~S4*spi/x?business">Business</a></li>
+<li><a href="/search~S4*spi/x?chemistry">Chemistry</a></li>
+<li><a href="/search~S4*spi/x?communication studies">Communication Studies</a></li>
+<li><a href="/search~S4*spi/x?computer science and electrical engineering">Computer Science and Electrical Engineering</a></li>
+<li><a href="/search~S4*spi/x?criminal justice and criminology">Criminal Justice and Criminology</a></li>
+<li><a href="/search~S4*spi/x?dance">Dance</a></li>
+<li><a href="/search~S4*spi/x?dentistry">Dentistry</a></li>
+<li><a href="/search~S4*spi/x?economics">Economics</a></li>
+<li><a href="/search~S4*spi/x?education">Education</a></li>
+<li><a href="/search~S4*spi/x?engineering">Engineering</a></li>
+<li><a href="/search~S4*spi/x?english and american literature">English and American Literature</a></li>
+<li><a href="/search~S4*spi/x?environmental studies">Environmental Studies</a></li>
+<li><a href="/search~S4*spi/x?film studies">Film Studies</a></li>
+<li><a href="/search~S4*spi/x?finance">Finance</a></li>
+<li><a href="/search~S4*spi/x?french language and literature">French Language and Literature</a></li>
+<li><a href="/search~S4*spi/x?general">General</a></li>
+<li><a href="/search~S4*spi/x?geosciences and geography">Geosciences and Geography</a></li>
+<li><a href="/search~S4*spi/x?german language and literature">German Language and Literature</a></li>
+<li><a href="/search~S4*spi/x?health sciences biosciences">Health Sciences/Biosciences</a></li>
+</ul>
+</div>
+
+<div id="rowRight">
+<ul class="databaseListing span6">
+<li><a href="/search~S4*spi/x?history">History</a></li>
+<li><a href="/search~S4*spi/x?kansas city metro research">Kansas City Metro Research</a></li>
+<li><a href="/search~S4*spi/x?language and linguistics">Language and Linguistics</a></li>
+<li><a href="/search~S4*spi/x?latin american and spanish literature and culture">Latin American and Spanish Literature and Culture</a></li>
+<li><a href="/search~S4*spi/x?latina latino studies">Latina/Latino Studies</a></li>
+<li><a href="/search~S4*spi/x?law">Law</a></li>
+<li><a href="/search~S4*spi/x?library science">Library Science</a></li>
+<li><a href="/search~S4*spi/x?mathematics and statistics">Mathematics and Statistics</a></li>
+<li><a href="/search~S4*spi/x?medicine">Medicine</a></li>
+<li><a href="/search~S4*spi/x?medieval studies">Medieval Studies</a></li>
+<li><a href="/search~S4*spi/x?music">Music</a></li>
+<li><a href="/search~S4*spi/x?nursing">Nursing</a></li>
+<li><a href="/search~S4*spi/x?pharmacy">Pharmacy</a></li>
+<li><a href="/search~S4*spi/x?philosophy">Philosophy</a></li>
+<li><a href="/search~S4*spi/x?physics and astronomy">Physics and Astronomy</a></li>
+<li><a href="/search~S4*spi/x?political science">Political Science</a></li>
+<li><a href="/search~S4*spi/x?psychology">Psychology</a></li>
+<li><a href="/search~S4*spi/x?public administration">Public Administration</a></li>
+<li><a href="/search~S4*spi/x?religious studies">Religious Studies</a></li>
+<li><a href="/search~S4*spi/x?social work">Social Work</a></li>
+<li><a href="/search~S4*spi/x?sociology">Sociology</a></li>
+<li><a href="/search~S4*spi/x?theatre">Theatre</a></li>
+<li><a href="/search~S4*spi/x?womens and gender studies">Women's and Gender Studies</a></li>
+</ul>
+</div>
+</div>
+</fieldset>
 
           
         <p class="actionButtonArea">
