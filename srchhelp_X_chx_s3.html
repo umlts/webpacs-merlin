@@ -26,6 +26,17 @@ function submitSubject() {
 <body id="frontPage" onload="if (location.search.indexOf('SUBKEY') != -1 || location.search.indexOf('SEARCH') != -1 || location.search.indexOf('searcharg=') != -1 ) modifySearch(document.location.search); init_progsearch(); if (document.search) document.search.searchText1.focus();">
 <!--{toplogo}-->
 <script type="text/javascript">
+function upDatequickSearch () {
+                    //Variable for searcharg to hold search term when radio is switched
+   $("#quickSearcharg").val($("#advSearcharg").val());
+        
+ }
+
+ function upDateAdvSearch () {
+
+        $("#advSearcharg").val($("#quickSearcharg").val());
+
+ }
 
 $(document).ready(function(){
     
@@ -405,87 +416,124 @@ $(document).ready(function(){
         <a href="/search*chx~S3/j?1">#</a> |
         <a href="/search*chx~S3/j?00000">All titles</a>
         </fieldset>
-        
+
+        <a name="dbsubject"></a>
         <fieldset class="articles">
-        <legend>&#20197;&#20027;&#39064;&#25628;&#32034;&#36164;&#26009;&#24211;:</legend>
-        <form action="javascript:submitSubject();" onSubmit="submitSubject();" method="get" name="subjectSearch" class="unpadded">
-        <select name="bySubject" size="8">
-        <option value="pre 18th century">Pre-18th Century Primary Sources (400-1700)</option>
-        <option value="18th century primary sources">18th-Century Primary Sources (1700s)</option>
-        <option value="19th century primary sources">19th-Century Primary Sources (1800s)</option>
-        <option value="20th century primary sources">20th-Century Primary Sources (1900s)</option>
-        <option value="anthropology">Anthropology</option>
-        <option value="architecture urban planning and design">Architecture Urban Planning and Design</option>
-        <option value="art and art history">Art and Art History</option>
-        <option value="biography">Biography</option>
-        <option value="biological sciences">Biological Sciences</option>
-        <option value="book reviews">Book Reviews</option>
-        <option value="business and public administration">Business and Public Administration</option>
-        <option value="career and college resources">Career and College Resources</option>
-        <option value="chemistry">Chemistry</option>
-        <option value="communication studies">Communication Studies</option>
-        <option value="computer science and electrical engineering">Computer Science and Electrical Engineering</option>
-        <option value="criminal justice and criminology">Criminal Justice and Criminology</option>
-        <option value="dance">Dance</option>
-        <option value="dentistry">Dentistry</option>
-        <option value="digital archival collections">Digital Archival Collections</option>
-        <option value="dissertations theses and conference proceedings">Dissertations, Theses, and Conference Proceedings</option>
-        <option value="e books">E-Books</option>
-        <option value="e reference">E-Reference (Encyclopedias, Dictionaries, and Handbooks)</option>
-        <option value="economics">Economics</option>
-        <option value="education">Education</option>
-        <option value="engineering">Engineering</option>
-        <option value="english literature">English Literature</option>
-        <option value="environmental studies">Environmental Studies</option>
-        <option value="ethnic studies">Ethnic Studies</option>
-        <option value="film studies">Film Studies</option>
-        <option value="fine and performing arts">Fine and Performing Arts</option>
-        <option value="foreign languages and literatures">Foreign Languages and Literatures</option>
-        <option value="general and multidisciplinary">General and Multidisciplinary</option>
-        <option value="geosciences and geography">Geosciences and Geography</option>
-        <option value="government information">Government Information</option>
-        <option value="health sciences biosciences">Health Sciences/Biosciences</option>
-        <option value="history">History</option>
-        <option value="humanities">Humanities</option>
-        <option value="images sound and video">Images, Sound, and Video</option>
-        <option value="kansas city metro research">Kansas City Metro Research</option>
-        <option value="language and linguistics">Language and Linguistics</option>
-        <option value="law">Law</option>
-        <option value="library science">Library Science</option>
-        <option value="mathematics and statistics">Mathematics and Statistics</option>
-        <option value="medicine">Medicine</option>
-        <option value="music">Music</option>
-        <option value="new databases">New Databases</option>
-        <option value="news">News</option>
-        <option value="nursing">Nursing</option>
-        <option value="pharmacy">Pharmacy</option>
-        <option value="philosophy">Philosophy</option>
-        <option value="physics and astronomy">Physics and Astronomy</option>
-        <option value="political science">Political Science</option>
-        <option value="psychology">Psychology</option>
-        <option value="religious studies">Religious Studies</option>
-        <option value="science and technology">Science and Technology</option>
-        <option value="social sciences">Social Sciences</option>
-        <option value="social work">Social Work</option>
-        <option value="sociology">Sociology</option>
-        <option value="statistics and data">Statistics and Data</option>
-        <option value="tests and test reviews">Tests and Test Reviews</option>
-        <option value="theatre">Theatre</option>
-        <option value="trial databases">Trial Databases</option>
-        <option value="womens and gender studies">Women's and Gender Studies</option>
-        </select>
-        <input type="submit" name="Submit" value="Search">
-        </form>
+<legend>>&#20197;&#20027;&#39064;&#25628;&#32034;&#36164;&#26009;&#24211;</legend>
+
+<div id="dbRows">
+<div id="rowLeft">
+<ul class="databaseListing span7">
+<li><a href="/search*chx~S3/x?accounting">Accounting</a></li>
+<li><a href="/search*chx~S3/x?anthropology">Anthropology</a></li>
+<li><a href="/search*chx~S3/x?architecture urban planning and design">Architecture Urban Planning and Design</a></li>
+<li><a href="/search*chx~S3/x?art and art history">Art and Art History</a></li>
+<li><a href="/search*chx~S3/x?biological sciences">Biological Sciences</a></li>
+<li><a href="/search*chx~S3/x?black studies">Black Studies</a></li>
+<li><a href="/search*chx~S3/x?business">Business</a></li>
+<li><a href="/search*chx~S3/x?chemistry">Chemistry</a></li>
+<li><a href="/search*chx~S3/x?communication studies">Communication Studies</a></li>
+<li><a href="/search*chx~S3/x?computer science and electrical engineering">Computer Science and Electrical Engineering</a></li>
+<li><a href="/search*chx~S3/x?criminal justice and criminology">Criminal Justice and Criminology</a></li>
+<li><a href="/search*chx~S3/x?dance">Dance</a></li>
+<li><a href="/search*chx~S3/x?dentistry">Dentistry</a></li>
+<li><a href="/search*chx~S3/x?economics">Economics</a></li>
+<li><a href="/search*chx~S3/x?education">Education</a></li>
+<li><a href="/search*chx~S3/x?engineering">Engineering</a></li>
+<li><a href="/search*chx~S3/x?english and american literature">English and American Literature</a></li>
+<li><a href="/search*chx~S3/x?environmental studies">Environmental Studies</a></li>
+<li><a href="/search*chx~S3/x?film studies">Film Studies</a></li>
+<li><a href="/search*chx~S3/x?finance">Finance</a></li>
+<li><a href="/search*chx~S3/x?french language and literature">French Language and Literature</a></li>
+<li><a href="/search*chx~S3/x?general">General</a></li>
+<li><a href="/search*chx~S3/x?geosciences and geography">Geosciences and Geography</a></li>
+<li><a href="/search*chx~S3/x?german language and literature">German Language and Literature</a></li>
+<li><a href="/search*chx~S3/x?health sciences biosciences">Health Sciences/Biosciences</a></li>
+</ul>
+</div>
+
+<div id="rowRight">
+<ul class="databaseListing span6">
+<li><a href="/search*chx~S3/x?history">History</a></li>
+<li><a href="/search*chx~S3/x?kansas city metro research">Kansas City Metro Research</a></li>
+<li><a href="/search*chx~S3/x?language and linguistics">Language and Linguistics</a></li>
+<li><a href="/search*chx~S3/x?latin american and spanish literature and culture">Latin American and Spanish Literature and Culture</a></li>
+<li><a href="/search*chx~S3/x?latina latino studies">Latina/Latino Studies</a></li>
+<li><a href="/search*chx~S3/x?law">Law</a></li>
+<li><a href="/search*chx~S3/x?library science">Library Science</a></li>
+<li><a href="/search*chx~S3/x?mathematics and statistics">Mathematics and Statistics</a></li>
+<li><a href="/search*chx~S3/x?medicine">Medicine</a></li>
+<li><a href="/search*chx~S3/x?medieval studies">Medieval Studies</a></li>
+<li><a href="/search*chx~S3/x?music">Music</a></li>
+<li><a href="/search*chx~S3/x?nursing">Nursing</a></li>
+<li><a href="/search*chx~S3/x?pharmacy">Pharmacy</a></li>
+<li><a href="/search*chx~S3/x?philosophy">Philosophy</a></li>
+<li><a href="/search*chx~S3/x?physics and astronomy">Physics and Astronomy</a></li>
+<li><a href="/search*chx~S3/x?political science">Political Science</a></li>
+<li><a href="/search*chx~S3/x?psychology">Psychology</a></li>
+<li><a href="/search*chx~S3/x?public administration">Public Administration</a></li>
+<li><a href="/search*chx~S3/x?religious studies">Religious Studies</a></li>
+<li><a href="/search*chx~S3/x?social work">Social Work</a></li>
+<li><a href="/search*chx~S3/x?sociology">Sociology</a></li>
+<li><a href="/search*chx~S3/x?theatre">Theatre</a></li>
+<li><a href="/search*chx~S3/x?womens and gender studies">Women's and Gender Studies</a></li>
+</ul>
+</div>
+</div>
+</fieldset>
+
+          
+        <p class="actionButtonArea">
+        <a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Back to top</span></span></a>
+        </p>
+
+        <a name="dbtype"></a>
+        <fieldset class="articles">
+        <legend>Databases By Type</legend>
+        <div id="dbType">
+        <div id="typeLeft">
+        <ul class="databaseListing span7">
+        <li><a href="/search*chx~S3/x?pre 18th century">Pre-18th Century Primary Sources (400-1700)</a></li>
+        <li><a href="/search*chx~S3/x?18th century primary sources">18th-Century Primary Sources (1700s)</a></li>
+        <li><a href="/search*chx~S3/x?19th century primary sources">19th-Century Primary Sources (1800s)</a></li>
+        <li><a href="/search*chx~S3/x?20th century primary sources">20th-Century Primary Sources (1900s)</a></li>
+        <li><a href="/search*chx~S3/x?audio">Audio</a></li>
+        <li><a href="/search*chx~S3/x?biography">Biography</a></li>
+        <li><a href="/search*chx~S3/x?book reviews">Book Reviews</a></li>
+        <li><a href="/search*chx~S3/x?career and college resources">Career and College Resources</a></li>
+        <li><a href="/search*chx~S3/x?digital archival collections">Digital Archival Collections</a></li>
+        <li><a href="/search*chx~S3/x?dissertations theses and conference proceedings">Dissertations, Theses, and Conference Proceedings</a></li>
+        </ul>
+        </div>
+        <div id="typeRight">
+        <ul class="databaseListing span6">
+        <li><a href="/search*chx~S3/x?e books">E-Books</a></li>
+        <li><a href="/search*chx~S3/x?e reference">E-Reference (Encyclopedias, Dictionaries, and Handbooks)</a></li>
+        <li><a href="/search*chx~S3/x?government information">Government Information</a></li>
+        <li><a href="/search*chx~S3/x?images">Images</a></li>
+        <li><a href="/search*chx~S3/x?news">News</a></li>
+        <li><a href="/search*chx~S3/x?statistics and data">Statistics and Data</a></li>
+        <li><a href="/search*chx~S3/x?tests and test reviews">Tests and Test Reviews</a></li>
+        <li><a href="/search*chx~S3/x?video">Video</a></li>
+        </ul>
+        </div>
+        </div>
         </fieldset>
-        
+            
+            
+        <p class="actionButtonArea">
+        <a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Back to top</span></span></a>
+        </p>
+
+        <a name="dbresearch"></a>
         <fieldset class="articles">
-        <legend>Database links</legend>
-        <div id="linkList">
-        <a href="/search*chx~S3/x?new+databases">New Databases</a>
-        <a href="/search*chx~S3/x?trial+databases">Trial Databases</a>
-        <a href="http://umkc.summon.serialssolutions.com/">RooSearch</a>
-        <a href="http://umkclibrarieserblog.wordpress.com/">Online Resources Blog</a>
-        <a href="http://library.umkc.edu/databases-responsibilities">UMKC Libraries Statement on Responsibilities of Users of Electronic Resources</a>
+        <legend>Need help with your research?</legend>
+        <div class="row">
+        <ul class="databaseListing span6">
+        <li><a href="http://library.umkc.edu/ask-a-librarian">Ask A Librarian</a></li>
+        <li><a href="http://libguides.library.umkc.edu/index.php">Research Guides</a></li>
+        <li><a href="http://library.umkc.edu/form/research-workshops">Research Workshops</a></li>
+        </ul>
         </div>
         </fieldset>
         
