@@ -29,14 +29,14 @@ $(document).ready(function(){
         $('input.searchtype[value=X]').attr('checked', true);
         $('.innerQuickSearch').hide();
         $('.X .innerQuickSearch').show();
-	$('input.searchtype').change(function(){
+  $('input.searchtype').change(function(){
             $('.innerQuickSearch').hide();
             $('.' + this.value + ' .innerQuickSearch').show();
             $('input.searchtype[value=' + this.value + ']').attr('checked', true);
-	});
-	$('#moreLink').click(function(){
+  });
+  $('#moreLink').click(function(){
              $('.tipsTable').toggle();
-	});
+  });
         
     //Remove the colons from advanced search
     $('#advancedSubmit').click(function () { 
@@ -49,6 +49,20 @@ $(document).ready(function(){
     
     //The scrollbar should always be at the top when the page loads
     $(document).scrollTop(0);
+    
+    
+    
+    var i = $("#advancedSearchBoxes input").length;
+    var j = i + 1;
+    var moreSearchBoolean = '<br /><select name="boolean' + i + '"><option value="%20and%20" selected="selected">And</option><option value="%20and%20not%20">And not</option><option value="%20or%20">Or</option></select><br />'
+    var moreSearchField = '<select class="keywordSegment" name="fieldLimit' + j + '"><option value="" selected="selected">Anywhere:</option><option value="a:">Autor:</option><option value="t:">T&#237;tulo:</option><option value="d:">Materia:</option><option value="c:">Tabla de Contenidos:</option><option value="N:">Notes and Genre:</option></select>'
+    var moreSearchInput = '<input style="margin: 0 4px;" maxlength="100" size="35" name="searchText' + j + ' " />'
+
+    $("#addMore").click(function() {
+        $("#advancedSearchBoxes").append(moreSearchBoolean);
+        $("#advancedSearchBoxes").append(moreSearchField);
+        $("#advancedSearchBoxes").append(moreSearchInput);
+    });
 });
 </script>
 
@@ -82,9 +96,9 @@ $(document).ready(function(){
 <select name="fieldLimit1" class="keywordSegment">
 
 <option value="" selected="selected">Palabra clave:</option>
-<option value="a:">Autor</option>
-<option value="t:">T&#237;tulo</option>
-<option value="d:">Materia</option>
+<option value="a:">Autor:</option>
+<option value="t:">T&#237;tulo:</option>
+<option value="d:">Materia:</option>
 <option value="c:">Tabla de Contenidos:</option>
 <option value="N:">Notes and Genre:</option>
 </select>
@@ -100,9 +114,9 @@ $(document).ready(function(){
 <select name="fieldLimit2" class="keywordSegment">
 
 <option value="" selected="selected">Palabra clave:</option>
-<option value="a:">Autor</option>
-<option value="t:">T&#237;tulo</option>
-<option value="d:">Materia</option>
+<option value="a:">Autor:</option>
+<option value="t:">T&#237;tulo:</option>
+<option value="d:">Materia:</option>
 <option value="c:">Tabla de Contenidos:</option>
 <option value="N:">Notes and Genre:</option>
 </select>
@@ -118,13 +132,17 @@ $(document).ready(function(){
 <select name="fieldLimit3"  class="keywordSegment">
 
 <option value="" selected="selected">Palabra clave:</option>
-<option value="a:">Autor</option>
-<option value="t:">T&#237;tulo</option>
-<option value="d:">Materia</option>
+<option value="a:">Autor:</option>
+<option value="t:">T&#237;tulo:</option>
+<option value="d:">Materia:</option>
 <option value="c:">Tabla de Contenidos:</option>
 <option value="N:">Notes and Genre:</option>
 </select>
 <input maxlength="100" size="35" name="searchText3" />
+</div>
+
+<div class="formEntryArea">
+  <a href="#" id="addMore">+ Add more search terms</a>
 </div>
 <input type="hidden" name="startLimit" >
 <div class="formEntryArea">
