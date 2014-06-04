@@ -15,8 +15,10 @@ startTimeout(1800000, "/");
 </noscript>
 <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script>
 </head>
 <body id="frontPage" onload="if (location.search.indexOf('SUBKEY') != -1 || location.search.indexOf('SEARCH') != -1 || location.search.indexOf('searcharg=') != -1 ) modifySearch(document.location.search); init_progsearch(); if (document.search) document.search.searchText1.focus();">
+<!--{advancedsearchbody}-->
 <!--{toplogo}-->
 <script type="text/javascript">
 
@@ -28,17 +30,17 @@ $(document).ready(function(){
         $('input.searchtype[value=X]').attr('checked', true);
         $('.innerQuickSearch').hide();
         $('.X .innerQuickSearch').show();
-	$('input.searchtype').change(function(){
+  $('input.searchtype').change(function(){
             $('.innerQuickSearch').hide();
             $('.' + this.value + ' .innerQuickSearch').show();
             $('input.searchtype[value=' + this.value + ']').attr('checked', true);
-	});
-	$('#moreLink').click(function(){
+  });
+  $('#moreLink').click(function(){
              $('.tipsTable').toggle();
-	});
+  });
         
     //Remove the colons from advanced search
-    $('#advancedSubmit').click(function () { 
+    $('#advancedSubmit').click(function () {
       var searchTerm = $('.advancedInput').val();
       if((/\b[atsn]:/).test(searchTerm)) {}else {
       var newSearchTerm = searchTerm.replace(":", " ");
@@ -48,9 +50,20 @@ $(document).ready(function(){
     
     //The scrollbar should always be at the top when the page loads
     $(document).scrollTop(0);
+
+    var i = $("#advancedSearchBoxes input").length;
+    var j = i + 1;
+    var moreSearchBoolean = '<br /><select name="boolean' + i + '"><option value="%20and%20" selected="selected">And</option><option value="%20and%20not%20">And not</option><option value="%20or%20">Or</option></select><br />'
+    var moreSearchField = '<select class="keywordSegment" name="fieldLimit' + j + '"><option value="" selected="selected">Anywhere:</option><option value="a:">&#20316;&#32773;&#25628;&#32034;:</option><option value="t:">&#26631;&#39064;&#25628;&#32034;:</option><option value="d:">&#20027;&#39064;&#25628;&#32034;:</option><option value="c:">&#30446;&#24405;</option><option value="N:">&#20307;&#35009;:</option></select>'
+    var moreSearchInput = '<input style="margin: 0 4px;" maxlength="100" size="35" name="searchText' + j + ' " />'
+
+    $("#addMore").click(function() {
+        $("#advancedSearchBoxes").append(moreSearchBoolean);
+        $("#advancedSearchBoxes").append(moreSearchField);
+        $("#advancedSearchBoxes").append(moreSearchInput);
+    });
 });
 </script>
-
 <div class="pageContentInner">
 
 <div id="tabs">
@@ -123,6 +136,9 @@ $(document).ready(function(){
 </select>
 <input maxlength="100" size="35" name="searchText3" />
 </div>
+<div class="formEntryArea">
+  <a href="#" id="addMore">+ Add more search terms</a>
+</div>
 <input type="hidden" name="startLimit" >
 <div class="formEntryArea">
 <!--{availlim}-->
@@ -165,29 +181,9 @@ School:
 
 
 <div class="formEntryArea">
-<table border="0">
-<tr><td><label for="l">TEST:Language of Work:</label></td><td><select id="l" name="l" size="5" multiple="multiple">
-<option value="">ANY</option>
-<option value="eng">英文</option>
-<option value="fre">法文</option>
-<option value="ger">德文</option>
-<option value="ita">意大利文</option>
-<option value="spa">西班牙文</option>
-<option value="rus">Russian</option>
-<option value="jpn">Japanese</option>
-<option value="chi">中文</option>
-<option value="bul">Bulgarian</option>
-<option value="kor">Korean</option>
-<option value="may">Malay</option>
-<option value="tha">Thai</option>
-<option value="heb">Hebrew</option>
-<option value="yid">Yiddish</option>
-<option value="ara">Arabic</option>
-</select>
-</td>
-</tr></table>
-
+<!--{lang}-->
 </div>
+
 
 <div class="formEntryArea">
 <!--{DOCDATE}-->
@@ -258,41 +254,9 @@ School:
 </div>
 
 <div class="formEntryArea">
-<table border="0">
-<tr><td><label for="m">TEST: 資料類型:</label></td><td><select id="m" name="m" size="5" multiple="multiple">
-<option value="">ANY</option>
-<option value="a"> Books</option>
-<option value="2"> Ebooks</option>
-<option value="t"> Theses/Dissertations</option>
-<option value="z"> Online Theses/Dissertatn</option>
-<option value="s"> Journals/Newspapers</option>
-<option value="3"> Online Journals/Newspapr</option>
-<option value="g"> DVD/Videos</option>
-<option value="h"> Online Films/Videos</option>
-<option value="y"> Other Films/Videos</option>
-<option value="4"> Slides</option>
-<option value="j"> CD/DVD-Audios</option>
-<option value="w"> Online Sound Recordings</option>
-<option value="i"> Vinyl Sound Recordings</option>
-<option value="u"> Other Sound Recordings</option>
-<option value="c"> Scores</option>
-<option value="b"> Online Scores</option>
-<option value="k"> Images</option>
-<option value="l"> Online Images</option>
-<option value="r"> 3-D Objects</option>
-<option value="e"> Maps</option>
-<option value="d"> Online Maps</option>
-<option value="m"> Software</option>
-<option value="o"> Kits</option>
-<option value="p"> Mixed Materials</option>
-<option value="n"> Online Mixed Materials</option>
-<option value="x"> Other Online Resources</option>
-<option value="f"> Microforms</option>
-</select>
-</td>
-</tr></table>
-
+<!--{mattype}-->
 </div>
+
 
 <div class="formButtonArea">
 <span>
@@ -365,7 +329,7 @@ School:
             <td>&#24067;&#26519;&#36923;&#36753; &#31526;&#21495;&#25805;&#20316;</td>
             <td>&#20110;&#20219;&#20309;&#39046;&#22495;&#12289;    &#27425;&#24207;&#20351;&#29992;&#25110;&#26469;&#25351;&#26126;&#35789;&#27719;&#12290;    &#20351;&#29992;&#26469;&#25490;&#38500;&#19981;&#38656;&#30340;&#25991;&#23383;&#35789;&#32452;&#12290;</td>
             <td><span style="text-decoration:underline">&#20363;</span> : stocks and bonds<br>
-			<span style="text-decoration:underline">&#20363;</span> : [stocks or bonds] and [stocks and not bonds] </td>
+      <span style="text-decoration:underline">&#20363;</span> : [stocks or bonds] and [stocks and not bonds] </td>
           </tr>
           <tr>
             <td>&#26639;&#20301;&#38480;&#21046;</td>
