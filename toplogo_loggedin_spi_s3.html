@@ -6,6 +6,7 @@
 <script type="text/javascript" src="/screens/jquery.cookie.js"></script>
 <script src="/screens/menu-collapsed.js" type="text/javascript"></script>
 <script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
+<script type="text/javascript" src="/screens/856links.js"></script>
 <script type="text/javascript" src='/screens/sms.js'> </script>
 <script type="text/javascript">
 $(document).ready(function () {
@@ -32,6 +33,22 @@ $(document).ready(function () {
 			$('#searcharg').val(newSearchTerm);
 		}
 		});
+	if ($("td:contains('Database Subjects')").length > 0 ){	
+		$("[href='/search/X#tab-1']").hide();
+		$("[href='/search/Y']").hide();
+		$("[href='/search/X#tab-3']").hide();
+		$("[href='/search/X#tab-4']").hide();
+		$('li').first().css({'border':'0'});
+		$("ul li:nth-child(2)").css({'border':'0'});
+		$("ul li:nth-child(3)").css({'border':'0'});
+		$("ul li:nth-child(4)").css({'border':'0'});
+		$("td .browseEntryMark").hide();
+	};
+		if ($("td:contains('Database Name')").length > 0 ){	
+		$("td .browseSaveJump").hide();
+		$("td .browseHeaderMark").hide();	
+		$("td .browseEntryMark").hide();
+	};
 	});
 </script>
 
@@ -66,14 +83,14 @@ if (document.body){document.body.className = "bodybg";}
     </ul>
 </div>
 
-<div id="alertMessage"></div>
+
 
 <div class="linkBanner">
 </div>
-
-</div><!--topLogo-->
-
 <div class="clear"></div>
+</div>
+<div id="alertMessage"></div>
+<!--topLogo-->
 <div class="rightColumn">
 <div id="searchOptions">
 
@@ -85,7 +102,7 @@ if (document.body){document.body.className = "bodybg";}
 	</li>
 	<li><a href="/logout*spi" tabindex="120">Salir</a></li>
 	<li><a href="/search*spi/b">B&#250;squeda por c&#243;digo de barras</a></li>
-	<li><a href="http://library.umkc.edu/newacq/newtitles.html">T&#237;tulos Nuevos</a></li>
+	<li><a href="http://library.umkc.edu/newtitles">T&#237;tulos Nuevos</a></li>
 	<li><a>Otras Bibliotecas</a>
 		<ul>
 			<li><a href="http://library.mst.edu/">Missouri S&T</a></li>
