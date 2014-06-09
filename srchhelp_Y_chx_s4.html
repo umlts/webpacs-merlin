@@ -56,7 +56,7 @@ $(document).ready(function(){
 var i = $("#advancedSearchBoxes input").length;
     var j = i + 1;
     var moreSearchBoolean = '<br /><select name="boolean' + i + '"><option value="%20and%20" selected="selected">And</option><option value="%20and%20not%20">And not</option><option value="%20or%20">Or</option></select><br />'
-    var moreSearchField = '<select class="keywordSegment" name="fieldLimit' + j + '"><option value="" selected="selected">Anywhere:</option><option value="a:">&#20316;&#32773;&#25628;&#32034;:</option><option value="t:">&#26631;&#39064;&#25628;&#32034;:</option><option value="d:">&#20027;&#39064;&#25628;&#32034;:</option><option value="c:">&#30446;&#24405;</option><option value="N:">&#20307;&#35009;:</option></select>'
+    var moreSearchField = '<select class="keywordSegment" name="fieldLimit' + j + '"><option value="" selected="selected">&#38364;&#37749;&#23383;:</option><option value="a:">&#20316;&#32773;&#25628;&#32034;:</option><option value="t:">&#26631;&#39064;&#25628;&#32034;:</option><option value="d:">&#20027;&#39064;&#25628;&#32034;:</option><option value="c:">&#30446;&#24405;</option><option value="N:">&#20307;&#35009;:</option></select>'
     var moreSearchInput = '<input style="margin: 0 4px;" maxlength="100" size="35" name="searchText' + j + ' " />'
 
     $("#addMore").click(function() {
@@ -94,7 +94,7 @@ var i = $("#advancedSearchBoxes input").length;
 
 <fieldset>
 <legend>&#36755;&#20837;&#25628;&#32034;&#35789;&#27719;</legend>
-<div class="formEntryArea">
+<div class="formEntryArea" id="advancedSearchBoxes">
 <select name="fieldLimit1" class="keywordSegment">
 
 <option value="" selected="selected">&#38364;&#37749;&#23383;:</option>

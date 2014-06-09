@@ -20,9 +20,8 @@ startTimeout(1800000, "/");
 <body id="frontPage" onload="if (location.search.indexOf('SUBKEY') != -1 || location.search.indexOf('SEARCH') != -1 || location.search.indexOf('searcharg=') != -1 ) modifySearch(document.location.search); init_progsearch(); if (document.search) document.search.searchText1.focus();">
 <!--{toplogo}-->
 <script type="text/javascript">
-
-$(document).ready(function(){
-    //Variable for searcharg to hold search term when radio is switched
+ function upDatequickSearch () {
+                    //Variable for searcharg to hold search term when radio is switched
    $("#quickSearcharg").val($("#advSearcharg").val());
         
  }
@@ -32,6 +31,7 @@ $(document).ready(function(){
         $("#advSearcharg").val($("#quickSearcharg").val());
 
  }
+$(document).ready(function(){
     
     //Loading the correct content when the tab is clicked from another page
   $('#tabs .tabContent').hide();

@@ -55,7 +55,7 @@ $(document).ready(function(){
     var i = $("#advancedSearchBoxes input").length;
     var j = i + 1;
     var moreSearchBoolean = '<br /><select name="boolean' + i + '"><option value="%20and%20" selected="selected">And</option><option value="%20and%20not%20">And not</option><option value="%20or%20">Or</option></select><br />'
-    var moreSearchField = '<select class="keywordSegment" name="fieldLimit' + j + '"><option value="" selected="selected">Anywhere:</option><option value="a:">Autor:</option><option value="t:">T&#237;tulo:</option><option value="d:">Materia:</option><option value="c:">Tabla de Contenidos:</option><option value="N:">Notes and Genre:</option></select>'
+    var moreSearchField = '<select class="keywordSegment" name="fieldLimit' + j + '"><option value="" selected="selected">Palabra clave:</option><option value="a:">Autor:</option><option value="t:">T&#237;tulo:</option><option value="d:">Materia:</option><option value="c:">Tabla de Contenidos:</option><option value="N:">Notes and Genre:</option></select>'
     var moreSearchInput = '<input style="margin: 0 4px;" maxlength="100" size="35" name="searchText' + j + ' " />'
 
     $("#addMore").click(function() {
@@ -91,7 +91,7 @@ $(document).ready(function(){
 
 <fieldset>
 <legend>Indique los t&#233;rminos de b&#250;squeda</legend>
-<div class="formEntryArea">
+<div class="formEntryArea" id="advancedSearchBoxes">
 <select name="fieldLimit1" class="keywordSegment">
 
 <option value="" selected="selected">Palabra clave:</option>
@@ -268,7 +268,7 @@ $(document).ready(function(){
 <p>Indique la palabra clave que quiere encontrar. </p>
 <p><em>Truncamiento :</em> educat* finds educate, educated, education, etc.</p>
 <p><em>B&#250;squedas de frase:</em> "physical therapy"</p>
-<p><a id="moreLink">Consejos para Búsquedas </a></p>
+<p><a id="moreLink">Consejos para B&#250;squeda</a></p>
 </div>
 
 
