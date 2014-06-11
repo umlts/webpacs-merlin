@@ -29,14 +29,14 @@ $(document).ready(function(){
         $('input.searchtype[value=X]').attr('checked', true);
         $('.innerQuickSearch').hide();
         $('.X .innerQuickSearch').show();
-	$('input.searchtype').change(function(){
+  $('input.searchtype').change(function(){
             $('.innerQuickSearch').hide();
             $('.' + this.value + ' .innerQuickSearch').show();
             $('input.searchtype[value=' + this.value + ']').attr('checked', true);
-	});
-	$('#moreLink').click(function(){
+  });
+  $('#moreLink').click(function(){
              $('.tipsTable').toggle();
-	});
+  });
         
     //Remove the colons from advanced search
     $('#advancedSubmit').click(function () { 
@@ -49,7 +49,6 @@ $(document).ready(function(){
     
     //The scrollbar should always be at the top when the page loads
     $(document).scrollTop(0);
-    
     var i = $("#advancedSearchBoxes input").length;
     var j = i + 1;
     var moreSearchBoolean = '<br /><select name="boolean' + i + '"><option value="%20and%20" selected="selected">And</option><option value="%20and%20not%20">And not</option><option value="%20or%20">Or</option></select><br />'
@@ -142,7 +141,6 @@ $(document).ready(function(){
 <div class="formEntryArea">
   <a href="#" id="addMore">+ Add more search terms</a>
 </div>
-
 <input type="hidden" name="startLimit" >
 <div class="formEntryArea">
 <!--{availlim}-->
@@ -296,7 +294,7 @@ School:
             <td>Example: <br />
                 "physical therapy"
               Example: <br />
-                "reading comprehension strategies""</td>
+                "reading comprehension strategies"</td>
           </tr>
           <tr>
             <td>Proximity</td>

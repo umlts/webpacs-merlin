@@ -1,0 +1,75 @@
+.clusterLogo { top:13px; }
+
+.topLogoImage {
+    padding:15px 15px 25px;
+}
+
+ul#tabRow .tab {
+    max-width:7.7em;
+    height:4.4em;
+}
+
+ul#tabRow .tab a {
+    text-align:center;
+    font-size:.9em;
+    padding:7px;
+}
+
+.bibDisplayContentMain ul#tabRow .tab {
+    max-width:none;
+    height:inherit;
+}
+
+.bibDisplayContentMain #byTabRow {
+    margin-bottom:-18px;
+}
+
+.bibDisplayContentMain #byTabRow a {
+    margin-top:-19px;
+}
+
+.databaseListing {
+    padding-left:1em;
+    margin:0;
+    -moz-box-sizing: border-box;
+    display: block;
+    float: left;
+    min-height: 28px;
+}
+
+.databaseListing > li {
+    line-height: 1.75;
+}
+
+/*.span7 {
+  width: 60%;
+}
+
+
+.span6 {
+  width: 37%;
+}*/
+
+.row [class*="span"]:first-child {
+    margin-left: 0;
+}
+
+[class*="span"] {
+    -moz-box-sizing: border-box;
+    display: block;
+    float: left;
+    min-height: 28px;
+}
+
+#dbRows, #dbType {
+    width: 100%
+}
+
+#rowRight, #typeRight {
+    float: right;
+    width: 46%;
+}
+#rowLeft, #typeLeft {
+    float: left;
+    width: 48%;
+}

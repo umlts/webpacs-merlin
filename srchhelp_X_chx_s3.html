@@ -1,0 +1,549 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 29 Apr 2010 -->
+<head>
+<title>MERLIN &#32593;&#39029;&#30446;&#37636;</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(1800000, "/");
+// -->
+
+</script>
+<script>
+function submitSubject() {
+    window.location="/search*chx~S3/x?" + document.subjectSearch.bySubject.options[document .subjectSearch.bySubject.selectedIndex].value;
+    return true;
+}
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script>
+</head>
+<body id="frontPage" onload="if (location.search.indexOf('SUBKEY') != -1 || location.search.indexOf('SEARCH') != -1 || location.search.indexOf('searcharg=') != -1 ) modifySearch(document.location.search); init_progsearch(); if (document.search) document.search.searchText1.focus();">
+<!--{toplogo}-->
+<script type="text/javascript">
+function upDatequickSearch () {
+                    //Variable for searcharg to hold search term when radio is switched
+   $("#quickSearcharg").val($("#advSearcharg").val());
+        
+ }
+
+ function upDateAdvSearch () {
+
+        $("#advSearcharg").val($("#quickSearcharg").val());
+
+ }
+
+$(document).ready(function(){
+    
+    //Loading the correct content when the tab is clicked from another page
+  $('#tabs .tabContent').hide();
+        if (window.location.hash.length > 0) {
+            $(window.location.hash).show();
+            $('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
+        }else{
+            $('#tabs .tabContent:first').show();
+            $('#tabs ul li:first').addClass('active');
+        }
+        
+  $('#tabs ul li a').click(function(){
+                //Switching the tabs
+    $('#tabs ul li').removeClass('active');
+    $(this).parent().addClass('active'); 
+    var currentTab = $(this).attr('href'); 
+    $('#tabs .tabContent').hide();
+    $(currentTab).show();
+                
+                //To make the Advanced search page happy
+                
+                $('.innerQuickSearch').hide();
+                $('.X .innerQuickSearch').show();
+                
+                //To make sure the first radio is selected, showing the correct search examples
+                var firstRadio = $(currentTab + ' .limits label:first input')
+                $(firstRadio).click();
+                $(".searchTips").load("/screens/" + firstRadio.val() + "chx.inc");
+                
+                //This makes it so the scrollbar doesn't jump to the anchor tag.  It also, unfortunately, makes it so the back button doesn't work.
+                
+                if(currentTab.indexOf("http") == -1){
+                    return false;
+                }
+  });
+
+    //Switching the Keyword/Title menu when the radio button is changed
+        $('input.searchtype[value=X]').attr('checked', true);
+        $('.innerQuickSearch').hide();
+        $('.X .innerQuickSearch').show();
+  $('input.searchtype').click(function(){
+            $('.innerQuickSearch').hide();
+            $('.' + this.value + ' .innerQuickSearch').show();
+            $('input.searchtype[value=' + this.value + ']').attr('checked', 'checked');
+  });
+  $('#moreLink').click(function(){
+             $('#optionalLimits').toggle();
+  });
+        
+    //Remove the colons from advanced search
+    $('#advancedSubmit').click(function () { 
+      var searchTerm = $('.advancedInput').val();
+      if((/\b[atsn]:/).test(searchTerm)) {}else {
+      var newSearchTerm = searchTerm.replace(":", " ");
+      $('.advancedInput').val(newSearchTerm);
+    }
+    });
+    
+    //The scrollbar should always be at the top when the page loads
+    $(document).scrollTop(0);
+});
+</script>
+
+<div class="pageContentInner">
+
+<div id="tabs">
+    <ul id="tabRow">
+      <li class="tab"><a href="#tab-1">&#26816;&#32034;</a></li>
+      <li class="tab"><a href="/search*chx/Y">&#39640;&#32423;&#20851;&#38190;&#23383;&#25628;&#32034;</option>
+      <li class="tab"><a href="#tab-3">&#20027;&#39064;&#25628;&#32034;</a></li>
+      <li class="tab"><a href="#tab-4">&#21495;&#30721;/&#20854;&#20182;</a></li>
+      <li class="tab"><a href="#tab-5">&#26399;&#21002;&#25991;&#29486;</a></li>
+      <li class="tab"><a href="http://pc8ga3qq6a.search.serialssolutions.com/">&#30005;&#23376;&#26399;&#21002;&#21450;&#30005;&#23376;&#20070;</a></li>
+    </ul>
+    
+   <div id="tab-1" class="tabContent">
+        <h1 class="pageHeader">&#26816;&#32034;</h1>
+        
+            <div id="accessibleForm" class="quickSearch X">
+                
+                <div class="innerQuickSearch">
+
+<!--{msg}-->
+<!--{spellcheck}-->
+<!--{innreach}-->
+        
+<!--{advancedsearchformbegin}-->
+
+                    <div class="limits">
+                    <div class="limitColumn">
+                    <label> <input name="searchtype" class="searchtype" value="X" checked="checked" type="radio"> &#39640;&#32423;&#20851;&#38190;&#23383;&#25628;&#32034; </label> 
+                    <label> <input name="searchtype" class="searchtype" value="t" type="radio"> &#26631;&#39064;&#25628;&#32034; </label>
+                    </div>
+                    <div class="limitColumn">
+                    <label> <input name="searchtype" class="searchtype" value="s" type="radio"> &#23450;&#26399;&#25628;&#32034; </label>
+                    <label> <input name="searchtype" class="searchtype" value="a" type="radio"> &#20316;&#32773;&#25628;&#32034; </label>
+                    </div>
+                    </div>
+        
+                    <div class="formEntryArea">
+                    <input type="hidden" name="fieldLimit1" value="" />
+                    <input class="advancedInput" maxlength="100" size="35" name="searchText1" />
+<!--{scope}-->
+<!--{advancedsubmit}-->
+                    </div>
+                    <input type="hidden" name="startLimit" >
+                    <div class="formEntryArea">
+<!--{availlim}-->
+                    </div>
+                    <div class="formEntryArea">
+                        <a id="moreLink">Refine your keyword search by language, year, and more (+)</a>
+                    </div>
+        
+
+
+                    <fieldset id="optionalLimits">
+                    <legend>&#36873;&#25321;&#38480;&#21046;&#33539;&#22260; (Optional)</legend>
+                    
+<p>In each box hold down the CTRL or Apple key to select more than one.</p>
+        
+                    <div class="formEntryArea">
+<!--{DOCDATE}-->
+        </div>
+        
+                    <div class="formEntryArea">
+                    <table border="0">
+                    <tr><td><label for="n">Online:</label></td><td><select id="n" name="n">
+                    <option value="">ANY</option>
+                    <option value="cr">Online Only</option>
+                    </select>
+                    </td>
+                    </tr></table>
+                    </div>
+        
+            <!--{govdoc}-->
+            
+                    <div class="formEntryArea">
+<!--{lang}-->
+                    </div>
+                    
+                    <div class="formEntryArea">
+<!--{branch}-->
+                    </div>
+                    
+                    <div class="formEntryArea">
+                    <table border="0">
+                    <tr><td><label for="a">Audio and Video Formats:</label></td><td><select id="a" name="a" size="5" multiple="multiple">
+                    <option value="">ANY</option>
+                    <option value=""></option>
+                    <option value="s*">AUDIO FORMATS</option>
+                    <option value="s*">All Sound Recording Formats</option>
+                    <option value="ss">Audio cassettes</option>
+                    <option value="sd f">CDs</option>
+                    <option value="sd b">LPs</option>
+                    <option value="sd c">45 rpm </option>
+                    <option value="sd d">78 rpm</option>
+                    <option value="sd z">DVD-audio</option>
+                    <option value="st">Reel-to-reel</option>
+                    <option value="se">Cylinder</option>
+                    <option value="sq">Roll</option>
+                    <option value="sw">Wire recording</option>
+                    <option value=""></option>
+                    <option value="v*">VIDEO FORMATS</option>
+                    <option value="v*">All Video Recording Formats</option>
+                    <option value="vd">DVD-video</option>
+                    <option value="vf">VHS</option>
+                    <option value="mr">16/35 mm film</option>
+                    </select>
+                    </td>
+                    </tr></table>
+                    </div>
+                    
+                    
+                    <div class="formEntryArea">
+<!--{mattype}-->
+                    </div>
+                    
+                    
+                    <div class="formEntryArea">
+<!--{publish}-->
+                    </div>
+                    <div class="formButtonArea">
+                    <span>
+<!--{advancedsubmit}-->
+                    </span>
+                    </div>
+                    
+                    </fieldset>
+                    <input type="hidden" name="endLimit" >
+        
+<!--{advancedsearchformend}-->
+        
+        
+                    <div class="searchTipsX">
+                    <p><strong>&#20851;&#38190;&#23383;&#25628;&#32034;</strong></p>
+                      <p>&#36755;&#20837;&#24744;&#35201;&#23547;&#25214;&#30340;&#20851;&#38190;&#23383;&#12290;&#20363;:</em></p>
+                      <ul>
+                        <li><em>evolution and altruism</em></li>
+                        <li><em>&quot;achievement test&quot;</em></li>
+                      </ul>
+                      <p>&#22914;&#38656;&#26356;&#22810;&#36984;&#38917;&#65292;&#35531;&#20351;&#29992;&#39640;&#32026;&#25628;&#32034;. </p>
+                    </div>
+        
+                </div><!-- quickSearchInner -->
+
+            </div> <!-- quickSearch -->
+        
+            <div class="quickSearch t s a">
+            
+                <div class="innerQuickSearch">
+            
+                    <form action="/search*chx/" method="get" id="search" class="indexSearch" name="search">
+                    
+                    <div class="limits">
+                    <div class="limitColumn">
+                    <label> <input name="searchtype" class="searchtype" value="X" checked="checked" type="radio"> &#39640;&#32423;&#20851;&#38190;&#23383;&#25628;&#32034; </label> 
+                    <label> <input name="searchtype" class="searchtype" value="t" type="radio"> &#26631;&#39064;&#25628;&#32034; </label>
+                    </div>
+                    <div class="limitColumn">
+                    <label> <input name="searchtype" class="searchtype" value="s" type="radio"> &#23450;&#26399;&#25628;&#32034; </label>
+                    <label> <input name="searchtype" class="searchtype" value="a" type="radio"> &#20316;&#32773;&#25628;&#32034; </label>
+                    </div>
+                    </div>
+                    
+                    <div class="clear"></div>
+        
+<!--{nosort}-->
+        
+                    <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+        
+<!--{scope}-->
+        
+        
+                    <input value="Submit" type="submit"> </label></div>
+        
+                    </form>
+            
+                    <div class="searchTips">
+                    <p><strong>&#26631;&#39064;&#25628;&#32034;</strong></p>
+                    <p>&#38543;&#24847;&#38190;&#20837;&#22810;&#25110;&#23569;&#30340;&#26631;&#39064;&#12290;&#20363;:</p>
+                    <ul>
+                    <li><em>Intruder in the Dust</em></li>
+                    <li><em>Adventures of Huckleberry Finn</em></li>
+                    </ul>
+                    
+                    </div>
+            
+                </div><!--quickSearchInner-->
+            
+            </div><!--quickSearch-->
+
+
+    </div><!--tab1-->
+    <div id="tab-2" class="tabContent">
+    </div>
+    <div id="tab-3" class="tabContent">
+        
+        <h1 class="pageHeader">&#20027;&#39064;&#25628;&#32034;</h1>
+        
+        <form action="/search*chx/" method="get" id="search" class="indexSearch" name="search">
+        
+        <div class="limits">
+        <div class="limitColumn">
+        <label> <input name="searchtype" class="searchtype" value="d" checked="checked" type="radio"> &#20027;&#39064;&#25628;&#32034; </label> 
+        <label> <input name="searchtype" class="searchtype" value="m" type="radio"> &#21307;&#23398;&#31867;(MeSH) </label>
+        </div>
+        <div class="limitColumn">
+        <label> <input name="searchtype" class="searchtype" value="v" type="radio"> &#20307;&#35009;/&#31867;&#22411; </label>
+        </div>
+        </div>
+        
+        <div class="clear"></div>
+        
+<!--{nosort}-->
+        
+        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+        
+<!--{scope}-->
+        
+        
+        <input value="Submit" type="submit"> </label></div>
+        
+        </form>
+        
+                    <div class="searchTips">
+                        <p><strong>&#20027;&#39064;&#25628;&#32034; (Library of Congress)</strong></p>
+                        <p>&#36755;&#20837;&#24744;&#35201;&#23547;&#25214;&#30340;&#20027;&#39064;,&#28982;&#21518;&#25353;&#36827;&#20837;&#38190;&#30424;&#25353;&#38062;&#25110;&#28857;&#25552;&#20132;&#12290;</p>
+                        <p><em>&#20363;&#22914;:</em></p>
+                        <ul>
+                          <li><em>Sports for women</em></li>
+                          <li><em>Automobiles</em></li>
+                          <li><em>Wilder, Laura Ingalls</em></li>
+                          </ul>
+                        <p>&#22914;&#26524;&#26597;&#35810;&#22833;&#36133;, &#23581;&#35797;&#20851;&#38190;&#35789;&#25628;&#32034;. </p>
+                    </div>
+
+    </div>
+    <div id="tab-4" class="tabContent">
+
+        <h1 class="pageHeader">&#21495;&#30721;/&#20854;&#20182;</h1>
+        
+        <form action="/search*chx/" method="get" id="search" class="indexSearch" name="search">
+        
+        <div class="limits">
+        <div class="limitColumn">
+        <label> <input name="searchtype" class="searchtype" value="i" checked="checked" type="radio"> ISBN/ISSN </label> 
+        <label> <input name="searchtype" class="searchtype" value="g" type="radio"> &#25919;&#24220;&#25991;&#20214;&#32534;&#21495;&#25628;&#32034; </label>
+        <label> <input name="searchtype" class="searchtype" value="e" type="radio"> &#38899;&#20048;&#20986;&#29256;&#29289; </label>
+        <label> <input name="searchtype" class="searchtype" value="o" type="radio"> &#20070;&#30446;&#36164;&#26009;&#24211;&#31995;&#32479;&#21495;&#25628;&#32034; </label>
+        </div>
+        <div class="limitColumn">
+        <label> <input name="searchtype" class="searchtype" value="c" type="radio"> &#32034;&#20070;&#21495;&#25628;&#32034; (Library of Congress) </label>
+        <label> <input name="searchtype" class="searchtype" value="l" type="radio"> &#37291;&#23416;&#39006;&#32232;&#30446;&#34399;&#30908;&#26597;&#35426; </label>
+        <label> <input name="searchtype" class="searchtype" value="f" type="radio"> &#32034;&#20070;&#21495;&#25628;&#32034; (Dewey) </label>
+        <label> <input name="searchtype" class="searchtype" value="h" type="radio"> &#25424;&#36104;&#32773; </label>
+        </div>
+        </div>
+        
+        <div class="clear"></div>
+        
+<!--{nosort}-->
+        
+        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+        
+<!--{scope}-->
+        
+        
+        <input value="Submit" type="submit"> </label></div>
+        
+        </form>
+        
+                    <div class="searchTips">
+                        <p><strong>&#22269;&#38469;&#26631;&#20934;&#20070;/&#21002;&#21495;ISBN/ISSN &#25628;&#32034;</strong></p>
+                        <p>&#38190;&#20837;&#22269;&#38469;&#26631;&#20934;&#20070;&#21495; ISBN&#25110;ISSN&#12290;&#21487;&#30465;&#30053;&#26631;&#28857;&#31526;&#21495;&#19982;&#31354;&#26684;&#12290;&#20363;:</p>
+                        <ul>
+                          <li><em>0307337332</em></li>
+                          </ul>
+                    </div>
+    
+    </div>
+
+<div id="tab-5" class="tabContent">
+    
+        <h1 class="pageHeader">&#36164;&#26009;&#24211;&#25628;&#32034;</h1>
+
+<h3>&#36164;&#26009;&#24211;&#25628;&#32034;: <a href="#dbname">&#36164;&#26009;&#24211;&#39064;&#21517;&#20381;&#23383;&#27597;&#25490;&#24207;</a> | <a href="#dbsubject">&#20197;&#20027;&#39064;&#25628;&#32034;&#36164;&#26009;&#24211;</a> | <a href="#dbtype">Type</a> | <a href="#dbresearch">Research Help</a></h3>
+        
+        <fieldset class="articles">
+        <legend>&#36164;&#26009;&#24211;&#39064;&#21517;&#20381;&#23383;&#27597;&#25490;&#24207;:</legend>
+        
+        <a href="/search*chx~S3/j?a">A</a> |
+        <a href="/search*chx~S3/j?b">B</a> |
+        <a href="/search*chx~S3/j?c">C</a> |
+        <a href="/search*chx~S3/j?d">D</a> |
+        <a href="/search*chx~S3/j?e">E</a> |
+        <a href="/search*chx~S3/j?f">F</a> |
+        <a href="/search*chx~S3/j?g">G</a> |
+        <a href="/search*chx~S3/j?h">H</a> |
+        <a href="/search*chx~S3/j?i">I</a> |
+        <a href="/search*chx~S3/j?j">J</a> |
+        <a href="/search*chx~S3/j?k">K</a> |
+        <a href="/search*chx~S3/j?l">L</a> |
+        <a href="/search*chx~S3/j?m">M</a> |
+        <a href="/search*chx~S3/j?n">N</a> |
+        <a href="/search*chx~S3/j?o">O</a> |
+        <a href="/search*chx~S3/j?p">P</a> |
+        <a href="/search*chx~S3/j?q">Q</a> |
+        <a href="/search*chx~S3/j?r">R</a> |
+        <a href="/search*chx~S3/j?s">S</a> |
+        <a href="/search*chx~S3/j?t">T</a> |
+        <a href="/search*chx~S3/j?u">U</a> |
+        <a href="/search*chx~S3/j?v">V</a> |
+        <a href="/search*chx~S3/j?w">W</a> |
+        <a href="/search*chx~S3/j?x">X</a> |
+        <a href="/search*chx~S3/j?y">Y</a> |
+        <a href="/search*chx~S3/j?z">Z</a> |
+        <a href="/search*chx~S3/j?1">#</a> |
+        <a href="/search*chx~S3/j?00000">All titles</a>
+        </fieldset>
+
+        <a name="dbsubject"></a>
+        <fieldset class="articles">
+<legend>&#20197;&#20027;&#39064;&#25628;&#32034;&#36164;&#26009;&#24211;</legend>
+
+<div id="dbRows">
+<div id="rowLeft">
+<ul class="databaseListing span7">
+<li><a href="/search*chx~S3/x?accounting">Accounting</a></li>
+<li><a href="/search*chx~S3/x?anthropology">Anthropology</a></li>
+<li><a href="/search*chx~S3/x?architecture urban planning and design">Architecture Urban Planning and Design</a></li>
+<li><a href="/search*chx~S3/x?art and art history">Art and Art History</a></li>
+<li><a href="/search*chx~S3/x?biological sciences">Biological Sciences</a></li>
+<li><a href="/search*chx~S3/x?black studies">Black Studies</a></li>
+<li><a href="/search*chx~S3/x?business">Business</a></li>
+<li><a href="/search*chx~S3/x?chemistry">Chemistry</a></li>
+<li><a href="/search*chx~S3/x?communication studies">Communication Studies</a></li>
+<li><a href="/search*chx~S3/x?computer science and electrical engineering">Computer Science and Electrical Engineering</a></li>
+<li><a href="/search*chx~S3/x?criminal justice and criminology">Criminal Justice and Criminology</a></li>
+<li><a href="/search*chx~S3/x?dance">Dance</a></li>
+<li><a href="/search*chx~S3/x?dentistry">Dentistry</a></li>
+<li><a href="/search*chx~S3/x?economics">Economics</a></li>
+<li><a href="/search*chx~S3/x?education">Education</a></li>
+<li><a href="/search*chx~S3/x?engineering">Engineering</a></li>
+<li><a href="/search*chx~S3/x?english and american literature">English and American Literature</a></li>
+<li><a href="/search*chx~S3/x?environmental studies">Environmental Studies</a></li>
+<li><a href="/search*chx~S3/x?film studies">Film Studies</a></li>
+<li><a href="/search*chx~S3/x?finance">Finance</a></li>
+<li><a href="/search*chx~S3/x?french language and literature">French Language and Literature</a></li>
+<li><a href="/search*chx~S3/x?general">General</a></li>
+<li><a href="/search*chx~S3/x?geosciences and geography">Geosciences and Geography</a></li>
+<li><a href="/search*chx~S3/x?german language and literature">German Language and Literature</a></li>
+<li><a href="/search*chx~S3/x?health sciences biosciences">Health Sciences/Biosciences</a></li>
+</ul>
+</div>
+
+<div id="rowRight">
+<ul class="databaseListing span6">
+<li><a href="/search*chx~S3/x?history">History</a></li>
+<li><a href="/search*chx~S3/x?kansas city metro research">Kansas City Metro Research</a></li>
+<li><a href="/search*chx~S3/x?language and linguistics">Language and Linguistics</a></li>
+<li><a href="/search*chx~S3/x?latin american and spanish literature and culture">Latin American and Spanish Literature and Culture</a></li>
+<li><a href="/search*chx~S3/x?latina latino studies">Latina/Latino Studies</a></li>
+<li><a href="/search*chx~S3/x?law">Law</a></li>
+<li><a href="/search*chx~S3/x?library science">Library Science</a></li>
+<li><a href="/search*chx~S3/x?mathematics and statistics">Mathematics and Statistics</a></li>
+<li><a href="/search*chx~S3/x?medicine">Medicine</a></li>
+<li><a href="/search*chx~S3/x?medieval studies">Medieval Studies</a></li>
+<li><a href="/search*chx~S3/x?music">Music</a></li>
+<li><a href="/search*chx~S3/x?nursing">Nursing</a></li>
+<li><a href="/search*chx~S3/x?pharmacy">Pharmacy</a></li>
+<li><a href="/search*chx~S3/x?philosophy">Philosophy</a></li>
+<li><a href="/search*chx~S3/x?physics and astronomy">Physics and Astronomy</a></li>
+<li><a href="/search*chx~S3/x?political science">Political Science</a></li>
+<li><a href="/search*chx~S3/x?psychology">Psychology</a></li>
+<li><a href="/search*chx~S3/x?public administration">Public Administration</a></li>
+<li><a href="/search*chx~S3/x?religious studies">Religious Studies</a></li>
+<li><a href="/search*chx~S3/x?social work">Social Work</a></li>
+<li><a href="/search*chx~S3/x?sociology">Sociology</a></li>
+<li><a href="/search*chx~S3/x?theatre">Theatre</a></li>
+<li><a href="/search*chx~S3/x?womens and gender studies">Women's and Gender Studies</a></li>
+</ul>
+</div>
+</div>
+</fieldset>
+
+          
+        <p class="actionButtonArea">
+        <a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Back to top</span></span></a>
+        </p>
+
+        <a name="dbtype"></a>
+        <fieldset class="articles">
+        <legend>Databases By Type</legend>
+        <div id="dbType">
+        <div id="typeLeft">
+        <ul class="databaseListing span7">
+        <li><a href="/search*chx~S3/x?pre 18th century">Pre-18th Century Primary Sources (400-1700)</a></li>
+        <li><a href="/search*chx~S3/x?18th century primary sources">18th-Century Primary Sources (1700s)</a></li>
+        <li><a href="/search*chx~S3/x?19th century primary sources">19th-Century Primary Sources (1800s)</a></li>
+        <li><a href="/search*chx~S3/x?20th century primary sources">20th-Century Primary Sources (1900s)</a></li>
+        <li><a href="/search*chx~S3/x?audio">Audio</a></li>
+        <li><a href="/search*chx~S3/x?biography">Biography</a></li>
+        <li><a href="/search*chx~S3/x?book reviews">Book Reviews</a></li>
+        <li><a href="/search*chx~S3/x?career and college resources">Career and College Resources</a></li>
+        <li><a href="/search*chx~S3/x?digital archival collections">Digital Archival Collections</a></li>
+        <li><a href="/search*chx~S3/x?dissertations theses and conference proceedings">Dissertations, Theses, and Conference Proceedings</a></li>
+        </ul>
+        </div>
+        <div id="typeRight">
+        <ul class="databaseListing span6">
+        <li><a href="/search*chx~S3/x?e books">E-Books</a></li>
+        <li><a href="/search*chx~S3/x?e reference">E-Reference (Encyclopedias, Dictionaries, and Handbooks)</a></li>
+        <li><a href="/search*chx~S3/x?government information">Government Information</a></li>
+        <li><a href="/search*chx~S3/x?images">Images</a></li>
+        <li><a href="/search*chx~S3/x?news">News</a></li>
+        <li><a href="/search*chx~S3/x?statistics and data">Statistics and Data</a></li>
+        <li><a href="/search*chx~S3/x?tests and test reviews">Tests and Test Reviews</a></li>
+        <li><a href="/search*chx~S3/x?video">Video</a></li>
+        </ul>
+        </div>
+        </div>
+        </fieldset>
+            
+            
+        <p class="actionButtonArea">
+        <a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Back to top</span></span></a>
+        </p>
+
+        <a name="dbresearch"></a>
+        <fieldset class="articles">
+        <legend>Need help with your research?</legend>
+        <div class="row">
+        <ul class="databaseListing span6">
+        <li><a href="http://library.umkc.edu/ask-a-librarian">Ask A Librarian</a></li>
+        <li><a href="http://libguides.library.umkc.edu/index.php">Research Guides</a></li>
+        <li><a href="http://library.umkc.edu/form/research-workshops">Research Workshops</a></li>
+        </ul>
+        </div>
+        </fieldset>
+        
+    </div>
+
+  </div>
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
+</body>
+</html>
+

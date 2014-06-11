@@ -29,14 +29,14 @@ $(document).ready(function(){
         $('input.searchtype[value=X]').attr('checked', true);
         $('.innerQuickSearch').hide();
         $('.X .innerQuickSearch').show();
-	$('input.searchtype').change(function(){
+  $('input.searchtype').change(function(){
             $('.innerQuickSearch').hide();
             $('.' + this.value + ' .innerQuickSearch').show();
             $('input.searchtype[value=' + this.value + ']').attr('checked', true);
-	});
-	$('#moreLink').click(function(){
+  });
+  $('#moreLink').click(function(){
              $('.tipsTable').toggle();
-	});
+  });
         
     //Remove the colons from advanced search
     $('#advancedSubmit').click(function () { 
@@ -296,7 +296,7 @@ School:
             <td>Example: <br />
                 "physical therapy"
               Example: <br />
-                "reading comprehension strategies""</td>
+                "reading comprehension strategies"</td>
           </tr>
           <tr>
             <td>Proximity</td>
@@ -416,3 +416,5 @@ School:
 <!--{botlogo}-->
 </body>
 </html>
+
+

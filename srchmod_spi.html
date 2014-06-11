@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 23 Mar 2010 -->
+<head>
+<title>Cat&#225;logo Web de MERLIN - Limitar/Ordenar b&#250;squeda</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(1800000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
+</head>
+<body>
+<!--{toplogo}-->
+<div class="pageContentInner">
+
+<h1 class="pageHeader">Limitar/Ordenar b&#250;squeda</h1>
+
+<p>
+Ha buscado por
+<!--{searchtypeindex}-->
+
+<!--{searchterm}-->
+-
+<!--{entriesfoundnum}-->
+ entradas encontradas.
+</p>
+
+<!--{iferr}-->
+<div><span class="errormessage">
+<!--{errmsg}-->
+</span></div>
+<!--{xif}-->
+
+<div class="form1Part" id="accessibleForm">
+
+<!--{formbegin}-->
+
+<fieldset>
+<legend>Seleccione los criterios para limitar, por favor:</legend>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="W">Ubicaci&#243;n:</label>
+</span>
+<!--{WHERE_select}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="M">Tipo de material:</label>
+</span>
+<!--{MATERIAL_select}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="L">Idioma:</label>
+</span>
+<!--{LANGUAGE_select}-->
+</div>
+
+<div class="formEntryArea">
+<fieldset class="formFieldsetInner">
+<legend>A&#241;o de publicaci&#243;n:</legend>
+<div class="formEntryArea">
+<!--<span class="formLabel">
+<label for="Ya">A&#241;o de publicaci&#243;n:</label>
+</span> -->
+<!--{YEAR_select}-->
+</div>
+</fieldset>
+</div>
+
+<div class="formEntryArea">
+<label for="NAME" class="accessibleAddInfo">Tipo de l&#237;mite:</label>
+<span class="formLabel"><label for="VALUE">Introducir iniciales:</label></span>
+<!--{AUTHOR_label}-->
+<!--{AUTHOR_select}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="sortdropdown">Ordenar por:</label>
+</span>
+<!--{sort}-->
+</div>
+
+<div class="formButtonArea">
+<!--{submit}-->
+<!--{cancel}-->
+</div>
+
+</fieldset>
+<!--{formend}-->
+</div> <!-- form1Part -->
+
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
+</body>
+</html>
+

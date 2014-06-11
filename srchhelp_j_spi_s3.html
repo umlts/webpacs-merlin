@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 23 Mar 2010 -->
+<head>
+<title>Art&#237;culos y Revistas | UMKC </title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(1800000, "/");
+// -->
+
+</script>
+<script>
+function submitSubject() {
+    window.location="/search~S3*spi/x?" + document.subjectSearch.bySubject.options[document .subjectSearch.bySubject.selectedIndex].value;
+    return true;
+}
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+<body>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="/screens/jquery.cookie.js"></script>
+<script src="/screens/menu-collapsed.js" type="text/javascript"></script>
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
+<script type="text/javascript" src="/screens/856links.js"></script>
+<script type="text/javascript" src='/screens/sms.js'> </script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
+
+	$(".searchtype").click(function(){
+		$(".searchTips").load("/screens/" + this.value + ".inc");
+	});
+	//Changes the search examples
+	
+	//var selectAny = $('#b option[value=""]')
+	//$('#b option:not([value^="z"])').detach(); 
+	//selectAny.prependTo("#b")
+	//Hides the out-of-scope locations
+	
+	//Remove the colon from keyword searches
+	$('input[type="submit"]').click(function () {
+		var searchTerm = $('#searcharg').val();
+		var searchIndex = $('[name="searchtype"]').val();
+		if((/\b[atsn]:/).test(searchTerm)) {}
+		else if (searchIndex != "X") {} else {
+			var newSearchTerm = searchTerm.replace(":", " ");
+			$('#searcharg').val(newSearchTerm);
+		}
+		});
+	});
+</script>
+
+<script type="text/javascript">
+if (document.body){document.body.className = "bodybg";}
+</script>
+
+<link rel="stylesheet" type="text/css" href="/screens/styles_s3_spi.css" / >
+
+<div class="minHeight">
+<div class="fullPage">
+
+<div id="skipNav"><a href="#content" tabindex="1">Saltar al contenido</a></div>
+<div class="topLogo">
+
+<div class="topLogoImage">
+<a href="http://library.umkc.edu/" tabindex="10"><img src="/screens/umkc.png" alt="UMKC"></a>
+</div>
+
+<div class="clusterLogo">
+<a href="/search*spi/X" tabindex="10"><img src="/screens/merlin.png" alt="MERLIN Catalog"></a>
+</div>	
+
+<div id="tabsToplogo">
+    <ul id="tabRow">
+      <li class="tab"><a href="/search/X#tab-5">Art&#237;culos y Revistas</a></li>
+      <li class="tab"><a href="http://pc8ga3qq6a.search.serialssolutions.com/">Revistas Electr&#243;nicas y e-Libros</a></li>
+    </ul>
+</div>
+
+<div class="linkBanner">
+</div>
+<div class="clear"></div>
+</div>
+<div id="alertMessage">
+<br>
+<strong>ALERT:</strong>
+Due to system problems, "title begins with" search results may not be accurate. Try a keyword search if you don't find what you need with a title search.
+</div>
+<!--topLogo-->
+
+<div class="rightColumn">
+<div id="searchOptions">
+
+<ul>
+	<li><a href="/search*spi/X">Nueva B&#250;squeda</option>
+	<li><a href="http://libguides.library.umkc.edu/index.php">Gu&#237;as de Investigaci&#243;n</a></li>
+	<li><a href="/patroninfo*spi">Mi cuenta</a></li>
+	<li><a href="/search*spi/b">B&#250;squeda por c&#243;digo de barras</a></li>
+	<li><a href="http://library.umkc.edu/newtitles">T&#237;tulos Nuevos</a></li>
+	<li><a>Otras Bibliotecas</a>
+		<ul>
+			<li><a href="http://library.mst.edu/">Missouri S&T</a></li>
+			<li><a href="http://mulibraries.missouri.edu/">MU</a></li>
+			<li><a href="http://www.law.missouri.edu/library/">MU-Law</a></li>		
+			<li><a href="http://www.umsl.edu/library">UMSL</a></li>
+			<li><a href="http://shs.umsystem.edu/index.shtml">State Historical Society</a></li>
+		</ul>
+	</li>
+	<li><a href="http://laurel.lso.missouri.edu:2083">Nueva B&#250;squeda MOBIUS</a></li>
+	<li><a href="/help*spi">Ayuda</a></li>
+	<li><a href="#" onclick="iiiSwitchLang('eng')">English</a></li>
+	<li><a href="#" onclick="iiiSwitchLang('chx')">&#31616;&#20307;&#20013;&#25991;</a></li>
+</ul>
+
+</div><!--searchOptions-->
+</div><!--rightColumn-->
+<div class="pageContentColumn"><!-- content container -->
+<a name="content" id="content"></a>
+
+<div class="pageContentInner">
+
+<h1 class="pageHeader">Art&#237;culos y Revistas</h1>
+<h3>B&#250;squeda en la base de datos: <a href="#dbname">Nombre</a> | <a href="#dbsubject">Materia</a> | <a href="#dbtype">Tipo</a> | <a href="#dbresearch">Research Help</a></h3>
+<div id="accessibleForm" class="articles form1Part">
+
+<a name="dbname"></a>	
+<fieldset>
+<legend>B&#250;squeda por Nombre:</legend>
+
+<a href="/search~S3*spi/j?a">A</a> |
+<a href="/search~S3*spi/j?b">B</a> |
+<a href="/search~S3*spi/j?c">C</a> |
+<a href="/search~S3*spi/j?d">D</a> |
+<a href="/search~S3*spi/j?e">E</a> |
+<a href="/search~S3*spi/j?f">F</a> |
+<a href="/search~S3*spi/j?g">G</a> |
+<a href="/search~S3*spi/j?h">H</a> |
+<a href="/search~S3*spi/j?i">I</a> |
+<a href="/search~S3*spi/j?j">J</a> |
+<a href="/search~S3*spi/j?k">K</a> |
+<a href="/search~S3*spi/j?l">L</a> |
+<a href="/search~S3*spi/j?m">M</a> |
+<a href="/search~S3*spi/j?n">N</a> |
+<a href="/search~S3*spi/j?o">O</a> |
+<a href="/search~S3*spi/j?p">P</a> |
+<a href="/search~S3*spi/j?q">Q</a> |
+<a href="/search~S3*spi/j?r">R</a> |
+<a href="/search~S3*spi/j?s">S</a> |
+<a href="/search~S3*spi/j?t">T</a> |
+<a href="/search~S3*spi/j?u">U</a> |
+<a href="/search~S3*spi/j?v">V</a> |
+<a href="/search~S3*spi/j?w">W</a> |
+<a href="/search~S3*spi/j?x">X</a> |
+<a href="/search~S3*spi/j?y">Y</a> |
+<a href="/search~S3*spi/j?z">Z</a> |
+<a href="/search~S3*spi/j?1">#</a> |
+<a href="/search~S3*spi/j?00000">All titles</a>
+</fieldset>
+
+<a name="dbsubject"></a>
+<fieldset class="articles">
+<legend>B&#250;squeda por Materia</legend>
+
+<div id="dbRows">
+<div id="rowLeft">
+<ul class="databaseListing span7">
+<li><a href="/search~S3*spi/x?accounting">Accounting</a></li>
+<li><a href="/search~S3*spi/x?anthropology">Anthropology</a></li>
+<li><a href="/search~S3*spi/x?architecture urban planning and design">Architecture Urban Planning and Design</a></li>
+<li><a href="/search~S3*spi/x?art and art history">Art and Art History</a></li>
+<li><a href="/search~S3*spi/x?biological sciences">Biological Sciences</a></li>
+<li><a href="/search~S3*spi/x?black studies">Black Studies</a></li>
+<li><a href="/search~S3*spi/x?business">Business</a></li>
+<li><a href="/search~S3*spi/x?chemistry">Chemistry</a></li>
+<li><a href="/search~S3*spi/x?communication studies">Communication Studies</a></li>
+<li><a href="/search~S3*spi/x?computer science and electrical engineering">Computer Science and Electrical Engineering</a></li>
+<li><a href="/search~S3*spi/x?criminal justice and criminology">Criminal Justice and Criminology</a></li>
+<li><a href="/search~S3*spi/x?dance">Dance</a></li>
+<li><a href="/search~S3*spi/x?dentistry">Dentistry</a></li>
+<li><a href="/search~S3*spi/x?economics">Economics</a></li>
+<li><a href="/search~S3*spi/x?education">Education</a></li>
+<li><a href="/search~S3*spi/x?engineering">Engineering</a></li>
+<li><a href="/search~S3*spi/x?english and american literature">English and American Literature</a></li>
+<li><a href="/search~S3*spi/x?environmental studies">Environmental Studies</a></li>
+<li><a href="/search~S3*spi/x?film studies">Film Studies</a></li>
+<li><a href="/search~S3*spi/x?finance">Finance</a></li>
+<li><a href="/search~S3*spi/x?french language and literature">French Language and Literature</a></li>
+<li><a href="/search~S3*spi/x?general">General</a></li>
+<li><a href="/search~S3*spi/x?geosciences and geography">Geosciences and Geography</a></li>
+<li><a href="/search~S3*spi/x?german language and literature">German Language and Literature</a></li>
+<li><a href="/search~S3*spi/x?health sciences biosciences">Health Sciences/Biosciences</a></li>
+</ul>
+</div>
+
+<div id="rowRight">
+<ul class="databaseListing span6">
+<li><a href="/search~S3*spi/x?history">History</a></li>
+<li><a href="/search~S3*spi/x?kansas city metro research">Kansas City Metro Research</a></li>
+<li><a href="/search~S3*spi/x?language and linguistics">Language and Linguistics</a></li>
+<li><a href="/search~S3*spi/x?latin american and spanish literature and culture">Latin American and Spanish Literature and Culture</a></li>
+<li><a href="/search~S3*spi/x?latina latino studies">Latina/Latino Studies</a></li>
+<li><a href="/search~S3*spi/x?law">Law</a></li>
+<li><a href="/search~S3*spi/x?library science">Library Science</a></li>
+<li><a href="/search~S3*spi/x?mathematics and statistics">Mathematics and Statistics</a></li>
+<li><a href="/search~S3*spi/x?medicine">Medicine</a></li>
+<li><a href="/search~S3*spi/x?medieval studies">Medieval Studies</a></li>
+<li><a href="/search~S3*spi/x?music">Music</a></li>
+<li><a href="/search~S3*spi/x?nursing">Nursing</a></li>
+<li><a href="/search~S3*spi/x?pharmacy">Pharmacy</a></li>
+<li><a href="/search~S3*spi/x?philosophy">Philosophy</a></li>
+<li><a href="/search~S3*spi/x?physics and astronomy">Physics and Astronomy</a></li>
+<li><a href="/search~S3*spi/x?political science">Political Science</a></li>
+<li><a href="/search~S3*spi/x?psychology">Psychology</a></li>
+<li><a href="/search~S3*spi/x?public administration">Public Administration</a></li>
+<li><a href="/search~S3*spi/x?religious studies">Religious Studies</a></li>
+<li><a href="/search~S3*spi/x?social work">Social Work</a></li>
+<li><a href="/search~S3*spi/x?sociology">Sociology</a></li>
+<li><a href="/search~S3*spi/x?theatre">Theatre</a></li>
+<li><a href="/search~S3*spi/x?womens and gender studies">Women's and Gender Studies</a></li>
+</ul>
+</div>
+</div>
+</fieldset>
+
+<p class="actionButtonArea">
+<a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Back to top</span></span></a>
+</p>
+
+<a name="dbtype"></a>
+<fieldset class="articles">
+<legend>Databases By Type</legend>
+<div id="dbType">
+<div id="typeLeft">
+<ul class="databaseListing span7">
+<li><a href="/search~S3*spi/x?pre 18th century">Pre-18th Century Primary Sources (400-1700)</a></li>
+<li><a href="/search~S3*spi/x?18th century primary sources">18th-Century Primary Sources (1700s)</a></li>
+<li><a href="/search~S3*spi/x?19th century primary sources">19th-Century Primary Sources (1800s)</a></li>
+<li><a href="/search~S3*spi/x?20th century primary sources">20th-Century Primary Sources (1900s)</a></li>
+<li><a href="/search~S3*spi/x?audio">Audio</a></li>
+<li><a href="/search~S3*spi/x?biography">Biography</a></li>
+<li><a href="/search~S3*spi/x?book reviews">Book Reviews</a></li>
+<li><a href="/search~S3*spi/x?career and college resources">Career and College Resources</a></li>
+<li><a href="/search~S3*spi/x?digital archival collections">Digital Archival Collections</a></li>
+<li><a href="/search~S3*spi/x?dissertations theses and conference proceedings">Dissertations, Theses, and Conference Proceedings</a></li>
+</ul>
+</div>
+
+<div id="typeRight">
+<ul class="databaseListing span6">
+<li><a href="/search~S3*spi/x?e books">E-Books</a></li>
+<li><a href="/search~S3*spi/x?e reference">E-Reference (Encyclopedias, Dictionaries, and Handbooks)</a></li>
+<li><a href="/search~S3*spi/x?government information">Government Information</a></li>
+<li><a href="/search~S3*spi/x?images">Images</a></li>
+<li><a href="/search~S3*spi/x?news">News</a></li>
+<li><a href="/search~S3*spi/x?statistics and data">Statistics and Data</a></li>
+<li><a href="/search~S3*spi/x?tests and test reviews">Tests and Test Reviews</a></li>
+<li><a href="/search~S3*spi/x?video">Video</a></li>
+</ul>
+</div>
+</div>
+</fieldset>
+
+<p class="actionButtonArea">
+<a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Back to top</span></span></a>
+</p>
+
+<a name="dbresearch"></a>
+<fieldset class="articles">
+<legend>Need help with your research?</legend>
+<div class="row">
+<ul class="databaseListing span6">
+<li><a href="http://library.umkc.edu/ask-a-librarian">Ask A Librarian</a></li>
+<li><a href="http://libguides.library.umkc.edu/index.php">Research Guides</a></li>
+<li><a href="http://library.umkc.edu/form/research-workshops">Research Workshops</a></li>
+</ul>
+</div>
+</fieldset>
+</div>
+
+
+</div><!-- pageContentInner -->
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].SEARCH.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
