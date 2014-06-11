@@ -1,0 +1,401 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 23 Mar 2010 -->
+<head>
+<title>MERLIN &#32593;&#39029;&#30446;&#37636;</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(1800000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+<body id="frontPage" onload="if (location.search.indexOf('SUBKEY') != -1 || location.search.indexOf('SEARCH') != -1 || location.search.indexOf('searcharg=') != -1 ) modifySearch(document.location.search); init_progsearch(); if (document.search) document.search.searchText1.focus();">
+<!--{advancedsearchbody}-->
+<!--{toplogo}-->
+<script type="text/javascript">
+
+
+
+$(document).ready(function(){
+
+    //Switching the menu when the radio button is changed
+        $('input.searchtype[value=X]').attr('checked', true);
+        $('.innerQuickSearch').hide();
+        $('.X .innerQuickSearch').show();
+  $('input.searchtype').change(function(){
+            $('.innerQuickSearch').hide();
+            $('.' + this.value + ' .innerQuickSearch').show();
+            $('input.searchtype[value=' + this.value + ']').attr('checked', true);
+  });
+  $('#moreLink').click(function(){
+             $('.tipsTable').toggle();
+  });
+        
+    //Remove the colons from advanced search
+    $('#advancedSubmit').click(function () {
+      var searchTerm = $('.advancedInput').val();
+      if((/\b[atsn]:/).test(searchTerm)) {}else {
+      var newSearchTerm = searchTerm.replace(":", " ");
+      $('.advancedInput').val(newSearchTerm);
+    }
+    });
+    
+    //The scrollbar should always be at the top when the page loads
+    $(document).scrollTop(0);
+
+    var i = $("#advancedSearchBoxes input").length;
+    var j = i + 1;
+    var moreSearchBoolean = '<br /><select name="boolean' + i + '"><option value="%20and%20" selected="selected">And</option><option value="%20and%20not%20">And not</option><option value="%20or%20">Or</option></select><br />'
+    var moreSearchField = '<select class="keywordSegment" name="fieldLimit' + j + '"><option value="" selected="selected">&#38364;&#37749;&#23383;:</option><option value="a:">&#20316;&#32773;&#25628;&#32034;:</option><option value="t:">&#26631;&#39064;&#25628;&#32034;:</option><option value="d:">&#20027;&#39064;&#25628;&#32034;:</option><option value="c:">&#30446;&#24405;</option><option value="N:">&#20307;&#35009;:</option></select>'
+    var moreSearchInput = '<input style="margin: 0 4px;" maxlength="100" size="35" name="searchText' + j + ' " />'
+
+    $("#addMore").click(function() {
+        $("#advancedSearchBoxes").append(moreSearchBoolean);
+        $("#advancedSearchBoxes").append(moreSearchField);
+        $("#advancedSearchBoxes").append(moreSearchInput);
+    });
+});
+</script>
+<div class="pageContentInner">
+
+<div id="tabs">
+    <ul id="tabRow">
+      <li class="tab"><a href="/search*chx/X#tab-1">&#26816;&#32034;</a></li>
+      <li class="tab active"><a>&#39640;&#32423;&#20851;&#38190;&#23383;&#25628;&#32034;</a></li>
+      <li class="tab"><a href="/search*chx/X#tab-3">&#20027;&#39064;&#25628;&#32034;</a></li>
+      <li class="tab"><a href="/search*chx/X#tab-4">&#21495;&#30721;/&#20854;&#20182;</a></li>
+    </ul>
+    
+    <div id="tab-2" class="tabContent">
+        <h1 class="pageHeader">&#39640;&#32423;&#20851;&#38190;&#23383;&#25628;&#32034;</h1>
+        
+            <div id="accessibleForm" class="advancedSearch">
+                
+<!--{msg}-->
+<!--{spellcheck}-->
+
+<!--{innreach}-->
+
+<!--{advancedsearchformbegin}-->
+
+<fieldset>
+<legend>&#36755;&#20837;&#25628;&#32034;&#35789;&#27719;</legend>
+<div class="formEntryArea" id="advancedSearchBoxes">
+<select name="fieldLimit1" class="keywordSegment">
+
+<option value="" selected="selected">&#38364;&#37749;&#23383;:</option>
+<option value="a:">&#20316;&#32773;&#25628;&#32034;:</option>
+<option value="t:">&#26631;&#39064;&#25628;&#32034;:</option>
+<option value="d:">&#20027;&#39064;&#25628;&#32034;:</option>
+<option value="c:">&#30446;&#24405;:</option>
+<option value="N:">&#20307;&#35009;:</option>
+</select>
+<input maxlength="100" size="35" name="searchText1" />
+<br />
+<select name="boolean1">
+
+<option value="%20and%20" selected="selected">And</option>
+<option value="%20and%20not%20">And not</option>
+<option value="%20or%20">Or</option>
+</select>
+<br />
+<select name="fieldLimit2" class="keywordSegment">
+
+<option value="" selected="selected">&#38364;&#37749;&#23383;:</option>
+<option value="a:">&#20316;&#32773;&#25628;&#32034;:</option>
+<option value="t:">&#26631;&#39064;&#25628;&#32034;:</option>
+<option value="d:">&#20027;&#39064;&#25628;&#32034;:</option>
+<option value="c:">&#30446;&#24405;:</option>
+<option value="N:">&#20307;&#35009;:</option>
+</select>
+<input maxlength="100" size="35" name="searchText2" />
+<br />
+<select name="boolean2">
+
+<option value="%20and%20" selected="selected">And</option>
+<option value="%20and%20not%20">And not</option>
+<option value="%20or%20">Or</option>
+</select>
+<br />
+<select name="fieldLimit3"  class="keywordSegment">
+
+<option value="" selected="selected">&#38364;&#37749;&#23383;:</option>
+<option value="a:">&#20316;&#32773;&#25628;&#32034;:</option>
+<option value="t:">&#26631;&#39064;&#25628;&#32034;:</option>
+<option value="d:">&#20027;&#39064;&#25628;&#32034;:</option>
+<option value="c:">&#30446;&#24405;:</option>
+<option value="N:">&#20307;&#35009;:</option>
+</select>
+<input maxlength="100" size="35" name="searchText3" />
+</div>
+<div class="formEntryArea">
+  <a href="#" id="addMore">+ Add more search terms</a>
+</div>
+<input type="hidden" name="startLimit" >
+<div class="formEntryArea">
+<!--{availlim}-->
+</div>
+<div class="formButtonArea">
+<span>
+<!--{advancedsubmit}-->
+</span>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>&#36873;&#25321;&#38480;&#21046;&#33539;&#22260; (Optional)</legend>
+                    
+<p>In each box hold down the CTRL or Apple key to select more than one.</p>
+
+<div class="formEntryArea" id="form3PartAdvLimitSort">
+<!--{sort}-->
+</div>
+
+<div class="formEntryArea">
+<table border="0">
+<tr>
+<td>
+<label for="searchscope">
+School:
+</label>
+</td>
+<td>
+<!--{scope}-->
+</td>
+</tr>
+</table>
+</div>
+
+<div class="formEntryArea">
+<!--{branch}-->
+</div>
+
+
+<div class="formEntryArea">
+<!--{lang}-->
+</div>
+
+
+<div class="formEntryArea">
+<!--{DOCDATE}-->
+</div>
+<div class="formEntryArea">
+<!--{publish}-->
+</div>
+
+<div class="formEntryArea">
+<table border="0">
+<tr>
+<td>Conference Proceedings:</td>
+<td>
+<select name="o">
+<option value="">ANY</option>
+<option value="1">Yes</option>
+<option value="0">No</option>
+</select>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="formEntryArea">
+<table border="0">
+<tr>
+<td><label for="n">Online:</label></td>
+<td>
+<select id="n" name="n">
+<option value="">ANY</option>
+<option value="cr">Online Only</option>
+</select>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="formEntryArea">
+<table border="0">
+<tr>
+<td><label for="a">Audio and Video Formats:</label></td>
+<td>
+<select id="a" name="a" size="5" multiple="multiple">
+<option value="">ANY</option>
+<option value=""></option>
+<option value="s*">AUDIO FORMATS</option>
+<option value="s*">All Sound Recording Formats</option>
+<option value="ss">Audio cassettes</option>
+<option value="sd f">CDs</option>
+<option value="sd b">LPs</option>
+<option value="sd c">45 rpm </option>
+<option value="sd d">78 rpm</option>
+<option value="sd z">DVD-audio</option>
+<option value="st">Reel-to-reel</option>
+<option value="se">Cylinder</option>
+<option value="sq">Roll</option>
+<option value="sw">Wire recording</option>
+<option value=""></option>
+<option value="v*">VIDEO FORMATS</option>
+<option value="v*">All Video Recording Formats</option>
+<option value="vd">DVD-video</option>
+<option value="vf">VHS</option>
+<option value="mr">16/35 mm film</option>
+</select>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="formEntryArea">
+<!--{mattype}-->
+</div>
+
+
+<div class="formButtonArea">
+<span>
+<!--{advancedsubmit}-->
+</span>
+</div>
+
+</fieldset>
+<input type="hidden" name="endLimit" >
+    
+<div class="searchTips">
+<p><strong>&#20851;&#38190;&#23383;&#25628;&#32034;</strong></p>
+<p>&#25628;&#32034;&#24744;&#25152;&#21916;&#29233;&#30340;&#20316;&#32773;&#65292;&#20027;&#39064;&#65292;&#26631;&#39064;&#65292;&#31561;&#31561;&#65292;&#25110;.&#35774;&#31435;&#19968;&#20010;&#21253;&#25324;&#38480;&#21046;&#29289;&#36136;&#31867;&#22411;&#65292;&#35821;&#35328;&#65292;&#20986;&#29256;&#24180;&#31561;&#31561;&#38480;&#21046;&#20043;&#39640;&#32423;&#25628;&#32034; </p>
+<p><em>&#20999;&#25130;:</em> educat* finds educate, educated, education, etc.</p>
+<p><em>&#35789;&#32452;&#25628;&#32034;:</em> &quot;physical therapy&quot;</p>
+<p><a id="moreLink">&#26597;&#35810;&#25552;&#31034;</a></p>
+</div>
+
+
+    
+<table class="tipsTable">
+          <tr>
+            <th>&#25628;&#32034;&#23567;&#38182;&#22218;</th>
+            <th>Definition</th>
+            <th>&#20363;&#22914;</th>
+          </tr>
+          <tr>
+            <td>&#19975;&#29992;&#31526;</td>
+            <td>&#21487;&#20110;&#35789;&#32452;&#30340;&#21491;&#36793;&#20351;&#29992;&#21333;&#26143;&#21495;*&#25226;&#35789;&#32452;&#20999;&#25130;&#12290; &#20351;&#29992;'**' &#20316;&#20026;&#20116;&#20010;&#23383;&#20197;&#19978;&#20043;&#26080;&#38480;&#21046;&#25130;&#21106; &#19975;&#29992;&#31526;'*'&#21487;&#20197;&#22312;&#26597;&#23547;&#23383;&#20018;&#20013;&#20986;&#29616;&#12290; &#20351;&#29992;&#21333;&#38382;&#21495;&#65311;&#21462;&#20195;&#21333;&#23383;&#27597;&#12290;</td>
+            <td><span style="text-decoration:underline">&#20363; </span> : 
+              environment* polic*, wom?n</td>
+          </tr>
+          <tr>
+            <td>&#35789;&#32452;&#25628;&#32034;</td>
+            <td>
+              &#29992;&#25324;&#21495;&#23558;&#35201;&#25628;&#23547;&#30340;&#35789;&#32452;&#26631;&#27880;&#65292;&#25628;&#23547;&#32467;&#26524;&#23558;&#38480;&#23450;&#22312;    &#23436;&#20840;&#31526;&#21512;&#25972;&#20010;&#35789;&#32452;&#30340;&#26465;&#20214;&#19978; </strong></td>
+            <td>&#20363;: <br />
+                &quot;university science department&quot;
+              &#20363;: <br />
+                &quot;reading comprehension strategies&quot;</td>
+          </tr>
+          <tr>
+            <td>&#25509;&#36817;&#25805;&#20316;</td>
+            <td>&#20351;&#29992;"near" &#26469;&#26816;&#32034;&#35760;&#24405;&#20110;&#24444;&#27492;&#38388;&#30340;&#30456;&#21516;&#32534;&#32034;&#26639;&#20301;&#20869;&#21253;&#21547;&#30340;&#25351;&#23450;&#35789;&#32452;&#12290; </td>
+            <td> &#20363;:<br />
+                NEAR <br />
+                to    search words within 10 words of each other.<br />
+                &#20363;: <br />
+                audubon near birds<br />
+                <br />
+                &#20363;:<br />
+                WITHIN # <br />
+                to    search words within a specific number of words.</p>
+              <p>                &#20363;: <br />
+                accounting within 5</p>
+              <p>
+                &#20363;:<br />
+              BEFORE <br />
+                to    determine order of search terms. First term must come before second. <br />
+              </p>
+              <p>&#20363;: <br />
+                pay before  television              </p>
+              <p>&#20363;:<br />
+                AFTER<br />
+                to determine order of search terms. First    term must come after second. <br />
+                &#20363;: <br />
+                television after cable  </td>
+          </tr>
+          <tr>
+            <td>&#24067;&#26519;&#36923;&#36753; &#31526;&#21495;&#25805;&#20316;</td>
+            <td>&#20110;&#20219;&#20309;&#39046;&#22495;&#12289;    &#27425;&#24207;&#20351;&#29992;&#25110;&#26469;&#25351;&#26126;&#35789;&#27719;&#12290;    &#20351;&#29992;&#26469;&#25490;&#38500;&#19981;&#38656;&#30340;&#25991;&#23383;&#35789;&#32452;&#12290;</td>
+            <td><span style="text-decoration:underline">&#20363;</span> : stocks and bonds<br>
+      <span style="text-decoration:underline">&#20363;</span> : [stocks or bonds] and [stocks and not bonds] </td>
+          </tr>
+          <tr>
+            <td>&#26639;&#20301;&#38480;&#21046;</td>
+            <td>&#31995;&#32479;&#22914;&#26377;&#26639;&#20301;&#38480;&#21046;&#23558;&#21482;&#22312;&#38480;&#23450;&#30340;&#26639;&#20301;&#20013;&#26597;&#23547;&#35813;&#23383;&#25110;&#35789;&#12290;</td>
+            <td><span style="text-decoration:underline">&#20316;&#32773;</span> : &#20165;&#25628;&#32034;&#20316;&#32773;&#26639;<br />
+            <span style="text-decoration:underline">&#26631;&#39064;</span> : &#20165;&#25628;&#32034;&#26631;&#39064;&#26639;<br />
+            <span style="text-decoration:underline">&#20027;&#39064;</span> : &#20165;&#25628;&#32034;&#20027;&#39064;&#26639;<br />
+            <span style="text-decoration:underline">&#27880;&#35760;</span> : &#20165;&#25628;&#32034;&#27880;&#35760;&#26639;<br /></td>
+          </tr>
+          <tr>
+            <td>Punctuation</td>
+            <td><strong>Ampersand</strong> ( &amp;) is treated as if it    were the word &ldquo;and&rdquo; spelled out. 
+              <strong>Apostrophes </strong>are removed.
+              Other punctuation    marks are replaced by spaces for purposes of searching.</td>
+            <td><p>&#20363;:<br />
+              War &amp; Peace = War and Peace </p>
+              <p>&#20363;:<br />
+              Doll's House = Dolls House</p>
+              <p> &#20363;:<br />
+              St. Louis = St    Louis</p></td>
+          </tr>
+          <tr>
+            <td>Initial articles</td>
+            <td>The catalog will    ignore the initial article of a search such as; <strong>a, an, the, etc. </strong>beginning the search with the second word. You    may chose or may chose not to enter these initial articles. </td>
+            <td valign="top"><p>Enter the initial    article twice to retrieve titles beginning with a word which is normally    considered to be an initial article.
+              </p>
+              <p>&#20363;: a a to z    book of cars</p></td>
+          </tr>
+</table>
+
+<table class="tipsTable">
+
+            <tr>
+              <td>&#32534;&#32452; </td>
+              <td><ul>
+                <li>&#20851;&#38190;&#23383;&#25628;&#32034;&#32467;&#26524;&#36890;&#24120;    &#30001;&#30456;&#20851;&#24615;&#32534;&#32452;    &#26469;&#23558;&#26368;&#26377;&#21487;&#33021;&#30340;&#26631;&#39064;&#24102;&#33267;&#34920;&#21333;&#30340;&#39318;&#20301;&#12290;</li>
+                <li>&#21508;&#32452;&#21512;&#20195;&#34920;&#30528;    &#30456;&#20284;&#27700;&#24179;&#30340;&#30456;&#20851;&#24615;&#19982;&#32467;&#26524;&#34987;&#25490;&#24207;&#22312;&#20197;&#26085;&#26399;&#25110;&#26631;&#39064;&#20026;&#32452;&#21512;&#20043;&#20869;&#12290;</li>
+                <li>&#20197;&#24067;&#26519;&#36923;&#36753;&#31526;&#21495;&#24418;&#25104;    &#19968;&#27425;&#22797;&#26434;&#35810;&#38382;&#26469;&#21462;&#24471;&#19968;&#22871;&#38750;&#32452;&#21512;&#30340;&#32467;&#26524;&#12290;</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td><p>&nbsp;&#26368;&#26377;&#20851;&#30340; &#26631;&#39064;&nbsp; </td>
+              <td>The search term appears in the title proper. </td>
+            </tr>
+            <tr>
+              <td> &nbsp;&#39640;&#24230;&#26377;&#20851;&#30340; &#26631;&#39064;&nbsp; </td>
+              <td> The search term appears in the subtitle. </td>
+            </tr>
+            <tr>
+              <td> &nbsp;&#38750;&#24120;&#26377;&#20851;&#30340; &#26631;&#39064;&nbsp; </td>
+              <td> The search term appears in contents, summary, or note    fields or subject or other added heading fields.  </td>
+            </tr>
+            <tr>
+              <td> &nbsp;&#26377;&#20851;&#30340; &#26631;&#39064;&nbsp; </td>
+              <td> The Boolean AND pulls words from the search term in the title proper and/or subtitle. </td>
+            </tr>
+            <tr>
+              <td> &nbsp;&#20854;&#20182;&#26377;&#20851;&#30340;  &#26631;&#39064;&nbsp;</td>
+              <td> The Boolean AND pulls words from the search term from anywhere else in the record. </td>
+            </tr>
+</table>
+
+<!--{advancedsearchformend}-->
+            </div>
+    </div>
+
+  </div>
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
+</body>
+</html>

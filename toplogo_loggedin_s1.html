@@ -5,6 +5,7 @@
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="/screens/jquery.cookie.js"></script>
 <script src="/screens/menu-collapsed.js" type="text/javascript"></script>
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script>
 <script type="text/javascript" src="/screens/856links.js"></script>
 <script type="text/javascript" src='/screens/sms.js'> </script>
 <script type="text/javascript">
@@ -63,14 +64,18 @@ if (document.body){document.body.className = "bodybg";}
     </ul>
 </div>
 
-<div id="alertMessage"></div>
+
 
 <div class="linkBanner">
 </div>
-
-</div><!--topLogo-->
-
 <div class="clear"></div>
+</div>
+<div id="alertMessage">
+<br>
+<strong>ALERT:</strong>
+Due to system problems, "title begins with" search results may not be accurate. Try a keyword search if you don't find what you need with a title search.
+</div>
+<!--topLogo-->
 <div class="rightColumn">
 <div id="searchOptions">
 
@@ -100,6 +105,8 @@ if (document.body){document.body.className = "bodybg";}
 	</li>
 	<li><a href="http://laurel.lso.missouri.edu:2083">New MOBIUS Search</a></li>
 	<li><a href="/help">Help</a></li>
+	<li><a href="#" onclick="iiiSwitchLang('spi')">Espa&#241;ol</a></li>
+	<li><a href="#" onclick="iiiSwitchLang('chx')">&#31616;&#20307;&#20013;&#25991;</a></li>
 </ul>
 
 </div><!--searchOptions-->

@@ -4,7 +4,7 @@
 $(document).ready(function(){
     
     //Loading the correct content when the tab is clicked from another page
-	$('#tabs .tabContent').hide();
+  $('#tabs .tabContent').hide();
         if (window.location.hash.length > 0) {
             $(window.location.hash).show();
             $('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
@@ -13,13 +13,13 @@ $(document).ready(function(){
             $('#tabs ul li:first').addClass('active');
         }
         
-	$('#tabs #tabRow li a').click(function(){
+  $('#tabs #tabRow li a').click(function(){
                 //Switching the tabs
-		$('#tabs ul li').removeClass('active');
-		$(this).parent().addClass('active'); 
-		var currentTab = $(this).attr('href'); 
-		$('#tabs .tabContent').hide();
-		$(currentTab).show();
+    $('#tabs ul li').removeClass('active');
+    $(this).parent().addClass('active'); 
+    var currentTab = $(this).attr('href'); 
+    $('#tabs .tabContent').hide();
+    $(currentTab).show();
                 
                 //To make the Advanced search page happy
                 
@@ -33,20 +33,21 @@ $(document).ready(function(){
                 
                 //This makes it so the scrollbar doesn't jump to the anchor tag.  It also, unfortunately, makes it so the back button doesn't work.  
                 return false;
-	});
+  });
 
     //Switching the Keyword/Title menu when the radio button is changed
         $('input.searchtype[value=X]').attr('checked', true);
         $('.innerQuickSearch').hide();
         $('.X .innerQuickSearch').show();
-	$('input.searchtype').click(function(){
+  $('input.searchtype').click(function(){
             $('.innerQuickSearch').hide();
             $('.' + this.value + ' .innerQuickSearch').show();
             $('input.searchtype[value=' + this.value + ']').attr('checked', 'checked');
-	});
-	$('#moreLink').click(function(){
+  });
+  $('#moreLink').click(function(){
              $('#optionalLimits').toggle();
 	});
+
 
 
 $('.vol').append($('center'));
@@ -247,6 +248,10 @@ if (itemLocation.indexOf("Marr Sound Archives RooBot") > 0){
                 //"Preview at Google Book Search";
                 if (b.thumbnail_url != undefined){ 
                 document.getElementById("googlebooks").innerHTML = bookJacket 
+                //textGBS = "<p>Search in Google Books</p>"
+                //"Preview at Google Book Search";
+                if (b.thumbnail_url != undefined){
+                document.getElementById("googlebooks").innerHTML = bookJacket
                   //"<a href='" + b.preview_url + "'>" + bookJacket + "</a>"
 
                 }
@@ -272,4 +277,3 @@ document.documentElement.firstChild.appendChild(s);
 //alert (api_url);
 
 </script>
-

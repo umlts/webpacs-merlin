@@ -29,14 +29,14 @@ $(document).ready(function(){
         $('input.searchtype[value=X]').attr('checked', true);
         $('.innerQuickSearch').hide();
         $('.X .innerQuickSearch').show();
-	$('input.searchtype').change(function(){
+  $('input.searchtype').change(function(){
             $('.innerQuickSearch').hide();
             $('.' + this.value + ' .innerQuickSearch').show();
             $('input.searchtype[value=' + this.value + ']').attr('checked', true);
-	});
-	$('#moreLink').click(function(){
+  });
+  $('#moreLink').click(function(){
              $('.tipsTable').toggle();
-	});
+  });
         
     //Remove the colons from advanced search
     $('#advancedSubmit').click(function () { 
@@ -141,7 +141,6 @@ $(document).ready(function(){
 <div class="formEntryArea">
   <a href="#" id="addMore">+ Add more search terms</a>
 </div>
-
 <input type="hidden" name="startLimit" >
 <div class="formEntryArea">
 <!--{availlim}-->
@@ -295,7 +294,7 @@ School:
             <td>Example: <br />
                 "physical therapy"
               Example: <br />
-                "reading comprehension strategies""</td>
+                "reading comprehension strategies"</td>
           </tr>
           <tr>
             <td>Proximity</td>
