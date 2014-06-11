@@ -1184,7 +1184,7 @@ ICON_BUT_ANOTHER_spi=<span class="navButton">Otra b&#250;squeda</span>
 ICON_BUT_NEWSRCH_spi=<span class="navButtonOneLine">Inicio</span>
 ICON_BUT_WORDSRCH_spi=<span class="navButton">Buscar como palabras</span>
 ICON_BUT_MODIFY_spi=<span class="navButton">Modificar b&#250;squeda</span>
-ICON_BUT_SHOWSIM_spi=<span class="navButtonOneLine">Informaci&#243;n Similar</span>
+ICON_BUT_SHOWSIM_spi=<span class="navButton">Informaci&#243;n Similar</span>
 ICON_REL_GROUP_1_spi=<img src="/screens/relevance5.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">M&#225;s relevantes t&#237;tulos</h1>&nbsp;
 ICON_REL_GROUP_2_spi=<img src="/screens/relevance4.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">Altamente relevantes t&#237;tulos</h1>&nbsp;
 ICON_REL_GROUP_3_spi=<img src="/screens/relevance3.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">Muy relevante t&#237;tulos</h1>&nbsp;
