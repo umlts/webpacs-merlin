@@ -21,12 +21,13 @@ function submitSubject() {
 </noscript>
 <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
-<link rel="stylesheet" type="text/css" href="/screens/styles_s3.css" / >
 </head>
 <body>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="/screens/jquery.cookie.js"></script>
 <script src="/screens/menu-collapsed.js" type="text/javascript"></script>
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
+<script type="text/javascript" src="/screens/856links.js"></script>
 <script type="text/javascript" src='/screens/sms.js'> </script>
 <script type="text/javascript">
 $(document).ready(function () {
@@ -59,7 +60,7 @@ $(document).ready(function () {
 if (document.body){document.body.className = "bodybg";}
 </script>
 
-<link rel="stylesheet" type="text/css" href="/screens/styles_s3.css" / >
+<link rel="stylesheet" type="text/css" href="/screens/styles_s3_spi.css" / >
 
 <div class="minHeight">
 <div class="fullPage">
@@ -72,8 +73,8 @@ if (document.body){document.body.className = "bodybg";}
 </div>
 
 <div class="clusterLogo">
-<a href="/search~S0/X" tabindex="10"><img src="/screens/merlin.png" alt="MERLIN Catalog"></a>
-</div>
+<a href="/search*spi/X" tabindex="10"><img src="/screens/merlin.png" alt="MERLIN Catalog"></a>
+</div>	
 
 <div id="tabsToplogo">
     <ul id="tabRow">
@@ -82,18 +83,17 @@ if (document.body){document.body.className = "bodybg";}
     </ul>
 </div>
 
+<div class="linkBanner">
+</div>
+<div class="clear"></div>
+</div>
 <div id="alertMessage">
 <br>
 <strong>ALERT:</strong>
 Due to system problems, "title begins with" search results may not be accurate. Try a keyword search if you don't find what you need with a title search.
 </div>
+<!--topLogo-->
 
-<div class="linkBanner">
-</div>
-
-</div>
-
-<div class="clear"></div>
 <div class="rightColumn">
 <div id="searchOptions">
 
@@ -102,7 +102,7 @@ Due to system problems, "title begins with" search results may not be accurate. 
 	<li><a href="http://libguides.library.umkc.edu/index.php">Gu&#237;as de Investigaci&#243;n</a></li>
 	<li><a href="/patroninfo*spi">Mi cuenta</a></li>
 	<li><a href="/search*spi/b">B&#250;squeda por c&#243;digo de barras</a></li>
-	<li><a href="http://library.umkc.edu/newacq/newtitles.html">T&#237;tulos Nuevos</a></li>
+	<li><a href="http://library.umkc.edu/newtitles">T&#237;tulos Nuevos</a></li>
 	<li><a>Otras Bibliotecas</a>
 		<ul>
 			<li><a href="http://library.mst.edu/">Missouri S&T</a></li>
@@ -114,6 +114,8 @@ Due to system problems, "title begins with" search results may not be accurate. 
 	</li>
 	<li><a href="http://laurel.lso.missouri.edu:2083">Nueva B&#250;squeda MOBIUS</a></li>
 	<li><a href="/help*spi">Ayuda</a></li>
+	<li><a href="#" onclick="iiiSwitchLang('eng')">English</a></li>
+	<li><a href="#" onclick="iiiSwitchLang('chx')">&#31616;&#20307;&#20013;&#25991;</a></li>
 </ul>
 
 </div><!--searchOptions-->
@@ -124,7 +126,7 @@ Due to system problems, "title begins with" search results may not be accurate. 
 <div class="pageContentInner">
 
 <h1 class="pageHeader">Art&#237;culos y Revistas</h1>
-<h3>Find database by: <a href="#dbname">Nombre</a> | <a href="#dbsubject">Materia</a> | <a href="#dbtype">Tipo</a> | <a href="#dbresearch">Research Help</a></h3>
+<h3>B&#250;squeda en la base de datos: <a href="#dbname">Nombre</a> | <a href="#dbsubject">Materia</a> | <a href="#dbtype">Tipo</a> | <a href="#dbresearch">Research Help</a></h3>
 <div id="accessibleForm" class="articles form1Part">
 
 <a name="dbname"></a>	
