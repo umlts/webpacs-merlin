@@ -255,7 +255,7 @@ if (itemLocation.indexOf("Marr Sound Archives RooBot") > 0){
 </script>
 <script type='text/javascript'>
        
-var ISBN = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData").html().replace(/[^0123456789]/g,"")
+var ISBN = $(".bibInfoLabel:contains('国际标准书号')").siblings(".bibInfoData").html().replace(/[^0123456789]/g,"")
 
 var cburl = "http://books.google.com/books";
 // Retrieve the info for these bibkeys
@@ -268,3 +268,4 @@ document.documentElement.firstChild.appendChild(s);
 //alert (api_url);
 
 </script>
+
