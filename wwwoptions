@@ -1497,7 +1497,7 @@ INNREACH_REMOTE_chx=laurel.lso.missouri.edu&<span class="navButton">MOBIUS&#2681
 INNREACH_REMOTE_SSL_chx=laurel.lso.missouri.edu&<span class="navButton">MOBIUS&#26816;&#32034;</span>@laurel.lso.missouri.edu:2443(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
 SSO_VALID_HOSTS=128.206.14.98|laurel.lso.missouri.edu|m.laurel.lso.missouri.edu|merlin-mobius.missouri.edu
 
-ITEMS_MSG_BRIEF=&#28857;&#20987;&#36825;&#37324;&#26597;&#30475;&#22797;&#26412;
+ITEMS_MSG_BRIEF_chx=&#28857;&#20987;&#36825;&#37324;&#26597;&#30475;&#22797;&#26412;
 LINK856TEXT_chx=&#25509;&#36890;
 BIB_LICENSE_FIELDS_chx=&#20801;&#35768;:Vlw|&#38480;&#21046;:Vlx
 BIB_RESOURCE_CAPTION_chx=<strong>UMKC&#29992;&#25143;&#21487;&#20197;&#36890;&#36807;&#38142;&#25509;&#21040;&#36825;&#20010;&#36164;&#28304;</strong>
