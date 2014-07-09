@@ -298,12 +298,12 @@ XRECTYPE=bi
 
 #Requesting
 #BIBREQUEST=true
-ICON_BUT_REQUEST=<span class="navButtonOneLine">Request</span>
+ICON_BUT_REQUEST=<span class="navButtonOneLine request">Request</span>
 ICON_BUT_REQUEST_ALL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Available</span></span></div></div>
 ICON_BUT_REQUEST_MULTI=<span class="navButton">Request Saved</span>
 ICON_BUT_REQUEST_RESET=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Reset Form</span></span></div></div>
 ICON_BUT_REQUEST_SELECTED=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Selected</span></span></div></div>
-ICON_REQUEST=<span class="navButtonSmall navButton">Request</span>
+ICON_REQUEST=<span class="navButtonSmall navButton request">Request</span>
 #REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
 REQUEST=Request item|denyiflocalavail|ask|Y
 #REQUEST_ARTICLE_IFCHKIN=Y
@@ -1260,12 +1260,12 @@ ICON_BUT_CLEAR_MARKED_spi=<span class="navButton">Borrar Guardados</span>
 ICON_BUT_EXPORT_MULTI_spi=<span class="navButton">Exportar Guardados</span>
 ICON_BUT_EXPORT_VIEW_SAVES_spi=<span class="navButton"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">Ver Guardados</span></span>
 ICON_BUT_VIEW_SAVES_spi=<span class="navButton">Ver cesta</span>
-ICON_BUT_REQUEST_spi=<span class="navButtonOneLine">Solicitud</span>
+ICON_BUT_REQUEST_spi=<span class="navButtonOneLine request">Solicitud</span>
 ICON_BUT_REQUEST_ALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Solicitud disponible</span></span></div></div>
 ICON_BUT_REQUEST_MULTI_spi=<span class="navButton">B&#250;squeda guardada</span>
 ICON_BUT_REQUEST_RESET_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Reiniciar formulario</span></span></div></div>
 ICON_BUT_REQUEST_SELECTED_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Solicitar selecci&#243;n</span></span></div></div>
-ICON_REQUEST_spi=<span class="navButtonSmall navButton">Solicitud</span>
+ICON_REQUEST_spi=<span class="navButtonSmall navButton request">Solicitud</span>
 #REQFILLTIME_spi=14|<br>Solicitud disponible en aproximadamente %d d&#237;as|<br>Disponibilidad estimada actualmente: aproximadamente %d d&#237;as|<br>Este material puede estar disponible inmediatamente
 REQUEST_spi=Reservar este ejemplar|denyiflocalavail|ask|Y
 REQUEST_INSTRUCTION_spi=<strong>&#191;Cualquier instrucci&#243;n especial?</strong><ul><li> Si hay disponible m&#250;ltiples vol&#250;menes, la pr&#243;xima pantalla le solicitar&#225; escoger uno de ellos.&nbsp; <strong>Por favor no utilizar el cuadro de abajo.</strong>&nbsp; Si usted solicita m&#225;s de un volumen, necesitar&#225;  completar un nuevo pedido para cada uno.</li><li>Usted si puede pedir distintas hojas de microficha  del dep&#243;sito de la MU.&nbsp; Si esta solicitando distintas hojas de microficha por favor que se incluya el n&#250;mero de  identificaci&#243;n de cada uno de ellos en el cuadro de abajo. Ejemplos de n&#250;meros de identificaci&#243;n:</li><ul>  <li>2005 ASI 8486-1.2</li><li> 1988 IIS 1300-S61.19 </li><li> ED516836</li></ul></ul>
@@ -1525,12 +1525,12 @@ ICON_BUT_CLEAR_MARKED_chx=<span class="navButton">&#28165;&#38500;&#20445;&#2338
 ICON_BUT_EXPORT_MULTI_chx=<span class="navButton">&#36716;&#20986;&#24050;&#23384;</span>
 ICON_BUT_EXPORT_VIEW_SAVES_chx=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">&#27983;&#35272;&#20445;&#23384;&#35760;&#24405;</span></span>
 ICON_BUT_VIEW_SAVES_chx=<span class="navButton">&#26597;&#30475;&#20070;&#34955;</span>
-ICON_BUT_REQUEST_chx=<span class="navButtonOneLine">&#35201;&#27714;</span>
+ICON_BUT_REQUEST_chx=<span class="navButtonOneLine request">&#35201;&#27714;</span>
 ICON_BUT_REQUEST_ALL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#39044;&#23450;&#21487;&#20511;&#38405;&#39302;&#34255;</span></span></div></div>
 ICON_BUT_REQUEST_MULTI_chx=<span class="navButton">&#39044;&#35746;&#24050;&#23384;</span>
 ICON_BUT_REQUEST_RESET_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#37325;&#35774;&#34920;&#26684;</span></span></div></div>
 ICON_BUT_REQUEST_SELECTED_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#39044;&#23450;&#24050;&#36873;</span></span></div></div>
-ICON_REQUEST_chx=<span class="navButtonSmall navButton">&#35201;&#27714;</span>
+ICON_REQUEST_chx=<span class="navButtonSmall navButton request">&#35201;&#27714;</span>
 #REQFILLTIME_chx=14|<br>&#21487;&#21033;&#29992;&#35201;&#27714;&#32422;&#20110; %d &#26085;|<br>&#30446;&#21069;&#20272;&#35745;&#21487;&#29992;&#24230;: &#32422;&#20110; %d &#26085;|<br>&#27492;&#36164;&#26009;&#20063;&#35768;&#31435;&#21363;&#21487;&#29992;
 REQUEST_chx=&#20445;&#30041;&#27492;&#39033;&#30446;|denyiflocalavail|ask|Y
 REQUEST_INSTRUCTION_chx=<strong>&#29305;&#21035;&#35828;&#26126;</strong><ul><li> &#22914;&#26524;&#26377;&#22810;&#20010;&#21367;/&#20876;&#65292;&#20250;&#25552;&#31034;&#24744;&#30340;&#36873;&#25321;&#21487;&#33021;&#22312;&#19979;&#19968;&#30028;&#38754;&nbsp; <strong>&#19981;&#35201;&#20351;&#29992;&#19979;&#38754;&#30340;&#25991;&#26412;&#26694;</strong>&nbsp; &#22914;&#26524;&#24744;&#38656;&#35201;&#22810;&#20010;&#21367;/&#20876;, &#23545;&#27599;&#20010;&#21367;&#20876;&#24744;&#23558;&#38656;&#35201;&#25191;&#34892;&#21333;&#29420;&#30340;&#35831;&#27714;</li><li>&#24744;&#21487;&#20197;&#20174;MU&#20070;&#24211;&#20511;&#38405;&#32553;&#24433;&#33014;&#29255;&nbsp; I&#22914;&#26524;&#24744;&#38656;&#35201;&#21333;&#29420;&#30340;&#32553;&#24433;&#33014;&#29255;, &#35831;&#24744;&#22312;&#19979;&#26694;&#20013;&#22635;&#20837;&#20854;&#25968;&#23383;&#26631;&#35782;&#31526;. &#20363;&#22914;:</li><ul>  <li>2005 ASI 8486-1.2</li><li> 1988 IIS 1300-S61.19 </li><li> ED516836</li></ul></ul>
