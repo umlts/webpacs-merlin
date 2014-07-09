@@ -47,6 +47,21 @@ $(document).ready(function () {
 		$("td .browseHeaderMark").hide();	
 		$("td .browseEntryMark").hide();
 	};
+
+	//hides request on briefcit page for RooBot items	
+addClass();
+
+	function addClass(){
+		$('.briefcitDetailMain').addClass('roobot');
+		hideRoo();
+	}
+
+	function hideRoo(){
+		if($("a:contains('RooBot')").length){
+		$("div .briefcitRequest a:nth-child(1)").hide();
+		}
+	}
+
 	});
 </script>
 
