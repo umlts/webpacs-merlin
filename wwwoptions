@@ -464,7 +464,7 @@ TABLEPARAM_RSRV_BIBS=width="100%" border="0" cellpadding="0" cellspacing="0"
 
 # Featured Lists
 ICON_BUT_PREVSCRN=<span class="navButtonOneLine">Back</span>
-ICON_BUT_RET2FEAT=<span class="navButtonOneLine">Back</span>>
+ICON_BUT_RET2FEAT=<span class="navButtonOneLine">Back</span>
 FEATURED_LIST=10,260|New Titles|Campus|# Titles
 
 # Content Linking and Other Resources
@@ -1344,8 +1344,8 @@ ILL_CONF_EMAIL_SUBJECT_spi=Notificaci&#243;n para la biblioteca de solicitud de 
 ICON_BUT_RET2CRS_spi=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Volver al curso</span></span>
 #RSRV_HEADER_spi=Materiales para este curso
 #RSRV_HEADER_spi=T&#237;tulos destacados este mes
-ICON_BUT_PREVSCRN_spi=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">Volver</span></span>
-ICON_BUT_RET2FEAT_spi=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">Volver</span></span>
+ICON_BUT_PREVSCRN_spi=<span class="navButtonOneLine">Volver</span>
+ICON_BUT_RET2FEAT_spi=<span class="navButtonOneLine">Volver</span>
 #FEATURED_LIST_spi=01,02,03|LISTADOS DESTACADOS|CATEGOR&#205;A|N&#186; de t&#237;tulos
 BIBIMAGE_TEXT_spi=Cubierta del libro
 #WEBADDRESS_spi=|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=N||<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|-1
@@ -1608,8 +1608,8 @@ ILL_CONF_EMAIL_SUBJECT_chx=&#22270;&#20070;&#39302;Inter-library Loan&#39044;&#2
 ICON_BUT_RET2CRS_chx=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">&#36820;&#22238;&#35838;&#31243;</span></span>
 #RSRV_HEADER_chx=&#27492;&#35838;&#31243;&#36164;&#26009;
 #RSRV_HEADER_chx=&#26412;&#26376;&#29305;&#20889;&#26631;&#39064;
-ICON_BUT_PREVSCRN_chx=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">&#22238;</span></span>
-ICON_BUT_RET2FEAT_chx=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">&#22238;</span></span>
+ICON_BUT_PREVSCRN_chx=<span class="navButtonOneLine">&#22238;</span>
+ICON_BUT_RET2FEAT_chx=<span class="navButtonOneLine">&#22238;</span>
 #FEATURED_LIST_chx=01,02,03|&#19987;&#39064;&#39302;&#34255;/&#26032;&#20070;&#36890;&#21578;|&#31867;&#21035;|&#26631;&#39064;&#25968;&#30446;
 BIBIMAGE_TEXT_chx=&#20070;&#26412;&#23553;&#38754;
 #WEBADDRESS_chx=|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=N||<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|-1

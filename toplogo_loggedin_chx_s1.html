@@ -33,6 +33,12 @@ $(document).ready(function () {
 			$('#searcharg').val(newSearchTerm);
 		}
 		});
+
+			//changes wording from bookcart to list
+	if(window.location.href.indexOf("mylistsmulti") > -1) {
+		var text = $('.pageMainAreaHeader').text().replace("Save Records in Bookcart to a List", "Save Records to List"); // this will give the text after replacement, but it will not set the text to ValidationSummary
+		    $('.pageMainAreaHeader').text(text);
+	}
 	});
 </script>
 
