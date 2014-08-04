@@ -1350,7 +1350,7 @@ ICON_BUT_RET2CRS_spi=<span class="button"><img src="/screens/ico_back.png" alt="
 #RSRV_HEADER_spi=T&#237;tulos destacados este mes
 ICON_BUT_PREVSCRN_spi=<span class="navButtonOneLine">Volver</span>
 ICON_BUT_RET2FEAT_spi=<span class="navButtonOneLine">Volver</span>
-FEATURED_LIST_spi=10,260|LISTADOS DESTACADOS|CATEGOR&#205;A|N&#186; de t&#237;tulos
+FEATURED_LIST_spi=10,260|T&#237;tulos Nuevos|CATEGOR&#205;A|N&#186; de t&#237;tulos
 BIBIMAGE_TEXT_spi=Cubierta del libro
 #WEBADDRESS_spi=|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=N||<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|-1
 #WEBADDRESS_spi=http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&amp;field-keywords=%s|I|http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&field-isbn=%s|<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|-1
@@ -1614,7 +1614,7 @@ ICON_BUT_RET2CRS_chx=<span class="button"><img src="/screens/ico_back.gif" alt="
 #RSRV_HEADER_chx=&#26412;&#26376;&#29305;&#20889;&#26631;&#39064;
 ICON_BUT_PREVSCRN_chx=<span class="navButtonOneLine">&#22238;</span>
 ICON_BUT_RET2FEAT_chx=<span class="navButtonOneLine">&#22238;</span>
-FEATURED_LIST_chx=10,260|&#19987;&#39064;&#39302;&#34255;/&#26032;&#20070;&#36890;&#21578;|&#31867;&#21035;|&#26631;&#39064;&#25968;&#30446;
+FEATURED_LIST_chx=10,260|&#26032;&#20070;&#36890;&#21578;|&#31867;&#21035;|&#26631;&#39064;&#25968;&#30446;
 BIBIMAGE_TEXT_chx=&#20070;&#26412;&#23553;&#38754;
 #WEBADDRESS_chx=|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=N||<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|-1
 #WEBADDRESS_chx=http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&amp;field-keywords=%s|I|http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&field-isbn=%s|<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|-1
