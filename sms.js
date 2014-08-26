@@ -105,7 +105,7 @@ return false;
 
 	var bodyRef = document.getElementsByTagName("body")[0]; //get the bib number out of the <body>, add it to the url
 	var bodyText = bodyRef.innerHTML;
-	var bibNum = bodyText.match(/b[\d]{7,8}/m);
+	var bibNum = bodyText.match(/b[0-9]{7,8}/m);
 	url += "&bib="+bibNum;
 	 
 	 var head = document.getElementsByTagName("head")[0];		// now we create a <SCRIPT> tag in the <HEAD> to get the response
