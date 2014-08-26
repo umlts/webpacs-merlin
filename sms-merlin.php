@@ -20,6 +20,7 @@ $bib 			= trim($_GET['bib']);
 
 $item 			= $_GET['item']; //parse the item
 $itemArray 		= explode("|", $item);
+//$title			= trim($_GET['title']);
 $location 		= trim($itemArray[0]);
 
 //strip strange characters not handled by Safari from location
