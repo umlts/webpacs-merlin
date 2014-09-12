@@ -90,6 +90,17 @@ $(document).ready(function(){
       $('.advancedInput').val(newSearchTerm);
     }
     });
+
+//holds search term across inputs
+$('#quickSearcharg,#advSearcharg,#searchargTab3,#searchargTab4').change(function() {
+    $('#quickSearcharg').val($(this).val());
+    $('#advSearcharg').val($(this).val());
+    $('#searchargTab3').val($(this).val());
+    $('#searchargTab4').val($(this).val());
+});
+//fills search box when search term "no entries found"
+srchTermURL = $(location).attr('href').split('(')[1].split(')')[0];  
+$("#quickSearcharg,#advSearcharg,#searchargTab3,#searchargTab4").val(srchTermURL);
     
     //The scrollbar should always be at the top when the page loads
     $(document).scrollTop(0);
@@ -132,7 +143,7 @@ $(document).ready(function(){
         
                     <div class="formEntryArea">
                     <input type="hidden" name="fieldLimit1" value="" />
-                    <input class="advancedInput" maxlength="100" size="35" name="searchText1" />
+                    <input id="advSearcharg" class="advancedInput" maxlength="100" size="35" name="searchText1" />
 <!--{scope}-->
 <!--{advancedsubmit}-->
                     </div>
@@ -260,7 +271,7 @@ $(document).ready(function(){
         
 <!--{nosort}-->
         
-                    <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+                    <div class="searchBox"><input name="searcharg" value="" id="quickSearcharg" class="text" type="text" maxlength="100" size="35">
         
 <!--{scope}-->
         
@@ -308,7 +319,7 @@ $(document).ready(function(){
         
 <!--{nosort}-->
         
-        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+        <div class="searchBox"><input name="searcharg" value="" id="searchargTab3" class="text" type="text" maxlength="100" size="35">
         
 <!--{scope}-->
         
@@ -355,7 +366,7 @@ $(document).ready(function(){
         
 <!--{nosort}-->
         
-        <div class="searchBox"><input name="searcharg" value="" id="searcharg" class="text" type="text">
+        <div class="searchBox"><input name="searcharg" value="" id="searchargTab4" class="text" type="text" maxlength="100" size="35">
         
 <!--{scope}-->
         

@@ -95,6 +95,17 @@ $(document).ready(function(){
       $('.advancedInput').val(newSearchTerm);
     }
     });
+
+//holds search term across inputs
+$('#quickSearcharg,#advSearcharg,#searchargTab3,#searchargTab4').change(function() {
+    $('#quickSearcharg').val($(this).val());
+    $('#advSearcharg').val($(this).val());
+    $('#searchargTab3').val($(this).val());
+    $('#searchargTab4').val($(this).val());
+});
+//fills search box when search term "no entries found"
+srchTermURL = $(location).attr('href').split('(')[1].split(')')[0];  
+$("#quickSearcharg,#advSearcharg,#searchargTab3,#searchargTab4").val(srchTermURL);
     
     //The scrollbar should always be at the top when the page loads
     $(document).scrollTop(0);
@@ -267,7 +278,7 @@ $(document).ready(function(){
         
 <!--{nosort}-->
         
-                    <div class="searchBox"><input onkeyup="javascript:upDateAdvSearch();" onchange="javascript:upDateAdvSearch();" name="searcharg" value="" id="quickSearcharg" class="text" type="text" maxlength="100" size="35">
+                    <div class="searchBox"><input name="searcharg" value="" id="quickSearcharg" class="text" type="text" maxlength="100" size="35">
         
 <!--{scope}-->
         
