@@ -105,7 +105,8 @@ $('#quickSearcharg,#advSearcharg,#searchargTab3,#searchargTab4').change(function
 });
 //fills search box when search term "no entries found"
 srchTermURL = $(location).attr('href').split('(')[1].split(')')[0];  
-$("#quickSearcharg,#advSearcharg,#searchargTab3,#searchargTab4").val(srchTermURL);
+decodesrchTermURL = decodeURIComponent(srchTermURL);
+$("#quickSearcharg,#advSearcharg,#searchargTab3,#searchargTab4").val(decodesrchTermURL);
     
     //The scrollbar should always be at the top when the page loads
     $(document).scrollTop(0);
