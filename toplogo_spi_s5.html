@@ -22,6 +22,15 @@ $(document).ready(function () {
 	//$('#b option:not([value^="z"])').detach(); 
 	//selectAny.prependTo("#b")
 	//Hides the out-of-scope locations
+		//Hides the out-of-scope locations
+	var pathnameFtList = window.location.href.slice(window.location.href.indexOf('/') + 1).split('/')[5];
+    if(pathnameFtList.indexOf('ftlist') > -1){
+    $('.browseEntry:not(:contains("S&T"))').addClass('hideMe');
+    $(".hideMe").hide();
+    text = $('.ftlistHeader').text();
+	listName = text.replace(/[^a-z0-9]/gmi, " ").replace(/[\d]{2,3}/m, " ").replace("entries", " ");
+	namewoNum = $('.ftlistHeader').replaceWith("<th colSpan='3'>" + listName + "</th>");
+  }
 	
 	//Remove the colon from keyword searches
 	$('input[type="submit"]').click(function () {
@@ -80,7 +89,7 @@ if (document.body){document.body.className = "bodybg";}
 	<li><a href="/search*spi/X">Nueva B&#250;squeda</option>
 	<li><a href="/patroninfo*spi">Mi cuenta</a></li>
 	<li><a href="/search*spi/b">B&#250;squeda por c&#243;digo de barras</a></li>
-	<li><a href="/ftlists*spi">T&#237;tulos Nuevos</a></li>
+	<li><a href="/search~S5/ftlists*spi">T&#237;tulos Nuevos</a></li>
 	<li><a>MERLIN (UM) Bibliotecas</a>
 		<ul>
 			<li><a href="http://library.mst.edu/">Missouri S&T</a></li>
