@@ -28,7 +28,7 @@ $(document).ready(function () {
     $('.browseEntry:not(:contains("S&T"))').addClass('hideMe');
     $(".hideMe").hide();
     text = $('.ftlistHeader').text();
-	listName = text.replace(/^[.\X]*$/gmi, " ").replace(/[\d]{1,2}/m, " ").replace("entries", " ").replace(/\s+/g, " ");
+	listName = text.replace(/^[.\X]*$/gmi, " ").replace(/[\d]{1,2}/m, " ").replace("\(", " ").replace("entries", " ").replace("\)", " ").replace(/\s+/g, " ");
 	namewoNum = $('.ftlistHeader').replaceWith("<th colSpan='3'>" + listName + "</th>");
   }
 	
