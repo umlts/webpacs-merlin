@@ -43,8 +43,10 @@ BOTLOGO=@screens/botlogo.html
 BOTLOGO1=@screens/botlogo_s1.html
 BOTLOGO3=@screens/botlogo_s3.html
 BOTLOGO_spi=@screens/botlogo_spi.html
+BOTLOGO1_spi=@screens/botlogo_spi_s1.html
 BOTLOGO3_spi=@screens/botlogo_spi_s3.html
 BOTLOGO_chx=@screens/botlogo_chx.html
+BOTLOGO1_chx=@screens/botlogo_chx_s1.html
 BOTLOGO3_chx=@screens/botlogo_chx_s3.html
 ICON_BUT_CANCEL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel</span></span></div></div>
 ICON_BUT_CLOSEWINDOW=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Close Window</span></span>
