@@ -156,7 +156,7 @@ ICON_BUT_UNLIMAVAIL=<span class="button"><img src="/screens/ico_list.png" alt=""
 DISPLAY_245=atd
 EXTENDED=L
 EXTENDED_c=3
-#HEADING_LENGTH=100
+HEADING_LENGTH=1000
 ICON_856LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website
 ICON_962LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image
 #ICON_BOOKCART=<span class="navButton">Save to Folder</span>
