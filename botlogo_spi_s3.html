@@ -18,18 +18,76 @@
 </ul>
 </div>
 
-<!-- Place this script as near to the end of your BODY as possible. -->
 <!-- jQuery and jQueryUI. Place at the bottom of your page. -->
-<script src="//code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
-<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
 <!-- LibraryH3lp JavaScript. Place at the bottom of your page. -->
 <script type="text/javascript">
-// Checks for LibraryH3lp queue presence.
-(function() {
-var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
-x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "us.libraryh3lp.com/js/libraryh3lp.js?multi,poll";
-var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
-})();
+  // Checks for LibraryH3lp queue presence.
+  (function() {
+    var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
+    x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "us.libraryh3lp.com/js/libraryh3lp.js?multi,poll";
+    var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
+  })();
+
+/* The rest of this handles the proactive chat invitation. It checks every five
+   seconds to see if chat is available. If so, it waits three seconds and then
+   invites the user to chat.  The three second time is handy for testing but will
+   be lengthened in production. Change the wait time by editing the 3000 in the
+   set timeout show dialog line.  */
+
+  $(function() {
+    function chatDialogAlreadyShown() {
+      var cookies = {};
+      $.each(document.cookie.split(';'), function(index, cookie) {
+        var keyValue = $.trim(cookie).split('=');
+        cookies[$.trim(keyValue[0])] = $.trim(keyValue[1]);
+      });
+
+      return cookies.lh3ChatDialogShown || false;
+    }
+
+    var dialogs = $('.dialog');
+
+    function showDialog() {
+      var dialog = dialogs.filter(function() {
+        return $(this).parent().is(':visible');
+      });
+
+      if (dialog.length > 0 && ! chatDialogAlreadyShown()) {
+        document.cookie = 'lh3ChatDialogShown=true; path=/';
+        dialog.dialog({
+          buttons: {
+            'Click to chat': function() {
+               window.open('https://us.libraryh3lp.com/chat/primarydesk@chat.libraryh3lp.com?skin=22811', 'AskUs', 'resizable=1,width=275,height=300');
+               $(this).dialog('close');
+            },
+            'No thanks': function() {
+               document.cookie = 'lh3ChatDialogShown=true; path=/';
+               $(this).dialog('close');
+            }
+          },
+          position: {
+            my: 'right bottom',
+            at: 'right bottom-35',
+            of: window
+          },
+          resizable: false,
+          show: {
+            effect: 'fade',
+            duration: 1000
+          },
+          title: 'Have a question?'
+        });
+
+      } else {
+        setTimeout(showDialog, 5000);
+      }
+    }
+
+    setTimeout(showDialog, 3000);
+  });
 </script>
 </div><!-- fullPage -->
 </div><!-- min-height -->

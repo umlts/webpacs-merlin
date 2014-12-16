@@ -74,27 +74,4 @@ ul#tabRow .tab a {
     width: 48%;
 }
 
-﻿/*start of libraryh3lp tab css*/
-.needs-js, .libraryh3lp {
-   background: none repeat scroll 0 0 rgb(121, 174, 52);
-    border: 1px solid #c0c0c0;
-    border-radius: 0.5em 0.5em 0 0;
-    bottom: 0;
-    color: white;
-    cursor: pointer;
-    font-size: 20px;
-    line-height: 150%;
-    padding: 0 10px;
-    position: fixed;
-    right: 20px;
-    text-align: center;
-    z-index: 1000;
-  }
-  .needs-js:hover, .libraryh3lp:hover {
-    padding-bottom: 10px;
-  }
-  .libraryh3lp a {
-    color: white;
-    text-decoration: none;
-  }
-  /*end of libraryh3lp tab*/
+
