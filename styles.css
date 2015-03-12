@@ -61,7 +61,11 @@ body > * { text-align:left;}
 
 caption { border-bottom:1px solid #D3D3D3; font-weight:bold; text-align:center; }
 
-center a {text-decoration:none;}
+center a {display: inline-block;
+    font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+    text-decoration: none;
+    vertical-align: text-top;
+    width: auto;}
 
 div center table { border-color:#D3D3D3; margin-top:10px; margin-bottom:10px; }
 
@@ -73,6 +77,11 @@ form a { display:table-cell; display:inline-block; }
 
 /* This rule causes search form elements to resize along with the rest of the text on the page if the user resizes text. */
 input, select, textarea { font-size:.97em; }
+
+input[value="View additional copies or search for a specific volume/copy"] { margin-top: 5px; margin-bottom: 5px; }
+
+input[name="volume"] { margin-top: 5px; margin-bottom: 5px; }
+
 
 /* This rule uses CSS2 to give a nicer effect in compliant browsers, while avoiding an annoying display effect in Internet Explorer 6 */
 input[type="checkbox"] { background-color: #FFF8EF; }
@@ -173,7 +182,6 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 }
 
 .articles {
-    padding:1.5em;
     margin:2em .5em;
 }
 
@@ -227,13 +235,17 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 .bibDisplayContentMore { border-top:1px dashed #767C70; clear:both; margin-bottom:15px; padding-top:20px; }
 
-.bibDisplayItems  { margin:8px; width:95%; }
+.bibDisplayItems  { margin:25px 8px 8px; width:95%; }
 
 .bibDisplayItems table, .requestMultiItems table { border:0; border-collapse: collapse; margin-bottom:20px; }
 
 .bibDisplayItems th, .reserveBibs th, .resourceDisplayBibs th, .resourceResource th { color:#767C70; }
 
-.bibDisplayItems td, .reserveBibs td, .resourceDisplayBibs td, .resourceResource td, .bibItems td, .bibHoldings td, .bibVol td { border-top:1px solid #ECECEC; border-bottom:none; vertical-align:top; }
+.bibDisplayItems td,.bibHoldings td:first-child { word-break:normal; padding: 3px 3px 3px 2px;}
+
+.reserveBibs td, .resourceDisplayBibs td, .resourceResource td, .bibHoldings td {word-break:break-all; padding: 3px 12px 3px 2px;}
+
+.bibVol td { border-top:1px solid #ECECEC; border-bottom:none; vertical-align:top; }
 
 .bibDisplayItemsHeader, .resourceDisplayLicenseHeader { font-size:.8333em; float:left; margin:.5em 0 0 5%; }
 
@@ -243,13 +255,17 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 .bibDisplayJacket  { float:left; display:inline; width:150px; text-align:center; }
 
+.bibItems td {padding: 3px 12px 3px 2px;}
+
 .bibLinks th { text-align:center; }
+
+.bibLinks td { padding-top: 4px; }
 
 .bibMedia  { margin-left:auto; margin-right:auto; }
 
 .bibMedia   img { margin-top:10px;  }
 
-.bibDisplayPermLink { float:right; margin:1em 0 1.5em; font-style:italic; font-size:.9em; }
+.bibDisplayPermLink { display: table; padding-bottom: 0.5em; }
 
 .bibDisplayProgramInfo { float:right; font-size:1.1em; margin:5% 5% 15px 0; }
 
@@ -257,19 +273,27 @@ h1.bibDisplayTitle { display:inline; font-size:1em; }
 
 .bibInfoData { vertical-align:top; }
 
-.bibInfoLabel, .resourceInfoLabel { color:#767C70; padding-right:.7em; text-align:right; vertical-align:top; font-weight:bold; font-style:normal; }
+.bibRecordLink .bibInfoLabel { width:14%; }
+
+.bibInfoLabel, .resourceInfoLabel { color:#767C70; padding-right:.7em; padding-bottom: .1em; text-align:right; vertical-align:top; font-weight:bold; font-style:normal; }
+
+.resourceInfoLabel  { width:15%; }
 
 table.bibItems { clear:both; }
 
 .bibItems  th { text-align:left; }
 
-.bibItemsEntry td { padding:0; margin:0; }
+.bibItemsEntry td { padding:0; margin:0;}
 
 .bibItems { border:none; }
 
 .bibItems .bibItemsEntry td, .bibItems .bibItemsHeader th { padding:5px 8px; text-align:left; }
 
-.bibRecordLink { padding:8px 0 8px 6px; }
+.bibRecordLink { font-style:normal; padding-left:0px ; padding-top:8px; font-size:.9em; }
+
+.bibRecordLink div { float:left; }
+
+.bibRecordLink .bibInfoLabel { width:14%; }
 
 .bibResourceSidebar { background:#FFFFFF url('tile_vgradient.jpg') repeat-x top left; display:inline; float:right; margin-right:10px; width:192px; padding-bottom:10px; }
 
@@ -352,6 +376,12 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 #botlogo p { margin:.5em 0; }
 
+#botlogo li {display: inline; list-style-type:circle; border-left: 1px solid #D3D3D3; padding: 0 5px;}      
+
+#botlogo ul {margin-top:.5em;}      
+
+#botlogo .first {border:none;} 
+
 /* Brief Citation display styles */
 
 .briefcitActions { text-align:left; }
@@ -368,13 +398,13 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitDetailMain  { float:right; width:100% }
 
-.briefcitEntryNum { color:#767C70; float:right; font-size:.7em; padding-left:2px; }
+.briefcitEntryNum { color:#767C70; float:left; font-size:0.9187; padding-left:2px; }
 
 .briefcitActions { margin-bottom:10px; }
 
 .briefcitLeft, .briefcitResourceLeft { display:inline; float:left; margin-bottom:30px; padding:0; text-align:left; width:41px; }
 
-.briefcitRequest { float: display:inline; float: left: }
+.briefcitRequest a { float: left; text-decoration:none; }
 
 .briefcitResourceLeft { margin-bottom:20px; }
 
@@ -382,7 +412,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitItems em { font-size:.9em; }
 
-.briefcitItems table { border:0; border-collapse:collapse; padding:8px 0 0 0; }
+.briefcitItems table { border:0; border-collapse:collapse; padding:8px 0 0 0; white-space: normal;}
 
 .briefcitItems th { border:0; color:#767C70; font-size:.75em; padding:0; text-align:left; }
 
@@ -393,6 +423,8 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 .briefcitItemsHeader h2 { color:#F7960C; font-size:1em; margin:0; }
 
 .briefcitItemsMain { float:left; width:85%; }
+
+.briefcitMark { float:right; padding-bottom: 3px; }
 
 .briefcitMedia, .bibMedia, .briefcitResourceMedia, .briefcitProgramMedia, td.browseEntryMedia, td.browseSubEntryMedia { color:#878787; font-size:.7em; line-height:.95em; overflow:hidden; width:41px; text-align:center; }
 
@@ -466,7 +498,7 @@ table.browseResourceTable { border:0; }
 
 .browseResourceTableEntry select { overflow:hidden; }
 
-.browseSaveJump	 { height:1.2em; overflow:hidden; padding:3px 0 3px 10px; }
+.browseSaveJump  { height:1.2em; overflow:hidden; padding:3px 0 3px 10px; }
 
 .browseSaveJump a:link,.browseSaveJump a:visited  { color: #014184; font-family:Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
 
@@ -668,11 +700,15 @@ div .bibResourceSidebar { display:none; }
     margin-top:1em;
 }
 
-.helpContent h3 { font-size:1.1em; margin-bottom:0px; }
+.helpGenreRight { width: 14em; display:inline-block;}
+
+.helpGenreLeft { width: 15em; float:left;}
+
+.helpContent h3 { font-size:1.1em; margin-bottom:5px; }
 
 .helpContent h4 { font-size:1em; margin-bottom:0px; }
 
-.helpContent p { margin:5px 0; }
+.helpContent p { margin:5px 15px; }
 
 .helpContent ul, .helpContent ol { margin-top:3px; margin-bottom:3px; }
 
@@ -682,9 +718,11 @@ div .bibResourceSidebar { display:none; }
 
 .helpTopics { padding:5px; width:30em; }
 
-.helpTopics li { list-style-type:none; }
+.helpTopics li { list-style-type:none; padding-top: 2px;}
 
 .helpExample h4 { margin-top:0px; }
+
+.pageContentInner .helpHead { font-size: 1.9em; padding-top: 20px;}
 
 .pageContentInner .helpSubhead { border-top:4px solid #E8E8E8; margin:45px 0 5px; }
 
@@ -716,7 +754,7 @@ div .bibResourceSidebar { display:none; }
 
 .inlineBlock {display:inline-block; zoom: 1; *display: inline;}
 
-.itemSelect { width:50em; }
+.itemSelect { width:62em; }
 
 .itemSelect br, .volumeSelect br { line-height:1px; }
 
@@ -799,6 +837,7 @@ a#moreLink { margin-bottom:1em; color: #6E0000; }
 .mylistsSavePage form { padding:10px; color:#000000; float:none; }
 
 .mylistsSavePage .pageMainAreaHeader { font-size:1.3333em; font-weight:bold; }
+.mylistsSelect {display:none;}
 
 span.navButton, span.navButtonOneLine {
     background: transparent url('button_blank.gif') no-repeat;
@@ -828,7 +867,7 @@ span.navButtonOneLine {
 span.navButtonSmall {
     background: transparent url('button_blank_small.gif') no-repeat;
     padding-top:4px;
-    padding-bottom:4px;
+    padding-bottom:5px;
     height:15px;
 }
 
@@ -1025,7 +1064,7 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 .resourceButton img {margin:.5em;border:none;}
 
-.resourceDisplayContentMain { width:68%; }
+.resourceDisplayContentMain { width:80%; }
 
 .resourceDisplayBibs { margin-bottom:20px; }
 
@@ -1033,7 +1072,7 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 .resourceInfoData p,  .resourceLicenseEntry p { margin-left:0; }
 
-.resourceInfoLabel  { width:10%; padding-right:1.5em; }
+.resourceInfoLabel  { width:1%; padding-right:1.5em; }
 
 .resourceLicenseHeader, .resourceLicenseEntry { padding:.5em 0; vertical-align:top; }
 
@@ -1340,7 +1379,7 @@ tr.highlight { background:#FFFFE4; }
 }
 
 #tabs {
-	margin: 50px 0;
+    margin: 50px 0;
         width:700px;
         margin-left:auto;
         margin-right:auto;
@@ -1350,44 +1389,43 @@ tr.highlight { background:#FFFFE4; }
         width:100%;
 }
 #tabs .tabContent {
-	background: #FFFFFF;
-	clear: both;
-	padding: 15px;
-	min-height: 100px;
+    background: #FFFFFF;
+    clear: both;
+    padding: 15px;
+    min-height: 100px;
         border: 1px solid #C0C0C0;
         border-bottom-left-radius:10px;
         border-bottom-right-radius:10px;
         border-top-right-radius:10px;
-    word-break: break-all;
 }
 #tabs div h3 {
-	margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 #tabRow, #byTabRow {
-	float: left;
-	background: #fff;
-	padding:0;
+    float: left;
+    background: #fff;
+    padding:0;
         margin:0;
 }
 #tabRow .tab , #byTabRow .tab{
-	margin-left: 8px;
-	list-style: none;
+    margin-left: 8px;
+    list-style: none;
 }
 #tabRow .tab:first-child {
-	margin-left: 0;
+    margin-left: 0;
 }
 * html #tabRow li {
-	display: inline;
+    display: inline;
 }
 #tabRow .tab, #tabRow .tab a, #byTabRow .tab, #byTabRow .tab a {
-	float: left;
+    float: left;
 }
 ul#tabRow .tab.active {
-	background: #FFFFFF;
+    background: #FFFFFF;
         border-bottom: 1px solid #FFFFFF;
 }
 ul#tabRow .tab {
-	background: url("/screens/pale_gold_gradient.png") repeat-x scroll 50% 50% #F6D56A;
+    background: url("/screens/pale_gold_gradient.png") repeat-x scroll 50% 50% #F6D56A;
         border: 1px solid #C0C0C0;
         margin-bottom: -1px;
 }
@@ -1395,13 +1433,13 @@ ul#tabRow .tab:hover {
         background: #FFFFFF;
 }
 ul#tabRow.tab.active a {
-	color: #333333;
+    color: #333333;
 }
 ul#tabRow .tab a, ul#byTabRow .tab a {
-	text-decoration: none;
-	padding: 8px;
-	color: #000;
-	font-weight: bold;
+    text-decoration: none;
+    padding: 8px;
+    color: #000;
+    font-weight: bold;
 }
 #tabsToplogo {
     padding-left:20px;
@@ -1454,4 +1492,3 @@ ul#tabRow .tab a, ul#byTabRow .tab a {
 #sms {font-size:70%}
 
 body > div#bibDisplayBody a#smsbutton { display:none; }
-

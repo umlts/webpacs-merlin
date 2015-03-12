@@ -1,10 +1,11 @@
 <!-- begin toplogo.html file -->
 <!-- Rel 2009B Example Set -->
 <!-- Updated: 06 Oct 2010 -->
-
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="/screens/jquery.cookie.js"></script>
 <script src="/screens/menu-collapsed.js" type="text/javascript"></script>
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script>
+<script type="text/javascript" src="/screens/856links.js"></script>
 <script type="text/javascript" src='/screens/sms.js'> </script>
 <script type="text/javascript">
 $(document).ready(function () {
@@ -46,7 +47,7 @@ if (document.body){document.body.className = "bodybg";}
 <div class="topLogo">
 
 <div class="topLogoImage">
-<a href="http://mulibraries.missouri.edu/" tabindex="10"><img src="/screens/mu.png" alt="MU"></a>
+<a href="http://library.missouri.edu/" tabindex="10"><img src="/screens/mu.png" alt="MU"></a>
 </div>
 
 <div class="clusterLogo">
@@ -62,14 +63,13 @@ if (document.body){document.body.className = "bodybg";}
     </ul>
 </div>
 
-<div id="alertMessage"></div>
-
 <div class="linkBanner">
 </div>
-
-</div><!--topLogo-->
-
 <div class="clear"></div>
+</div>
+<div id="alertMessage"><br></div>
+<!--topLogo-->
+
 <div class="rightColumn">
 <div id="searchOptions">
 
@@ -77,22 +77,28 @@ if (document.body){document.body.className = "bodybg";}
 	<li><a href="/search/X">New Search</a></li>
 	<li><a href="/patroninfo">My Library Account</a></li>
 	<li><a href="/search/b">Course Reserves</a></li>
-	<li><a href="http://mulibraries.missouri.edu/guides/findingjournalarticles/default.htm">Find Articles</a></li>
+	<li><a href="http://library.missouri.edu/collections/newbooks/">New Books, DVDs, etc.</a></li>
+	<li><a href="http://library.missouri.edu/guides/findingjournalarticles/default.htm">Find Articles</a></li>
 	<li><a>MERLIN (UM) Libraries</a>
 		<ul>
 			<li><a href="http://library.mst.edu/">Missouri S&T</a></li>
-			<li><a href="http://mulibraries.missouri.edu/">MU</a></li>
+			<li><a href="http://library.missouri.edu/">MU</a></li>
+			<li><a href="http://www.law.missouri.edu/library/">MU-Law</a></li>
 			<li><a href="http://library.umkc.edu/">UMKC</a></li>
+			<li><a href="http://www1.law.umkc.edu/library/">UMKC-Law</a></li>		
 			<li><a href="http://www.umsl.edu/library">UMSL</a></li>
 			<li><a href="http://shs.umsystem.edu/index.shtml">State Historical Society</a></li>
 		</ul>
 	</li>
 	<li><a href="http://laurel.lso.missouri.edu:2083">New MOBIUS Search</a></li>
 	<li><a href="/help">Help</a></li>
+	<li><a href="#" onclick="iiiSwitchLang('spi')">Espa&#241;ol</a></li>
+	<li><a href="#" onclick="iiiSwitchLang('chx')">&#31616;&#20307;&#20013;&#25991;</a></li>
 </ul>
 
 </div><!--searchOptions-->
 </div><!--rightColumn-->
+<div id="libchat_3e3511d3c1d153d9a6afee0fab08fe35"></div>
 <div class="pageContentColumn"><!-- content container -->
 <a name="content" id="content"></a>
 <!--end toplogo.html-->

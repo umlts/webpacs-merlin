@@ -6,7 +6,7 @@
 <title>MERLIN Catalog</title>
 <script language="JavaScript">
 <!-- Hide the JS
-startTimeout(600000, "/");
+startTimeout(1800000, "/");
 // -->
 
 </script>
@@ -17,6 +17,7 @@ startTimeout(600000, "/");
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
 </head>
 <body id="frontPage" onload="if (location.search.indexOf('SUBKEY') != -1 || location.search.indexOf('SEARCH') != -1 || location.search.indexOf('searcharg=') != -1 ) modifySearch(document.location.search); init_progsearch(); if (document.search) document.search.searchText1.focus();">
+<!--{advancedsearchbody}-->
 <!--{toplogo}-->
 <script type="text/javascript">
 
@@ -28,14 +29,14 @@ $(document).ready(function(){
         $('input.searchtype[value=X]').attr('checked', true);
         $('.innerQuickSearch').hide();
         $('.X .innerQuickSearch').show();
-	$('input.searchtype').change(function(){
+  $('input.searchtype').change(function(){
             $('.innerQuickSearch').hide();
             $('.' + this.value + ' .innerQuickSearch').show();
             $('input.searchtype[value=' + this.value + ']').attr('checked', true);
-	});
-	$('#moreLink').click(function(){
+  });
+  $('#moreLink').click(function(){
              $('.tipsTable').toggle();
-	});
+  });
         
     //Remove the colons from advanced search
     $('#advancedSubmit').click(function () { 
@@ -48,6 +49,17 @@ $(document).ready(function(){
     
     //The scrollbar should always be at the top when the page loads
     $(document).scrollTop(0);
+    var i = $("#advancedSearchBoxes input").length;
+    var j = i + 1;
+    var moreSearchBoolean = '<br /><select name="boolean' + i + '"><option value="%20and%20" selected="selected">And</option><option value="%20and%20not%20">And not</option><option value="%20or%20">Or</option></select><br />'
+    var moreSearchField = '<select class="keywordSegment" name="fieldLimit' + j + '"><option value="" selected="selected">Anywhere:</option><option value="a:">Author:</option><option value="t:">Title:</option><option value="d:">Subject:</option><option value="c:">Table of Contents:</option><option value="N:">Note:</option></select>'
+    var moreSearchInput = '<input style="margin: 0 4px;" maxlength="100" size="35" name="searchText' + j + ' " />'
+
+    $("#addMore").click(function() {
+        $("#advancedSearchBoxes").append(moreSearchBoolean);
+        $("#advancedSearchBoxes").append(moreSearchField);
+        $("#advancedSearchBoxes").append(moreSearchInput);
+    });
 });
 </script>
 
@@ -77,7 +89,7 @@ $(document).ready(function(){
 
 <fieldset>
 <legend>Enter Search Terms</legend>
-<div class="formEntryArea">
+<div class="formEntryArea" id="advancedSearchBoxes">
 <select name="fieldLimit1" class="keywordSegment">
 
 <option value="" selected="selected">Anywhere:</option>
@@ -87,7 +99,7 @@ $(document).ready(function(){
 <option value="c:">Table of Contents:</option>
 <option value="N:">Notes and Genre:</option>
 </select>
-<input maxlength="75" size="35" name="searchText1" />
+<input maxlength="100" size="35" name="searchText1" />
 <br />
 <select name="boolean1">
 
@@ -105,7 +117,7 @@ $(document).ready(function(){
 <option value="c:">Table of Contents:</option>
 <option value="N:">Notes and Genre:</option>
 </select>
-<input maxlength="75" size="35" name="searchText2" />
+<input maxlength="100" size="35" name="searchText2" />
 <br />
 <select name="boolean2">
 
@@ -123,7 +135,11 @@ $(document).ready(function(){
 <option value="c:">Table of Contents:</option>
 <option value="N:">Notes and Genre:</option>
 </select>
-<input maxlength="75" size="35" name="searchText3" />
+<input maxlength="100" size="35" name="searchText3" />
+</div>
+
+<div class="formEntryArea">
+  <a href="#" id="addMore">+ Add more search terms</a>
 </div>
 <input type="hidden" name="startLimit" >
 <div class="formEntryArea">
@@ -278,7 +294,7 @@ School:
             <td>Example: <br />
                 "physical therapy"
               Example: <br />
-                "reading comprehension strategies""</td>
+                "reading comprehension strategies"</td>
           </tr>
           <tr>
             <td>Proximity</td>

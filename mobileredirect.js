@@ -16,7 +16,7 @@ $.extend({
   }
 });
 
-var mobileHost = 'https://m.cluster.searchmobius.org'; // No trailing slash
+var mobileHost = 'https://m.merlin.searchmobius.org'; // No trailing slash
 var redirectUrl;
 var scope;
 var scopeMatch = /~S(\d+)/.exec(window.location.href);
@@ -45,6 +45,10 @@ if (searcharg) {
   if (scope) {
     redirectUrl = redirectUrl + '?scope=' + scope;
   }
+}
+
+if ($.getUrlVar('no_redirect')) {
+  $.cookie('hatesmobile', '1', '365');
 }
 
 if ( !($.cookie('hatesmobile') || $.getUrlVar('no_redirect')) ) {

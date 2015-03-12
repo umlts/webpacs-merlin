@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 12 March 2010 -->
+<head>
+<title>Cat&#225;logo Web de MERLIN</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(1800000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
+</head>
+<body>
+<!--{toplogo}-->
+<div class="pageContentInner helpContent">
+<h1 class="pageHeader">Centro de ayuda</h1>
+<ul class="helpTopics">
+    <li><a href="#searching">Buscando</a></li>
+    <li><a href="#searchtips">Buscando(Avanzada)</a></li>
+    <li><a href="#prefsearch">Guardando sus b&#250;squedas</a></li>
+    <li><a href="#renewals">Renovaciones</a></li>
+    <li><a href="#feepay">pago</a></li>
+    <!--<li><a href="#rpro">Research Pro</a></li>
+    <li><a href="#programs">Eventos y Programas de la Comunidad</a></li>-->
+</ul>
+
+
+<a name="searching"></a>
+<h2 class="helpSubhead">Buscando</h2>
+
+<p>Indique la palabra clave que quiere encontrar. Por ejemplo:</p>
+<ul>
+<li>dise&#241;o</li>
+<li>rojas celestina</li>
+</ul>
+<table class="tipsTable">
+<caption>Consejos sobre la b&#250;squeda</caption>
+<tr valign="top"><th align="left">Comodines</th>
+<td>
+Se pueden truncar las palabras usande el asterisco ('*'), que reemplaza a otros caracteres. <!-- Use '**' para truncamiento de hasta cinco caracteres.--> El asterisco '*' tambi&#233;n se puede poner en medio de la cadena de b&#250;squeda. La interrogaci&#243;n (&#8220;?&#8221;) reemplaza un car&#225;cter den cualquier lugar de la palabra.<br>
+<span style="text-decoration:underline">Ejemplos</span> : pol&#237;t* ambient*, Anders?n</td>
+</tr>
+<tr valign="top"><th align="left">Operadores Booleanos</th>
+<td>
+Use "and" u "or" para especificar multiples palabras en cualquier campo, cualquier orden. Use "and not" para excluir palabras.<br>
+<span style="text-decoration:underline">Ejemplo</span> : accioness and bonos<br>
+<span style="text-decoration:underline">Ejemplo</span> : (alaska or canada) and (aventura and not vacaciones)</td>
+</tr>
+<tr valign="top"><th align="left">Limitar por campos</th>
+<td>
+Cuando se limita por un campo, el sistema busca las palabras indicadas en el campo especificado.</td>
+</tr>
+<tr valign="top">
+<th align="left">Agrupar</th>
+<td>
+Los resultados de la b&#250;squeda por palabra clave generalmente se agrupan por relevancia para mostrar los t&#237;tulos m&#225;s apropiados primero. Cada grupo tiene un nivel similar de relevancia y los resultados se ordenan dentro del propio grupo por fecha o t&#237;tulo. Si quiere obtener un conjunto de resultados no agrupados, utilice los operadores booleanos para formar una consulta compleja.
+</td>
+</tr>
+</table>
+
+<p class="actionButtonArea">
+<a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Volver a inicio</span></span></a>
+</p>
+
+
+<a name="searchtips"></a>
+<h2 class="helpSubhead">Consejos sobre la B&#250;squeda Avanzada</h2>
+
+<h3>M&#250;ltiples  palabras</h3>
+<p>Si busca por m&#250;ltiples palabras, el sistema a&#241;adir&#225; autom&#225;ticamente el operador Booleano &quot;and&quot; entre cada palabra; recuperar&#225; registros que contengan estas palabras en alg&#250;n sitio, pero no necesariamente en el orden indicado. Ambos ejemplos de la derecha recuperanr&#225;n los mismos resultados..</p>
+
+<div class="helpExample">
+<h4>Ejemplos</h4>
+<p>Utilizaci&#243;n de m&#250;ltiples palabras:<br>
+<a href="/search*spi/X?SEARCH=universidad ciencias departmento">universidad ciencias departmento</a><br>
+<a href="/search*spi/X?SEARCH=universidad+and+ciencias+and+departmento">universidad and ciencias and departmento</a>
+</p>
+</div>
+
+<h3>B&#250;squedas de frase</h3>
+<p>B&#250;squeda por frases completas, poni&#233;ndolo entre comillas. Las palabras que se incluyan entre comillas, aparecer&#225;n juntas, de la misma manera que se hayan introducido. </p>
+
+<div class="helpExample">
+<h4>Ejemplos</h4>
+<p>Un &#237;ndice de frase:<br>
+<a href="/search*spi/X?SEARCH=%22universidad+ciencias+departmento%22">&quot;universidad ciencias departmento&quot;</a>
+</p>
+</div>
+
+<h3>Comodines</h3>
+<!--<p><strong>*</strong>&nbsp;&nbsp;&nbsp;El asterisco simple (&#8220;*&#8221;) trunca de 1 a 5 caracteres. empezando por la posici&#243;n indicada en la palabra. Por ejemplo, &quot;inter*&quot; encuentra &quot;interno&quot; e &quot;internet&quot;, pweo no con &quot;internacional&quot;. El truncamiento '*' puede aparecer s&#243;lo si al menos tiene dos caracteres.</p>
+<p>El comod&#237;n '*' tambi&#233;n se puede poner en medio de la cadena. Por ejemplo, &quot;colo*r&quot; encuentra &quot;color&quot; y &quot;colour&quot;.</p> -->
+<p><strong>*</strong>&nbsp;&nbsp;&nbsp;Substituye cualquier n&#250;mero de caracteres que no sean espacio. empezando por la posici&#243;n indicada en la palabra. Por ejemplo, &quot;music**&quot; encuentra todas las palabras que empiezan por &quot;music&quot; (ejemplo, &quot;m&#250;sicos&quot;, &quot;musicolog&#237;a&quot;, etc.).<br>El asterisco '*' tambi&#233;n se puede poner en medio de la cadena de b&#250;squeda.</p>
+<p><strong>?</strong>&nbsp;&nbsp;&nbsp;La interrogaci&#243;n (&#8220;?&#8221;) reemplaza un car&#225;cter den cualquier lugar de la palabra.</p>
+
+<div class="helpExample">
+<h4>Ejemplos</h4>
+<p>* Truncamiento:<br>
+<a href="/search*spi/X?SEARCH=environment*+polic*">polit* internac*</a><br>
+<a href="/search*spi/X?SEARCH=comp*">comp*</a>
+</p>
+<p>? Comod&#237;n:</strong><br>
+<a href="/search*spi/X?SEARCH=wom%3Fn">Anders?n</a>
+</p>
+</div>
+
+<h3>Operadores Booleanos</h3>
+<p>Use AND u OR to para especificar m&#250;ltiples palabras en cualquier campo, en cualquier orden. Use AND NOT para excluir palabras. Seleccione el operador que quiera utilizar de la lista de selecci&#243;n en el formulario de B&#250;squeda avanzada.</p>
+
+<div class="helpExample">
+<h4>Ejemplos</h4>
+<p>C&#243;mo usar los operadores Booleanos:<br>
+<a href="/search*spi/X?SEARCH=stocks+and+bonds">acciones and bonos</a><br>
+<a href="/search*spi/X?SEARCH=stocks+or+bonds">acciones or bonos</a><br>
+<a href="/search*spi/X?SEARCH=stocks+and+not+bonds">acciones and not bonos</a>
+</p>
+</div>
+
+<h3>L&#237;mites por campo</h3>
+<p>Es posible limitar los campos seleccionando un campo de limitaci&#243;n de la lista. Estos l&#237;mites aparecen antes de la frase o palabra a buscar. La limitaci&#243;n por campo hace que el sistema solo busque el campo o palabra(s) especificado(s).</p>
+<h4>Limitaci&#243;n por campos y su significado:</h4>
+<ul>
+    <li>Autor: Buscar s&#243;lo en campos de autor</li>
+    <li>T&#237;tulo: Buscar s&#243;lo en campo de t&#237;tulo</li>
+    <li>Materia: Buscar s&#243;lo en campos de materia</li>
+    <li>Nota: Buscar s&#243;lo en campos de notas</li>
+</ul>
+
+<h3>Agrupar</h3>
+<p>Los resultados de la b&#250;squeda por palabra clave generalmente se agrupan por relevancia para mostrar los t&#237;tulos m&#225;s apropiados primero. Cada grupo tiene un nivel similar de relevancia y los resultados se ordenan dentro del propio grupo por fecha o t&#237;tulo. Si quiere obtener un conjunto de resultados no agrupados, utilice los operadores booleanos para formar una consulta compleja.
+</p>
+
+<p><img src="/screens/relevance5.gif" alt="M&#225;s relevantes">&nbsp;M&#225;s relevantes t&#237;tulos&nbsp;</p>
+<p><img src="/screens/relevance4.gif" alt="Altamente relevantes">&nbsp;Altamente relevantes t&#237;tulos&nbsp;</p>
+<p><img src="/screens/relevance3.gif" alt="Muy relevante">&nbsp;Muy relevante t&#237;tulos&nbsp;</p>
+<p><img src="/screens/relevance2.gif" alt="Relevante">&nbsp;Relevante t&#237;tulos&nbsp;</p>
+<p><img src="/screens/relevance1.gif" alt="Otra relevancia">&nbsp;Otra relevancia t&#237;tulos&nbsp;</p>
+
+
+<p class="actionButtonArea">
+<a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Volver a inicio</span></span></a>
+</p>
+
+
+<a name="prefsearch"></a>
+<h2 class="helpSubhead">Guardando sus b&#250;squedas</h2>
+
+<p>si tiene un autor o materia favoritos por los que  busca a menudo cuando consulta el cat&#225;logo, puede realizar la misma b&#250;squeda marcando el bot&#243;n Esto evitar&#225; tener que introducir la b&#250;squeda cada vez y le permitir&#225; reservar el material nuevo m&#225;s r&#225;pidamente.</p>
+<p>C&#243;mo:</p>
+<ol>
+<li>Acceder a mi cuenta Mi Millennium.</li>
+<li>Marque el <strong>"Nueva b&#250;squeda"</strong> bot&#243;n.</li>
+<li>Busque su autor, materia o t&#237;tulo favorito; o realice una b&#250;squeda avanzada limitando por tipo de material, idioma, a&#241;o de publicaci&#243;n etc.</li>
+<li>Cuando se muestren sus resultados, click en el bot&#243;n marcado como <strong>"Guardar como b&#250;squeda preferida"</strong>.</li>
+<li>La pr&#243;xima que entre en su cuenta de My Millennium, puede marcar <strong>"B&#250;squedas preferidas"</strong> para ver la lista de sus b&#250;squedas guardadas.</li>
+<li>Marque el <strong>enlace de b&#250;squeda</strong> asociado con cualquiera de los t&#233;rminos preferidos de b&#250;squeda en la lista, para ejecutar su b&#250;squeda m&#225;s r&#225;pidamente.</li>
+<li>Se le puede alertar sobre los materiales nuevos que se hayan recibido en la colecci&#243;n de la biblioteca. Marcando la caja <strong>"Marcar para Email"</strong> verifique que su registro de usuario contiene su direcci&#243;n de email actual.</li>
+</ol>
+
+<p class="actionButtonArea">
+<a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Volver a inicio</span></span></a>
+</p>
+
+
+<a name="renewals"></a>
+<h2 class="helpSubhead">Renovaciones</h2>
+
+<p>Los usuarios de la biblioteca puded renovar en l&#237;nea su propio material. Se puede renovar todo el material salvo el que tenga reservas y el que tenga multas.</p>
+<p>C&#243;mo:</strong></p>
+<ol>
+<li>Acceder a mi cuenta Mi Millennium.</li>
+<li>Si no es la pantalla por defecto, marque <strong>"Ejemplares prestados actualmente"</strong> le muesta los materiales que tiene actualmente en pr&#233;stamo.</li>
+<li>Seleccione los materiales que quiera reservar marcando las caja <strong>RENOVAR</strong> en la columna y despu&#233;s click en el bot&#243;n Renovar seleccionados. Si quiere renovarlos todos, click en le bot&#243;n Renovar TODO.</li>
+<li>Si no puede renovar los ejemplares, aparecer&#225; un mensaje en la pantall. Si los ha renovado, aparecer&#225; una nueva fecha de devoluci&#243;n en la columna <strong>"ESTADO"</strong> . Compruebe siempre la columna ESTADO para saber si se ha realizado o no la renovaci&#243;n.</li>
+</ol>
+
+<p class="actionButtonArea">
+<a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Volver a inicio</span></span></a>
+</p>
+
+
+<a name="feepay"></a>
+<h2 class="helpSubhead">pago</h2>
+<p>Puede pagar cualquier canitdad superior a 2&#8364; usando su Visa o MasterCard.</p>
+<p>Aqu&#237; tiene la informaci&#243;n sobre c&#243;mo hacerlo:</p>
+<ol>
+<li>Acceder a mi cuenta Mi Millennium.</li>
+<li>Seleccione la cantidad en las facturas y multas no pagadas.</li>
+<li>Seleccione "PAGO ONLINE".</li>
+<li>Seleccione los cargos que quier pagar,  complete la informaci&#243;n relevante y seleccione enviar.</li>
+<li>Despu&#233;s le aparecer&#225; una p&#225;gina de confirmaci&#243;n. En ese momento, puede imprimir una copia de su recibo y/o click OK. Si tiene una direcci&#243;n de email v&#225;lida, recibir&#225; en ella el recibo del pago.</li>
+</ol>
+
+<p class="actionButtonArea">
+<a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Volver a inicio</span></span></a>
+</p>
+
+<!--<a name="rpro"></a>
+<h2 class="helpSubhead">Research Pro</h2>
+<p>Research Pro busca de manera simult&#225;nea en bases de datos, sitios web y cat&#225;logos seleccionados por la biblioteca para encontrar art&#237;culos de texto completo, abstracts, im&#225;genes, libros y otros recursos. Research Pro realiza la b&#250;squeda en todos los recursos seleccionados, de tal manera que cada recurso la interpreta de la manera adecuada para el mismo. Research Pro recuperar&#225; los resultados de los recursos que haya seleccionado &#8211; podr&#225; ver cu&#225;les recursos tienen la informaci&#243;n m&#225;s relevante para su inter&#233;s. Research Pro es una manera &#250;til de tener una visi&#243;n general de los asuntos de su inter&#233;s y orientarle sobre los recursos disponibles.</p>
+
+<h3>Sugerencias para buscar en Research Pro</h3>
+<p>Por defecto, Research Pro realiza una b&#250;squeda simple en todos los recursos que la biblioteca ha seleccionado para usted. Usted siempre puede seleccionar otro grupo de recursos o recurso individual para su b&#250;squeda.</p>
+<p>La consulta por b&#250;squeda simple es pasada a cada recurso exactamente como ha sido introducida para recuperar los resultados en base a la configuraci&#243;n por defecto establecida para cada base de datos (ejemplo, buscar por palabra clave o frase) y los resultados son mostrados en pesta&#241;as separadas para cada recurso (ejemplo, ordenado por relevancia o fecha). Usted puede ver los resultados para cada una de las bases de datos simplemente seleccionando la pesta&#241;a que contiene el nombre de la base de datos, a la izquierda de la p&#225;gina de resultados, o seleccionar la pesta&#241;a &#8220;Todos los recursos&#8221; para ver todos los recursos juntos.</p>
+<p>La consulta de Research Pro por b&#250;squeda avanzada le permite combinar hasta 3 t&#233;rminos de b&#250;squeda, de &#237;ndices diferentes, usando operadores booleanos, para realizar b&#250;squedas m&#225;s complejas.</p>
+<p>Combine sus t&#233;rminos utilizando los operadores booleanos AND, OR, y NOT por medio de los botones que hay a la derecha de las cajas con t&#233;rminos de b&#250;squeda. Puede cambiar la manera en la que est&#225;n sus t&#233;rminos de b&#250;squeda usando las opciones "Construir la b&#250;squeda como" que aparece bajo las cajas con los t&#233;rminos de b&#250;squeda.</p>
+<p>enviar&#225; exactamente los t&#233;rminos de b&#250;squeda tal y como han sido tecleados por el usuario, lo que permite utilizar cualquier truncamiento o s&#237;mbolo soportado por los recursos de destino que usted haya seleccionado.</p>
+<p><strong>Nota:</strong> Los s&#237;mbolos de truncamiento y comod&#237;n pueden variar de una base de datos a otra, por tanto, su b&#250;squeda puede ser interpretada de manera incorrecta por alg&#250;n recurso que no soporte estos s&#237;mbolos.
+</p>
+<p class="actionButtonArea">
+<a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Volver a inicio</span></span></a>
+</p>
+
+<a name="programs"></a>
+<h2 class="helpSubhead">Eventos y Programas de la Comunidad</h2>
+<p>Inscripci&#243;n a eventos permite a los usuarios ver los programas ofrecidos por la biblioteca. Los usuarios pueden ver estos eventos en forma de calendario o de lista. Es una forma sencilla de familiarizarse con los eventos para la comunidad ofrecidos por la biblioteca y poder inscribirse en ellos.</p>
+
+<p class="actionButtonArea">
+<a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Volver a inicio</span></span></a>
+</p>-->
+
+</div>
+<!--{botlogo}-->
+</body>
+</html>
+

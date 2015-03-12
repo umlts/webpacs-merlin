@@ -1,0 +1,562 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 29 Apr 2010 -->
+<head>
+<title>Cat&#225;logo Web de MERLIN</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(1800000, "/");
+// -->
+
+</script>
+<script>
+function submitSubject() {
+    window.location="/search*spi~S3/x?" + document.subjectSearch.bySubject.options[document .subjectSearch.bySubject.selectedIndex].value;
+    return true;
+}
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script>
+</head>
+<body id="frontPage" onload="if (location.search.indexOf('SUBKEY') != -1 || location.search.indexOf('SEARCH') != -1 || location.search.indexOf('searcharg=') != -1 ) modifySearch(document.location.search); init_progsearch(); if (document.search) document.search.searchText1.focus();">
+<!--{toplogo}-->
+<script type="text/javascript">
+function upDatequickSearch () {
+                    //Variable for searcharg to hold search term when radio is switched
+   $("#quickSearcharg").val($("#advSearcharg").val());
+        
+ }
+
+ function upDateAdvSearch () {
+
+        $("#advSearcharg").val($("#quickSearcharg").val());
+
+ }
+
+$(document).ready(function(){
+    
+    //Loading the correct content when the tab is clicked from another page
+  $('#tabs .tabContent').hide();
+        if (window.location.hash.length > 0) {
+            $(window.location.hash).show();
+            $('a[href$="' + window.location.hash + '"]').parent().addClass('active'); 
+        }else{
+            $('#tabs .tabContent:first').show();
+            $('#tabs ul li:first').addClass('active');
+        }
+        
+  $('#tabs ul li a').click(function(){
+                //Switching the tabs
+    $('#tabs ul li').removeClass('active');
+    $(this).parent().addClass('active'); 
+    var currentTab = $(this).attr('href'); 
+    $('#tabs .tabContent').hide();
+    $(currentTab).show();
+                
+                //To make the Advanced search page happy
+                
+                $('.innerQuickSearch').hide();
+                $('.X .innerQuickSearch').show();
+                
+                //To make sure the first radio is selected, showing the correct search examples
+                var firstRadio = $(currentTab + ' .limits label:first input')
+                $(firstRadio).click();
+                $(".searchTips").load("/screens/" + firstRadio.val() + "spi.inc");
+                
+                //This makes it so the scrollbar doesn't jump to the anchor tag.  It also, unfortunately, makes it so the back button doesn't work.
+                
+                if(currentTab.indexOf("http") == -1){
+                    return false;
+                }
+  });
+
+    //Switching the Keyword/Title menu when the radio button is changed
+        $('input.searchtype[value=X]').attr('checked', true);
+        $('.innerQuickSearch').hide();
+        $('.X .innerQuickSearch').show();
+  $('input.searchtype').click(function(){
+            $('.innerQuickSearch').hide();
+            $('.' + this.value + ' .innerQuickSearch').show();
+            $('input.searchtype[value=' + this.value + ']').attr('checked', 'checked');
+  });
+  $('#moreLink').click(function(){
+             $('#optionalLimits').toggle();
+  });
+        
+    //Remove the colons from advanced search
+    $('#advancedSubmit').click(function () { 
+      var searchTerm = $('.advancedInput').val();
+      if((/\b[atsn]:/).test(searchTerm)) {}else {
+      var newSearchTerm = searchTerm.replace(":", " ");
+      $('.advancedInput').val(newSearchTerm);
+    }
+    });
+
+//holds search term across inputs
+$('#quickSearcharg,#advSearcharg,#searchargTab3,#searchargTab4').change(function() {
+    $('#quickSearcharg').val($(this).val());
+    $('#advSearcharg').val($(this).val());
+    $('#searchargTab3').val($(this).val());
+    $('#searchargTab4').val($(this).val());
+});
+//fills search box when search term "no entries found"
+srchTermURL = $(location).attr('href').split('(')[1].split(')')[0];  
+decodesrchTermURL = decodeURIComponent(srchTermURL);
+$("#quickSearcharg,#advSearcharg,#searchargTab3,#searchargTab4").val(decodesrchTermURL);
+    
+    //The scrollbar should always be at the top when the page loads
+    $(document).scrollTop(0);
+});
+</script>
+
+<div class="pageContentInner">
+
+<div id="tabs">
+    <ul id="tabRow">
+      <li class="tab"><a href="#tab-1">B&#250;squeda R&#225;pida</a></li>
+      <li class="tab"><a href="/search*spi/Y">B&#250;squeda avanzada</option>
+      <li class="tab"><a href="#tab-3">Materia</a></li>
+      <li class="tab"><a href="#tab-4">N&#250;mero/Otros</a></li>
+      <li class="tab"><a href="#tab-5">Art&#237;culos y Revistas</a></li>
+      <li class="tab"><a href="http://pc8ga3qq6a.search.serialssolutions.com/">Revistas Electr&#243;nicas y e-Libros</a></li>
+    </ul>
+    
+   <div id="tab-1" class="tabContent">
+        <h1 class="pageHeader">B&#250;squeda R&#225;pida</h1>
+        
+            <div id="accessibleForm" class="quickSearch X">
+                
+                <div class="innerQuickSearch">
+
+<!--{msg}-->
+<!--{spellcheck}-->
+<!--{innreach}-->
+        
+<!--{advancedsearchformbegin}-->
+
+                    <div class="limits">
+                    <div class="limitColumn">
+                    <label> <input name="searchtype" class="searchtype" value="X" checked="checked" type="radio"> Palabra Clave </label> 
+                    <label> <input name="searchtype" class="searchtype" value="t" type="radio"> T&#237;tulo </label>
+                    </div>
+                    <div class="limitColumn">
+                    <label> <input name="searchtype" class="searchtype" value="s" type="radio"> Revistas y Peri&#243;dicos </label>
+                    <label> <input name="searchtype" class="searchtype" value="a" type="radio"> Autor </label>
+                    </div>
+                    </div>
+        
+                    <div class="formEntryArea">
+                    <input type="hidden" name="fieldLimit1" value="" />
+                    <input id="advSearcharg" class="advancedInput" maxlength="100" size="35" name="searchText1" />
+<!--{scope}-->
+<!--{advancedsubmit}-->
+                    </div>
+                    <input type="hidden" name="startLimit" >
+                    <div class="formEntryArea">
+<!--{availlim}-->
+                    </div>
+                    <div class="formEntryArea">
+                        <a id="moreLink">Refine your keyword search by language, year, and more (+)</a>
+                    </div>
+        
+
+
+                    <fieldset id="optionalLimits">
+                    <legend>A&#241;adir l&#237;mites (Opcional)</legend>
+                    
+<p>In each box hold down the CTRL or Apple key to select more than one.</p>
+        
+                    <div class="formEntryArea">
+<!--{DOCDATE}-->
+        </div>
+        
+                    <div class="formEntryArea">
+                    <table border="0">
+                    <tr><td><label for="n">Online:</label></td><td><select id="n" name="n">
+                    <option value="">ANY</option>
+                    <option value="cr">Online Only</option>
+                    </select>
+                    </td>
+                    </tr></table>
+                    </div>
+        
+            <!--{govdoc}-->
+            
+                    <div class="formEntryArea">
+<!--{lang}-->
+                    </div>
+                    
+                    <div class="formEntryArea">
+<!--{branch}-->
+                    </div>
+                    
+                    <div class="formEntryArea">
+                    <table border="0">
+                    <tr><td><label for="a">Audio and Video Formats:</label></td><td><select id="a" name="a" size="5" multiple="multiple">
+                    <option value="">ANY</option>
+                    <option value=""></option>
+                    <option value="s*">AUDIO FORMATS</option>
+                    <option value="s*">All Sound Recording Formats</option>
+                    <option value="ss">Audio cassettes</option>
+                    <option value="sd f">CDs</option>
+                    <option value="sd b">LPs</option>
+                    <option value="sd c">45 rpm </option>
+                    <option value="sd d">78 rpm</option>
+                    <option value="sd z">DVD-audio</option>
+                    <option value="st">Reel-to-reel</option>
+                    <option value="se">Cylinder</option>
+                    <option value="sq">Roll</option>
+                    <option value="sw">Wire recording</option>
+                    <option value=""></option>
+                    <option value="v*">VIDEO FORMATS</option>
+                    <option value="v*">All Video Recording Formats</option>
+                    <option value="vd">DVD-video</option>
+                    <option value="vf">VHS</option>
+                    <option value="mr">16/35 mm film</option>
+                    </select>
+                    </td>
+                    </tr></table>
+                    </div>
+                    
+                    
+                    <div class="formEntryArea">
+<!--{mattype}-->
+                    </div>
+                    
+                    
+                    <div class="formEntryArea">
+<!--{publish}-->
+                    </div>
+                    <div class="formButtonArea">
+                    <span>
+<!--{advancedsubmit}-->
+                    </span>
+                    </div>
+                    
+                    </fieldset>
+                    <input type="hidden" name="endLimit" >
+        
+<!--{advancedsearchformend}-->
+        
+        
+                    <div class="searchTipsX">
+                    <p><strong>B&#250;squeda por palabra clave</strong></p>
+                      <p>Indique la palabra clave que quiere encontrar.</p>
+                      <p><em>Ejemplos:</em></p>
+                      <ul>
+                        <li><em>evolution and altruism</em></li>
+                        <li><em>&quot;achievement test&quot;</em></li>
+                      </ul>
+                      <p>Si su b&#250;squeda no tiene &#233;xito, pruebe una b&#250;squeda avanzada. </p>
+                    </div>
+        
+                </div><!-- quickSearchInner -->
+
+            </div> <!-- quickSearch -->
+        
+            <div class="quickSearch t s a">
+            
+                <div class="innerQuickSearch">
+            
+                    <form action="/search*spi/" method="get" id="search" class="indexSearch" name="search">
+                    
+                    <div class="limits">
+                    <div class="limitColumn">
+                    <label> <input name="searchtype" class="searchtype" value="X" checked="checked" type="radio"> Palabra Clave </label> 
+                    <label> <input name="searchtype" class="searchtype" value="t" type="radio"> T&#237;tulo </label>
+                    </div>
+                    <div class="limitColumn">
+                    <label> <input name="searchtype" class="searchtype" value="s" type="radio"> Revistas y Peri&#243;dicos </label>
+                    <label> <input name="searchtype" class="searchtype" value="a" type="radio"> Autor </label>
+                    </div>
+                    </div>
+                    
+                    <div class="clear"></div>
+        
+<!--{nosort}-->
+        
+                    <div class="searchBox"><input name="searcharg" value="" id="quickSearcharg" class="text" type="text" maxlength="100" size="35">
+        
+<!--{scope}-->
+        
+        
+                    <input value="Submit" type="submit"> </label></div>
+        
+                    </form>
+            
+                    <div class="searchTips">
+                    <p><strong>B&#250;squeda por t&#237;tulo</strong></p>
+                    <p>Indique el t&#237;tulo que quiere encontrar. </p>
+                    <p><em>Ejemplos:</em></p>
+                    <ul>
+                    <li><em>Intruder in the Dust</em></li>
+                    <li><em>Adventures of Huckleberry Finn</em></li>
+                    </ul>
+                    
+                    </div>
+            
+                </div><!--quickSearchInner-->
+            
+            </div><!--quickSearch-->
+
+
+    </div><!--tab1-->
+    <div id="tab-2" class="tabContent">
+    </div>
+    <div id="tab-3" class="tabContent">
+        
+        <h1 class="pageHeader">Materia</h1>
+        
+        <form action="/search*spi/" method="get" id="search" class="indexSearch" name="search">
+        
+        <div class="limits">
+        <div class="limitColumn">
+        <label> <input name="searchtype" class="searchtype" value="d" checked="checked" type="radio"> Materia </label> 
+        <label> <input name="searchtype" class="searchtype" value="m" type="radio"> Encabezamientos M&#233;dicos (MeSH) </label>
+        </div>
+        <div class="limitColumn">
+        <label> <input name="searchtype" class="searchtype" value="v" type="radio"> G&#233;nero/Formato </label>
+        </div>
+        </div>
+        
+        <div class="clear"></div>
+        
+<!--{nosort}-->
+        
+        <div class="searchBox"><input name="searcharg" value="" id="searchargTab3" class="text" type="text" maxlength="100" size="35">
+        
+<!--{scope}-->
+        
+        
+        <input value="Submit" type="submit"> </label></div>
+        
+        </form>
+        
+                    <div class="searchTips">
+                        <p><strong>B&#250;squeda por materia (Library of Congress)</strong></p>
+                        <p>Indique la materia que quiere encontrar.</p>
+                        <p><em>Ejemplos:</em></p>
+                        <ul>
+                          <li><em>Sports for women</em></li>
+                          <li><em>Automobiles</em></li>
+                          <li><em>Wilder, Laura Ingalls</em></li>
+                          </ul>
+                        <p>Si su b&#250;squeda no tiene &#233;xito, pruebe una b&#250;squeda de palabra clave. </p>
+                    </div>
+
+    </div>
+    <div id="tab-4" class="tabContent">
+
+        <h1 class="pageHeader">N&#250;mero/Otros</h1>
+        
+        <form action="/search*spi/" method="get" id="search" class="indexSearch" name="search">
+        
+        <div class="limits">
+        <div class="limitColumn">
+        <label> <input name="searchtype" class="searchtype" value="i" checked="checked" type="radio"> ISBN/ISSN </label> 
+        <label> <input name="searchtype" class="searchtype" value="g" type="radio"> Documento Gubernamental </label>
+        <label> <input name="searchtype" class="searchtype" value="e" type="radio"> M&#250;sica por el N&#250;mero </label>
+        <label> <input name="searchtype" class="searchtype" value="o" type="radio"> N&#250;mero de Utilidad </label>
+        </div>
+        <div class="limitColumn">
+        <label> <input name="searchtype" class="searchtype" value="c" type="radio"> Signatura (Library of Congress) </label>
+        <label> <input name="searchtype" class="searchtype" value="l" type="radio"> N&#250;mero de Clasificaci&#243;n (medicina) </label>
+        <label> <input name="searchtype" class="searchtype" value="f" type="radio"> N&#250;mero de Clasificaci&#243;n (Dewey/Otros) </label>
+        <label> <input name="searchtype" class="searchtype" value="h" type="radio"> Donante/Homenajeado </label>
+        </div>
+        </div>
+        
+        <div class="clear"></div>
+        
+<!--{nosort}-->
+        
+        <div class="searchBox"><input name="searcharg" value="" id="searchargTab4" class="text" type="text" maxlength="100" size="35">
+        
+<!--{scope}-->
+        
+        
+        <input value="Submit" type="submit"> </label></div>
+        
+        </form>
+        
+                    <div class="searchTips">
+                        <p><strong>B&#250;squeda por ISBN/ISSN</strong></p>
+                        <p>Indique el ISBN o ISSN seg&#250;n aparece. Se pueden omitir los signos de puntuaci&#243;n y los espacios.</p>
+                        <p><em>Ejemplos:</em></p>
+                        <ul>
+                          <li><em>0307337332</em></li>
+                          </ul>
+                    </div>
+    
+    </div>
+
+    <div id="tab-5" class="tabContent">
+    
+        <h1 class="pageHeader">Art&#237;culos y Revistas</h1>
+        <h3>B&#250;squeda en la base de datos: <a href="#dbname">Nombre</a> | <a href="#dbsubject">Materia</a> | <a href="#dbtype">Tipo</a> | <a href="#dbresearch">Research Help</a></h3>  
+
+        <a name="dbname"></a>   
+        <fieldset class="articles">
+        <legend>B&#250;squeda por Nombre:</legend>
+        
+        <a href="/search~S3*spi/j?a">A</a> |
+        <a href="/search~S3*spi/j?b">B</a> |
+        <a href="/search~S3*spi/j?c">C</a> |
+        <a href="/search~S3*spi/j?d">D</a> |
+        <a href="/search~S3*spi/j?e">E</a> |
+        <a href="/search~S3*spi/j?f">F</a> |
+        <a href="/search~S3*spi/j?g">G</a> |
+        <a href="/search~S3*spi/j?h">H</a> |
+        <a href="/search~S3*spi/j?i">I</a> |
+        <a href="/search~S3*spi/j?j">J</a> |
+        <a href="/search~S3*spi/j?k">K</a> |
+        <a href="/search~S3*spi/j?l">L</a> |
+        <a href="/search~S3*spi/j?m">M</a> |
+        <a href="/search~S3*spi/j?n">N</a> |
+        <a href="/search~S3*spi/j?o">O</a> |
+        <a href="/search~S3*spi/j?p">P</a> |
+        <a href="/search~S3*spi/j?q">Q</a> |
+        <a href="/search~S3*spi/j?r">R</a> |
+        <a href="/search~S3*spi/j?s">S</a> |
+        <a href="/search~S3*spi/j?t">T</a> |
+        <a href="/search~S3*spi/j?u">U</a> |
+        <a href="/search~S3*spi/j?v">V</a> |
+        <a href="/search~S3*spi/j?w">W</a> |
+        <a href="/search~S3*spi/j?x">X</a> |
+        <a href="/search~S3*spi/j?y">Y</a> |
+        <a href="/search~S3*spi/j?z">Z</a> |
+        <a href="/search~S3*spi/j?1">#</a> |
+        <a href="/search~S3*spi/j?00000">All titles</a>
+        </fieldset>
+
+        <a name="dbsubject"></a>
+        <fieldset class="articles">
+        <legend>B&#250;squeda por Materia</legend>
+        <div id="dbRows">
+        <div id="rowLeft">
+        <ul class="databaseListing span7">
+<li><a href="/search~S3*spi/x?accounting">Accounting</a></li>
+<li><a href="/search~S3*spi/x?anthropology">Anthropology</a></li>
+<li><a href="/search~S3*spi/x?architecture urban planning and design">Architecture Urban Planning and Design</a></li>
+<li><a href="/search~S3*spi/x?art and art history">Art and Art History</a></li>
+<li><a href="/search~S3*spi/x?biological sciences">Biological Sciences</a></li>
+<li><a href="/search~S3*spi/x?black studies">Black Studies</a></li>
+<li><a href="/search~S3*spi/x?business">Business</a></li>
+<li><a href="/search~S3*spi/x?chemistry">Chemistry</a></li>
+<li><a href="/search~S3*spi/x?communication studies">Communication Studies</a></li>
+<li><a href="/search~S3*spi/x?computer science and electrical engineering">Computer Science and Electrical Engineering</a></li>
+<li><a href="/search~S3*spi/x?criminal justice and criminology">Criminal Justice and Criminology</a></li>
+<li><a href="/search~S3*spi/x?dance">Dance</a></li>
+<li><a href="/search~S3*spi/x?dentistry">Dentistry</a></li>
+<li><a href="/search~S3*spi/x?economics">Economics</a></li>
+<li><a href="/search~S3*spi/x?education">Education</a></li>
+<li><a href="/search~S3*spi/x?engineering">Engineering</a></li>
+<li><a href="/search~S3*spi/x?english and american literature">English and American Literature</a></li>
+<li><a href="/search~S3*spi/x?environmental studies">Environmental Studies</a></li>
+<li><a href="/search~S3*spi/x?film studies">Film Studies</a></li>
+<li><a href="/search~S3*spi/x?finance">Finance</a></li>
+<li><a href="/search~S3*spi/x?french language and literature">French Language and Literature</a></li>
+<li><a href="/search~S3*spi/x?general">General</a></li>
+<li><a href="/search~S3*spi/x?geosciences and geography">Geosciences and Geography</a></li>
+<li><a href="/search~S3*spi/x?german language and literature">German Language and Literature</a></li>
+<li><a href="/search~S3*spi/x?health sciences biosciences">Health Sciences/Biosciences</a></li>
+</ul>
+</div>
+
+<div id="rowRight">
+<ul class="databaseListing span6">
+<li><a href="/search~S3*spi/x?history">History</a></li>
+<li><a href="/search~S3*spi/x?kansas city metro research">Kansas City Metro Research</a></li>
+<li><a href="/search~S3*spi/x?language and linguistics">Language and Linguistics</a></li>
+<li><a href="/search~S3*spi/x?latin american and spanish literature and culture">Latin American and Spanish Literature and Culture</a></li>
+<li><a href="/search~S3*spi/x?latina latino studies">Latina/Latino Studies</a></li>
+<li><a href="/search~S3*spi/x?law">Law</a></li>
+<li><a href="/search~S3*spi/x?library science">Library Science</a></li>
+<li><a href="/search~S3*spi/x?mathematics and statistics">Mathematics and Statistics</a></li>
+<li><a href="/search~S3*spi/x?medicine">Medicine</a></li>
+<li><a href="/search~S3*spi/x?medieval studies">Medieval Studies</a></li>
+<li><a href="/search~S3*spi/x?music">Music</a></li>
+<li><a href="/search~S3*spi/x?nursing">Nursing</a></li>
+<li><a href="/search~S3*spi/x?pharmacy">Pharmacy</a></li>
+<li><a href="/search~S3*spi/x?philosophy">Philosophy</a></li>
+<li><a href="/search~S3*spi/x?physics and astronomy">Physics and Astronomy</a></li>
+<li><a href="/search~S3*spi/x?political science">Political Science</a></li>
+<li><a href="/search~S3*spi/x?psychology">Psychology</a></li>
+<li><a href="/search~S3*spi/x?public administration">Public Administration</a></li>
+<li><a href="/search~S3*spi/x?religious studies">Religious Studies</a></li>
+<li><a href="/search~S3*spi/x?social work">Social Work</a></li>
+<li><a href="/search~S3*spi/x?sociology">Sociology</a></li>
+<li><a href="/search~S3*spi/x?theatre">Theatre</a></li>
+<li><a href="/search~S3*spi/x?womens and gender studies">Women's and Gender Studies</a></li>
+</ul>
+</div>
+</div>
+</fieldset>
+
+          
+        <p class="actionButtonArea">
+        <a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Volver a inicio</span></span></a>
+        </p>
+
+        <a name="dbtype"></a>
+        <fieldset class="articles">
+        <legend>B&#250;squeda por Tipo</legend>
+        <div id="dbType">
+        <div id="typeLeft">
+        <ul class="databaseListing span7">
+        <li><a href="/search~S3*spi/x?pre 18th century">Pre-18th Century Primary Sources (400-1700)</a></li>
+        <li><a href="/search~S3*spi/x?18th century primary sources">18th-Century Primary Sources (1700s)</a></li>
+        <li><a href="/search~S3*spi/x?19th century primary sources">19th-Century Primary Sources (1800s)</a></li>
+        <li><a href="/search~S3*spi/x?20th century primary sources">20th-Century Primary Sources (1900s)</a></li>
+        <li><a href="/search~S3*spi/x?audio">Audio</a></li>
+        <li><a href="/search~S3*spi/x?biography">Biography</a></li>
+        <li><a href="/search~S3*spi/x?book reviews">Book Reviews</a></li>
+        <li><a href="/search~S3*spi/x?career and college resources">Career and College Resources</a></li>
+        <li><a href="/search~S3*spi/x?digital archival collections">Digital Archival Collections</a></li>
+        <li><a href="/search~S3*spi/x?dissertations theses and conference proceedings">Dissertations, Theses, and Conference Proceedings</a></li>
+        </ul>
+        </div>
+        <div id="typeRight">
+        <ul class="databaseListing span6">
+        <li><a href="/search~S3*spi/x?e books">E-Books</a></li>
+        <li><a href="/search~S3*spi/x?e reference">E-Reference (Encyclopedias, Dictionaries, and Handbooks)</a></li>
+        <li><a href="/search~S3*spi/x?government information">Government Information</a></li>
+        <li><a href="/search~S3*spi/x?images">Images</a></li>
+        <li><a href="/search~S3*spi/x?news">News</a></li>
+        <li><a href="/search~S3*spi/x?statistics and data">Statistics and Data</a></li>
+        <li><a href="/search~S3*spi/x?tests and test reviews">Tests and Test Reviews</a></li>
+        <li><a href="/search~S3*spi/x?video">Video</a></li>
+        </ul>
+        </div>
+        </div>
+        </fieldset>    
+            
+            
+        <p class="actionButtonArea">
+        <a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Volver a inicio</span></span></a>
+        </p>
+
+        <a name="dbresearch"></a>
+        <fieldset class="articles">
+        <legend>Need help with your research?</legend>
+        <div class="row">
+        <ul class="databaseListing span6">
+        <li><a href="http://library.umkc.edu/ask-a-librarian">Ask A Librarian</a></li>
+        <li><a href="http://libguides.library.umkc.edu/index.php">Research Guides</a></li>
+        <li><a href="http://library.umkc.edu/form/research-workshops">Research Workshops</a></li>
+        </ul>
+        </div>
+        </fieldset>
+        </div>
+        
+
+  </div>
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
+</body>
+</html>

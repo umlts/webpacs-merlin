@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Log in Biblioteca</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4"><meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width = device-width, user-scalable = no">
+    <script type="text/javascript" src="/scripts/common.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_mobile.css">
+    <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login.css" media="screen and (min-device-width: 481px)"> -->
+    
+    <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_mobile.css"  />
+	<style type="text/css" media="screen and (min-width: 481px)">
+    <!--
+    @import url("/apps/CAS/resources/login.css");
+    -->
+    </style>
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login.css"  media="screen" /><![endif]-->
+    <link href="/apps/CAS/resources/login_mobile.css" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" />
+    
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
+</head>
+
+<body id="cas">
+<!--[if IE]>
+<div id="ie">
+<![endif]-->
+<div class="loginPage">
+
+<div class="loginTop">
+&nbsp;<!-- Prevent div collapse -->
+<div class="loginTopLogo">
+<img src="/screens/logo_sm.jpg" alt="">
+</div>
+</div>
+
+<!-- Use for dual external and library authentication: -->
+<div class="loginArea loginArea2Col">
+<!-- Use for library-only authentication: -->
+<!--<div class="loginArea loginArea1Col"> -->
+<div class="clearfloats"></div>
+<form id="fm1">
+	<!-- Message from client webapp to be displayed on the CAS login screen -->
+  	<div id="clientmessage">
+	<!--display any errors-->
+  	</div> <!-- end clientmessage -->
+	
+    <!-- If not using campus/external verification you can comment out this section up to "end loginldap" -->
+<div id="login_ldap">
+    <fieldset>
+        <legend>Log in Campus</legend>
+        <label for="extpatid">Nombre usuario</label>
+        <div class="loginFieldBg">
+          <input id="extpatid" name="extpatid" type="text" value="" size="20" maxlength="40" tabindex="5" class="loginField">
+        </div>
+        <label for="extpatpw">Contrase&#241;a</label>
+        <div class="loginFieldBg">
+          <input id="extpatpw" name="extpatpw" type="password" value="" size="20" maxlength="40" tabindex="10" class="loginField">
+        </div>
+        <!-- This button is a duplicate submit for convenience on mobile devices. -->
+        <input name="extpatsubmit" type="button" value="Submit" class="loginSubmit" onclick="document.forms['fm1'].submit();">
+    </fieldset>
+    </div>
+<!-- end loginldap -->
+
+    
+	<!--display login form-->
+	<div id="login">
+	  <fieldset>
+	    <legend>Login de cuenta de Biblioteca</legend>
+	      
+	        <label for="name">Nombre</label>
+            <div class="loginFieldBg">
+              <input id="name" name="name" type="text" value="" size="20" maxlength="40" tabindex="15" class="loginField">
+	        </div>
+	      
+            <fieldset class="barcodeAltChoice">
+            <legend>Indique su nombre de login o c&#243;digo de barras</legend>
+                    
+              <label for="code">C&#243;digo de barras</label>
+              <div class="loginFieldBg">
+        	      <input id="code" name="code" type="password" value="" size="20" maxlength="40" tabindex="20" class="loginField">
+		      </div>
+            
+              <label for="user_name">O: Su login/nombre de usuario</label>
+              <div class="loginFieldBg">
+                  <input id="user_name" name="username" type="text" value="" size="20" maxlength="25" tabindex="25" class="loginField">
+	          </div>
+            
+            </fieldset>
+            
+            <label for="pin">PIN</label>
+            <div class="loginFieldBg">
+              <input id="pin" name="pin" type="password" value="" size="20" maxlength="40" tabindex="30" class="loginField">
+	        </div>
+            
+<!--ifneedspin-->
+			<fieldset class="newpin">
+            <legend>Indique su PIN nuevo, por favor</legend>
+                <label for="pin1">PIN nuevo</label>
+                <div class="loginFieldBg">
+                  <input id="pin1" name="pin1" type="password" value="" size="20" maxlength="40" tabindex="35" class="loginField">
+	            </div>
+                    
+                <label for="pin2">Re-escriba su PIN nuevo</label>
+                <div class="loginFieldBg">
+                  <input id="pin2" name="pin2" type="password" value="" size="20" maxlength="40" tabindex="40" class="loginField">
+                </div>
+
+            </fieldset>
+<!--xif-->
+        <!-- This button is hidden unless using mobile devices. Even if hidden it enables Enter key to submit. -->
+        <input type="submit" name="Log In" class="loginSubmit">
+
+	  </fieldset>
+	</div>  <!-- end login -->
+    <div class="clearfloats"></div>
+    <div class="formButtons">
+    	<a href="#" onclick="document.forms['fm1'].submit();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Enviar</span></span></div></div></a>
+  	</div>
+</form>
+
+<!--Enable form focus-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+//Look for the first field in the external patron part of the form. This field will get cursor focus.
+var ipssoFirstField;
+try { ipssoFirstField = document.forms[0].extpatid; }
+catch(err) {
+}
+//If we still don't have a field, look for the name field in the library account part.
+if ( ipssoFirstField==undefined ) { ipssoFirstField = document.forms[0].name; }
+//Set focus. Ignore errors.
+try { ipssoFirstField.focus(); }
+catch(err) {}
+
+document.onkeydown = enterSubmit
+
+function enterSubmit(e) {
+var keycode;
+if (window.event) keycode = window.event.keyCode;
+else if (e) keycode = e.which;
+if (keycode==13)
+ document.forms[0].submit();
+}
+
+//--><!]]></script>
+
+
+</div> <!-- end loginArea -->
+
+<div class="loginActions">
+<span class="loginActionText">&#191;Nuevo para la biblioteca?</span>
+<span class="loginActionScreenOnly"><a href="/selfreg">Crear una cuenta</a></span>
+<span class="loginActionSeparator"></span>
+<span class="loginActionScreenOnly"><a href="/pinreset">&#191;Olvido su PIN?</a></span>
+<span class="loginActionSeparator"></span>
+<span class="loginAction"><a href="/">Inicio</a></span>
+</div>
+</div> <!-- loginPage -->
+
+<!--[if IE]>
+</div>
+<![endif]-->
+<!-- IPSSO html form updated 2010 June 29 -->
+</body>
+</html>
+

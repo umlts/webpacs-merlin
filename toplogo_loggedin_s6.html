@@ -5,6 +5,8 @@
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="/screens/jquery.cookie.js"></script>
 <script src="/screens/menu-collapsed.js" type="text/javascript"></script>
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script>
+<script type="text/javascript" src="/screens/856links.js"></script>
 <script type="text/javascript" src='/screens/sms.js'> </script>
 <script type="text/javascript">
 $(document).ready(function () {
@@ -30,6 +32,12 @@ $(document).ready(function () {
 			$('#searcharg').val(newSearchTerm);
 		}
 		});
+
+				//changes wording from bookcart to list
+	if(window.location.href.indexOf("mylistsmulti") > -1) {
+		var text = $('.pageMainAreaHeader').text().replace("Save Records in Bookcart to a List", "Save Records to List"); // this will give the text after replacement, but it will not set the text to ValidationSummary
+		    $('.pageMainAreaHeader').text(text);
+	}
 	});
 </script>
 
@@ -62,20 +70,20 @@ if (document.body){document.body.className = "bodybg";}
     </ul>
 </div>
 
-<div id="alertMessage"></div>
+
 
 <div class="linkBanner">
 </div>
-
-</div><!--topLogo-->
-
 <div class="clear"></div>
+</div>
+<div id="alertMessage"><br></div>
+<!--topLogo-->
 <div class="rightColumn">
 <div id="searchOptions">
 
 <ul>
 	<li>
-<!--{startover}-->	
+<a href="/search/X">New Search</a>	
 	</li>
 	<li>
 <!--{patronrecord}-->
@@ -84,17 +92,22 @@ if (document.body){document.body.className = "bodybg";}
 <!--{logout}-->
 	</li>
 	<li><a href="/search/b">Course Reserves</a></li>
+	<li><a href="/ftlists">New Titles</a></li>
 	<li><a>MERLIN (UM) Libraries</a>
 		<ul>
 			<li><a href="http://library.mst.edu/">Missouri S&T</a></li>
-			<li><a href="http://mulibraries.missouri.edu/">MU</a></li>
+			<li><a href="http://library.missouri.edu/">MU</a></li>
+			<li><a href="http://www.law.missouri.edu/library/">MU-Law</a></li>
 			<li><a href="http://library.umkc.edu/">UMKC</a></li>
+			<li><a href="http://www1.law.umkc.edu/library/">UMKC-Law</a></li>		
 			<li><a href="http://www.umsl.edu/library">UMSL</a></li>
 			<li><a href="http://shs.umsystem.edu/index.shtml">State Historical Society</a></li>
 		</ul>
 	</li>
 	<li><a href="http://laurel.lso.missouri.edu:2083">New MOBIUS Search</a></li>
 	<li><a href="/help">Help</a></li>
+	<li><a href="#" onclick="iiiSwitchLang('spi')">Espa&#241;ol</a></li>
+	<li><a href="#" onclick="iiiSwitchLang('chx')">&#31616;&#20307;&#20013;&#25991;</a></li>
 </ul>
 
 </div><!--searchOptions-->

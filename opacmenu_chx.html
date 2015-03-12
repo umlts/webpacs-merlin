@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 11 June 2010 -->
+<head>
+<title>MERLIN &#32593;&#39029;&#30446;&#37636;</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<script type="text/javascript">/* <![CDATA[ */
+function iiiSearchValidate() {
+	try{
+	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
+		return false;
+		}
+	}
+	catch(err) {
+	}
+  return true;
+}
+
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+if(iiiSearchValidate()){
+obj.submit();
+}
+}
+/* ]]> */
+</script>
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
+</head>
+<body>
+<!--{toplogo}-->
+
+<div class="pageContentInner mainSearch">
+
+			<h1 class="accessibleAddInfo">&#25628;&#32034;</h1>
+
+		<div id="accessibleForm" class="form1Part">
+		<div class="browseSearchtool">
+		<form action="/search*chx/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
+
+		<input type="hidden" id="iiiFormHandle_1">
+
+		<!-- Optional legend:
+		<fieldset>
+		<legend>&#38190;&#20837;&#24744;&#35201;&#23547;&#25214;&#30340;&#25628;&#32034;&#35789;&#27719;&#12290;</legend>-->
+		<div class="formEntryArea">
+		<label for="searchtype" class="accessibleAddInfo">&#25628;&#32034;&#31867;&#22411;</label>
+		<select name="searchtype" id="searchtype">
+		<option value="/search*chx/Y" selected="selected">&#20851;&#38190;&#23383;</option>
+		<option value="/search*chx/t">&#26631;&#39064;</option>
+		<option value="/search*chx/a">&#20316;&#32773;</option>
+		<option value="/search*chx/d">&#20027;&#39064;</option>
+		<option value="/search*chx/m">&#21307;&#23398;&#31867;(MeSH)</option>
+		<option value="/search*chx/s">&#23450;&#26399;&#25628;&#32034;</option>
+		<option value="/search*chx/c">&#32034;&#20070;&#21495;&#25628;&#32034;</option>
+		<option value="/search*chx/l">&#21307;&#23398;&#31867;&#32534;&#30446;&#21495;&#30721;&#26597;&#35810;</option>
+		<option value="/search*chx/f">&#32034;&#26360;&#34399;&#25628;&#32034;</option>
+		<option value="/search*chx/g">&#25919;&#24220;&#25991;&#20214;&#32534;&#21495;&#25628;&#32034;</option>
+		<option value="/search*chx/e">&#38899;&#20048;&#20986;&#29256;&#29289;</option>
+		<option value="/search*chx/i">&#22269;&#38469;&#26631;&#20934;&#20070;/&#21002;&#21495;ISBN/ISSN &#25628;&#32034;</option>
+		<option value="/search*chx/o">&#20070;&#30446;&#36164;&#26009;&#24211;&#31995;&#32479;&#21495;&#25628;&#32034;</option>
+		<option value="/search*chx/v">&#20307;&#35009;/&#31867;&#22411;</option>
+		<option value="/search*chx/j">&#36164;&#26009;&#24211;&#25628;&#32034; (UMKC)</option>				
+		<option value="/search*chx/x">&#20197;&#20027;&#39064;&#25628;&#32034;&#36164;&#26009;&#24211;(UMKC)</option>
+		<option value="/search*chx/h">&#25424;&#36192;&#32773;</option>
+		</select>
+<!--{nosort}-->
+		<label for="searcharg" class="accessibleAddInfo">&#25628;&#32034;&#39033;&#30446;</label>
+		<input maxlength="75" name="searcharg" size="20" >
+		<label for="scope" class="accessibleAddInfo">&#22320;&#28857;</label>
+<!--{scope}-->
+		<span class="nowrap formButtonArea">
+
+		  <!--{submit}-->
+
+		<input type="hidden" id="iiiFormHandle_1"/>
+		<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#25552;&#20132;</span></span></div></div></a>
+
+		<input type="submit" style="display:none">
+
+		</span>
+		</div><!-- formEntryArea -->
+		<!--</fieldset> optional-->
+		</form>
+		</div><!-- browseSearchtool -->
+		</div><!-- form1Part -->
+
+
+</div><!--pageContentInner -->
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].searcharg.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>

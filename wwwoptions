@@ -40,7 +40,17 @@
 #AVAILLIM=<span class="availLimMessage">Limit search to available items</span>|<span class="availLimMessage">Search results limited to available items</span>
 AVAILLIM_STATS=-,o,e
 BOTLOGO=@screens/botlogo.html
+BOTLOGO1=@screens/botlogo_s1.html
 BOTLOGO3=@screens/botlogo_s3.html
+BOTLOGO5=@screens/botlogo_s5.html
+BOTLOGO_spi=@screens/botlogo_spi.html
+BOTLOGO1_spi=@screens/botlogo_spi_s1.html
+BOTLOGO3_spi=@screens/botlogo_spi_s3.html
+BOTLOGO5_spi=@screens/botlogo_spi_s5.html
+BOTLOGO_chx=@screens/botlogo_chx.html
+BOTLOGO1_chx=@screens/botlogo_chx_s1.html
+BOTLOGO3_chx=@screens/botlogo_chx_s3.html
+BOTLOGO5_chx=@screens/botlogo_chx_s5.html
 ICON_BUT_CANCEL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel</span></span></div></div>
 ICON_BUT_CLOSEWINDOW=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Close Window</span></span>
 ICON_BUT_RET2CAT=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Catalog</span></span>
@@ -65,7 +75,7 @@ STARTOVER=/search/X
 STATGROUP=login
 STYLESHEET=/screens/styles.css
 SUPPRESS_OPTION=STARTOVER,NEWSRCH
-TIMEOUT=600;URL=http://laurel.lso.missouri.edu/search/X
+TIMEOUT=1800;URL=/search/X
 TOPLOGO=@screens/toplogo.html
 TOPLOGO1=@screens/toplogo_s1.html
 TOPLOGO2=@screens/toplogo_s2.html
@@ -74,6 +84,25 @@ TOPLOGO4=@screens/toplogo_s4.html
 TOPLOGO5=@screens/toplogo_s5.html
 TOPLOGO6=@screens/toplogo_s6.html
 TOPLOGO7=@screens/toplogo_s7.html
+
+TOPLOGO_spi=@screens/toplogo_spi.html
+TOPLOGO1_spi=@screens/toplogo_spi_s1.html
+TOPLOGO2_spi=@screens/toplogo_spi_s2.html
+TOPLOGO3_spi=@screens/toplogo_spi_s3.html
+TOPLOGO4_spi=@screens/toplogo_spi_s4.html
+TOPLOGO5_spi=@screens/toplogo_spi_s5.html
+TOPLOGO6_spi=@screens/toplogo_spi_s6.html
+TOPLOGO7_spi=@screens/toplogo_spi_s7.html
+
+TOPLOGO_chx=@screens/toplogo_chx.html
+TOPLOGO1_chx=@screens/toplogo_chx_s1.html
+TOPLOGO2_chx=@screens/toplogo_chx_s2.html
+TOPLOGO3_chx=@screens/toplogo_chx_s3.html
+TOPLOGO4_chx=@screens/toplogo_chx_s4.html
+TOPLOGO5_chx=@screens/toplogo_chx_s5.html
+TOPLOGO6_chx=@screens/toplogo_chx_s6.html
+TOPLOGO7_chx=@screens/toplogo_chx_s7.html
+
 #UPDATECIRC=true
 STARTOVER=/search/X
 
@@ -85,7 +114,7 @@ STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode 
 
 # General and Phrase Searching
 ICON_BUT_ANOTHER=<span class="navButton">Another Search</span>
-ICON_BUT_NEWSRCH=New Search
+ICON_BUT_NEWSRCH=<span class="navButtonOneLine">New Search</span>
 ICON_BUT_WORDSRCH=<span class="navButton">Search as Words</span>
 DROP_DOWN=Xtadmsgfci
 FRAMEURL=0
@@ -130,11 +159,11 @@ ICON_BUT_UNLIMAVAIL=<span class="button"><img src="/screens/ico_list.png" alt=""
 DISPLAY_245=atd
 EXTENDED=L
 EXTENDED_c=3
-#HEADING_LENGTH=100
+HEADING_LENGTH=250
 ICON_856LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website
 ICON_962LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image
-ICON_BOOKCART=<span class="navButton">Add to Folder</span>
-ICON_BOOKCART_SAVED=<span class="navButtonYellow navButton">Remove From Folder</span>
+#ICON_BOOKCART=<span class="navButton">Save to Folder</span>
+ICON_BOOKCART_SAVED=<span class="navButtonYellow navButton">Remove From Saved</span>
 ICON_FULLRECORD=See Full Record
 ICON_LOCATEINRESULTS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Locate in results</span></span></div></div>
 ICON_PAGING_CAPTION=Result Page&nbsp;
@@ -142,8 +171,8 @@ ICON_PAGING_NEXT=Next
 ICON_PAGING_PREV=Prev
 ICON_PROGRAM=<img src="/screens/media_program.gif" border="0" alt="Library Event">
 ICON_RESOURCE=<img src="/screens/media_resource.gif" alt="Internet Resource">
-ICON_SAVEALLPAGE=<span class="button"><img src="/screens/ico_folder_add.png" alt=""><span class="buttonText">Add All On Page to Folder</span></span>
-ICON_SAVEMARKED=<span class="button"><img src="/screens/ico_folder_add.png" alt=""><span class="buttonText">Add Marked to Folder</span></span>
+ICON_SAVEALLPAGE=<span class="button"><img src="/screens/ico_folder_add.png" alt=""><span class="buttonText">Save All on Page</span></span>
+ICON_SAVEMARKED=<span class="button"><img src="/screens/ico_folder_add.png" alt=""><span class="buttonText">Save Marked</span></span>
 IMAGE_MATTYPE-=/screens/media_book.gif
 IMAGE_MATTYPE2=/screens/media_ebook.gif
 IMAGE_MATTYPE3=/screens/media_eperiodical.gif
@@ -188,17 +217,17 @@ TABLEPARAM_BROWSE=width="100%" cellpadding="0" cellspacing="0" border="0"|align=
 # Record Displays
 BIB_TOC_HEADER=<strong>Table of Contents</strong>
 ICON_BUT_MARC_DISPLAY=<span class="navButton">MARC Display</span>
-ICON_BUT_REGULAR_DISPLAY=<span class="navButton">Return to Browse</span>
+ICON_BUT_REGULAR_DISPLAY=<span class="navButton">Return to Record</span>
 ICON_BUT_RTRNTB=<span class="navButton">Return to Browse</span>
 DISPLAY_856=z3|false
 HOLDINGS_POS=atpexz
-#HOTLINK=i^020,c^09,n^505
+HOTLINK=i^024,i^028,g^086
 ICON_BIB_HOLDINGS_ITEMS=View Copies
-ICON_NEARBY=<img src="/screens/nearby.png" alt="Nearby on shelf">
+#ICON_NEARBY=<img src="/screens/nearby.png" alt="Nearby on shelf">
 ICON_BIB_PAGING_CAPTION= 
 ICON_BIB_PAGING_NEXT=<span class="button"><span class="buttonText" id="buttonNextRecord">Next Record</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BIB_PAGING_PREV=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Previous Record</span></span>
-ICON_RECORDLINK=<span class="button"><img src="/screens/ico_bookmark.png" alt="">Persistent record link: http://laurel.lso.missouri.edu%s</span>
+ICON_RECORDLINK=<div class="bibRecordLink"><div class="bibInfoLabel">Permanent Link</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
 ITEMS_MSG_BRIEF=Click here for additional copies/volumes of this item
 LINK856TEXT=Connect to
 MARC=yes
@@ -241,7 +270,7 @@ ICON_BUT_CARDFORM_BOX=<span class="button"><img src="/screens/ico_gear.png" alt=
 ICON_BUT_CARDFORM_LIN=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Show Cards in Line Format</span></span>
 CHECKIN_BGCOLOR=ARRIVED=#FFFFFF|EXPECTED=#FFFFFF|TO BIND/BOUND=#FFFFFF|LATE=#FFFFFF|OTHER=#FFFFFF
 CHECKIN_FONTCOLOR=ARRIVED=GREEN|EXPECTED=BLACK|TO BIND/BOUND=RED|LATE=BLACK|OTHER=BLACK
-CHECKIN_STATUS=EXPECTED=Expected|ARRIVED=Arrived|PARTIALLY RECEIVED=Partial|MISSING=Missing|BOUND=Bound|AT BINDERY=To bind|BINDERY PREP=Binding prepration|REMOVED=Removed|NOT PUBLISHED=Not published|OUT OF PRINT=Out of print|UNAVAILABLE=Unavailable|LATE=Late
+CHECKIN_STATUS=EXPECTED=Expected|ARRIVED=Arrived|PARTIALLY RECEIVED=Partial|MISSING=Missing|BOUND=Bound|AT BINDERY=To bind|BINDERY PREP=Binding prepration|REMOVED=Removed|NOT PUBLISHED=Not published|OUT OF PRINT=Out of print|UNAVAILABLE=Unavailable|LATE=Late|CLAIMED=Claimed
 #For the above wwwoption, see page 106918 of the manual for the correct label terminology.  For the left (all caps) side of the wwwoption, use what's in the manual, not what's in Millennium. 
 DISPLAY_CHECKIN_856=z3
 HOLDINGS_REQ=Deliver this article to me
@@ -264,23 +293,23 @@ ICON_MYLISTS_RECORD=<span class="navButton">Add to My Lists</span>
 
 # Saving and Exporting
 BRIEF_EXPORT=a|t|p
-ICON_BUT_BIBEXPORT=<span class="navButtonOneLine">Add to Folder</span>
-ICON_BUT_CLEAR_MARKED=<span class="navButtonOneLine">Empty Folder</span>
-ICON_BUT_EXPORT_MULTI=<span class="navButtonOneLine">Export Saved</span>
-ICON_BUT_EXPORT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Folder</span></span>
-ICON_BUT_VIEW_SAVES=<span class="navButtonOneLine">View Folder</span>
+ICON_BUT_BIBEXPORT=<span class="navButton">Save to Folder</span>
+ICON_BUT_CLEAR_MARKED=<span class="navButton">Clear Saved Records</span>
+ICON_BUT_EXPORT_MULTI=<span class="navButton">Export Saved</span>
+ICON_BUT_EXPORT_VIEW_SAVES=<span class="navButton"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Saved Records</span></span>
+ICON_BUT_VIEW_SAVES=<span class="navButton">View Saved Records</span>
 EMAILOP=From the MERLIN Library Catalog|exporter|
 EXPORT_SELECT_TABLE=Sendto:email,local,browser|Format:full,brief,marc,endnote,procite
 XRECTYPE=bi
 
 #Requesting
 #BIBREQUEST=true
-ICON_BUT_REQUEST=<span class="navButtonOneLine">Request</span>
+ICON_BUT_REQUEST=<span class="navButtonOneLine request">Request</span>
 ICON_BUT_REQUEST_ALL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Available</span></span></div></div>
 ICON_BUT_REQUEST_MULTI=<span class="navButton">Request Saved</span>
 ICON_BUT_REQUEST_RESET=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Reset Form</span></span></div></div>
 ICON_BUT_REQUEST_SELECTED=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Selected</span></span></div></div>
-ICON_REQUEST=<span class="navButtonOneLine">Request</span>
+ICON_REQUEST=<span class="navButtonSmall navButton request">Request</span>
 #REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
 REQUEST=Request item|denyiflocalavail|ask|Y
 #REQUEST_ARTICLE_IFCHKIN=Y
@@ -441,14 +470,14 @@ TABLEPARAM_RSRV_BIBS=width="100%" border="0" cellpadding="0" cellspacing="0"
 
 # Featured Lists
 ICON_BUT_PREVSCRN=<span class="navButtonOneLine">Back</span>
-ICON_BUT_RET2FEAT=<span class="navButtonOneLine">Back</span>>
+ICON_BUT_RET2FEAT=<span class="navButtonOneLine">Back</span>
 FEATURED_LIST=10,260|New Titles|Campus|# Titles
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
 #BIBIMAGE=http://contentcafe2b.btol.com/ContentCafe/Jacket.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;Return=T&amp;Type=S&amp;Value=%s&amp;erroroverride=1|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=Y
 #BIBIMAGE=https://contentcafe2b.btol.com/ContentCafe/Jacket.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;Return=T&amp;Type=S&amp;Value=%s&amp;erroroverride=1|I|https://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=Y
-BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=umkc|I|http://www.syndetics.com/index.aspx?isbn=%s/LC.GIF&client=umkc
+#BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=umkc|I|http://www.syndetics.com/index.aspx?isbn=%s/LC.GIF&client=umkc
 BIBIMAGE_TEXT=Book Cover
 BUT_ENCYCPD=/screens/encycpd.gif
 BUT_FULL_TEXT=/screens/full_text.gif
@@ -568,7 +597,9 @@ TABLEPARAM_PROG_SECTIONS=width="100%" border="0" cellspacing="0" align="center"
 
 # ASRS
 
-ICON_BUT_ASRSICON=<span class="button"><img src="/screens/ico_kangaroo.png" alt=""><span class="buttonText">Pick Up @ Miller Nichols</span></span>
+#ICON_BUT_ASRSICON=<span class="navButton">Pick Up @ Miller Nichols</span>
+ICON_BUT_ASRSICON=<div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Pick Up @ Miller Nichols</span></span></div></div>
+
 
 # Scoping
 
@@ -578,153 +609,168 @@ LOCKSCOPE=no
 
 # MU
 
-LOC_ceiii=http://mulibraries.missouri.edu/about/maps/location/muellis.htm "target=_blank"
-LOC_cerii=http://mulibraries.missouri.edu/about\maps\location\ellisref.htm "target=_blank"
-LOC_cerli=http://mulibraries.missouri.edu/refservices/location/muellisreflockedref.html "target=_blank"
-LOC_cerri=http://mulibraries.missouri.edu/about/maps/location/ellisrefreadyref.htm "target=_blank"
-LOC_ce15e=http://mulibraries.missouri.edu/about/maps/location/ellisstudy151e.htm "target=_blank"
-LOC_ce15f=http://mulibraries.missouri.edu/about/maps/location/ellisstudy151f.htm "target=_blank"
-LOC_ce15g=http://mulibraries.missouri.edu/about/maps/location/ellisstudy151g.htm "target=_blank"
-LOC_ce3d6=http://mulibraries.missouri.edu/about/maps/location/ellisstudy3d61.htm "target=_blank"
-LOC_ce3g1=http://mulibraries.missouri.edu/about/maps/location/ellisstudy3g61.htm "target=_blank"
-LOC_ce3g2=http://mulibraries.missouri.edu/about/maps/location/ellisstudy3g62.htm "target=_blank"
-LOC_cdiii=http://mulibraries.missouri.edu/about/maps/location/delta.htm "target=_blank"
-LOC_cdiib=http://mulibraries.missouri.edu/about/maps/location/delta.htm "target=_blank"
-LOC_cnbii=http://mulibraries.missouri.edu/engineering/about/location/engrbooks.htm "target=_blank"
-LOC_cniib=hhttp://mulibraries.missouri.edu/engineering/about/location/engr.htm "target=_blank"
-LOC_cniii=http://mulibraries.missouri.edu/engineering/about/location/engrbooks.htm "target=_blank"
-LOC_cnoii=http://mulibraries.missouri.edu/engrstaff/maps/locmuover.htm "target=_blank"
-LOC_cnrii=http://mulibraries.missouri.edu/engineering/about/location/engrreference.htm "target=_blank"
-LOC_cnrri=http://mulibraries.missouri.edu/engineering/about/location/engrreadyref.htm "target=_blank"
-LOC_cnxii=http://mulibraries.missouri.edu/engineering/about/location/engrreserve.htm "target=_blank"
-LOC_cmiii=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH.htm "target=_blank"
-LOC_cmiib=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH.htm "target=_blank"
-LOC_cmrii=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH%20REFERENCE.htm "target=_blank"
-LOC_cmrri=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH%20REFERENCE.htm "target=_blank"
-LOC_cmxii=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH%20RESERVE.htm "target=_blank"
-LOC_cmoii=http://mulibraries.missouri.edu/math/LOCATION%20MU%20MATH%20OVERSIZED.htm "target=_blank"
-LOC_fca*=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
-#LOC_fcaii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
-LOC_fcdii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
-LOC_fceii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
-LOC_fcgii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
-LOC_fch2i=http://library.muhealth.org/search/merlinlocations/muhsldepository.htm "target=_blank"
-LOC_fciib=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
-LOC_fcjii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
-LOC_fcmii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
-LOC_fcnii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
-LOC_fctii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
-LOC_fcvii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
-LOC_fcyii=http://mulibraries.missouri.edu/collections/annex-depository.htm "target=_blank"
-LOC_caiii=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
-LOC_cadii=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
-LOC_caiin=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
-LOC_caiig=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
-LOC_caiij=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
-LOC_caiim=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
-LOC_caioi=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
-LOC_caion=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
-LOC_caiog=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
-LOC_caioh=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
-LOC_caioj=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
-LOC_caiom=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
-LOC_caiib=http://mulibraries.missouri.edu/about/maps/location/annex.htm "target=_blank"
-LOC_cex2h=http://mulibraries.missouri.edu/about/maps/location/ellissemrm202h.htm "target=_blank"
-LOC_cexi1=http://mulibraries.missouri.edu/about/maps/location/ellissemrm202I.htm "target=_blank"
-LOC_cex2j=http://mulibraries.missouri.edu/about/maps/location/ellissemrm202J.htm "target=_blank"
-LOC_cex61=http://mulibraries.missouri.edu/about/maps/location/ellissemrm3d61.htm "target=_blank"
-LOC_cex62=http://mulibraries.missouri.edu/about/maps/location/ellissemrm3d62.htm "target=_blank"
-LOC_cex21=http://mulibraries.missouri.edu/about/maps/location/ellissemrm3e21.htm "target=_blank"
-LOC_cexg1=http://mulibraries.missouri.edu/about/maps/location/ellissemrm3g61.htm "target=_blank"
-LOC_cexg2=http://mulibraries.missouri.edu/about/maps/location/ellissemrm3g61.htm "target=_blank"
-LOC_cex12=http://mulibraries.missouri.edu/about/maps/location/ellissemrm4b12.html "target=_blank"
-LOC_ce4cs=http://mulibraries.missouri.edu/about/maps/location/ellis4a51.htm "target=_blank"
-LOC_ce201=http://mulibraries.missouri.edu/guides/virtour/selfguided/tour.asp?title=Study%20Rooms "target=_blank"
-LOC_ce202=http://mulibraries.missouri.edu/guides/virtour/selfguided/tour.asp?title=Study%20Rooms "target=_blank"
-LOC_cecpr=http://mulibraries.missouri.edu/about/maps/location/ellis-cprr.htm "target=_blank"
-LOC_ced28=http://mulibraries.missouri.edu/about/maps/location/ellisdocsrm28.htm "target=_blank"
-LOC_cedci=http://mulibraries.missouri.edu/about/maps/location/ellisdocsmedia.htm "target=_blank"
-LOC_cedfi=http://mulibraries.missouri.edu/about/maps/location/ellisdocsmediacab.htm "target=_blank"
-LOC_cedii=http://mulibraries.missouri.edu/about/maps/location/ellisdocs.htm "target=_blank"
-LOC_cedma=http://mulibraries.missouri.edu/about/maps/location/ellisdocsmap.htm "target=_blank"
-LOC_cedmi=http://mulibraries.missouri.edu/about/maps/location/ellisdocsmicf.htm "target=_blank"
-LOC_cedof=http://mulibraries.missouri.edu/about/maps/location/ellisdocsoffice.htm "target=_blank"
-LOC_cedoi=http://mulibraries.missouri.edu/about/maps/location/ellisdocsoversize.htm "target=_blank"
-LOC_cedpi=http://mulibraries.missouri.edu/about/maps/location/ellisdocsposter.htm "target=_blank"
-LOC_cedri=http://mulibraries.missouri.edu/about/maps/location/ellisdocsref.htm "target=_blank"
-LOC_cejii=http://mulibraries.missouri.edu/guides/virtour/childrensbooks.htm "target=_blank"
-LOC_celii=http://mulibraries.missouri.edu/about/maps/location/ill.htm "target=_blank"
-LOC_cemci=http://mulibraries.missouri.edu/about/maps/location/ellismodocmedia.htm "target=_blank"
-LOC_cemii=http://mulibraries.missouri.edu/about/maps/location/ellismodoc.htm "target=_blank"
-LOC_cemma=http://mulibraries.missouri.edu/about/maps/location/ellismodocmap.htm "target=_blank"
-LOC_cemmi=hhttp://mulibraries.missouri.edu/about/maps/location/ellismodocmicf.htm "target=_blank"
-LOC_cemoi=http://mulibraries.missouri.edu/about/maps/location/ellismodocover.htm "target=_blank"
-LOC_cempi=http://mulibraries.missouri.edu/about/maps/location/ellismodocposter.htm "target=_blank"
-LOC_cemri=http://mulibraries.missouri.edu/about/maps/location/ellismodocref.htm "target=_blank"
-LOC_ceoli=http://mulibraries.missouri.edu/guides/virtour/oversized.htm "target=_blank"
-LOC_ceoxi=http://mulibraries.missouri.edu/guides/virtour/oversized.htm "target=_blank"
-LOC_cequi=http://mulibraries.missouri.edu/about/maps/location/techser.htm "target=_blank"
-LOC_cer56=http://mulibraries.missouri.edu/about/maps/location/refrm156.htm "target=_blank"
-LOC_cerai=http://mulibraries.missouri.edu/about/maps/location/ellisdataarc.htm "target=_blank"
-LOC_cerei=http://mulibraries.missouri.edu/about/maps/location/eric.htm "target=_blank"
-LOC_cerwi=http://mulibraries.missouri.edu/about/maps/location/refwrkstn.htm "target=_blank"
-LOC_cescf=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cesci=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cesdi=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cesfi=http://mulibraries.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
-LOC_cesfm=http://mulibraries.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
-LOC_ceshi=http://mulibraries.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
-LOC_cesji=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cesla=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cesmc=http://mulibraries.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
-LOC_cesmf=http://mulibraries.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
-LOC_cesmp=http://mulibraries.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
-LOC_cesof=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cesoi=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cespf=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cespi=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cespn=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cespp=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cespr=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cespx=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cesri=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cesrr=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cessa=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cessf=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cessm=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cesti=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_ceswi=http://mulibraries.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
-LOC_cetii=http://mulibraries.missouri.edu/guides/virtour/selfguided/tour.asp?title=Study%20Rooms "target=_blank"
-LOC_ceuii=http://mulibraries.missouri.edu/about/maps/location/recorded-sound.htm "target=_blank"
-LOC_ceuri=http://mulibraries.missouri.edu/about/maps/location/recorded-sound.htm "target=_blank"
-LOC_cex12=http://mulibraries.missouri.edu/Refservices/location/MUellissemrm4B12.html "target=_blank"
-LOC_cexii=http://mulibraries.missouri.edu/guides/reserves/ellis/print.htm "target=_blank"
-LOC_cgcii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
-LOC_cgdii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
-LOC_cgdmi=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
-LOC_cgiib=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
-LOC_cgiii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
-LOC_cgmii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
-LOC_cgoii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
-LOC_cgrii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
-LOC_cgrri=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
-LOC_cgxii=http://mulibraries.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_ceiii=http://library.missouri.edu/about/maps/location/muellis.htm "target=_blank"
+LOC_cerii=http://library.missouri.edu/about\maps\location\ellisref.htm "target=_blank"
+LOC_cerli=http://library.missouri.edu/refservices/location/muellisreflockedref.html "target=_blank"
+LOC_cerri=http://library.missouri.edu/about/maps/location/ellisrefreadyref.htm "target=_blank"
+LOC_ce15e=http://library.missouri.edu/about/maps/location/ellisstudy151e.htm "target=_blank"
+LOC_ce15f=http://library.missouri.edu/about/maps/location/ellisstudy151f.htm "target=_blank"
+LOC_ce15g=http://library.missouri.edu/about/maps/location/ellisstudy151g.htm "target=_blank"
+LOC_ce3d6=http://library.missouri.edu/about/maps/location/ellisstudy3d61.htm "target=_blank"
+LOC_ce3g1=http://library.missouri.edu/about/maps/location/ellisstudy3g61.htm "target=_blank"
+LOC_ce3g2=http://library.missouri.edu/about/maps/location/ellisstudy3g62.htm "target=_blank"
+LOC_cdiii=http://library.missouri.edu/about/maps/location/delta.htm "target=_blank"
+LOC_cdiib=http://library.missouri.edu/about/maps/location/delta.htm "target=_blank"
+LOC_cnbii=http://library.missouri.edu/engineering/about/location/engrbooks.htm "target=_blank"
+LOC_cniib=hhttp://library.missouri.edu/engineering/about/location/engr.htm "target=_blank"
+LOC_cniii=http://library.missouri.edu/engineering/about/location/engrbooks.htm "target=_blank"
+LOC_cnoii=http://library.missouri.edu/engrstaff/maps/locmuover.htm "target=_blank"
+LOC_cnrii=http://library.missouri.edu/engineering/about/location/engrreference.htm "target=_blank"
+LOC_cnrri=http://library.missouri.edu/engineering/about/location/engrreadyref.htm "target=_blank"
+LOC_cnxii=http://library.missouri.edu/engineering/about/location/engrreserve.htm "target=_blank"
+LOC_cmiii=http://library.missouri.edu/math/LOCATION%20MU%20MATH.htm "target=_blank"
+LOC_cmiib=http://library.missouri.edu/math/LOCATION%20MU%20MATH.htm "target=_blank"
+LOC_cmrii=http://library.missouri.edu/math/LOCATION%20MU%20MATH%20REFERENCE.htm "target=_blank"
+LOC_cmrri=http://library.missouri.edu/math/LOCATION%20MU%20MATH%20REFERENCE.htm "target=_blank"
+LOC_cmxii=http://library.missouri.edu/math/LOCATION%20MU%20MATH%20RESERVE.htm "target=_blank"
+LOC_cmoii=http://library.missouri.edu/math/LOCATION%20MU%20MATH%20OVERSIZED.htm "target=_blank"
+LOC_fca*=http://library.missouri.edu/collections/annex-depository.htm "target=_blank"
+LOC_fcdii=http://library.missouri.edu/collections/annex-depository.htm "target=_blank"
+LOC_fceii=http://library.missouri.edu/umld/requestumld/ "target=_blank"
+LOC_fcgii=http://library.missouri.edu/umld/requestumld/ "target=_blank"
+#LOC_fch2i=http://library.muhealth.org/search/merlinlocations/muhsldepository.htm "target=_blank"
+LOC_fca2i=http://library.missouri.edu/u2closed/ "target=_blank"
+LOC_fcd2i=http://library.missouri.edu/u2closed/ "target=_blank"
+LOC_fce2i=http://library.missouri.edu/u2closed/ "target=_blank" 
+LOC_fcg2i=http://library.missouri.edu/u2closed/ "target=_blank"
+LOC_fch2i=http://library.missouri.edu/u2closed/ "target=_blank"
+LOC_fcj2i=http://library.missouri.edu/u2closed/ "target=_blank"
+LOC_fcm2i=http://library.missouri.edu/u2closed/ "target=_blank"
+LOC_fcn2i=http://library.missouri.edu/u2closed/ "target=_blank"
+#LOC_fcv2i=http://library.missouri.edu/u2closed/ "target=_blank"
+LOC_fcaii=http://library.missouri.edu/umld/requestumld/ "target=_blank"
+LOC_fci=http://library.missouri.edu/umld/requestumld/ "target=_blank"
+LOC_fciib=http://library.missouri.edu/umld/requestumld/ "target=_blank"
+LOC_fcjii=http://library.missouri.edu/umld/requestumld/ "target=_blank"
+LOC_fcmii=http://library.missouri.edu/umld/requestumld/ "target=_blank"
+LOC_fcnii=http://library.missouri.edu/umld/requestumld/ "target=_blank"
+LOC_fctii=http://library.missouri.edu/umld/requestumld/ "target=_blank"
+LOC_fcvii=http://library.muhealth.org/search1/merlinlocations/muhsldepository/ "target=_blank"
+LOC_fcyii=http://library.missouri.edu/collections/annex-depository.htm "target=_blank"
+LOC_caiii=http://library.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_cadii=http://library.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caiin=http://library.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caiig=http://library.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caiij=http://library.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caiim=http://library.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caioi=http://library.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caion=http://library.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caiog=http://library.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caioh=http://library.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caioj=http://library.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caiom=http://library.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_caiib=http://library.missouri.edu/about/maps/location/annex.htm "target=_blank"
+LOC_cex2h=http://library.missouri.edu/about/maps/location/ellissemrm202h.htm "target=_blank"
+LOC_cexi1=http://library.missouri.edu/about/maps/location/ellissemrm202I.htm "target=_blank"
+LOC_cex2j=http://library.missouri.edu/about/maps/location/ellissemrm202J.htm "target=_blank"
+LOC_cex61=http://library.missouri.edu/about/maps/location/ellissemrm3d61.htm "target=_blank"
+LOC_cex62=http://library.missouri.edu/about/maps/location/ellissemrm3d62.htm "target=_blank"
+LOC_cex21=http://library.missouri.edu/about/maps/location/ellissemrm3e21.htm "target=_blank"
+LOC_cexg1=http://library.missouri.edu/about/maps/location/ellissemrm3g61.htm "target=_blank"
+LOC_cexg2=http://library.missouri.edu/about/maps/location/ellissemrm3g61.htm "target=_blank"
+LOC_cex12=http://library.missouri.edu/about/maps/location/ellissemrm4b12.html "target=_blank"
+LOC_ce4cs=http://library.missouri.edu/about/maps/location/ellis4a51.htm "target=_blank"
+LOC_ce201=http://library.missouri.edu/guides/virtour/selfguided/tour.asp?title=Study%20Rooms "target=_blank"
+LOC_ce202=http://library.missouri.edu/guides/virtour/selfguided/tour.asp?title=Study%20Rooms "target=_blank"
+LOC_cecpr=http://library.missouri.edu/about/maps/location/ellis-cprr.htm "target=_blank"
+LOC_ced28=http://library.missouri.edu/about/maps/location/ellisdocsrm28.htm "target=_blank"
+LOC_cedci=http://library.missouri.edu/about/maps/location/ellisdocsmedia.htm "target=_blank"
+LOC_cedfi=http://library.missouri.edu/about/maps/location/ellisdocsmediacab.htm "target=_blank"
+LOC_cedii=http://library.missouri.edu/about/maps/location/ellisdocs.htm "target=_blank"
+LOC_cedma=http://library.missouri.edu/about/maps/location/ellisdocsmap.htm "target=_blank"
+LOC_cedmi=http://library.missouri.edu/about/maps/location/ellisdocsmicf.htm "target=_blank"
+LOC_cedof=http://library.missouri.edu/about/maps/location/ellisdocsoffice.htm "target=_blank"
+LOC_cedoi=http://library.missouri.edu/about/maps/location/ellisdocsoversize.htm "target=_blank"
+LOC_cedpi=http://library.missouri.edu/about/maps/location/ellisdocsposter.htm "target=_blank"
+LOC_cedri=http://library.missouri.edu/about/maps/location/ellisdocsref.htm "target=_blank"
+LOC_cejii=http://library.missouri.edu/guides/virtour/childrensbooks.htm "target=_blank"
+LOC_celii=http://library.missouri.edu/about/maps/location/ill.htm "target=_blank"
+LOC_cemci=http://library.missouri.edu/about/maps/location/ellismodocmedia.htm "target=_blank"
+LOC_cemii=http://library.missouri.edu/about/maps/location/ellismodoc.htm "target=_blank"
+LOC_cemma=http://library.missouri.edu/about/maps/location/ellismodocmap.htm "target=_blank"
+LOC_cemmi=hhttp://library.missouri.edu/about/maps/location/ellismodocmicf.htm "target=_blank"
+LOC_cemoi=http://library.missouri.edu/about/maps/location/ellismodocover.htm "target=_blank"
+LOC_cempi=http://library.missouri.edu/about/maps/location/ellismodocposter.htm "target=_blank"
+LOC_cemri=http://library.missouri.edu/about/maps/location/ellismodocref.htm "target=_blank"
+LOC_ceoli=http://library.missouri.edu/guides/virtour/oversized.htm "target=_blank"
+LOC_ceoxi=http://library.missouri.edu/guides/virtour/oversized.htm "target=_blank"
+LOC_cequi=http://library.missouri.edu/about/maps/location/techser.htm "target=_blank"
+LOC_cer56=http://library.missouri.edu/about/maps/location/refrm156.htm "target=_blank"
+LOC_cerai=http://library.missouri.edu/about/maps/location/ellisdataarc.htm "target=_blank"
+LOC_cerei=http://library.missouri.edu/about/maps/location/eric.htm "target=_blank"
+LOC_cerwi=http://library.missouri.edu/about/maps/location/refwrkstn.htm "target=_blank"
+LOC_cescf=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesci=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesdi=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesfi=http://library.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
+LOC_cesfm=http://library.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
+LOC_ceshi=http://library.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
+LOC_cesji=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesla=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesmc=http://library.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
+LOC_cesmf=http://library.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
+LOC_cesmp=http://library.missouri.edu/specialcollections/specmicroformcollections.htm "target=_blank"
+LOC_cesof=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesoi=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cespf=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cespi=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cespn=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cespp=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cespr=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cespx=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesri=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesrr=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cessa=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cessf=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cessm=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cesti=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_ceswi=http://library.missouri.edu/specialcollections/specprintcollections.htm "target=_blank"
+LOC_cetii=http://library.missouri.edu/guides/virtour/selfguided/tour.asp?title=Study%20Rooms "target=_blank"
+LOC_cetpi=http://library.missouri.edu/about/maps/location/ellisrefreadyref/ "target=_blank"
+LOC_ceuii=http://library.missouri.edu/about/maps/location/recorded-sound.htm "target=_blank"
+LOC_ceuri=http://library.missouri.edu/about/maps/location/recorded-sound.htm "target=_blank"
+LOC_cex12=http://library.missouri.edu/Refservices/location/MUellissemrm4B12.html "target=_blank"
+LOC_cexii=http://library.missouri.edu/guides/reserves/ellis/print.htm "target=_blank"
+LOC_cgcii=http://library.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgdii=http://library.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgdmi=http://library.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgiib=http://library.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgiii=http://library.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgmii=http://library.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgoii=http://library.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgrii=http://library.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgrri=http://library.missouri.edu/about/maps/location/geol.htm "target=_blank"
+LOC_cgxii=http://library.missouri.edu/about/maps/location/geol.htm "target=_blank"
 LOC_chiib=http://www.muhealth.org/~library/resources/MERLIN_locations/MERLINLoc_MUHSL_Books.html "target=_blank"
+LOC_caiih=http://library.missouri.edu/u2closed/ "target=_blank"
+LOC_caiiv=http://library.missouri.edu/u2closed/ "target=_blank"
+LOC_fcl2i=http://library.missouri.edu/u2closed/ "target=_blank"
+LOC_ce3ii=http://library.missouri.edu/about/maps/location/3eastindexes/ "target=_blank"
 
 # MU Journalism
 
-cjcii=http://mulibraries.missouri.edu/Journalism/locationjourclosed.htm "target=_blank"
-cjfii=http://mulibraries.missouri.edu/Journalism/ "target=_blank"
-cjiib=http://mulibraries.missouri.edu/Journalism/locationjour.htm "target=_blank"
-cjiii=http://mulibraries.missouri.edu/Journalism/ locationjour.htm "target=_blank"
-cjmii=http://mulibraries.missouri.edu/Journalism/locationjourmorgue.htm "target=_blank"
-cjnii=http://mulibraries.missouri.edu/Journalism/locationjournewspaper.htm "target=_blank"
-cjoii=http://mulibraries.missouri.edu/Journalism/locationjouroversize.htm "target=_blank"
-cjpii=http://mulibraries.missouri.edu/Journalism/locationjourjournal.htm "target=_blank"
-cjpoi=http://mulibraries.missouri.edu/Journalism/locationjourfoi.htm "target=_blank"
-cjrii=http://mulibraries.missouri.edu/Journalism/locationjourref.htm "target=_blank"
-cjrri=http://mulibraries.missouri.edu/Journalism/locationjourreadyref.htm "target=_blank"
-cjxii=http://mulibraries.missouri.edu/Journalism/locationjourreserve.htm "target=_blank"
+cjcii=http://library.missouri.edu/Journalism/locationjourclosed.htm "target=_blank"
+cjfii=http://library.missouri.edu/Journalism/ "target=_blank"
+cjiib=http://library.missouri.edu/Journalism/locationjour.htm "target=_blank"
+cjiii=http://library.missouri.edu/Journalism/ locationjour.htm "target=_blank"
+cjmii=http://library.missouri.edu/Journalism/locationjourmorgue.htm "target=_blank"
+cjnii=http://library.missouri.edu/Journalism/locationjournewspaper.htm "target=_blank"
+cjoii=http://library.missouri.edu/Journalism/locationjouroversize.htm "target=_blank"
+cjpii=http://library.missouri.edu/Journalism/locationjourjournal.htm "target=_blank"
+cjpoi=http://library.missouri.edu/Journalism/locationjourfoi.htm "target=_blank"
+cjrii=http://library.missouri.edu/Journalism/locationjourref.htm "target=_blank"
+cjrri=http://library.missouri.edu/Journalism/locationjourreadyref.htm "target=_blank"
+cjxii=http://library.missouri.edu/Journalism/locationjourreserve.htm "target=_blank"
 
 # MU Archives
 
@@ -736,96 +782,109 @@ LOC_umaii=http://muarchives.missouri.edu/merlingw.html "target=_blank"
 
 # MU-HSL
 
-LOC_chaii=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
-LOC_chcai=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
-LOC_chcii=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
-LOC_chcli=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
-LOC_cheii=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
-LOC_chgii=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
-LOC_chgmi=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
-LOC_chhib=http://library.muhealth.org/search/merlinlocations/muhslhealthconnection.htm "target=_blank"
-LOC_chhii=http://library.muhealth.org/search/merlinlocations/muhslhealthconnection.htm "target=_blank"
-LOC_chiib=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
-LOC_chiii=http://library.muhealth.org/search/merlinlocations/muhslbooks.htm "target=_blank"
-LOC_chill=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
-LOC_chmii=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
-LOC_chmim=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
-LOC_chmmi=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
-LOC_chmri=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
-LOC_choii=http://library.muhealth.org/search/merlinlocations/muhsloversizebooks.htm "target=_blank"
-LOC_choni=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
-LOC_chpic=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
-LOC_chpii=http://library.muhealth.org/search/merlinlocations/muhsljournals.htm "target=_blank"
-LOC_chpil=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
-LOC_chpim=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
-LOC_chpin=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
-LOC_chpio=http://library.muhealth.org/search/merlinlocations/muhsloversizejournals.htm "target=_blank"
-LOC_chrib=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
-LOC_chric=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
-LOC_chrid=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
-LOC_chrii=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
-LOC_chrin=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
-LOC_chrio=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
-LOC_chsii=http://library.muhealth.org/about/locations/rarebookroom.htm "target=_blank"
-LOC_chsoi=http://library.muhealth.org/about/locations/rarebookroom.htm "target=_blank"
-LOC_chxii=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
-LOC_chxir=http://library.muhealth.org/search/merlinlocations/muhslcirculation.htm "target=_blank"
-LOC_fchii=http://library.muhealth.org/search/merlinlocations/muhsldepository.htm "target=_blank
+LOC_chaii=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chcai=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chcii=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chcli=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+#LOC_cheii=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
+LOC_chgii=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chgmi=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chhib=http://library.muhealth.org/search1/merlinlocations/literaturehealthcare "target=_blank"
+LOC_chhii=http://library.muhealth.org/search1/merlinlocations/literaturehealthcare "target=_blank"
+LOC_chiib=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chiii=http://library.muhealth.org/search1/merlinlocations/muhslbooks "target=_blank"
+LOC_chill=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chmii=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chmim=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chmmi=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chmri=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_choii=http://library.muhealth.org/search1/merlinlocations/muhsloversizebooks/ "target=_blank"
+#LOC_choni=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
+LOC_chpic=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chpii=http://library.muhealth.org/search1/merlinlocations/muhsljournals/ "target=_blank"
+LOC_chpil=http://library.muhealth.org/search1/merlinlocations/muhslbooks "target=_blank"
+LOC_chpim=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chpin=http://library.muhealth.org/search1/merlinlocations/muhsljournals/ "target=_blank"
+LOC_chpio=http://library.muhealth.org/search1/merlinlocations/muhsloversizejournals/ "target=_blank"
+LOC_chrib=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chric=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chrid=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chrii=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chrin=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chrio=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chsii=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chsoi=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chxii=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chxir=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_fchii=http://library.muhealth.org/search1/merlinlocations/muhsldepository/ "target=_blank
+LOC_cvcii=http://library.missouri.edu/about/maps/location/vetmed/ "target=_blank
+LOC_cvfii=http://library.missouri.edu/about/maps/location/vetmed/ "target=_blank
+LOC_cviib=http://library.missouri.edu/about/maps/location/vetmed/ "target=_blank
+LOC_cviii=http://library.missouri.edu/about/maps/location/vetmed/ "target=_blank
+LOC_cvmii=http://library.missouri.edu/about/maps/location/vetmed/ "target=_blank
+LOC_cvofi=http://library.missouri.edu/about/maps/location/vetmed/ "target=_blank
+LOC_cvoii=http://library.missouri.edu/about/maps/location/vetmed/ "target=_blank
+LOC_cvpii=http://library.missouri.edu/about/maps/location/vetmed/ "target=_blank
+LOC_cvrii=http://library.missouri.edu/about/maps/location/vetmed/ "target=_blank
+LOC_cvrin=http://library.missouri.edu/about/maps/location/vetmed/ "target=_blank
+LOC_cvxii=http://library.missouri.edu/about/maps/location/vetmed/ "target=_blank
+LOC_celli=http://library.missouri.edu/about/maps/location/lawbanks/ "target=_blank
 
 # MST
 
-LOC_rwaci=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
-LOC_rwafi=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
-LOC_rwaii=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
-LOC_rwapi=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
-LOC_rwiig=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
-LOC_rwkii=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
-LOC_rwmii=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
-LOC_rwovg=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
-LOC_rwwii=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
-LOC_uraii=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
-LOC_urwii=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
-LOC_rwbri=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwbrr=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwcii=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwcnd=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwcnv=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwcom=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwdcd=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwdfr=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwdxx=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwfri=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwgca=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwgck=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwgcn=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwgcs=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwgii=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwlii=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwmuu=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwpci=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwpdi=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwpri=http://library.mst.edu/generallibinfo/firstfloor.html target=_blank"
-LOC_rwrib=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwric=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwrii=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwrir=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwsdi=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwxii=http://library.mst.edu/generallibinfo/firstfloor.html "target=_blank"
-LOC_rwii2=http://library.mst.edu/generallibinfo/secondfloor.html "target=_blank"
-LOC_rwii3=http://library.mst.edu/generallibinfo/thirdfloor.html "target=_blank"
-LOC_rwov2=http://library.mst.edu/generallibinfo/secondfloor.html "target=_blank"
-LOC_rwtii=http://library.mst.edu/generallibinfo/lowerlevel.html "target=_blank"
-LOC_rwvii=http://library.mst.edu/generallibinfo/secondfloor.html  "target=_blank"
-LOC_rwbii=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
-LOC_rwdfi=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
-LOC_rwdii=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
-LOC_rwfii=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
-LOC_rwflr=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
-LOC_rwpfi=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
-LOC_rwpii=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
-LOC_rwpmi=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
-LOC_rwtmi=http://library.mst.edu/generallibinfo/thirdfloor.html  "target=_blank"
-LOC_rwfli=http://library.mst.edu/generallibinfo/secondfloor.html "target=_blank"
+LOC_rwaci=http://library.mst.edu/generallibinfo/lowerlevel/index.html "target=_blank"
+LOC_rwafi=http://library.mst.edu/generallibinfo/lowerlevel/index.html "target=_blank"
+LOC_rwaii=http://library.mst.edu/generallibinfo/lowerlevel/index.html "target=_blank"
+LOC_rwapi=http://library.mst.edu/generallibinfo/lowerlevel/index.html "target=_blank"
+LOC_rwiig=http://library.mst.edu/generallibinfo/lowerlevel/index.html "target=_blank"
+LOC_rwkii=http://library.mst.edu/generallibinfo/lowerlevel/index.html "target=_blank"
+LOC_rwmii=http://library.mst.edu/generallibinfo/lowerlevel/index.html "target=_blank"
+LOC_rwovg=http://library.mst.edu/generallibinfo/lowerlevel/index.html "target=_blank"
+LOC_rwwii=http://library.mst.edu/generallibinfo/lowerlevel/index.html "target=_blank"
+LOC_uraii=http://library.mst.edu/generallibinfo/lowerlevel/index.html "target=_blank"
+LOC_urwii=http://library.mst.edu/generallibinfo/lowerlevel/index.html "target=_blank"
+LOC_rwbri=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwbrr=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwcii=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwcnd=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwcnv=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwcom=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwdcd=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwdfr=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwdxx=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwfri=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwgca=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwgck=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwgcn=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwgcs=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwgii=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwlii=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwmuu=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwpci=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwpdi=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwpri=http://library.mst.edu/generallibinfo/firstfloor/index.html target=_blank"
+LOC_rwrib=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwric=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwrii=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwrir=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwsdi=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwxii=http://library.mst.edu/generallibinfo/firstfloor/index.html "target=_blank"
+LOC_rwii2=http://library.mst.edu/generallibinfo/secondfloor/index.html "target=_blank"
+LOC_rwii3=http://library.mst.edu/generallibinfo/thirdfloor/index.html "target=_blank"
+LOC_rwov2=http://library.mst.edu/generallibinfo/secondfloor/index.html "target=_blank"
+LOC_rwtii=http://library.mst.edu/generallibinfo/lowerlevel/index.html "target=_blank"
+LOC_rwvii=http://library.mst.edu/generallibinfo/secondfloor/index.html  "target=_blank"
+LOC_rwbii=http://library.mst.edu/generallibinfo/thirdfloor/index.html  "target=_blank"
+LOC_rwdfi=http://library.mst.edu/generallibinfo/thirdfloor/index.html  "target=_blank"
+LOC_rwdii=http://library.mst.edu/generallibinfo/thirdfloor/index.html  "target=_blank"
+LOC_rwfii=http://library.mst.edu/generallibinfo/thirdfloor/index.html  "target=_blank"
+LOC_rwflr=http://library.mst.edu/generallibinfo/thirdfloor/index.html  "target=_blank"
+LOC_rwpfi=http://library.mst.edu/generallibinfo/thirdfloor/index.html  "target=_blank"
+LOC_rwpii=http://library.mst.edu/generallibinfo/thirdfloor/index.html  "target=_blank"
+LOC_rwpmi=http://library.mst.edu/generallibinfo/thirdfloor/index.html  "target=_blank"
+LOC_rwtmg=http://library.mst.edu/generallibinfo/lowerlevel/index.html "target=_blank"
+LOC_rwtmi=http://library.mst.edu/generallibinfo/thirdfloor/index.html  "target=_blank"
+LOC_rwfli=http://library.mst.edu/generallibinfo/secondfloor/index.html "target=_blank"
 
 
 
@@ -866,6 +925,8 @@ LOC_shoii=http://www.umsl.edu/library/locations/codes/shoii.htm "target=_blank"
 LOC_shrii=http://www.umsl.edu/library/locations/codes/shrii.htm "target=_blank"
 LOC_shrmi=http://www.umsl.edu/library/locations/codes/shrmi.htm "target=_blank"
 LOC_shxii=http://www.umsl.edu/library/locations/codes/shxii.htm "target=_blank"
+LOC_sjapi=http://www.umsl.edu/library/locations/codes/sjapi.htm "target=_blank"
+LOC_sjaii=http://www.umsl.edu/library/locations/codes/sjaii.htm "target=_blank"
 LOC_sjbii=http://www.umsl.edu/library/locations/codes/sjbii.htm "target=_blank"
 LOC_sjbsi=http://www.umsl.edu/library/locations/codes/sjbsi.htm "target=_blank"
 LOC_sjcai=http://www.umsl.edu/library/locations/codes/sjcai.htm "target=_blank"
@@ -877,12 +938,15 @@ LOC_sjcoo=http://www.umsl.edu/library/locations/codes/sjcoo.htm "target=_blank"
 LOC_sjcui=http://www.umsl.edu/library/locations/codes/sjcui.htm "target=_blank"
 LOC_sjdii=http://www.umsl.edu/library/locations/codes/sjdii.htm "target=_blank"
 LOC_sjdmi=http://www.umsl.edu/library/locations/codes/sjdmi.htm "target=_blank"
-LOC_sjeii=http://www.umsl.edu/library/locations/codes/sjeii.htm "target=_blank"
+#LOC_sjeii=http://www.umsl.edu/library/locations/codes/sjeii.htm "target=_blank"
 LOC_sjfii=http://www.umsl.edu/library/locations/codes/sjfii.htm "target=_blank"
 LOC_sjiib=http://www.umsl.edu/library/locations/codes/sjiib.htm "target=_blank"
 LOC_sjiii=http://www.umsl.edu/library/locations/codes/sjiii.htm "target=_blank"
 LOC_sjiif=http://www.umsl.edu/library/locations/codes/sjiif.htm "target=_blank"
 LOC_sjili=http://www.umsl.edu/library/locations/codes/sjili.htm "target=_blank"
+LOC_sjjoi=http://www.umsl.edu/library/locations/codes/sjjoi.htm "target=_blank"
+LOC_sjjii=http://www.umsl.edu/library/locations/codes/sjjii.htm "target=_blank"
+LOC_sjcur=http://www.umsl.edu/library/locations/codes/sjcur.htm "target=_blank"
 LOC_sjmdi=http://www.umsl.edu/library/locations/codes/sjmdi.htm "target=_blank"
 LOC_sjmii=http://www.umsl.edu/library/locations/codes/sjmii.htm "target=_blank"
 LOC_sjofi=http://www.umsl.edu/library/locations/codes/sjofi.htm "target=_blank"
@@ -1103,3 +1167,533 @@ LOC_knxq=http://library.umkc.edu/merlin-locations-mnl#1
 LOC_kr*=http://library.umkc.edu/merlin-locations-mnl#other
 LOC_kw=http://library.umkc.edu/merlin-locations-mnl#other
 
+
+#spanish wwwoptions
+#AVAILLIM_spi=<span class="availLimMessage">Limitar la b&#250;squeda a ejemplares disponibles</span>|<span class="availLimMessage">Resultados de la b&#250;squeda limitados a ejemplares disponibles</span>
+#BOTLOGO_spi=@screens/botlogo_spi.html
+ICON_BUT_ASRSICON_spi=<div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Recoger en Miller Nichols</span></span></div></div>
+ICON_BUT_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
+ICON_BUT_CLOSEWINDOW_spi=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Cerrar ventana</span></span>
+ICON_BUT_RET2CAT_spi=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Volver al cat&#225;logo</span></span>
+ICON_BUT_STARTOVER_spi=<span class="navButtonOneLine">/search*spi</span>
+ICON_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
+ICON_OK_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">OK</span></span></div></div>
+ICON_PREVPAGE_spi=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Previo</span></span>
+ICON_SUBMIT_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Enviar</span></span></div></div>
+ICON_UPDATELIST_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Actualizar lista</span></span></div></div>
+ICON_CLEAR_ALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Borrar todo</span></span></div></div>
+ICON_CLEAR_FORM_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Borrar formulario</span></span></div></div>
+ICON_DELETE_SELECTED_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Borrar seleccionado</span></span></div></div>
+ICON_SELECT_ALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Guardar todo</span></span></div></div>
+#RESOURCETABLE_spi=valign="top"|cellpadding="0" cellspacing="0" border="0"||Recursos
+STARTOVER_spi=/search*spi
+TOPLOGO_spi=@screens/toplogo_spi.html
+XSTARTOVER_spi=/search*spi
+ICON_BUT_PUBLIC_spi=<span class="navButtonOneLine">Vista usuario</span>
+ICON_BUT_STAFF_spi=<span class="navButtonOneLine">Vista del personal</span>
+STAFF_LOGGEDIN_MSG_spi=<span class="loggedInMessage">Est&#225; conectado como "personal" en %s como %s</span>
+ICON_BUT_ANOTHER_spi=<span class="navButton">Otra b&#250;squeda</span>
+ICON_BUT_NEWSRCH_spi=<span class="navButtonOneLine">Inicio</span>
+ICON_BUT_WORDSRCH_spi=<span class="navButton">Buscar como palabras</span>
+ICON_BUT_MODIFY_spi=<span class="navButton">Modificar b&#250;squeda</span>
+ICON_BUT_SHOWSIM_spi=<span class="navButton">Informaci&#243;n Similar</span>
+ICON_REL_GROUP_1_spi=<img src="/screens/relevance5.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">M&#225;s relevantes t&#237;tulos</h1>&nbsp;
+ICON_REL_GROUP_2_spi=<img src="/screens/relevance4.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">Altamente relevantes t&#237;tulos</h1>&nbsp;
+ICON_REL_GROUP_3_spi=<img src="/screens/relevance3.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">Muy relevante t&#237;tulos</h1>&nbsp;
+ICON_REL_GROUP_4_spi=<img src="/screens/relevance2.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">Relevante t&#237;tulos</h1>&nbsp;
+ICON_REL_GROUP_5_spi=<img src="/screens/relevance1.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">Otra relevancia t&#237;tulos&</h1>&nbsp;
+RELSEARCH_spi=restable||<span class="button"><img src="/screens/ico_magnifyingglass.gif" border="0" alt=""><span class="buttonText">Ver B&#250;squedas relacionadas</span>
+AUTHMSG_spi=<h2 class="briefcitTitle"><em>%u</em> -- V&#233;ase %w <strong>%a</strong></h2><span class="authPublicNote">%p</span>|<h2 class="briefcitTitle">%u -- V&#233;ase adem&#225;s %w %a </h2><span class="authPublicNote">%p</span>
+#AUTHMSG_SR_spi=ael encabezamiento siguiente|bel encabezamiento anterior|dla forma completa del encabezamiento|funa composici&#243;n musical basada en esta obra|gel t&#233;rmino espec&#237;fico|hel t&#233;rmino gen&#233;rico
+ICON_BUT_BRIEF_spi=<span class="navButtonOneLine">Visualizaci&#243;n breve</span>
+ICON_BUT_EXTENDED_spi=<span class="navButton">Visualizaci&#243;n extendida</span>
+ICON_BUT_LIMAVAIL_spi=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">Limitar a disponible</span></span>
+ICON_BUT_LIMIT_spi=<span class="navButton">Limitar/Ordenar b&#250;squeda</span>
+ICON_BUT_UNLIMAVAIL_spi=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">Mostrar todo</span></span>
+ICON_856LINK_spi=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Sitio Web
+ICON_962LINK_spi=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Imagen digital
+#ICON_BOOKCART_spi=<span class="navButton"><img src="/screens/ico_bag_add.gif" alt=""><span class="buttonText">A&#241;adir a la cesta</span></span>
+ICON_BOOKCART_SAVED_spi=<span class="navButtonYellow navButton">Retirar de guardados</span>
+ICON_FULLRECORD_spi=Ver registro completo
+ICON_LOCATEINRESULTS_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Localizar en resultados</span></span></div></div>
+ICON_PAGING_CAPTION_spi=P&#225;gina de resultados&nbsp;
+ICON_PAGING_NEXT_spi=Sig
+ICON_PAGING_PREV_spi=Ant
+ICON_PROGRAM_spi=<img src="/screens/media_program.gif" border="0" alt="Eventos de la biblioteca">
+ICON_RESOURCE_spi=<img src="/screens/media_resource.gif" alt="Recurso de internet">
+ICON_SAVEALLPAGE_spi=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">A&#241;adir todos en la p&#225;gina</span></span>
+ICON_SAVEMARKED_spi=<span class="button"><img src="/screens/ico_folder_add.png" alt=""><span class="buttonText">Guardar Seleccionado</span></span>
+NO_COPIES_spi=No hay ejemplares disponibles en este momento
+SORT_BROWSE_spi=t:T&#237;tulo|a:Autor|c:A&#241;o|r:Inverso A&#241;o|n:Signatura|m:Tipo de material
+BIB_TOC_HEADER_spi=<strong>Tabla de contenidos</strong>
+ICON_BUT_MARC_DISPLAY_spi=<span class="navButton">Visualizaci&#243;n MARC</span>
+ICON_BUT_REGULAR_DISPLAY_spi=<span class="navButton">Visualizaci&#243;n normal</span>
+ICON_BUT_RTRNTB_spi=<span class="navButton">Volver al listado</span>
+ICON_BIB_HOLDINGS_ITEMS_spi=Ver Copias
+#ICON_NEARBY_spi=<img src="/screens/nearby.png" alt="Ejemplares cercanos en la estanter&#237;a" border="0">
+ICON_BIB_PAGING_NEXT_spi=<span class="button"><span class="buttonText" id="buttonNextRecord">Registro siguiente</span><img src="/screens/ico_next.gif" alt=""></span>
+ICON_BIB_PAGING_PREV_spi=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Registro anterior</span></span>
+ICON_RECORDLINK_spi=<div class="bibRecordLink"><div class="bibInfoLabel">Enlace permanente</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
+
+INNREACH_spi=<span class="navButton">Buscar en<br>MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+
+# IRSSO SETUP
+
+INNREACH_REMOTE_spi=laurel.lso.missouri.edu&<span class="navButton">B&#250;squeda MOBIUS</span>@laurel.lso.missouri.edu:2083(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+INNREACH_REMOTE_SSL_spi=laurel.lso.missouri.edu&<span class="navButton">B&#250;squeda MOBIUS</span>@laurel.lso.missouri.edu:2443(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+SSO_VALID_HOSTS=128.206.14.98|laurel.lso.missouri.edu|m.laurel.lso.missouri.edu|merlin-mobius.missouri.edu
+
+ITEMS_MSG_BRIEF_spi=Clic aqu&#237; para ver m&#225;s copias/vol&#250;menes de esta materia
+LINK856TEXT_spi=Conectar a
+BIB_LICENSE_FIELDS_spi=Permitido:Vlw|Restringido:Vlx
+BIB_RESOURCE_CAPTION_spi=<strong>Usuarios de la UMKC se pueden conectar con esta fuente de informaci&#243;n :</strong>
+ICON_BIB_RESOURCE_DETAILS_spi=<span class="button"><span class=buttonText">Datos completos</span></span>
+ICON_RESOURCE_RECORD_spi=<span class="button"><span class=buttonText">Acerca de esta Fuente de Informaci&#243;n</span></span>
+RESOURCE_HOLDINGS_FIELDS_spi=T&#237;tulo:VbT|Biblioteca Tiene:Vch|Conectar con el Texto Completo:VcY
+RESOURCE_LICENSE_FIELDS_spi=Usuarios Autorizados:Vlu|Manera de Autentificación:Vla|Condiciones de Uso:Vlt|Restricciones Pertinentes al Curso:Vls|Restricciones del Servicio de 
+Préstamo Interbibliotecario:Vlo|
+ICON_BUT_CARDFORM_BOX_spi=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Visualizaci&#243;n caja</span></span>
+ICON_BUT_CARDFORM_LIN_spi=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Visualizaci&#243;n l&#237;nea</span></span>
+CHECKIN_STATUS_spi=PREVISTO=Previsto;|RECIBIDO=Recibido|ENV&#205;O PARCIAL=Env&#237;o Parcial|PERDIDO=Perdido|ENCUADERNADO=Encuadernado|EN LA ENCUADERNADORA=En la Encuadernadora|PREPARACI&#211;N PARA ENCUADERNAR=Preparaci&#243;n Para Encuadernar|RETIRADO=Retirado|NO PUBLICADO=No Publicado|AGOTADO=Agotado|NO DISPONIBLE=No Disponible|RETRASADO=Retrasado
+HOLDINGS_REQ_spi=Entregarme el art&#237;culo
+ICON_MYLISTS_spi=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">Mis Listas</span></span>
+ICON_MYLISTS_EXPORT_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Exportar lista</span></span></div></div>
+ICON_MYLISTS_MOVE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Mover marcados</span></span></div></div>
+ICON_MYLISTS_REQUEST_spi=<span class="button"><img src="/screens/ico_checkmark_16px.gif" alt=""><span class="buttonText">Solicitar</span></span>
+ICON_MYLISTS_REMOVE_DUPLICATES_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Eliminar duplicados</span></span></div></div>
+ICON_MYLISTS_RENAME_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cambiar Nombre/Descripci&#243;n</span></span></div></div>
+ICON_MYLISTS_SAVE_spi=<span class="navButton">A&#241;adir a Mis Listas</span>
+ICON_MYLISTS_SAVE_TO_LIST_spi=<span></span>
+ICON_MYLISTS_BRIEF_spi=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">A&#241;adir a Mis Listas</span></span>
+ICON_BACK_TO_MYLISTS_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Volver a Mis Listas</span></span></div></div>
+ICON_MYLISTS_RECORD_spi=<span class="navButton">A&#241;adir a Mis Listas</span>
+ICON_BUT_BIBEXPORT_spi=<span class="navButton">A&#241;adir en carpeta</span>
+ICON_BUT_CLEAR_MARKED_spi=<span class="navButton">Borrar Guardados</span>
+ICON_BUT_EXPORT_MULTI_spi=<span class="navButton">Exportar Guardados</span>
+ICON_BUT_EXPORT_VIEW_SAVES_spi=<span class="navButton"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">Ver Guardados</span></span>
+ICON_BUT_VIEW_SAVES_spi=<span class="navButton">Ver cesta</span>
+ICON_BUT_REQUEST_spi=<span class="navButtonOneLine request">Solicitud</span>
+ICON_BUT_REQUEST_ALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Solicitud disponible</span></span></div></div>
+ICON_BUT_REQUEST_MULTI_spi=<span class="navButton">B&#250;squeda guardada</span>
+ICON_BUT_REQUEST_RESET_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Reiniciar formulario</span></span></div></div>
+ICON_BUT_REQUEST_SELECTED_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Solicitar selecci&#243;n</span></span></div></div>
+ICON_REQUEST_spi=<span class="navButtonSmall navButton request">Solicitud</span>
+#REQFILLTIME_spi=14|<br>Solicitud disponible en aproximadamente %d d&#237;as|<br>Disponibilidad estimada actualmente: aproximadamente %d d&#237;as|<br>Este material puede estar disponible inmediatamente
+REQUEST_spi=Reservar este ejemplar|denyiflocalavail|ask|Y
+REQUEST_INSTRUCTION_spi=<strong>&#191;Cualquier instrucci&#243;n especial?</strong><ul><li> Si hay disponible m&#250;ltiples vol&#250;menes, la pr&#243;xima pantalla le solicitar&#225; escoger uno de ellos.&nbsp; <strong>Por favor no utilizar el cuadro de abajo.</strong>&nbsp; Si usted solicita m&#225;s de un volumen, necesitar&#225;  completar un nuevo pedido para cada uno.</li><li>Usted si puede pedir distintas hojas de microficha  del dep&#243;sito de la MU.&nbsp; Si esta solicitando distintas hojas de microficha por favor que se incluya el n&#250;mero de  identificaci&#243;n de cada uno de ellos en el cuadro de abajo. Ejemplos de n&#250;meros de identificaci&#243;n:</li><ul>  <li>2005 ASI 8486-1.2</li><li> 1988 IIS 1300-S61.19 </li><li> ED516836</li></ul></ul>
+REQUEST_MULTI_spi=Solicitar todos los ejemplares en el carro|bib|ask
+ICON_BUT_PAT_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
+ICON_BUT_PAT_CANCELALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar Todo</span></span></div></div>
+ICON_BUT_PAT_CANCELMARK_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Anular Selecciones</span></span></div></div>
+ICON_BUT_PAT_CHKOUTS_spi=Renovar/Examinar material actualmente prestado
+#ICON_BUT_PAT_FINES_spi=<span class="button"><img src="/screens/ico_payment.png" alt=""><span class="buttonText">Multas</span></span>
+ICON_BUT_PAT_INFO_spi=<span class="button"><img src="/screens/ico_patron.png" alt=""><span class="buttonText">Modificar informaci&#243;n personal</span></span>
+ICON_BUT_PAT_MSGS_spi=<span class="button"><img src="/screens/ico_browse_brief.png" alt=""><span class="buttonText">Mensaje de la biblioteca</span></span>
+ICON_BUT_PAT_PIN_spi=<span class="button"><img src="/screens/ico_pin.png" alt=""><span class="buttonText">Modificar PIN</span></span>
+ICON_BUT_PAT_RENEWALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Renovar todo</span></span></div></div>
+ICON_BUT_PAT_RENEWMARK_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Renovar marcado</span></span></div></div>
+ICON_BUT_PAT_SORTBYCHKOUT_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Ordenar por pr&#233;stamo</span></span></div></div>
+ICON_BUT_PAT_SORTBYDUE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Ordenar por fecha de devoluci&#243;n</span></span></div></div>
+ICON_BUT_PAT_SUBMIT_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Enviar</span></span></div></div>
+ICON_BUT_PSTARTOVER_spi=<span class="button"><img src="/screens/ico_startover.png" alt=""><span class="buttonText">Inicio</span></span>
+ICON_BUT_UPDATE_HOLDS_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Anular Selecciones</span></span></div></div>
+ICON_CLOSEWINDOW_spi=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Cerrar ventana</span></span>
+ICON_PAT_CANCELALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar Todo</span></span></div></div>
+ICON_PAT_CANCELMARK_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Anular Selecciones</span></span></div></div>
+ICON_PIN_RESET_spi=<span class="button"><img src="/screens/ico_questionmark.png" alt=""><span class="buttonText">&#191;A olvidado su PIN?</span></span>
+ICON_SORTPUDATE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Ordenar por recogida</span></span></div></div>
+ICON_SORTREQDATE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Ordenar por solicitud</span></span></div></div>
+NEWPIN_MSG_spi=Indique un N&#250;mero de Identificaci&#243;n Personal (PIN)
+#PATRON_MSG_spi=z|Mensaje de la biblioteca
+#PIN_RESET_EMAIL_spi=Solicitud para cambiar su PIN de la biblioteca|INSERTE AQU&#207; EL EMAIL "DE"|INSERTE AQU&#207; EL EMAIL "RESPONDER"
+PSTARTOVER_spi=/search*spi
+ICON_BUT_PAT_PSEARCH_REMOVE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Borrar todas las b&#250;squedas</span></span></div></div>
+ICON_BUT_PAT_PSEARCH_UPDATE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Actualizar lista</span></span></div></div>
+ICON_BUT_PAT_GETPSAVEDRECS_spi=<span class="button"><img src="/screens/ico_magnifyingglass.gif" alt=""><span class="buttonText">B&#250;squedas preferidas</span></span>
+CIRC_HIST_LIMIT_TEXT_spi=Limitar a t&#237;tulos que no est&#225;n en mi historial de lectura
+ALTERNATE_ID_EMAIL_spi=username@replacesitename.com|Ha cambiado su nombre de usuario
+ICON_PAT_DELETE_ALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Borrar todo</span></span></div></div>
+ICON_PAT_DELETE_MARKED_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Borrar marcado</span></span></div></div>
+ICON_READING_HISTORY_spi=<span class="button"><img src="/screens/ico_clock.png" alt=""><span class="buttonText">Mi historial de lectura</span></span>
+ICON_READING_HISTORY_OPTIN_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Activar</span></span></div></div>
+ICON_READING_HISTORY_OPTOUT_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Desactivar</span></span></div></div>
+ICON_READING_HISTORY_EXPORT_spi=<span class="button"><img src="/screens/ico_disc.png" alt=""><span class="buttonText">Exportar Mi historial de lectura</span></span>
+LOGGEDIN_MSG_spi=<span class="loggedInMessage">Se ha conectado <span class="loggedInMoreInfo">a %s</span> como %s</span>
+PREFTEXT_spi=Guardar como b&#250;squeda preferida
+ICON_PATRATE_spi=<span class="button"><img src="/screens/patrate.gif" alt=""><span class="buttonText">Mis valoraciones</span></span>
+ICON_RATE_GROUP_spi=<img src="/screens/rate_group.gif" border="0" width="15" height="14" alt="Valorado %d comienza desde 5 basado en %n valoraciones" title="Valorado %d comienza desde 5 basado en %n valoraciones">
+ICON_RATE_MY_spi=<img src="/screens/rate_my.gif" border="0" width="15" height="14" alt="Ha valorado esto %d comienza desde 5" title="Ha valorado esto %d comienza desde 5">
+ICON_RATE_NEED_spi=<img src="/screens/rate_need.gif" border="0" width="15" height="14" alt="Valorar este material" title="Valorar este material">
+ICON_RATE_NO_spi=<img src="/screens/rate_no.gif" border="0" width="75" height="14" alt="Este material no ha sido valorado a&#250;n" title="Este material no ha sido valorado a&#250;n">
+ICON_RATE_PAD_spi=<img src="/screens/rate_pad.gif" border="0" width="15" height="14" alt="Valorado %d comienza desde 5 basado en %n valoraciones" title="Valorado %d comienza desde 5 basado en %n valoraciones">
+ICON_PATREVIEW_spi=<span class="button"><img src="/screens/ico_review.png" alt=""><span class="buttonText">Mis Rese&#241;as</span></span>
+ICON_PATREVIEW_ADD_spi=<span class="button"><img src="/screens/ico_review_sm.png" alt=""><span class="buttonText">A&#241;adir una rese&#241;a</span></span>
+PATREVIEW_ABUSE_NOTIFY_spi=Reportado rese&#241;a de abuso|Biblioteca ejemplo|web@example.org
+CC_APPROVED_spi=Su pago ha sido aprobado.
+CC_DECLINED_spi=Lo siento. Su pago ha sido denegado. Confirme que la informaci&#243;n se ha introducido correctamente o pague en la biblioteca.
+#CC_EMAIL_RECEIPT_spi=Recibo de pago a su biblioteca|circadm@example.org|onlinepayments@example.org
+#DONATE_NOTIFY_spi=Se ha recibido un donativo nuevo|circadm@example.org|donormgmt@example.org
+ICON_PAY_spi=<span class="button"><img src="/screens/ico_payment.png" alt=""><span class="buttonText">Pago en l&#237;nea</span></span>
+ICON_PAY_CLEAR_ALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Borrar todo</span></span></div></div>
+ICON_PAY_SELECT_ALL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Seleccionar todo</span></span></div></div>
+ICON_PRINT_spi=<span class="button"><img src="/screens/ico_printer_alt.png" alt=""><span class="buttonText">Imprimir</span></span>
+ICON_PAY_CONTINUE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Continuar</span></span></div></div>
+#MINDONATE_spi=1000|Los donativos deben ser de al menos 10.00 &#8364; para cubrir los costes de procesamiento. Gracias.
+#PAYAMTS_spi=500|Visite la biblioteca para pagar esta cantidad, por favor|00
+BOOKINGS_DAY_LEGEND_spi=<span class="bookingsLegend">La biblioteca cierra en <span id="closed">X</span> horas. No hay ejemplares disponibles en <span id="unavailable">horas</span> en gris.</span>
+BOOKINGS_MONTH_LEGEND_spi=<span class="bookingsLegend">La biblioteca cierra el <span id="closed">X</span> d&#237;as. No hay ejemplares disponibles en <span id="unavailable">d&#237;as</span> en gris.</span>
+ICON_BOOKINGS_HEADER_spi=<span class="button"><img src="/screens/ico_checkbox.png" alt=""><span class="buttonText">Guardar este material</span></span>
+ICON_DAILYCAL_spi=Ver calendario diario
+ICON_HOURLYCAL_spi=Ver calendario por horas
+ICON_NEXTCAL_spi=Siguiente
+ICON_PREVCAL_spi=Previo
+ICON_BUT_ILL_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
+ICON_BUT_ILL_FORM_spi=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Formulario de Pr&#233;stamo Inter-Bibliotecario</span></span>
+ICON_BUT_ILL_HOME_spi=<span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Solicitud nueva</span></span>
+ICON_BUT_PAT_ILL_FORM_spi=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Formulario de Pr&#233;stamo Inter-Bibliotecario</span></span>
+ICON_BUT_PAT_ILL_spi=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Pr&#233;stamo Inter-bibliotecario</span></span>
+ILL_CONF_EMAIL_SUBJECT_spi=Notificaci&#243;n para la biblioteca de solicitud de pr&#233;stamo inter-bibiotecario
+ICON_BUT_RET2CRS_spi=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Volver al curso</span></span>
+#RSRV_HEADER_spi=Materiales para este curso
+#RSRV_HEADER_spi=T&#237;tulos destacados este mes
+ICON_BUT_PREVSCRN_spi=<span class="navButtonOneLine">Volver</span>
+ICON_BUT_RET2FEAT_spi=<span class="navButtonOneLine">Volver</span>
+FEATURED_LIST_spi=10,260|T&#237;tulos Nuevos|CATEGOR&#205;A|N&#186; de t&#237;tulos
+BIBIMAGE_TEXT_spi=Cubierta del libro
+#WEBADDRESS_spi=|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=N||<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|-1
+#WEBADDRESS_spi=http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&amp;field-keywords=%s|I|http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&field-isbn=%s|<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|-1
+ICON_BUT_CLOSEFRAME_spi=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Cerrar marco</span></span>
+ICON_BUT_RESOURCELINK_spi=<div id="resourcelink"><span class="button"><img src="/screens/ico_globe.png" alt=""><span class="buttonText">Otros recursos</span></span></div>
+ICON_BUT_RET2RESOURCE_spi=<div id="resourcelink"><span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Volver</span></span></div>
+#WBHEADERTEXT_spi=Los siguientes recursos le pueden proporcionar informaci&#243;n adicional sobre<br>#ENCABEZAMIENTO#
+ICON_PATFEED_spi=<span class="button"><img src="/screens/ico_rss.gif" alt=""><span class="buttonText">Mis Registros Feeds</span></span>
+PATFEED_CONFIG_spi=Noticias bibliotecarias|Hacer click para informaci&#243;n detallada.
+PATFEED_FINES_INCURRED_RECENTLY_spi=Tiene multas o cargos nuevos
+PATFEED_HOLDS_READY_spi=Sus materiales est&#225;n listos para ser recogidos
+#PATFEED_IMAGE_spi=/screens/rss.gif|Suscribir su registro de la biblioteca a un feed.|88|31
+PATFEED_ITEMS_BOOKED_TOMORROW_spi=Materiales guardados ma&#241;ana
+PATFEED_ITEMS_DUE_SOON_spi=Usted tiene &#237;tems prestados que pronto se vencer&#225;n
+PATFEED_ITEMS_DUE_TODAY_spi=Usted tiene &#237;tems prestados que  se vencer&#225;n hoy
+PATFEED_ITEMS_OVERDUE_spi=&#205;tems que han vencido en fecha
+PATFEED_ITEMS_RECALLED_spi=Materias han sido recordadas
+PATFEED_PROGRAM_SESSION_SOON_spi=Uno de los eventos para los que se ha matriculado va a empezar pronto. Con&#233;ctese a Mi cuenta para conocer la fecha, hora y localizaci&#243;n del evento.
+PATFEED_PROGRAM_SESSION_TOMORROW_spi=Uno de los eventos para los que se ha matriculado es para ma&#241;ana. Con&#233;ctese a Mi cuenta para conocer la fecha, hora y localizaci&#243;n del evento.
+PATFEED_PROGRAM_SESSION_TODAY_spi=Uno de los eventos para los que se ha matriculado es para hoy. Con&#233;ctese a Mi cuenta para conocer la fecha, hora y localizaci&#243;n del evento.
+ICON_BUT_EMAIL_spi=Email
+ICON_BUT_NEXTREC_spi=<span class="button"><span class="buttonText" id="buttonNextRecord">Registro siguiente</span><img src="/screens/ico_next.gif" alt=""></span>
+ICON_BUT_PREVREC_spi=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Registro anterior</span></span>
+ICON_BUT_Z39_ANOTHER_spi=Otra base de datos
+ICON_BUT_Z39_REQUEST_spi=<span class="button"><img src="/screens/ico_checkbox.png" alt=""><span class="buttonText">Solicitud</span></span>
+ICON_BUT_Z39SEARCH_spi=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Buscar en otras bibliotecas</span></span>
+Z39BROADCAST_spi=B&#250;squeda Z39.50:Selecciones los servidores en los que quiere realizar la consulta
+ICON_BUT_RETHOME_spi=<span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Inicio</span></span>
+#SELFREG_ERROR_EMAIL_spi=circadm|example@example.org|Error de Auto-inscripci&#243;n|example@example.org
+#SELFREG_INFO_EMAIL_spi=circadm|example@example.org|Nueva inscripci&#243;n de usuario|example@example.org
+ICON_MFFAVS_HOME_spi=<span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Inicio</span></span>
+ICON_MFFAVS_SEARCH_spi=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Buscar</span></span>
+ICON_PAT_MFFAVS_spi=<span class="button"><img src="/screens/ico_globe.png" alt=""><span class="buttonText">Mi Research Pro</span></span>
+MFFAVS_CONFIRM_spi=Su grupo, %s, se ha guardado correctamente.
+MFFAVS_DENY_spi=Funci&#243;n no disponible. Contacte con la biblioteca, por favor.
+#MFFAVS_HOME_spi=http://researchpro-[C&#211;DIGOSITIO]:[PUERTO]/iii/mfrpro-[C&#211;DIGOSITIO]/loadSearchPage.do?searchtype=simple&amp;searchpage=simple&amp;accountid=[CUENTA]&amp;accountpassword=[CUENTA]&amp;language=eng
+#MFFAVS_URL_spi=true|[CUENTA]|[CUENTA]|/mfgo/http://researchpro-[C&#211;DIGOSITIO]:[PUERTO]/iii/mfrpro-[C&#211;DIGOSITIO]/search.do
+ICON_SPELLCHECK_MORE_spi=<span class="spellcheckToolMore">m&#225;s&nbsp;&raquo;</span>
+ICON_SPELLCHECK_SEARCH_spi=<img src="/screens/ico_go.png" class="button" border="0" alt="Buscar">
+SPELLCHECK_spi=<span class="spellcheckTool">&#191;Quiso decir %a? %s </span>
+MF_ICON_ADVANCED_SEARCH_spi=B&#250;squeda avanzada
+MF_ICON_CLEAR_spi=Borrar formulario
+MF_ICON_CLOSE_spi=Cerrar ventana
+MF_ICON_DESELECTALL_spi=Borrar todo
+MF_ICON_EMAIL_spi=Email
+MF_ICON_HELP_spi=Ayuda
+MF_ICON_LOGOFFACCOUNT_spi=Salir
+MF_ICON_MFFAVS_GROUP_spi=Guardar grupo
+MF_ICON_NEW_SEARCH_spi=B&#250;squeda nueva
+MF_ICON_PATRON_REC_spi=Volver al registro del usuario
+MF_ICON_PATSUBMIT_spi=Enviar
+MF_ICON_PREVSEARCH_spi=B&#250;squeda anterior
+MF_ICON_PRINT_spi=Imprimir
+MF_ICON_RET2CAT_spi=Volver al cat&#225;logo
+MF_ICON_RETHOME_spi=Inicio
+MF_ICON_SEARCH_spi=Buscar en Research Pro
+MF_ICON_SELECTALL_spi=Seleccionar todo
+MF_ICON_SIMPLE_SEARCH_spi=B&#250;squeda simple
+MF_ICON_STOP_spi_spi=Para b&#250;squeda
+MF_ICON_UPDATELIST_spi=Actualizar lista
+MF_ICON_VIEWSAVED_spi=Ver guardado
+MF_RESULTSVIEW_spi=tabbed,Ver resultados, presentado por recurso|standard,Ver todos los recursos intercalados
+MF_SEARCHINDEX_spi=Keywords,Palabras clave|:CREATOR,Autor|:TITLE,T&#237;tulo|:SUBJECT,Materia
+MF_TOPLOGO_spi=@screens/toplogo_spi.html
+PROGRAM_SECTION_FIELDS_spi=Fecha/hora:VsT|En:Vss|Localizaci&#243;n:Fs285|Instructor:Vsn|Estado:VsS
+ICON_BUT_PAT_PROGRAMS_spi=<span class="button"><img src="/screens/ico_calendar.png" alt=""><span class="buttonText">Eventos de la Biblioteca</span></span>
+ICON_BUT_PAT_SORTBYDATE_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Ordenar por fecha</span></span></div></div>
+ICON_BUT_PAT_SORTBYNAME_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Ordenar por nombre</span></span></div></div>
+ICON_RET2PROG_spi=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Volver a eventos</span></span>
+ICON_REGISTER_spi=<br><strong>Click para Inscribirse</strong>
+ICON_ADD_TO_WAITLIST_spi=<br><strong>A&#241;adir a lista de espera</strong>
+ICON_VIEW_ADDITIONAL_SESSIONS_spi=<span class="button"><span class="buttonText">Ver sesiones adicionales</span></span>
+ICON_HIDE_ADDITIONAL_SESSIONS_spi=<span class="button"><span class="buttonText">Esconder sesiones adicionales</span></span>
+ICON_PROGRAM_CAL_spi=<span class="button"><img src="/screens/ico_calendar.gif" alt=""><span class="buttonText">Calendario de eventos</span></span>
+
+# chx wwwoptions
+
+#AVAILLIM_chx=<span class="availLimMessage">&#21487;&#29992;&#26465;&#27454;&#38480;&#21046;&#25628;&#32034;</span>|<span class="availLimMessage">&#21487;&#29992;&#26465;&#27454;&#38480;&#21046;&#25628;&#32034;&#32467;&#26524;</span>
+#BOTLOGO_chx=@screens/botlogo_chx.html
+ICON_BUT_ASRSICON_chx=<div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#22312;Miller Nichols&#22788;&#39046;&#21462;</span></span></div></div>
+ICON_BUT_CANCEL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#21462;&#28040;</span></span></div></div>
+ICON_BUT_CLOSEWINDOW_chx=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">&#20851;&#38381;&#35270;&#31383;</span></span>
+ICON_BUT_RET2CAT_chx=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">&#22238;&#33267;&#30446;&#24405;</span></span>
+ICON_BUT_STARTOVER_chx=<span class="navButtonOneLine">/search*chx</span>
+ICON_CANCEL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#21462;&#28040;</span></span></div></div>
+ICON_OK_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#22909;&#30340;</span></span></div></div>
+ICON_PREVPAGE_chx=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">&#21069;</span></span>
+ICON_SUBMIT_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#25552;&#20132;</span></span></div></div>
+ICON_UPDATELIST_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#26356;&#26032;&#21015;&#34920;</span></span></div></div>
+ICON_CLEAR_ALL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#20840;&#28040;&#38500;</span></span></div></div>
+ICON_CLEAR_FORM_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#28165;&#34920;</span></span></div></div>
+ICON_DELETE_SELECTED_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#21024;&#38500;&#36873;&#25321;</span></span></div></div>
+ICON_SELECT_ALL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#20840;&#20648;&#23384;</span></span></div></div>
+#RESOURCETABLE_chx=valign="top"|cellpadding="0" cellspacing="0" border="0"||&#36164;&#28304;
+STARTOVER_chx=/search*chx
+TOPLOGO_chx=@screens/toplogo_chx.html
+XSTARTOVER_chx=/search*chx
+ICON_BUT_PUBLIC_chx=<span class="navButtonOneLine">&#35835;&#32773;&#35270;&#22270;</span>
+ICON_BUT_STAFF_chx=<span class=""navButtonOneLine">&#39302;&#21592;&#35270;&#22270;</span>
+STAFF_LOGGEDIN_MSG_chx=<span class="loggedInMessage">&#24744;&#24050;&#20197;&#39302;&#21592;&#24418;&#24335;&#30331;&#20837; %s &#22914; %s</span>
+ICON_BUT_ANOTHER_chx=<span class="navButton">&#20854;&#20182;&#25628;&#32034;</span>
+ICON_BUT_NEWSRCH_chx=<span class="navButtonOneLine">&#37325;&#26032;&#25628;&#32034;</span>
+ICON_BUT_WORDSRCH_chx=<span class="navButton">&#20851;&#38190;&#35789;&#25628;&#32034;</span>
+ICON_BUT_MODIFY_chx=<span class="navButton">&#20462;&#25913;&#25628;&#32034;</span>
+ICON_BUT_SHOWSIM_chx=<span class="navButtonOneLine">&#30456;&#20851;&#26597;&#25214;</span>
+ICON_REL_GROUP_1_chx=<img src="/screens/relevance5.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">&#26368;&#26377;&#20851;&#30340; &#26631;&#39064;</h1>&nbsp;
+ICON_REL_GROUP_2_chx=<img src="/screens/relevance4.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">&#39640;&#24230;&#26377;&#20851;&#30340; &#26631;&#39064;</h1>&nbsp;
+ICON_REL_GROUP_3_chx=<img src="/screens/relevance3.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">&#38750;&#24120;&#26377;&#20851;&#30340; &#26631;&#39064;</h1>&nbsp;
+ICON_REL_GROUP_4_chx=<img src="/screens/relevance2.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">&#26377;&#20851;&#30340; &#26631;&#39064;</h1>&nbsp;
+ICON_REL_GROUP_5_chx=<img src="/screens/relevance1.gif" alt="">&nbsp;<h1 class="browseSuperEntryTitle">&#20854;&#20182;&#26377;&#20851;&#30340;  &#26631;&#39064;&</h1>&nbsp;
+RELSEARCH_chx=restable||<span class="button"><img src="/screens/ico_magnifyingglass.png" border="0" alt=""><span class="buttonText">&#26597;&#30475;&#30456;&#20851;&#25628;&#32034;</span>
+AUTHMSG_chx=<h2 class="briefcitTitle"><em>%u</em> -- &#21442;&#30475; %w <strong>%a</strong></h2><span class="authPublicNote">%p</span>|<h2 class="briefcitTitle">%u -- &#21516;&#26102;&#21442;&#30475; %w %a </h2><span class="authPublicNote">%p</span>
+AUTHMSG_SR_chx=a&#26368;&#26032;&#26631;&#39064;|b&#26089;&#26399;&#26631;&#39064;|d&#26631;&#39064;&#20043;&#20840;&#34920;|f&#20197;&#27492;&#20316;&#21697;&#20026;&#20381;&#25454;&#20043;&#20048;&#26354;|g&#36739;&#31364;&#20043;&#29992;&#35821;|h&#36739;&#23485;&#20043;&#29992;&#35821;
+ICON_BUT_BRIEF_chx=<span class="button"><img src="/screens/ico_browse_brief.gif" alt=""><span class="buttonText">&#31616;&#35201;&#26174;&#31034;</span></span>
+ICON_BUT_EXTENDED_chx=<span class="button"><img src="/screens/ico_browse_ext.gif" alt=""><span class="buttonText">&#35814;&#32454;&#26174;&#31034;</span></span>
+ICON_BUT_LIMAVAIL_chx=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">&#38480;&#21487;&#20511;&#38405;&#39302;&#34255;</span></span>
+ICON_BUT_LIMIT_chx=<span class="navButton">&#38480;&#21046;/&#25490;&#24207;&#25628;&#32034;</span>
+ICON_BUT_UNLIMAVAIL_chx=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">&#20840;&#26174;&#31034;</span></span>
+ICON_856LINK_chx=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">&#32593;&#39029;
+ICON_962LINK_chx=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">&#25968;&#30721;&#24433;&#20687;
+#ICON_BOOKCART_chx=<span class="navButton">&#28155;&#21152;&#33267;&#20070;&#34955;</span>
+ICON_BOOKCART_SAVED_chx=<span class="navButtonYellow navButton">&#21024;&#38500;&#20445;&#23384;&#35760;&#24405;</span>
+ICON_FULLRECORD_chx=&#21442;&#30475;&#35814;&#23613;&#35760;&#24405;
+ICON_LOCATEINRESULTS_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#20301;&#20110;&#32467;&#26524;&#20013;</span></span></div></div>
+ICON_PAGING_CAPTION_chx=&#32467;&#26524;&#39029;&nbsp;
+ICON_PAGING_NEXT_chx=&#21518;
+ICON_PAGING_PREV_chx=&#21069;
+ICON_PROGRAM_chx=<img src="/screens/media_program.gif" border="0" alt="&#22270;&#20070;&#39302;&#27963;&#21160;">
+ICON_RESOURCE_chx=<img src="/screens/media_resource.gif" alt="&#32593;&#38469;&#36164;&#28304;">
+ICON_SAVEALLPAGE_chx=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">&#20840;&#28155;&#21152;&#22312;&#39029;</span></span>
+ICON_SAVEMARKED_chx=<span class="button"><img src="/screens/ico_folder_add.png" alt=""><span class="buttonText">&#20445;&#23384;&#26631;&#35760;</span></span>
+NO_COPIES_chx=&#30446;&#21069;&#27809;&#25335;&#36125;&#22797;&#21360;&#26412;&#21487;&#29992;
+SORT_BROWSE_chx=t:{u6807}{u9898}|a:{u4F5C}{u8005}|c:{u5E74}|r:{u53CD}{u5411}{u5E74}|n:{u7D22}{u4E66}{u53F7}|m:{u8D44}{u6599}{u79CD}{u7C7B}
+BIB_TOC_HEADER_chx=<strong>&#30446;&#24405;</strong>
+ICON_BUT_MARC_DISPLAY_chx=<span class="navButton">MARC&#26174;&#31034;</span>
+ICON_BUT_REGULAR_DISPLAY_chx=<span class="navButton">&#27491;&#35268;&#26174;&#31034;</span>
+ICON_BUT_RTRNTB_chx=<span class="navButton">&#36820;&#22238;&#27983;&#35272;&#32034;&#24341;</span>
+ICON_BIB_HOLDINGS_ITEMS_chx=&#26597;&#30475;&#25335;&#36125;&#22797;&#21360;&#26412;
+#ICON_NEARBY_chx=<img src="/screens/bullet.gif" alt="&#38468;&#36817;&#20070;&#26550;&#19978;" border="0">
+ICON_BIB_PAGING_NEXT_chx=<span class="button"><span class="buttonText" id="buttonNextRecord">&#19979;&#19968;&#35760;&#24405;</span><img src="/screens/ico_next.gif" alt=""></span>
+ICON_BIB_PAGING_PREV_chx=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">&#21069;&#19968;&#35760;&#24405;</span></span>
+ICON_RECORDLINK_chx=<div class="bibRecordLink"><div class="bibInfoLabel">&#27704;&#20037;&#38142;&#25509;</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
+
+INNREACH_chx=<span class="navButton">检索<br>MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+# IRSSO SETUP
+
+INNREACH_REMOTE_chx=laurel.lso.missouri.edu&<span class="navButton">MOBIUS&#26816;&#32034;</span>@laurel.lso.missouri.edu:2083(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+INNREACH_REMOTE_SSL_chx=laurel.lso.missouri.edu&<span class="navButton">MOBIUS&#26816;&#32034;</span>@laurel.lso.missouri.edu:2443(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+SSO_VALID_HOSTS=128.206.14.98|laurel.lso.missouri.edu|m.laurel.lso.missouri.edu|merlin-mobius.missouri.edu
+
+ITEMS_MSG_BRIEF_chx=&#28857;&#20987;&#36825;&#37324;&#26597;&#30475;&#22797;&#26412;
+LINK856TEXT_chx=&#25509;&#36890;
+BIB_LICENSE_FIELDS_chx=&#20801;&#35768;:Vlw|&#38480;&#21046;:Vlx
+BIB_RESOURCE_CAPTION_chx=<strong>UMKC&#29992;&#25143;&#21487;&#20197;&#36890;&#36807;&#38142;&#25509;&#21040;&#36825;&#20010;&#36164;&#28304;</strong>
+ICON_BIB_RESOURCE_DETAILS_chx=<span class="button"><span class=buttonText">&#20840;&#37096;&#32454;&#33410;</span></span>
+ICON_RESOURCE_RECORD_chx=<span class="button"><span class=buttonText">&#20851;&#20110;&#36164;&#28304;</span></span>
+RESOURCE_HOLDINGS_FIELDS_chx=&#26631;&#39064;:VbT|&#22270;&#20070;&#39302;&#25317;&#26377;:Vch|&#36830;&#25509;&#21040;&#23436;&#25972;&#30340;&#25991;&#26412;:VcY
+RESOURCE_LICENSE_FIELDS_chx=&#25480;&#26435;&#29992;&#25143;:Vlu|&#35748;&#35777;&#26041;&#27861;:Vla|&#20351;&#29992;&#26465;&#27454;:Vlt|&#20351;&#29992;&#35268;&#23450;:Vls|&#39302;&#38469;&#20114;&#20511;&#35268;&#23450;:Vlo|
+ICON_BUT_CARDFORM_BOX_chx=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">&#28857;&#25910;&#31665;&#26174;&#31034;</span></span>
+ICON_BUT_CARDFORM_LIN_chx=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">&#34892;&#24335;&#26174;&#31034;</span></span>
+CHECKIN_STATUS_chx=&#39044;&#26399;=&#39044;&#26399;|&#22270;&#20070;&#24050;&#24402;&#36824;=&#22270;&#20070;&#24050;&#24402;&#36824;|&#22270;&#20070;&#24050;&#24402;&#36824;=&#22270;&#20070;&#24050;&#24402;&#36824;|&#22270;&#20070;&#20002;&#22833;=&#22270;&#20070;&#20002;&#22833;|&#21512;&#35746;&#26412;=&#21512;&#35746;&#26412;|&#27491;&#22312;&#35013;&#35746;=&#27491;&#22312;&#35013;&#35746;|&#20934;&#22791;&#35013;&#35746;=&#20934;&#22791;&#35013;&#35746;|&#21024;&#38500;=&#21024;&#38500;|&#23578;&#26410;&#20986;&#29256;=&#23578;&#26410;&#20986;&#29256;|&#32477;&#29256;=&#32477;&#29256;|&#23578;&#26080;=&#23578;&#26080;|&#20854;&#20182;=&#35265;&#39302;&#21592;
+HOLDINGS_REQ_chx=&#36882;&#20132;&#27492;&#31687;&#25991;&#31456;&#32473;&#25105;
+ICON_MYLISTS_chx=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">&#25105;&#30340;&#21015;&#34920;</span></span>
+ICON_MYLISTS_EXPORT_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#36755;&#20986;&#21015;&#34920;</span></span></div></div>
+ICON_MYLISTS_MOVE_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#31227;&#21160;&#24050;&#26631;&#35760;</span></span></div></div>
+ICON_MYLISTS_REQUEST_chx=<span class="button"><img src="/screens/ico_checkmark_16px.png" alt=""><span class="buttonText">&#35201;&#27714;</span></span>
+ICON_MYLISTS_REMOVE_DUPLICATES_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#21024;&#38500;&#37325;&#22797;&#39033;</span></span></div></div>
+ICON_MYLISTS_RENAME_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#26356;&#25913;&#21517;&#31216;/&#25551;&#36848;</span></span></div></div>
+ICON_MYLISTS_SAVE_chx=<span class="navButtonOneLine">&#28155;&#21152;&#33267;&#25105;&#30340;&#21015;&#34920;</span>
+ICON_MYLISTS_SAVE_TO_LIST_chx=<span></span>
+ICON_MYLISTS_BRIEF_chx=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">&#28155;&#21152;&#33267;<br>&#25105;&#30340;&#21015;&#34920;</span></span>
+ICON_BACK_TO_MYLISTS_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#22238;&#33267;&#25105;&#30340;&#21015;&#34920;</span></span></div></div>
+ICON_MYLISTS_RECORD_chx=<span class="navButton">&#28155;&#21152;&#33267;&#25105;&#30340;&#21015;&#34920;</span>
+ICON_BUT_BIBEXPORT_chx=<span class="navButton">&#20445;&#23384;&#21040;&#25991;&#20214;&#22841;</span>
+ICON_BUT_CLEAR_MARKED_chx=<span class="navButton">&#28165;&#38500;&#20445;&#23384;&#35760;&#24405;</span>
+ICON_BUT_EXPORT_MULTI_chx=<span class="navButton">&#36716;&#20986;&#24050;&#23384;</span>
+ICON_BUT_EXPORT_VIEW_SAVES_chx=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">&#27983;&#35272;&#20445;&#23384;&#35760;&#24405;</span></span>
+ICON_BUT_VIEW_SAVES_chx=<span class="navButton">&#26597;&#30475;&#20070;&#34955;</span>
+ICON_BUT_REQUEST_chx=<span class="navButtonOneLine request">&#35201;&#27714;</span>
+ICON_BUT_REQUEST_ALL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#39044;&#23450;&#21487;&#20511;&#38405;&#39302;&#34255;</span></span></div></div>
+ICON_BUT_REQUEST_MULTI_chx=<span class="navButton">&#39044;&#35746;&#24050;&#23384;</span>
+ICON_BUT_REQUEST_RESET_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#37325;&#35774;&#34920;&#26684;</span></span></div></div>
+ICON_BUT_REQUEST_SELECTED_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#39044;&#23450;&#24050;&#36873;</span></span></div></div>
+ICON_REQUEST_chx=<span class="navButtonSmall navButton request">&#35201;&#27714;</span>
+#REQFILLTIME_chx=14|<br>&#21487;&#21033;&#29992;&#35201;&#27714;&#32422;&#20110; %d &#26085;|<br>&#30446;&#21069;&#20272;&#35745;&#21487;&#29992;&#24230;: &#32422;&#20110; %d &#26085;|<br>&#27492;&#36164;&#26009;&#20063;&#35768;&#31435;&#21363;&#21487;&#29992;
+REQUEST_chx=&#20445;&#30041;&#27492;&#39033;&#30446;|denyiflocalavail|ask|Y
+REQUEST_INSTRUCTION_chx=<strong>&#29305;&#21035;&#35828;&#26126;</strong><ul><li> &#22914;&#26524;&#26377;&#22810;&#20010;&#21367;/&#20876;&#65292;&#20250;&#25552;&#31034;&#24744;&#30340;&#36873;&#25321;&#21487;&#33021;&#22312;&#19979;&#19968;&#30028;&#38754;&nbsp; <strong>&#19981;&#35201;&#20351;&#29992;&#19979;&#38754;&#30340;&#25991;&#26412;&#26694;</strong>&nbsp; &#22914;&#26524;&#24744;&#38656;&#35201;&#22810;&#20010;&#21367;/&#20876;, &#23545;&#27599;&#20010;&#21367;&#20876;&#24744;&#23558;&#38656;&#35201;&#25191;&#34892;&#21333;&#29420;&#30340;&#35831;&#27714;</li><li>&#24744;&#21487;&#20197;&#20174;MU&#20070;&#24211;&#20511;&#38405;&#32553;&#24433;&#33014;&#29255;&nbsp; I&#22914;&#26524;&#24744;&#38656;&#35201;&#21333;&#29420;&#30340;&#32553;&#24433;&#33014;&#29255;, &#35831;&#24744;&#22312;&#19979;&#26694;&#20013;&#22635;&#20837;&#20854;&#25968;&#23383;&#26631;&#35782;&#31526;. &#20363;&#22914;:</li><ul>  <li>2005 ASI 8486-1.2</li><li> 1988 IIS 1300-S61.19 </li><li> ED516836</li></ul></ul>
+ICON_BUT_PAT_CANCEL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#21462;&#28040;</span></span></div></div>
+ICON_BUT_PAT_CANCELALL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#20840;&#21462;&#28040;</span></span></div></div>
+ICON_BUT_PAT_CANCELMARK_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#21462;&#28040;&#36873;&#25321;</span></span></div></div>
+ICON_BUT_PAT_CHKOUTS_chx=&#32493;&#20511;/&#27983;&#35272;&#24050;&#20511;&#20986;&#20070;&#30446;
+#ICON_BUT_PAT_FINES_chx=<span class="button"><img src="/screens/ico_payment.png" alt=""><span class="buttonText">&#32602;&#27454;</span></span>
+ICON_BUT_PAT_INFO_chx=<span class="button"><img src="/screens/ico_patron.png" alt=""><span class="buttonText">&#20462;&#25913;&#20010;&#20154;&#36164;&#26009;</span></span>
+ICON_BUT_PAT_MSGS_chx=<span class="button"><img src="/screens/ico_browse_brief.png" alt=""><span class="buttonText">&#26469;&#33258;&#22270;&#20070;&#39302;&#20043;&#28040;&#24687;</span></span>
+ICON_BUT_PAT_PIN_chx=<span class="button"><img src="/screens/ico_pin.png" alt=""><span class="buttonText">&#20462;&#25913;&#20010;&#20154;&#23494;&#30721;</span></span>
+ICON_BUT_PAT_RENEWALL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#20840;&#37096;&#32493;&#20511;</span></span></div></div>
+ICON_BUT_PAT_RENEWMARK_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#32493;&#20511;&#24050;&#26631;</span></span></div></div>
+ICON_BUT_PAT_SORTBYCHKOUT_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#20511;&#20070;&#25490;&#24207;</span></span></div></div>
+ICON_BUT_PAT_SORTBYDUE_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#26399;&#28385;&#26085;&#25490;&#24207;</span></span></div></div>
+ICON_BUT_PAT_SUBMIT_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#25552;&#20132;</span></span></div></div>
+ICON_BUT_PSTARTOVER_chx=<span class="button"><img src="/screens/ico_startover.png" alt=""><span class="buttonText">&#37325;&#26032;&#25628;&#32034;</span></span>
+ICON_BUT_UPDATE_HOLDS_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#26356;&#26032;&#21015;&#34920;</span></span></div></div>
+ICON_CLOSEWINDOW_chx=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">&#20851;&#38381;&#35270;&#31383;</span></span>
+ICON_PAT_CANCELALL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#20840;&#21462;&#28040;</span></span></div></div>
+ICON_PAT_CANCELMARK_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#21462;&#28040;&#36873;&#25321;</span></span></div></div>
+ICON_PIN_RESET_chx=<span class="button"><img src="/screens/ico_questionmark.png" alt=""><span class="buttonText">&#24536;&#35760;&#24744;&#30340;&#23494;&#30721;?</span></span>
+ICON_SORTPUDATE_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#25552;&#21462;&#25490;&#24207;</span></span></div></div>
+ICON_SORTREQDATE_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#39044;&#23450;&#25490;&#24207;</span></span></div></div>
+NEWPIN_MSG_chx=&#35831;&#36755;&#20837;&#20010;&#20154;&#23494;&#30721;[PIN]
+#PATRON_MSG_chx=z|&#26469;&#33258;&#22270;&#20070;&#39302;&#20043;&#28040;&#24687;
+#PIN_RESET_EMAIL_chx=&#35201;&#27714;&#37325;&#35774;&#24744;&#30340;&#22270;&#20070;&#39302;&#20010;&#20154;&#23494;&#30721;[PIN]|&#20110;&#27492;&#22788;&#23433;&#25554;&#22270;&#20070;&#39302;&#23492;&#20986;&#30005;&#37038;|&#20110;&#27492;&#22788;&#23433;&#25554;&#22270;&#20070;&#39302;&#22238;&#22797;&#30005;&#37038;
+PSTARTOVER_chx=/search*chx
+ICON_BUT_PAT_PSEARCH_REMOVE_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#21024;&#38500;&#20840;&#37096;&#25628;&#32034;</span></span></div></div>
+ICON_BUT_PAT_PSEARCH_UPDATE_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#26356;&#26032;&#21015;&#34920;</span></span></div></div>
+ICON_BUT_PAT_GETPSAVEDRECS_chx=<span class="button"><img src="/screens/ico_magnifyingglass.gif" alt=""><span class="buttonText">&#21512;&#23452;&#25628;&#32034;</span></span>
+CIRC_HIST_LIMIT_TEXT_chx=&#20197;&#19981;&#23384;&#22312;&#25105;&#30340;&#20511;&#35835;&#21382;&#21490;&#20869;&#20043;&#26631;&#39064;&#20026;&#38480;&#21046;
+ALTERNATE_ID_EMAIL_chx=username@replacesitename.com|&#24744;&#30340;&#30331;&#20837;&#21517;&#31216;&#24050;&#26356;&#25913;
+ICON_PAT_DELETE_ALL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#20840;&#21034;&#38500;</span></span></div></div>
+ICON_PAT_DELETE_MARKED_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#21024;&#38500;&#24050;&#27880;&#35760;</span></span></div></div>
+ICON_READING_HISTORY_chx=<span class="button"><img src="/screens/ico_clock.png" alt=""><span class="buttonText">&#25105;&#30340;&#20511;&#35835;&#21382;&#21490;</span></span>
+ICON_READING_HISTORY_OPTIN_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#21551;&#29992;&#20511;&#35835;&#21382;&#21490;</span></span></div></div>
+ICON_READING_HISTORY_OPTOUT_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#20572;&#29992;&#20511;&#35835;&#21382;&#21490;</span></span></div></div>
+ICON_READING_HISTORY_EXPORT_chx=<span class="button"><img src="/screens/ico_disc.png" alt=""><span class="buttonText">&#36755;&#20986;&#25105;&#30340;&#20511;&#35835;&#30446;&#24405;</span></span>
+LOGGEDIN_MSG_chx=<span class="loggedInMessage">&#24744;&#30331;&#24405;&#20026; <span class="loggedInMoreInfo">&#33267; %s</span> &#20026;: %s</span>
+PREFTEXT_chx=&#20316;&#21512;&#23452;&#25628;&#32034;&#20445;&#23384;
+ICON_PATRATE_chx=<span class="button"><img src="/screens/patrate.gif" alt=""><span class="buttonText">&#25105;&#30340;&#35780;&#20998;</span></span>
+ICON_RATE_GROUP_chx=<img src="/screens/rate_group.gif" border="0" width="15" height="14" alt="&#25237;&#20116;&#26143;&#20013;&#20043; %d &#26143;&#20110; %n &#27425;&#30340;&#35780;&#32423; " title="&#25237;&#20116;&#26143;&#20013;&#20043; %d &#26143;&#20110; %n &#27425;&#30340;&#35780;&#32423; ">
+ICON_RATE_MY_chx=<img src="/screens/rate_my.gif" border="0" width="15" height="14" alt="&#24744;&#24050;&#25237;&#20116;&#26143;&#20013;&#20043; %d &#26143;" title="&#24744;&#24050;&#25237;&#20116;&#26143;&#20013;&#20043; %d &#26143;">
+ICON_RATE_NEED_chx=<img src="/screens/rate_need.gif" border="0" width="15" height="14" alt="&#35780;&#32423;&#27492;&#36164;&#26009;!" title="&#35780;&#32423;&#27492;&#36164;&#26009;!">
+ICON_RATE_NO_chx=<img src="/screens/rate_no.gif" border="0" width="75" height="14" alt="&#27492;&#36164;&#26009;&#23578;&#26410;&#34987;&#35780;&#32423;" title="&#27492;&#36164;&#26009;&#23578;&#26410;&#34987;&#35780;&#32423;">
+ICON_RATE_PAD_chx=<img src="/screens/rate_pad.gif" border="0" width="15" height="14" alt="&#25237;&#20116;&#26143;&#20013;&#20043; %d &#26143;&#20110; %n &#27425;&#30340;&#35780;&#32423; " title="&#25237;&#20116;&#26143;&#20013;&#20043; %d &#26143;&#20110; %n &#27425;&#30340;&#35780;&#32423; ">
+ICON_PATREVIEW_chx=<span class="button"><img src="/screens/ico_review.png" alt=""><span class="buttonText">&#25105;&#30340;&#35780;&#35770;</span></span>
+ICON_PATREVIEW_ADD_chx=<span class="button"><img src="/screens/ico_review_sm.png" alt=""><span class="buttonText">&#21152;&#20070;&#35780;</span></span>
+PATREVIEW_ABUSE_NOTIFY_chx=&#35780;&#35770;&#28389;&#29992;&#24050;&#25253;|&#33539;&#20363;&#22270;&#20070;&#39302;|web@example.org
+CC_APPROVED_chx=&#24744;&#30340;&#20184;&#27454;&#24050;&#25209;&#20934;&#12290;
+CC_DECLINED_chx=&#25265;&#27465;&#12290; &#24744;&#30340;&#20184;&#27454;&#24050;&#34987;&#25298;&#32477;&#12290; &#35831;&#30830;&#35748;&#24744;&#30340;&#20449;&#24687;&#26159;&#21542;&#27491;&#30830;&#22320;&#36755;&#20837;&#25110;&#33267;&#22270;&#20070;&#39302;&#25903;&#20184;&#12290;
+#CC_EMAIL_RECEIPT_chx=&#24744;&#30340;&#22270;&#20070;&#39302;&#20184;&#27454;&#25910;&#25454;|circadm@example.org|onlinepayments@example.org
+#DONATE_NOTIFY_chx=&#26032;&#25424;&#27454;&#24050;&#25910;|circadm@example.org|donormgmt@example.org
+ICON_PAY_chx=<span class="button"><img src="/screens/ico_payment.png" alt=""><span class="buttonText">&#32593;&#19978;&#20184;&#27454;</span></span>
+ICON_PAY_CLEAR_ALL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#20840;&#28040;&#38500;</span></span></div></div>
+ICON_PAY_SELECT_ALL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#20840;&#36873;&#25321;</span></span></div></div>
+ICON_PRINT_chx=<span class="button"><img src="/screens/ico_printer_alt.png" alt=""><span class="buttonText">&#25171;&#21360;</span></span>
+ICON_PAY_CONTINUE_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#32487;&#32493;</span></span></div></div>
+#MINDONATE_chx=1000|&#20197;&#20415;&#25903;&#20184;&#22788;&#29702;&#25104;&#26412;&#65292;&#26368;&#20302;&#25424;&#27454;&#20026;&#21313;&#20803;&#12290;&#35874;&#35874;&#12290;
+#PAYAMTS_chx=500|&#35831;&#33267;&#22270;&#20070;&#39302;&#25903;&#20184;&#27492;&#27454;&#39033;|00
+BOOKINGS_DAY_LEGEND_chx=<span class="bookingsLegend">&#22270;&#20070;&#39302;&#20110; <span id="closed">X</span> &#23567;&#26102;&#20851;&#38376;&#12290;&#26080;&#39033;&#30446;&#21487;&#25552;&#20379; <span id="unavailable">&#28784;&#33394;-&#26080;&#21151;&#33021;</span> &#26102;&#38388; &#12290;</span>
+BOOKINGS_MONTH_LEGEND_chx=<span class="bookingsLegend">&#22270;&#20070;&#39302;&#20110; <span id="closed">X</span> &#26085;&#20851;&#38376;&#12290; &#26080;&#39033;&#30446;&#21487;&#25552;&#20379; <span id="unavailable">&#28784;&#33394;-&#26080;&#21151;&#33021;</span> &#26085;&#26399;&#12290;</span>
+ICON_BOOKINGS_HEADER_chx=<span class="button"><img src="/screens/ico_checkbox.png" alt=""><span class="buttonText">&#39044;&#23450;&#27492;&#36164;&#26009;</span></span>
+ICON_DAILYCAL_chx=&#26597;&#30475;&#26085;&#21382; 
+ICON_HOURLYCAL_chx=&#26597;&#30475;&#23567;&#26102;&#26085;&#21382;
+ICON_NEXTCAL_chx=&#21518;
+ICON_PREVCAL_chx=&#21069;
+ICON_BUT_ILL_CANCEL_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#21462;&#28040;</span></span></div></div>
+ICON_BUT_ILL_FORM_chx=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Interlibrary Loan &#34920;</span></span>
+ICON_BUT_ILL_HOME_chx=<span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">&#26032;&#39044;&#27714;</span></span>
+ICON_BUT_PAT_ILL_FORM_chx=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Interlibrary Loan &#34920;</span></span>
+ICON_BUT_PAT_ILL_chx=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Interlibrary Loan</span></span>
+ILL_CONF_EMAIL_SUBJECT_chx=&#22270;&#20070;&#39302;Inter-library Loan&#39044;&#23450;&#36890;&#30693;
+ICON_BUT_RET2CRS_chx=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">&#36820;&#22238;&#35838;&#31243;</span></span>
+#RSRV_HEADER_chx=&#27492;&#35838;&#31243;&#36164;&#26009;
+#RSRV_HEADER_chx=&#26412;&#26376;&#29305;&#20889;&#26631;&#39064;
+ICON_BUT_PREVSCRN_chx=<span class="navButtonOneLine">&#22238;</span>
+ICON_BUT_RET2FEAT_chx=<span class="navButtonOneLine">&#22238;</span>
+FEATURED_LIST_chx=10,260|&#26032;&#20070;&#36890;&#21578;|&#31867;&#21035;|&#26631;&#39064;&#25968;&#30446;
+BIBIMAGE_TEXT_chx=&#20070;&#26412;&#23553;&#38754;
+#WEBADDRESS_chx=|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=N||<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|-1
+#WEBADDRESS_chx=http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&amp;field-keywords=%s|I|http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&field-isbn=%s|<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|-1
+ICON_BUT_CLOSEFRAME_chx=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">&#20851;&#38381;&#26694;&#26550;</span></span>
+ICON_BUT_RESOURCELINK_chx=<div id="resourcelink"><span class="button"><img src="/screens/ico_globe.png" alt=""><span class="buttonText">&#20854;&#20182;&#36164;&#28304;</span></span></div>
+ICON_BUT_RET2RESOURCE_chx=<div id="resourcelink"><span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">&#22238;</span></span></div>
+#WBHEADERTEXT_chx=&#20197;&#19979;&#36164;&#28304;&#20063;&#35768;&#21487;&#25191;&#34892;&#39069;&#22806;&#20449;&#24687;&#26377;&#20851;&#20110;<br>#HEADER#
+ICON_PATFEED_chx=<span class="button"><img src="/screens/ico_rss.gif" alt=""><span class="buttonText">&#25105;&#30340;&#35760;&#24405;Feeds</span></span>
+PATFEED_CONFIG_chx=&#22270;&#20070;&#39302;&#26032;&#38395;&#20449;&#24687;|&#28857;&#20987;&#38142;&#25509;&#35265;&#35814;&#24773;
+PATFEED_FINES_INCURRED_RECENTLY_chx=&#24744;&#26377;&#26032;&#32602;&#27454;&#25110;&#20184;&#36153;
+PATFEED_HOLDS_READY_chx=&#24744;&#30340;&#26448;&#26009;&#24050;&#20934;&#22791;&#21487;&#38543;&#26102;&#25552;&#21462;
+#PATFEED_IMAGE_chx=/screens/rss.gif|&#35746;&#38405;&#24744;&#30340;&#22270;&#20070;&#39302;&#35760;&#24405;&#20043;feed&#12290;|88|31
+PATFEED_ITEMS_BOOKED_TOMORROW_chx=&#26448;&#26009;&#39044;&#23450;&#20026;&#26126;&#22825;
+PATFEED_ITEMS_DUE_SOON_chx=&#21363;&#23558;&#21040;&#26399;&#20070;&#30446;
+PATFEED_ITEMS_DUE_TODAY_chx=&#20170;&#26085;&#21040;&#26399;&#20070;&#30446;
+PATFEED_ITEMS_OVERDUE_chx=&#36926;&#26399;&#20070;&#30446;
+PATFEED_ITEMS_RECALLED_chx=&#39044;&#32422;&#20070;&#30446;
+PATFEED_PROGRAM_SESSION_SOON_chx=&#24744;&#24050;&#27880;&#20876;&#20043;&#27963;&#21160;&#21363;&#23558;&#25512;&#20986;&#12290; &#35831;&#30331;&#20837;&#24744;&#30340;&#35835;&#32773;&#24080;&#25143;&#23547;&#30475;&#27963;&#21160;&#26085;&#26399;&#65292;&#26102;&#38388;&#21644;&#22320;&#28857;&#12290;
+PATFEED_PROGRAM_SESSION_TOMORROW_chx=&#24744;&#24050;&#27880;&#20876;&#20043;&#27963;&#21160;&#23558;&#20110;&#26126;&#22825;&#25512;&#20986;&#12290; &#35831;&#30331;&#20837;&#24744;&#30340;&#35835;&#32773;&#24080;&#25143;&#23547;&#30475;&#27963;&#21160;&#26085;&#26399;&#65292;&#26102;&#38388;&#21644;&#22320;&#28857;&#12290;
+PATFEED_PROGRAM_SESSION_TODAY_chx=&#24744;&#24050;&#27880;&#20876;&#20043;&#27963;&#21160;&#23558;&#20110;&#20170;&#22825;&#25512;&#20986;&#12290; &#35831;&#30331;&#20837;&#24744;&#30340;&#35835;&#32773;&#24080;&#25143;&#23547;&#30475;&#27963;&#21160;&#26085;&#26399;&#65292;&#26102;&#38388;&#21644;&#22320;&#28857;&#12290;
+ICON_BUT_EMAIL_chx=&#30005;&#37038;
+ICON_BUT_NEXTREC_chx=<span class="button"><span class="buttonText" id="buttonNextRecord">&#19979;&#19968;&#35760;&#24405;</span><img src="/screens/ico_next.gif" alt=""></span>
+ICON_BUT_PREVREC_chx=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">&#21069;&#19968;&#35760;&#24405;</span></span>
+ICON_BUT_Z39_ANOTHER_chx=&#20854;&#20182;&#36164;&#26009;&#24211;
+ICON_BUT_Z39_REQUEST_chx=<span class="button"><img src="/screens/ico_checkbox.png" alt=""><span class="buttonText">&#39044;&#27714;</span></span>
+ICON_BUT_Z39SEARCH_chx=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">&#25628;&#32034;&#20854;&#20182;&#22270;&#20070;&#39302;</span></span>
+Z39BROADCAST_chx=Z39.50&#25773;&#25918;&#25628;&#32034;&#65306;&#35831;&#36873;&#25321;&#24744;&#38656;&#35201;&#30340;Z39.50&#26381;&#21153;&#22120;&#20256;&#36865;&#24744;&#30340;&#25628;&#32034;
+ICON_BUT_RETHOME_chx=<span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">&#20027;&#39029;</span></span>
+#SELFREG_ERROR_EMAIL_chx=circadm|example@example.org|&#33258;&#25105;&#30331;&#35760;&#38169;&#35823;|example@example.org
+#SELFREG_INFO_EMAIL_chx=circadm|example@example.org|&#26032;&#35835;&#32773;&#30331;&#35760;|example@example.org
+ICON_MFFAVS_HOME_chx=<span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">&#20027;&#39029;</span></span>
+ICON_MFFAVS_SEARCH_chx=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">&#25628;&#32034;</span></span>
+ICON_PAT_MFFAVS_chx=<span class="button"><img src="/screens/ico_globe.png" alt=""><span class="buttonText">&#25105;&#30340;Research Pro</span></span>
+MFFAVS_CONFIRM_chx=&#24744;&#30340;&#32676;&#32452;, %s, &#24050;&#25104;&#21151;&#20648;&#22791;&#12290;
+MFFAVS_DENY_chx=&#27492;&#21151;&#33021;&#19981;&#21487;&#25552;&#20379;&#12290;&#35831;&#32852;&#31995;&#22270;&#20070;&#39302;&#39302;&#21592;&#20316;&#36827;&#19968;&#27493;&#21327;&#21161;&#12290;
+#MFFAVS_HOME_chx=http://researchpro-[&#22270;&#20070;&#39302;&#20195;&#21495;]:[&#31471;&#21475;]/iii/mfrpro-[&#22270;&#20070;&#39302;&#20195;&#21495;]/loadSearchPage.do?searchtype=simple&amp;searchpage=simple&amp;accountid=[&#24080;&#25143;]&amp;accountpassword=[&#24080;&#25143;]&amp;language=eng
+#MFFAVS_URL_chx=true|[&#24080;&#25143;]|[&#24080;&#25143;]|/mfgo/http://researchpro-[&#22270;&#20070;&#39302;&#20195;&#21495;]:[&#31471;&#21475;]/iii/mfrpro-[&#22270;&#20070;&#39302;&#20195;&#21495;]/search.do
+ICON_SPELLCHECK_MORE_chx=<span class="spellcheckToolMore">&#26356;&#22810;&nbsp;&raquo;</span>
+ICON_SPELLCHECK_SEARCH_chx=<img src="/screens/ico_go.png" class="button" border="0" alt="&#25628;&#32034;">
+SPELLCHECK_chx=<span class="spellcheckTool">&#24744;&#26159;&#21542;&#25628;&#32034; %a? %s </span>
+MF_ICON_ADVANCED_SEARCH_chx=&#39640;&#32423;&#25628;&#32034;
+MF_ICON_CLEAR_chx=&#28165;&#34920;
+MF_ICON_CLOSE_chx=&#20851;&#38381;&#35270;&#31383;
+MF_ICON_DESELECTALL_chx=&#20840;&#28040;&#38500;
+MF_ICON_EMAIL_chx=&#30005;&#37038;
+MF_ICON_HELP_chx=&#24110;&#21161; 
+MF_ICON_LOGOFFACCOUNT_chx=&#30331;&#20986;
+MF_ICON_MFFAVS_GROUP_chx=&#20648;&#23384;&#32676;&#32452;
+MF_ICON_NEW_SEARCH_chx=&#26032;&#25628;&#32034;
+MF_ICON_PATRON_REC_chx=&#36820;&#22238;&#33267;&#35835;&#32773;&#35760;&#24405;
+MF_ICON_PATSUBMIT_chx=&#25552;&#20132;
+MF_ICON_PREVSEARCH_chx=&#21069;&#19968;&#25628;&#32034;
+MF_ICON_PRINT_chx=&#25171;&#21360;
+MF_ICON_RET2CAT_chx=&#22238;&#33267;&#30446;&#24405;
+MF_ICON_RETHOME_chx=&#20027;&#39029;
+MF_ICON_SEARCH_chx=&#25628;&#32034;Research Pro
+MF_ICON_SELECTALL_chx=&#20840;&#36873;&#25321;
+MF_ICON_SIMPLE_SEARCH_chx=&#31616;&#26131;&#25628;&#32034;
+MF_ICON_STOP_chx_chx=&#20572;&#27490;&#25628;&#32034;
+MF_ICON_UPDATELIST_chx=&#26356;&#26032;&#21015;&#34920;
+MF_ICON_VIEWSAVED_chx=&#26597;&#30475;&#20648;&#23384;
+MF_RESULTSVIEW_chx=tabbed,&#20197;&#36164;&#28304;&#20026;&#36873;&#39033;&#21345;&#24335;&#26597;&#30475;&#32467;&#26524;|standard,&#26597;&#30475;&#20840;&#37096;&#24050;&#20837;&#26723;&#26696;&#20043;&#32467;&#26524;
+MF_SEARCHINDEX_chx=Keywords,&#20851;&#38190;&#23383;|:CREATOR,&#20316;&#32773;|:TITLE,&#26631;&#39064;|:SUBJECT,&#20027;&#39064;
+MF_TOPLOGO_chx=@screens/toplogo_chx.html
+PROGRAM_SECTION_FIELDS_chx=&#26085;&#26399;/&#26102;&#38388;:VsT|&#20250;&#35265;:Vss|&#22320;&#28857;:Fs285|&#35762;&#24072;:Vsn|&#29366;&#20917;:VsS
+ICON_BUT_PAT_PROGRAMS_chx=<span class="button"><img src="/screens/ico_calendar.png" alt=""><span class="buttonText">&#22270;&#20070;&#39302;&#27963;&#21160;</span></span>
+ICON_BUT_PAT_SORTBYDATE_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#26085;&#26399;&#25490;&#24207;</span></span></div></div>
+ICON_BUT_PAT_SORTBYNAME_chx=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">&#22995;&#21517;&#25490;&#24207;</span></span></div></div>
+ICON_RET2PROG_chx=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">&#36820;&#22238;&#33267;&#33410;&#30446;</span></span>
+ICON_REGISTER_chx=<br><strong>&#36731;&#25353;&#27492;&#22788;&#27880;&#20876;</strong>
+ICON_ADD_TO_WAITLIST_chx=<br><strong>&#21152;&#36827;&#20505;&#34917;&#21333;</strong>
+ICON_VIEW_ADDITIONAL_SESSIONS_chx=<span class="button"><span class="buttonText">&#26597;&#30475;&#39069;&#22806;&#20250;&#35758;</span></span>
+ICON_HIDE_ADDITIONAL_SESSIONS_chx=<span class="button"><span class="buttonText">&#38544;&#34255;&#39069;&#22806;&#20250;&#35758;</span></span>
+ICON_PROGRAM_CAL_chx=<span class="button"><img src="/screens/ico_calendar.png" alt=""><span class="buttonText">&#27963;&#21160;&#26085;&#21382;</span></span>
