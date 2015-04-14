@@ -426,7 +426,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitMark { float:right; padding-bottom: 3px; }
 
-.briefcitMedia, .bibMedia, .briefcitResourceMedia, .briefcitProgramMedia, td.browseEntryMedia, td.browseSubEntryMedia { color:#878787; font-size:.7em; line-height:.95em; overflow:hidden; width:41px; text-align:center; }
+.briefcitMedia, .bibMedia, .briefcitResourceMedia, .briefcitProgramMedia, td.browseEntryMedia, td.browseSubEntryMedia { color:#878787; font-size:.7em; line-height:.95em; overflow:hidden; width:55px; text-align:center; }
 
 .briefcitResourceMedia, .briefcitProgramMedia { margin-top:3em; }
 
