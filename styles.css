@@ -171,10 +171,21 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 #accessibleForm .quickSearch fieldset fieldset { border:none; padding:0; text-align:left; }
 
-#alertMessage {
+#alertMessage1 {
     margin-left:1em;
     font-size:1.2em;
     color:#6c0000;
+
+}
+
+#alertMessage {
+margin: auto;
+font-size: 1.2em;
+color: black;
+text-align: center;
+padding: 1em;
+background-color: lightpink;
+    
 }
 
 #alertMessage a {
