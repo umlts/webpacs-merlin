@@ -178,7 +178,7 @@ a:hover  { color: #6E0000; text-decoration:underline; }
 
 }
 
-#alertMessage {
+/*#alertMessage {
 margin: auto;
 font-size: 1.2em;
 color: black;
@@ -186,7 +186,7 @@ text-align: center;
 padding: 1em;
 background-color: lightpink;
     
-}
+}*/
 
 #alertMessage a {
     font-weight:bold;
