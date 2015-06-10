@@ -1502,7 +1502,7 @@ ICON_BIB_PAGING_NEXT_chx=<span class="button"><span class="buttonText" id="butto
 ICON_BIB_PAGING_PREV_chx=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">&#21069;&#19968;&#35760;&#24405;</span></span>
 ICON_RECORDLINK_chx=<div class="bibRecordLink"><div class="bibInfoLabel">&#27704;&#20037;&#38142;&#25509;</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
 
-INNREACH_chx=<span class="navButton">检索<br>MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+INNREACH_chx=<span class="navButton">&#26816;&#32034;<br>MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
 # IRSSO SETUP
 
 INNREACH_REMOTE_chx=laurel.lso.missouri.edu&<span class="navButton">MOBIUS&#26816;&#32034;</span>@laurel.lso.missouri.edu:2083(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
