@@ -298,7 +298,7 @@ ICON_BUT_CLEAR_MARKED=<span class="navButton">Clear Saved Records</span>
 ICON_BUT_EXPORT_MULTI=<span class="navButton">Export Saved</span>
 ICON_BUT_EXPORT_VIEW_SAVES=<span class="navButton"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Saved Records</span></span>
 ICON_BUT_VIEW_SAVES=<span class="navButton">View Saved Records</span>
-EMAILOP=From the MERLIN Library Catalog|exporter|
+EMAILOP=From the MERLIN Library Catalog|mcohelp@mobiusconsortium.org|
 EXPORT_SELECT_TABLE=Sendto:email,local,browser|Format:full,brief,marc,endnote,procite
 XRECTYPE=bi
 
