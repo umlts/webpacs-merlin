@@ -21,6 +21,7 @@ function submitSubject() {
 </noscript>
 <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<link rel="stylesheet" type="text/css" href="/screens/styles_s3.css" / >
 </head>
 <body>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -60,7 +61,8 @@ $(document).ready(function () {
 if (document.body){document.body.className = "bodybg";}
 </script>
 
-<link rel="stylesheet" type="text/css" href="/screens/styles_s3_spi.css" / >
+<link rel="stylesheet" type="text/css" href="/screens/styles_s3.css" / >
+<link rel="stylesheet" type="text/css" href="/screens/proactive.css" / ><!--UMKC chat css-->
 
 <div class="minHeight">
 <div class="fullPage">
@@ -109,17 +111,41 @@ if (document.body){document.body.className = "bodybg";}
 		</ul>
 	</li>
 	<li><a href="http://laurel.lso.missouri.edu:2083">Nueva B&#250;squeda MOBIUS</a></li>
+        <li><a href="https://ill.library.umkc.edu/illiad/logon.html">Interlibrary Loan</a></li>
 	<li><a href="/help*spi">Ayuda</a></li>
 	<li><a href="#" onclick="iiiSwitchLang('eng')">English</a></li>
 	<li><a href="#" onclick="iiiSwitchLang('chx')">&#31616;&#20307;&#20013;&#25991;</a></li>
 </ul>
 
 </div><!--searchOptions-->
+<div class="libraryh3lp-tab">
+
+  <div class="needs-js">
+    <a href="http://library.umkc.edu/form/libref">Email Us</a>
+  </div>
+
+  <div jid="primarydesk@chat.libraryh3lp.com" style="display: none" class="libraryh3lp">
+    <div class="dialog" style="display: none";>
+      <p style="text-align: center;">
+        Need help? Ask a librarian.
+      </p>
+    </div>
+
+
+    <a onClick="window.open('https://us.libraryh3lp.com/chat/primarydesk@chat.libraryh3lp.com?skin=22811', 'AskUs', 'resizable=1,width=275,height=300'); return false;" href="#">Chat with us</a>
+  </div>
+
+  <div class="libraryh3lp" style="display: none">
+    <a href="http://library.umkc.edu/form/libref">Email Us</a>
+  </div>
+
+</div>
 </div><!--rightColumn-->
 <div class="pageContentColumn"><!-- content container -->
 <a name="content" id="content"></a>
 
 <div class="pageContentInner">
+
 
 <h1 class="pageHeader">Art&#237;culos y Revistas</h1>
 <h3>B&#250;squeda en la base de datos: <a href="#dbname">Nombre</a> | <a href="#dbsubject">Materia</a> | <a href="#dbtype">Tipo</a> | <a href="#dbresearch">Research Help</a></h3>
