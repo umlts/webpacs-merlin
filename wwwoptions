@@ -796,6 +796,8 @@ LOC_chaii=http://library.muhealth.org/search1/merlinlocations/muhslcirculationde
 LOC_chcai=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
 LOC_chcii=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
 LOC_chcli=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
+LOC_chcto=http://library.muhealth.org/search1/merlinlocations/muhslbooks/ "target=_blank"
+LOC_chctt=http://library.muhealth.org/search1/merlinlocations/muhslbooks/ "target=_blank"
 #LOC_cheii=http://healthlibrary.missouri.edu/contactus.cfm "target=_blank"
 LOC_chgii=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
 LOC_chgmi=http://library.muhealth.org/search1/merlinlocations/muhslcirculationdesk/ "target=_blank"
