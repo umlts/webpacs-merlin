@@ -457,7 +457,7 @@ ILL_HOME=/screens/ill.html
 # INN-Reach
 IR_PLACEMENT=1
 ICON_INNREACH_ENCORE=<span class="navButton">Search<br>MOBIUS</span>
-INNREACH_ENCORE=http://encore.searchmobius.org/iii/encore/search/C__S%s__Orightresult__U?lang=eng&suite=cobalt
+INNREACH_ENCORE=http://searchmobius.org/iii/encore/search/C__S%s__Orightresult__U?lang=eng&suite=cobalt
 #INNREACH=<span class="navButton">Search<br>MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
 
 # IRSSO SETUP
