@@ -456,7 +456,9 @@ ILL_HOME=/screens/ill.html
 
 # INN-Reach
 IR_PLACEMENT=1
-INNREACH=<span class="navButton">Search<br>MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+ICON_INNREACH_ENCORE=<span class="navButton">Search<br>MOBIUS</span>
+INNREACH_ENCORE=http://searchmobius.org/iii/encore/search/C__S%s__Orightresult__U?lang=eng&suite=cobalt
+#INNREACH=<span class="navButton">Search<br>MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
 
 # IRSSO SETUP
 
@@ -1236,8 +1238,10 @@ ICON_BIB_HOLDINGS_ITEMS_spi=Ver Copias
 ICON_BIB_PAGING_NEXT_spi=<span class="button"><span class="buttonText" id="buttonNextRecord">Registro siguiente</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BIB_PAGING_PREV_spi=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Registro anterior</span></span>
 ICON_RECORDLINK_spi=<div class="bibRecordLink"><div class="bibInfoLabel">Enlace permanente</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
+ICON_INNREACH_ENCORE_spi=<span class="navButton">Buscar en<br>MOBIUS</span>
 
-INNREACH_spi=<span class="navButton">Buscar en<br>MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
+
+#INNREACH_spi=<span class="navButton">Buscar en<br>MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
 
 # IRSSO SETUP
 
@@ -1503,6 +1507,8 @@ ICON_BIB_HOLDINGS_ITEMS_chx=&#26597;&#30475;&#25335;&#36125;&#22797;&#21360;&#26
 ICON_BIB_PAGING_NEXT_chx=<span class="button"><span class="buttonText" id="buttonNextRecord">&#19979;&#19968;&#35760;&#24405;</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BIB_PAGING_PREV_chx=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">&#21069;&#19968;&#35760;&#24405;</span></span>
 ICON_RECORDLINK_chx=<div class="bibRecordLink"><div class="bibInfoLabel">&#27704;&#20037;&#38142;&#25509;</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
+
+ICON_INNREACH_ENCORE_chx=<span class="navButton">&#26816;&#32034;<br>MOBIUS</span>
 
 INNREACH_chx=<span class="navButton">&#26816;&#32034;<br>MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;Z=Z*;a=a;c=c;d=d;e=p;f=e;g=g;i=i;m=m;o=o;s=s;t=t;v=l)
 # IRSSO SETUP
