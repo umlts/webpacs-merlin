@@ -37,6 +37,8 @@
 
 
 # General Display and Behavior
+LOGOUT_REMOTE=https://shib-idp.umsystem.edu/YouAreNOTLoggedOut.html
+
 REFRESH_MESSAGE=You are getting this error because the catalog server received multiple requests in a short period of time. This can happen if you double-click a link, refresh the browser too quickly, or redo the same search quickly. You should be able to get past this error by using your browser's "back" button or by refreshing this window. (Please click the refresh button just once.)
 
 REFRESH_MESSAGE_spi=You are getting this error because the catalog server received multiple requests in a short period of time. This can happen if you double-click a link, refresh the browser too quickly, or redo the same search quickly. You should be able to get past this error by using your browser's "back" button or by refreshing this window. (Please click the refresh button just once.)
