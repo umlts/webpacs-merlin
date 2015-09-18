@@ -69,14 +69,14 @@ $(document).ready(function(){
   });
 
     //Switching the Keyword/Title menu when the radio button is changed
-        $('input.searchtype[value=X]').attr('checked', true);
+        $('input.searchtype[value=X]').prop('checked', true);
         $('.innerQuickSearch').hide();
         $('.X .innerQuickSearch').show();
-  $('input.searchtype').click(function(){
+    $('input.searchtype').click(function(){
             $('.innerQuickSearch').hide();
             $('.' + this.value + ' .innerQuickSearch').show();
-            $('input.searchtype[value=' + this.value + ']').attr('checked', 'checked');
-  });
+            $('input.searchtype[value=' + this.value + ']').prop('checked', 'checked');
+    });
   $('#moreLink').click(function(){
              $('#optionalLimits').toggle();
   });
