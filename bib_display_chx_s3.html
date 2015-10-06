@@ -210,8 +210,10 @@ $('.vol').append($('center'));
     </script>
        
 <script>
-
-var itemLocation = $("tr.bibItemsEntry td:first").html()
+jQuery.noConflict();
+(function( $ ) {
+$(".buttonSpriteSpan1").click(function (event) {
+   var itemLocation = $(this).closest("tr.bibItemsEntry td").html()
 if (itemLocation.indexOf("Marr Sound Archives RooBot") > 0){
   $.cookie('asrs', 'sound_archives');
 }else if (itemLocation.indexOf("LaBudde Special Collections RooBot") > 0){
@@ -221,6 +223,10 @@ if (itemLocation.indexOf("Marr Sound Archives RooBot") > 0){
 }else if (itemLocation.indexOf("RooBot") > 0){
   $.cookie('asrs', 'roobot');
 }
+  
+});
+})(jQuery);
+
 
 </script>
 <!--{botlogo}-->
