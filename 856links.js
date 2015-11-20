@@ -1,7 +1,7 @@
 function hideLinks(){
     
     var stringsToHide = new Array ();
-    stringsToHide[1] = new Array ("mul.missouri", "EW3DM6ND8C");
+    stringsToHide[1] = new Array ("mul.missouri", "EW3DM6ND8C", "mu", "MU");
     stringsToHide[3] = new Array ("umkc", "UMKC", "PC8GA3QQ6A");
     stringsToHide[5] = new Array ("mst", " MST", "UM9MH3KU7S", "MS&T", "Missouri S&T", "libproxy.mst");
     stringsToHide[6] = new Array ("umsl", "UMSL", "FN2VR5VT8L");
@@ -35,10 +35,14 @@ function hideLinks(){
     function showLinks(){
     
     var stringsToShow = new Array ();
-    stringsToShow[1] = new Array ("Freely available online", "MU, MST, UMKC, UMSL online access");
-    stringsToShow[3] = new Array ("Freely available online", "MU, MST, UMKC, UMSL online access");
-    stringsToShow[5] = new Array ("Freely available online", "MU, MST, UMKC, UMSL online access");
-    stringsToShow[6] = new Array ("Freely available online", "MU, MST, UMKC, UMSL online access");
+    stringsToShow[1] = new Array ("Freely available online", "MU, MST, UMKC, UMSL online access", "MU, MS&T, UMKC, UMSL online access via
+MOBIUS Sage eBook Collection");
+    stringsToShow[3] = new Array ("Freely available online", "MU, MST, UMKC, UMSL online access", "MU, MS&T, UMKC, UMSL online access via
+MOBIUS Sage eBook Collection");
+    stringsToShow[5] = new Array ("Freely available online", "MU, MST, UMKC, UMSL online access", "MU, MS&T, UMKC, UMSL online access via
+MOBIUS Sage eBook Collection");
+    stringsToShow[6] = new Array ("Freely available online", "MU, MST, UMKC, UMSL online access", "MU, MS&T, UMKC, UMSL online access via
+MOBIUS Sage eBook Collection");
     
 
 
