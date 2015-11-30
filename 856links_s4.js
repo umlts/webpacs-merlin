@@ -35,14 +35,10 @@ function hideLinks(){
     function showLinks(){
     
     var stringsToShow = new Array ();
-    stringsToShow[1] = new Array ("Freely available online", "MU, MST, UMKC, UMSL online access", "MU, MS&T, UMKC, UMSL online access via
-MOBIUS Sage eBook Collection");
-    stringsToShow[4] = new Array ("Freely available online", "MU, MST, UMKC, UMSL online access", "MU, MS&T, UMKC, UMSL online access via
-MOBIUS Sage eBook Collection");
-    stringsToShow[5] = new Array ("Freely available online", "MU, MST, UMKC, UMSL online access", "MU, MS&T, UMKC, UMSL online access via
-MOBIUS Sage eBook Collection");
-    stringsToShow[6] = new Array ("Freely available online", "MU, MST, UMKC, UMSL online access", "MU, MS&T, UMKC, UMSL online access via
-MOBIUS Sage eBook Collection");
+    stringsToShow[1] = new Array ("Freely available online", "MU, MST, UMKC, UMSL online access", "MU, MS&T, UMKC, UMSL online access");
+    stringsToShow[4] = new Array ("Freely available online", "MU, MST, UMKC, UMSL online access", "MU, MS&T, UMKC, UMSL online access");
+    stringsToShow[5] = new Array ("Freely available online", "MU, MST, UMKC, UMSL online access", "MU, MS&T, UMKC, UMSL online access");
+    stringsToShow[6] = new Array ("Freely available online", "MU, MST, UMKC, UMSL online access", "MU, MS&T, UMKC, UMSL online access");
     
 
 
