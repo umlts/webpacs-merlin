@@ -1,11 +1,12 @@
 function hideLinks(){
     
     var stringsToHide = new Array ();
-    stringsToHide[2] = new Array ("mul.missouri", "EW3DM6ND8C", "mu", "MU");
+    stringsToHide[2] = new Array ("MU online", "MU", "mu");
     stringsToHide[3] = new Array ("umkc", "UMKC", "PC8GA3QQ6A");
     stringsToHide[5] = new Array ("mst", " MST", "UM9MH3KU7S", "MS&T", "Missouri S&T", "libproxy.mst");
-    stringsToHide[6] = new Array ("umsl", "UMSL", "FN2VR5VT8L");
-    
+    stringsToHide[6] = new Array ("umsl", "UMSL access", "FN2VR5VT8L");
+
+
 
 
     var scopeDropdown = $("#searchscope").val();
