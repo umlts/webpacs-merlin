@@ -27,7 +27,7 @@ function submitSubject() {
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="/screens/jquery.cookie.js"></script>
 <script src="/screens/menu-collapsed.js" type="text/javascript"></script>
-<script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script>
 <script type="text/javascript" src="/screens/856links.js"></script>
 <script type="text/javascript" src='/screens/sms.js'> </script>
 <script type="text/javascript">
@@ -38,12 +38,12 @@ $(document).ready(function () {
 		$(".searchTips").load("/screens/" + this.value + ".inc");
 	});
 	//Changes the search examples
-	
+
 	//var selectAny = $('#b option[value=""]')
-	//$('#b option:not([value^="z"])').detach(); 
+	//$('#b option:not([value^="z"])').detach();
 	//selectAny.prependTo("#b")
 	//Hides the out-of-scope locations
-	
+
 	//Remove the colon from keyword searches
 	$('input[type="submit"]').click(function () {
 		var searchTerm = $('#searcharg').val();
@@ -62,7 +62,7 @@ if (document.body){document.body.className = "bodybg";}
 </script>
 
 <link rel="stylesheet" type="text/css" href="/screens/styles_s3.css" / >
-<link rel="stylesheet" type="text/css" href="/screens/proactive.css" / ><!--UMKC chat css-->
+
 
 <div class="minHeight">
 <div class="fullPage">
@@ -76,7 +76,7 @@ if (document.body){document.body.className = "bodybg";}
 
 <div class="clusterLogo">
 <a href="/search*spi/X" tabindex="10"><img src="/screens/merlin.png" alt="MERLIN Catalog"></a>
-</div>	
+</div>
 
 <div id="tabsToplogo">
     <ul id="tabRow">
@@ -105,7 +105,7 @@ if (document.body){document.body.className = "bodybg";}
 		<ul>
 			<li><a href="http://library.mst.edu/">Missouri S&T</a></li>
 			<li><a href="http://library.missouri.edu/">MU</a></li>
-			<li><a href="http://www.law.missouri.edu/library/">MU-Law</a></li>		
+			<li><a href="http://www.law.missouri.edu/library/">MU-Law</a></li>
 			<li><a href="http://www.umsl.edu/library">UMSL</a></li>
 			<li><a href="http://shs.umsystem.edu/index.shtml">State Historical Society</a></li>
 		</ul>
@@ -118,28 +118,19 @@ if (document.body){document.body.className = "bodybg";}
 </ul>
 
 </div><!--searchOptions-->
-<div class="libraryh3lp-tab">
+<!-- Place this div in your web page where you want your chat widget to appear. -->
 
-  <div class="needs-js">
-    <a href="http://library.umkc.edu/form/libref">Email Us</a>
-  </div>
+<!-- Place this div in your web page where you want your chat widget to appear. -->
+<div class="needs-js">chat loading...</div>
 
-  <div jid="primarydesk@chat.libraryh3lp.com" style="display: none" class="libraryh3lp">
-    <div class="dialog" style="display: none";>
-      <p style="text-align: center;">
-        Need help? Ask a librarian.
-      </p>
-    </div>
-
-
-    <a onClick="window.open('https://us.libraryh3lp.com/chat/primarydesk@chat.libraryh3lp.com?skin=22811', 'AskUs', 'resizable=1,width=275,height=300'); return false;" href="#">Chat with us</a>
-  </div>
-
-  <div class="libraryh3lp" style="display: none">
-    <a href="http://library.umkc.edu/form/libref">Email Us</a>
-  </div>
-
-</div>
+<!-- Place this script as near to the end of your BODY as possible. -->
+<script type="text/javascript">
+  (function() {
+    var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
+    x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?8809";
+    var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
+  })();
+</script>
 </div><!--rightColumn-->
 <div class="pageContentColumn"><!-- content container -->
 <a name="content" id="content"></a>
@@ -151,7 +142,7 @@ if (document.body){document.body.className = "bodybg";}
 <h3>B&#250;squeda en la base de datos: <a href="#dbname">Nombre</a> | <a href="#dbsubject">Materia</a> | <a href="#dbtype">Tipo</a> | <a href="#dbresearch">Research Help</a></h3>
 <div id="accessibleForm" class="articles form1Part">
 
-<a name="dbname"></a>	
+<a name="dbname"></a>
 <fieldset>
 <legend>B&#250;squeda por Nombre:</legend>
 

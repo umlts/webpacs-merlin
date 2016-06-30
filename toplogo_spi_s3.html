@@ -17,7 +17,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="/screens/jquery.cookie.js"></script>
 <script src="/screens/menu-collapsed.js" type="text/javascript"></script>
-<script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script>
 <script type="text/javascript" src="/screens/856links.js"></script>
 <script type="text/javascript" src='/screens/sms.js'> </script>
 <script type="text/javascript">
@@ -29,12 +29,12 @@ $(document).ready(function () {
 	});
 
 	//Changes the search examples
-	
+
 	//var selectAny = $('#b option[value=""]')
-	//$('#b option:not([value^="z"])').detach(); 
+	//$('#b option:not([value^="z"])').detach();
 	//selectAny.prependTo("#b")
 	//Hides the out-of-scope locations
-	
+
 	//Remove the colon from keyword searches
 	$('input[type="submit"]').click(function () {
 		var searchTerm = $('#searcharg').val();
@@ -45,7 +45,7 @@ $(document).ready(function () {
 			$('#searcharg').val(newSearchTerm);
 		}
 		});
-	if ($("td:contains('Database Subjects')").length > 0 ){	
+	if ($("td:contains('Database Subjects')").length > 0 ){
 		$("[href='/search*spi/X#tab-1']").hide();
 		$("[href='/search*spi/Y']").hide();
 		$("[href='/search*spi/X#tab-3']").hide();
@@ -56,13 +56,13 @@ $(document).ready(function () {
 		$("ul li:nth-child(4)").css({'border':'0'});
 		$("td .browseEntryMark").hide();
 	};
-		if ($("td:contains('Database Name')").length > 0 ){	
+		if ($("td:contains('Database Name')").length > 0 ){
 		$("td .browseSaveJump").hide();
-		$("td .browseHeaderMark").hide();	
+		$("td .browseHeaderMark").hide();
 		$("td .browseEntryMark").hide();
 	};
 
-	//hides request on briefcit page for RooBot items	
+	//hides request on briefcit page for RooBot items
 addClass();
 
 	function addClass(){
@@ -84,7 +84,7 @@ if (document.body){document.body.className = "bodybg";}
 </script>
 
 <link rel="stylesheet" type="text/css" href="/screens/styles_s3_spi.css" / >
-<link rel="stylesheet" type="text/css" href="/screens/proactive.css" / ><!--UMKC chat css-->
+
 
 <div class="minHeight">
 <div class="fullPage">
@@ -98,7 +98,7 @@ if (document.body){document.body.className = "bodybg";}
 
 <div class="clusterLogo">
 <a href="/search*spi/X" tabindex="10"><img src="/screens/merlin.png" alt="MERLIN Catalog"></a>
-</div>	
+</div>
 
 <div id="tabsToplogo">
     <ul id="tabRow">
@@ -144,28 +144,19 @@ if (document.body){document.body.className = "bodybg";}
 </ul>
 
 </div><!--searchOptions-->
-<div class="libraryh3lp-tab">
+<!-- Place this div in your web page where you want your chat widget to appear. -->
 
-  <div class="needs-js">
-    <a href="http://library.umkc.edu/form/libref">Email Us</a>
-  </div>
+<!-- Place this div in your web page where you want your chat widget to appear. -->
+<div class="needs-js">chat loading...</div>
 
-  <div jid="primarydesk@chat.libraryh3lp.com" style="display: none" class="libraryh3lp">
-    <div class="dialog" style="display: none";>
-      <p style="text-align: center;">
-        Need help? Ask a librarian.
-      </p>
-    </div>
-
-
-    <a onClick="window.open('https://us.libraryh3lp.com/chat/primarydesk@chat.libraryh3lp.com?skin=22811', 'AskUs', 'resizable=1,width=275,height=300'); return false;" href="#">Chat with us</a>
-  </div>
-
-  <div class="libraryh3lp" style="display: none">
-    <a href="http://library.umkc.edu/form/libref">Email Us</a>
-  </div>
-
-</div>
+<!-- Place this script as near to the end of your BODY as possible. -->
+<script type="text/javascript">
+  (function() {
+    var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
+    x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?8809";
+    var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
+  })();
+</script>
 </div><!--rightColumn-->
 <div class="pageContentColumn"><!-- content container -->
 <a name="content" id="content"></a>
