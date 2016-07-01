@@ -275,3 +275,33 @@ function getElemByClass(oElm, strTagName, strClassName){
     }
     return (arrReturnElements)
 }
+
+function asrsModal() {
+  // Create modal dialog for requesting journals
+    if($("#bib_items").find("td:contains('PERIODICALS')") && $("#bib_items").find("td:contains('ASRS')")) {
+
+      // This is a periodical. 
+      
+      var journalTitle = encodeURIComponent($("td.bibInfoLabel:contains('Title')").first().next("td").text());
+      journalTitle = journalTitle.replace(/\s/g, '+');
+      console.log(journalTitle);
+      var journalIssn = $("td.bibInfoLabel:contains('ISSN')").first().next("td").text();
+      journalIssn = journalIssn.replace(/\-/g,"");
+      console.log(journalIssn);
+      // alert(link);
+
+      $("#bib_items").find("tr").find("td:first").find("a").click(function(e) {
+      e.preventDefault();
+      var link = $(this).attr("href"); // Get the URL of the ASRS request
+      
+      // Insert a modal dialog box to direct users to Document Delivery
+      $("body").append('<div class="modal-box"><div class="close-button">[x]</div><p><strong>Are you looking for a specific article?</strong> <a href="http://library.umkc.edu/ill">Interlibrary loan</a> can send an electronic copy to you, free of charge.</p><p>Need the whole journal? We can put it on hold for you.</p><div class="line"><a href="https://ill.library.umkc.edu/illiad/illiad.dll/OpenURL?sid=&genre=article&aulast=&aufirst=&issn=' + journalIssn + '&title=' + journalTitle + '&atitle=&volume=&part=&issue=&spage=&epage=&date=" class="btn btn-primary btn-lg">Request an Article</a> -or - <a href="' + link + '" class="btn btn-default btn-lg">Request the Journal</a></div></div>');
+      
+      $(".close-button").click(function() {
+        $(".modal-box").hide();
+      });
+      });
+      // Close modal dialogs
+      
+    }
+}

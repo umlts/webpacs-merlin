@@ -72,4 +72,61 @@ ul#tabRow .tab a {
 #rowLeft, #typeLeft {
     float: left;
     width: 48%;
-﻿}
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-decoration: none;
+}
+.btn-primary {
+    color: #fff !important;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+.btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+.close-button {
+    cursor: pointer;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+}
+.modal-box {
+    font-size: 1.2em;
+    width: 30em;
+    background-color: #fff;
+    padding: 1em;
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    z-index: 1000;
+    box-shadow: 5px;
+    border: 2px solid #bbb;
+}
+.btn-default {
+    color: #333 !important;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.modal-box .line {
+  text-align: center;
+}
