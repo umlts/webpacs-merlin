@@ -1,6 +1,6 @@
-/* 
+/*
 *  Rel 2009B Example Set
-*  This File Last Changed: 12 Dec 2009 
+*  This File Last Changed: 12 Dec 2009
 */
 
 // Dean Edwards/Matthias Miller/John Resig
@@ -19,7 +19,7 @@ function init() {
 	highlightRows();
 	stripeSubjectTables();
 	stripeBrowseTables();
-	
+
 };
 
 /* for Mozilla/Opera9 */
@@ -124,8 +124,8 @@ function stripeSubjectTables() {
 function stripeBrowseTables(){
 	var yours = getElemByClass(document, "tr" , "yourEntryWouldBeHere");
 	var myTR = document.getElementsByTagName('tr');
-    if (!yours[0]){ 
-		stripeBrowse();       
+    if (!yours[0]){
+		stripeBrowse();
        	for (var i=0;i<myTR.length;i++) {
 			if(myTR[i].className =="browseEntry odd" || myTR[i].className=="browseEntry marked odd"){
 				var spaner = myTR[i].getElementsByTagName("TD");
@@ -167,7 +167,7 @@ function stripeBrowseTables(){
 							for(j=0;j<spaner.length;j++){
          						addClass(spaner[j],"topLine");
          						if(j==0){addClass(spaner[j],"leftCap");}
-         						if(j == (spaner.length - 1 )){addClass(spaner[j],"rightTopCap");}		
+         						if(j == (spaner.length - 1 )){addClass(spaner[j],"rightTopCap");}
 							}
 							for(k=1;k<num;k++){
 								var subs = myTR[i+k].getElementsByTagName("TD");
@@ -218,7 +218,7 @@ function stripeBrowseTables(){
 									for(j=0;j<spaner.length;j++){
          								addClass(spaner[j],"topLine");
          								if(j==0){addClass(spaner[j],"leftCap");}
-         								if(j == (spaner.length - 1 )){addClass(spaner[j],"rightTopCap");}		
+         								if(j == (spaner.length - 1 )){addClass(spaner[j],"rightTopCap");}
 									}
 									for(k=1;k<num;k++){
 										var subs = myTR[i+k].getElementsByTagName("TD");
@@ -278,10 +278,10 @@ function getElemByClass(oElm, strTagName, strClassName){
 
 function asrsModal() {
   // Create modal dialog for requesting journals
-    if($("#bib_items").find("td:contains('PERIODICALS')") && $("#bib_items").find("td:contains('ASRS')")) {
+    if($("#bib_items td:contains('Periodical')").size() > 0 && $("#bib_items td:contains('RooBot')").size() > 0) {
 
-      // This is a periodical. 
-      
+      // This is a periodical.
+
       var journalTitle = encodeURIComponent($("td.bibInfoLabel:contains('Title')").first().next("td").text());
       journalTitle = journalTitle.replace(/\s/g, '+');
       console.log(journalTitle);
@@ -293,15 +293,15 @@ function asrsModal() {
       $("#bib_items").find("tr").find("td:first").find("a").click(function(e) {
       e.preventDefault();
       var link = $(this).attr("href"); // Get the URL of the ASRS request
-      
+
       // Insert a modal dialog box to direct users to Document Delivery
       $("body").append('<div class="modal-box"><div class="close-button">[x]</div><p><strong>Are you looking for a specific article?</strong> <a href="http://library.umkc.edu/ill">Interlibrary loan</a> can send an electronic copy to you, free of charge.</p><p>Need the whole journal? We can put it on hold for you.</p><div class="line"><a href="https://ill.library.umkc.edu/illiad/illiad.dll/OpenURL?sid=&genre=article&aulast=&aufirst=&issn=' + journalIssn + '&title=' + journalTitle + '&atitle=&volume=&part=&issue=&spage=&epage=&date=" class="btn btn-primary btn-lg">Request an Article</a> -or - <a href="' + link + '" class="btn btn-default btn-lg">Request the Journal</a></div></div>');
-      
+
       $(".close-button").click(function() {
         $(".modal-box").hide();
       });
       });
       // Close modal dialogs
-      
+
     }
 }
