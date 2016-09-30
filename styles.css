@@ -1493,18 +1493,11 @@ ul#tabRow .tab a, ul#byTabRow .tab a {
        width:45em;
 }
 
-#sms .eg {
-       font-style:italic;
-       font-size:80%;
-}
+
 
 #info {top:500}
 
-#sms {font-size:70%}
 
-#smsbutton {
-  text-align:center;
-  display:none;
-}
+
 
 body > div#bibDisplayBody a#smsbutton { display:none; }
