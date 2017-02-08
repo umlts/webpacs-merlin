@@ -61,8 +61,16 @@ ul#tabRow .tab a {
     min-height: 28px;
 }
 
+#confirmParagraphs.special {
+font-weight: bold; color: #ff0000; 
+}
+
 #dbRows, #dbType {
     width: 100%
+}
+
+#requestParagraphs.special {
+font-weight: bold; color: #ff0000; 
 }
 
 #rowRight, #typeRight {
