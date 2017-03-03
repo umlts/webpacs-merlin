@@ -221,13 +221,13 @@ jQuery.noConflict();
 $(".buttonSpriteSpan1").click(function (event) {
    var itemLocation = $(this).closest("tr.bibItemsEntry td").html()
 if (itemLocation.indexOf("Marr Sound Archives RooBot") > 0){
-  $.cookie('asrs', 'sound_archives');
+  $.cookie('asrs', 'sound_archives', { path: '/' }); 
 }else if (itemLocation.indexOf("LaBudde Special Collections RooBot") > 0){
-  $.cookie('asrs', 'special_collections');
+  $.cookie('asrs', 'special_collections', { path: '/' });
 }else if (itemLocation.indexOf("RooBot In-Library Use") > 0){
-  $.cookie('asrs', 'in_use');
+  $.cookie('asrs', 'in_use', { path: '/' });
 }else if (itemLocation.indexOf("RooBot") > 0){
-  $.cookie('asrs', 'roobot');
+  $.cookie('asrs', 'roobot', { path: '/' });
 }
   
 });
